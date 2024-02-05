@@ -108,7 +108,7 @@ Los sistemas de control han asumido un papel importante en el desarrollo y avanc
 Por un lado, el control automático juega un papel de vital importancia en cuanto al avance de la ciencia e ingeniería, en donde los sistemas de estudio son dinámicos y el conocimiento de la teoría de control nos da acceso una base para la comprensión del funcionamiento de dichos sistemas. Las etapas presentes en el análisis de un sistema de control requieren la intervención manual, donde por medio de la experimentación se deben de ajustar los parámetros, la validez de los mismos es directamente proporcional a que tan precisos fueron los modelos utilizados previamente. Como se observa en la Figura \ref{fig:diagrama_control} se muestran las etapas para el diseño convencional de un sistema de control, en donde los pasos 5, 6 y 7 son procesos iterativos ya que los mismos se pueden mejorar conforme avanza el proceso. 
 
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
   \includegraphics[scale=0.5]{diagramas/diagrama_control.png}
   \caption{Proceso de diseño para el control de un sistema Fuente: \cite{4}}
@@ -119,7 +119,7 @@ Por un lado, el control automático juega un papel de vital importancia en cuant
 Por otro lado los sistemas en tiempo real son definidos como los sistemas informaticos en los que la respuesta de la aplicacion ante estimulos externos debe de realizarce dentro de un plazo de tiempo establecido. La predicibilidad del tiempo de respuesta determina si el sistema sera capaz de ofrecer una respuesta correcta ante la llegada de un estimulo en un tiempo acotado, esto permite conocer a priori cual va a ser el comportamiento del sistema en las peores condiciones y de esta forma realizar un análisis de tiempos de respuesta del sistema \cite{alonso2010panoramica}. En la Figura \ref{fig:diagrama_en_tiempo_real}, se observa un diagrama descriptivo de la ejecucion de una tarea en un sistema de tiempo real. En donde se observan atributos temporales como: activacion y plazo de respuesta\cite{de2000introduccion}. 
 
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
   \includegraphics[scale=0.5]{diagramas/tiempo_real.png}
   \caption{Ejecucion de una tarea de tiempo real Fuente: \cite{de2000introduccion}}
@@ -139,12 +139,8 @@ Con la presencia de las no linealidades en algunos sistemas de control y que no 
 
 %Explica el propósito de adquisicion de datos en tiempo real
 
-Por otro lado los sistemas de control se caracterizan por ser ejecutados en sistemas operativos en tiempo real, resultando en la necesidad de consideracion de las restricciones temporales para poder ejecutar las actividades de tiempo real con garantia y asegurar que el sistempa operativo tiene un coportamiento predecible. 
+Por otro lado la demanda de plataformas en tiempo real RT para dichos sistemas aumentan cada año, lo cual lleva a trasladar todas estas aplicaciones a SoC de alto rendimiento tomando en cuenta que un manejo eficiente de un RTOS tiene la capacidad de acelerar las diversas tareas de control a nivel de software. También se debe de tomar en cuenta que, resultando en la consideracion de las restricciones temporales para ejecutar las actividades en tiempo real con garantia y asegurar que el sistema operativo tiene un coportamiento predecible. Para garantizar el cumplimento de las restricciones es necesario realizar un analisis de planificabilidad que permita conocer si las restricciones impuestas se van a cumplir en cualquier situación. Esto se realiza en funcion de comoy cuando se toman las decisiones de planificación. Se dividen en dos grupos, Off-Line lo que indica que las decisiones se tomaron en la etapa de diseño y On Line cuando las decisiones se toman durante la ejecución.
 
-
-%Por otro lado un software agnóstico de hardware es un sistema el cual esta diseñado para gestionar y controlar proceso sin depender de un hardware en especial, estos son caracterizados por presentar una compatibilidad con diversos dispositivos lo que permite al usuario final hacer uso del sistema en distintos entornos de hardware sin la necesidad de generar modificaciones significativas al entorno original, también es un sistema el cual se basa en estándares industriales y hace uso de protocolos de comunicación comunes, esto con el fin de facilitar la integración con dispositivos normalizados, permitiendo, de esta forma la configuración de parámetros según el hardware en el cual se ejecute y de esta forma se pretende garantizar que el software optimice su rendimiento según las capacidades de los dispositivos deseados\cite{krainiuk2021oneapi}. 
-
-%Finalmente se debe de tomar en cuenta que una de las peculiaridades de los software agnóstico de hardware es sacar provecho a las cualidades que presentan para la automatización de procesos esto con el fin de programar tareas especificas, toma de decisiones y ajustar la información de salida respecto a una entrada que reciba el sistema, no sin dejar por fuera que implementa una capa de abstracción la cual es encargada de ocultar detalles específicos del hardware, permitiendo al software centrarse solamente en la lógica de control sin importar los detalles del entorno. En síntesis es un sistema el cual busca ser versátil, ínter-operable y fácilmente adaptable a distintos entornos y dispositivos sin requerir modificaciones en el código fuente.
 
 
 \subsection{Síntesis del problema}
