@@ -136,11 +136,11 @@ En el diseño de software del sistema de control, cada uno de los controladores 
 \subsection{Generalidades}
 
 
-
 %Explica el propósito de adquisicion de datos en tiempo real
 
-Las plataformas en tiempo real para control, lo cual lleva a trasladar todas estas aplicaciones a SoC de alto rendimiento tomando en cuenta que un manejo eficiente del entorno en tiempo real tiene la capacidad de acelerar las diversas tareas de control. También se debe de garantizar las restricciones temporales para ejecutar las actividades en tiempo real y asegurar que el sistema operativo tiene un comportamiento predecible. Para garantizar el cumplimiento de las restricciones es necesario realizar un análisis que permita conocer si las restricciones impuestas se van a cumplir en cualquier situación. Esto se realiza en función de como y cuando se toman las decisiones de planificación. Se dividen en dos grupos, Off-Line lo que indica que las decisiones se tomaron en la etapa de diseño y On Line cuando las decisiones se toman durante la ejecución.
+Los sistemas en tiempo real se caracterizan en sistemas críticos y acríticos, los sistemas críticos son en los que las acciones del sistema se deben de producir dentro del plazo de ejecución de la tarea. De no cumplir la tarea en el plazo establecido, ocurren fallos en la operación del sistema y perdida de datos. Se pueden encontrar en sistemas aeronáuticos, control de satélites y procesos industriales. Por otro lado, los sistemas acríticos la perdida o retraso en alguno de los plazos ocasiona que el sistema tenga una degradación durante algunos ciclos de operación, para luego recuperarse y continuar operando de forma normal \cite{de2000introduccion} \cite{alonso2010panoramica}.
 
+Las plataformas en tiempo real para aplicaciones en control automático, se implementan en SoC de alto rendimiento tomando en cuenta que un manejo eficiente del entorno en tiempo real tiene la capacidad de acelerar las diversas tareas de control. También se debe de garantizar las restricciones temporales para ejecutar las actividades en tiempo real y asegurar que el sistema operativo tiene un comportamiento predecible. Para garantizar el cumplimiento de las restricciones es necesario realizar un análisis que permita conocer si las restricciones impuestas se van a cumplir en cualquier situación. Esto se realiza en función de como y cuando se toman las decisiones de planificación. Se dividen en dos grupos, Off-Line lo que indica que las decisiones se tomaron en la etapa de diseño y On Line cuando las decisiones se toman durante la ejecución \cite{munoz1994extensiones} \cite{alonso2010panoramica}.
 
 
 \subsection{Síntesis del problema}
@@ -159,14 +159,14 @@ Con una matriz de Pugh se analizan caminos de solución, con el objetivo de sele
 
 %Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar en tiempo real un sistema de control automático neuronal.
 
-Como primera alternativa, se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal
+Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante un acelerador de hardware. Para esta alternativa se propone el uso de un sistema propietario, un hardware dedicado que funciona con un software propietario para mejorar el rendimiento de tareas\cite{zhao2017hardware} \cite{shi2011vcuda}. Mediante el uso de TPU con el fin de acelerar operaciones de aprendizaje automático. Utilizando estos sistemas se obtiene un rendimiento optimizado, ya que trabajan de forma eficiente y optimizada con el hardware específico, también una integración profunda lo cual facilita el desarrollo, por tanto, tienden a ser sistemas más rápidos, finalmente, los sistemas propietarios en algunos casos proveen soporte del fabricante. Por otro lado, experimentan bloqueos de proveedor, lo que limita la flexibilidad e interoperabilidad de interactuar con otros sistemas \cite{deng2020model} \cite{duato2011enabling}.
 
 \subsection{Alternativa 2}
 
-Como segunda alternativa se propone hacer uso de aprendizaje automático para construir una plataforma de trabajo para un sistema embebido que logre ejecutar en tiempo real un sistema de control automatico neuronal
-
+Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante un acelerador de hardware. En este caso se propone el uso de un sistema abierto, buscando mejorar el rendimiento y la eficiencia de los sistemas mediante la utilización de hardware especializado, pero garantizando que el desarrollo y diseño sea abierto \cite{scarpino2011opencl} \cite{owaida2011massively}. El uso de la TPU permite acelerar las operaciones de aprendizaje automático, el controlador neuronal y mejorar los parámetros de tasa de muestreo, jitter de entrada y jitter de salida. Además, nos permite tener más transparencia al operar con el sistema, tomando en cuenta la flexibilidad del sistema y personalización permitiendo la adaptación del hardware a necesidades específicas y el costo reducido al implementar esta alternativa. Por otro lado, los sistemas abiertos no presentan soporte por parte del fabricante, también no siempre van a proporcionar el mismo nivel de rendimiento que las soluciones propietarias \cite{meyer2020evaluating} \cite{verma2016accelerating}.
 
 \subsection{Alternativa 3}
+Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante aceleración de software, mejorando de esta forma la eficiencia y velocidad de ejecución \cite{galan2000control}. Mediante variables como la optimización de código, paralelización de tareas e implementando técnicas de caché y preprocesamiento. Se podrá tener una respuesta rápida y optimización de recursos. Por otro lado, aspectos como la dificultad de depuración, fallos críticos y limitantes a nivel de hardware son algunas de las desventajas de esta implementación \cite{kim1994software} \cite{razdan1994prisc}.
 
 
 \subsection{Selección de la solución}
@@ -177,34 +177,40 @@ Matriz de pugh que compara las 3 alternativas Cuadro \ref{tab:pugh}.
 % \usepackage[table,xcdraw]{xcolor}
 % Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
 \begin{table}[!h]
+% Please add the following required packages to your document preamble:
+
   \centering
   \caption{Matriz de Pugh para la selección de la solución}
   \label{tab:pugh}
-  \begin{tabular}{lllll}
-    \cline{2-5}
-    \multicolumn{1}{l|}{}                                                             & \multicolumn{1}{l|}{\cellcolor[HTML]{DAE8FC}Peso} & \multicolumn{1}{l|}{\cellcolor[HTML]{DAE8FC}Alternativa 1} & \multicolumn{1}{l|}{\cellcolor[HTML]{DAE8FC}Alternativa 2} & \multicolumn{1}{l|}{\cellcolor[HTML]{DAE8FC}Alternativa 3} \\ \hline
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Criterios}                           & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}}     & \multicolumn{1}{l|}{}                                      & \multicolumn{1}{l|}{}                                      & \multicolumn{1}{l|}{}                                      \\ \hline
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Ejecución en tiempo real}            & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}5}    & \multicolumn{1}{l|}{$=$}                                   & \multicolumn{1}{l|}{0}                                     & \multicolumn{1}{l|}{0}                                     \\ \hline
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Seguridad e integridad de la planta} & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}5}    & \multicolumn{1}{l|}{$=$}                                   & \multicolumn{1}{l|}{0}                                     & \multicolumn{1}{l|}{$-1$}                                  \\ \hline
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Porteabilidad de la solución}        & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}5}    & \multicolumn{1}{l|}{$=$}                                   & \multicolumn{1}{l|}{$+1$}                                  & \multicolumn{1}{l|}{$-1$}                                  \\ \hline
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Ajuste de parametros}                & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}3}    & \multicolumn{1}{l|}{$=$}                                   & \multicolumn{1}{l|}{$+1$}                                  & \multicolumn{1}{l|}{$+1$}                                  \\ \hline
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Tiempo de desarrollo}                & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}2}    & \multicolumn{1}{l|}{$=$}                                   & \multicolumn{1}{l|}{$-1$}                                  & \multicolumn{1}{l|}{$+1$}                                  \\ \hline
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Coste Económico}                     & \multicolumn{1}{l|}{\cellcolor[HTML]{CBCEFB}4}    & \multicolumn{1}{l|}{$=$}                                   & \multicolumn{1}{l|}{$+1$}                                  & \multicolumn{1}{l|}{$-1$}                                  \\ \hline
-                                                                                      &                                                   &                                                            &                                                            &                                                            \\ \cline{1-1} \cline{3-5}
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Suma General}                        & \multicolumn{1}{l|}{}                             & \multicolumn{1}{l|}{0}                                     & \multicolumn{1}{l|}{10}                                    & \multicolumn{1}{l|}{$-9$}                                  \\ \cline{1-1} \cline{3-5}
-    \multicolumn{1}{|l|}{\cellcolor[HTML]{DAE8FC}Posición}                            & \multicolumn{1}{l|}{}                             & \multicolumn{1}{l|}{2}                                     & \multicolumn{1}{l|}{1}                                     & \multicolumn{1}{l|}{3}                                     \\ \cline{1-1} \cline{3-5}
+  \begin{tabular}{ccccc}
+  \cline{2-5}
+  \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\cellcolor[HTML]{DAE8FC}} & \multicolumn{1}{c|}{\cellcolor[HTML]{DAE8FC}} & \multicolumn{1}{c|}{\cellcolor[HTML]{DAE8FC}} & \multicolumn{1}{c|}{\cellcolor[HTML]{DAE8FC}} \\ \cline{1-1}
+  \rowcolor[HTML]{DAE8FC} 
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}Criterios} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{DAE8FC}Peso}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{DAE8FC}Alternativa 1}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{DAE8FC}Alternativa 2}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{DAE8FC}Alternativa 3}} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Transparencia de \\ operación\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}3} & \multicolumn{1}{c|}{-1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{=} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Flexibilidad y\\ Personalización\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}5} & \multicolumn{1}{c|}{-1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{=} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Costo de \\ implementación\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}5} & \multicolumn{1}{c|}{-1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{=} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}Rendimiento} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}5} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{-1} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}Mantenibilidad} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}4} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{-1} & \multicolumn{1}{c|}{-1} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}Innovación} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}5} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{-1} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Porteabilidad de \\ la solución\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}4} & \multicolumn{1}{c|}{-1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{-1} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}Coste Económico} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}3} & \multicolumn{1}{c|}{-1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{=} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Ajuste de \\ parámetros\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}5} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{+1} \\ \hline
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Ejecución en \\ tiempo real\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}5} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{+1} & \multicolumn{1}{c|}{+1} \\ \hline
+  \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \cline{1-1} \cline{3-5} 
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}Suma General} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{36} & \multicolumn{1}{c|}{-8} \\ \cline{1-1} \cline{3-5} 
+  \multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}Posición} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{3} \\ \cline{1-1} \cline{3-5} 
   \end{tabular}
-\end{table}
+  \end{table}
 
 
-Cuando se realiza el análisis de la Matriz de Pugh se puede determinar que en aspectos como lo son ajustes de parámetros o innovación la Alternativa 2 y 3 se encuentran empatadas ya que hay que recordar que lo que difiere entre estas dos opciones es el método de implementación, por un lado en la Alternativa 2 se propone el uso de un software agnóstico de Hardware como base del diseño mientras que en la Alternativa 3 se plantea el uso de un método mas tradicional y dependiente del hardware, eliminando virtudes de la alternativa 2 como lo era la portabilidad de la solución a otros sistemas de control sin importar sobre el hardware que se ejecutara el mismo. Es por esto que criterios como lo fueron el costo económico terminaron de inclinar la balanza por el uso de la Alternativa 2.
-
+Cuando se realiza el análisis de la Matriz de Pugh se puede determinar que en aspectos como lo son ajustes de parámetros o innovación la Alternativa 2 y 3 se encuentran empatadas, ya que hay que recordar que lo que difiere entre estas dos opciones es el método de implementación, por un lado, en la Alternativa 2 se propone el uso de un software agnóstico de Hardware como base del diseño mientras que en la Alternativa 3 se plantea el uso de un método más tradicional y dependiente del hardware, eliminando virtudes de la alternativa 2 como lo era la portabilidad de la solución a otros sistemas de control sin importar sobre el hardware que se ejecutara el mismo. Es por esto que criterios como lo fueron el costo económico terminaron de inclinar la balanza por el uso de la Alternativa 2.
 
 \section{Objetivo General}
 
 Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar en tiempo real un sistema de control automático neuronal.
 
-\textbf{Indicador:} Cumplir al menos un 90 \% de las métricas especificadas en la Cuadro \ref{tab:obj_1}.\newline
+\textbf{Indicador:} Cumplir al menos un 90 \% de las métricas especificadas en el Cuadro \ref{tab:obj_1}.\newline
 \textbf{Entregable:} .
 
 
@@ -215,7 +221,7 @@ Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar e
   \begin{tabular}{|l|}
     \hline
     \rowcolor[HTML]{DAE8FC} 
-    Requerimientos \\ \hline
+    Requisitos \\ \hline
     Latencia menor a 50 ms\\ \hline
     Tasa de éxito de transmisión de al menos un 90\%\\ \hline
     Disponibilidad del sistema de al menos un 85 \% \\ \hline
@@ -235,7 +241,7 @@ Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar e
         \textbf{Indicador:} Se genera una matriz de Pugh con al menos 6 criterios.\newline
         \textbf{Entregable:} Matriz de Pugh con al menos 6 criterios a evaluar del sistema en tiempo real y la plataforma seleccionada.
   \item Implementar la plataforma seleccionada \newline
-        \textbf{Indicador:} Se hace la implementación y se verifica que la misma cumpla con los requerimientos del Cuadro \ref{tab:obj_1}.\newline
+        \textbf{Indicador:} Se hace la implementación y se verifica que la misma cumpla con los requisitos del Cuadro \ref{tab:obj_1}.\newline
         \textbf{Entregable:} El sistema implementado.
   \item Evaluar la plataforma seleccionada \newline
         \textbf{Indicador:} Se evaluan al menos 3 configuraciones del sistema y se utilizan al menos 3 métricas para la evaluación del desempeño de las mismas.\newline
@@ -244,7 +250,7 @@ Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar e
 
 \section{Procedimiento para la ejecución del proyecto}
 
-Sobre la ejecución del proyecto se planifican las actividades de forma jerárquica, en donde se establecen actividades según los objetivos planteados, los requisitos de las actividades y la dependencia que tenga este mismo con alguna actividad previa. Además de esto se definen los tiempos de duración de las actividades las cuales se resumen en la Cuadro \ref{tab:actividades}.
+Sobre la ejecución del proyecto se planifican las actividades de forma jerárquica, en donde se establecen actividades según los objetivos planteados, los requisitos de las actividades y la dependencia que tenga este mismo con alguna actividad previa. Además de esto se definen los tiempos de duración de las actividades las cuales se resumen en el Cuadro \ref{tab:actividades}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
@@ -255,21 +261,25 @@ Sobre la ejecución del proyecto se planifican las actividades de forma jerárqu
   \begin{tabular}{|c|l|l|l|}
     \hline
     Objetivo                                                                                                                                                                  & Actividad                                                                                                                      & Tiempo en días & Dependencias \\ \hline
-    \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}1.Investigar acerca de \\ plataformas que \\ garantizen que el análisis \\ de los datos \\ se dé en tiempo real.\end{tabular}} & \begin{tabular}[c]{@{}l@{}}1.1 Investigar sobre \\ sistemas en tiempo \\ real.\end{tabular}                                    & 10             &              \\ \cline{2-4}
-                                                                                                                                                                              & \begin{tabular}[c]{@{}l@{}}1.2 Investigar sobre \\ análisis de datos en \\ tiempo real.\end{tabular}                           & 10             & 1.1          \\ \cline{2-4}
+    \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}} 1.Investigar acerca de \\ plataformas que \\ garantizen que el análisis \\ de los datos \\ se dé en tiempo real.\end{tabular}} & \begin{tabular}[c]{@{}l@{}}1.1 Investigar sobre \\ sistemas en tiempo \\ real.\end{tabular}                                    & 5            &              \\ \cline{2-4}
+                                                                                                                                                                              & \begin{tabular}[c]{@{}l@{}}1.2 Investigar sobre \\ análisis de datos en \\ tiempo real.\end{tabular}                           & 5             & 1.1          \\ \cline{2-4}
                                                                                                                                                                               & \begin{tabular}[c]{@{}l@{}}1.3 Definir los criterios \\ del sistema de tiempo \\ real.\end{tabular}                            & 5              & 1.2          \\ \cline{2-4}
-                                                                                                                                                                              & \begin{tabular}[c]{@{}l@{}}1.4 Elección del\\ sistema.\end{tabular}                                               & 8              & 1.3          \\ \hline
+                                                                                                                                                                              & \begin{tabular}[c]{@{}l@{}}1.4 Elección del\\ sistema.\\ del sistema de tiempo \\ real.\end{tabular}                            & 8              & 1.2          \\ \cline{2-4}
+                                                                                                                                                                              & \begin{tabular}[c]{@{}l@{}}1.5 Documentación de los datos \end{tabular}                                                         & 8              & 1.4          \\ \hline
     \multicolumn{1}{|l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}2. Implementar la plataforma \\ seleccionada.\end{tabular}}}                                              & \begin{tabular}[c]{@{}l@{}}2.1 Implementación del \\ sistema seleccionado.\end{tabular}                                        & 15             & 1.4          \\ \cline{2-4}
-    \multicolumn{1}{|l|}{}                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}2.2 Evaluación de los \\ parametros seleccionados\\  en el sistema.\end{tabular}                    & 10             & 2.1          \\ \hline
-    \multicolumn{1}{|l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}3. Evaluar la plataforma \\ seleccionada\end{tabular}}}                                                   & \begin{tabular}[c]{@{}l@{}}3.1 Evaluación de las \\ configuraciones del \\ sistema.\end{tabular}                               & 15             & 2.2          \\ \cline{2-4}
-    \multicolumn{1}{|l|}{}                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}3.2 Evaluación del \\ desempeño del sistema \\ mediante las métricas \\ seleccionadas.\end{tabular} & 12             & 3.1          \\ \hline
+    \multicolumn{1}{|l|}{}                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}2.2 Evaluación de los \\ parametros seleccionados\\  en el sistema.\end{tabular}                    & 8             & 2.1          \\ \cline{2-4}
+    \multicolumn{1}{|l|}{}                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}2.3 Documentación de los datos.\end{tabular}                    & 8             & 2.2          \\ \hline
+    \multicolumn{1}{|l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}3. Evaluar la plataforma \\ seleccionada\end{tabular}}}                                                   & \begin{tabular}[c]{@{}l@{}}3.1 Evaluación de las \\ configuraciones del \\ sistema.\end{tabular}                               & 10            & 2.2          \\ \cline{2-4}
+    \multicolumn{1}{|l|}{}                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}3.2 Evaluación del \\ desempeño del sistema \\ mediante las métricas \\ seleccionadas.\end{tabular} & 5            & 3.2          \\ \cline{2-4}
+    \multicolumn{1}{|l|}{}                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}3.3 Documentación de los datos. \end{tabular} & 5            & 3.1          \\ \hline    
   \end{tabular}
 \end{table}
 
 
 \section{Cronograma de actividades}
 
-La agenda de actividades según el tiempo asignado comprende desde el  5 de Febrero del 2024 hasta el 25 de Mayo del 2024, tiempo el cual abarca 16 semanas lectivas en las cuales se llevara a cabo el desarrollo del proyecto. Por un lado el cronograma se presenta como un diagrama de Gantt. El mismo ilustra en la Figura \ref{fig:gantt}. Por otro lado en la Figura \ref{fig:pert} se muestra el diagrama de PERT con las dependencias entre actividades.
+La agenda de actividades según el tiempo asignado comprende desde el  5 de febrero del 2024 hasta el 25 de mayo del 2024, tiempo el cual abarca 16 semanas lectivas en las cuales se llevara a cabo el desarrollo del proyecto. Por un lado, el cronograma se presenta como un diagrama de Gantt. El mismo ilustra en la Figura \ref{fig:gantt}. Por otro lado, en la Figura \ref{fig:pert} se muestra el diagrama de PERT con las dependencias entre actividades.
+
 \newpage
 
 \begin{figure}
@@ -289,7 +299,7 @@ La agenda de actividades según el tiempo asignado comprende desde el  5 de Febr
 
 \subsection{Entregables}
 
-Como se puede observar en la Cuadro \ref{tab:entregables} se encuentra una lista de los entregables con sus objetivos y fechas de entrega establecidas en el periodo donde se llevara a cabo el trabajo final de graduación.
+Como se puede observar en el Cuadro \ref{tab:entregables} se encuentra una lista de los entregables con sus objetivos y fechas de entrega establecidas en el periodo donde se llevara a cabo el trabajo final de graduación.
 
 \begin{table}[ht]
   \centering
@@ -298,10 +308,10 @@ Como se puede observar en la Cuadro \ref{tab:entregables} se encuentra una lista
   \begin{tabular}{|l|l|l|}
     \hline
     Objetivo         & Entregable                                                                                                                                                                & Fecha de entrega \\ \hline
-    Específico 1     & \begin{tabular}[c]{@{}l@{}}Matriz de pugh con al menos \\ 6 criterios a evaluar del sistema \\ en tiempo real y el sistema \\ seleccionado.\end{tabular}                  &                  \\ \hline
-    Específico 2     & El sistema implementado                                                                                                                                                   &                  \\ \hline
-    Específico 3     & \begin{tabular}[c]{@{}l@{}}Métricas de calidad en donde \\ se define cual confuiguración \\ es mejor según la métrica \\ seleccionada.\end{tabular}                       &                  \\ \hline
-    Objetivo general & \begin{tabular}[c]{@{}l@{}}Plataforma de trabajo en tiempo\\ real para un sistema embebido\\ que logre ejecutar un sistema de \\ control automático neuronal\end{tabular} &                  \\ \hline
+    Específico 1     & \begin{tabular}[c]{@{}l@{}}Matriz de pugh con al menos \\ 6 criterios a evaluar del sistema \\ en tiempo real y el sistema \\ seleccionado.\end{tabular}                  &   25/3/2024       \\ \hline
+    Específico 2     & El sistema implementado                                                                                                                                                   &   7/5/2024      \\ \hline
+    Específico 3     & \begin{tabular}[c]{@{}l@{}}Métricas de calidad en donde \\ se define cual confuiguración \\ es mejor según la métrica \\ seleccionada.\end{tabular}                       &   21/5/2024      \\ \hline
+    Objetivo general & \begin{tabular}[c]{@{}l@{}}Plataforma de trabajo en tiempo\\ real para un sistema embebido\\ que logre ejecutar un sistema de \\ control automático neuronal\end{tabular} &   4/6/2024      \\ \hline
   \end{tabular}
 \end{table}
 
