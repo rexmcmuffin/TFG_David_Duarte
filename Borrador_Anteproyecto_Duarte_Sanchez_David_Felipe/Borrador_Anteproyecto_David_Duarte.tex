@@ -85,12 +85,12 @@
 \par
 \vspace{16cm} % Ajusta la cantidad de espacio vertical según sea necesario
 
-Yo, David Duarte Sanchez portador de la cédula 305070982, declaro que los resultados obtenidos en el presente trabajo de investigación, previo a la obtención del titulo de Licenciado en Ingeniería en Electrónica, son absolutamente originales, auténticos y personales.
+Yo, David Duarte Sánchez portador de la cédula 305070982, declaro que los resultados obtenidos en el presente trabajo de investigación, previo a la obtención del título de Licenciado en Ingeniería en Electrónica, son absolutamente originales, auténticos y personales.
 
 Soy consciente de que el hecho de no respetar los derechos de autor y realizar una mala conducta científica; es decir, fabricación de datos falsos y plagio, conlleva
 sanciones universitarias y/o legales.
 
-En tal virtud, declaro que el trabajo de investigación realizado sujeto a evaluación no ha sido presentado anteriormente para obtener algún grado académico o título, ni ha sido publicado en sitio alguno y los efectos legales y académicos que se puedan derivar del trabajo propuesto de investigación son y serán de mi sola y exclusiva responsabilidad legal y académica.
+En tal virtud, declaro que el trabajo de investigación realizado sujeto a evaluación no ha sido presentado anteriormente para obtener algún grado académico o título, ni ha sido publicado en sitio alguno y los efectos legales y académicos que se puedan derivar del trabajo propuesto de investigación son y serán de mí sola y exclusiva responsabilidad legal y académica.
 
 \newpage
 %\renewcommand{\contentsname}{Contenidos} commenting due babel integration
@@ -103,9 +103,9 @@ En tal virtud, declaro que el trabajo de investigación realizado sujeto a evalu
 El laboratorio de procesamiento de señales e imágenes SIPLab de la Escuela de Electrónica, se enfoca en la solución de problemas de ámbito nacional y regional relacionados con el procesamiento y reconocimiento de información, transportada en señales temporales y espaciales. De momento se trabaja en un proyecto de aplicación del aprendizaje automático en tareas de control automático  \cite{SIPLab} \cite{13_se}.
 
 %La tesis de Jorge Brenes 
-Un antecedente a este proyecto realizó un modelo sustituto neuronal para una planta real y actualmente se está diseñando un modelo de control por inteligencia artificial que debe ejecutarse en tiempo real. Este proyecto pretende proponer el sistema que de soporte a todo el concepto, de modo que los subsistemas se comuniquen y actúen en tiempo real, bajo consideración de los requisitos que imponga el sistema de control junto a la planta a controlar. 
+Un antecedente a este proyecto realizó un modelo sustituto neuronal para una planta real y actualmente se está diseñando un modelo de control por inteligencia artificial que debe ejecutarse en tiempo real. Este proyecto pretende proponer el sistema que dé soporte a todo el concepto, de modo que los subsistemas se comuniquen y actúen en tiempo real, bajo consideración de los requisitos que imponga el sistema de control junto a la planta a controlar. 
 
-Los sistemas en tiempo real, son sistemas en los que la respuesta de la aplicación ante estímulos externos debe realizarse dentro de un plazo de tiempo establecido. La predictibilidad del tiempo de respuesta determina si el sistema será capaz de ofrecer una respuesta correcta ante la llegada de un estímulo en un tiempo acotado, esto permite conocer a priori cuál va a ser el comportamiento del sistema en las peores condiciones y de esta forma realizar un análisis de tiempos de respuesta del sistema \cite{alonso2010panoramica}. En la Figura \ref{fig:diagrama_tiempo_real}, se observa un diagrama descriptivo de la ejecución de una tarea en un sistema de tiempo real. En donde se observan atributos temporales como: activación y plazo de respuesta\cite{de2000introduccion}.
+Los sistemas en tiempo real, son sistemas en los que la respuesta de la aplicación ante estímulos externos debe realizarse dentro de un plazo de tiempo establecido. La predictibilidad del tiempo de respuesta determina si el sistema será capaz de ofrecer una respuesta correcta ante la llegada de un estímulo en un tiempo acotado. Esto permite conocer a priori cuál va a ser el comportamiento del sistema en las peores condiciones y de esta forma realizar un análisis de tiempos de respuesta del sistema \cite{alonso2010panoramica}. En la Figura \ref{fig:diagrama_tiempo_real}, se observa un diagrama descriptivo de la ejecución de una tarea en un sistema de tiempo real, en donde se observan atributos temporales como: activación y plazo de respuesta\cite{de2000introduccion}.
 
 %algunas metricas utilizadas
 
@@ -113,7 +113,7 @@ En el diseño de software del sistema de control, cada uno de los controladores 
 
 
 \textbf{Periodo}: Cada periodo de una tarea es una secuencia de activaciones que se cumplen en un intervalo de tiempo.\\
-\textbf{Plazo de entrega}:  Intervalo de tiempo máximo que puede transcurrir desde el instante de activación y la finalización del proceso. Normalmente, es igual al periodo, cada tarea debe de finalizar la ejecución antes de iniciar el siguiente periodo. \\
+\textbf{Plazo de entrega}:  Intervalo de tiempo máximo que puede transcurrir desde el instante de activación y la finalización del proceso. Normalmente, es igual al periodo. Cada tarea debe de finalizar la ejecución antes de iniciar el siguiente periodo. \\
 \textbf{Desfase inicial}: Desfase entre el inicio de la primera activación respecto al tiempo de inicio.\\
 \textbf{Tiempo de procesamiento}: Tiempo necesario para completar la ejecución de cada una de las activaciones. Depende de la complejidad del algoritmo de control y la velocidad del procesador. La ejecución puede variar entre dos límites, mínimo y máximo, el límite máximo es el tiempo de peor caso y será el empleado en el análisis de planificabilidad.\\
 \textbf{Retardo de inicio} : Tiempo en el que la actividad comienza a ser ejecutada. Es determinado por el sistema de ejecución y por las decisiones del planificador. Recibe el nombre de Jitter de entrada\\
@@ -135,17 +135,18 @@ En el diseño de software del sistema de control, cada uno de los controladores 
 
 \subsection{Generalidades}
 
+Los sistemas en tiempo real son sistemas diseñados para procesar eventos dentro de límites temporales, cumpliendo restricciones definidas. Implican tiempos de respuesta predecibles y deterministas para las tareas del sistema. Emplean algoritmos de planificación de CPU de tiempo real que asignan los recursos de forma óptima. La gestión eficiente de eventos y la sincronización de tareas son aspectos críticos, mientras que la fiabilidad y disponibilidad del sistema se aseguran mediante mecanismos de recuperación de errores y redundancia de hardware y software \cite{de2000introduccion}.
 
-%Explica el propósito de adquisicion de datos en tiempo real
+Estos sistemas se dividen en sistemas críticos y acríticos. Los sistemas críticos son aquellos en los que las acciones del sistema se deben de producir dentro del plazo de ejecución de la tarea. De no cumplir la tarea en el plazo establecido, ocurren fallos en la operación del sistema y perdida de datos. Se pueden encontrar en sistemas aeronáuticos, control de satélites y procesos industriales. Por otro lado, en los sistemas acríticos la perdida o retraso en alguno de los plazos ocasiona que el sistema tenga una degradación durante algunos ciclos de operación, para luego recuperarse y continuar operando de forma normal \cite{de2000introduccion} \cite{alonso2010panoramica}.
 
-Los sistemas en tiempo real se caracterizan en sistemas críticos y acríticos, los sistemas críticos son en los que las acciones del sistema se deben de producir dentro del plazo de ejecución de la tarea. De no cumplir la tarea en el plazo establecido, ocurren fallos en la operación del sistema y perdida de datos. Se pueden encontrar en sistemas aeronáuticos, control de satélites y procesos industriales. Por otro lado, los sistemas acríticos la perdida o retraso en alguno de los plazos ocasiona que el sistema tenga una degradación durante algunos ciclos de operación, para luego recuperarse y continuar operando de forma normal \cite{de2000introduccion} \cite{alonso2010panoramica}.
+Por otro lado, los sistemas en tiempo real son aplicados en el control automático por la capacidad de procesar información y responder en un instante definido ante cambios en el entorno o condiciones del sistema. En aplicaciones donde la rapidez y precisión son esenciales, estos sistemas garantizan  una supervisión y regulación continua y efectiva. Su capacidad en la toma de decisiones en tiempo real no solo mejora la eficiencia operativa, si no, también disminuye el riesgo de fallos y errores contribuyendo a la seguridad del sistema \cite{munoz1994extensiones}. 
 
-Las plataformas en tiempo real para aplicaciones en control automático, se implementan en SoC de alto rendimiento tomando en cuenta que un manejo eficiente del entorno en tiempo real tiene la capacidad de acelerar las diversas tareas de control. También se debe de garantizar las restricciones temporales para ejecutar las actividades en tiempo real y asegurar que el sistema operativo tiene un comportamiento predecible. Para garantizar el cumplimiento de las restricciones es necesario realizar un análisis que permita conocer si las restricciones impuestas se van a cumplir en cualquier situación. Esto se realiza en función de como y cuando se toman las decisiones de planificación. Se dividen en dos grupos, Off-Line lo que indica que las decisiones se tomaron en la etapa de diseño y On Line cuando las decisiones se toman durante la ejecución \cite{munoz1994extensiones} \cite{alonso2010panoramica}.
+Las plataformas en tiempo real para aplicaciones en control automático, se implementan en SoC de alto rendimiento tomando en cuenta que un manejo eficiente del entorno en tiempo real tiene la capacidad de acelerar las diversas tareas de control. También se debe garantizar las restricciones temporales para ejecutar las actividades en tiempo real y asegurar que el sistema operativo tengan un comportamiento predecible. Para garantizar el cumplimiento de las restricciones es necesario realizar un análisis que permita conocer si las restricciones impuestas se van a cumplir en cualquier situación. Esto se realiza en función de como y cuando se toman las decisiones de planificación. Se dividen en dos grupos, Off-Line lo que indica que las decisiones se tomaron en la etapa de diseño y On Line cuando las decisiones se toman durante la ejecución \cite{munoz1994extensiones} \cite{alonso2010panoramica}.
 
 
 \subsection{Síntesis del problema}
 
-El SIPLab no cuenta con un marco de trabajo que permita ejecutar controladores neuronales en tiempo real de sistemas embebidos heterogéneos, que sea configurable y que cuente con mecanismos de medición de su desempeño.
+El SIPLab no cuenta con un marco de trabajo que permita ejecutar controladores neuronales en tiempo real sobre sistemas embebidos heterogéneos, que sea configurable y que cuente con mecanismos de medición de su desempeño.
 
 
 \section{Enfoque de la solución}
@@ -159,14 +160,14 @@ Con una matriz de Pugh se analizan caminos de solución, con el objetivo de sele
 
 %Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar en tiempo real un sistema de control automático neuronal.
 
-Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante un acelerador de hardware. Para esta alternativa se propone el uso de un sistema propietario, un hardware dedicado que funciona con un software propietario para mejorar el rendimiento de tareas\cite{zhao2017hardware} \cite{shi2011vcuda}. Mediante el uso de TPU con el fin de acelerar operaciones de aprendizaje automático. Utilizando estos sistemas se obtiene un rendimiento optimizado, ya que trabajan de forma eficiente y optimizada con el hardware específico, también una integración profunda lo cual facilita el desarrollo, por tanto, tienden a ser sistemas más rápidos, finalmente, los sistemas propietarios en algunos casos proveen soporte del fabricante. Por otro lado, experimentan bloqueos de proveedor, lo que limita la flexibilidad e interoperabilidad de interactuar con otros sistemas \cite{deng2020model} \cite{duato2011enabling}.
+Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante un acelerador de hardware. Para esta alternativa se propone el uso de un sistema propietario, un hardware dedicado que funciona con un software propietario para mejorar el rendimiento de tareas\cite{zhao2017hardware} \cite{shi2011vcuda}, Mediante el uso de tensor processor units con el fin de acelerar operaciones de aprendizaje automático. Utilizando estos sistemas se obtiene un rendimiento optimizado, ya que trabajan de forma eficiente y optimizada con el hardware específico, también una integración profunda lo cual facilita el desarrollo, por tanto, tienden a ser sistemas más rápidos, finalmente, los sistemas propietarios en algunos casos proveen soporte del fabricante. Por otro lado, experimentan bloqueos de proveedor, lo que limita la flexibilidad e interoperabilidad de interactuar con otros sistemas \cite{deng2020model} \cite{duato2011enabling}.
 
 \subsection{Alternativa 2}
 
-Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante un acelerador de hardware. En este caso se propone el uso de un sistema abierto, buscando mejorar el rendimiento y la eficiencia de los sistemas mediante la utilización de hardware especializado, pero garantizando que el desarrollo y diseño sea abierto \cite{scarpino2011opencl} \cite{owaida2011massively}. El uso de la TPU permite acelerar las operaciones de aprendizaje automático, el controlador neuronal y mejorar los parámetros de tasa de muestreo, jitter de entrada y jitter de salida. Además, nos permite tener más transparencia al operar con el sistema, tomando en cuenta la flexibilidad del sistema y personalización permitiendo la adaptación del hardware a necesidades específicas y el costo reducido al implementar esta alternativa. Por otro lado, los sistemas abiertos no presentan soporte por parte del fabricante, también no siempre van a proporcionar el mismo nivel de rendimiento que las soluciones propietarias \cite{meyer2020evaluating} \cite{verma2016accelerating}.
+Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante un acelerador de hardware. En este caso se propone el uso de un sistema abierto, buscando mejorar el rendimiento y la eficiencia de los sistemas mediante la utilización de hardware especializado, pero garantizando que el desarrollo y diseño sea abierto \cite{scarpino2011opencl} \cite{owaida2011massively}. El uso de las tensor processor units permite acelerar las operaciones de aprendizaje automático, el controlador neuronal y mejorar los parámetros de tasa de muestreo, jitter de entrada y jitter de salida. Además, permite tener más transparencia al operar con el sistema, tomando en cuenta la flexibilidad del sistema y personalización permitiendo la adaptación del hardware a necesidades específicas y el costo reducido al implementar esta alternativa. Por otro lado, los sistemas abiertos no presentan soporte por parte del fabricante, también no siempre van a proporcionar el mismo nivel de rendimiento que las soluciones propietarias \cite{meyer2020evaluating} \cite{verma2016accelerating}.
 
 \subsection{Alternativa 3}
-Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante aceleración de software, mejorando de esta forma la eficiencia y velocidad de ejecución \cite{galan2000control}. Mediante variables como la optimización de código, paralelización de tareas e implementando técnicas de caché y preprocesamiento. Se podrá tener una respuesta rápida y optimización de recursos. Por otro lado, aspectos como la dificultad de depuración, fallos críticos y limitantes a nivel de hardware son algunas de las desventajas de esta implementación \cite{kim1994software} \cite{razdan1994prisc}.
+Se plantea el diseño de una plataforma de trabajo para un sistema embebido, que logre ejecutar en tiempo real, un sistema de control automático neuronal mediante aceleración de software, mejorando de esta forma la eficiencia y velocidad de ejecución \cite{galan2000control}. Mediante variables como la optimización de código, paralelización de tareas e implementando técnicas de caché y preprocesamiento. Se podrá tener una respuesta rápida y optimización de recursos. Por otro lado, aspectos como fallos críticos y limitantes a nivel de hardware son algunas de las desventajas de esta implementación \cite{kim1994software} \cite{razdan1994prisc}.
 
 
 \subsection{Selección de la solución}
@@ -225,9 +226,8 @@ Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar e
     Latencia menor a 50 ms\\ \hline
     Tasa de éxito de transmisión de al menos un 90\%\\ \hline
     Disponibilidad del sistema de al menos un 85 \% \\ \hline
-    Escalabilidad del sistema \\ \hline
-    Confiabilidad (un tiempo medio entre fallos \\ mayor a 5000 horas) \\ \hline
-    Presición de los datos (Error absoluto medio MAE del 5\%)\\ \hline
+    Confiabilidad (un tiempo medio entre fallos \\ mayor a 50 horas) \\ \hline
+    Precisión de los datos (Error absoluto medio MAE del 5\%)\\ \hline
     Saturacion del sistema no mayor al 90\% \\ \hline
     Tiempo de procesamiento menor o igual a \\ 20ms por muestra recibida\\ \hline
     Jitter menor a 5ms \\ \hline
@@ -239,9 +239,9 @@ Diseñar una plataforma de trabajo para un sistema embebido que logre ejecutar e
 \begin{enumerate}
   \item Investigar acerca de plataformas que garantizen que el análisis de los datos se de en tiempo real. \newline
         \textbf{Indicador:} Se genera una matriz de Pugh con al menos 6 criterios.\newline
-        \textbf{Entregable:} Matriz de Pugh con al menos 6 criterios a evaluar del sistema en tiempo real y la plataforma seleccionada.
+        \textbf{Entregable:} Matriz de Pugh con al menos 6 criterios a evaluar y la plataforma seleccionada.
   \item Implementar la plataforma seleccionada \newline
-        \textbf{Indicador:} Se hace la implementación y se verifica que la misma cumpla con los requisitos del Cuadro \ref{tab:obj_1}.\newline
+        \textbf{Indicador:} Plataforma cumple con los requisitos del Cuadro \ref{tab:obj_1}.\newline
         \textbf{Entregable:} El sistema implementado.
   \item Evaluar la plataforma seleccionada \newline
         \textbf{Indicador:} Se evaluan al menos 3 configuraciones del sistema y se utilizan al menos 3 métricas para la evaluación del desempeño de las mismas.\newline
@@ -258,10 +258,10 @@ Sobre la ejecución del proyecto se planifican las actividades de forma jerárqu
   \centering
   \caption{Procedimiento para la ejecución del proyecto}
   \label{tab:actividades}
-  \begin{tabular}{|c|l|l|l|}
+  \begin{tabular}{|c|c|c|c|}
     \hline
     Objetivo                                                                                                                                                                  & Actividad                                                                                                                      & Tiempo en días & Dependencias \\ \hline
-    \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}} 1.Investigar acerca de \\ plataformas que \\ garantizen que el análisis \\ de los datos \\ se dé en tiempo real.\end{tabular}} & \begin{tabular}[c]{@{}l@{}}1.1 Investigar sobre \\ sistemas en tiempo \\ real.\end{tabular}                                    & 5            &              \\ \cline{2-4}
+    \multirow{4}{*}{\begin{tabular}[c]{@{}l@{}} 1.Investigar acerca de \\ plataformas que \\ garantizen que el análisis \\ de los datos \\ se dé en tiempo real.\end{tabular}} & \begin{tabular}[c]{@{}l@{}}1.1 Investigar sobre \\ sistemas en tiempo \\ real.\end{tabular}                                    & 5            &              \\ \cline{2-4}
                                                                                                                                                                               & \begin{tabular}[c]{@{}l@{}}1.2 Investigar sobre \\ análisis de datos en \\ tiempo real.\end{tabular}                           & 5             & 1.1          \\ \cline{2-4}
                                                                                                                                                                               & \begin{tabular}[c]{@{}l@{}}1.3 Definir los criterios \\ del sistema de tiempo \\ real.\end{tabular}                            & 5              & 1.2          \\ \cline{2-4}
                                                                                                                                                                               & \begin{tabular}[c]{@{}l@{}}1.4 Elección del\\ sistema.\\ del sistema de tiempo \\ real.\end{tabular}                            & 8              & 1.2          \\ \cline{2-4}
@@ -308,9 +308,9 @@ Como se puede observar en el Cuadro \ref{tab:entregables} se encuentra una lista
   \begin{tabular}{|l|l|l|}
     \hline
     Objetivo         & Entregable                                                                                                                                                                & Fecha de entrega \\ \hline
-    Específico 1     & \begin{tabular}[c]{@{}l@{}}Matriz de pugh con al menos \\ 6 criterios a evaluar del sistema \\ en tiempo real y el sistema \\ seleccionado.\end{tabular}                  &   25/3/2024       \\ \hline
+    Específico 1     & \begin{tabular}[c]{@{}l@{}}Matriz de Pugh con al menos \\ 6 criterios a evaluar del sistema \\ en tiempo real y el sistema \\ seleccionado.\end{tabular}                  &   25/3/2024       \\ \hline
     Específico 2     & El sistema implementado                                                                                                                                                   &   7/5/2024      \\ \hline
-    Específico 3     & \begin{tabular}[c]{@{}l@{}}Métricas de calidad en donde \\ se define cual confuiguración \\ es mejor según la métrica \\ seleccionada.\end{tabular}                       &   21/5/2024      \\ \hline
+    Específico 3     & \begin{tabular}[c]{@{}l@{}}Métricas de calidad en donde \\ se define cuál confuiguración \\ es mejor según la métrica \\ seleccionada.\end{tabular}                       &   21/5/2024      \\ \hline
     Objetivo general & \begin{tabular}[c]{@{}l@{}}Plataforma de trabajo en tiempo\\ real para un sistema embebido\\ que logre ejecutar un sistema de \\ control automático neuronal\end{tabular} &   4/6/2024      \\ \hline
   \end{tabular}
 \end{table}
