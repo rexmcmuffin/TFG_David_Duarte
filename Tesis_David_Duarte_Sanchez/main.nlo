@@ -1,0 +1,12 @@
+\nomenclatureentry{Gt$\sys {\cdot }$@[{$\sys {\cdot }$}]\begingroup Transformación realizada por un sistema.\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{Gyscalar$y$@[{$y$}]\begingroup Escalar.\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{Gzconjugado$\conj {z}$@[{$\conj {z}$}]\begingroup Complejo conjugado de $z$.\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{Grcomplexreal$\Re (z)$ o $z_{\Re }$@[{$\Re (z)$ o $z_{\Re }$}]\begingroup Parte real del número complejo $z$.\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{Gicompleximag$\Im (z)$ o $z_{\Im }$@[{$\Im (z)$ o $z_{\Im }$}]\begingroup Parte imaginaria del número complejo $z$.\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{Gjimaginario$j$@[{$j$}]\begingroup $j=\sqrt {-1}$.\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{Gxvector$\vct {x}$@[{$\vct {x}$}]\begingroup Vector. \newline \hspace {1mm}$\vct {x}=\left [ x_1 \; x_2 \; \ldots \; x_n \right ]^T = \begin {bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end {bmatrix}$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{Gmmatrix$\mat {A}$@[{$\mat {A}$}]\begingroup Matriz. \newline \hspace {1mm}$\mat {A} = \begin {bmatrix} a_{11} & a_{12} & \cdots & a_{1m}\\ a_{21} & a_{22} & \cdots & a_{2m}\\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nm}\\ \end {bmatrix}$\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{GC$\setC $@[{$\setC $}]\begingroup Conjunto de los números complejos.\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{APCA@[{PCA}]\begingroup Análisis de componentes principales\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AWSN@[{WSN}]\begingroup Redes Inalámbricas de Sensores\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{AASM@[{ASM}]\begingroup Modelos Activos de Forma\nomeqref {0}|nompageref}{1}

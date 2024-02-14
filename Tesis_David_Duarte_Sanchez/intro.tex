@@ -1,0 +1,175 @@
+%% ---------------------------------------------------------------------------
+%% intro.tex
+%%
+%% Introduction
+%%
+%% $Id: intro.tex 1477 2010-07-28 21:34:43Z palvarado $
+%% ---------------------------------------------------------------------------
+
+\chapter{Introducción}
+\label{chp:intro}
+
+En la \nt{introducción} deben quedar completamente claros los siguientes
+aspectos, cuyo significado depende del tipo concreto de tesis:
+
+\begin{compactitem}
+\item Contexto
+\item Antecedentes
+\item Problema concreto
+\item Esbozo de solución
+\item Objetivos y estructura
+\end{compactitem}
+
+Una buena introducción debe lograr que el lector tenga interés de leer el resto
+del tesis.
+
+Es recomendable dividir la tesis en secciones, nombradas cada una de acuerdo a
+su contenido. \textbf{Jamás} utilice los nombres de la guía como
+``\emph{Problema existente e importancia de su solución}'', sino algo como ``La
+deforestación en Costa Rica'' o lo que se adecúe a su problema en particular.
+
+Recuerde que en español solo la primera letra del título va en mayúscula
+(exceptuando nombres propios, por supuesto).
+%
+Algunos recursos adicionales a esta guía los encuentra en \cite{AlvaradoWeb}.
+
+
+\section{El cambio climático y la electrónica}
+\label{sec:contexto}
+
+El contexto corresponde al entorno donde se desarrolla el proyecto de
+tesis, que puede ser el área general de aplicación, un dominio de
+problemas, etc.
+
+De nuevo, no use un título genérico como ``Contexto'', sino algo
+asociado directamente a su trabajo.
+
+
+\section{Antecedentes}
+
+Si su proyecto se circunscribe en otro proyecto mayor, en el que han
+participado otros estudiantes de grado y postgrados, y ya existen
+tesis o artículos publicados, en esta sección se hace una breve reseña
+de esos trabajos previos, con el objetivo de contextualizar en dónde
+calza concretamente el trabajo actual dentro de ese otro proyecto
+mayor.  Por ejemplo, Fulano en~\cite{Fulano21} exploró si un diodo
+puede funcionar como fuente de energía infinita, hipótesis que no
+logró comprobar.
+
+En proyectos relativamente aislados, no es necesaria esta sección.
+
+Dependiendo de cada trabajo concreto, esta sección puede desplazarse a
+otro lugar dentro de la introducción donde tenga más sentido, pero
+usualmente se encuentra aquí justo antes de presentar el problema
+técnico concreto tratado en su proyecto.
+
+\section{La disipación de energía en el reactor 42}
+
+En esta sección usted debe exponer su problema concreto.  Debe enlazar
+el contexto general, expuesto en las secciones anteriores, con el
+problema concreto que este trabajo resuelve.
+
+Al final de esta sección, el problema concreto se sintetiza usualmente
+en una frase de planteamiento del problema de ingeniería o pregunta
+generadora de la investigación de ingeniería. Esta frase o pregunta
+debería ser una consecuencia a la que se llega después de realizar el
+desarrollo del contexto.  Si el problema es de caracter científico,
+aquí puede plantearse la hipótesis de la investigación científica.
+
+Del planteamiento del problema se deriva cuál es el objetivo del
+trabajo en particular, que a su vez debe conducir al lector de forma
+natural al esbozo de la solución del problema a tratar en este
+informe.
+
+\section{Sistema de almacenamiento energético}
+
+Después de las secciones anteriores ya ha guiado al lector hasta este
+punto en donde solo resta presentar una propuesta general de solución
+del problema técnico concreto.
+
+Para aclarar la solución se hace uso de un diagrama de bloques (ver
+\figref{fig:diagbloques}) o diagrama de flujo general, es decir,
+desde un nivel de abstracción muy alto, donde no sea necesario entrar
+en detalles técnicos, porque aun no han sido expuestos.
+
+\begin{figure}[htb]
+
+  %% Este es un ejemplo de figura TIKZ incrustada directamente
+  %% en el la figura, pero es muchísimo más recomendable poner este
+  %% código, tal y como se explica en el siguiente capítulo, en un archivo
+  %% aparte.  Como archivo aparte se puede compilar la figura una sola vez
+  %% para que quede disponible en el directorio fig/.  Eso es más rápido de
+  %% compilar posteriormente.
+  %%
+  %%
+  %% Se coloca este ejemplo aquí porque muchas personas están usando
+  %% Overleaf, y allí puede tener sentido tener las figuras
+  %% directamente en el código del informe, aunque esto tardará más en
+  %% compilar e incluso puede llevar a Overleaf a pasarse del tiempo
+  %% disponible.
+  
+  \centering
+  \tikzstyle{block} = [draw, rectangle, inner sep=6pt]
+  \begin{tikzpicture}[>=latex,auto,node distance=2cm]
+    \node [block](system) {Sistema};
+    \node [coordinate, left=of system] (infork) {};
+    \node [coordinate, left=of infork] (input) {};
+    \node [coordinate, right=of system] (outfork) {};
+    \node [coordinate, right=of outfork] (output) {};
+    \node [block, below=of system] (storage) {Almacenamiento};
+
+    \node [block, dashed, fill=gray, anchor=center, text width=7cm, align=center] at ($(system)!.5!(storage)$) {Conversión};
+
+    % Connect nodes
+    \draw [->] (input) -- node {$E_i$} (system);
+    \draw [->] (system) -- node {$E_o$} (output);
+    \draw [->] (storage) -| (outfork);
+    \draw [->] (infork) |- (storage);
+  \end{tikzpicture}
+  \caption[Diagrama de bloques.]{Diagrama de bloques del sistema
+    propuesto de almacenamiento energético, como ejemplo de código
+    TikZ insertado directamente en el texto (ver archivo
+    \code{intro.tex}, línea \number\inputlineno).}
+  \label{fig:diagbloques}
+\end{figure}
+
+Nótese que un diagrama de bloques es distinto a un diagrama de etapas.
+En general para este informe se prefiere el diagrama de bloques, pues
+el diagrama de etapas tiene una connotación de documentación de
+bitácora, que no es el objetivo de este informe.  Aquí se debe
+explicar cómo reproducir los resultados a que finalmente se llegó, en
+vez de explicar el proceso circunstancial y particular que usted
+siguió para hacerlo; es decir, el proceso que usted siguió
+posiblemente requirió pruebas fallidas y otras exploraciones que no
+viene al caso explicar aquí (pero que usted sí documenta en su
+bitácora, que es otro documento aparte), sino que aquí lleva al lector
+por la ruta de exito directamente.
+
+Usualmente este diagrama y su breve explicación dictan cuál será la
+estructura del resto del documento, pues usted en el
+\capref{ch:marco} deberá explicar los fundamentos teóricos que
+cada bloque en esa solución requiere, y en el
+\capref{ch:solucion} presentará una versión con mayor detalle de
+esa solución, en donde ya considera lo expuesto en el marco teórico.
+
+
+
+\section{Objetivos y estructura del documento}
+
+\index{objetivos}
+Esta plantilla LaTeX tiene como objetivo simplificar la construcción del
+documento de tesis, presentando ejemplo de figuras y \tablas, así como otorgar
+una plataforma de compilación en GNU/Linux que simplifique la administración de
+todo el documento.
+
+La última sección de la introducción usualmente sí tiene un título estandar que
+es ``Objetivos y estructura del documento'', donde se presentan \emph{en prosa}
+los objetivos general y específicos que ha tenido el proyecto de tesis,
+así como la estructura de la tesis (por ejemplo, ``en el siguiente capítulo se
+esbozan los fundamentos teóricos necesarios para explicar en el
+\capref{ch:solucion} la propuesta realizada$\ldots$''
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

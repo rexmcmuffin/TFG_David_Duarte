@@ -1,0 +1,69 @@
+%% Este archivo contiene toda la configuración básica del documento de
+%% tesis, para centralizar alguna información que se requiere en todo
+%% el documento.
+
+%% DRAFT MODE
+
+%%   El modo borrador activa las listas de cosas por hacer, con su
+%%   índice, y algunas marcas explícitas de "borrador" por todo lado.
+%%
+%%   Asegúrse de que esta variable sea false en la versión final y de haber
+%%   actualizado la fecha de la defensa, un poco más abajo.
+\setboolean{draftmode}{true}            % turn draft mode on
+%\setboolean{draftmode}{false}          % turn draft mode off
+
+%% Esta es la fecha que se colocará en el modo borrador
+\defDraftDate{\today}
+%% Esta es la fecha que se usará en la versión final
+\defFinalDate{24 de noviembre, 2023}
+
+%% Este es el nombre del estudiante y el pronombre que utiliza, para cambiar
+%% las portadas como corresponde
+
+% Con el nombre de autor, se debe especificar el género a utilizar:
+%
+%   [M]asculino
+%   [F]emenino (usando "señora" donde corresponda)
+%   [f]emenino (usando "señorita" donde corresponda)
+%   persona [N]o binaria
+%
+%   Debido a la falta de norma en español para las personas no binarias,
+%   posíblemente deba ajustarse para el gusto de cada quien.
+%
+\defAuthor[M]{David Duarte Sánchez}                % Nombre del estudiante
+%\defAuthor[f]{María del Pilar Pérez Prado}    % Nombre de la estudiante
+
+\defAuthorShort{D.~Duarte}                      % Nombre corto
+\defAuthorTECID{2017239606}                     % Carné
+
+%% Este es el título completo del informe del trabajo final de graduación.
+%% Usted puede agregar \\ para forzar líneas nuevas en la portada y automática-
+%% mente el comando se encarga de eliminar eso cuando necesita el título
+\defTitle{Diseño de un sistema para soportar algoritmos \\ 
+          de control basados en aprendizaje automático \\
+          en tiempo real}
+
+%% Palabras clave
+\defKeywords{palabras, clave, energía, cambio climático, RISC V}
+
+%% Tribunal Evaluador
+%%
+%% Indique los nombres de los lectores y asesor
+%% El parámetro opcional es
+%%  [M]asculino,
+%%  [F]emenino,
+%%  persona [N]o binaria
+\defLectorI[F]{Dra.\,María Curie Pérez}
+\defLectorII[M]{M.Sc.\,Pedro Pérez Pereira}
+\defAsesor[M]{Ing.\,Albert Einstein Sánchez}
+
+%% Tipo de tesis o informe
+%%   - Tesis de Licenciatura
+%%   - Informe de Proyecto Final 
+%%   - Tesis de Maestría
+\defTFGType{Tesis de Licenciatura}
+
+%% Nombre del departamento e institución
+\defInstitution{Instituto Tecnológico de Costa Rica}
+\defDepartment{Escuela de Ingeniería Electrónica}
+

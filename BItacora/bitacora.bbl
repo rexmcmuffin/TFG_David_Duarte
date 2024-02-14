@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{alonso2010panoramica}
+Alejandro Alonso and Alfons Crespo~Lorente.
+\newblock Una panor{\'a}mica de los sistemas de tiempo real.
+\newblock {\em Revista Iberoamericana de Autom{\'a}tica e Inform{\'a}tica
+  Industrial}, 3(2):7--18, 2010.
+
+\bibitem{de2000introduccion}
+Juan~Antonio De~la Puente.
+\newblock Introducci{\'o}n a los sistemas en tiempo real, 2000.
+
+\bibitem{deng2020model}
+Lei Deng, Guoqi Li, Song Han, Luping Shi, and Yuan Xie.
+\newblock Model compression and hardware acceleration for neural networks: A
+  comprehensive survey.
+\newblock {\em Proceedings of the IEEE}, 108(4):485--532, 2020.
+
+\bibitem{duato2011enabling}
+Jose Duato, Antonio~J Pena, Federico Silla, Juan~C Fernandez, Rafael Mayo, and
+  Enrique~S Quintana-Orti.
+\newblock Enabling cuda acceleration within virtual machines using rcuda.
+\newblock In {\em 2011 18th International Conference on High Performance
+  Computing}, pages 1--10. IEEE, 2011.
+
+\bibitem{galan2000control}
+Ram{\'o}n Gal{\'a}n, Agust{\'\i}n Jim{\'e}nez, Ricardo Sanz, and Fernando
+  Mat{\'\i}a.
+\newblock Control inteligente.
+\newblock {\em Inteligencia Artificial. Revista Iberoamericana de Inteligencia
+  Artificial}, 4(10):43--48, 2000.
+
+\bibitem{kim1994software}
+Dong-Il Kim, Jae~Wook Jeon, and Sungkwun Kim.
+\newblock Software acceleration/deceleration methods for industrial robots and
+  cnc machine tools.
+\newblock {\em Mechatronics}, 4(1):37--53, 1994.
+
+\bibitem{meyer2020evaluating}
+Marius Meyer, Tobias Kenter, and Christian Plessl.
+\newblock Evaluating fpga accelerator performance with a parameterized opencl
+  adaptation of selected benchmarks of the hpcchallenge benchmark suite.
+\newblock In {\em 2020 IEEE/ACM International Workshop on Heterogeneous
+  High-performance Reconfigurable Computing (H2RC)}, pages 10--18. IEEE, 2020.
+
+\bibitem{munoz1994extensiones}
+Alejandro~Alonso Mu{\~n}oz.
+\newblock {\em Extensiones a los m{\'e}todos de planificaci{\'o}n de sistemas
+  de tiempo real cr{\'\i}ticos basados en prioridades}.
+\newblock PhD thesis, Universidad Polit{\'e}cnica de Madrid, 1994.
+
+\bibitem{owaida2011massively}
+Muhsen Owaida, Nikolaos Bellas, Christos~D Antonopoulos, Konstantis Daloukas,
+  and Charalambos Antoniadis.
+\newblock Massively parallel programming models used as hardware description
+  languages: The opencl case.
+\newblock In {\em 2011 IEEE/ACM International Conference on Computer-Aided
+  Design (ICCAD)}, pages 326--333. IEEE, 2011.
+
+\bibitem{razdan1994prisc}
+Rahul Razdan, Karl Brace, and Michael~D Smith.
+\newblock Prisc software acceleration techniques.
+\newblock In {\em Proceedings 1994 IEEE International Conference on Computer
+  Design: VLSI in Computers and Processors}, pages 145--149. IEEE, 1994.
+
+\bibitem{scarpino2011opencl}
+Matthew Scarpino.
+\newblock {\em OpenCL in action: how to accelerate graphics and computations}.
+\newblock Simon and Schuster, 2011.
+
+\bibitem{shi2011vcuda}
+Lin Shi, Hao Chen, Jianhua Sun, and Kenli Li.
+\newblock vcuda: Gpu-accelerated high-performance computing in virtual
+  machines.
+\newblock {\em IEEE Transactions on Computers}, 61(6):804--816, 2011.
+
+\bibitem{verma2016accelerating}
+Anshuman Verma, Ahmed~E Helal, Konstantinos Krommydas, and Wu-Chun Feng.
+\newblock Accelerating workloads on fpgas via opencl: A case study with
+  opendwarfs.
+\newblock Technical report, Department of Computer Science, Virginia
+  Polytechnic Institute \& State~…, 2016.
+
+\bibitem{zhao2017hardware}
+Ruizhe Zhao, Wayne Luk, Xinyu Niu, Huifeng Shi, and Haitao Wang.
+\newblock Hardware acceleration for machine learning.
+\newblock In {\em 2017 IEEE computer society annual symposium on VLSI
+  (ISVLSI)}, pages 645--650. IEEE, 2017.
+
+\end{thebibliography}

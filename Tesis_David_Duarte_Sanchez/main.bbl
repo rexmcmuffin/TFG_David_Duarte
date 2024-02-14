@@ -1,0 +1,414 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{AlvaradoWeb}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d46108e0650e0a16aa4b7ef4f0addbd9}{%
+           family={Alvarado},
+           familyi={A\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d46108e0650e0a16aa4b7ef4f0addbd9}
+      \strng{fullhash}{d46108e0650e0a16aa4b7ef4f0addbd9}
+      \strng{bibnamehash}{d46108e0650e0a16aa4b7ef4f0addbd9}
+      \strng{authorbibnamehash}{d46108e0650e0a16aa4b7ef4f0addbd9}
+      \strng{authornamehash}{d46108e0650e0a16aa4b7ef4f0addbd9}
+      \strng{authorfullhash}{d46108e0650e0a16aa4b7ef4f0addbd9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{Proyecto de graduación}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.ie.tec.ac.cr/palvarado/PG
+      \endverb
+      \verb{url}
+      \verb http://www.ie.tec.ac.cr/palvarado/PG
+      \endverb
+    \endentry
+    \entry{Fulano21}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=8a0f924c965ca66bdd30ebb1449948c4}{%
+           family={Fulano\bibnamedelima Rodríguez},
+           familyi={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Escuela de Ingeniería Electrónica, Tecnológico de Costa Rica}%
+      }
+      \strng{namehash}{8a0f924c965ca66bdd30ebb1449948c4}
+      \strng{fullhash}{8a0f924c965ca66bdd30ebb1449948c4}
+      \strng{bibnamehash}{8a0f924c965ca66bdd30ebb1449948c4}
+      \strng{authorbibnamehash}{8a0f924c965ca66bdd30ebb1449948c4}
+      \strng{authornamehash}{8a0f924c965ca66bdd30ebb1449948c4}
+      \strng{authorfullhash}{8a0f924c965ca66bdd30ebb1449948c4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Energía infinita con un diodo}
+      \field{type}{Tesis de Licenciatura}
+      \field{year}{2021}
+    \endentry
+    \entry{Davis1963}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3a39b7f844aae6645e3cdbfe69148a7f}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={H.\bibnamedelimi F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications, Inc.}%
+      }
+      \strng{namehash}{3a39b7f844aae6645e3cdbfe69148a7f}
+      \strng{fullhash}{3a39b7f844aae6645e3cdbfe69148a7f}
+      \strng{bibnamehash}{3a39b7f844aae6645e3cdbfe69148a7f}
+      \strng{authorbibnamehash}{3a39b7f844aae6645e3cdbfe69148a7f}
+      \strng{authornamehash}{3a39b7f844aae6645e3cdbfe69148a7f}
+      \strng{authorfullhash}{3a39b7f844aae6645e3cdbfe69148a7f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fourier series and orthogonal functions}
+      \field{year}{1963}
+    \endentry
+    \entry{ProakisManolakis1998}{book}{}
+      \name{author}{2}{}{%
+        {{hash=4837b237f57c4c1e7380a9ecd70379ff}{%
+           family={Proakis},
+           familyi={P\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4c5165a50176d749bec2737fdb626c79}{%
+           family={Manolakis},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{1f58b9c47ad338a839d9281a49fbb670}
+      \strng{fullhash}{1f58b9c47ad338a839d9281a49fbb670}
+      \strng{bibnamehash}{1f58b9c47ad338a839d9281a49fbb670}
+      \strng{authorbibnamehash}{1f58b9c47ad338a839d9281a49fbb670}
+      \strng{authornamehash}{1f58b9c47ad338a839d9281a49fbb670}
+      \strng{authorfullhash}{1f58b9c47ad338a839d9281a49fbb670}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tratamiento Digital de Señales}
+      \field{year}{1998}
+    \endentry
+    \entry{Oppenheim1998}{book}{}
+      \name{author}{3}{}{%
+        {{hash=a068a62cc0fbbd7fda09d55ee3505132}{%
+           family={Oppenheim},
+           familyi={O\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8b2ffeee8ce8d2f7dac66da45c6076e6}{%
+           family={Willsky},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3f75814d85e71b6d789b99e8191ee077}{%
+           family={Nawab},
+           familyi={N\bibinitperiod},
+           given={S.\bibnamedelimi H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{3045e1aeec88950409f6164eeebb743c}
+      \strng{fullhash}{a959906f63d20c79813ed8c04f214009}
+      \strng{bibnamehash}{a959906f63d20c79813ed8c04f214009}
+      \strng{authorbibnamehash}{a959906f63d20c79813ed8c04f214009}
+      \strng{authornamehash}{3045e1aeec88950409f6164eeebb743c}
+      \strng{authorfullhash}{a959906f63d20c79813ed8c04f214009}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2da}
+      \field{title}{Señales y Sistemas}
+      \field{year}{1998}
+    \endentry
+    \entry{Roberts2005}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5891696d6383fb2567019d795c8ab542}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill}%
+      }
+      \strng{namehash}{5891696d6383fb2567019d795c8ab542}
+      \strng{fullhash}{5891696d6383fb2567019d795c8ab542}
+      \strng{bibnamehash}{5891696d6383fb2567019d795c8ab542}
+      \strng{authorbibnamehash}{5891696d6383fb2567019d795c8ab542}
+      \strng{authornamehash}{5891696d6383fb2567019d795c8ab542}
+      \strng{authorfullhash}{5891696d6383fb2567019d795c8ab542}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Señales y Sistemas. Análisis mediante métodos de transformada y {MatLab}}
+      \field{year}{2005}
+    \endentry
+    \entry{Haykin2001}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a82c75a42f733f690fc4303be716c96b}{%
+           family={Haykin},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1e816586d538a20d9bb66aac44340030}{%
+           family={Veen},
+           familyi={V\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Limusa Wiley}%
+      }
+      \strng{namehash}{6b49b3de90f4b536b7b1ca485683faf9}
+      \strng{fullhash}{6b49b3de90f4b536b7b1ca485683faf9}
+      \strng{bibnamehash}{6b49b3de90f4b536b7b1ca485683faf9}
+      \strng{authorbibnamehash}{6b49b3de90f4b536b7b1ca485683faf9}
+      \strng{authornamehash}{6b49b3de90f4b536b7b1ca485683faf9}
+      \strng{authorfullhash}{6b49b3de90f4b536b7b1ca485683faf9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Señales y sistemas}
+      \field{year}{2001}
+    \endentry
+    \entry{Burrus1998}{book}{}
+      \name{author}{6}{}{%
+        {{hash=5156be377b7ac55f647ba9c7a953b49c}{%
+           family={Burrus},
+           familyi={B\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9f10c501f4570d775a5b3c57bd1a60e9}{%
+           family={McClellan},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=91dbf9ff367cd6c6bb21dadfe228fb18}{%
+           family={Oppenheim},
+           familyi={O\bibinitperiod},
+           given={A.\bibnamedelimi V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=93dd9810ccae5b3a76ba36949d228629}{%
+           family={Parks},
+           familyi={P\bibinitperiod},
+           given={T.\bibnamedelimi W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=a044dbc8269130b0dbab3ef220d25a5d}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=a8d002ffb457a5a9986a8126474b2d82}{%
+           family={Schuessler},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi W.},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{2446635bf2ac4fcd0209589cade03de1}
+      \strng{fullhash}{69a602ed042255a6fffafab3411fffb0}
+      \strng{bibnamehash}{69a602ed042255a6fffafab3411fffb0}
+      \strng{authorbibnamehash}{69a602ed042255a6fffafab3411fffb0}
+      \strng{authornamehash}{2446635bf2ac4fcd0209589cade03de1}
+      \strng{authorfullhash}{69a602ed042255a6fffafab3411fffb0}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ejercicios de Tratamiento de la Señal. Un enfoque práctico}
+      \field{year}{1998}
+    \endentry
+    \entry{Octave}{online}{}
+      \name{author}{4}{}{%
+        {{hash=a789af59278b89f0b2c01d3480e87176}{%
+           family={Eaton},
+           familyi={E\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b23367b24f394bf9ffaf17981484f95e}{%
+           family={Bateman},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7805487ebed7d4da5e57f05533e70b68}{%
+           family={Hauberg},
+           familyi={H\bibinitperiod},
+           given={S{ø}ren},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1fdedad9d06c34eaee1c074de00c51c6}{%
+           family={Wehbring},
+           familyi={W\bibinitperiod},
+           given={Rik},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Wisconsin}%
+      }
+      \strng{namehash}{57cc62a2c72167ee23386f5724108c4e}
+      \strng{fullhash}{19b8184ff5bf9ab19f520b3fe5d2b255}
+      \strng{bibnamehash}{19b8184ff5bf9ab19f520b3fe5d2b255}
+      \strng{authorbibnamehash}{19b8184ff5bf9ab19f520b3fe5d2b255}
+      \strng{authornamehash}{57cc62a2c72167ee23386f5724108c4e}
+      \strng{authorfullhash}{19b8184ff5bf9ab19f520b3fe5d2b255}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Octave}
+      \field{urlday}{2}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.octave.org
+      \endverb
+      \verb{url}
+      \verb http://www.octave.org
+      \endverb
+    \endentry
+    \entry{Lindner2002}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3b977b95aca43e7dbf012b666f4d3a59}{%
+           family={Lindner},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill}%
+      }
+      \strng{namehash}{3b977b95aca43e7dbf012b666f4d3a59}
+      \strng{fullhash}{3b977b95aca43e7dbf012b666f4d3a59}
+      \strng{bibnamehash}{3b977b95aca43e7dbf012b666f4d3a59}
+      \strng{authorbibnamehash}{3b977b95aca43e7dbf012b666f4d3a59}
+      \strng{authornamehash}{3b977b95aca43e7dbf012b666f4d3a59}
+      \strng{authorfullhash}{3b977b95aca43e7dbf012b666f4d3a59}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducción a las señales y los sistemas}
+      \field{year}{2002}
+    \endentry
+    \entry{Soria2003}{book}{}
+      \name{author}{4}{}{%
+        {{hash=3adef67e2dbb4b9bee2f06840ad83fb5}{%
+           family={Soria\bibnamedelima Olivas},
+           familyi={S\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e6ed8f6939f731621164b0e728ceeef6}{%
+           family={Martínez\bibnamedelima Sober},
+           familyi={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=778bbba38f1ed03a784fd8c9bbbf910e}{%
+           family={Francés\bibnamedelima Villora},
+           familyi={F\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={J.\bibnamedelimi V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=7eed8b7cce41fc0aa4efae175d47ab43}{%
+           family={Camps\bibnamedelima Valls},
+           familyi={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Madrid}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{bb36c9fa7b5530b6680cb4f05c2cf526}
+      \strng{fullhash}{d3a5684a0a9d76216de017aea866691b}
+      \strng{bibnamehash}{d3a5684a0a9d76216de017aea866691b}
+      \strng{authorbibnamehash}{d3a5684a0a9d76216de017aea866691b}
+      \strng{authornamehash}{bb36c9fa7b5530b6680cb4f05c2cf526}
+      \strng{authorfullhash}{d3a5684a0a9d76216de017aea866691b}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tratamiento Digital de Señales. Problemas y ejercicios resueltos}
+      \field{year}{2003}
+    \endentry
+    \entry{Shilov1973}{book}{}
+      \name{author}{1}{}{%
+        {{hash=db0c8e0663ff2b6e50d276a92917d8a1}{%
+           family={Shilov},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications, Inc.}%
+      }
+      \strng{namehash}{db0c8e0663ff2b6e50d276a92917d8a1}
+      \strng{fullhash}{db0c8e0663ff2b6e50d276a92917d8a1}
+      \strng{bibnamehash}{db0c8e0663ff2b6e50d276a92917d8a1}
+      \strng{authorbibnamehash}{db0c8e0663ff2b6e50d276a92917d8a1}
+      \strng{authornamehash}{db0c8e0663ff2b6e50d276a92917d8a1}
+      \strng{authorfullhash}{db0c8e0663ff2b6e50d276a92917d8a1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Elementary Real and Complex Analysis}
+      \field{year}{1973}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

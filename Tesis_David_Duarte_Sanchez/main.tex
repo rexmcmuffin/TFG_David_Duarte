@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author:  David Duarte
+%
+% Escuela de Ingeniería Electrónica
+% Instituto Tecnológico de Costa Rica
+%
+% Tesis de Licenciatura
+% 
+% Phone:   +506 60348656
+% email:   davidduarte28@gmail.com
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \documentclass is book
+% If you want a printable two-side version of the thesis
+%\documentclass[12pt,twoside,letterpaper]{book}
+
+% If you want an electronic-only version of the thesis, do it one-sided
+\documentclass[12pt,oneside,letterpaper]{book}
+
+\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}   % is no longer required (since 2018)
+\usepackage{ifthen}            % provide if-then-else operators
+
+% --------------------------------------------------------------------------
+% Global variables required in document formatting
+% --------------------------------------------------------------------------
+%
+% BOOK MODE
+%
+\newboolean{bookmode}                  % boolean used to control book format
+% Ensure that only one of the next two lines is active:
+\setboolean{bookmode}{true}           % turn book mode on
+%\setboolean{bookmode}{false}           % turn book mode off
+
+%
+% DRAFT MODE
+%   The draft mode activates the TODO index and some "draft" markings all
+%   around.  Ensure you set it to false for the final version!!
+%   
+%
+\newboolean{draftmode}                  % boolean used to control draft-mode
+
+%% -------------------------------------------------------------------------
+
+%% Configure su nombre, título de tesis, lectores, fechas, etc. en:
+%%
+%% >>>>  config.tex  <<<<
+%%
+
+% --------------------------------------------------------------------------
+
+% include all packages and define all required general macros
+\input{macros}
+
+% define all symbols used in the document
+\include{notation}                    
+
+% allow equations to be splitted (breaked) into several pages
+\allowdisplaybreaks[3]
+
+% --------------------------------------------------------------------------
+\begin{document}
+  % where to look for graphics
+  \graphicspath{{./}{./fig/}}
+
+  \pagenumbering{alph}
+  % fix some terms not activated due to the bug of hyperref with spanish.
+  
+  \renewcommand{\examplesolution}{Solución}
+  \pagestyle{empty}
+
+  % select one of the following titlepages
+  \include{titlepage_licel_es} % Titlepage in Spanish
+  %\include{titlepage_licel_en} % Titlepage in English (only if thesis is in En)
+
+  %\include{titlepage_msc_es}   % Titlepage in Spanish
+  %\include{titlepage_msc_en}   % Titlepage in English (only if thesis is in En)
+
+  \include{licencia}
+  
+  % Hoja de depuración, con comandos definidos por la plantilla.
+  % \include{debug}
+
+
+
+  
+  \include{disclaimer}
+  %% -------------------------------------------------
+  %% Acta y hoja del tribunal
+  %%
+  %% Asegúrse de que las fechas de defensa de tesis sean las que aparecen
+  %% en las actas.
+  
+  %% Para la Licenciatura en Ingeniería Electrónica:
+
+  %%   Acá se colocan las dos actas como plantillas para ser firmadas
+  %%   por el tribunal.
+
+  %%   El acta de aprobación, dependiendo del tribunal, puede dejarla
+  %%   en blanco en la tesis, para que el tribunal firme la tesis completa
+  %%   sobre esta acta, o, si el tribunal lo decide, extrae la hoja
+  %%   para que sea firmada "caligráficamente" por los miembros del tribunal.
+  %%   Al acta firmada, en formato PDF (ya sea firmado con tabletas gráficas o
+  %%   en papel y escaneada) la integra al documento con el comando para incluir
+  %%   el pdf directamente \includepdf{archivo} 
+  \include{acta_aprob_licel}  % Remover en versión final
+  %\includepdf{acta_aprob_firmada} % Incluir el acta firmada acá.
+
+  %% El acta de evaluación usualmente la extrae del documento y
+  %% la entrega al tribunal para que sea firmada, y ellos la hacen
+  %% llegar al profesor del curso de TFG.  Ese documento no
+  %% debe aparecer en la tesis final, así que esta línea deberá
+  %% comentarla en la versión final:
+  \include{acta_eval_licel}   % >> Remover en versión final <<
+    
+  %% Para la maestría en electrónica:
+  %\include{acta_aprob_mscel}  % Remover en versión final
+  %\include{acta_eval_mscel}   % Remover en versión final
+  %% -------------------------------------------------
+  \include{resumen}
+  \include{dedicatoria}
+  \include{agradecimientos}
+
+  %----------------------------------------------------------------------------
+  \frontmatter
+  %----------------------------------------------------------------------------
+  \pagestyle{fancy}
+  \pagenumbering{roman}
+
+  \pdfbookmark[1]{Indice General}{Indice General}
+
+  \parskip0ex                           % space between paragraphs
+
+  \tableofcontents                      % Table of contents
+  \listoffigures                        % List of figures
+  \listoftables                         % List of tables
+
+\ifdraft{%
+  % todo's                              % TODOs
+  \listoftodo
+}{%
+}
+
+  \include{glosario}                    % Abbreviation
+
+  \parskip1.3ex                         % space between paragraphs
+
+  %----------------------------------------------------------------------------
+  \mainmatter
+  %----------------------------------------------------------------------------
+  % where to look for graphics
+  \graphicspath{{./}{./fig/}}
+  %\pagenumbering{arab}
+
+  % Main files
+  \include{intro}
+  \include{teoria}
+  \include{solucion}
+  \include{resultados}
+  \include{conclusiones}
+
+  %----------------------------------------------------------------------------
+  % literature in bibtex way:
+  % \bibliographystyle{sty/plainurl} % for english documents
+  % \bibliography{literatura}
+  % literature in biblatex/biber way
+  \printbibliography[title={Bibliografía},heading=bibintoc]
+  %----------------------------------------------------------------------------
+
+  %----------------------------------------------------------------------------
+  \appendix
+  %----------------------------------------------------------------------------
+
+  \include{apendice}
+
+  %----------------------------------------------------------------------------
+  \backmatter
+  %----------------------------------------------------------------------------
+
+  \printindex                % insert index into document. Don't forget to call
+                             % "makeindex filename" first.
+\end{document}
