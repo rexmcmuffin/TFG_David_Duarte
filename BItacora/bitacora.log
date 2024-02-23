@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.27)  13 FEB 2024 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.27)  14 FEB 2024 08:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -195,15 +195,15 @@ LaTeX Info: Redefining \. on input line 41.
 LaTeX Info: Redefining \% on input line 41.
 ) ) 
 Here is how much of TeX's memory you used:
- 2602 strings out of 478287
- 42846 string characters out of 5849289
+ 2603 strings out of 478287
+ 42854 string characters out of 5849289
  366852 words of memory out of 5000000
- 20827 multiletter control sequences out of 15000+600000
+ 20828 multiletter control sequences out of 15000+600000
  473553 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,62p,349b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on bitacora.pdf (3 pages, 99350 bytes).
+Output written on bitacora.pdf (3 pages, 99539 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream

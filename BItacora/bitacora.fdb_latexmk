@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex bitacora"] 1707871384 "bitacora.aux" "bitacora.bbl" "bitacora" 1707871432
+["bibtex bitacora"] 1707871384 "bitacora.aux" "bitacora.bbl" "bitacora" 1707920161
   "../Borrador_Anteproyecto_Duarte_Sanchez_David_Felipe/biblio.bib" 1707499665 11728 9254f9f079d83e185ff360bcf3f5ae3f ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "bitacora.aux" 1707871432 1525 ab5770dbb6cb6b261d10a750ad3a127c "pdflatex"
+  "bitacora.aux" 1707920161 1525 ab5770dbb6cb6b261d10a750ad3a127c "pdflatex"
   (generated)
   "bitacora.bbl"
   "bitacora.blg"
-["pdflatex"] 1707871432 "/home/beta/Desktop/TFG/BItacora/bitacora.tex" "bitacora.pdf" "bitacora" 1707871432
+["pdflatex"] 1707920161 "/home/beta/Desktop/TFG/BItacora/bitacora.tex" "bitacora.pdf" "bitacora" 1707920161
   "/etc/texmf/web2c/texmf.cnf" 1706405429 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/beta/Desktop/TFG/BItacora/bitacora.tex" 1707871431 2964 4c4b67b2b1151e498c81c47b5aa0ae2d ""
+  "/home/beta/Desktop/TFG/BItacora/bitacora.tex" 1707920161 4676 04c403f83a70a820af109ecd1bafda02 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -46,9 +46,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706405443 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706405457 2798440 402e677871a215cac83bac0f0bb694ff ""
-  "bitacora.aux" 1707871432 1525 ab5770dbb6cb6b261d10a750ad3a127c "pdflatex"
+  "bitacora.aux" 1707920161 1525 ab5770dbb6cb6b261d10a750ad3a127c "pdflatex"
   "bitacora.bbl" 1707871384 3702 d5c95d10faceeb92b4e18867831d5ddd "bibtex bitacora"
-  "bitacora.tex" 1707871431 2964 4c4b67b2b1151e498c81c47b5aa0ae2d ""
+  "bitacora.tex" 1707920161 4676 04c403f83a70a820af109ecd1bafda02 ""
   (generated)
   "bitacora.aux"
   "bitacora.log"
