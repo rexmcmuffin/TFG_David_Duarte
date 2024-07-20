@@ -1,0 +1,14 @@
+*.aux
+*.bbl
+*.blg
+*.fdb*
+*.fls
+*.idx
+*.ilg
+*.ind
+*.log
+*.pdf
+*.gz
+*.toc
+.vscode/
+
