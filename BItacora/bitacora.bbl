@@ -1,5 +1,6 @@
 \begin{thebibliography}{10}
 
+<<<<<<< Updated upstream
 \bibitem{Albertos_2005}
 Pedro Albertos, Pedro Albertos, Alfons Crespo, Alfons Crespo, Marina Vallés, M.~Vallés, Ismael Ripoll, and Ismael Ripoll.
 \newblock Embedded control systems: Some issues and solutions.
@@ -119,5 +120,66 @@ Meng Shao, Zhe Peng, and Longhua Ma.
 Chun Zhao, Chun Zhao, Chuan Xiao, Chuan Xiao, Yue Liu, and Yue Liu.
 \newblock A real-time reconfigurable edge computing system in industrial internet of things based on fpga.
 \newblock {\em 2021 IEEE 16th Conference on Industrial Electronics and Applications (ICIEA)}, 2021.
+=======
+\bibitem{Baobaid2022HardwareAF}
+Asma Baobaid, Mahmoud M{\'e}ribout, Varun~Kumar Tiwari, and Juan~Pablo Pe{\~n}a.
+\newblock Hardware accelerators for real-time face recognition: A survey.
+\newblock {\em IEEE Access}, 10:83723--83739, 2022.
+
+\bibitem{Barbieru2016SoftRH}
+Ciprian Barbieru and Florin Pop.
+\newblock Soft real-time hadoop scheduler for big data processing in smart cities.
+\newblock {\em 2016 IEEE 30th International Conference on Advanced Information Networking and Applications (AINA)}, pages 863--870, 2016.
+
+\bibitem{Benmeziane2022RealtimeST}
+Hadjer Benmeziane, Hamza Ouarnoughi, Kaoutar~El Maghraoui, and Sma{\"i}l Niar.
+\newblock Real-time style transfer with efficient vision transformers.
+\newblock {\em Proceedings of the 5th International Workshop on Edge Systems, Analytics and Networking}, 2022.
+
+\bibitem{Elsheikh2023ApplicationsOM}
+Ammar~H. Elsheikh.
+\newblock Applications of machine learning in friction stir welding: Prediction of joint properties, real-time control and tool failure diagnosis.
+\newblock {\em Eng. Appl. Artif. Intell.}, 121:105961, 2023.
+
+\bibitem{Flak2022HardwareAcceleratedRS}
+Przemysław Flak.
+\newblock Hardware-accelerated real-time spectrum analyzer with a broadband fast sweep feature based on the cost-effective sdr platform.
+\newblock {\em IEEE Access}, 10:110934--110946, 2022.
+
+\bibitem{Ghorbani2018RealtimeHT}
+Mehrdad Ghorbani, Milad Pasand, Alireza~Ghasem Bayati, and Neda Baheri.
+\newblock Real-time hardware-in-the-loop test for a small upper stage embedded control system.
+\newblock {\em 2018 Real-Time and Embedded Systems and Technologies (RTEST)}, pages 96--103, 2018.
+
+\bibitem{Hsiung2001VerifiableER}
+Pao-Ann Hsiung, Feng-Shi Su, Chuen-Hau Gao, Shu-Yu Cheng, and Yu-Ming Chang.
+\newblock Verifiable embedded real-time application framework.
+\newblock {\em Proceedings Seventh IEEE Real-Time Technology and Applications Symposium}, pages 109--110, 2001.
+
+\bibitem{Mathew2022RealTimePA}
+Deepa Mathew and Bijoy~Antony Jose.
+\newblock Real-time performance analysis and tuning of embedded system virtualization architecture based on kvm.
+\newblock {\em Int. J. Embed. Real Time Commun. Syst.}, 13:1--20, 2022.
+
+\bibitem{Phillips2006RealTW}
+Richard Phillips and Greg Nelson.
+\newblock Real time: what is it and what are we doing about it?
+\newblock 2006.
+
+\bibitem{Rettberg2007EmbeddedSD}
+Achim Rettberg, Mauro~Cesar Zanella, Rainer D{\"o}mer, Andreas Gerstlauer, and Franz-Josef Rammig.
+\newblock Embedded system design: Topics, techniques and trends, ifip tc10 working conference: International embedded systems symposium (iess), may 30 - june 1, 2007, irvine, ca, usa.
+\newblock In {\em International Conference on Exploring Services Science}, 2007.
+
+\bibitem{Saha2018RealTimeAP}
+Sangeet Saha, Shoaib Ehsan, Adrian~M. Stoica, R.~Stolkin, and Klaus~Dieter Mcdonald-Maier.
+\newblock Real-time application processing for fpga-based resilient embedded systems in harsh environments.
+\newblock {\em 2018 NASA/ESA Conference on Adaptive Hardware and Systems (AHS)}, pages 299--304, 2018.
+
+\bibitem{Silva2022AgnosticHO}
+Miguel Silva, Tiago Gomes, and Sandro Pinto.
+\newblock Agnostic hardware-accelerated operating system for low-end iot.
+\newblock {\em 2022 IEEE 28th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)}, pages 21--30, 2022.
+>>>>>>> Stashed changes
 
 \end{thebibliography}

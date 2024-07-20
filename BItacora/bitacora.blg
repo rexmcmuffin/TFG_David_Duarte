@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: bitacora.aux
+The style file: plain.bst
+Database file #1: semana2.bib
+Warning--empty booktitle in Phillips2006RealTW
+You've used 12 entries,
+            2118 wiz_defined-function locations,
+            574 strings with 7006 characters,
+and the built_in function-call counts, 4548 in all, are:
+= -- 438
+> -- 224
+< -- 5
++ -- 88
+- -- 76
+* -- 303
+:= -- 746
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 74
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 177
+empty$ -- 337
+format.name$ -- 76
+if$ -- 975
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 63
+num.names$ -- 24
+pop$ -- 75
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 140
+stack$ -- 0
+substring$ -- 289
+swap$ -- 54
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 1
+while$ -- 38
+width$ -- 14
+write$ -- 130
+(There was 1 warning)
