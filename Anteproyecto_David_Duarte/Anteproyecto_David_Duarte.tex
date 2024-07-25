@@ -10,76 +10,43 @@
 \usepackage{url} 
 \geometry{a4paper, total={170mm, 257mm}, left=20mm, right=20mm, top=25mm, bottom=25mm}
 \usepackage[spanish,es-tabla]{babel}
-
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % Limpia los estilos anteriores de encabezado y pie de página
 
-% Define el contenido del encabezado
 \rhead{Tecnológico de Costa Rica}
-
-% Opcional: Puedes personalizar el pie de página si lo necesitas
-% \lfoot{Pie de página izquierdo}
 \cfoot{\thepage} % Número de página en el centro
-% \rfoot{Pie de página derecho}
-
-% Línea horizontal en la parte superior del encabezado
 \renewcommand{\headrulewidth}{0.5pt}
-
 \setlength{\parindent}{1em}
 \setlength{\parskip}{1em}
-
 \usepackage{makeidx}
 \makeindex
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% here Begins the document
 
 \begin{document}
 \begin{titlepage}
 
   \centering
-
-
   \vspace{10cm}
-
   \textbf{\LARGE Instituto Tecnológico de Costa Rica}
-
   \vspace{2cm}
-
   \textbf{\LARGE Escuela de Ingeniería Electrónica}
-
   \vspace{2cm}
-
   \includegraphics[width=10cm]{logotec/image.png}
   \vspace{2cm}
-
   \hrule
-
   \vspace{1cm}
-
   \textbf{\LARGE Desarrollo de un conjunto de flujos de trabajo para la implementación de software a bordo de computadoras de guía y navegación espacial (GNCs)}
-
   \vspace{1cm}
-
   \hrule
-
   \vspace{1cm}
-
   \textbf{\LARGE SETECLab-TEC}
-
   \vspace{1cm}
-
   \textbf{\LARGE David Felipe Duarte Sánchez}
-
   \vspace{1cm}
-
   \textbf{\LARGE 2017239606}
-
   \vspace{1cm}
-
   \today % Esto agrega la fecha actual
-
 \end{titlepage}
 .
 \par
@@ -92,23 +59,41 @@ Soy consciente de que el hecho de no respetar los derechos de autor y realizar u
 En tal virtud, declaro que el trabajo de investigación realizado sujeto a evaluación no ha sido presentado anteriormente para obtener algún grado académico o título, ni ha sido publicado en sitio alguno y los efectos legales y académicos que se pueden derivar del trabajo propuesto de investigación son y serán de mi sola y exclusiva responsabilidad legal y académica.
 
 \newpage
-%\renewcommand{\contentsname}{Contenidos} commenting due babel integration
 \tableofcontents
-
 \newpage
 
 \section{Entorno del proyecto}
+El Tecnológico de Costa Rica es una institución de educación superior la cual contribuye al desarrollo integral del país, mediante la formación de recursos humanos, la investigación y la extensión, manteniendo el liderazgo científico, tecnológico y el estricto apego a las normas éticas, humanísticas y ambientales. En esta institución se imparte la carrera de Ingeniería Electrónica, encargada de formar profesionales de excelencia encargados de mejorar la calidad de vida mediante el uso racional del conocimiento de la electrónica.
 
-El Tecnológico de Costa Rica es una institución de educación superior, en la cual, se imparte la carrera de Ingeniería Electrónica, encargada de formar profesionales de excelencia encargados de mejorar la calidad de vida mediante el uso racional del conocimiento de la electrónica. Como parte de esta escuela se encuentra el laboratorio de sistemas espaciales  SETEC Lab, el cual es el encargado de velar por el aprovechamiento de las capacidades que ya tiene el Tecnológico de Costa Rica como institución y utilizarlas en el desarrollo de proyectos espaciales, promoviendo esta área como herramienta de desarrollo en el país, además de haber desarrollado proyectos aeroespaciales como lo son el proyecto IRAZÚ y el proyecto MUSA. Actualmente se busca el desarrollo de un conjunto de flujos de trabajo para la implementación de software a bordo de computadoras de guía y navegación espacial por medio de la generación de herramientas métodos y artefactos. 
+Como parte de esta escuela se encuentra el laboratorio de sistemas espaciales SETEC-Lab, el cual es el encargado de velar por el aprovechamiento de las capacidades que ya tiene el Tecnológico de Costa Rica como institución y utilizarlas en el desarrollo de proyectos espaciales, promoviendo esta área como herramienta de desarrollo en el país. El SETEC-Lab tiene cuatro líneas de investigación. 
 
-El SETEC Lab tiene cuatro líneas de investigación, la primera se relaciona con los algoritmos de operación de las GNCs, seguido de esta se encuentra el área encargada de systems software para las GNCs, esta área se encarga de hacer herramientas, métodos y artefactos para embeber el software, también está el área encargada de los sistemas de potencia para aplicaciones espaciales y finalmente está el área de ingeniería de sistemas y diseño de misiones. Este proyecto se ubica en las primeras dos líneas de investigación ya que se tienen los métodos artefactos y herramientas y por otro lado tenemos los modelos y algoritmos.
+La primera línea de investigación se relaciona con los algoritmos de operación de los sistemas de Guía Navegación y Control (GNC), los cuales se encargan de gestionar y optimizar el movimiento de aeronaves y vehículos autónomos, para comprender de una mejor forma el funcionamiento de estos algoritmos, a continuación, se explicará de que se encargan los segmentos de guía, navegación y control. 
 
-Como se pudo observar en la Figura 01, actualmente el proceso que se sigue para la implementación de software a bordo de computadoras de guía y navegación es un proceso complejo y crítico el cual debe de cumplir con altos estándares de seguridad y precisión. El proceso comienza al definir los requisitos funcionales y no funcionales del software, además de aspectos de seguridad y rendimiento, se evalúa la viabilidad técnica y se establece un cronograma detallado. Por otro lado se diseña la arquitectura del sistema, tomando en cuenta la estructura del software y la interacción con el hardware, también se definen las interfaces de comunicación entre los diferentes módulos de software y el hardware, además se crean simulaciones y modelos para prever el comportamiento del sistema bajo distintas condiciones. Se implementa el software y se realizan pruebas unitarias con el objetivo de que cada módulo de software funcione correctamente. Finalmente se realizan pruebas integrales para observar el comportamiento de cada uno de los módulos y se realizan las simulaciones de misión para validar el rendimiento en escenarios realistas.
+Por un lado, los algoritmos de guía determinan la trayectoria que se debe de seguir para alcanzar un destino especifico, se debe de calcular la ruta más eficiente y además de esto se deben de tomar en cuenta factores como obstáculos, condiciones meteorológicas y restricciones de espacio aéreo. 
 
-La integración con el hardware se realiza por medio de Hardware en el Loop, el cual consiste en la observar la interacción existente entre el hardware y software en condiciones simuladas las cuales simulan el entorno de operación real. Para el desarrollo del modelo de simulación se deben de otorgar al sistema los modelos matemáticos encargados de representar el comportamiento dinámico del sistema y el entorno operativo además de incluir una simulación dinámica que incluya las perturbaciones ambientales y la interacción con otros sistemas.
-Las guías de navegación y control (GNC), conforman una tecnología esencial en aeronaves y sistemas espaciales, son encargados del cálculo de la trayectoria óptima para alcanzar un destino, esto por medio de algoritmos de planificación, la navegación, determina la posición y velocidad actuales del sistema por medio del procesamiento de los datos obtenidos de  GPS e IMUs, haciendo uso de filtros de estimación. El control, que es ejecutado por un microprocesador ajusta las acciones del sistema con el objetivo de continuar con la trayectoria. 
+Por otro lado, el segmento de navegación se refiere a la capacidad del sistema de para poder determinar la posición actual y poder orientarse en el espacio. estos utilizan datos de sensores como lo pueden ser sistemas de posicionamiento global (GPS) y Unidades de medida Inercial (IMU) con el fin de poder asegurar que siempre se mantenga la ruta planificada. 
 
-La implementación de GNCs en sistemas embebidos conlleva una combinación de hardware y software especializado, por un lado, los microcontroladores son los encargados de gestionar los cálculos mientras que los sensores proporcionan distintos tipos de datos por medio de las entradas. por otro lado los sistemas en tiempo real garantizan la respuesta en el momento requerido. Las aplicaciones de estos se pueden observar en drones ya que permiten la navegación autónoma, también en sistemas espaciales en donde su aplicación es vital para la navegación y control de satélites y sondas espaciales.
+Finalmente, los algoritmos de control son los encargados de ajustar los sistemas de propulsión y dirección del vehículo para mantener el curso deseado y así poder responder a las perturbaciones externas. Generalmente se pueden encontrar controladores adaptativos y sistemas de realimentación los cuales ajustan continuamente el comportamiento del vehículo para minimizar los errores y así garantizar la estabilidad.
+ 
+La segunda línea de investigación se encuentra relacionada con los sistemas de software para los sistemas GNC, esta área es la encargada de generar contenido como herramientas, métodos y artefactos para poder embeber de manera exitosa en el software requerido todos los programas y dependencias para que todos los módulos funcionen correctamente.
+
+La tercera línea de investigación se encarga de los sistemas de potencia, esto con el fin de garantizar el funcionamiento seguro de los distintos componentes eléctricos. Estos sistemas incluyen múltiples fuentes de energía y tecnologías para garantizar el suministro eléctrico libre de interrupciones.
+
+Finalmente, la cuarta área se encuentra sujeta al área de ingeniera de sistemas y diseño de misiones, esta área es la encargada de determinar los objetivos de la misión, planificación y gestión de riesgos y coordinar las múltiples áreas del proyecto con el objetivo de asegurar que todos los aspectos del proyecto se integren de forma efectiva
+
+
+El SETEC-Lab es reconocido por haber desarrollado proyectos aeroespaciales como lo son el proyecto Irazú y el proyecto MUSA. Por un lado, el proyecto Irazú surge como una colaboración entre profesionales de la Asociación Centroamericana de Aeronáutica del Espacio (ACAE) y del Tecnológico de Costa Rica (TEC) con el objetivo de desarrollar las capacidades para llevar a cabo misiones espaciales, siendo una prueba de concepto de una plataforma con tecnología CubeSat para el monitoreo y cambio climático mediante la transmisión de datos de crecimiento forestal, variables ambientales y secuestro de carbono en los bosques tropicales de Costa Rica.
+
+Por otro lado, el proyecto MUSA se desarrolla como una colaboración de tres entidades como lo son el TEC, ACAE y la Corporación Espacial Sueca (SSC), este proyecto busca estudiar en condiciones de microgravedad el hongo que produce la enfermedad que destruye plantaciones de banano, conocida como el mal de Panamá y el antagonista que es el hongo que lo combate.
+Actualmente el laboratorio se encuentra en búsqueda del desarrollo de un conjunto de flujos de trabajo para la implementación de software a bordo de computadoras de guía y navegación espacial por medio de la generación de herramientas métodos y artefactos, este proyecto se ubica en las primeras dos líneas de investigación ya que por un lado se tienen los modelos y algoritmos y por otro lado se tiene el uso y generación de contenido como lo son los métodos artefactos y herramientas.
+
+El proceso que se sigue para la implementación de software a bordo de computadoras de guía y navegación es un proceso complejo y crítico el cual debe de cumplir con altos estándares de seguridad y precisión. Este comienza al definir los requisitos funcionales y no funcionales del software, además de aspectos de seguridad y rendimiento, se evalúa la viabilidad técnica y se establece un cronograma detallado. Por otro lado, se diseña la arquitectura del sistema, tomando en cuenta la estructura del software y la interacción con el hardware, también se definen las interfaces de comunicación entre los diferentes módulos de software y de hardware, además se crean simulaciones y modelos para prever el comportamiento del sistema bajo distintas condiciones. 
+
+Una vez aprobadas las simulaciones se implementa el software y se realizan pruebas unitarias con el objetivo de que cada módulo de hardware funcione correctamente. Finalmente se realizan pruebas integrales para observar el comportamiento de cada uno de los módulos y se realizan las simulaciones de misión para validar el rendimiento en escenarios realistas. Cabe destacar que la integración con el hardware se realiza por medio de Hardware en el Loop, el cual consiste en la observar la interacción existente entre el hardware y software en condiciones simuladas. Estas simulan el entorno de operación real. 
+
+Para el desarrollo del modelo de simulación se deben de otorgar al sistema los modelos matemáticos encargados de representar el comportamiento dinámico del sistema y el entorno operativo además de incluir una simulación dinámica que incluya las perturbaciones ambientales y la interacción con otros sistemas.
+
+La implementación de sistemas GNC en sistemas embebidos, conlleva una combinación de hardware y software especializado, por un lado, los microcontroladores son los encargados de gestionar los cálculos, mientras que los sensores proporcionan distintos tipos de datos por medio de las entradas. Por otro lado, los sistemas en tiempo real garantizan la respuesta en el momento requerido. Las aplicaciones de estos se pueden observar en drones, satélites y sondas espaciales.
 
 \newpage
 
