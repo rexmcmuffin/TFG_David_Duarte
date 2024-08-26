@@ -1,44 +1,9 @@
 \begin{theindex}
 
-  \item BibTeX, \hyperpage{13}
-
-  \indexspace
-
-  \item ecuaciones, \hyperpage{5}
-  \item extensión, \hyperpage{15}
-
-  \indexspace
-
-  \item frases, \hyperpage{4}
-
-  \indexspace
-
-  \item IEEE, \hyperpage{4}
-  \item imagen
-    \subitem raster, \hyperpage{7}
-    \subitem vectorial, \hyperpage{7}
   \item introducción, \hyperpage{1}
 
   \indexspace
 
-  \item ltxfig, \hyperpage{8}
-
-  \indexspace
-
   \item objetivos, \hyperpage{3}
-
-  \indexspace
-
-  \item psfrag, \hyperpage{8}
-  \item pstricks, \hyperpage{9}
-
-  \indexspace
-
-  \item redacción, \hyperpage{4}
-  \item referencias, \hyperpage{13}
-
-  \indexspace
-
-  \item tikz, \hyperpage{8}
 
 \end{theindex}

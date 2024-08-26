@@ -12,3 +12,9 @@ IMU
 gantt
 PERT
 Gantt
+Simulink
+Godínez
+Johan
+ARM
+SoC
+NEON
