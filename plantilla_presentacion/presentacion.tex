@@ -4,7 +4,9 @@
 
 %\documentclass[15pt,compressed]{beamer} % [12pt]
 \documentclass[10pt,aspectratio=169]{beamer} % [12pt]
-
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{multirow}
 \input{macros}
 
 % What is this all about:
@@ -53,7 +55,7 @@
   configurable y que cuente con mecanismos de medición de desempeño.
   \end{itemize}
 \end{frame}
-
+\section{Objetivo general}
 \begin{frame}{Objetivo general}
   
   \begin{itemize}
@@ -62,6 +64,7 @@
   \end{itemize}
 \end{frame}
 
+\section{Objetivos específicos}
 \begin{frame}{Objetivos específicos}
   \begin{enumerate}
     \item Identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de navegación espacial.
@@ -99,24 +102,172 @@
 \subsection{Alternativa seleccionada}
 
 \begin{frame}{Alternativa seleccionada}
-  matriz de pugh
+  \begin{table}[h!]
+    {
+    \label{tab:matriz_de_pugh}
+    \begin{tabular}{ccccc}
+    \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D}} &
+      \multicolumn{1}{c|}{\cellcolor[HTML]{93C47D}} &
+      \multicolumn{1}{c|}{\cellcolor[HTML]{93C47D}} &
+      \multicolumn{1}{c|}{\cellcolor[HTML]{93C47D}} &
+      \multicolumn{1}{c|}{\cellcolor[HTML]{93C47D}} \\
+    \multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{93C47D} Criterios}} &
+      \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{93C47D} Peso}} &
+      \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{93C47D} Alt 1}} &
+      \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{93C47D} Alt 2}} &
+      \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{93C47D} Alt 3}} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Flexibilidad de la plataforma} &
+      \multicolumn{1}{c|}{2} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{-1} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Costo de implementación} &
+      \multicolumn{1}{c|}{3} &
+      \multicolumn{1}{c|}{-1} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{-1} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Rendimiento} &
+      \multicolumn{1}{c|}{5} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{-1} &
+      \multicolumn{1}{c|}{1} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Mantenibilidad} &
+      \multicolumn{1}{c|}{2} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{-1} &
+      \multicolumn{1}{c|}{1} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Innovación} &
+      \multicolumn{1}{c|}{3} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{1} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Portabilidad de la solución} &
+      \multicolumn{1}{c|}{5} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{-1} &
+      \multicolumn{1}{c|}{-1} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Ajuste de parámetros} &
+      \multicolumn{1}{c|}{5} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{1} \\ \hline
+    \multicolumn{1}{l}{} &
+      \multicolumn{1}{l}{} &
+      \multicolumn{1}{l}{} &
+      \multicolumn{1}{l}{} &
+      \multicolumn{1}{l}{} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Suma general} &
+      \multicolumn{1}{l|}{} &
+      \multicolumn{1}{c|}{19} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{3} \\ \hline
+    \multicolumn{1}{|c|}{\cellcolor[HTML]{93C47D} Posición} &
+      \multicolumn{1}{l|}{} &
+      \multicolumn{1}{c|}{1} &
+      \multicolumn{1}{c|}{3} &
+      \multicolumn{1}{c|}{2} \\ \hline
+    \end{tabular}%
+    }
+    \end{table}
 \end{frame}
 
 \begin{frame}{Alternativa seleccionada}
-  Diagrama de implementación del sistema
+  \includegraphics[width=\textwidth]{fig/yocto_final.png}
 \end{frame}
 
 \subsection{Procedimiento para la ejecución del proyecto}
 
 \begin{frame}{Procedimiento para la ejecución del proyecto}
-  cuadro de objetivos
+  \begin{table}[h!]
+    \label{tab:actividades}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|l|c|c|c|}
+    \hline
+    \textbf{\#} &
+      \multicolumn{1}{c|}{\textbf{Actividad}} &
+      \textbf{Objetivo} &
+      \textbf{Tiempo en días} &
+      \textbf{Dependencias} \\ \hline
+    A & \begin{tabular}[c]{@{}l@{}}Investigar sobre las plataformas de hardware\\ disponibles en el mercado\end{tabular}                            & 1.1 & 4 & N.A. \\ \hline
+    B &
+      \begin{tabular}[c]{@{}l@{}}Definir las características deseadas por la\\ plataforma de hardware\end{tabular} &
+      1.2 &
+      4 &
+      A \\ \hline
+    C & \begin{tabular}[c]{@{}l@{}}Investigar sobre el desarrollo de modelos\\ de ingeniería para computadoras de navegación\\ espacial\end{tabular} & 1.3 & 4 & N.A. \\ \hline
+    D & \begin{tabular}[c]{@{}l@{}}Elección de la plataforma de hardware según\\ cumplimiento de las características\end{tabular}                   & 1.4 & 4 & C    \\ \hline
+    E &
+      Documentación de los datos &
+      1.5 &
+      8 &
+      A,B,C,D \\ \hline
+    F & \begin{tabular}[c]{@{}l@{}} Investigar sobre los flujos de trabajo actuales\\ para el prototipado de sistemas de control\end{tabular}        & 2.1 & 4 & E    \\ \hline
+    G &
+      \begin{tabular}[c]{@{}l@{}} Investigación sobre la implementación de\\ hardware en el loop\end{tabular} &
+      2.2 &
+      4 &
+      F \\ \hline
+    H &
+      Implementación &
+      2.3 &
+      8 &
+      G \\ \hline
+    I &
+      Pruebas &
+      2.4 &
+      8 &
+      H \\ \hline
+    J &
+      Documentación de los datos &
+      2.5 &
+      8 &
+      F,G,H,I \\ \hline
+    \end{tabular}%
+  }
+  \end{table}
 \end{frame}
 
+\begin{frame}{Procedimiento para la ejecución del proyecto}
+  \begin{table}[h!]
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|l|c|c|c|}
+    \hline
+    \textbf{\#} &
+      \multicolumn{1}{c|}{\textbf{Actividad}} &
+      \textbf{Objetivo} &
+      \textbf{Tiempo en días} &
+      \textbf{Dependencias} \\ \hline
+      K & \begin{tabular}[c]{@{}l@{}}Investigar los casos sde uso de una\\ computadora de navegación y control\\ espacial\end{tabular}                 & 3.1 & 4 & J    \\ \hline
+      L &
+        Investigación de aplicaciones de referencia &
+        3.2 &
+        4 &
+        K \\ \hline
+      M &
+        Implementación &
+        3.3 &
+        5 &
+        L \\ \hline
+      N &
+        Pruebas &
+        3.4 &
+        5 &
+        M \\ \hline
+      O &
+        Documentación de los datos &
+        3.5 &
+        8 &
+        J,K,L,M,N \\ \hline
+    \end{tabular}%
+  }
+  \end{table}
+\end{frame}
 
 \subsection{Diagrama para el desarrollo del proyecto}
 
 \begin{frame}{Diagrama para el desarrollo del proyecto}
-  diagrama de gantt
+  \includegraphics[width=\textwidth]{fig/gantt.png}
 \end{frame}
 
 \section{Uso de recursos}

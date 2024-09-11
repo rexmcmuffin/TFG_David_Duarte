@@ -1,9 +1,11 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Entorno del proyecto}{3}{0}{1}
-\beamer@sectionintoc {2}{Solución}{7}{0}{2}
-\beamer@subsectionintoc {2}{1}{Enfoque de la solución}{7}{0}{2}
-\beamer@subsectionintoc {2}{2}{Alternativas de solución}{8}{0}{2}
-\beamer@subsectionintoc {2}{3}{Alternativa seleccionada}{9}{0}{2}
-\beamer@subsectionintoc {2}{4}{Procedimiento para la ejecución del proyecto}{11}{0}{2}
-\beamer@subsectionintoc {2}{5}{Diagrama para el desarrollo del proyecto}{12}{0}{2}
-\beamer@sectionintoc {3}{Uso de recursos}{13}{0}{3}
+\beamer@sectionintoc {2}{Objetivo general}{5}{0}{2}
+\beamer@sectionintoc {3}{Objetivos específicos}{6}{0}{3}
+\beamer@sectionintoc {4}{Solución}{7}{0}{4}
+\beamer@subsectionintoc {4}{1}{Enfoque de la solución}{7}{0}{4}
+\beamer@subsectionintoc {4}{2}{Alternativas de solución}{8}{0}{4}
+\beamer@subsectionintoc {4}{3}{Alternativa seleccionada}{9}{0}{4}
+\beamer@subsectionintoc {4}{4}{Procedimiento para la ejecución del proyecto}{11}{0}{4}
+\beamer@subsectionintoc {4}{5}{Diagrama para el desarrollo del proyecto}{13}{0}{4}
+\beamer@sectionintoc {5}{Uso de recursos}{14}{0}{5}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  28 AUG 2024 23:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  29 AUG 2024 07:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -534,19 +534,40 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen293
 \beamer@dimb=\dimen294
-) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (./macros.tex (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (c:/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+ (c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+\col@sep=\dimen295
+\ar@mcellbox=\box77
+\extrarowheight=\dimen296
+\NC@list=\toks46
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box78
+)
+\everycr=\toks47
+\minrowclearance=\skip68
+\rownum=\count343
+) (c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip69
+\multirow@cntb=\count344
+\multirow@dima=\skip70
+\bigstrutjot=\dimen297
+) (./macros.tex (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/06/26 v24.7 The Babel package
-\babel@savecnt=\count343
-\U@D=\dimen295
+\babel@savecnt=\count345
+\U@D=\dimen298
 \l@unhyphenated=\language89
  (c:/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 LaTeX Info: Redefining \textlatin on input line 3930.
-\bbl@dirlevel=\count344
+\bbl@dirlevel=\count346
  (c:/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks46
-\es@quotdepth=\count345
+\es@quottoks=\toks48
+\es@quotdepth=\count347
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
@@ -556,8 +577,8 @@ Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (c:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks47
-\inpenc@posthook=\toks48
+\inpenc@prehook=\toks49
+\inpenc@posthook=\toks50
 ) (c:/texlive/2024/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 ) (c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
@@ -572,30 +593,28 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 ) (c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2024/05/23 v1.9h multicolumn formatting (FMi)
-\c@tracingmulticols=\count346
-\mult@box=\box77
-\multicol@leftmargin=\dimen296
-\c@unbalance=\count347
-\c@collectmore=\count348
-\doublecol@number=\count349
-\multicoltolerance=\count350
-\multicolpretolerance=\count351
-\full@width=\dimen297
-\page@free=\dimen298
-\premulticols=\dimen299
-\postmulticols=\dimen300
-\multicolsep=\skip66
-\multicolbaselineskip=\skip67
-\partial@page=\box78
-\last@line=\box79
-\mc@boxedresult=\box80
-\maxbalancingoverflow=\dimen301
-\mult@rightbox=\box81
-\mult@grightbox=\box82
-\mult@firstbox=\box83
-\mult@gfirstbox=\box84
-\@tempa=\box85
-\@tempa=\box86
+\c@tracingmulticols=\count348
+\mult@box=\box79
+\multicol@leftmargin=\dimen299
+\c@unbalance=\count349
+\c@collectmore=\count350
+\doublecol@number=\count351
+\multicoltolerance=\count352
+\multicolpretolerance=\count353
+\full@width=\dimen300
+\page@free=\dimen301
+\premulticols=\dimen302
+\postmulticols=\dimen303
+\multicolsep=\skip71
+\multicolbaselineskip=\skip72
+\partial@page=\box80
+\last@line=\box81
+\mc@boxedresult=\box82
+\maxbalancingoverflow=\dimen304
+\mult@rightbox=\box83
+\mult@grightbox=\box84
+\mult@firstbox=\box85
+\mult@gfirstbox=\box86
 \@tempa=\box87
 \@tempa=\box88
 \@tempa=\box89
@@ -630,84 +649,77 @@ Package: multicol 2024/05/23 v1.9h multicolumn formatting (FMi)
 \@tempa=\box118
 \@tempa=\box119
 \@tempa=\box120
-\c@minrows=\count352
-\c@columnbadness=\count353
-\c@finalcolumnbadness=\count354
-\last@try=\dimen302
-\multicolovershoot=\dimen303
-\multicolundershoot=\dimen304
-\mult@nat@firstbox=\box121
-\colbreak@box=\box122
-\mc@col@check@num=\count355
-) (c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
-\col@sep=\dimen305
-\ar@mcellbox=\box123
-\extrarowheight=\dimen306
-\NC@list=\toks49
-\extratabsurround=\skip68
-\backup@length=\skip69
-\ar@cellbox=\box124
+\@tempa=\box121
+\@tempa=\box122
+\c@minrows=\count354
+\c@columnbadness=\count355
+\c@finalcolumnbadness=\count356
+\last@try=\dimen305
+\multicolovershoot=\dimen306
+\multicolundershoot=\dimen307
+\mult@nat@firstbox=\box123
+\colbreak@box=\box124
+\mc@col@check@num=\count357
 ) (c:/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen307
-\TX@old@table=\dimen308
-\TX@old@col=\dimen309
-\TX@target=\dimen310
-\TX@delta=\dimen311
-\TX@cols=\count356
-\TX@ftn=\toks50
+\TX@col@width=\dimen308
+\TX@old@table=\dimen309
+\TX@old@col=\dimen310
+\TX@target=\dimen311
+\TX@delta=\dimen312
+\TX@cols=\count358
+\TX@ftn=\toks51
 ) (c:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen312
-\lightrulewidth=\dimen313
-\cmidrulewidth=\dimen314
-\belowrulesep=\dimen315
-\belowbottomsep=\dimen316
-\aboverulesep=\dimen317
-\abovetopsep=\dimen318
-\cmidrulesep=\dimen319
-\cmidrulekern=\dimen320
-\defaultaddspace=\dimen321
-\@cmidla=\count357
-\@cmidlb=\count358
-\@aboverulesep=\dimen322
-\@belowrulesep=\dimen323
-\@thisruleclass=\count359
-\@lastruleclass=\count360
-\@thisrulewidth=\dimen324
+\heavyrulewidth=\dimen313
+\lightrulewidth=\dimen314
+\cmidrulewidth=\dimen315
+\belowrulesep=\dimen316
+\belowbottomsep=\dimen317
+\aboverulesep=\dimen318
+\abovetopsep=\dimen319
+\cmidrulesep=\dimen320
+\cmidrulekern=\dimen321
+\defaultaddspace=\dimen322
+\@cmidla=\count359
+\@cmidlb=\count360
+\@aboverulesep=\dimen323
+\@belowrulesep=\dimen324
+\@thisruleclass=\count361
+\@lastruleclass=\count362
+\@thisrulewidth=\dimen325
 ) (c:/texlive/2024/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
  (c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count361
-\rotFPtop=\skip70
-\rotFPbot=\skip71
+\c@r@tfl@t=\count363
+\rotFPtop=\skip73
+\rotFPbot=\skip74
 \rot@float@box=\box125
-\rot@mess@toks=\toks51
+\rot@mess@toks=\toks52
 ) (c:/texlive/2024/texmf-dist/tex/latex/trsym/trsym.sty
 Package: trsym 2000/06/25v1.0transformation symbol font
 \symtransfsymbol=\mathgroup6
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count362
+\lst@mode=\count364
 \lst@gtempboxa=\box126
-\lst@token=\toks52
-\lst@length=\count363
-\lst@currlwidth=\dimen325
-\lst@column=\count364
-\lst@pos=\count365
-\lst@lostspace=\dimen326
-\lst@width=\dimen327
-\lst@newlines=\count366
-\lst@lineno=\count367
-\lst@maxwidth=\dimen328
+\lst@token=\toks53
+\lst@length=\count365
+\lst@currlwidth=\dimen326
+\lst@column=\count366
+\lst@pos=\count367
+\lst@lostspace=\dimen327
+\lst@width=\dimen328
+\lst@newlines=\count368
+\lst@lineno=\count369
+\lst@maxwidth=\dimen329
  (c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
-\c@lstnumber=\count368
-\lst@skipnumbers=\count369
+\c@lstnumber=\count370
+\lst@skipnumbers=\count371
 \lst@framebox=\box127
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/05/25 1.10b listings configuration
@@ -715,89 +727,89 @@ File: listings.cfg 2024/05/25 1.10b listings configuration
 Package: listings 2024/05/25 1.10b (Carsten Heinz)
  (c:/texlive/2024/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count370
-\algocf@hangindent=\skip72
+\c@AlgoLine=\count372
+\algocf@hangindent=\skip75
  (c:/texlive/2024/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count371
+\c@checkoddpage=\count373
 ) (c:/texlive/2024/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (c:/texlive/2024/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip73
-\skiplinenumber=\skip74
-\skiprule=\skip75
-\skiphlne=\skip76
-\skiptext=\skip77
-\skiplength=\skip78
-\algomargin=\skip79
-\skipalgocfslide=\skip80
-\algowidth=\dimen329
-\inoutsize=\dimen330
-\inoutindent=\dimen331
-\interspacetitleruled=\dimen332
-\interspacealgoruled=\dimen333
-\interspacetitleboxruled=\dimen334
-\algocf@ruledwidth=\skip81
+\skiptotal=\skip76
+\skiplinenumber=\skip77
+\skiprule=\skip78
+\skiphlne=\skip79
+\skiptext=\skip80
+\skiplength=\skip81
+\algomargin=\skip82
+\skipalgocfslide=\skip83
+\algowidth=\dimen330
+\inoutsize=\dimen331
+\inoutindent=\dimen332
+\interspacetitleruled=\dimen333
+\interspacealgoruled=\dimen334
+\interspacetitleboxruled=\dimen335
+\algocf@ruledwidth=\skip84
 \algocf@inoutbox=\box128
 \algocf@inputbox=\box129
-\AlCapSkip=\skip82
-\AlCapHSkip=\skip83
-\algoskipindent=\skip84
+\AlCapSkip=\skip85
+\AlCapHSkip=\skip86
+\algoskipindent=\skip87
 \algocf@nlbox=\box130
 \algocf@hangingbox=\box131
 \algocf@untilbox=\box132
-\algocf@skipuntil=\skip85
+\algocf@skipuntil=\skip88
 \algocf@capbox=\box133
-\algocf@lcaptionbox=\skip86
-\algoheightruledefault=\skip87
-\algoheightrule=\skip88
-\algotitleheightruledefault=\skip89
-\algotitleheightrule=\skip90
-\c@algocfline=\count372
-\c@algocfproc=\count373
-\c@algocf=\count374
+\algocf@lcaptionbox=\skip89
+\algoheightruledefault=\skip90
+\algoheightrule=\skip91
+\algotitleheightruledefault=\skip92
+\algotitleheightrule=\skip93
+\c@algocfline=\count374
+\c@algocfproc=\count375
+\c@algocf=\count376
 \algocf@algoframe=\box134
 \algocf@algobox=\box135
 ) (c:/texlive/2024/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count375
-\c@ALC@line=\count376
-\c@ALC@rem=\count377
-\c@ALC@depth=\count378
-\ALC@tlm=\skip91
-\algorithmicindent=\skip92
+\c@ALC@unique=\count377
+\c@ALC@line=\count378
+\c@ALC@rem=\count379
+\c@ALC@depth=\count380
+\ALC@tlm=\skip94
+\algorithmicindent=\skip95
 ) (c:/texlive/2024/texmf-dist/tex/latex/was/icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 ) (c:/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
  (c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count379
-\calc@Bcount=\count380
-\calc@Adimen=\dimen335
-\calc@Bdimen=\dimen336
-\calc@Askip=\skip93
-\calc@Bskip=\skip94
+\calc@Acount=\count381
+\calc@Bcount=\count382
+\calc@Adimen=\dimen336
+\calc@Bdimen=\dimen337
+\calc@Askip=\skip96
+\calc@Bskip=\skip97
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count381
-\calc@Cskip=\skip95
+\calc@Ccount=\count383
+\calc@Cskip=\skip98
 ) (c:/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count382
-\l_MT_multwidth_dim=\dimen337
-\origjot=\skip96
-\l_MT_shortvdotswithinadjustabove_dim=\dimen338
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen339
-\l_MT_above_intertext_sep=\dimen340
-\l_MT_below_intertext_sep=\dimen341
-\l_MT_above_shortintertext_sep=\dimen342
-\l_MT_below_shortintertext_sep=\dimen343
+\g_MT_multlinerow_int=\count384
+\l_MT_multwidth_dim=\dimen338
+\origjot=\skip99
+\l_MT_shortvdotswithinadjustabove_dim=\dimen339
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen340
+\l_MT_above_intertext_sep=\dimen341
+\l_MT_below_intertext_sep=\dimen342
+\l_MT_above_shortintertext_sep=\dimen343
+\l_MT_below_shortintertext_sep=\dimen344
 \xmathstrut@box=\box136
-\xmathstrut@dim=\dimen344
+\xmathstrut@dim=\dimen345
 )
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
@@ -816,8 +828,8 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 46.
  (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemeMarburg.sty (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
-\beamer@sidebarwidth=\dimen345
-\beamer@headheight=\dimen346
+\beamer@sidebarwidth=\dimen346
+\beamer@headheight=\dimen347
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 13.67995pt on input line 18.
 )) (./beamercolorthemetec.sty) (c:/texlive/2024/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
@@ -825,11 +837,11 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup12
 ))
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 21.
+LaTeX Warning: \include should only be used after \begin{document} on input line 23.
 
 (./notation.tex) (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count383
+\l__color_backend_stack_int=\count385
 \l__pdf_internal_box=\box137
 ) (./presentacion.aux
 LaTeX Info: Redefining \. on input line 12.
@@ -837,24 +849,24 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `presentacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -892,83 +904,83 @@ LaTeX Font Info:    ... okay on input line 25.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count384
-\scratchdimen=\dimen347
+\scratchcounter=\count386
+\scratchdimen=\dimen348
 \scratchbox=\box138
-\nofMPsegments=\count385
-\nofMParguments=\count386
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count387
-\MPscratchDim=\dimen348
-\MPnumerator=\count388
-\makeMPintoPDFobject=\count389
-\everyMPtoPDFconversion=\toks54
+\nofMPsegments=\count387
+\nofMParguments=\count388
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count389
+\MPscratchDim=\dimen349
+\MPnumerator=\count390
+\makeMPintoPDFobject=\count391
+\everyMPtoPDFconversion=\toks55
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 27.
  (./presentacion.out) (./presentacion.out)
 \@outlinefile=\write5
 \openout5 = `presentacion.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 25.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 25.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 27.
 \symnumbers=\mathgroup13
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 25.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 27.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 25.
+(Font)              `pureletters' in the math version `normal' on input line 27.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> T1/phv/m/it on input line 25.
+(Font)                  OT1/mathkerncmss/m/sl --> T1/phv/m/it on input line 27.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 25.
+(Font)              `pureletters' in the math version `bold' on input line 27.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> T1/phv/m/it on input line 25.
+(Font)                  OT1/mathkerncmss/bx/sl --> T1/phv/m/it on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 25.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 25.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 25.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 25.
+(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 25.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 25.
+(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 25.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 25.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 25.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 25.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 25.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 25.
+(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 25.
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 25.
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 27.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 25.
-LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 25.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 27.
+LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 27.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `boldpureletters' in the math version `normal' on input line 25.
+(Font)              `boldpureletters' in the math version `normal' on input line 27.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/bx/sl --> T1/phv/bx/it on input line 25.
+(Font)                  OT1/mathkerncmss/bx/sl --> T1/phv/bx/it on input line 27.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `boldpureletters' in the math version `bold' on input line 25.
+(Font)              `boldpureletters' in the math version `bold' on input line 27.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> T1/phv/bx/it on input line 25.
+(Font)                  OT1/mathkerncmss/bx/sl --> T1/phv/bx/it on input line 27.
  (c:/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (c:/texlive/2024/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -982,22 +994,22 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (c:/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
-\c@lstlisting=\count390
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+\c@lstlisting=\count392
  (./presentacion.nav)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 25.
+(Font)              scaled to size 4.74998pt on input line 27.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 30.
+(Font)              scaled to size 6.64998pt on input line 32.
 
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 3.79999pt on input line 30.
-<./fig/MarcaTECRGB.pdf, id=49, 401.80313pt x 93.19879pt>
+(Font)              scaled to size 3.79999pt on input line 32.
+<./fig/MarcaTECRGB.pdf, id=57, 401.80313pt x 93.19879pt>
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 30.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 32.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [1{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
@@ -1008,61 +1020,61 @@ LaTeX Info: Redefining \% on input line 1.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 35.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 37.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+trsy on input line 46.
+LaTeX Font Info:    Trying to load font information for U+trsy on input line 48.
  (c:/texlive/2024/texmf-dist/tex/latex/trsym/utrsy.fd
 File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 46.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 46.
+(Font)              scaled to size 9.49997pt on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 46.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 46.
+(Font)              scaled to size 6.64998pt on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 46.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 4.74998pt on input line 46.
+(Font)              scaled to size 4.74998pt on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 9.49997pt on input line 46.
+(Font)              scaled to size 9.49997pt on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 6.64998pt on input line 46.
+(Font)              scaled to size 6.64998pt on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <5> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <5> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 46.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 4.74998pt on input line 46.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 46.
+(Font)              scaled to size 4.74998pt on input line 48.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 48.
  (c:/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 46.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 48.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [3
 
@@ -1070,7 +1082,7 @@ Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 46.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 55.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 57.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [4
 
@@ -1078,7 +1090,7 @@ Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 55.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 63.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 65.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [5
 
@@ -1086,7 +1098,7 @@ Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 63.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 73.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 76.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [6
 
@@ -1094,7 +1106,7 @@ Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 73.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 85.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 88.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [7
 
@@ -1102,7 +1114,7 @@ Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 85.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 97.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 100.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [8
 
@@ -1110,23 +1122,32 @@ Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 97.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 103.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 173.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [9
 
 ]
+<fig/yocto_final.png, id=428, 941.5175pt x 492.84125pt>
+File: fig/yocto_final.png Graphic file (type png)
+<use fig/yocto_final.png>
+Package pdftex.def Info: fig/yocto_final.png  used on input line 177.
+(pdftex.def)             Requested size: 355.65947pt x 186.16862pt.
+
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 107.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 177.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [10
 
-]
+ <./fig/yocto_final.png>]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 229.
+
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 113.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 229.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [11
 
@@ -1134,17 +1155,31 @@ Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 113.
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 120.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 265.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [12
 
 ]
+<fig/gantt.png, id=540, 663.98062pt x 347.04657pt>
+File: fig/gantt.png Graphic file (type png)
+<use fig/gantt.png>
+Package pdftex.def Info: fig/gantt.png  used on input line 271.
+(pdftex.def)             Requested size: 355.65947pt x 185.89313pt.
+
 
 File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
 <use ./fig/MarcaTECRGB.pdf>
-Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 130.
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 271.
 (pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
 [13
+
+ <./fig/gantt.png>]
+
+File: ./fig/MarcaTECRGB.pdf Graphic file (type pdf)
+<use ./fig/MarcaTECRGB.pdf>
+Package pdftex.def Info: ./fig/MarcaTECRGB.pdf  used on input line 281.
+(pdftex.def)             Requested size: 71.13188pt x 16.49916pt.
+[14
 
 ]
 \tf@nav=\write6
@@ -1165,21 +1200,21 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: E9C59D5D42851BA69DBDD2526CE6072D;1473.
+(rerunfilecheck)             Checksum: 7ECF656397D7F584895C0E97C8125692;1754.
  ) 
 Here is how much of TeX's memory you used:
- 27432 strings out of 473579
- 508456 string characters out of 5732257
- 1941960 words of memory out of 5000000
- 49719 multiletter control sequences out of 15000+600000
- 588923 words of font info for 78 fonts, out of 8000000 for 9000
+ 27629 strings out of 473579
+ 511641 string characters out of 5732257
+ 1953960 words of memory out of 5000000
+ 49900 multiletter control sequences out of 15000+600000
+ 591653 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,490b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on presentacion.pdf (13 pages, 295685 bytes).
+ 128i,16n,123p,511b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on presentacion.pdf (14 pages, 406295 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 35 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 587 compressed objects within 6 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
