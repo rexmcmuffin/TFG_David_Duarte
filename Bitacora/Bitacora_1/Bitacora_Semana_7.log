@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  27 AUG 2024 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  30 AUG 2024 21:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -716,37 +716,30 @@ Package pdftex.def Info: Firma_TEC-4.pdf  used on input line 91.
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Firma_TEC-4.pdf>]
 
-LaTeX Warning: Reference `man:cita_manual' on page 2 undefined on input line 165.
-
-
-
 [2]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 206.
  (c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+)
+<images/image01.png, id=33, 321.45094pt x 186.6975pt>
+File: images/image01.png Graphic file (type png)
+<use images/image01.png>
+Package pdftex.def Info: images/image01.png  used on input line 212.
+(pdftex.def)             Requested size: 321.45015pt x 186.69704pt.
+ (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 212.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 220.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 212.
-<images/image01.png, id=33, 321.45094pt x 186.6975pt>
-File: images/image01.png Graphic file (type png)
-<use images/image01.png>
-Package pdftex.def Info: images/image01.png  used on input line 239.
-(pdftex.def)             Requested size: 377.62642pt x 219.33255pt.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 220.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[3{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/image01.png>]
 
-
-
-[3{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-[4 <./images/image01.png>] (./Bitacora_Semana_7.aux
+[4] (./Bitacora_Semana_7.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -754,23 +747,19 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `Bitacora_Semana_7.out' has not changed.
 (rerunfilecheck)             Checksum: 309C087E4059E02666E81D85E59756C8;282.
  ) 
 Here is how much of TeX's memory you used:
- 35887 strings out of 473579
- 808699 string characters out of 5732257
- 2064960 words of memory out of 5000000
- 58219 multiletter control sequences out of 15000+600000
+ 35888 strings out of 473579
+ 808698 string characters out of 5732257
+ 2057960 words of memory out of 5000000
+ 58220 multiletter control sequences out of 15000+600000
  564566 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,11n,107p,829b,1265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,11n,107p,829b,2107s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
-Output written on Bitacora_Semana_7.pdf (4 pages, 92762 bytes).
+Output written on Bitacora_Semana_7.pdf (4 pages, 93382 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream

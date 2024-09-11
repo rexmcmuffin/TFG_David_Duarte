@@ -125,9 +125,9 @@
         \multicolumn{1}{|c|}{Reporte de   actividades} \\ \hline
         \hline
         - Restructuración de la sección de marco teórico, se acuerda que el mismo será \\
-        compuesto por no mas de 10 páginas, en las cuales se hablara de temas como lo son \\
-        ¿Que es la estimación?, ¿Que es el control?, ¿Que son los procesadores embebidos?\\
-        ¿Que es un marco de trabajo?, ¿Que es el model to model transformation? y ¿Que es \\
+        compuesto por no más de 10 páginas, en las cuales se hablara de temas como lo son \\
+        ¿Qué es la estimación?, ¿Qué es el control?, ¿Que son los procesadores embebidos?\\
+        ¿Qué es un marco de trabajo?, ¿Qué es el model to model transformation? y ¿Que es \\
         el código embebido?, además de esto se estructura una revisión literaria no mayor a \\
         4 años de antigüedad y el estado del arte. \\ \hline
         
@@ -141,33 +141,33 @@
         ellos y asi mejorar la propuesta antes de la evaluación de la misma. \\ \hline
 
         - Se establece como marco de trabajo a utilizar Yocto Project y se comienza a buscar la forma de \\
-        encontrar una distribucion de linux la cual pueda soportar el modelo de board support package \\
-        con el cual se debera de generar la solucion. \\ \hline\hline
+        encontrar una distribución de linux la cual pueda soportar el modelo de board support package \\
+        con el cual se deberá de generar la solución. \\ \hline\hline
         
         \hline
         \multicolumn{1}{|c|}{Productos obtenidos} \\ \hline\hline
-        Se comienza a trabajar en la reestructuracion del marco teorico usando las preguntas \\
+        Se comienza a trabajar en la reestructuración del marco teórico usando las preguntas \\
         mencionadas anteriormente como generadores, esto con el fin de aclarar al lector \\
-        algunos de los conceptos basicos que va a requerir para poder comprender el hilo \\
-        condustor del trabajo escrito.\\
+        algunos de los conceptos básicos que va a requerir para poder comprender el hilo \\
+        conductor del trabajo escrito.\\
 
-        El tema de control electrico se menciona de forma muy superficial en la tesis,\\
-        solamente se explica que es el control automatico y por que es de relevancia en\\
-        el desarrollo de esta tesis, pero se explica de forma explicita que el conjunto \\
+        El tema de control eléctrico se menciona de forma muy superficial en la tesis,\\
+        solamente se explica que es el control automático y porque es de relevancia en\\
+        el desarrollo de esta tesis, pero se explica de forma explícita que el conjunto \\
         de flujos de trabajo a desarrollar en esta tesis se encontraran ubicados en el \\
-        medio mas no seran parte fisica del control electrico realizado.\\
+        medio más no serán parte física del control eléctrico realizado.\\
         
-        Ademas por otro lado se comienza a trabajar en el primer capitulo de la tesis en\\
-        donde se debe de seleccionar el numero de parte de la tarjeta de desarrollo con\\
+        Además por otro lado se comienza a trabajar en el primer capítulo de la tesis en\\
+        donde se debe de seleccionar el número de parte de la tarjeta de desarrollo con\\
         la cual se plantea el desarrollo del proyecto, se establece el uso de la tarjeta de \\
-        desarrolo Zeadbord, la cual debera de trabajar bajo el marco de trabajo de Yocto, \\
-        para esto se debera de seguir el manual que se adjunta en \ref{man:cita_manual} \\ \hline \hline  
+        desarrollo Zeadbord, la cual deberá de trabajar bajo el marco de trabajo de Yocto, \\
+        para esto se deberá de seguir el manual que se adjunta. \\ \hline \hline  
     \end{tabular}}
 \end{table}
 
-Como se menciono anteriormente se logro encontrar un BSP disponible para la ZeadBoard, el mismo
-se encuentra actualmente disponible para la distribucion de Yocto Zeus la cual tuvo el lanzamiento 
-en el anno de 2019, por tanto es necesario instalar Ubuntu 18.04 para poder llevar a cabo la elaboracion
+Como se mencionó anteriormente se logró encontrar un BSP disponible para la ZeadBoard, el mismo
+se encuentra actualmente disponible para la distribución de Yocto Zeus la cual tuvo el lanzamiento 
+en el año de 2019, por tanto es necesario instalar Ubuntu 18.04 para poder llevar a cabo la elaboración
 del conjunto de flujos de trabajo. Los mismos se realizan siguiendo esta serie de pasos. 
 
 Tabla con las versiones de Yocto
@@ -205,9 +205,17 @@ Tabla con las versiones de Yocto
     \end{tabular}%
     }
     \end{table}
-Tabla con las vensiones de bsp segun el repo de xilinx
+Tabla con las versiones de bsp según el repo de xilinx
 
-Indicar que se sigue bajo la investigacion si hay algunas vesion lts que soporte el zedboard
+\begin{figure}[h!]
+  \centering
+  \includegraphics{images/image01.png}
+  \caption{BSP Xilinx}
+  \label{fig:Entorno}
+\end{figure}
+
+
+Indicar que se sigue bajo la investigación si hay alguna versión lts que soporte el zedboard
 
 \begin{lstlisting}[language=bash]
 sudo apt-get install gawk wget git-core diffstat unzip texinfo 
@@ -234,12 +242,8 @@ bitbake-layers add-layer ../meta-openembedded/meta-oe/
 bitbake core-image-minimal
 \end{lstlisting}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/image01.png}
-    \caption{BSP Xilinx}
-    \label{fig:Entorno}
-  \end{figure}
+De momento se trabaja la versión encontrada con Yocto Zeus, con el fin de generar una imagen mínima y comenzar
+con el trabajo de adaptación.
 
 %\bibliography{bibliografia_consultada}
 %\bibliographystyle{plain}
