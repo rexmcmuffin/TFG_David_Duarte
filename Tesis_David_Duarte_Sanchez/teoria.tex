@@ -63,7 +63,7 @@ Algunos SoC que incorporan núcleos Cortex-A9 son:
 
 \subsection{Tarjeta de desarrollo ZedBoard}
 
-La ZedBoard es una tarjeta de desarrollo basada en el Xilinx Zynq-7000 que como se menciono anteriormente integra núcleos Cortex-A9 con la lógica programable 
+La ZedBoard es una tarjeta de desarrollo basada en el Xilinx Zynq-7000 que como se mencionó anteriormente integra núcleos Cortex-A9 con la lógica programable 
 para Field Programmable Gate Array (FPGA). Esta plataforma es ideal para prototipar aplicaciones en el ámbito de sistemas embebidos. La tabla \ref{tab:zedboard} 
 resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
 
@@ -131,14 +131,14 @@ por Modelos (MDA), donde se busca facilitar la interoperabilidad y la portabilid
     \item Modelos UML a Código Fuente
 \end{itemize}
 
-Para efectos de este trabajo el area de interes seran la transformación de UML a Código Fuente.
+Para efectos de este trabajo el área de interés serán la transformación de UML a Código Fuente.
 
 \subsection{MATLAB Embedded Coder}
 
 El MATLAB Embedded Coder se adapta a esta definición de transformación de modelo a modelo, ya que permite a los usuarios generar código C y C++ a partir de modelos 
-Simulink y Stateflow. Esto es especialmente útil en el desarrollo de sistemas embebidos, donde se requiere que los modelos de alto nivel se transformen en código 
+Simulink. Esto es especialmente útil en el desarrollo de sistemas embebidos, donde se requiere que los modelos de alto nivel se transformen en código 
 que pueda ser ejecutado en hardware específico. Esta herramienta facilita la implementación de algoritmos y sistemas de control, asegurando que el modelo original 
-se traduzca eficazmente en un formato que pueda ser utilizado en entornos de producción
+se traduzca eficazmente en un formato que pueda ser utilizado en entornos de producción.
 
 \section{Código embebido}
 
@@ -149,4 +149,69 @@ para controlar dispositivos electrónicos, el uso de lenguajes de bajo nivel, la
 determinísticos.
 
 \section{Revisión literaria}
-\section{Estado del arte}
+En los últimos 4 años, las computadoras de guía, navegación y control han mostrado grandes avances en el desarrollo de sistemas autónomos.
+
+\subsection{Desarrollo de sistemas de navegación}
+
+En 2022, se presentó un sistema de planificación y control de navegación para vehículos autónomos en entornos urbanos. Este sistema permite la planificación 
+de rutas basadas en la posición actual del vehículo y su destino, utilizando un controlador clásico que asegura el seguimiento de la trayectoria mediante 
+odometría y correcciones visuales. Los resultados se simularon utilizando herramientas como ROS y Gazebo, lo que demuestra la viabilidad de estos sistemas en 
+entornos complejos \cite{BarreraRamrez2022SistemaDP}. 
+
+\subsection{Transformación de Lenguaje de Bloques a Código C}
+
+La traducción de código de control de lenguaje de bloques a C implica un proceso de conversión donde cada bloque visual se asocia con una estructura de código 
+en C. Esto se puede hacer utilizando herramientas de software que generan automáticamente el código C a partir de la lógica definida en el entorno de bloques. 
+Este proceso no solo facilita la programación, sino que también permite la optimización del código generado para mejorar el rendimiento en sistemas de navegación 
+autónoma.
+
+\subsubsection{XOD}
+
+XOD es un entorno de programación visual basado en bloques que permite a los usuarios crear programas para microcontroladores como Arduino. Este software 
+genera automáticamente código en C++ a partir de la lógica definida en bloques. Los usuarios pueden conectar componentes gráficamente y, al finalizar, acceder 
+al código generado, que es abierto y personalizable. XOD es gratuito y permite la creación de nuevos nodos para componentes específicos, lo que facilita la 
+adaptación a diferentes proyectos \cite{Snchez2020ProgramacinDL}.
+
+\subsubsection{Visual Microcontroller}
+Este software proporciona un lenguaje de programación gráfico para microcontroladores, desarrollado en C\#. Utiliza una interfaz gráfica que permite a los 
+usuarios diseñar diagramas que representan la lógica de control. El sistema compila el código a partir de diagramas gráficos, generando código intermedio 
+en C antes de llegar al código hexadecimal necesario para la programación del microcontrolador \cite{Sacta2011DesarrolloDU}.
+
+
+\subsubsection{LabVIEW}
+
+LabVIEW es un entorno de desarrollo que utiliza un enfoque gráfico para la programación. Aunque es más conocido en el ámbito de la ingeniería, también 
+permite la generación de código en C. LabVIEW facilita la creación de aplicaciones de control y adquisición de datos, y su capacidad para traducir 
+diagramas de bloques a código C lo convierte en una opción útil para proyectos que requieren un control preciso de hardware.
+
+\subsubsection{Simulink}
+Como se mencionó anteriormente, Simulink, parte de MATLAB, proporciona un entorno gráfico para modelar, simular y analizar sistemas dinámicos. 
+Permite a los usuarios crear modelos utilizando bloques y, posteriormente, generar código C automáticamente a partir de estos modelos. Esta 
+herramienta es especialmente valiosa en aplicaciones de ingeniería donde se requiere un alto grado de precisión y control sobre el 
+comportamiento del sistema.
+
+\section{Avances recientes en GNCs }
+
+En el marco del proyecto EROSS+ (European Robotic Orbital Support Services), se ha trabajado en el diseño de un sistema GNC altamente autónomo 
+para misiones de servicio robótico en órbita. Este proyecto, que abarca desde 2021 hasta 2023, busca integrar técnicas avanzadas de navegación 
+visual y control de cumplimiento para la captura y manipulación de satélites, mostrando un enfoque en la autonomía y la eficiencia operativa \cite{Casu2023EROSSPA}.
+
+Otro desarrollo notable es el programa de NASA sobre GNC autónomo, que incluye sistemas para el transbordador espacial. Este programa se centra en la optimización 
+de trayectorias de vuelo y la adaptación de sistemas GNC para diferentes condiciones de vuelo, lo que demuestra la importancia de la flexibilidad en el diseño de 
+estos sistemas \cite{Bordano1991AutonomousGN}.
+
+Además, la actividad VV4RTOS, apoyada por la Agencia Espacial Europea, se ha centrado en la verificación y validación de sistemas de control basados en optimización. 
+Esto incluye el desarrollo de software GNC en tiempo real, lo que permite una validación más efectiva y segura de los sistemas diseñados \cite{Loureno2023VerificationV}.
+
+\subsection{Programación de Sistemas GNC}
+Los lenguajes de bloques, como Simulink, son comúnmente utilizados para diseñar y simular sistemas de control. Estos lenguajes permiten a los ingenieros visualizar 
+el flujo de datos y las interacciones entre componentes de manera intuitiva. Sin embargo, la necesidad de traducir estos modelos a código C es crucial para su 
+implementación en hardware real.
+
+A pesar de los avances, existen desafíos significativos en la implementación de sistemas GNC. La variabilidad en los entornos operativos y la necesidad de adaptarse 
+a condiciones cambiantes requieren algoritmos robustos y adaptativos. La optimización de estos sistemas es fundamental para asegurar su efectividad en misiones 
+críticas.
+
+Un estudio reciente sobre el sistema CubeNav destaca la importancia de desarrollar herramientas de análisis de navegación que faciliten las operaciones de GNC 
+en misiones de CubeSats. Este enfoque busca reducir la curva de aprendizaje y minimizar errores humanos, lo que es esencial para misiones de bajo presupuesto 
+y alta complejidad \cite{Loureno2023VerificationV}.

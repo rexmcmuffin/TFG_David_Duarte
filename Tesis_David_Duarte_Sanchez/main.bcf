@@ -2383,6 +2383,13 @@
     <bcf:citekey order="5" intorder="1">HerreraLpez2023EntornoDT</bcf:citekey>
     <bcf:citekey order="6" intorder="1">Leppakoski2013FrameworkFI</bcf:citekey>
     <bcf:citekey order="7" intorder="1">Leppakoski2013FrameworkFI</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">BarreraRamrez2022SistemaDP</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Snchez2020ProgramacinDL</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Sacta2011DesarrolloDU</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Casu2023EROSSPA</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Bordano1991AutonomousGN</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Loureno2023VerificationV</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Loureno2023VerificationV</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

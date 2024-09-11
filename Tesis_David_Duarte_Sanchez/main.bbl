@@ -268,6 +268,273 @@
       \verb https://api.semanticscholar.org/CorpusID:21473510
       \endverb
     \endentry
+    \entry{BarreraRamrez2022SistemaDP}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2db26059043b821784f61421d4d7b07c}{%
+           family={Barrera-Ramírez},
+           familyi={B\bibinithyphendelim R\bibinitperiod},
+           given={Cruz},
+           giveni={C\bibinitperiod}}}%
+        {{hash=de1171a0be1d03a5c598307bffa25bee}{%
+           family={González-Miranda},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Óscar},
+           giveni={Ó\bibinitperiod}}}%
+        {{hash=cd837196295b3de331a51417a7dca35c}{%
+           family={Ibarra-Zannatha},
+           familyi={I\bibinithyphendelim Z\bibinitperiod},
+           given={Juan\bibnamedelima Manuel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{01410bfb141aff08e64f9f339e96f817}
+      \strng{fullhash}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
+      \strng{fullhashraw}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
+      \strng{bibnamehash}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
+      \strng{authorbibnamehash}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
+      \strng{authornamehash}{01410bfb141aff08e64f9f339e96f817}
+      \strng{authorfullhash}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
+      \strng{authorfullhashraw}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pädi Boletín Científico de Ciencias Básicas e Ingenierías del ICBI}
+      \field{title}{Sistema de planeación y control de navegación para un vehículo autónomo en un entorno urbano}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:260620410
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:260620410
+      \endverb
+    \endentry
+    \entry{Snchez2020ProgramacinDL}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=59331e47196f6ff4aa8771cbf1d0a570}{%
+           family={Sánchez},
+           familyi={S\bibinitperiod},
+           given={Simón\bibnamedelima Rosado},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{59331e47196f6ff4aa8771cbf1d0a570}
+      \strng{fullhash}{59331e47196f6ff4aa8771cbf1d0a570}
+      \strng{fullhashraw}{59331e47196f6ff4aa8771cbf1d0a570}
+      \strng{bibnamehash}{59331e47196f6ff4aa8771cbf1d0a570}
+      \strng{authorbibnamehash}{59331e47196f6ff4aa8771cbf1d0a570}
+      \strng{authornamehash}{59331e47196f6ff4aa8771cbf1d0a570}
+      \strng{authorfullhash}{59331e47196f6ff4aa8771cbf1d0a570}
+      \strng{authorfullhashraw}{59331e47196f6ff4aa8771cbf1d0a570}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Programación de laboratorios de biología portátiles abiertos basados en Arduino con el lenguaje de programación visual XOD}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:215856445
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:215856445
+      \endverb
+    \endentry
+    \entry{Sacta2011DesarrolloDU}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=00915964787994714e49049928c0468d}{%
+           family={Sacta},
+           familyi={S\bibinitperiod},
+           given={Cajamarca},
+           giveni={C\bibinitperiod}}}%
+        {{hash=65e3f7830224499eb9d6c75cf1c297dd}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={Kléver},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{180814519d81a220ffc5cdaea185627e}
+      \strng{fullhash}{180814519d81a220ffc5cdaea185627e}
+      \strng{fullhashraw}{180814519d81a220ffc5cdaea185627e}
+      \strng{bibnamehash}{180814519d81a220ffc5cdaea185627e}
+      \strng{authorbibnamehash}{180814519d81a220ffc5cdaea185627e}
+      \strng{authornamehash}{180814519d81a220ffc5cdaea185627e}
+      \strng{authorfullhash}{180814519d81a220ffc5cdaea185627e}
+      \strng{authorfullhashraw}{180814519d81a220ffc5cdaea185627e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Desarrollo de un lenguaje de programación gráfico para microcontroladores}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:170649818
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:170649818
+      \endverb
+    \endentry
+    \entry{Casu2023EROSSPA}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=8faef1be1bc9fec47085d749766697e5}{%
+           family={Casu},
+           familyi={C\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=75769d69ba5bab7a1bcc59ba43ec20fc}{%
+           family={Dubanchet},
+           familyi={D\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f29a6e832e3a061f63624a5e69f45de8}{%
+           family={Renault},
+           familyi={R\bibinitperiod},
+           given={Hervé},
+           giveni={H\bibinitperiod}}}%
+        {{hash=24cc672f24c05725e6f221e65bd3b91c}{%
+           family={Comellini},
+           familyi={C\bibinitperiod},
+           given={Anthea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d17849cba004c28d52927a75a24b7afe}{%
+           family={Dandré},
+           familyi={D\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{d994c7179ce7eeb4e0c46ae69d1fc92e}
+      \strng{fullhash}{4c11de363a59573c39b2e1faa49fb901}
+      \strng{fullhashraw}{4c11de363a59573c39b2e1faa49fb901}
+      \strng{bibnamehash}{4c11de363a59573c39b2e1faa49fb901}
+      \strng{authorbibnamehash}{4c11de363a59573c39b2e1faa49fb901}
+      \strng{authornamehash}{d994c7179ce7eeb4e0c46ae69d1fc92e}
+      \strng{authorfullhash}{4c11de363a59573c39b2e1faa49fb901}
+      \strng{authorfullhashraw}{4c11de363a59573c39b2e1faa49fb901}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
+      \field{title}{EROSS+ Phase A/B1 Guidance, Navigation and Control design for In-Orbit Servicing}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:267272107
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:267272107
+      \endverb
+    \endentry
+    \entry{Bordano1991AutonomousGN}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=cc2cdd6aa8ae9dc3fc68ee1e5381bb66}{%
+           family={Bordano},
+           familyi={B\bibinitperiod},
+           given={Aldo\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4ddc7531699de9f2567ca2f6f6be4f65}{%
+           family={Mcswain},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi G.},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=b19e75bd5f733ba74ea04bbb0aa9708b}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Stanley\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b43ba55902d93e948d3a29e4979894e7}
+      \strng{fullhash}{c1284bc8d7088792fcd54680b1ed787e}
+      \strng{fullhashraw}{c1284bc8d7088792fcd54680b1ed787e}
+      \strng{bibnamehash}{c1284bc8d7088792fcd54680b1ed787e}
+      \strng{authorbibnamehash}{c1284bc8d7088792fcd54680b1ed787e}
+      \strng{authornamehash}{b43ba55902d93e948d3a29e4979894e7}
+      \strng{authorfullhash}{c1284bc8d7088792fcd54680b1ed787e}
+      \strng{authorfullhashraw}{c1284bc8d7088792fcd54680b1ed787e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Autonomous Guidance, Navigation and Control}
+      \field{year}{1991}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:108853424
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:108853424
+      \endverb
+    \endentry
+    \entry{Loureno2023VerificationV}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=1dd060ed7004176a521f3c1ca115d4f2}{%
+           family={Lourenço},
+           familyi={L\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=89b3f0ef40764c2f57dc53e3ba84ba21}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c66e5656d88f788244be1a644aec2477}{%
+           family={Branco},
+           familyi={B\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a2e117b04346b574d81d841f3a3e5a94}{%
+           family={Garoche},
+           familyi={G\bibinitperiod},
+           given={Pierre-Loïc},
+           giveni={P\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=2b5bb8da79534700c7d48ddeacabf595}{%
+           family={Sadeghzadeh},
+           familyi={S\bibinitperiod},
+           given={Arash},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ead8ce19a82128f613a63997655f3ffd}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=655f2fe78711c1720070739d183b435d}{%
+           family={Frison},
+           familyi={F\bibinitperiod},
+           given={Gianluca},
+           giveni={G\bibinitperiod}}}%
+        {{hash=24cc672f24c05725e6f221e65bd3b91c}{%
+           family={Comellini},
+           familyi={C\bibinitperiod},
+           given={Anthea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=43de72b0b1beff08d6a17bc434430eca}{%
+           family={Barbero},
+           familyi={B\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c7b0358e1db854869a972a7bc17f7891}{%
+           family={Preda},
+           familyi={P\bibinitperiod},
+           given={Valentin},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ace4af4802ebfa56440cfe9cff15851b}
+      \strng{fullhash}{42acdc8d444c7b91d8e911c8f47e6b5d}
+      \strng{fullhashraw}{42acdc8d444c7b91d8e911c8f47e6b5d}
+      \strng{bibnamehash}{ace4af4802ebfa56440cfe9cff15851b}
+      \strng{authorbibnamehash}{ace4af4802ebfa56440cfe9cff15851b}
+      \strng{authornamehash}{ace4af4802ebfa56440cfe9cff15851b}
+      \strng{authorfullhash}{42acdc8d444c7b91d8e911c8f47e6b5d}
+      \strng{authorfullhashraw}{42acdc8d444c7b91d8e911c8f47e6b5d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
+      \field{title}{Verification \& validation of optimisation-based control systems: methods and outcomes of VV4RTOS}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:267287945
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:267287945
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
