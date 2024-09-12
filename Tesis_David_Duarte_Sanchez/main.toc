@@ -3,34 +3,36 @@
 \contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {iv}}{chapter*.7}%
 \contentsline {chapter}{Revisar}{\es@scroman {v}}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}El cambio climático y la electrónica}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Antecedentes}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}La disipación de energía en el reactor 42}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Sistema de almacenamiento energético}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.1}Proceso de diseño de los sistemas de Guía, Navegación y Control espacial}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Requerimientos de los sistemas}{1}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Sistemas embebidos para los sistemas GNC}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Marco de Trabajo Yocto}{2}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Donde se ubica dentro del flujo de control}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Hardware en el loop}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Objetivos y estructura del documento}{3}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Marco teórico}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Estimación}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Control}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Procesadores embebidos}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Cortex-A9}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Tarjeta de desarrollo ZedBoard}{6}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Marcos de trabajo}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}YOCTO}{7}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Transformación de modelo a modelo}{7}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}MATLAB Embedded Coder}{8}{subsection.2.5.1}%
-\contentsline {section}{\numberline {2.6}Código embebido}{8}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Revisión literaria}{8}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Desarrollo de sistemas de navegación}{8}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Transformación de Lenguaje de Bloques a Código C}{9}{subsection.2.7.2}%
-\contentsline {subsubsection}{XOD}{9}{section*.10}%
-\contentsline {subsubsection}{Visual Microcontroller}{9}{section*.11}%
-\contentsline {subsubsection}{LabVIEW}{9}{section*.12}%
-\contentsline {subsubsection}{Simulink}{10}{section*.13}%
-\contentsline {section}{\numberline {2.8}Avances recientes en GNCs }{10}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Programación de Sistemas GNC}{10}{subsection.2.8.1}%
-\contentsline {chapter}{\numberline {3}Solución propuesta}{12}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Resultados y análisis}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{14}{chapter.5}%
-\contentsline {chapter}{Bibliografía}{15}{chapter*.14}%
-\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{17}{appendix.Alph1}%
-\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{18}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {2}Marco teórico}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estimación}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Control}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Procesadores embebidos}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cortex-A9}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Tarjeta de desarrollo ZedBoard}{7}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Marcos de trabajo}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}YOCTO}{8}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Transformación de modelo a modelo}{8}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}MATLAB Embedded Coder}{9}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}Código embebido}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Revisión literaria}{9}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Desarrollo de sistemas de navegación}{9}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Transformación de Lenguaje de Bloques a Código C}{10}{subsection.2.7.2}%
+\contentsline {subsubsection}{XOD}{10}{section*.9}%
+\contentsline {subsubsection}{Visual Microcontroller}{10}{section*.10}%
+\contentsline {subsubsection}{LabVIEW}{10}{section*.11}%
+\contentsline {subsubsection}{Simulink}{11}{section*.12}%
+\contentsline {section}{\numberline {2.8}Avances recientes en GNCs }{11}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Programación de Sistemas GNC}{11}{subsection.2.8.1}%
+\contentsline {chapter}{\numberline {3}Solución propuesta}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Resultados y análisis}{14}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{15}{chapter.5}%
+\contentsline {chapter}{Bibliografía}{16}{chapter*.13}%
+\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{18}{appendix.Alph1}%
+\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{19}{appendix.Alph1}%

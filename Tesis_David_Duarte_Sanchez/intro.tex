@@ -9,165 +9,106 @@
 \chapter{Introducción}
 \label{chp:intro}
 
-En la \nt{introducción} deben quedar completamente claros los siguientes
-aspectos, cuyo significado depende del tipo concreto de tesis:
+\section{Proceso de diseño de los sistemas de Guía, Navegación y Control espacial}
 
-\begin{compactitem}
-\item Contexto
-\item Antecedentes
-\item Problema concreto
-\item Esbozo de solución
-\item Objetivos y estructura
-\end{compactitem}
+La implementacion de sistemas GNC en sistemas embebidos, conlleva una combinacion de
+hardware y software especializado, por un lado, los microcontroladores son los encargados de
+gestionar los clculos, mientras que los sensores proporcionan distintos tipos de datos por medio
+de las entradas. Por otro lado, los sistemas en tiempo real garantizan la respuesta en el momento
+requerido. Las aplicaciones de estos se pueden observar en drones, satelites y sondas espaciales
+[4].
 
-Una buena introducción debe lograr que el lector tenga interés de leer el resto
-del tesis.
+Como se menciono anteriormente los sistemas GNC son fundamentales en las misiones es-
+paciales, estan encargados de determinar la trayectoria optima para cumplir los objetivos de
+la mision, ademas de calcular la secuencia de maniobras necesarias, determinar la posicion,
+velocidad y orientacion, tambien se encargan de aplicar las acciones correctivas necesarias para
+mantener la trayectoria [15].
 
-Es recomendable dividir la tesis en secciones, nombradas cada una de acuerdo a
-su contenido. \textbf{Jamás}, utilice los nombres de la guía como
-``\emph{Problema existente e importancia de su solución}'', sino algo como ``La
-deforestación en Costa Rica'' o lo que se adecúe a su problema en particular.
+\subsection{Requerimientos de los sistemas}
 
-Recuerde que en español solo la primera letra del título va en mayúscula
-(exceptuando nombres propios, por supuesto).
-%
-Algunos recursos adicionales a esta guía los encuentra en.
+Los requerimientos de los sistemas GNC incluyen: precision para determinar la posicion
+y orientacion del vehiculo con gran exactitud, robustez para funcionar de manera confiable
+y tolerar fallos o perturbaciones generadas por el entorno, autonomia para poder operar sin
+depender de la intervencion humana, flexibilidad para adaptarse a diferentes fases de la mision
+y un bajo consumo de potencia para minimizar el uso de los recursos limitados a bordo.
 
+Para cumplir con los requerimientos mencionados anteriormente se debe definir con precision
+los requerimientos del sistema, como la precision necesaria para determinar la posicion del
+vehiculo, la robustez del sistema para resistir fallos, las restricciones energeticas y de recursos
+computacionales a bordo. Una vez solventados estos requerimientos el sistema se plantea bajo
+una arquitectura modular la cual divide el sistema en bloques independientes para las funciones
+de guia, navegacion y control, facilitando el desarrollo, prueba y mantenimiento [1].
 
-\section{El cambio climático y la electrónica}
-\label{sec:contexto}
+\section{Sistemas embebidos para los sistemas GNC}
+El uso de sistemas embebidos ha transformado la navegación y el control aeroespacial. Estos sistemas 
+integran hardware y software, permitiendo el procesamiento de datos en tiempo real, fundamental para 
+la navegación precisa y el control de vuelo. Los sistemas embebidos gestionan sensores que recopilan 
+información sobre altitud, velocidad y posición, permitiendo a pilotos y sistemas automáticos tomar 
+decisiones rápidas y fundamentadas. Esta capacidad de respuesta es esencial en entornos cambiantes, 
+como la aviación o el lanzamiento de cohetes.
 
-El contexto corresponde al entorno donde se desarrolla el proyecto de
-tesis, que puede ser el área general de aplicación, un dominio de
-problemas, etc.
+Además, los sistemas embebidos facilitan la integración de múltiples funciones en un solo dispositivo,
+ reduciendo el peso y volumen de los equipos a bordo, un factor crucial en la industria aeroespacial. 
+ Por ejemplo, en los sistemas de control de vuelo, los microcontroladores y procesadores embebidos pueden
+  gestionar desde la navegación hasta la comunicación y el monitoreo de sistemas críticos, todo desde una 
+  única unidad. Esta integración mejora la eficiencia del espacio y minimiza la posibilidad de fallos al 
+  reducir el número de componentes individuales que podrían fallar.
 
-De nuevo, no use un título genérico como ``Contexto'', sino algo
-asociado directamente a su trabajo.
+Finalmente, la implementación de sistemas embebidos ha permitido avances significativos en la automatización 
+y la inteligencia artificial aeroespacial. Los algoritmos embebidos procesan datos de manera eficiente, permitiendo 
+la navegación autónoma y el control de vehículos sin intervención humana, especialmente relevante en misiones
+ espaciales con comunicación limitada. Los sistemas embebidos mejoran la seguridad y eficiencia de las operaciones 
+ aeroespaciales, abriendo nuevas posibilidades para la exploración y el desarrollo de tecnologías futuras en este campo.
 
+\subsection{Marco de Trabajo Yocto}
+El Yocto Project es una iniciativa de código abierto que proporciona un conjunto de herramientas y recursos para crear 
+sistemas operativos Linux personalizados, especialmente diseñados para dispositivos embebidos. Su objetivo principal es 
+facilitar el desarrollo de software y la integración de componentes en una amplia variedad de hardware, permitiendo a los 
+desarrolladores construir imágenes de sistema adaptadas a sus necesidades específicas. Utiliza BitBake, una herramienta que 
+permite definir recetas para la construcción y empaquetado de software, lo que otorga gran flexibilidad y personalización. 
+Además, soporta múltiples arquitecturas de hardware, como ARM, x86, MIPS y PowerPC, lo que lo hace adecuado para diferentes 
+dispositivos, desde microcontroladores hasta sistemas más complejos. Al fomentar la reutilización de componentes y contar con 
+una comunidad activa que contribuye con mejoras y documentación, el Yocto Project se convierte en una solución ideal para el 
+desarrollo de sistemas operativos en aplicaciones de IoT, electrónica de consumo y automatización industrial.
 
-\section{Antecedentes}
+\section{Donde se ubica dentro del flujo de control}
+Diagrama profe Johan (ver en proxima reunion)
 
-Si su proyecto se circunscribe en otro proyecto mayor, en el que han
-participado otros estudiantes de grado y postgrados, y ya existen
-tesis o artículos publicados, en esta sección se hace una breve reseña
-de esos trabajos previos, con el objetivo de contextualizar en dónde
-calza concretamente el trabajo actual dentro de ese otro proyecto
-mayor.  Por ejemplo, Fulano en exploró si un diodo
-puede funcionar como fuente de energía infinita, hipótesis que no
-logró comprobar.
+\section{Hardware en el loop}
+El Hardware en el loop es una tecnica fundamental en el desarrollo de sistemas GNC, ya que,
+permite simular el comportamiento del hardware en tiempo real, facilitando para los desarrolla-
 
-En proyectos relativamente aislados, no es necesaria esta sección.
-
-Dependiendo de cada trabajo concreto, esta sección puede desplazarse a
-otro lugar dentro de la introducción donde tenga más sentido, pero
-usualmente se encuentra aquí justo antes de presentar el problema
-técnico concreto tratado en su proyecto.
-
-\section{La disipación de energía en el reactor 42}
-
-En esta sección usted debe exponer su problema concreto.  Debe enlazar
-el contexto general, expuesto en las secciones anteriores, con el
-problema concreto que este trabajo resuelve.
-
-Al final de esta sección, el problema concreto se sintetiza usualmente
-en una frase de planteamiento del problema de ingeniería o pregunta
-generadora de la investigación de ingeniería. Esta frase o pregunta
-debería ser una consecuencia a la que se llega después de realizar el
-desarrollo del contexto.  Si el problema es de caracter científico,
-aquí puede plantearse la hipótesis de la investigación científica.
-
-Del planteamiento del problema se deriva cuál es el objetivo del
-trabajo en particular, que a su vez debe conducir al lector de forma
-natural al esbozo de la solución del problema a tratar en este
-informe.
-
-\section{Sistema de almacenamiento energético}
-
-Después de las secciones anteriores ya ha guiado al lector hasta este
-punto en donde solo resta presentar una propuesta general de solución
-del problema técnico concreto.
-
-Para aclarar la solución se hace uso de un diagrama de bloques (ver
-\figref{fig:diagbloques}) o diagrama de flujo general, es decir,
-desde un nivel de abstracción muy alto, donde no sea necesario entrar
-en detalles técnicos, porque aun no han sido expuestos.
-
-\begin{figure}[htb]
-
-  %% Este es un ejemplo de figura TIKZ incrustada directamente
-  %% en el la figura, pero es muchísimo más recomendable poner este
-  %% código, tal y como se explica en el siguiente capítulo, en un archivo
-  %% aparte.  Como archivo aparte se puede compilar la figura una sola vez
-  %% para que quede disponible en el directorio fig/.  Eso es más rápido de
-  %% compilar posteriormente.
-  %%
-  %%
-  %% Se coloca este ejemplo aquí porque muchas personas están usando
-  %% Overleaf, y allí puede tener sentido tener las figuras
-  %% directamente en el código del informe, aunque esto tardará más en
-  %% compilar e incluso puede llevar a Overleaf a pasarse del tiempo
-  %% disponible.
-  
-  \centering
-  \tikzstyle{block} = [draw, rectangle, inner sep=6pt]
-  \begin{tikzpicture}[>=latex,auto,node distance=2cm]
-    \node [block](system) {Sistema};
-    \node [coordinate, left=of system] (infork) {};
-    \node [coordinate, left=of infork] (input) {};
-    \node [coordinate, right=of system] (outfork) {};
-    \node [coordinate, right=of outfork] (output) {};
-    \node [block, below=of system] (storage) {Almacenamiento};
-
-    \node [block, dashed, fill=gray, anchor=center, text width=7cm, align=center] at ($(system)!.5!(storage)$) {Conversión};
-
-    % Connect nodes
-    \draw [->] (input) -- node {$E_i$} (system);
-    \draw [->] (system) -- node {$E_o$} (output);
-    \draw [->] (storage) -| (outfork);
-    \draw [->] (infork) |- (storage);
-  \end{tikzpicture}
-  \caption[Diagrama de bloques.]{Diagrama de bloques del sistema
-    propuesto de almacenamiento energético, como ejemplo de código
-    TikZ insertado directamente en el texto (ver archivo
-    \code{intro.tex}, línea \number\inputlineno).}
-  \label{fig:diagbloques}
-\end{figure}
-
-Nótese que un diagrama de bloques es distinto a un diagrama de etapas.
-En general para este informe se prefiere el diagrama de bloques, pues
-el diagrama de etapas tiene una connotación de documentación de
-bitácora, que no es el objetivo de este informe.  Aquí se debe
-explicar cómo reproducir los resultados a que finalmente se llegó, en
-vez de explicar el proceso circunstancial y particular que usted
-siguió para hacerlo; es decir, el proceso que usted siguió
-posiblemente requirió pruebas fallidas y otras exploraciones que no
-viene al caso explicar aquí (pero que usted sí documenta en su
-bitácora, que es otro documento aparte), sino que aquí lleva al lector
-por la ruta de exito directamente.
-
-Usualmente este diagrama y su breve explicación dictan cuál será la
-estructura del resto del documento, pues usted en el
-\capref{ch:marco} deberá explicar los fundamentos teóricos que
-cada bloque en esa solución requiere, y en el
-\capref{ch:solucion} presentará una versión con mayor detalle de
-esa solución, en donde ya considera lo expuesto en el marco teórico.
+dores la prueba y validacion del software sin requerir el hardware fisico, es esta forma permite
+probar de forma exhaustiva el software asegurando el funcionamiento del hardware simulado y
+permite la validacion de todo el sistema antes de su implementacion final. Esta implementacion
+genera una mayor precision en las pruebas, la posibilidad de validar la autonomia del sistema,
+ademas de reducir significativamente el tiempo y los costos de implementacion y prueba del
+hardware. En resumen, es una tecnica esencial en el desarrollo de sistemas GNC espaciales, per-
+mitiendo una validacion integral y eficiente de estos complejos sistemas antes de su despliegue
+en misiones reales [19] [21].
 
 
 
 \section{Objetivos y estructura del documento}
 
 \index{objetivos}
-Esta plantilla LaTeX tiene como objetivo simplificar la construcción del
-documento de tesis, presentando ejemplo de figuras y \tablas, así como otorgar
-una plataforma de compilación en GNU/Linux que simplifique la administración de
-todo el documento.
 
-La última sección de la introducción usualmente sí tiene un título estandar que
-es ``Objetivos y estructura del documento'', donde se presentan \emph{en prosa}
-los objetivos general y específicos que ha tenido el proyecto de tesis,
-así como la estructura de la tesis (por ejemplo, ``en el siguiente capítulo se
-esbozan los fundamentos teóricos necesarios para explicar en el
-\capref{ch:solucion} la propuesta realizada$\ldots$''
+El objetivo principal de este proyecto es desarrollar un conjunto de flujos de trabajo para la implementacion de software a bordo de
+computadoras de guia, navegacion y control espacial. Para lograr este objetivo se persiguen tres objetivos
+especificos. El primero consiste en Identificar una plataforma de hardware para el desarrollo de un modelo de ingenieria de
+una computadora de navegacion espacial.
+
+El segundo se encarga de Establecer flujos de trabajo para el prototipado de algoritmos de control de orientacion
+y navegacion para aplicaciones espaciales con hardware en el loop. Y por ultimo el tecero consiste en Evaluar los casos de uso de una computadora de navegacion y control espacial mediante
+la implementacion de una aplicacion de referencia demostrativa (caso de la IMU)
+
+
+Este documento incluye lo siguiente: en el capitulo 2 se presenta el marco teorico, donde se
+esbozan los fundamentos de la propuesta realizada. En el capitulo 3 se detalla la solucion
+propuesta y el modelo implementado para la solucion del problema. En el capitulo 4 se
+presentan los resultados obtenidos. Por ultimo, el capitulo 5 se presenta las conclusiones
+de la investigacion y trabajo realizado, asi como recomendaciones y trabajo a futuro por
+desarrollar.
 
 %%% Local Variables: 
 %%% mode: latex
