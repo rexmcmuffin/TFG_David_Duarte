@@ -30,9 +30,33 @@
 \contentsline {subsubsection}{Simulink}{11}{section*.12}%
 \contentsline {section}{\numberline {2.8}Avances recientes en GNCs }{11}{section.2.8}%
 \contentsline {subsection}{\numberline {2.8.1}Programación de Sistemas GNC}{11}{subsection.2.8.1}%
-\contentsline {chapter}{\numberline {3}Solución propuesta}{13}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Resultados y análisis}{14}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{15}{chapter.5}%
-\contentsline {chapter}{Bibliografía}{16}{chapter*.13}%
-\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{18}{appendix.Alph1}%
-\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{19}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {3}Tarjeta de desarrollo}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Selección de la tarjeta de desarrollo}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requerimientos de la aplicación}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Tarjetas candidatas}{14}{subsection.3.1.2}%
+\contentsline {subsubsection}{Xilinx ZCU102 Evaluation Kit}{14}{section*.13}%
+\contentsline {subsubsection}{NVIDIA Jetson AGX Xavier}{14}{section*.14}%
+\contentsline {subsubsection}{TMS320C6678 Development Kit}{15}{section*.15}%
+\contentsline {subsubsection}{ZedBoard de Avnet}{15}{section*.16}%
+\contentsline {subsection}{\numberline {3.1.3}Criterios de comparación}{16}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Matriz de Pugh}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Plataforma seleccionada}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Especificaciones principales}{18}{subsection.3.3.1}%
+\contentsline {subsubsection}{Procesador y FPGA}{18}{section*.17}%
+\contentsline {subsubsection}{Interfaces de E/S}{19}{section*.18}%
+\contentsline {subsubsection}{Memoria}{19}{section*.19}%
+\contentsline {subsubsection}{Alimentación y Consumo de Energía}{19}{section*.20}%
+\contentsline {subsubsection}{Tamaño y Factor de Forma}{19}{section*.21}%
+\contentsline {subsubsection}{Capacidades de Desarrollo}{19}{section*.22}%
+\contentsline {section}{\numberline {3.4}Reflexión final}{20}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Solución propuesta}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}GNC embebido software workflow}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Flujo de trabajo de la aplicación Model 2 Model Transformation}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Caso de estudio}{21}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Flijo de Trabajo Herramienta desarrollada por mi persona}{21}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Caso de estudio}{21}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Reflexion final}{21}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Solución propuesta}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{23}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{24}{chapter*.23}%
+\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{26}{appendix.Alph1}%

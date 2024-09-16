@@ -1,0 +1,175 @@
+\chapter{Tarjeta de desarrollo}
+\label{ch:especifico1}
+
+En este capítulo se pretende identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de
+una computadora de guía, navegación y control espacial por sus siglas en ingles (GNC), para llevar a cabo este objetivo 
+se plantean los requerimientos que se deben de tomar en cuenta para elegir una tarjeta de desarrollo que logre satisfacer
+las necesidades de este proyecto, seguido de esto se seleccionaran un grupo de tarjetas las cuales cumplan con los 
+requerimientos previamente establecidos, estas serán comparadas para poder determinar cuál de las tarjetas de desarrollo 
+seleccionadas puede cumplir de mejor forma la tarea seleccionada.
+
+\section{Selección de la tarjeta de desarrollo}
+    Para la selección de la tarjeta de desarrollo se partirá de la definición de los requerimientos de operación del sistema, 
+    esto tomando en cuenta las operaciones más comunes que realizan los sistemas GNC, una vez definidos los requerimientos, se 
+    seleccionaran al menos 3 tarjetas candidatas, esto con el fin de establecer los criterios de comparación para el desarrollo
+    de una matriz de Pugh.
+
+\subsection{Requerimientos de la aplicación}
+
+Al elegir una tarjeta de desarrollo para un sistema de guía, navegación y control (GNC) en aplicaciones espaciales, 
+se deben de tener en cuenta varios factores clave. Dentro de ellos se encuentran el procesamiento, mas precisamente
+la capacidad de calculo, ya que estos sistemas reuqieren de un procesamiento intensivo para los calculos de trayectoria
+, estimacion de estado y control. Seguido de esto se debe de considerar que sea un sistema de baja latencia, ademas que
+el mismo tenga soporte para sensores y actuadores para poder mediir y controlar el sistema, ademas de esto los puertos
+de entrada y salida deben ofrecer la presicion necesaria ara leer los datos de los sensores que se conecten al mismo.
+
+Por otro lado el sistema debe de contener capacidades de tiempo real estricto ya que los sistemas GNC deben de tomar
+desiciones criticas en el momento requerido. ademas de tener la capacidad de ejecutar un sistema opereativo de tiempo real
+(RTOS) o bien Linux en tiempo real. Tambien un aspecto importante a contener por la tarjeta de desarrollo es el consumo de
+energia, esto sin dejar de lado las capacidades de simulacion y pruebas, ya que, en la interfaz de simulacion la tarjeta se
+debe de poder conectar a un entorno de pruebas de hardware-in-the-loop por sus siglas en ingles (HIL), ademas de las
+capacidades de depuracion y monitoreo.
+
+Finalmente se deben de tomar en cuenta aspectos como lo son el Tamanno, peso y forma de la trjeta buscando que las mismas contengan 
+un tamanno compacto ya que los sistemas espaciales siempre se deben de integrar en espacios reducidos y la resistencia del mismo.
+
+\subsection{Tarjetas candidatas}
+Bajo los requerimientos planteados anteriomente se eligieron las siguientes tarjetas de desarrollo, las mismas se presentaran con sus
+caracteristicas.
+
+\subsubsection{Xilinx ZCU102 Evaluation Kit}
+
+La tarjeta de desarrollo ZCU102 contiene procesamiento basado en Zynq UltraScale+ MPSoC, el cual combina un procesador ARM Cortex-A53 de 
+64 bits con una FPGA de alto rendimiento, la cual es excelente para el procesamiento en tiempo real y algorimos personalizados.
+
+Por otro aldo esta ofrece una amplia gama de interfaces de comunicacion como: PCIe, Ethernet, I2C, SPI, UART, GPIO. En cuanto a la eficiencia energetica esta opcion contiene mecanismos para el control de energia, ademas de ser compatible con entornos de 
+de simulacion y tiene interfaces JTAG oara una buena depuracion. finalmente es una tarjeta ampliamente utilizada en la industria en Sistemasd
+de prototipos avanzados y despliegue de HIL.
+
+En sintesis esta opcion ofrece un procesamiento potente y versatil ademas de ser excelente para desarrollar y escalar sistemas GNC complejos, 
+por otro lado es una tarjeta de desarrollo costosa.
+
+\subsubsection{NVIDIA Jetson AGX Xavier}
+
+Para el caso de la tarjeta AGX Xavier de NVIDIA incorpora una CPU ARM v8.2 de 64 bits y una GPU NVIDIA Volta, prestaciones las cuales se encargan de proporcionar
+un alto nivel de procesamiento de datos en paralelo especualmente utilizado para aplicaciones de vision por computador o inteligencia artificial para sistemas GNC. 
+
+Las interfases de comunicacion presentes en esta tarjeta son puertos I2C, SPIm UART y GPIO ademas de contener adicionalmente soporte nativo para camaras y sensores de
+alta gama. Ademas presenta capacidades en tiempo real ya que se puede implementar con el NVIDIA Jetpack SDK. 
+
+En cuanto a la eficiencia energetica, la misma posee un diseno optimizado para bajo consumo. ademas de ser compatible con interfases de pruebas y simulacion mediante el 
+uso de entornos como Tensor RT y otras plataformas propietarias del desarrollador de la tarjeta de desarrollo.
+
+Esta tarjeta es ideal para sistemas GNC con un procesamiento intensivo de datos ya sean de vision por computador o bien inteligencia artificial, por otro lado posee un desarrollo potente 
+para el procesamiento de tares en paralelo o bien de aprendizaje reforzado, finalmente contiene un buen soporte para aplicaciones en tiempo real y simulaciones. Por otro lado contiene un 
+bajo procesamiento logico comparado con las FPGA para aplicaciones en tiempo real extremo, y esta tarjeta de desarrollo se encuentra mas enfocada en el la implementacion de soluciones que
+requieran inteligencia artificial.
+
+\subsubsection{TMS320C6678 Development Kit}
+
+La tarjeta TMS320C6678 es basada en un procesador para procesamiento digital de senales (DSP) de 8 nucleos, esta enfocado a aplicaciones de procesamiento intensivo en tiempo real, soporta
+interfases como lo son Ethernet, SPI, UARTm I2C y GPIO, ademas de tener opciones para expandir la conectividad de la misma, por otro lado como mencionamos anteriormente es uno de los sistemas
+mas optimizados para el procesamiento en tiempo real por medio de la plataforma propietaria TI RTOS.
+
+Sobre la eficiencia energetica, esta tarjeta de desarrollo ofrece herramientas especificas para la optimizacion del consumo de energia, hacinedola adecuada para entornos de consumo energetico 
+restringido, finalmente es compatible con Code Composer Studio, el cual es un entorno de desarrollo integrado que facilita las labores de integracion, simulacion y depuracion. Por tanto podemos
+decir que es una tarjeta de desarrollo muy adecuada para los sistemas de procesamiento de senañes y control, tiene una gran capacidad para soportar aplicaciones industriarles y aeroespaciales. Por otro
+lado, podemos ver que es un plataforma menos flexible que una FPGA. 
+
+\subsubsection{ZedBoard de Avnet}
+
+Para la tarjeta ZedBoard en cuanto a procesamiento tenemos que utiliza un procesador Xilinx Zynq-7000 APSoC el cual combina un procesador ARM Cortex-A9 dual core con una FPGA programable, de esta froma 
+tomando el procesador ARM el cual es ideal para ejecutar algoritmos de control y  logica de navegacion en un entrno de RTOS o bien Linux, por otro lado la FPGA Zynq-7000 permite la ejecucion de tareas 
+de procesamiento paralelo en hardware como el filtrado de sennales o algoritmos de estimacion de estad, ofreciendo baja latencia y flexibilidad en tiempo real.
+
+En cuanto a las interfases de entrada y salida, incluye varias opciones como lo son: GPIO, I2C, SPI, UART. Ademas de esto contiene puertos Ethernet, micro usb y HDMI los cuales resultan utiles para la 
+comunicacion externa y visualizacion de los sistemas de desarrollo.
+
+La combinacion de un procesador ARM con una FPGA permite un equilibrio en el consumo de energia ya que la mayoria de tareas intensivas se pueden llevar a cabo en la FPGA y el SoC Zynq ofrece opciones de 
+ahorro de energia lo cual siempre representa un beneficio para las aplicaciones embebidas. En cuanto a la pruebas y simulaciones cuenta con entornos como vivado y SDK de Xilinx esto con el fin de realizar
+simulaciones de HIL. Por otro lado ofrece aplicaciones para depuracion como lo es Jtag para el monitoreo en tiempo real de las aplicaciones ejecutandose en la FPGA y en el procesador ARM.
+\subsection{Criterios de comparación}
+
+Una vez presentadas las terjetas de desarrollo candidatas se procede con la definicion de los criterios de comparacion: para este caso los criterios a tomar en cuenta son los siguientes:
+
+\begin{enumerate}
+    \item Capacidad de procesamiento: La capacidad de procesamiento en dispositivos de desarrollo para sistemas GNC es crucial porque garantiza la ejecución en tiempo real de algoritmos complejos, como los de control y fusión de sensores, que son esenciales para la estabilidad y precisión del sistema. Permite procesar grandes volúmenes de datos de múltiples sensores de manera simultánea y rápida, ejecutar tareas en paralelo, y realizar cálculos intensivos como la planificación de trayectorias y control adaptativo. Además, un procesamiento robusto facilita la simulación HIL, asegurando pruebas y simulaciones realistas.
+
+    \item Soporte para sensores y actuadores: El soporte para sensores y actuadores es esencial en dispositivos de desarrollo para sistemas GNC porque estos sistemas dependen de la entrada de múltiples sensores como acelerómetros, giroscopios, GPs, entre otros, para monitorear y estimar la posición, orientación y velocidad del vehículo en tiempo real. La capacidad de interactuar directamente con estos sensores, y con actuadores que ejecutan las acciones de control, es fundamental para garantizar la retroalimentación continua y precisa necesaria para el correcto funcionamiento del sistema GNC. Interfaces como I2C, SPI, UART, y GPIO permiten esta integración, asegurando un control eficiente y adaptable.
+
+    \item Capacidad de trabajo en tiempo real: La capacidad de trabajo en tiempo real es vital en dispositivos de desarrollo para sistemas de guía, navegación y control (GNC) porque estos sistemas requieren respuestas inmediatas y precisas ante cambios en el entorno o en las condiciones del vehículo. Los algoritmos de control, como los de estabilidad y trayectoria, deben ejecutarse sin demoras para garantizar la seguridad y el rendimiento óptimo del sistema. Sin procesamiento en tiempo real, las decisiones de control podrían retrasarse, afectando la estabilidad y el control del vehículo, lo cual es crítico en aplicaciones como navegación autónoma o vuelo espacial.
+
+    \item Consumo de energia: El consumo de energía es crucial en dispositivos de desarrollo para sistemas de guía, navegación y control (GNC), especialmente en aplicaciones espaciales o autónomas, donde los recursos energéticos son limitados. Un consumo eficiente permite que el sistema funcione de manera prolongada sin comprometer su rendimiento, maximizando la duración de la misión y asegurando que los componentes críticos, como sensores y actuadores, siempre reciban suficiente energía. Además, la gestión adecuada del consumo evita el sobrecalentamiento y prolonga la vida útil de los dispositivos, lo que es fundamental en entornos de operación prolongada o difíciles de acceder.
+
+    \item Caracteristicas Fisicas: Las características físicas, como el tamaño, peso y forma, son importantes en dispositivos de desarrollo para sistemas de guía, navegación y control (GNC) porque estos sistemas suelen implementarse en entornos con restricciones de espacio y peso, como en vehículos aéreos, drones o satélites. Un dispositivo compacto y ligero facilita la integración en estos sistemas sin afectar su desempeño ni su capacidad de carga. Además, un diseño físico optimizado es clave para minimizar los efectos de vibraciones, choques o cambios de temperatura, asegurando un funcionamiento fiable en condiciones extremas.
+
+    \item Costo: El costo es un factor importante en dispositivos de desarrollo para sistemas de guía, navegación y control (GNC) porque influye directamente en la viabilidad económica del proyecto, especialmente en fases de prototipado o prueba. Un dispositivo con un costo adecuado permite realizar iteraciones y pruebas sin superar el presupuesto, facilitando el acceso a tecnologías avanzadas sin comprometer la calidad. Además, un costo equilibrado permite escalar el proyecto o implementar múltiples sistemas de prueba, optimizando el desarrollo sin sacrificar funcionalidad o capacidad técnica.
+
+    \item Escalabilidad del sistema: 
+    La escalabilidad del sistema es crucial en dispositivos de desarrollo para sistemas de guía, navegación y control (GNC) porque permite adaptar el hardware y software a medida que el proyecto crece en complejidad o requisitos técnicos. Un dispositivo escalable facilita la integración de nuevos sensores, algoritmos más avanzados o mayores capacidades de procesamiento sin necesidad de cambiar completamente la plataforma. Esto ahorra tiempo y costos, además de asegurar que el sistema pueda evolucionar para cumplir con las demandas de futuras fases del desarrollo o nuevas aplicaciones, manteniendo la flexibilidad y la eficiencia.
+
+\end{enumerate}
+\newpage
+
+\section{Matriz de Pugh}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[h!]
+    \centering
+    \caption{Matriz de Pugh para seleccionar la tarjeta de desarrollo que mejor de adapte a los requerimientos del proyecto}
+    \label{tab:Pug_tarjetas_desarrollo}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{lccccc}
+    \hline
+    \multicolumn{1}{|l|}{Criterios} & \multicolumn{1}{l|}{Peso} & \multicolumn{1}{l|}{ZCU102} & \multicolumn{1}{l|}{AGX Xavier} & \multicolumn{1}{l|}{TMS320C6678} & \multicolumn{1}{l|}{Zedboard} \\ \hline
+    \multicolumn{1}{|l|}{Capacidad de   procesamiento} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Soporte para   sensores} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} \\ \hline
+    \multicolumn{1}{|l|}{Soporte para   actuadores} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} \\ \hline
+    \multicolumn{1}{|l|}{Soporte de   sistemas de tiempo real} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{20} \\ \hline
+    \multicolumn{1}{|l|}{Caracteristicas   Fisicas} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Costo de la   tarjeta} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{15} \\ \hline
+    \multicolumn{1}{|l|}{Escalabilidad   del sistema} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{10} \\ \hline
+     & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \cline{1-1} \cline{3-6} 
+    \multicolumn{1}{|l|}{Suma general} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{86} & \multicolumn{1}{c|}{88} & \multicolumn{1}{c|}{79} & \multicolumn{1}{c|}{95} \\ \cline{1-1} \cline{3-6} 
+    \multicolumn{1}{|l|}{Posicion} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{1} \\ \cline{1-1} \cline{3-6} 
+    \end{tabular}%
+    }
+    \end{table}
+
+    Como se pudo observar en la Tabla \ref{tab:Pug_tarjetas_desarrollo}, un claro ganador segun los requerimientos establecidos para este proyecto ha sido la tarjeta de desarrollo zedbaord ya que es la mejor opcion en cuanto a caracteristicas como lo son la capacidad de procesamiento y \dots
+
+\section{Plataforma seleccionada}
+
+Como se pudo observar en la Tabla \ref{tab:Pug_tarjetas_desarrollo}, la tarjeta de desarrollo seleccionada fue la Trajeta Zedboard de Avnet. La ZedBoard es una tarjeta de desarrollo basada en el SoC (System-on-Chip) Xilinx Zynq-7000. Diseñada para aplicaciones de desarrollo en sistemas embebidos y de procesamiento de señales, la ZedBoard combina la potencia de un procesador ARM con la flexibilidad de una FPGA (Field Programmable Gate Array), proporcionando una plataforma versátil para la investigación, el desarrollo y la prueba de diversas aplicaciones, incluidas las de guía, navegación y control (GNC).
+
+\subsection{Especificaciones principales}
+
+Como se meciono en el capitulo \ref{ch:marco} en la Tabla \ref{tab:zedboard} y anteriormente en este capitulo la tarjeta en cuestion presenta las siguientes especificaciones principales.
+
+\subsubsection{Procesador y FPGA}
+SoC Xilinx Zynq-7000: La ZedBoard integra un procesador ARM Cortex-A9 dual-core junto con una FPGA programable de la serie 7-Series.
+ARM Cortex-A9: Ofrece un rendimiento de procesamiento general que puede ejecutar sistemas operativos como Linux o FreeRTOS, lo que es útil para tareas de control y procesamiento de datos.
+FPGA: La FPGA proporciona capacidad para implementar lógica personalizada, lo que permite el desarrollo de algoritmos específicos en hardware para procesamiento en tiempo real y alta velocidad.
+\subsubsection{Interfaces de E/S}
+GPIO: General Purpose Input/Output, permite la interacción con una amplia gama de periféricos y sensores.
+I2C, SPI, UART: Protocolos de comunicación estándar que facilitan la integración con diversos dispositivos de sensor y actuadores.
+Ethernet: Conectividad de red para comunicación y transmisión de datos.
+USB: Puertos USB para conexión de dispositivos externos y almacenamiento.
+HDMI: Salida de video para visualización de datos y control gráfico.
+JTAG: Para depuración y programación de la FPGA y el procesador ARM.
+\subsubsection{Memoria}
+RAM: Incluye memoria DDR3 SDRAM para el procesador y la FPGA, proporcionando espacio suficiente para la ejecución de sistemas operativos y algoritmos complejos.
+Flash: Memoria flash para almacenamiento de configuraciones y datos persistentes.
+\subsubsection{Alimentación y Consumo de Energía}
+La ZedBoard se alimenta típicamente a través de una entrada de 5V, con un diseño que optimiza el consumo energético para aplicaciones de desarrollo. Sin embargo, el consumo real depende del uso de la FPGA y el procesador.
+\subsubsection{Tamaño y Factor de Forma}
+Dimensiones: Aproximadamente 15.24 cm x 22.86 cm (6 x 9 pulgadas), lo que la hace adecuada para prototipos sin ser excesivamente grande.
+Diseño: Compacta pero con suficiente espacio para interfaces y módulos adicionales.
+\subsubsection{Capacidades de Desarrollo}
+Entornos de Desarrollo: Compatible con Xilinx Vivado Design Suite y SDK, proporcionando herramientas avanzadas para diseño, simulación, y depuración.
+Ejemplos de Aplicaciones: Adecuada para aplicaciones que requieren procesamiento en paralelo, desarrollo de sistemas embebidos, y prueba de algoritmos de control.
+
+\section{Reflexión final}
+
+Como se pudo observar a lo largo de este capitulo se analizaron los requerimientos de hardware que se deben de tomar en cuenta para el desaarrollo de este proyecto, seguido de esto se tomaron cuatros tarhjetas de desarrolo con el fin de elegir entre las que presentaran las prestaciones adecuadas para la tarea a realizar. Por un lado se tenian tarjetas muy potentes como xxxx y xxxx y por otro lado se tenian tarjetas de grandes dimenciones como la xxx y xxxx. Segun los parametros definidos se elige la tarjeta xxxx con numero de parte xxx para continuar con el desarrollo de este proyecto.
