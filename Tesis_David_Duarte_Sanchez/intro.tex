@@ -11,81 +11,87 @@
 
 \section{Proceso de diseño de los sistemas de Guía, Navegación y Control espacial}
 
-La implementacion de sistemas GNC en sistemas embebidos, conlleva una combinacion de
-hardware y software especializado, por un lado, los microcontroladores son los encargados de
-gestionar los clculos, mientras que los sensores proporcionan distintos tipos de datos por medio
-de las entradas. Por otro lado, los sistemas en tiempo real garantizan la respuesta en el momento
-requerido. Las aplicaciones de estos se pueden observar en drones, satelites y sondas espaciales
-[4].
+La implementación de sistemas GNC en sistemas embebidos, conlleva una combinación de 
+hardware y software especializado, por un lado, los microcontroladores son los encargados 
+de gestionar los cálculos, mientras que los sensores proporcionan distintos tipos de datos 
+por medio de las entradas. Por otro lado, los sistemas en tiempo real garantizan la respuesta 
+en el momento requerido. Las aplicaciones de estos se pueden observar en drones, satélites y 
+sondas espaciales \cite{MathWorks2024_ss}.
 
-Como se menciono anteriormente los sistemas GNC son fundamentales en las misiones es-
-paciales, estan encargados de determinar la trayectoria optima para cumplir los objetivos de
-la mision, ademas de calcular la secuencia de maniobras necesarias, determinar la posicion,
-velocidad y orientacion, tambien se encargan de aplicar las acciones correctivas necesarias para
-mantener la trayectoria [15].
+Como se mencionó anteriormente los sistemas GNC son fundamentales en las misiones espaciales, 
+están encargados de determinar la trayectoria óptima para cumplir los objetivos de la misión, 
+además de calcular la secuencia de maniobras necesarias, determinar la posición, velocidad y 
+orientación, también se encargan de aplicar las acciones correctivas necesarias para mantener 
+la trayectoria \cite{hewing2023enhancing}.
+
 
 \subsection{Requerimientos de los sistemas}
 
-Los requerimientos de los sistemas GNC incluyen: precision para determinar la posicion
-y orientacion del vehiculo con gran exactitud, robustez para funcionar de manera confiable
-y tolerar fallos o perturbaciones generadas por el entorno, autonomia para poder operar sin
-depender de la intervencion humana, flexibilidad para adaptarse a diferentes fases de la mision
-y un bajo consumo de potencia para minimizar el uso de los recursos limitados a bordo.
+Los requerimientos de los sistemas GNC incluyen: precisión para determinar la posición 
+y orientación del vehículo con gran exactitud, robustez para funcionar de manera confiable 
+y tolerar fallos o perturbaciones generadas por el entorno, autonomía para poder operar sin 
+depender de la intervención humana, flexibilidad para adaptarse a diferentes fases de la misión 
+y un bajo consumo de potencia para minimizar el uso de los recursos limitados a bordo. 
 
-Para cumplir con los requerimientos mencionados anteriormente se debe definir con precision
-los requerimientos del sistema, como la precision necesaria para determinar la posicion del
-vehiculo, la robustez del sistema para resistir fallos, las restricciones energeticas y de recursos
-computacionales a bordo. Una vez solventados estos requerimientos el sistema se plantea bajo
-una arquitectura modular la cual divide el sistema en bloques independientes para las funciones
-de guia, navegacion y control, facilitando el desarrollo, prueba y mantenimiento [1].
+Para cumplir con los requerimientos mencionados anteriormente se debe definir con precisión 
+los requerimientos del sistema, como la precisión necesaria para determinar la posición del 
+vehículo, la robustez del sistema para resistir fallos, las restricciones energéticas y de 
+recursos computacionales a bordo. Una vez solventados estos requerimientos el sistema se 
+plantea bajo una arquitectura modular la cual divide el sistema en bloques independientes 
+para las funciones de guía, navegación y control, facilitando el desarrollo, prueba 
+y mantenimiento \cite{AEM2017}. 
+
 
 \section{Sistemas embebidos para los sistemas GNC}
+
 El uso de sistemas embebidos ha transformado la navegación y el control aeroespacial. Estos sistemas 
 integran hardware y software, permitiendo el procesamiento de datos en tiempo real, fundamental para 
 la navegación precisa y el control de vuelo. Los sistemas embebidos gestionan sensores que recopilan 
 información sobre altitud, velocidad y posición, permitiendo a pilotos y sistemas automáticos tomar 
 decisiones rápidas y fundamentadas. Esta capacidad de respuesta es esencial en entornos cambiantes, 
-como la aviación o el lanzamiento de cohetes.
+como la aviación o el lanzamiento de cohetes. \cite{Castao2014EstimacinDP}
 
-Además, los sistemas embebidos facilitan la integración de múltiples funciones en un solo dispositivo,
- reduciendo el peso y volumen de los equipos a bordo, un factor crucial en la industria aeroespacial. 
- Por ejemplo, en los sistemas de control de vuelo, los microcontroladores y procesadores embebidos pueden
-  gestionar desde la navegación hasta la comunicación y el monitoreo de sistemas críticos, todo desde una 
-  única unidad. Esta integración mejora la eficiencia del espacio y minimiza la posibilidad de fallos al 
-  reducir el número de componentes individuales que podrían fallar.
+Además, los sistemas embebidos facilitan la integración de múltiples funciones en un solo dispositivo, 
+reduciendo el peso y volumen de los equipos a bordo, un factor crucial en la industria aeroespacial. 
+Por ejemplo, en los sistemas de control de vuelo, los microcontroladores y procesadores embebidos pueden 
+gestionar desde la navegación hasta la comunicación y el monitoreo de sistemas críticos, todo desde una 
+única unidad. Esta integración mejora la eficiencia del espacio y minimiza la posibilidad de fallos al 
+reducir el número de componentes individuales que podrían fallar. \cite{Culp1993GuidanceAC}
 
 Finalmente, la implementación de sistemas embebidos ha permitido avances significativos en la automatización 
 y la inteligencia artificial aeroespacial. Los algoritmos embebidos procesan datos de manera eficiente, permitiendo 
 la navegación autónoma y el control de vehículos sin intervención humana, especialmente relevante en misiones
  espaciales con comunicación limitada. Los sistemas embebidos mejoran la seguridad y eficiencia de las operaciones 
- aeroespaciales, abriendo nuevas posibilidades para la exploración y el desarrollo de tecnologías futuras en este campo.
+ aeroespaciales, abriendo nuevas posibilidades para la exploración y el desarrollo de tecnologías futuras en este campo. \cite{Falcoz2023GuidanceN}
 
-\subsection{Marco de Trabajo Yocto}
-El Yocto Project es una iniciativa de código abierto que proporciona un conjunto de herramientas y recursos para crear 
+\subsection{Marco de Trabajo Yocto Project}
+
+Yocto Project es una iniciativa de código abierto que proporciona un conjunto de herramientas y recursos para crear 
 sistemas operativos Linux personalizados, especialmente diseñados para dispositivos embebidos. Su objetivo principal es 
 facilitar el desarrollo de software y la integración de componentes en una amplia variedad de hardware, permitiendo a los 
 desarrolladores construir imágenes de sistema adaptadas a sus necesidades específicas. Utiliza BitBake, una herramienta que 
-permite definir recetas para la construcción y empaquetado de software, lo que otorga gran flexibilidad y personalización. 
+permite definir recetas para la construcción y empaquetado de software, lo que otorga gran flexibilidad y personalización. \cite{salvador2014embedded}
+
 Además, soporta múltiples arquitecturas de hardware, como ARM, x86, MIPS y PowerPC, lo que lo hace adecuado para diferentes 
 dispositivos, desde microcontroladores hasta sistemas más complejos. Al fomentar la reutilización de componentes y contar con 
 una comunidad activa que contribuye con mejoras y documentación, el Yocto Project se convierte en una solución ideal para el 
-desarrollo de sistemas operativos en aplicaciones de IoT, electrónica de consumo y automatización industrial.
+desarrollo de sistemas operativos en aplicaciones de IoT, electrónica de consumo y automatización industrial. \cite{vaduva2015learning}
 
 \section{Donde se ubica dentro del flujo de control}
 Diagrama profe Johan (ver en proxima reunion)
 
 \section{Hardware en el loop}
-El Hardware en el loop es una tecnica fundamental en el desarrollo de sistemas GNC, ya que,
-permite simular el comportamiento del hardware en tiempo real, facilitando para los desarrolla-
+El Hardware en el loop es una técnica fundamental en el desarrollo de sistemas GNC, ya que, permite 
+simular el comportamiento del hardware en tiempo real, facilitando para los desarrolladores la 
+prueba y validación del software sin requerir el hardware físico, es esta forma permite probar 
+de forma exhaustiva el software asegurando el funcionamiento del hardware simulado y permite la 
+validación de todo el sistema antes de su implementación final. Esta implementación genera una 
+mayor precisión en las pruebas, la posibilidad de validar la autonomía del sistema, además de 
+reducir significativamente el tiempo y los costos de implementación y prueba del hardware. En 
+resumen, es una técnica esencial en el desarrollo de sistemas GNC espaciales, permitiendo una 
+validación integral y eficiente de estos complejos sistemas antes de su despliegue en misiones 
+reales \cite{mihalivc2022hardware} \cite{montoya2020advanced}.
 
-dores la prueba y validacion del software sin requerir el hardware fisico, es esta forma permite
-probar de forma exhaustiva el software asegurando el funcionamiento del hardware simulado y
-permite la validacion de todo el sistema antes de su implementacion final. Esta implementacion
-genera una mayor precision en las pruebas, la posibilidad de validar la autonomia del sistema,
-ademas de reducir significativamente el tiempo y los costos de implementacion y prueba del
-hardware. En resumen, es una tecnica esencial en el desarrollo de sistemas GNC espaciales, per-
-mitiendo una validacion integral y eficiente de estos complejos sistemas antes de su despliegue
-en misiones reales [19] [21].
 
 
 

@@ -35,3 +35,4 @@
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QCortex A9.\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QCortex-A9.\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QArquitectura de 32 bits basada en ARMv7-A. Alto rendimiento adecuado para aplicaciones exigentes como sistemas operativos embebidos, procesamiento multimedia y gráficos.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
