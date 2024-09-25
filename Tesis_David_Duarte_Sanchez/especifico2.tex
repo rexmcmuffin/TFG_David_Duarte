@@ -82,23 +82,23 @@ Como se menciono anteriormente los resultados obtenidos se pueden observar en la
 Una vez comprobado el comportamiento esperado por el caso de estudio se puede proceder con la ejecucion del flujo de trabajo de MATLAB Simulink coder, esto con el fin de transformar el modelo generado en Simulink a un modelo de lenguaje de programacion C. Cabe destacar que para esta implementacion se utilizo el diagrama que se muestra en la Figura \ref{} ya que el mismo solamente contiene los archivos con los datos numericos del sistema y no contiene las salidas graficas agregadas en \ref{subsec:simulacion_caso_de_estudio}.
 
 
-\subsubsection{Definicio de paramtetros}
+\subsection{Definicio de paramtetros}
 
-Para la definicion de parametros, se debe de estar en el entorno de MATLAB Simulink, y se deben de presionar las teclas 
-
-definicion de los parametros basicos de operacion
+Para la definicion de parametros, se debe de estar en el entorno de MATLAB Simulink, una vez en el entorno mencionado anteriormente se debe ir a la pestanna denominada Aplicaciones, como se muestra en la Figura \ref{}, se debera de seleccionar la aplicacion denominada Simulink Coder, cuando seleccionamos esta opcion se abrira una pestanna llamada Codigo C, como se pudo observar en la Figura \ref{}, una vez estemos en la pestanna de codigo C, debemos de ir a la opcion de configuracion de parametros, tal y como se muestra en la Figura \ref{}, una vez presionada la opcion se abre una ventana emergente como la que se muestra en la Figura \ref{}, en la pestanna denominada Solver se deberan de proporcionar los datos de Tiempo de inicio y Tiempo de finalzacion de la simulacion.
 
 \subsubsection{seleccion del procesador objetivo}
 
-se selecciona el procesador y la arquitectura del mismo
+Continuando en la seccion de configuracion de parametros ahora debemos de ir a la pestanna llamada Hardware Implementation, en donde deberemos de colocar los datos de Device Vendor el cual para nuestro caso seria ARM Compatible y el Device Type que seria un ARM Cortex-A de 32-bits tal y como se muestra en la Figura \ref{}.
+
 
 \subsubsection{Seleccion del tipo de archivo de construccion}
 
-Se selecciona cmake como archivo de compilacion 
+Ahora bien, anteriormente configuramos los parametros de de tiempo de operacion y procesador de la tarjeta de desarrollo, ahora debemos de configurar el tipo de archivo que se utilizara para la generacion de los archivos, como se debera de realziar una compilacion cruzada se debe de elegit un tipo de archivo el cual nos permita compilar los binarios para la ejecucion del sistema sin importar el sistema operativo de la maquina host. Es por esto que se debe de seleccionar en la pestanna de Code Generation el Toolchain denominado CMake tal y como se muestra en la Figura \ref{}.
+
 
 \subsubsection{Generacion de archivos de compilacion}
 
-se le da build a la imagen de ejecucion
+Una vez configurados todos los parametros mencionados anteriormente debemos de proceder con la construccion de los archivos, para esto se debe de ir a la barra de tareas a la opcion denominada como generar codigo
 
 \subsection{Contenedor para compilacion de los binarios}
 
