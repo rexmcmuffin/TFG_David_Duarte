@@ -1,4 +1,4 @@
-\chapter{Implementación del flujo de trabajo}
+\chapter{Flujo de trabajo para la implementación de software para GNC embebido}
 \label{ch:especifico2}
 
 Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selección de la tarjeta de desarrollo Zedboard para el desarrollo del proyecto, además de esto uno de los parámetros que se tomó en cuenta fue la compatibilidad de esta tarjeta con el flujo de trabajo de Yocto Project, es por esto que en este capítulo se pretenden establecer los flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales. Esto mediante el uso de MATLAB Simulink para tomar un caso de uso como ejemplo, seguido de esto convertir el código por medio de la transformación de modelo de Simulink a un modelo de código C, esto con el objetivo de poder embeber el código C en una imagen mínima por medio del flujo de trabajo de Yocto Project y finalmente probar el mismo en la tarjeta de desarrollo seleccionada en el capítulo \ref{ch:especifico1} y de esta forma poder comparar los resultados obtenidos y el tiempo de ejecución que llevo la tarea en el computador y en el sistema embebido.
@@ -6,7 +6,7 @@ Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selec
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\textwidth]{fig/figtemplate.pdf}
+    \includegraphics[width=0.3\textwidth]{fig/figtemplate.pdf}
     \caption{Diagrama general del flujo de trabajo propuesto}
     \label{fig:diagrama_flujo_trabajo}
 \end{figure}
@@ -15,9 +15,7 @@ Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selec
 En la Figura \ref{fig:diagrama_flujo_trabajo}, se muestra un diagrama del flujo de trabajo general. En este capítulo se trabajará en la sección remarcada en rojo la cual engloba la generación del modelo utilizado como caso de uso, la validación del mismo en MATLAB Simulink, la generación de un código en lenguaje C y la incorporación del mismo en el flujo de trabajo de Yocto Project.
 
 
-\section{GNC embebido software workflow}
-
-Anteriormente definimos un flujo de trabajo para poder establecer el prototipado de algoritmos de control, orientacion y navegacion para aplicaciones espaciales, el mismo prentendemos logaralo mediante la seleccion de un caso de estudio en matlab simulink el cual se mostrara en el desarrollo de este capitulo
+\section{Selección del caso de uso}
 
 \section{Flujo de trabajo de la aplicación Model 2 Model Transformation}
 caso de estudio matlab embedded coder
