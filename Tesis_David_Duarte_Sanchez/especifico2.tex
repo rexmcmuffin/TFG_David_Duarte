@@ -1,7 +1,7 @@
 \chapter{Flujo de trabajo para la implementación de software para GNC embebido}
 \label{ch:especifico2}
 
-Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selección de la tarjeta de desarrollo Zedboard para el desarrollo del proyecto, además de esto uno de los parámetros que se tomó en cuenta fue la compatibilidad de esta tarjeta con el flujo de trabajo de Yocto Project, es por esto que en este capítulo se pretenden establecer los flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales. Esto mediante el uso de MATLAB Simulink para tomar un caso de uso como ejemplo, seguido de esto convertir el código por medio de la transformación de modelo de Simulink a un modelo de código C, esto con el objetivo de poder embeber el código C en una imagen mínima por medio del flujo de trabajo de Yocto Project y finalmente probar el mismo en la tarjeta de desarrollo seleccionada en el capítulo \ref{ch:especifico1} y de esta forma poder comparar los resultados obtenidos y el tiempo de ejecución que llevo la tarea en el computador y en el sistema embebido.
+Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selección de la tarjeta de desarrollo Zedboard para el desarrollo del proyecto, además de esto uno de los parámetros que se tomó en cuenta fue la compatibilidad de esta tarjeta con el flujo de trabajo de Yocto Project, es por esto que en este capítulo se pretenden establecer los flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales. Esto mediante el uso de MATLAB Simulink para tomar un caso de estudio como ejemplo, seguido de esto convertir el código por medio de la transformación de modelo de Simulink a un modelo de código C, esto con el objetivo de poder embeber el código C en una imagen mínima por medio del flujo de trabajo de Yocto Project y finalmente probar el mismo en la tarjeta de desarrollo seleccionada en el capítulo \ref{ch:especifico1} y de esta forma poder comparar los resultados obtenidos y el tiempo de ejecución que llevo la tarea en el computador y en el sistema embebido.
 
 
 \begin{figure}[h!]
@@ -12,32 +12,79 @@ Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selec
 \end{figure}
 
 
-En la Figura \ref{fig:diagrama_flujo_trabajo}, se muestra un diagrama del flujo de trabajo general. En este capítulo se trabajará en la sección remarcada en rojo la cual engloba la generación del modelo utilizado como caso de uso, la validación del mismo en MATLAB Simulink, la generación de un código en lenguaje C y la incorporación del mismo en el flujo de trabajo de Yocto Project.
-
-
-\section{Selección del caso de uso}
+En la Figura \ref{fig:diagrama_flujo_trabajo}, se muestra un diagrama del flujo de trabajo general. En este capítulo se trabajará en la sección remarcada en rojo la cual engloba la generación del modelo utilizado como caso de estudio, la validación del mismo en MATLAB Simulink, la generación de un código en lenguaje C y la incorporación del mismo en el flujo de trabajo de Yocto Project.
 
 \section{Flujo de trabajo de la aplicación Model 2 Model Transformation}
-caso de estudio matlab embedded coder
 
+Para poder embeber el sistema se debe de hacer uso del MATLAB Simulink Coder, el cual tiene la capacidad de convertir un sistema de conrtol generado en MATLAB Simulink, en un codigo C, algunos de los parametros que se pueden configurar en este convertidor de modelos son:
 
-\subsection{Seleccion del caso de estudio}
+\begin{itemize}
+    \item 
+\end{itemize}
 
-se selecciona cualquier aplicacion de simulink con el fin de lograr demostrar el funcionamiento del sistema
+A lo largo de este capitulo se definiran los parametros que se deben de utilar y el funcionamiento de estos dentro de la generacion del codigo C.
 
-\subsection{Simulacion del caso de estudio en Matlab Simulink}
+\section{Selección del caso de estudio}
 
-se simula el caso seleccionado para su ejecucion 
+Como caso de estudio se selecciono una aplicacion la cual permitiera una comparacion de resultados antes del procesado y despues del mismo, es por esto que se decidio implementar un filtro  de tipo xxx haciendo uso de los siguientes bloques de MATLAB Simulink. 
 
-\subsection{Resultados obtenidos con la ejecucion de la simulacionn}
+\begin{itemize}
+    \item Onda seno
+    \item Suma
+    \item Función de transferencia
+    \item Generador de archivo de salida
+\end{itemize}
 
-se presentan los reusltados obtenidos ejecutando la simulacion en el computador host
+La configuracion seleccionada para el primer generador de onda seno es:
+
+\begin{itemize}
+    \item Amplitud = 1
+    \item Bias = 0 
+    \item Frecuencia = 1 rad/s
+    \item Fase = 0 
+    \item Tiempo de muestreo = 0 
+\end{itemize}
+
+Mientars que para la segunda onda se tiene la configuracion:
+
+\begin{itemize}
+    \item Amplitud = 1
+    \item Bias = 0 
+    \item Frecuencia = 12 rad/s
+    \item Fase = 0 
+    \item Tiempo de muestreo = 0 
+\end{itemize}
+
+Esto con el objetivo de sumar las ondas y que las mismas (explicar que pasa al sumar dos ondas de distinta frecuencia)
+
+Por otro lado la funcion de transferencia a utilizar sera:
+
+ingresar la funcion de transferencia
+
+esto con el fin de separar las frecuencias anteriormente sumadas y obtener una salida con la (describir que se espera a la salida)
+
+Estos bloques mencionados anteriormente se lococan como se muestra en la Figura \ref{}, de modo que se obtienen como salida del sistema 2 archivos, uno llamado xxx el cual contiene los datos crudos de la suma de las dos sennales y otro denomindado, xxxx el cual contiene los datos de la sennnal filtrada por la funcion de tranferencia. 
+
+\subsection{Simulacion del caso de estudio en Matlab Simulink}\label{subsec:simulacion_caso_de_estudio}
+
+Utilizando el diagrama de la Figura \ref{} asi como usando los parametros configurados anteriormente se colocan dos bloques de grafico en el diagrama como se muestra en la Figura \ref{}, esto con el objetivo de poder observar las senales de salida en cada uno de los puntos de interes. 
+
+(imagen compuesta por dos graficos uno al lado del otro donde a la derecha mostremos las senales sumadas y a la derecha las senales filtradas)
+
+Como se puede observar en la Figura \ref{} se puede observar la salida de la suma de las dos senales senoidales, por otro lado en la Figura \ref{} se puede observar la salida de la funcion de transferencia.
+
+\subsubsection{Resultados obtenidos con la ejecución de la simulacionn}
+
+Como se menciono anteriormente los resultados obtenidos se pueden observar en la Figura \ref{}, siendo la salida esperada de la funcion de transferencia ya que al ser un filtro paso xxx atenua las senales que sten por debajo de la frencuencia de corte que para este filtro es de xxx. Como la senal compuesta contiene una senal con frecuencia de xxxx y otra con frencuencia de xxxx es posible observar aun componentes de la frecuencia atenuada.
 
 \subsection{Simulink coder}
 
-inicio del flujo de simulink coder 
+Una vez comprobado el comportamiento esperado por el caso de estudio se puede proceder con la ejecucion del flujo de trabajo de MATLAB Simulink coder, esto con el fin de transformar el modelo generado en Simulink a un modelo de lenguaje de programacion C. Cabe destacar que para esta implementacion se utilizo el diagrama que se muestra en la Figura \ref{} ya que el mismo solamente contiene los archivos con los datos numericos del sistema y no contiene las salidas graficas agregadas en \ref{subsec:simulacion_caso_de_estudio}.
+
 
 \subsubsection{Definicio de paramtetros}
+
+Para la definicion de parametros, se debe de estar en el entorno de MATLAB Simulink, y se deben de presionar las teclas 
 
 definicion de los parametros basicos de operacion
 
