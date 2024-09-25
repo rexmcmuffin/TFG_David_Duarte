@@ -89,8 +89,8 @@
       \strng{authornamehash}{f28ed38a1fc2340f9ea6cb71bf9411ca}
       \strng{authorfullhash}{324cb14467e11f85bcc778048cf38047}
       \strng{authorfullhashraw}{324cb14467e11f85bcc778048cf38047}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista UIS Ingenierías}
@@ -124,8 +124,8 @@
       \strng{authornamehash}{d7787b9ceb6dfcc41691b703c154f449}
       \strng{authorfullhash}{d7787b9ceb6dfcc41691b703c154f449}
       \strng{authorfullhashraw}{d7787b9ceb6dfcc41691b703c154f449}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{2014 International Conference on ReConFigurable Computing and FPGAs (ReConFig14)}
@@ -158,8 +158,8 @@
       \strng{authornamehash}{3f714030d1245c0f35765c997581dcf4}
       \strng{authorfullhash}{3f714030d1245c0f35765c997581dcf4}
       \strng{authorfullhashraw}{3f714030d1245c0f35765c997581dcf4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Simulación y verificación de propiedades no-funcionales para sistemas embebidos}
@@ -212,8 +212,8 @@
       \strng{authornamehash}{dfd690f40e19c9862db092b461bcb287}
       \strng{authorfullhash}{7a032f9098d5bfed79a4bac5f321afaa}
       \strng{authorfullhashraw}{7a032f9098d5bfed79a4bac5f321afaa}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista Iberoamericana de Automática e Informática industrial}
@@ -252,8 +252,8 @@
       \strng{authornamehash}{069af87213f656ce7a5679898f228747}
       \strng{authorfullhash}{a7cbff00fe778e29e46316accf2cef88}
       \strng{authorfullhashraw}{a7cbff00fe778e29e46316accf2cef88}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{2013 International Symposium on System on Chip (SoC)}
@@ -294,8 +294,8 @@
       \strng{authornamehash}{01410bfb141aff08e64f9f339e96f817}
       \strng{authorfullhash}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
       \strng{authorfullhashraw}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Pädi Boletín Científico de Ciencias Básicas e Ingenierías del ICBI}
@@ -324,8 +324,8 @@
       \strng{authornamehash}{59331e47196f6ff4aa8771cbf1d0a570}
       \strng{authorfullhash}{59331e47196f6ff4aa8771cbf1d0a570}
       \strng{authorfullhashraw}{59331e47196f6ff4aa8771cbf1d0a570}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Programación de laboratorios de biología portátiles abiertos basados en Arduino con el lenguaje de programación visual XOD}
@@ -358,8 +358,8 @@
       \strng{authornamehash}{180814519d81a220ffc5cdaea185627e}
       \strng{authorfullhash}{180814519d81a220ffc5cdaea185627e}
       \strng{authorfullhashraw}{180814519d81a220ffc5cdaea185627e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Desarrollo de un lenguaje de programación gráfico para microcontroladores}
@@ -407,8 +407,8 @@
       \strng{authornamehash}{d994c7179ce7eeb4e0c46ae69d1fc92e}
       \strng{authorfullhash}{4c11de363a59573c39b2e1faa49fb901}
       \strng{authorfullhashraw}{4c11de363a59573c39b2e1faa49fb901}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
@@ -447,8 +447,8 @@
       \strng{authornamehash}{b43ba55902d93e948d3a29e4979894e7}
       \strng{authorfullhash}{c1284bc8d7088792fcd54680b1ed787e}
       \strng{authorfullhashraw}{c1284bc8d7088792fcd54680b1ed787e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Autonomous Guidance, Navigation and Control}
@@ -521,8 +521,8 @@
       \strng{authornamehash}{ace4af4802ebfa56440cfe9cff15851b}
       \strng{authorfullhash}{42acdc8d444c7b91d8e911c8f47e6b5d}
       \strng{authorfullhashraw}{42acdc8d444c7b91d8e911c8f47e6b5d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
@@ -536,6 +536,16 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{AEM2017}
+  \missing{Castao2014EstimacinDP}
+  \missing{Culp1993GuidanceAC}
+  \missing{Falcoz2023GuidanceN}
+  \missing{MathWorks2024_ss}
+  \missing{hewing2023enhancing}
+  \missing{mihalivc2022hardware}
+  \missing{montoya2020advanced}
+  \missing{salvador2014embedded}
+  \missing{vaduva2015learning}
 \endrefsection
 \endinput
 
