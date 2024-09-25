@@ -1,7 +1,18 @@
 \chapter{Solución propuesta}
 \label{ch:especifico2}
 
-Como se pudo obervar en el capitulo \ref{ch:especifico1}, se realizo la seleccion de la tarjeta de desarrollo Zedboard para el desarrollo del proyecto, en este capitulo se pretende establecer flujos de trabajo para el prototipado de algoritmos de control de orientacion y navegacion para aplicaciones espaciales. Esto mediante el uso de Matlab Simulink para tomar un caso de uso como ejemplo, seguido de esto convertir el codigo por medio de la trasnformacion de modelo de simulink a modelo de codigo C, con el objetivo de poder embedder el codigo en una imagen minima por medio del flujo de trabajo de Yocto Project y finalmente probar el mismo en la tarjeta de desarrollo zedboard y asi comparar los resultados obtenidos y el tiempo de ejecucion que llevo la tarea en el computador y en el sistema embebido.
+Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selección de la tarjeta de desarrollo Zedboard para el desarrollo del proyecto, además de esto uno de los parámetros que se tomó en cuenta fue la compatibilidad de esta tarjeta con el flujo de trabajo de Yocto Projec, es por esto que en este capítulo se pretenden establecer los flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales. Esto mediante el uso de MATLAB Simulink para tomar un caso de uso como ejemplo, seguido de esto convertir el código por medio de la transformación de modelo de Simulink a un modelo de código C, esto con el objetivo de poder embeber el código C en una imagen mínima por medio del flujo de trabajo de Yocto Project y finalmente probar el mismo en la tarjeta de desarrollo seleccionada en el capítulo \ref{ch:especifico1} y de esta forma poder comparar los resultados obtenidos y el tiempo de ejecución que llevo la tarea en el computador y en el sistema embebido.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/figtemplate.pdf}
+    \caption{Diagrama general del flujo de trabajo propuesto}
+    \label{fig:diagrama_flujo_trabajo}
+\end{figure}
+
+
+En la Figura \ref{fig:diagrama_flujo_trabajo}, se muestra un diagrama del flujo de trabajo general 
 
 \section{GNC embebido software workflow}
 
@@ -10,6 +21,53 @@ Anteriormente definimos un flujo de trabajo para poder establecer el prototipado
 \section{Flujo de trabajo de la aplicación Model 2 Model Transformation}
 caso de estudio matlab embedded coder
 
+
+\subsection{Seleccion del caso de estudio}
+
+se selecciona cualquier aplicacion de simulink con el fin de lograr demostrar el funcionamiento del sistema
+
+\subsection{Simulacion del caso de estudio en Matlab Simulink}
+
+se simula el caso seleccionado para su ejecucion 
+
+\subsection{Resultados obtenidos con la ejecucion de la simulacionn}
+
+se presentan los reusltados obtenidos ejecutando la simulacion en el computador host
+
+\subsection{Simulink coder}
+
+inicio del flujo de simulink coder 
+
+\subsubsection{Definicio de paramtetros}
+
+definicion de los parametros basicos de operacion
+
+\subsubsection{seleccion del procesador objetivo}
+
+se selecciona el procesador y la arquitectura del mismo
+
+\subsubsection{Seleccion del tipo de archivo de construccion}
+
+Se selecciona cmake como archivo de compilacion 
+
+\subsubsection{Generacion de archivos de compilacion}
+
+se le da build a la imagen de ejecucion
+
+\subsection{Contenedor para compilacion de los binarios}
+
+se geenra un container por emdio de docker io, este debera de ejecutar la imafen dew linux 20.04 esto debido a la dependencia de la libreria GCC 2.30 que presenta yocto a la hora de compilar los arhcivoso
+se instalan las herramientas requeridas
+
+\subsubsection{Istalacion de programas en el contenedor}
+
+instalamos el cross compiler y las dependencias del mismo
+
+\subsection{Compilacion de los binarios}
+
+Compilamos los binarios para su ejecucion en
+
+Una vez compilados los binarios se puede continuar con el flujo que se presneta en el diagrama que se muestra en la Figura XX, lo cual seria la implemetnacion de los binarios en una imagen de yocto. mediante los pasos que se muestran en la siguiente seleccion
 
 
 \subsection{Caso de estudio}
