@@ -98,46 +98,78 @@ Ahora bien, anteriormente configuramos los parametros de de tiempo de operacion 
 
 \subsubsection{Generacion de archivos de compilacion}
 
-Una vez configurados todos los parametros mencionados anteriormente debemos de proceder con la construccion de los archivos, para esto se debe de ir a la barra de tareas a la opcion denominada como generar codigo
+Una vez configurados todos los parametros mencionados anteriormente debemos de proceder con la construccion de los archivos, para esto se debe de ir a la barra de tareas a la opcion denominada como generar codigo, la misma se puede observar en la Figura \ref{}.
 
 \subsection{Contenedor para compilacion de los binarios}
 
-se geenra un container por emdio de docker io, este debera de ejecutar la imafen dew linux 20.04 esto debido a la dependencia de la libreria GCC 2.30 que presenta yocto a la hora de compilar los arhcivoso
-se instalan las herramientas requeridas
+Para poder generar la compilacion cruzada es necesario crear un contenedor para poder utilizar Ubuntu 20.04 ya que esta version es la que presenta mayor compatibilidad con las dependencias contenidas en el flujo de trabajo de Yocto Porject que se utiliza. 
+
+Para poder generar esta contenedor se hace uso del comando que se muestra en \ref{}, este comando se encarga de cnostruir la maquina dentro del entorno del contenedor. 
 
 \subsubsection{Istalacion de programas en el contenedor}
 
-instalamos el cross compiler y las dependencias del mismo
+Una vez generado el contenedor debemos de instalar en el mismo xxxxx y xxxxx las cuales son herramientas que nos ayudaran a compilar el programa generado en \ref{} para la arquitectura del procesador. 
 
 \subsection{Compilacion de los binarios}
 
-Compilamos los binarios para su ejecucion en
+Para la compilacion de los binaros se debera hace uso del comando xxx por el cual se construira el makefile, una vez generado el make file se ejecuto el comando xxxx el cual da como salida los binarios requeridos para la ejecucion del programa. Los mismos se observan como se muestra en la Figura \ref{}. 
 
-Una vez compilados los binarios se puede continuar con el flujo que se presneta en el diagrama que se muestra en la Figura XX, lo cual seria la implemetnacion de los binarios en una imagen de yocto. mediante los pasos que se muestran en la siguiente seleccion
-
-
-\subsection{Caso de estudio}
+Una vez compilados los binarios se puede continuar con el flujo que se presneta en el diagrama que se muestra en la Figura XX, lo cual seria la implemetnacion de los binarios en una imagen de yocto.
 
 
-\section{Flijo de Trabajo Herramienta desarrollada por mi persona}
-Diagrama de pasos para poder ejecutar el flujo de trabajo
+\section{Flujo de Trabajo Herramienta desarrollada por mi persona}
+
+Como se pudo observar anteriormente se realizo la compilacion cruzada de un caso de estudio, el mismo ahora se debe de implementar en un sistema operativo a la medida mediante el flujo de trabajo de Yocto Project, como se menciono en \ref{}, yocto project es un marco de trabajo utilizado para el desarrollo de sistemas embebidos especializado en la cosntruccion de distribuciones de linux a la medida. 
+
+En el desarrollo de esta seccion se muestran los pasos que se siguieron para la generacion de la imagen minima, la integracion de una capa personalizada con el binario generado en \ref{} y la implementacion de la misma en la tarjeta de desarrollo seleccionada.
 
 \subsection{Sistema operativo para desarrollo}
-hablar sobre el sistema operativo base que se reqiere para generar el flujo, version de kernel y demas daros 
+
+Como sistema operativo de desarrollo se utilizo Ubuntu 22.04 LTS, en una computadora con las siguientes caracteristicas 
+
+\begin{itemize}
+    \item Procesador - Intel Corei9-13980HX 
+    \item Almecenamiento - 500 GB
+    \item Memoria RAM - 16 GB 
+\end{itemize}
 
 \subsection{Generacion de un contenedor}
-por que se debe de utilizar un contenedor para fines del proyecto
+
+Para el desarrollo del marco de trabajo de Yocto se decidio implementar un contenedor, esto debido a que la version de yocto para la cual se encontraba un paquete de soporte para la tarjeta de desarrollo es Yocto Zeus 3.0, este fue liberado en el ano de xxxx por tanto no era soportado por la version de linux del computador de desarollo. 
+
 \subsubsection{Creacion de un usuario no root}
-por que se requiere generar un usuario no root 
+
+Para el uso del marco de trabajo de Yocto se debe de generar un usuario no root, (explicar por que yocto no puede correr en un usuario root)
+
 \subsection{Yocto Project}
-referencar al marco teorico de que es y para que se esta utilizando en el desarrollo del marco de trabajo
+
+Como se observo en \ref{}, yocto presenta flexibilidades a la hora de configurar un sistema permitiendo al desarrollador seleccionar paquetes especificos y personalizar el sistema operativo.
+
+La version de yocto a utlizar se debe de clonar de \ref{}, segido de esto se debe de ir al branch de la version mencionada en \ref{} (Yocto Zeus). Ademas de clonar este repositorio se debe de ingresar al directorio denominado xxx y clonar dentro de el el repositorio \ref{} el cual contiene en su branch xxx la version de bsp requerida para generar una imagen para la tarjeta de desarrollo.
+
+
+Algunas configuraciones adicionales que se deben de realizar se muestran e \ref{}.
+
 \subsection{creacion de una capa de yocto}
-como se debe de generar una capa en yocto
+
+Para la generacion de una capa de yocto de debe de utilzair el siguiente comando el cual se encargara de generar el arbol de directorios que se puede observar en la Figura \ref{}. Una vez implementado este comando se debe de hacer uso de este comando para poder agregar la capa al archivo denominado xxxx el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen.
+
 \subsection{Caso de estudio}
-\subsection{integracion del programa generado a la capa de yocto}
-como se debe de intgrar y para que funciona cada comando del .bb de la capa
+
+\subsection{integracion del programa generado a la capa de Yocto}
+
+Para la implementacion de la los binarios generados en \ref{}, se deben de generar algunos directarios, esto con el objetivo de mantener un entorno limpio y ordenado, para contener todos los directorios se genera un directorio llamado xxxx el cual dentro del mismo debera de contener un directorio llamado xxx el cual se encargara de contener el archivo de configuracion de la capa llamado xxxx el cual se genera mediante el comando que se observa en \ref{}, ademas de geenerar este archivo se debe de crear un directorio llamado xxxx que sera el encargado de contener los binarios compilados en \ref{}.
+
+\subsubsection{.bb}
+
+Como se menciono anteriormente el archivo llamado xxxx.bb es el encargado de la configuracion de la capa, el mismo contiene los comandos de instalacion y la direccion en donde se encontraran los binarios en el sistema de archivos de la imagen del sistema embebido.
+
+La estructura que debe de contener ese archivo para instalar binarios en el sistema son las que se puden observar en \ref{}.
+
 \subsection{Generacion de la imagen minima}
-Por que se usa una imagen minima 
+
+Antes de generar la imagen minima 
+
 \subsection{Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}
 Como se debe de implementar el boot de la tarjeta, como se debe de implementar el  sistema de archivos
 \subsection{Conexion de la tarjeta de desarrollo con el computador host}
