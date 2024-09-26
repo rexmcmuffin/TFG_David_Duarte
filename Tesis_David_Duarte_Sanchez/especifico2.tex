@@ -152,31 +152,61 @@ Algunas configuraciones adicionales que se deben de realizar se muestran e \ref{
 
 \subsection{creacion de una capa de yocto}
 
-Para la generacion de una capa de yocto de debe de utilzair el siguiente comando el cual se encargara de generar el arbol de directorios que se puede observar en la Figura \ref{}. Una vez implementado este comando se debe de hacer uso de este comando para poder agregar la capa al archivo denominado xxxx el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen.
+Para la generacion de una capa de yocto primero se debe de inicializar el entorno de desarrollo esto mediante el comando que se muestra en \ref{}, este se encarga de generar todos los archivos necesarios para poder hacer uso de las variables de entorno con las cuales opera el marco de trabajo de Yocto, seguido de esto se debe de utilzair el siguiente comando el cual se encargara de generar el arbol de directorios que se puede observar en la Figura \ref{}. Una vez implementado este comando se debe de hacer uso de este comando para poder agregar la capa al archivo denominado xxxx el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen.
 
 \subsection{Caso de estudio}
 
-\subsection{integracion del programa generado a la capa de Yocto}
+En esta seccion se integrara el caso de estudio generado en \ref{}, a un sistema operativo a la medida por medio de el marco de trabajo de Yocto Project, primeramente se generara una capa personalizada, seguido de esto se generara el archivo de instalacion con el cual la capa personalizada pasara a ser parte del sistema de archivos del sistema embebido, tambien se generara la imagen minima la cual consiste en un sistema de arranque y el sistema de archivos y finalmente se implementaran estos en la tarjeta de desarrollo seleccionada en \ref{}.
+
+\subsection{Integración del programa generado a la capa de Yocto}
 
 Para la implementacion de la los binarios generados en \ref{}, se deben de generar algunos directarios, esto con el objetivo de mantener un entorno limpio y ordenado, para contener todos los directorios se genera un directorio llamado xxxx el cual dentro del mismo debera de contener un directorio llamado xxx el cual se encargara de contener el archivo de configuracion de la capa llamado xxxx el cual se genera mediante el comando que se observa en \ref{}, ademas de geenerar este archivo se debe de crear un directorio llamado xxxx que sera el encargado de contener los binarios compilados en \ref{}.
 
 \subsubsection{.bb}
 
-Como se menciono anteriormente el archivo llamado xxxx.bb es el encargado de la configuracion de la capa, el mismo contiene los comandos de instalacion y la direccion en donde se encontraran los binarios en el sistema de archivos de la imagen del sistema embebido.
+Como se mencionó anteriormente el archivo llamado xxxx.bb es el encargado de la configuracion de la capa, el mismo contiene los comandos de instalacion y la direccion en donde se encontraran los binarios en el sistema de archivos de la imagen del sistema embebido.
 
 La estructura que debe de contener ese archivo para instalar binarios en el sistema son las que se puden observar en \ref{}.
 
 \subsection{Generacion de la imagen minima}
 
-Antes de generar la imagen minima 
+Antes de generar la imagen minima se debe de tener en consideracion ejecutar la linea de comando que se muestra en \ref{}, esto con el fin de generar archivos de xxxx en lugar de xxxx. Una vez generados estos cambios se debe de iniciar de nuevo el entorno por medio del comando \ref{}, seguido de esto se debera de ejecutar el comando de xxx el cual se encarga de comenzar a generar la imagen minima. 
 
 \subsection{Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}
-Como se debe de implementar el boot de la tarjeta, como se debe de implementar el  sistema de archivos
-\subsection{Conexion de la tarjeta de desarrollo con el computador host}
-diagrama de conexion y programas utilizados para llevar a cabo el enlace
 
-\subsection{Ejecucion del caso de estudio y resultados}
+Para la implementacion de la imagen minima en la tarjeta de desarrollo de deben de seguir los siguientes pasos en la maquina Host:
+
+\begin{enumerate}
+    \item Se debe de formatear la tarjeta SD de al menos 4 GB, las pariticiones de la misma se tienen que observar de la siguiente forma 
+    \begin{itemize}
+        \item root = 100 MB FAT 32
+        \item File System = 3.5 GB ext6(linux filesystem format)
+        \end{itemize} 
+    \item Seguido de esto se debe de ir a la ruta xxx/xxxx/xxxx/xxxx/xxxx y se deben de copiar los archivos de el contenedor a la maquina host mediante el comando que se muestra en \ref{}, esto con el objetivo de poder enviar los archivos a la tarjeta SD
+\end{enumerate}
+
+Para el sistema Root se deberan de copiar los archivos mediante el comando que se muestra en \ref{}, por otro lado en la particion denominada xxxx se debe de copiar el archvivo xxxx mediante el uso del comando xxxxx el cual se muestra en \ref{}.
+
+\subsection{Conexion de la tarjeta de desarrollo con el computador host}
+
+Como protocolo de comunicacion se establece de primera mano UART , el cual como se menciono en \ref{} consiste en xxxxxxxx y en el caso de la tarjeta de desarrollo se conecta segun s emeustra en el diagrama de la Figura xxxxx, para poder leer la consola se hace uso de Minicom el cual se encarga de xxxxxxxxxxxxxxx.
+
+(Imagen del diagrama de conexion de la tarjeta y el computador por medio de UART)
+
+Seguido de esto se establecio la conexion por medio de SSH el cual como se menciona en \ref{}, consiste en xxxxxxxxx ademas de xxxxxx. 
+
+El diagrama de este protocolo de comunicacion se puede observar en \ref{}.
+
+
+\subsection{Ejecución del caso de estudio y resultados}
+
+Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede ejecutar el caso de estudio por medio de xxxxxx, ademas de esto los resultados se pueden transmitir al computador por medio del comando xxxxxx, seguido de esto, haciendo uso de un codigo generado en python se pueden obtener los graficos de las sennales obtenidas mediante la ejecucion del binario contenido en la imagen minima.
+
+(imagen que contenga los dos graficos, a la inquizarda el de las dos senales sumadas y a la derecha el de la senal filtrada)
 
 \subsection{Comparacion de resultados}
+
+Como se pudo observar, con la comparacion realizada, obtenemos que los datos tiene una desviacion de xxxxx ademas de xxxxxx, es por esto que podemos determinar que la implementacion de sistemas de control es viable segun lo demuestra el caso de estudio.
+
 
 \section{Reflexion final}

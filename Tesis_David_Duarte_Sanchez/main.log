@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.7)  25 SEP 2024 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  25 SEP 2024 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main
-(c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex
+**"c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex"
+(c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/bk12.clo
@@ -56,7 +56,7 @@ Package csquotes Info: ... configuration file loaded successfully.
  (c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )) (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/08/29 v24.9 The Babel package
+Package: babel 2024/06/26 v24.7 The Babel package
 \babel@savecnt=\count276
 \U@D=\dimen142
 \l@unhyphenated=\language89
@@ -118,7 +118,7 @@ Package tocbasic Info: setting babel extension for `nls' on input line 188.
 \nom@tempdim=\dimen144
 \nomitemsep=\skip52
 ) (c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2024-08-20 v3.3.21 A comprehensive (SI) units package
+Package: siunitx 2024-08-01 v3.3.20 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count280
 \l__siunitx_number_exponent_fixed_int=\count281
 \l__siunitx_number_min_decimal_int=\count282
@@ -473,7 +473,7 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2024/08/14 v1.3g biblatex bibliography style
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
@@ -517,18 +517,18 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
  (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-08-16 L3 programming layer (loader) 
+Package: expl3 2024-07-20 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count442
 \l__pdf_internal_box=\box70
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2024-08-16 L3 programming layer (loader) 
+(biblatex)             2024-07-20 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2024-05-08 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 )) (c:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
@@ -679,7 +679,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count473
 \@thisrulewidth=\dimen198
 ) (c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2024/08/20 v0.6b Insert pages of external PDF documents (AM)
+Package: pdfpages 2024/05/29 v0.6a Insert pages of external PDF documents (AM)
  (c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count474
@@ -737,7 +737,7 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 \AM@pageheight=\dimen262
 \AM@fboxrule=\dimen263
  (c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2024/08/20 v0.6b Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2024/05/29 v0.6a Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count477
 \AM@pagebox=\box120
@@ -1401,7 +1401,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \openout2 = `titlepage_licel_es.aux'.
 
 (./titlepage_licel_es.tex
-<./fig/Firma_TEC-4.pdf, id=267, 201.75375pt x 41.15375pt>
+<./fig/Firma_TEC-4.pdf, id=279, 201.75375pt x 41.15375pt>
 File: ./fig/Firma_TEC-4.pdf Graphic file (type pdf)
 <use ./fig/Firma_TEC-4.pdf>
 Package pdftex.def Info: ./fig/Firma_TEC-4.pdf  used on input line 27.
@@ -1419,7 +1419,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 22
  (c:/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<./fig/by-sa.pdf, id=280, 121.45375pt x 43.16125pt>
+<./fig/by-sa.pdf, id=292, 121.45375pt x 43.16125pt>
 File: ./fig/by-sa.pdf Graphic file (type pdf)
 <use ./fig/by-sa.pdf>
 Package pdftex.def Info: ./fig/by-sa.pdf  used on input line 47.
@@ -1659,13 +1659,13 @@ LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
 [9]
 
-LaTeX Info: Redefining \. on input line 191.
-LaTeX Info: Redefining \% on input line 191.
-[10])
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
+[10]
 
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
-[11]
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
+[11])
 
 LaTeX Info: Redefining \. on input line 158.
 LaTeX Info: Redefining \% on input line 158.
@@ -1714,7 +1714,7 @@ LaTeX Info: Redefining \% on input line 159.
 
  (./especifico2.tex
 Cap\'{\i }tulo 4.
-<fig/figtemplate.pdf, id=568, 206.35294pt x 196.27428pt>
+<fig/figtemplate.pdf, id=584, 206.35294pt x 196.27428pt>
 File: fig/figtemplate.pdf Graphic file (type pdf)
 <use fig/figtemplate.pdf>
 Package pdftex.def Info: fig/figtemplate.pdf  used on input line 9.
@@ -1822,38 +1822,76 @@ LaTeX Warning: Reference `' on page 26 undefined on input line 151.
 LaTeX Warning: Reference `' on page 26 undefined on input line 155.
 
 
+LaTeX Warning: Reference `' on page 26 undefined on input line 155.
+
+
 
 LaTeX Info: Redefining \. on input line 156.
 LaTeX Info: Redefining \% on input line 156.
 [26]
 
-LaTeX Warning: Reference `' on page 27 undefined on input line 161.
+LaTeX Warning: Reference `' on page 27 undefined on input line 159.
 
 
-LaTeX Warning: Reference `' on page 27 undefined on input line 161.
+LaTeX Warning: Reference `' on page 27 undefined on input line 159.
 
 
-LaTeX Warning: Reference `' on page 27 undefined on input line 161.
+LaTeX Warning: Reference `' on page 27 undefined on input line 163.
 
 
-LaTeX Warning: Reference `' on page 27 undefined on input line 167.
+LaTeX Warning: Reference `' on page 27 undefined on input line 163.
+
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 163.
+
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 169.
+
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 173.
+
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 173.
 
 
 
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
-[27])
+LaTeX Info: Redefining \. on input line 174.
+LaTeX Info: Redefining \% on input line 174.
+[27]
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 185.
+
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 188.
+
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 188.
+
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 192.
+
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 196.
+
+
+LaTeX Warning: Reference `' on page 28 undefined on input line 198.
+
+
+
+LaTeX Info: Redefining \. on input line 204.
+LaTeX Info: Redefining \% on input line 204.
+[28])
 
 LaTeX Info: Redefining \. on input line 160.
 LaTeX Info: Redefining \% on input line 160.
-[28]
+[29]
 \openout2 = `especifico3.aux'.
 
  (./especifico3.tex
 Cap\'{\i }tulo 5.
 )
 
-[29
+[30
 
 
 
@@ -1865,14 +1903,14 @@ Cap\'{\i }tulo 5.
 Cap\'{\i }tulo 6.
 )
 
-[30
+[31
 
 
 
 
 ]
 
-[31
+[32
 
 
 
@@ -1880,21 +1918,21 @@ Cap\'{\i }tulo 6.
 
 LaTeX Info: Redefining \. on input line 176.
 LaTeX Info: Redefining \% on input line 176.
-[32]
+[33]
 \openout2 = `apendice.aux'.
 
  (./apendice.tex
 Ap\'{e}ndice A.
 )
 
-[33
+[34
 
 
 ] (./main.ind
 
 
 
-[34
+[35
 
 
 
@@ -1909,43 +1947,31 @@ LaTeX Info: Redefining \% on input line 13.
  (./licencia.aux) (./disclaimer.aux) (./acta_aprob_licel.aux) (./acta_eval_licel.aux) (./resumen.aux) (./dedicatoria.aux) (./agradecimientos.aux) (./glosario.aux) (./intro.aux) (./teoria.aux) (./especifico1.aux) (./especifico2.aux) (./especifico3.aux) (./conclusiones.aux) (./apendice.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-07-20>
  ***********
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 8A17AFA9B6F3FA22185628298749E7BF;14814
-(rerunfilecheck)             After:  D193079C239E0AC3C8C998E922A87D7C;14814.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 12FC068DD12E4B913DF12303C04C163C;15255.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54252 strings out of 473579
- 1240342 string characters out of 5732258
- 2226315 words of memory out of 5000000
- 75972 multiletter control sequences out of 15000+600000
+ 54255 strings out of 473579
+ 1240304 string characters out of 5732257
+ 2226192 words of memory out of 5000000
+ 75970 multiletter control sequences out of 15000+600000
  583532 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,12n,120p,1271b,2822s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{chapter*.30} has been referenced but does not exist, replaced by a fixed one
-
+ 115i,12n,120p,1304b,2804s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (48 pages, 515538 bytes).
+Output written on main.pdf (49 pages, 520196 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 706 compressed objects within 8 object streams
- 162 named destinations out of 1000 (max. 500000)
- 548 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 836 PDF objects out of 1000 (max. 8388607)
+ 727 compressed objects within 8 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 572 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,18 +19,21 @@
 \contentsline {section}{\numberline {2.4}Marcos de trabajo}{8}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}YOCTO}{8}{subsection.2.4.1}%
 \contentsline {section}{\numberline {2.5}Transformación de modelo a modelo}{8}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Contenedores}{9}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}MATLAB Embedded Coder}{9}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.1}MATLAB Embedded Coder}{9}{subsection.2.5.1}%
 \contentsline {section}{\numberline {2.6}Código embebido}{9}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Revisión literaria}{9}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Desarrollo de sistemas de navegación}{10}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Transformación de Lenguaje de Bloques a Código C}{10}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.7}Contenedores}{9}{section.2.7}%
+\contentsline {section}{\numberline {2.8}protocolos de comunicacion}{10}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}UART}{10}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}SSH}{10}{subsection.2.8.2}%
+\contentsline {section}{\numberline {2.9}Revisión literaria}{10}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Desarrollo de sistemas de navegación}{10}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Transformación de Lenguaje de Bloques a Código C}{10}{subsection.2.9.2}%
 \contentsline {subsubsection}{XOD}{10}{section*.9}%
-\contentsline {subsubsection}{Visual Microcontroller}{10}{section*.10}%
-\contentsline {subsubsection}{LabVIEW}{10}{section*.11}%
+\contentsline {subsubsection}{Visual Microcontroller}{11}{section*.10}%
+\contentsline {subsubsection}{LabVIEW}{11}{section*.11}%
 \contentsline {subsubsection}{Simulink}{11}{section*.12}%
-\contentsline {section}{\numberline {2.8}Avances recientes en GNCs }{11}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Programación de Sistemas GNC}{11}{subsection.2.8.1}%
+\contentsline {section}{\numberline {2.10}Avances recientes en GNCs }{11}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Programación de Sistemas GNC}{12}{subsection.2.10.1}%
 \contentsline {chapter}{\numberline {3}Tarjeta de desarrollo}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Selección de la tarjeta de desarrollo}{13}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Requerimientos de la aplicación}{13}{subsection.3.1.1}%
@@ -70,16 +73,16 @@
 \contentsline {subsection}{\numberline {4.3.3}Yocto Project}{26}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}creacion de una capa de yocto}{27}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Caso de estudio}{27}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}integracion del programa generado a la capa de Yocto}{27}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.6}Integración del programa generado a la capa de Yocto}{27}{subsection.4.3.6}%
 \contentsline {subsubsection}{.bb}{27}{section*.30}%
-\contentsline {subsection}{\numberline {4.3.7}Generacion de la imagen minima}{27}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}{27}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.7}Generacion de la imagen minima}{28}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}{28}{subsection.4.3.8}%
 \contentsline {subsection}{\numberline {4.3.9}Conexion de la tarjeta de desarrollo con el computador host}{28}{subsection.4.3.9}%
-\contentsline {subsection}{\numberline {4.3.10}Ejecucion del caso de estudio y resultados}{28}{subsection.4.3.10}%
-\contentsline {subsection}{\numberline {4.3.11}Comparacion de resultados}{28}{subsection.4.3.11}%
-\contentsline {section}{\numberline {4.4}Reflexion final}{28}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Solución propuesta}{29}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{30}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{31}{chapter*.31}%
-\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{33}{appendix.Alph1}%
-\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{34}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {4.3.10}Ejecución del caso de estudio y resultados}{29}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.11}Comparacion de resultados}{29}{subsection.4.3.11}%
+\contentsline {section}{\numberline {4.4}Reflexion final}{29}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Solución propuesta}{30}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{31}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{32}{chapter*.31}%
+\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{34}{appendix.Alph1}%
+\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{35}{appendix.Alph1}%
