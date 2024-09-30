@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1724938036.59496 "c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion.tex" "presentacion.pdf" "presentacion" 1724938038.12117 0
+["pdflatex"] 1727647169.21406 "c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion.tex" "presentacion.pdf" "presentacion" 1727647170.75432 0
   "beamercolorthemetec.sty" 1687358760 3335 8f135b587eed561717197ebcb53f9cac ""
-  "c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion.tex" 1724938034 9514 76b9c71d1649fd6fd156e46fc63c2d14 ""
+  "c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion.tex" 1724938054 9514 76b9c71d1649fd6fd156e46fc63c2d14 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1723612536 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1723613163 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1723613627 4484 b828043cbd581d289d955903c1339981 ""
@@ -240,13 +240,13 @@
   "fig/MarcaTECRGB.pdf" 1687358760 284430 39d4cf435f32a2eb7dc9fdb7e6b0f5a2 ""
   "fig/gantt.png" 1724937953 91147 5de7407dc90636a6febc7c511202c73d ""
   "fig/yocto_final.png" 1724937892 59934 913a624411f1f800782322983e1fe8ba ""
-  "macros.tex" 1724900657 4437 9d387009b87d2a5f5015e58a5706f78a ""
+  "macros.tex" 1727647168 4918 3ec43f0f364b37ad35e02ee158c55aec ""
   "notation.tex" 1687358760 7778 5413052c1192982b66597125efa7dab0 ""
-  "presentacion.aux" 1724938038 5696 76c83e4df145caf8133f19ac38337e3a "pdflatex"
-  "presentacion.nav" 1724938038 3194 493653220b745336f4d7b803fb93b3ee "pdflatex"
-  "presentacion.out" 1724938038 1754 7ecf656397d7f584895c0e97c8125692 "pdflatex"
-  "presentacion.tex" 1724938034 9514 76b9c71d1649fd6fd156e46fc63c2d14 ""
-  "presentacion.toc" 1724938038 662 05a0488ea49120e59e34eeda38ee20de "pdflatex"
+  "presentacion.aux" 1727647170 5696 76c83e4df145caf8133f19ac38337e3a "pdflatex"
+  "presentacion.nav" 1727647170 3194 493653220b745336f4d7b803fb93b3ee "pdflatex"
+  "presentacion.out" 1727647170 1754 7ecf656397d7f584895c0e97c8125692 "pdflatex"
+  "presentacion.tex" 1724938054 9514 76b9c71d1649fd6fd156e46fc63c2d14 ""
+  "presentacion.toc" 1727647170 662 05a0488ea49120e59e34eeda38ee20de "pdflatex"
   (generated)
   "presentacion.aux"
   "presentacion.log"

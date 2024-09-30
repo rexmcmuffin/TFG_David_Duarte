@@ -25,8 +25,21 @@
 % Configuration of listings
 \lstset{%
   basicstyle=\scriptsize,
-  commentstyle=\color{blue}
+  commentstyle=\color{blue},
+  numbers=left,
+  numberstyle=\tiny\color{gray}, % Estilo de los números de línea
+  stepnumber=1,              % Cada línea será numerada
+  breaklines=true            % Divide las líneas largas automáticamente
 }
+
+\lstdefinestyle{terminal}{
+    backgroundcolor=\color{bgcolor}, % color de fondo
+    basicstyle=\ttfamily\color{codecolor}, % estilo de fuente
+    columns=fullflexible,
+    keepspaces=true,
+    escapeinside={(*@}{@*)}, % para insertar LaTeX dentro del código
+}
+
 \lstset{literate=%
   {á}{{\'a}}1
   {é}{{\'e}}1

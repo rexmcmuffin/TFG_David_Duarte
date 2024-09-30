@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.7)  13 SEP 2024 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  29 SEP 2024 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion
-(c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion.tex
+**"c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion.tex"
+(c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/plantilla_presentacion/presentacion.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2024/01/06 v3.71 A class for typesetting presentations
 (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -556,13 +556,13 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip70
 \bigstrutjot=\dimen297
 ) (./macros.tex (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/08/29 v24.9 The Babel package
+Package: babel 2024/06/26 v24.7 The Babel package
 \babel@savecnt=\count345
 \U@D=\dimen298
 \l@unhyphenated=\language89
  (c:/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-LaTeX Info: Redefining \textlatin on input line 3933.
+LaTeX Info: Redefining \textlatin on input line 3930.
 \bbl@dirlevel=\count346
  (c:/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
@@ -826,7 +826,7 @@ Package bm Info: No bold for \U/trsy/m/n, using \pmb.
 \symboldpureletters=\mathgroup11
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 46.
+Package hyperref Info: Option `colorlinks' set `true' on input line 59.
  (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemeMarburg.sty (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (c:/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen346
 \beamer@headheight=\dimen347
@@ -1197,19 +1197,19 @@ LaTeX Info: Redefining \% on input line 12.
 )
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
 (rerunfilecheck)             Checksum: 7ECF656397D7F584895C0E97C8125692;1754.
  ) 
 Here is how much of TeX's memory you used:
- 27625 strings out of 473579
- 511478 string characters out of 5732258
+ 27630 strings out of 473579
+ 511657 string characters out of 5732257
  1953960 words of memory out of 5000000
- 49896 multiletter control sequences out of 15000+600000
+ 49901 multiletter control sequences out of 15000+600000
  591653 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,478b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,123p,511b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
 Output written on presentacion.pdf (14 pages, 406295 bytes).
 PDF statistics:

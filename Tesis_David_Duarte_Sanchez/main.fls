@@ -781,6 +781,14 @@ OUTPUT teoria.aux
 INPUT ./teoria.tex
 INPUT ./teoria.tex
 INPUT teoria.tex
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT ./especifico1.tex
 INPUT ./especifico1.tex
 OUTPUT especifico1.aux
@@ -793,12 +801,77 @@ OUTPUT especifico2.aux
 INPUT ./especifico2.tex
 INPUT ./especifico2.tex
 INPUT especifico2.tex
-INPUT ./fig/figtemplate.pdf
-INPUT ./fig/figtemplate.pdf
-INPUT ./fig/figtemplate.pdf
-INPUT ./fig/figtemplate.pdf
-INPUT ./fig/figtemplate.pdf
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
+INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
+INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
+INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
+INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
+INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/onda_modulada.pdf
+INPUT ./fig/especifico_2/onda_modulada.pdf
+INPUT ./fig/especifico_2/onda_modulada.pdf
+INPUT ./fig/especifico_2/onda_modulada.pdf
+INPUT ./fig/especifico_2/onda_modulada.pdf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
+INPUT ./fig/especifico_2/onda_filtrada.pdf
+INPUT ./fig/especifico_2/onda_filtrada.pdf
+INPUT ./fig/especifico_2/onda_filtrada.pdf
+INPUT ./fig/especifico_2/onda_filtrada.pdf
+INPUT ./fig/especifico_2/onda_filtrada.pdf
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/apps.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/apps.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/apps.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/apps.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/apps.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/c_code.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/c_code.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/c_code.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/c_code.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/c_code.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/root_folder.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/root_folder.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/root_folder.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/root_folder.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/root_folder.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/cmake_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/cmake_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/cmake_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/cmake_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/cmake_file.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png
+INPUT ./fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png
+INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
+INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
+INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
+INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
+INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
 INPUT ./especifico3.tex
 INPUT ./especifico3.tex
 OUTPUT especifico3.aux
@@ -873,10 +946,9 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb

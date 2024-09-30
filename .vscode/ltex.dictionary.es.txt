@@ -24,3 +24,5 @@ Project
 simulink
 yocto
 Zedboard
+Coder
+root

@@ -22,67 +22,67 @@
 \contentsline {subsection}{\numberline {2.5.1}MATLAB Embedded Coder}{9}{subsection.2.5.1}%
 \contentsline {section}{\numberline {2.6}Código embebido}{9}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Contenedores}{9}{section.2.7}%
-\contentsline {section}{\numberline {2.8}protocolos de comunicacion}{10}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Protocolos de Comunicación}{10}{section.2.8}%
 \contentsline {subsection}{\numberline {2.8.1}UART}{10}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}SSH}{10}{subsection.2.8.2}%
-\contentsline {section}{\numberline {2.9}Revisión literaria}{10}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Desarrollo de sistemas de navegación}{10}{subsection.2.9.1}%
-\contentsline {subsection}{\numberline {2.9.2}Transformación de Lenguaje de Bloques a Código C}{10}{subsection.2.9.2}%
-\contentsline {subsubsection}{XOD}{10}{section*.9}%
-\contentsline {subsubsection}{Visual Microcontroller}{11}{section*.10}%
-\contentsline {subsubsection}{LabVIEW}{11}{section*.11}%
-\contentsline {subsubsection}{Simulink}{11}{section*.12}%
-\contentsline {section}{\numberline {2.10}Avances recientes en GNCs }{11}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}Programación de Sistemas GNC}{12}{subsection.2.10.1}%
-\contentsline {chapter}{\numberline {3}Tarjeta de desarrollo}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Selección de la tarjeta de desarrollo}{13}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Requerimientos de la aplicación}{13}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Tarjetas candidatas}{14}{subsection.3.1.2}%
-\contentsline {subsubsection}{Xilinx ZCU102 Evaluation Kit}{14}{section*.13}%
-\contentsline {subsubsection}{NVIDIA Jetson AGX Xavier}{14}{section*.14}%
-\contentsline {subsubsection}{TMS320C6678 Development Kit}{15}{section*.15}%
-\contentsline {subsubsection}{ZedBoard de Avnet}{15}{section*.16}%
-\contentsline {subsection}{\numberline {3.1.3}Criterios de comparación}{16}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Matriz de Pugh}{18}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Plataforma seleccionada}{18}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Especificaciones principales}{18}{subsection.3.3.1}%
-\contentsline {subsubsection}{Procesador y FPGA}{18}{section*.17}%
-\contentsline {subsubsection}{Interfaces de E/S}{19}{section*.18}%
-\contentsline {subsubsection}{Memoria}{19}{section*.19}%
-\contentsline {subsubsection}{Alimentación y Consumo de Energía}{19}{section*.20}%
-\contentsline {subsubsection}{Tamaño y Factor de Forma}{19}{section*.21}%
-\contentsline {subsubsection}{Capacidades de Desarrollo}{19}{section*.22}%
-\contentsline {section}{\numberline {3.4}Reflexión final}{20}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Flujo de trabajo para la implementación de software para GNC embebido}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Flujo de trabajo de la aplicación Model 2 Model Transformation}{22}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Selección del caso de estudio}{22}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Simulacion del caso de estudio en Matlab Simulink}{23}{subsection.4.2.1}%
-\contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulacionn}{23}{section*.24}%
-\contentsline {subsection}{\numberline {4.2.2}Simulink coder}{24}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Definicio de paramtetros}{24}{subsection.4.2.3}%
-\contentsline {subsubsection}{seleccion del procesador objetivo}{24}{section*.25}%
-\contentsline {subsubsection}{Seleccion del tipo de archivo de construccion}{24}{section*.26}%
-\contentsline {subsubsection}{Generacion de archivos de compilacion}{25}{section*.27}%
-\contentsline {subsection}{\numberline {4.2.4}Contenedor para compilacion de los binarios}{25}{subsection.4.2.4}%
-\contentsline {subsubsection}{Istalacion de programas en el contenedor}{25}{section*.28}%
-\contentsline {subsection}{\numberline {4.2.5}Compilacion de los binarios}{25}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Flujo de Trabajo Herramienta desarrollada por mi persona}{25}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Sistema operativo para desarrollo}{26}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Generacion de un contenedor}{26}{subsection.4.3.2}%
-\contentsline {subsubsection}{Creacion de un usuario no root}{26}{section*.29}%
-\contentsline {subsection}{\numberline {4.3.3}Yocto Project}{26}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}creacion de una capa de yocto}{27}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Caso de estudio}{27}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Integración del programa generado a la capa de Yocto}{27}{subsection.4.3.6}%
-\contentsline {subsubsection}{.bb}{27}{section*.30}%
-\contentsline {subsection}{\numberline {4.3.7}Generacion de la imagen minima}{28}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}{28}{subsection.4.3.8}%
-\contentsline {subsection}{\numberline {4.3.9}Conexion de la tarjeta de desarrollo con el computador host}{28}{subsection.4.3.9}%
-\contentsline {subsection}{\numberline {4.3.10}Ejecución del caso de estudio y resultados}{29}{subsection.4.3.10}%
-\contentsline {subsection}{\numberline {4.3.11}Comparacion de resultados}{29}{subsection.4.3.11}%
-\contentsline {section}{\numberline {4.4}Reflexion final}{29}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Solución propuesta}{30}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{31}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{32}{chapter*.31}%
-\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{34}{appendix.Alph1}%
-\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{35}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {2.8.2}SSH}{11}{subsection.2.8.2}%
+\contentsline {section}{\numberline {2.9}Revisión literaria}{11}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Desarrollo de sistemas de navegación}{11}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Transformación de Lenguaje de Bloques a Código C}{12}{subsection.2.9.2}%
+\contentsline {subsubsection}{XOD}{12}{section*.9}%
+\contentsline {subsubsection}{Visual Microcontroller}{12}{section*.10}%
+\contentsline {subsubsection}{LabVIEW}{12}{section*.11}%
+\contentsline {subsubsection}{Simulink}{13}{section*.12}%
+\contentsline {section}{\numberline {2.10}Avances recientes en GNCs }{13}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Programación de Sistemas GNC}{13}{subsection.2.10.1}%
+\contentsline {chapter}{\numberline {3}Tarjeta de desarrollo}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Selección de la tarjeta de desarrollo}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requerimientos de la aplicación}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Tarjetas candidatas}{16}{subsection.3.1.2}%
+\contentsline {subsubsection}{Xilinx ZCU102 Evaluation Kit}{16}{section*.13}%
+\contentsline {subsubsection}{NVIDIA Jetson AGX Xavier}{16}{section*.14}%
+\contentsline {subsubsection}{TMS320C6678 Development Kit}{17}{section*.15}%
+\contentsline {subsubsection}{ZedBoard de Avnet}{17}{section*.16}%
+\contentsline {subsection}{\numberline {3.1.3}Criterios de comparación}{18}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Matriz de Pugh}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Plataforma seleccionada}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Especificaciones principales}{20}{subsection.3.3.1}%
+\contentsline {subsubsection}{Procesador y FPGA}{20}{section*.17}%
+\contentsline {subsubsection}{Interfaces de E/S}{21}{section*.18}%
+\contentsline {subsubsection}{Memoria}{21}{section*.19}%
+\contentsline {subsubsection}{Alimentación y Consumo de Energía}{21}{section*.20}%
+\contentsline {subsubsection}{Tamaño y Factor de Forma}{21}{section*.21}%
+\contentsline {subsubsection}{Capacidades de Desarrollo}{21}{section*.22}%
+\contentsline {section}{\numberline {3.4}Reflexión final}{22}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Flujo de trabajo para la implementación de software para GNC embebido}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Selección del caso de estudio}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Simulación del caso de estudio en MATLAB Simulink}{25}{subsection.4.1.1}%
+\contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulación}{26}{section*.27}%
+\contentsline {section}{\numberline {4.2}Flujo de trabajo de la aplicación de transformación de modelo a modelo}{26}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Simulink Coder}{27}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Definición de parámetros}{27}{subsection.4.2.2}%
+\contentsline {subsubsection}{Selección del procesador objetivo}{28}{section*.31}%
+\contentsline {subsubsection}{Selección del tipo de archivo de construcción}{28}{section*.33}%
+\contentsline {subsubsection}{Generación de archivos de compilación}{29}{section*.35}%
+\contentsline {subsection}{\numberline {4.2.3}Contenedor para compilación de los binarios}{29}{subsection.4.2.3}%
+\contentsline {subsubsection}{Instalación de programas en el contenedor}{30}{section*.36}%
+\contentsline {subsection}{\numberline {4.2.4}Compilación de los binarios}{31}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Flujo de Trabajo Herramienta desarrollada por mi persona}{32}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Sistema operativo para desarrollo}{32}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Generación de un contenedor}{33}{subsection.4.3.2}%
+\contentsline {subsubsection}{Creación de un usuario no root}{33}{section*.41}%
+\contentsline {subsection}{\numberline {4.3.3}Yocto Project}{34}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Creacion de una capa de yocto}{35}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Caso de estudio}{35}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Integración del programa generado a la capa de Yocto}{35}{subsection.4.3.6}%
+\contentsline {subsubsection}{.bb}{35}{section*.42}%
+\contentsline {subsection}{\numberline {4.3.7}Generacion de la imagen minima}{36}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}{36}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Conexion de la tarjeta de desarrollo con el computador host}{36}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}Ejecución del caso de estudio y resultados}{37}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.11}Comparacion de resultados}{37}{subsection.4.3.11}%
+\contentsline {section}{\numberline {4.4}Reflexion final}{37}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Solución propuesta}{38}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{39}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{40}{chapter*.43}%
+\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{42}{appendix.Alph1}%
+\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{43}{appendix.Alph1}%

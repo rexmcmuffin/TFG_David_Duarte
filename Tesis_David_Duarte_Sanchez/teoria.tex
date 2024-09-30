@@ -108,7 +108,7 @@ aplicación en lugar de lidiar con los detalles de bajo nivel del hardware, lo q
 Ejemplos de frameworks populares en sistemas embebidos incluyen Robot Operating System (ROS), utilizado en aplicaciones de robótica, y FreeRTOS, 
 un sistema operativo de tiempo real diseñado para microcontroladores y sistemas embebidos \cite{HerreraLpez2023EntornoDT}.
 
-\subsection{YOCTO}
+\subsection{YOCTO}\label{subsec:yocto}
 
 Yocto es un marco de trabajo (framework) popular utilizado en el desarrollo de sistemas embebidos, especialmente en la creación de distribuciones de Linux 
 personalizadas para hardware específico. Yocto utiliza un proceso de construcción cruzada, lo que significa que el código se compila en una plataforma diferente 
@@ -150,16 +150,62 @@ determinísticos.
 
 \section{Contenedores}
 
-para que sirven, ventajas y desventajasde su implementacion caso de estudio
+Docker ha revolucionado la forma en que se desarrollan y despliegan aplicaciones al ofrecer un entorno portátil y consistente. Gracias a su capacidad de empaquetar aplicaciones junto con todas sus dependencias, los desarrolladores pueden estar seguros de que su software funcionará de manera idéntica en cualquier entorno, ya sea local, en la nube o en producción. Esta portabilidad no solo ahorra tiempo en la configuración del entorno, sino que también reduce significativamente los problemas relacionados con "funciona en mi máquina". Además, el aislamiento que proporcionan los contenedores asegura que las aplicaciones operen sin interferencias, lo que es crucial para mantener la estabilidad y el rendimiento.
 
-\section{protocolos de comunicacion}
+Por otro lado, la eficiencia de Docker es notable. A diferencia de las máquinas virtuales, los contenedores comparten el núcleo del sistema operativo, lo que permite un uso más optimizado de los recursos y un inicio casi instantáneo. Esto se traduce en una mayor agilidad y rapidez al escalar aplicaciones, ya que se pueden crear y gestionar múltiples instancias de contenedores con facilidad. La capacidad de versionar imágenes también es un gran beneficio, ya que permite a los equipos mantener un historial claro de cambios y revertir a versiones anteriores cuando sea necesario. En conjunto, estas características hacen de Docker una herramienta indispensable para la integración y entrega continua (CI/CD), mejorando significativamente los flujos de trabajo de desarrollo y despliegue.
+
+Algunos comandos básicos para el manejo de contenedores son:
+
+\begin{lstlisting}[language=bash, caption={Lista todos los contenedores en un sistema}, label=lst:docker_ps_a]
+    sudo docker ps -a
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash, caption={Inicializa el contenedor mediante el ID}, label=lst:docker_start]
+    sudo docker start <nombre-o-id-contenedor>
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash, caption={Ejecuta el contenedor en segundo plano}, label=lst:docker_init]
+    docker run -d <nombre-o-id-contenedor>
+\end{lstlisting}
+
+\section{Protocolos de Comunicación}
 
 \subsection{UART}
 
+El Universal Asynchronous Receiver-Transmitter (UART) es un protocolo de comunicación serie ampliamente utilizado para la transmisión de datos entre dispositivos. Su característica principal es que es asíncrono, lo que significa que no requiere una señal de reloj compartida entre el transmisor y el receptor.
+
+\textbf{Características:}
+
+\begin{itemize}
+    \item Transmisión Asíncrona: No necesita sincronización de reloj, lo que simplifica su implementación y reduce la complejidad del sistema.
+    \item Configuración Simple: Opera comúnmente con configuraciones de 8 bits de datos, 1 bit de parada y 1 bit de paridad opcional, facilitando su uso en diversas aplicaciones.
+    \item Distancia de Comunicación: Es efectivo para distancias cortas, generalmente menos de 15 metros, debido a la posible degradación de la señal a medida que aumenta la distancia.
+    \item Velocidad de Transmisión: Las tasas de baudios (baud rate) pueden variar desde 300 hasta 115200 bps o más, dependiendo del hardware y las condiciones del entorno.
+\end{itemize}
+
+\textbf{Aplicaciones:}
+
+\begin{itemize}
+    \item Comunicación entre microcontroladores.
+    \item Interfaces para sensores y dispositivos periféricos.
+    \item Envío de datos a través de puertos serie en computadoras y dispositivos embebidos.
+\end{itemize}
+
 \subsection{SSH}
 
+El Secure Shell (SSH) es un protocolo de red que permite la administración segura de dispositivos y la transferencia de datos a través de redes inseguras. SSH proporciona autenticación y cifrado, garantizando que los datos transmitidos estén protegidos contra ataques maliciosos.
+
+\textbf{Características:}
+
+\begin{itemize}
+    \item Cifrado: Utiliza algoritmos de cifrado robustos, como AES, para proteger la información durante su transmisión.
+    \item Autenticación: Permite autenticación mediante contraseña o claves públicas, aumentando significativamente la seguridad en el acceso a los sistemas.
+    \item Túneles Seguros: Facilita la creación de túneles seguros para otros protocolos, lo que permite la transferencia protegida de datos sensibles.
+    \item Interfaz de Línea de Comando: Proporciona acceso remoto a la línea de comandos, permitiendo a los administradores gestionar sistemas sin necesidad de estar físicamente presentes.
+\end{itemize}
+
 \section{Revisión literaria}
-En los últimos 4 años, las computadoras de guía, navegación y control han mostrado grandes avances en el desarrollo de sistemas autónomos.
+En los últimos años, las computadoras de guía, navegación y control han mostrado grandes avances en el desarrollo de sistemas autónomos.
 
 \subsection{Desarrollo de sistemas de navegación}
 
