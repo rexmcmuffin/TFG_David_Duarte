@@ -71,18 +71,18 @@
 \contentsline {subsection}{\numberline {4.3.2}Generación de un contenedor}{33}{subsection.4.3.2}%
 \contentsline {subsubsection}{Creación de un usuario no root}{33}{section*.41}%
 \contentsline {subsection}{\numberline {4.3.3}Yocto Project}{34}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Creacion de una capa de yocto}{35}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Caso de estudio}{35}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Integración del programa generado a la capa de Yocto}{35}{subsection.4.3.6}%
-\contentsline {subsubsection}{.bb}{35}{section*.42}%
-\contentsline {subsection}{\numberline {4.3.7}Generacion de la imagen minima}{36}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}{36}{subsection.4.3.8}%
-\contentsline {subsection}{\numberline {4.3.9}Conexion de la tarjeta de desarrollo con el computador host}{36}{subsection.4.3.9}%
-\contentsline {subsection}{\numberline {4.3.10}Ejecución del caso de estudio y resultados}{37}{subsection.4.3.10}%
-\contentsline {subsection}{\numberline {4.3.11}Comparacion de resultados}{37}{subsection.4.3.11}%
-\contentsline {section}{\numberline {4.4}Reflexion final}{37}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Solución propuesta}{38}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{39}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{40}{chapter*.43}%
-\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{42}{appendix.Alph1}%
-\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{43}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {4.3.4}Creación de una capa de yocto}{34}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Caso de estudio}{36}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Integración del programa generado a la capa de Yocto}{36}{subsection.4.3.6}%
+\contentsline {subsubsection}{sistema\_control.bb}{36}{section*.43}%
+\contentsline {subsection}{\numberline {4.3.7}Generación de la imagen mínima}{37}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}{37}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Conexión de la tarjeta de desarrollo con el computador host}{38}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}Ejecución del caso de estudio y resultados}{39}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.11}Comparación de resultados}{39}{subsection.4.3.11}%
+\contentsline {section}{\numberline {4.4}Reflexión final}{40}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Solución propuesta}{41}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{42}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{43}{chapter*.47}%
+\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{45}{appendix.Alph1}%
+\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{46}{appendix.Alph1}%

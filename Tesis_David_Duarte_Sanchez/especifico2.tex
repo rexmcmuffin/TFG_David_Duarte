@@ -185,11 +185,11 @@ Una vez configurados todos los parámetros mencionados anteriormente debemos de 
 Para poder generar la compilación cruzada es necesario crear un contenedor para poder utilizar Ubuntu 20.04, ya que esta versión es la que presenta mayor compatibilidad con las dependencias contenidas en el flujo de trabajo de Yocto Project que se utiliza. 
 
 
-\begin{lstlisting}[language=bash, caption={Comando para la instalacion de docker}, label=lst:install_docker]
+\begin{lstlisting}[language=bash, caption={Instalacion de docker, Linux}, label=lst:install_docker]
     sudo apt install docker.io
 \end{lstlisting}
 
-\begin{lstlisting}[language=bash, caption={Comando para la instalacion de Ubuntu 20.04}, label=lst:install_20_04_ubuntu]
+\begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 20.04, Linux}, label=lst:install_20_04_ubuntu]
     sudo docker run -it ubuntu:20.04 /bin/bash
 \end{lstlisting}
 
@@ -197,15 +197,15 @@ Para poder generar este contenedor primeramente se debe de satisfacer la depende
 
 \subsubsection{Instalación de programas en el contenedor}
 
-\begin{lstlisting}[language=bash, caption={Comando para la instalacion del compilador cruzado}, label=lst:cross_compiler]
+\begin{lstlisting}[language=bash, caption={Instalacion del compilador cruzado, Linux}, label=lst:cross_compiler]
     sudo apt install gcc-arm-linux-gnueabihf
 \end{lstlisting}
 
-\begin{lstlisting}[language=bash, caption={Comando para la instalacion de CMake}, label=lst:cmake]
+\begin{lstlisting}[language=bash, caption={Instalacion de CMake, Linux}, label=lst:cmake]
     sudo apt install cmake
 \end{lstlisting}
 
-\begin{lstlisting}[language=bash, caption={Comando para la instalacion de build essential}, label=lst:build_essential]
+\begin{lstlisting}[language=bash, caption={Instalacion de build essential, Linux}, label=lst:build_essential]
     sudo apt install build-essential
 \end{lstlisting}
 
@@ -218,12 +218,12 @@ Una vez generado el contenedor debemos de instalar en el mismo el compilador cru
     \label{fig:pestana_swap_area}
 \end{figure}
 
-\begin{lstlisting}[language=bash, caption={Comando para la copiar archivos al contenedor}, label=lst:copy_to_container]
+\begin{lstlisting}[language=bash, caption={Copiar archivos al contenedor, Linux}, label=lst:copy_to_container]
     sudo docker cp /direccion/del/archivo 
     <id_de_contenedor>:/direccion/del/contenedor
 \end{lstlisting}
 
-\begin{lstlisting}[language=bash, caption={Comando para la copiar archivos del contenedor}, label=lst:copy_from_container]
+\begin{lstlisting}[language=bash, caption={Copiar archivos del contenedor, Linux}, label=lst:copy_from_container]
     sudo docker cp <id_de_contenedor>:/direccion/del/contenedor
     /direccion/del/archivo
 \end{lstlisting}
@@ -232,7 +232,7 @@ Seguido de esto se debe de copiar el archivo comprimido generado en \ref{subsec:
 
 \subsection{Compilación de los binarios}\label{subsec:compilacion_binario}
 
-\begin{lstlisting}[language=bash, caption={Comando para la compilacion del programa}, label=lst:build_cmake_file]
+\begin{lstlisting}[language=bash, caption={Compilacion del programa, Linux}, label=lst:build_cmake_file]
     cmake -DCMAKE_C_COMPILER=arm-linux-gnueabihf-gcc 
     CMakeLists.txt -DMATLAB_ROOT=/home/test/simple_filter/R2024b/
 \end{lstlisting}
@@ -284,7 +284,7 @@ Como sistema operativo de desarrollo se utilizó Ubuntu 22.04 LTS, en una comput
 
 Para el desarrollo del marco de trabajo de Yocto se decidió implementar un contenedor, esto debido a que la versión de Yocto para la cual se encontraba un paquete de soporte para la tarjeta de desarrollo es Yocto Zeus 3.0, este fue liberado en octubre del 2019, por tanto no era soportado por la versión de Linux del computador de desarrollo, es por esto que se tomó la decisión de utilizar un contenedor el cual ejecutara la versión de Ubuntu 16.04 LTS. 
 
-\begin{lstlisting}[language=bash, caption={Comando para la instalacion de Ubuntu 16.04}, label=lst:install_16_04_ubuntu]
+\begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 16.04}, label=lst:install_16_04_ubuntu]
     sudo docker run -it ubuntu:16.04 /bin/bash
 \end{lstlisting}
 
@@ -300,7 +300,7 @@ Para la generación del contenedor se hace uso del comando que se muestra en \re
 
 Para el uso del marco de trabajo de Yocto se debe de generar un usuario no root, esto principalmente por razones de seguridad y manejo adecuado de permisos. El usuario se puede generar por medio de los siguientes comandos:
 
-\begin{lstlisting}[language=bash, caption={Generacion de usuario no root}, label=lst:no_root_user]
+\begin{lstlisting}[language=bash, caption={Generacion de usuario no root, Linux}, label=lst:no_root_user]
     apt - get install -y sudo
     useradd - ms/bin/bash myuser
     echo "myuser:password" | chpasswd
@@ -309,7 +309,7 @@ Para el uso del marco de trabajo de Yocto se debe de generar un usuario no root,
 
 De forma que según el comando observado en \ref{lst:no_root_user}, en la primera línea instalamos sudo, seguido de esto en la segunda línea se agrega el usuario denominado "myuser", en la tercera línea se genera una contraseña para este usuario la cual se define como "chpasswd", finalmente se agrega en el archivo usermod el nuevo usuario. 
 
-\begin{lstlisting}[language=bash, caption={Iniciar usuario no root}, label=lst:no_root_user_log]
+\begin{lstlisting}[language=bash, caption={Iniciar usuario no root, Linux}, label=lst:no_root_user_log]
     su - myuser
 \end{lstlisting}
 
@@ -320,7 +320,7 @@ Cada vez que iniciemos el contenedor siempre lo haremos como usuario root, para 
 
 Como se observó en \ref{subsec:yocto}, yocto presenta flexibilidades a la hora de configurar un sistema permitiendo al desarrollador seleccionar paquetes específicos y personalizar el sistema operativo.
 
-\begin{lstlisting}[language=bash, caption={Requerimientos Yocto Zeus}, label=lst:yocto_requirements]
+\begin{lstlisting}[language=bash, caption={Requerimientos Yocto Zeus, Linux}, label=lst:yocto_requirements]
     sudo apt - get install gawk wget git - core diffstat unzip texinfo
     gcc - multilib build - essential chrpath socat cpio python python3
     python3 - pip python3 - pexpect xz - utils debianutils 
@@ -340,9 +340,9 @@ Para que el mismo funcione de forma correcta debemos de instalar los requerimien
     git clone -b zeus https://github.com/openembedded/meta-openembedded.git
 \end{lstlisting}
 
-La versión de yocto a utilizar se debe de clonar de \ref{lst:yocto_clone}, seguido de esto se debe de ir a la rama de la versión Yocto Zeus. Además de clonar este repositorio se debe de ingresar al directorio denominado poky y clonar dentro del repositorio \ref{yocto_zedboard} el cual contiene en su rama llamada Zeus la versión de paquete de soporte para la tarjeta requerida para generar una imagen para la tarjeta de desarrollo seleccionada.
+La versión de yocto a utilizar se debe de clonar de \ref{lst:yocto_clone}, seguido de esto se debe de ir a la rama de la versión Yocto Zeus. Además de clonar este repositorio se debe de ingresar al directorio denominado poky y clonar dentro del repositorio \ref{lst:yocto_zedboard} el cual contiene en su rama llamada Zeus la versión de paquete de soporte para la tarjeta requerida para generar una imagen para la tarjeta de desarrollo seleccionada.
 
-\begin{lstlisting}[language=bash, caption={Configuraciones adicionales}, label=lst:aditional_config]
+\begin{lstlisting}[language=bash, caption={Configuraciones adicionales, Yocto}, label=lst:aditional_config]
     source oe - init - build - env
     
     echo "MACHINE ??=\"zedboard-zynq7\"" >> conf/local.conf
@@ -355,63 +355,138 @@ La versión de yocto a utilizar se debe de clonar de \ref{lst:yocto_clone}, segu
 
 Algunas configuraciones adicionales que se deben de realizar se muestran en \ref{lst:aditional_config}.
 
-\subsection{Creacion de una capa de yocto}
+\subsection{Creación de una capa de yocto}
 
-Para la generacion de una capa de yocto primero se debe de inicializar el entorno de desarrollo esto mediante el comando que se muestra en \ref{}, este se encarga de generar todos los archivos necesarios para poder hacer uso de las variables de entorno con las cuales opera el marco de trabajo de Yocto, seguido de esto se debe de utilzair el siguiente comando el cual se encargara de generar el arbol de directorios que se puede observar en la Figura \ref{}. Una vez implementado este comando se debe de hacer uso de este comando para poder agregar la capa al archivo denominado xxxx el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen.
+\begin{lstlisting}[language=bash, caption={"Print Working Directory",Linux}, label=lst:pwd]
+    pwd
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash, caption={Inicializar ambiente, Yocto}, label=lst:yocto_ambient_set]
+    source oe-init-build-env
+\end{lstlisting}
+
+Para la generación de una capa de yocto primero debemos de estar seguros que nos encontramos en el directorio denominado POKY, esto lo podemos verificar por medio del uso del comando \ref{lst:pwd}, seguido de esto se debe de inicializar el entorno de desarrollo esto mediante el comando que se muestra en \ref{lst:yocto_ambient_set}, este se encarga de generar todos los archivos necesarios para poder hacer uso de las variables de entorno con las cuales opera el marco de trabajo de Yocto.
+
+\begin{lstlisting}[language=bash, caption={Generar nueva capa, Yocto }, label=lst:yocto_new_layer]
+    bitbake-layers create-layer <nombre-de-la-capa>
+\end{lstlisting}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/Flujo de trabajo de mi idea.pdf}
+    \caption{Árbol de directorios de la capa}
+    \label{fig:arbol_capa_custom_yocto}
+\end{figure}
+
+\begin{lstlisting}[language=bash, caption={Agregar nueva capa, Yocto }, label=lst:add_new_layer]
+    bitbake-layers add-layer ../<nombre-de-la-capa>
+\end{lstlisting}
+
+Seguido de esto se debe de utilizar el comando que se muestra en \ref{lst:yocto_new_layer} el cual se encargara de generar el árbol de directorios que se puede observar en la Figura \ref{fig:arbol_capa_custom_yocto}. Una vez implementado este comando se debe de hacer uso del comando que se muestra en \ref{lst:add_new_layer} para poder agregar la capa al archivo denominado bblayers.conf el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen.
 
 \subsection{Caso de estudio}
 
-En esta seccion se integrara el caso de estudio generado en \ref{}, a un sistema operativo a la medida por medio de el marco de trabajo de Yocto Project, primeramente se generara una capa personalizada, seguido de esto se generara el archivo de instalacion con el cual la capa personalizada pasara a ser parte del sistema de archivos del sistema embebido, tambien se generara la imagen minima la cual consiste en un sistema de arranque y el sistema de archivos y finalmente se implementaran estos en la tarjeta de desarrollo seleccionada en \ref{}.
+En esta sección se integrará el caso de estudio generado en \ref{subsec:compilacion_binario}, a un sistema operativo a la medida por medio del marco de trabajo de Yocto Project, primeramente se generara una capa personalizada, seguido de esto se generara el archivo de instalación con el cual la capa personalizada pasara a ser parte del sistema de archivos del sistema embebido, también se generara la imagen mínima la cual consiste en un sistema de arranque y el sistema de archivos y finalmente se implementaran estos en la tarjeta de desarrollo seleccionada en \ref{ch:especifico1}.
 
 \subsection{Integración del programa generado a la capa de Yocto}
 
-Para la implementacion de la los binarios generados en \ref{}, se deben de generar algunos directarios, esto con el objetivo de mantener un entorno limpio y ordenado, para contener todos los directorios se genera un directorio llamado xxxx el cual dentro del mismo debera de contener un directorio llamado xxx el cual se encargara de contener el archivo de configuracion de la capa llamado xxxx el cual se genera mediante el comando que se observa en \ref{}, ademas de geenerar este archivo se debe de crear un directorio llamado xxxx que sera el encargado de contener los binarios compilados en \ref{}.
+Para la implementación del binario generado en \ref{subsec:compilacion_binario}, se deben de generar algunos directorios, esto con el objetivo de mantener un entorno limpio y ordenado. Para contener todos los directorios que se deben de crear, se genera un directorio llamado "recipes-core" el cual dentro del mismo deberá de contener un directorio llamado "sistema\_control" el cual se encargara de contener el archivo de configuración de la capa llamado "sistema\_control.bb"; este archivo se genera mediante el comando que se observa en \ref{lst:yocto_new_layer}, además de generar este archivo se debe de crear un directorio llamado "files" que será el encargado de contener el archivo binario compilado en \ref{subsec:compilacion_binario}.
 
-\subsubsection{.bb}
+\subsubsection{sistema\_control.bb}
 
-Como se mencionó anteriormente el archivo llamado xxxx.bb es el encargado de la configuracion de la capa, el mismo contiene los comandos de instalacion y la direccion en donde se encontraran los binarios en el sistema de archivos de la imagen del sistema embebido.
+Como se mencionó anteriormente el archivo llamado sistema\_control.bb es el encargado de la configuración de la capa, el mismo contiene los comandos de instalación y la dirección en donde se encontraran los binarios en el sistema de archivos de la imagen del sistema embebido.
 
-La estructura que debe de contener ese archivo para instalar binarios en el sistema son las que se puden observar en \ref{}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/bbfilestructure.jpg}
+    \caption{Estructura del archivo sistema\_control.bb}
+    \label{fig:estructura_archivo_bb}
+\end{figure}
 
-\subsection{Generacion de la imagen minima}
+La estructura que debe de contener ese archivo para instalar binarios en el sistema son las que se pueden observar en la Figura \ref{fig:estructura_archivo_bb}.
 
-Antes de generar la imagen minima se debe de tener en consideracion ejecutar la linea de comando que se muestra en \ref{}, esto con el fin de generar archivos de xxxx en lugar de xxxx. Una vez generados estos cambios se debe de iniciar de nuevo el entorno por medio del comando \ref{}, seguido de esto se debera de ejecutar el comando de xxx el cual se encarga de comenzar a generar la imagen minima. 
+\subsection{Generación de la imagen mínima}\label{subsec:generacion_imagen_minima}
 
-\subsection{Implementacion de la imagen minima en la tarjeta de desarrollo zedboard}
+\begin{lstlisting}[language=bash, caption={Generar archivos de desarrollador, Yocto }, label=lst:yocto_developer_image]
+    bitbake-layers add-layer ../<nombre-de-la-capa>
+\end{lstlisting}
 
-Para la implementacion de la imagen minima en la tarjeta de desarrollo de deben de seguir los siguientes pasos en la maquina Host:
+Antes de generar la imagen mínima se debe de tener en consideración ejecutar la línea de comando que se muestra en \ref{lst:yocto_developer_image}, esto con el fin de generar archivos de desarrollo en lugar de archivos de imagen en formato iso. Una vez generados estos cambios se debe de iniciar de nuevo el entorno por medio del comando \ref{lst:yocto_ambient_set}, seguido de esto se deberá de ejecutar el comando de "bitbake core-image-minimal" el cual se encarga de comenzar a generar la imagen mínima.
+
+\subsection{Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}
+
+Para la implementación de la imagen mínima desarrollada en \ref{subsec:generacion_imagen_minima} en la tarjeta de desarrollo, se deben de desarrollar los siguientes pasos en la máquina Host:
 
 \begin{enumerate}
-    \item Se debe de formatear la tarjeta SD de al menos 4 GB, las pariticiones de la misma se tienen que observar de la siguiente forma 
+    \item Se debe de formatear la tarjeta SD de al menos 4 GB, las particiones de la misma se tienen que observar de la siguiente forma 
     \begin{itemize}
-        \item root = 100 MB FAT 32
-        \item File System = 3.5 GB ext6(linux filesystem format)
+        \item raíz = 100 MB FAT 32
+        \item sistema de archivos = 3.5 GB ext6(linux filesystem format)
         \end{itemize} 
-    \item Seguido de esto se debe de ir a la ruta xxx/xxxx/xxxx/xxxx/xxxx y se deben de copiar los archivos de el contenedor a la maquina host mediante el comando que se muestra en \ref{}, esto con el objetivo de poder enviar los archivos a la tarjeta SD
 \end{enumerate}
 
-Para el sistema Root se deberan de copiar los archivos mediante el comando que se muestra en \ref{}, por otro lado en la particion denominada xxxx se debe de copiar el archvivo xxxx mediante el uso del comando xxxxx el cual se muestra en \ref{}.
+Seguido de esto se debe de ir a la ruta (ruta donde se encuentran los archivos de imagen de la zedboard), mientras que en la máquina host se debe de ir a la ruta seleccionada para almacenar los archivos temporalmente y se deben de copiar los archivos del contenedor a la máquina host mediante el comando que se muestra en \ref{lst:copy_from_container}, esto con el objetivo de poder enviar los archivos a la tarjeta SD más adelante.
 
-\subsection{Conexion de la tarjeta de desarrollo con el computador host}
+\begin{lstlisting}[language=bash, caption={Copiar archivos root, Linux}, label=lst:copy_root]
+    sudo cp boot.bin boot.scr 
+    core-image-minimal-zedboard-zynq7.cpio.gz.u-boot
+     u-boot.img uEnv.txt uImage zynq-zed.dtb /media/root
+\end{lstlisting}
 
-Como protocolo de comunicacion se establece de primera mano UART , el cual como se menciono en \ref{} consiste en xxxxxxxx y en el caso de la tarjeta de desarrollo se conecta segun s emeustra en el diagrama de la Figura xxxxx, para poder leer la consola se hace uso de Minicom el cual se encarga de xxxxxxxxxxxxxxx.
+\begin{lstlisting}[language=bash, caption={Copiar sistema de archivos, Linux}, label=lst:copy_fs]
+    sudo cp core-image-minimal-zedboard-zynq7.tar.gz /mnt/partition2
+\end{lstlisting}
 
-(Imagen del diagrama de conexion de la tarjeta y el computador por medio de UART)
+Para el sistema Root se deberán de copiar los archivos mediante el comando que se muestra en \ref{lst:copy_root}, por otro lado en la partición denominada FileSystem se debe de copiar el archvivo "core-image-minimal-zedboard-zynq7.tar.gz" mediante el uso del comando que se muestra en \ref{lst:copy_fs}.
 
-Seguido de esto se establecio la conexion por medio de SSH el cual como se menciona en \ref{}, consiste en xxxxxxxxx ademas de xxxxxx. 
+\subsection{Conexión de la tarjeta de desarrollo con el computador host}
 
-El diagrama de este protocolo de comunicacion se puede observar en \ref{}.
+Como protocolo de comunicación se establece de primera mano UART, el cual como se mencionó en \ref{sec:protocolos_de_comunicacion} consiste en un protocolo de comunicación serie que permite la transmisión y recepción de datos de manera asíncrona entre dos dispositivos y en el caso de la tarjeta de desarrollo se conecta según se muestra en el diagrama de la Figura \ref{fig:puertos_zedboard}, mediante el uso del puerto marcado como "S" en el diagrama. Para poder leer la consola se hace uso de Minicom el cual se encarga de la emulación de terminal en Linux que permite la comunicación serie con dispositivos a través de puertos seriales.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/154140ZedBoard.png}
+    \caption{Puertos tarjeta de desarrollo Zedboard}
+    \label{fig:puertos_zedboard}
+\end{figure}
+
+
+Una vez que se estableció la conexión por medio de SSH el cual como se menciona en \ref{sec:protocolos_de_comunicacion}, consiste en protocolo de comunicación en red que permite el acceso remoto seguro a sistemas, proporcionando autenticación y encriptación de datos, ya que es mejor que UART para comunicaciones remotas porque proporciona autenticación y encriptación, garantizando la seguridad de los datos transmitidos, mientras que UART es un protocolo simple y sin mecanismos de seguridad, adecuado solo para comunicaciones locales y de corto alcance. 
+
+El diagrama de este protocolo de comunicación se puede observar en \ref{fig:puertos_zedboard}, el cual se logra mediante la conexión al puerto denominado en el diagrama como .
 
 
 \subsection{Ejecución del caso de estudio y resultados}
 
-Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede ejecutar el caso de estudio por medio de xxxxxx, ademas de esto los resultados se pueden transmitir al computador por medio del comando xxxxxx, seguido de esto, haciendo uso de un codigo generado en python se pueden obtener los graficos de las sennales obtenidas mediante la ejecucion del binario contenido en la imagen minima.
+Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede ejecutar el caso de estudio. Para esto será necesario dirigirnos al directorio en el cual se instaló el archivo binario, el mismo se encuentra en la ruta xxxxx. Una vez encontrado el archivo basta con ejecutarlo mediante el uso del nombre del mismo "simple\_filter". Cuando el archivo se ejecuta genera dos archivos de salida llamados xxx y xxx, mediante el uso del programa en Python desarrollado se pueden leer los archivos generados y crear gráficos a partir de los mismos. Los resultados se deben de transmitir al computador por medio del comando \ref{lst:copy_ssh}.
 
-(imagen que contenga los dos graficos, a la inquizarda el de las dos senales sumadas y a la derecha el de la senal filtrada)
+\begin{lstlisting}[language=bash, caption={Copiar archivo por protocolo SSH, Linux}, label=lst:copy_ssh]
+    scp user@ip:/ruta/del/archivo/zedboard .
+\end{lstlisting}
 
-\subsection{Comparacion de resultados}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/especifico_2/onda_modulada.pdf}
+        \caption{Ondas Moduladas}
+        \label{fig:onda_modulada_zedboard}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/especifico_2/onda_filtrada.pdf}
+        \caption{Onda resultante luego de la función de transferencia}
+        \label{fig:onda_filtrada_zedboard}
+    \end{subfigure}
+    \caption{Salida resultante del diagrama mostrado en la Figura \ref{fig:diagrama_matlab_simulink_graficos}}
+    \label{fig:salida_resultante_diagrama_graficos_zedboard}
+\end{figure}
 
-Como se pudo observar, con la comparacion realizada, obtenemos que los datos tiene una desviacion de xxxxx ademas de xxxxxx, es por esto que podemos determinar que la implementacion de sistemas de control es viable segun lo demuestra el caso de estudio.
+\subsection{Comparación de resultados}
+
+Como se pudo observar, con la comparación realizada, obtenemos que los datos tiene una desviación de xxxxx además de xxxxxx, es por esto que podemos determinar que la implementación de sistemas de control es viable según lo demuestra el caso de estudio.
 
 
-\section{Reflexion final}
+
+\section{Reflexión final}

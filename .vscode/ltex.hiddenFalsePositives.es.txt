@@ -74,3 +74,6 @@
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QPrimeramente colocaremos el archivo comprimido en un directorio llamado swaparea, tal y como se muestra en \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QSeguido de esto se debe de copiar el archivo comprimido generado en \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, al contenedor con Ubuntu.\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QUna vez descomprimido el archivo, como se mencionó anteriormente, lo enviaremos al contenedor haciendo uso del comando \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QAlgunas configuraciones adicionales que se deben de realizar se muestran en \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qsistemacontrol.bb.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEl diagrama de este protocolo de comunicación se puede observar en \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, el cual se logra mediante la conexion al puerto denominado en el diagrama como \"e\".\\E$"}

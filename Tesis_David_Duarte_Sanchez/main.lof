@@ -16,6 +16,10 @@
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Make File}}{31}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Binario llamado simple\_filter}}{31}{figure.caption.39}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Flujo de trabajo Yocto}}{32}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Árbol de directorios de la capa}}{35}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Estructura del archivo sistema\_control.bb}}{36}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Puertos tarjeta de desarrollo Zedboard}}{38}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Salida resultante del diagrama mostrado en la Figura \ref {fig:diagrama_matlab_simulink_graficos}}}{39}{figure.caption.46}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
