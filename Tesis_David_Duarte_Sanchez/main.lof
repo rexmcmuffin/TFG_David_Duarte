@@ -1,0 +1,29 @@
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Tarjeta de desarrollo Zedboard}}{7}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Flujo de trabajo Yocto Project}}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flujo de trabajo Simulink Coder}}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagrama de compilación cruzada}}{13}{figure.caption.12}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama general del flujo de trabajo propuesto}}{28}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama MATLAB Simulink}}{29}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama MATLAB Simulink para poder observar las salidas}}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Salida resultante del diagrama mostrado en la Figura \ref {fig:diagrama_matlab_simulink_graficos}}}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pestaña Aplicaciones}}{31}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pestaña código C}}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Configuración de parámetros}}{31}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Selección del procesador y la familia del procesador}}{32}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Selección del tipo de archivo de construcción}}{33}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Archivo comprimido en el directorio swap\_area}}{34}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Make File}}{35}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Binario llamado simple\_filter}}{35}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Flujo de trabajo Yocto}}{36}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Árbol de directorios de la capa}}{39}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Estructura del archivo sistema\_control.bb}}{40}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Puertos tarjeta de desarrollo Zedboard}}{42}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Salida resultante de la imagen generada mediante el flujo de trabajo}}{43}{figure.caption.50}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

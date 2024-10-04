@@ -1,96 +1,62 @@
-\chapter{Tarjeta de desarrollo}
+\chapter{Plataforma de desarrollo}
 \label{ch:especifico1}
 
-En este capítulo se pretende identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de
-una computadora de guía, navegación y control espacial por sus siglas en ingles (GNC), para llevar a cabo este objetivo 
-se plantean los requerimientos que se deben de tomar en cuenta para elegir una tarjeta de desarrollo que logre satisfacer
-las necesidades de este proyecto, seguido de esto se seleccionaran un grupo de tarjetas las cuales cumplan con los 
-requerimientos previamente establecidos, estas serán comparadas para poder determinar cuál de las tarjetas de desarrollo 
-seleccionadas puede cumplir de mejor forma la tarea seleccionada.
+En este capítulo se pretende identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de guía, navegación y control espacial por sus siglas en ingles (GNC), para llevar a cabo este objetivo se plantean los requerimientos que se deben de tomar en cuenta para elegir una tarjeta de desarrollo que logre satisfacer las necesidades de este proyecto, seguido de esto se seleccionaran un grupo de tarjetas las cuales cumplan con los requerimientos previamente establecidos, estas serán comparadas para poder determinar cuál de las tarjetas de desarrollo seleccionadas puede cumplir de mejor forma la tarea seleccionada.
 
 \section{Selección de la tarjeta de desarrollo}
-    Para la selección de la tarjeta de desarrollo se partirá de la definición de los requerimientos de operación del sistema, 
-    esto tomando en cuenta las operaciones más comunes que realizan los sistemas GNC, una vez definidos los requerimientos, se 
-    seleccionaran al menos 3 tarjetas candidatas, esto con el fin de establecer los criterios de comparación para el desarrollo
-    de una matriz de Pugh.
+    Para la selección de la tarjeta de desarrollo se partirá de la definición de los requerimientos de operación del sistema, esto tomando en cuenta las operaciones más comunes que realizan los sistemas GNC, una vez definidos los requerimientos, se seleccionaran al menos 3 tarjetas candidatas, esto con el fin de establecer los criterios de comparación para el desarrollo de una matriz de Pugh.
 
 \subsection{Requerimientos de la aplicación}
 
-Al elegir una tarjeta de desarrollo para un sistema de guía, navegación y control (GNC) en aplicaciones espaciales, 
-se deben de tener en cuenta varios factores clave. Dentro de ellos se encuentran el procesamiento, mas precisamente
-la capacidad de calculo, ya que estos sistemas reuqieren de un procesamiento intensivo para los calculos de trayectoria
-, estimacion de estado y control. Seguido de esto se debe de considerar que sea un sistema de baja latencia, ademas que
-el mismo tenga soporte para sensores y actuadores para poder mediir y controlar el sistema, ademas de esto los puertos
-de entrada y salida deben ofrecer la presicion necesaria ara leer los datos de los sensores que se conecten al mismo.
+Al elegir una tarjeta de desarrollo para un sistema de guía, navegación y control (GNC) en aplicaciones espaciales, se deben de tener en cuenta varios factores clave. Dentro de ellos se encuentran el procesamiento, más precisamente la capacidad de cálculo, ya que estos sistemas requieren de un procesamiento intensivo para los cálculos de trayectoria, estimación de estado y control. Seguido de esto se debe de considerar que sea un sistema de baja latencia, además que el mismo tenga soporte para sensores y actuadores para poder medir y controlar el sistema, además de esto los puertos de entrada y salida deben ofrecer la precisión necesaria ara leer los datos de los sensores que se conecten al mismo.
 
-Por otro lado el sistema debe de contener capacidades de tiempo real estricto ya que los sistemas GNC deben de tomar
-desiciones criticas en el momento requerido. ademas de tener la capacidad de ejecutar un sistema opereativo de tiempo real
-(RTOS) o bien Linux en tiempo real. Tambien un aspecto importante a contener por la tarjeta de desarrollo es el consumo de
-energia, esto sin dejar de lado las capacidades de simulacion y pruebas, ya que, en la interfaz de simulacion la tarjeta se
-debe de poder conectar a un entorno de pruebas de hardware-in-the-loop por sus siglas en ingles (HIL), ademas de las
-capacidades de depuracion y monitoreo.
+Por otro lado el sistema debe de contener capacidades de tiempo real estricto, ya que los sistemas GNC deben de tomar decisiones críticas en el momento requerido. Además de tener la capacidad de ejecutar un sistema operativo de tiempo real (RTOS) o bien Linux en tiempo real. También un aspecto importante a contener por la tarjeta de desarrollo es el consumo de energía, esto sin dejar de lado las capacidades de simulación y pruebas, ya que, en la interfaz de simulación la tarjeta se debe de poder conectar a un entorno de pruebas de hardware-in-the-loop por sus siglas en ingles (HIL), además de las capacidades de depuración y monitoreo.
 
-Finalmente se deben de tomar en cuenta aspectos como lo son el Tamanno, peso y forma de la trjeta buscando que las mismas contengan 
-un tamanno compacto ya que los sistemas espaciales siempre se deben de integrar en espacios reducidos y la resistencia del mismo.
+Finalmente se deben de tomar en cuenta aspectos como lo son el Tamaño, peso y forma de la tarjeta buscando que las mismas contengan un tamaño compacto, ya que los sistemas espaciales siempre se deben de integrar en espacios reducidos y la resistencia del mismo.
 
 \subsection{Tarjetas candidatas}
-Bajo los requerimientos planteados anteriomente se eligieron las siguientes tarjetas de desarrollo, las mismas se presentaran con sus
-caracteristicas.
+Bajo los requerimientos planteados anteriormente se eligieron las siguientes tarjetas de desarrollo, las mismas se presentarán con sus características.
 
 \subsubsection{Xilinx ZCU102 Evaluation Kit}
 
-La tarjeta de desarrollo ZCU102 contiene procesamiento basado en Zynq UltraScale+ MPSoC, el cual combina un procesador ARM Cortex-A53 de 
-64 bits con una FPGA de alto rendimiento, la cual es excelente para el procesamiento en tiempo real y algorimos personalizados.
+La tarjeta de desarrollo ZCU102 contiene procesamiento basado en Zynq UltraScale+ MPSoC, el cual combina un procesador ARM Cortex-A53 de 64 bits con una FPGA de alto rendimiento, la cual es excelente para el procesamiento en tiempo real y algoritmos personalizados.
 
-Por otro aldo esta ofrece una amplia gama de interfaces de comunicacion como: PCIe, Ethernet, I2C, SPI, UART, GPIO. En cuanto a la eficiencia energetica esta opcion contiene mecanismos para el control de energia, ademas de ser compatible con entornos de 
-de simulacion y tiene interfaces JTAG oara una buena depuracion. finalmente es una tarjeta ampliamente utilizada en la industria en Sistemasd
-de prototipos avanzados y despliegue de HIL.
+Por otro lado, esta ofrece una amplia gama de interfaces de comunicación como: PCIe, Ethernet, I2C, SPI, UART, GPIO. En cuanto a la eficiencia energética esta opción contiene mecanismos para el control de energía, además de ser compatible con entornos de simulación y tiene interfaces JTAG para una buena depuración. Finalmente es una tarjeta ampliamente utilizada en la industria en sistemas de prototipos avanzados y despliegue de HIL.
 
-En sintesis esta opcion ofrece un procesamiento potente y versatil ademas de ser excelente para desarrollar y escalar sistemas GNC complejos, 
-por otro lado es una tarjeta de desarrollo costosa.
+En síntesis esta opción ofrece un procesamiento potente y versátil además de ser excelente para desarrollar y escalar sistemas GNC complejos, por otro lado, es una tarjeta de desarrollo costosa.
 
 \subsubsection{NVIDIA Jetson AGX Xavier}
 
-Para el caso de la tarjeta AGX Xavier de NVIDIA incorpora una CPU ARM v8.2 de 64 bits y una GPU NVIDIA Volta, prestaciones las cuales se encargan de proporcionar
-un alto nivel de procesamiento de datos en paralelo especualmente utilizado para aplicaciones de vision por computador o inteligencia artificial para sistemas GNC. 
+Para el caso de la tarjeta AGX Xavier de NVIDIA incorpora una CPU ARM v8.2 de 64 bits y una GPU NVIDIA Volta, prestaciones las cuales se encargan de proporcionar un alto nivel de procesamiento de datos en paralelo especialmente utilizado para aplicaciones de visión por computador o inteligencia artificial para sistemas GNC. 
 
-Las interfases de comunicacion presentes en esta tarjeta son puertos I2C, SPIm UART y GPIO ademas de contener adicionalmente soporte nativo para camaras y sensores de
-alta gama. Ademas presenta capacidades en tiempo real ya que se puede implementar con el NVIDIA Jetpack SDK. 
+Las interfases de comunicación presentes en esta tarjeta son puertos I2C, SPIm UART y GPIO además de contener adicionalmente soporte nativo para cámaras y sensores de alta gama. Además presenta capacidades en tiempo real, ya que se puede implementar con el NVIDIA Jetpack SDK. 
 
-En cuanto a la eficiencia energetica, la misma posee un diseno optimizado para bajo consumo. ademas de ser compatible con interfases de pruebas y simulacion mediante el 
-uso de entornos como Tensor RT y otras plataformas propietarias del desarrollador de la tarjeta de desarrollo.
+En cuanto a la eficiencia energética, la misma posee un diseño optimizado para bajo consumo. Además de ser compatible con interfases de pruebas y simulación mediante el uso de entornos como Tensor RT y otras plataformas propietarias del desarrollador de la tarjeta de desarrollo.
 
-Esta tarjeta es ideal para sistemas GNC con un procesamiento intensivo de datos ya sean de vision por computador o bien inteligencia artificial, por otro lado posee un desarrollo potente 
+Esta tarjeta es ideal para sistemas GNC con un procesamiento intensivo de datos ya sean de visión por computador o bien inteligencia artificial, por otro lado posee un desarrollo potente 
 para el procesamiento de tares en paralelo o bien de aprendizaje reforzado, finalmente contiene un buen soporte para aplicaciones en tiempo real y simulaciones. Por otro lado contiene un 
-bajo procesamiento logico comparado con las FPGA para aplicaciones en tiempo real extremo, y esta tarjeta de desarrollo se encuentra mas enfocada en el la implementacion de soluciones que
+bajo procesamiento lógico comparado con las FPGA para aplicaciones en tiempo real extremo, y esta tarjeta de desarrollo se encuentra más enfocada en la implementación de soluciones que
 requieran inteligencia artificial.
 
 \subsubsection{TMS320C6678 Development Kit}
 
-La tarjeta TMS320C6678 es basada en un procesador para procesamiento digital de senales (DSP) de 8 nucleos, esta enfocado a aplicaciones de procesamiento intensivo en tiempo real, soporta
-interfases como lo son Ethernet, SPI, UARTm I2C y GPIO, ademas de tener opciones para expandir la conectividad de la misma, por otro lado como mencionamos anteriormente es uno de los sistemas
-mas optimizados para el procesamiento en tiempo real por medio de la plataforma propietaria TI RTOS.
+La tarjeta TMS320C6678 es basada en un procesador para procesamiento digital de señales (DSP) de 8 núcleos, está enfocado a aplicaciones de procesamiento intensivo en tiempo real, soporta
+interfases como lo son Ethernet, SPI, UARTm I2C y GPIO, además de tener opciones para expandir la conectividad de la misma, por otro lado como mencionamos anteriormente es uno de los sistemas
+más optimizados para el procesamiento en tiempo real por medio de la plataforma propietaria TI RTOS.
 
-Sobre la eficiencia energetica, esta tarjeta de desarrollo ofrece herramientas especificas para la optimizacion del consumo de energia, hacinedola adecuada para entornos de consumo energetico 
-restringido, finalmente es compatible con Code Composer Studio, el cual es un entorno de desarrollo integrado que facilita las labores de integracion, simulacion y depuracion. Por tanto podemos
-decir que es una tarjeta de desarrollo muy adecuada para los sistemas de procesamiento de senañes y control, tiene una gran capacidad para soportar aplicaciones industriarles y aeroespaciales. Por otro
-lado, podemos ver que es un plataforma menos flexible que una FPGA. 
+Sobre la eficiencia energética, esta tarjeta de desarrollo ofrece herramientas específicas para la optimización del consumo de energía, haciéndola adecuada para entornos de consumo energético 
+restringido, finalmente es compatible con Code Composer Studio, el cual es un entorno de desarrollo integrado que facilita las labores de integrar, simular y depurar el código implementado. Por tanto podemos decir que es una tarjeta de desarrollo muy adecuada para los sistemas de procesamiento de señales y control, tiene una gran capacidad para soportar aplicaciones industriarles y aeroespaciales. Por otro lado, podemos ver que es una plataforma menos flexible que una FPGA. 
 
 \subsubsection{ZedBoard de Avnet}
 
-Para la tarjeta ZedBoard en cuanto a procesamiento tenemos que utiliza un procesador Xilinx Zynq-7000 APSoC el cual combina un procesador ARM Cortex-A9 dual core con una FPGA programable, de esta froma 
-tomando el procesador ARM el cual es ideal para ejecutar algoritmos de control y  logica de navegacion en un entrno de RTOS o bien Linux, por otro lado la FPGA Zynq-7000 permite la ejecucion de tareas 
-de procesamiento paralelo en hardware como el filtrado de sennales o algoritmos de estimacion de estad, ofreciendo baja latencia y flexibilidad en tiempo real.
+En cuanto a procesamiento, para la tarjeta ZedBoard, tenemos que utiliza un procesador Xilinx Zynq-7000 APSoC el cual combina un procesador ARM Cortex-A9 dual core con una FPGA programable, de esta forma tomando el procesador ARM el cual es ideal para ejecutar algoritmos de control y  lógica de navegación en un entorno de RTOS o bien Linux, por otro lado la FPGA Zynq-7000 permite la ejecución de tareas de procesamiento paralelo en hardware como el filtrado de señales o algoritmos de estimación de estados, ofreciendo baja latencia y flexibilidad en tiempo real.
 
-En cuanto a las interfases de entrada y salida, incluye varias opciones como lo son: GPIO, I2C, SPI, UART. Ademas de esto contiene puertos Ethernet, micro usb y HDMI los cuales resultan utiles para la 
-comunicacion externa y visualizacion de los sistemas de desarrollo.
+En cuanto a las interfases de entrada y salida, incluye varias opciones como lo son: GPIO, I2C, SPI, UART. Además de esto contiene puertos Ethernet, micro usb y HDMI los cuales resultan útiles para la comunicación externa y visualización de los sistemas de desarrollo.
 
-La combinacion de un procesador ARM con una FPGA permite un equilibrio en el consumo de energia ya que la mayoria de tareas intensivas se pueden llevar a cabo en la FPGA y el SoC Zynq ofrece opciones de 
-ahorro de energia lo cual siempre representa un beneficio para las aplicaciones embebidas. En cuanto a la pruebas y simulaciones cuenta con entornos como vivado y SDK de Xilinx esto con el fin de realizar
-simulaciones de HIL. Por otro lado ofrece aplicaciones para depuracion como lo es Jtag para el monitoreo en tiempo real de las aplicaciones ejecutandose en la FPGA y en el procesador ARM.
+La combinación de un procesador ARM con una FPGA permite un equilibrio en el consumo de energía, ya que la mayoría de tareas intensivas se pueden llevar a cabo en la FPGA y el SoC Zynq ofrece opciones de ahorro de energía lo cual siempre representa un beneficio para las aplicaciones embebidas. En cuanto a las pruebas y simulaciones, cuenta con entornos como Vivado y SDK de Xilinx esto con el fin de realizar simulaciones de HIL. Por otro lado ofrece aplicaciones para depuración como lo es JTAG para el monitoreo en tiempo real de las aplicaciones ejecutándose en la FPGA y en el procesador ARM.
 \subsection{Criterios de comparación}
 
-Una vez presentadas las terjetas de desarrollo candidatas se procede con la definicion de los criterios de comparacion: para este caso los criterios a tomar en cuenta son los siguientes:
+Una vez presentadas las tarjetas de desarrollo candidatas se procede con la definición de los criterios de comparación: para este caso los criterios a tomar en cuenta son los siguientes:
 
 \begin{enumerate}
     \item Capacidad de procesamiento: La capacidad de procesamiento en dispositivos de desarrollo para sistemas GNC es crucial porque garantiza la ejecución en tiempo real de algoritmos complejos, como los de control y fusión de sensores, que son esenciales para la estabilidad y precisión del sistema. Permite procesar grandes volúmenes de datos de múltiples sensores de manera simultánea y rápida, ejecutar tareas en paralelo, y realizar cálculos intensivos como la planificación de trayectorias y control adaptativo. Además, un procesamiento robusto facilita la simulación HIL, asegurando pruebas y simulaciones realistas.
@@ -145,7 +111,7 @@ Como se pudo observar en la Tabla \ref{tab:Pug_tarjetas_desarrollo}, la tarjeta 
 
 \subsection{Especificaciones principales}
 
-Como se meciono en el capitulo \ref{ch:marco} en la Tabla \ref{tab:zedboard} y anteriormente en este capitulo la tarjeta en cuestion presenta las siguientes especificaciones principales.
+Como se mencionó en el capítulo \ref{ch:marco} en la Tabla \ref{tab:zedboard} y anteriormente en este capítulo la tarjeta en cuestión presenta las siguientes especificaciones principales.
 
 \subsubsection{Procesador y FPGA}
 SoC Xilinx Zynq-7000: La ZedBoard integra un procesador ARM Cortex-A9 dual-core junto con una FPGA programable de la serie 7-Series.
@@ -172,4 +138,4 @@ Ejemplos de Aplicaciones: Adecuada para aplicaciones que requieren procesamiento
 
 \section{Reflexión final}
 
-Como se pudo observar a lo largo de este capitulo se analizaron los requerimientos de hardware que se deben de tomar en cuenta para el desaarrollo de este proyecto, seguido de esto se tomaron cuatros tarhjetas de desarrolo con el fin de elegir entre las que presentaran las prestaciones adecuadas para la tarea a realizar. Por un lado se tenian tarjetas muy potentes como xxxx y xxxx y por otro lado se tenian tarjetas de grandes dimenciones como la xxx y xxxx. Segun los parametros definidos se elige la tarjeta xxxx con numero de parte xxx para continuar con el desarrollo de este proyecto.
+Como se pudo observar a lo largo de este capítulo se analizaron los requerimientos de hardware que se deben de tomar en cuenta para el desarrollo de este proyecto, seguido de esto se tomaron cuatros tarhjetas de desarrolo con el fin de elegir entre las que presentaran las prestaciones adecuadas para la tarea a realizar. Por un lado se tenian tarjetas muy potentes como xxxx y xxxx y por otro lado se tenian tarjetas de grandes dimenciones como la xxx y xxxx. Segun los parametros definidos se elige la tarjeta xxxx con numero de parte xxx para continuar con el desarrollo de este proyecto.

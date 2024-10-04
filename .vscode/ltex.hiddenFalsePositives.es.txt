@@ -77,3 +77,4 @@
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QAlgunas configuraciones adicionales que se deben de realizar se muestran en \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qsistemacontrol.bb.\\E$"}
 {"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEl diagrama de este protocolo de comunicación se puede observar en \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, el cual se logra mediante la conexion al puerto denominado en el diagrama como \"e\".\\E$"}
+{"rule":"SE_CREO","sentence":"^\\QEste código objeto es luego procesado por el ensamblador, que lo convierte en código máquina, específico para la arquitectura del sistema objetivo.\\E$"}

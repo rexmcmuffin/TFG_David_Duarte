@@ -453,12 +453,12 @@ Como protocolo de comunicación se establece de primera mano UART, el cual como 
 
 Una vez que se estableció la conexión por medio de SSH el cual como se menciona en \ref{sec:protocolos_de_comunicacion}, consiste en protocolo de comunicación en red que permite el acceso remoto seguro a sistemas, proporcionando autenticación y encriptación de datos, ya que es mejor que UART para comunicaciones remotas porque proporciona autenticación y encriptación, garantizando la seguridad de los datos transmitidos, mientras que UART es un protocolo simple y sin mecanismos de seguridad, adecuado solo para comunicaciones locales y de corto alcance. 
 
-El diagrama de este protocolo de comunicación se puede observar en \ref{fig:puertos_zedboard}, el cual se logra mediante la conexión al puerto denominado en el diagrama como .
+El diagrama de este protocolo de comunicación se puede observar en \ref{fig:puertos_zedboard}, el cual se logra mediante la conexión al puerto denominado en el diagrama como e.
 
 
 \subsection{Ejecución del caso de estudio y resultados}
 
-Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede ejecutar el caso de estudio. Para esto será necesario dirigirnos al directorio en el cual se instaló el archivo binario, el mismo se encuentra en la ruta xxxxx. Una vez encontrado el archivo basta con ejecutarlo mediante el uso del nombre del mismo "simple\_filter". Cuando el archivo se ejecuta genera dos archivos de salida llamados xxx y xxx, mediante el uso del programa en Python desarrollado se pueden leer los archivos generados y crear gráficos a partir de los mismos. Los resultados se deben de transmitir al computador por medio del comando \ref{lst:copy_ssh}.
+Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede ejecutar el caso de estudio. Para esto será necesario dirigirnos al directorio en el cual se instaló el archivo binario, el mismo se encuentra en la ruta usr-bin-simple\_filter. Una vez encontrado el archivo basta con ejecutarlo mediante el uso del nombre del mismo simple\_filter. Cuando el archivo se ejecuta genera dos archivos de salida llamados Raw\_signal.mat y Filtered\_signal.mat, mediante el uso del programa en Python desarrollado se pueden leer los archivos generados y crear gráficos a partir de los mismos. Los resultados se deben de transmitir al computador por medio del comando \ref{lst:copy_ssh}.
 
 \begin{lstlisting}[language=bash, caption={Copiar archivo por protocolo SSH, Linux}, label=lst:copy_ssh]
     scp user@ip:/ruta/del/archivo/zedboard .
@@ -468,24 +468,22 @@ Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede eje
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/especifico_2/onda_modulada.pdf}
+        \includegraphics[width=\textwidth]{fig/especifico_2/raw.pdf}
         \caption{Ondas Moduladas}
         \label{fig:onda_modulada_zedboard}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/especifico_2/onda_filtrada.pdf}
+        \includegraphics[width=\textwidth]{fig/especifico_2/Filtered.pdf}
         \caption{Onda resultante luego de la función de transferencia}
         \label{fig:onda_filtrada_zedboard}
     \end{subfigure}
-    \caption{Salida resultante del diagrama mostrado en la Figura \ref{fig:diagrama_matlab_simulink_graficos}}
+    \caption{Salida resultante de la imagen generada mediante el flujo de trabajo}
     \label{fig:salida_resultante_diagrama_graficos_zedboard}
 \end{figure}
 
 \subsection{Comparación de resultados}
-
-Como se pudo observar, con la comparación realizada, obtenemos que los datos tiene una desviación de xxxxx además de xxxxxx, es por esto que podemos determinar que la implementación de sistemas de control es viable según lo demuestra el caso de estudio.
 
 
 

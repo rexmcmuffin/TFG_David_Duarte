@@ -64,12 +64,43 @@ Algunos SoC que incorporan núcleos Cortex-A9 son:
 \subsection{Tarjeta de desarrollo ZedBoard}
 
 La ZedBoard es una tarjeta de desarrollo basada en el Xilinx Zynq-7000 que como se mencionó anteriormente integra núcleos Cortex-A9 con la lógica programable 
-para Field Programmable Gate Array (FPGA). Esta plataforma es ideal para prototipar aplicaciones en el ámbito de sistemas embebidos. La tabla \ref{tab:zedboard} 
+para Field Programmable Gate Array,por sus siglas en ingles (FPGA). Esta plataforma es ideal para prototipar aplicaciones en el ámbito de sistemas embebidos. La tabla \ref{tab:zedboard} 
 resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
 
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/teorico/zedboard_raw.png}
+    \caption{Tarjeta de desarrollo Zedboard}
+    \label{fig:zedboard_raw_info}
+\end{figure}
+
+Como se pudo observar en \ref{fig:zedboard_raw_info}, esta tarjeta de desarrollo cuenta con los puertos de conexión que se mencionan en la Tabla \ref{tab:puertos_yocto}: 
+
+\begin{table}[htbp!]
+    \caption{Puertos de entrada y salida de la plataforma de desarrollo Zedbord}
+    \label{tab:puertos_yocto}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|l|ll}
+    \hline
+    Identificador & Descripción                     & \multicolumn{1}{l|}{Identificador} & \multicolumn{1}{l|}{Descripción}      \\ \hline
+    a             & Conector JTAG Xilinx            & \multicolumn{1}{l|}{l}             & \multicolumn{1}{l|}{Pulsadores}       \\ \hline
+    b & Entrada de voltaje y   interruptor de encendido & \multicolumn{1}{l|}{m} & \multicolumn{1}{l|}{LEDs}                                 \\ \hline
+    c             & USB-JTAG para   programación    & \multicolumn{1}{l|}{n}             & \multicolumn{1}{l|}{Interruptores}    \\ \hline
+    d             & Puertos de audio                & \multicolumn{1}{l|}{o}             & \multicolumn{1}{l|}{Pantalla OLED}    \\ \hline
+    e & Puerto de ethernet                              & \multicolumn{1}{l|}{p} & \multicolumn{1}{l|}{Botones de   programación y reinicio} \\ \hline
+    f             & Puerto HDMI (Salida   de video) & \multicolumn{1}{l|}{q}             & \multicolumn{1}{l|}{Conectores Pmod}  \\ \hline
+    g & Puerto VGA (Salida de   video)                  & \multicolumn{1}{l|}{r} & \multicolumn{1}{l|}{USB OTG para   perifericos}           \\ \hline
+    h             & Puerto XADC                     & \multicolumn{1}{l|}{s}             & \multicolumn{1}{l|}{USB UART}         \\ \hline
+    i             & Jumpers de   configuración      & \multicolumn{1}{l|}{t}             & \multicolumn{1}{l|}{Memoria DDR3}     \\ \hline
+    j             & Conector FCM                    & \multicolumn{1}{l|}{u}             & \multicolumn{1}{l|}{Dispositivo Zynq} \\ \hline
+    k             & Entrada para tarjeta   SD       &                                    &                                       \\ \cline{1-2}
+    \end{tabular}%
+    }
+\end{table}
+
 \begin{table}[h!]
-    \caption{Especificaciones generales de la tarjeta de desarrollo ZeadBoard }
+    \caption{Especificaciones generales de la tarjeta de desarrollo ZeadBoard}
     \label{tab:zedboard}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|l|}
@@ -91,9 +122,9 @@ resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
     \textbf{Expansión}              & Conectores Pmod y FMC para módulos adicionales     \\ \hline
     \end{tabular}%
     }
-    \end{table}
+\end{table}
 
-
+Además de esto algunas especificaciones de la plataforma de desarrollo son mencionadas en \ref{tab:zedboard}. Por otro lado la ZedBoard es una plataforma de desarrollo altamente versátil que se destaca por su capacidad para ejecutar sistemas operativos como Linux, lo que la convierte en una opción ideal para proyectos de diseño y desarrollo de sistemas embebidos. Además de su compatibilidad con Linux, como se mencionó anteriormente la ZedBoard cuenta con especificaciones técnicas que la hacen destacar en el ámbito del desarrollo. Entre ellas se incluyen un procesador ARM Cortex-A9, una FPGA. 
 
 \section{Marcos de trabajo}
 
@@ -110,13 +141,39 @@ un sistema operativo de tiempo real diseñado para microcontroladores y sistemas
 
 \subsection{YOCTO}\label{subsec:yocto}
 
-Yocto es un marco de trabajo (framework) popular utilizado en el desarrollo de sistemas embebidos, especialmente en la creación de distribuciones de Linux 
+Yocto es un marco de trabajo o bien del inglés (framework) popular utilizado en el desarrollo de sistemas embebidos, especialmente en la creación de distribuciones de Linux 
 personalizadas para hardware específico. Yocto utiliza un proceso de construcción cruzada, lo que significa que el código se compila en una plataforma diferente 
 a la que se ejecutará, permitiendo que el código se optimice para el hardware específico del sistema embebido \cite{Leppakoski2013FrameworkFI}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/teorico/Flujo de trabajo de yocto.pdf}
+    \caption{Flujo de trabajo Yocto Project}
+    \label{fig:yocto_project_workflow}
+\end{figure}
 
 Una de las principales ventajas de Yocto es su flexibilidad en la configuración del sistema, permitiendo a los desarrolladores seleccionar paquetes específicos, 
 configurar opciones de compilación y personalizar el sistema operativo según sus necesidades. Además, Yocto fomenta la reutilización de código a través de capas, 
 que son colecciones de recetas, configuraciones y parches que se pueden agregar o eliminar fácilmente del flujo de trabajo de construcción \cite{Leppakoski2013FrameworkFI}.
+
+\section{MATLAB}
+MATLAB es un software de cálculo técnico desarrollado por MathWorks, ampliamente utilizado en diversas áreas de la ciencia y la ingeniería. Proporciona un entorno interactivo para el desarrollo de algoritmos, análisis de datos, visualización y cálculo numérico. Su facilidad para trabajar con vectores y matrices lo distingue de otros sistemas de cálculo \cite{PealozaLuna2022SimulacinDU}. Es comúnmente utilizado para simular sistemas eléctricos, como convertidores DC/DC, y realizar análisis numéricos en problemas complejos \cite{OrdezGarca2022MatlabCU}. 
+
+MATLAB juega un papel crucial en el desarrollo de sistemas de control aeroespaciales, facilitando la simulación, modelado y control de vehículos aéreos no tripulados (UAV) y otros sistemas relacionados.MATLAB, junto con Simulink, permite el modelado cinemático y dinámico de UAVs. Esto incluye la programación y control de sus movimientos, como cabeceo y guiñada, utilizando motores de corriente directa y encoders ópticos para medir su posición \cite{Senz2020LaboratorioPE} \cite{ChvezGudio2023DesarrolloYC}.
+
+\subsection{Simulink}
+
+Como se mencionó anteriormente Simulink, es un entorno de simulación y diseño gráfico que forma parte del software MATLAB. Se utiliza principalmente para modelar, simular y analizar sistemas dinámicos, especialmente aquellos que involucran componentes eléctricos, mecánicos y de control, algunas  de las características principales de Simulink son:
+
+\begin{itemize}
+    \item Modelado Gráfico
+    \item Simulación en Tiempo real
+    \item Integración con MATLAB
+    \item Diseño de Controladores
+    \item Análisis de Sistemas Dinámicos
+\end{itemize}
+
+De esta forma podemos ver que simulink es una herramienta que permite a los usuarios crear modelos visuales de sistemas complejos utilizando bloques representativos, facilitando así su diseño y comprensión. Ofrece simulaciones en tiempo real, esenciales para evaluar el comportamiento de sistemas en ingeniería y control bajo diversas condiciones \cite{PealozaLuna2022SimulacinDU}. Su integración con MATLAB potencia las capacidades de análisis y programación, permitiendo un análisis más profundo y la personalización de simulaciones \cite{Daza2021PlataformaDP}. Simulink se aplica en diversas áreas como la ingeniería eléctrica, mecánica, robótica y diseño de sistemas de control, siendo especialmente útil para diseñar y probar controladores (como PID y Fuzzy), analizar sistemas dinámicos y desarrollar prototipos rápidos para sistemas embebidos \cite*{CardozoSarmiento2019SimulationOI}.
 
 \section{Transformación de modelo a modelo}
 
@@ -140,6 +197,22 @@ Simulink. Esto es especialmente útil en el desarrollo de sistemas embebidos, do
 que pueda ser ejecutado en hardware específico. Esta herramienta facilita la implementación de algoritmos y sistemas de control, asegurando que el modelo original 
 se traduzca eficazmente en un formato que pueda ser utilizado en entornos de producción.
 
+\subsection{MATLAB Simulink Coder}
+
+Simulink Coder es una herramienta del entorno MATLAB/Simulink que permite generar automáticamente código C y C++ a partir de modelos gráficos, facilitando la implementación de algoritmos en hardware o software. Sus características incluyen la generación de código automática, integración con diversas plataformas de hardware, optimización del rendimiento y soporte para modelos complejos, lo que la hace ideal para aplicaciones en control de sistemas, simulación y pruebas, y desarrollo ágil. En resumen, Simulink Coder es esencial para ingenieros que desean transformar modelos teóricos en aplicaciones prácticas, mejorando tanto el proceso de desarrollo como el rendimiento del producto final.
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/teorico/Flujo de trabajo simulink coder.pdf}
+    \caption{Flujo de trabajo Simulink Coder}
+    \label{fig:Simulink_coder_workflow}
+\end{figure}
+
+Como se pudo observar en la Figura \ref{fig:Simulink_coder_workflow}, primeramente se debe de diseñar el modelo utilizando bloques de Simulink para representar el sistema o algoritmo a implementar, una vez generado el diagrama se deben de ajustar las configuraciones del modelo, incluyendo parámetros como el tipo de solución, la frecuencia de muestreo y las opciones de simulación, además de esto se deben de realizar simulaciones para verificar que el modelo funcione correctamente y cumpla con los requisitos especificados. 
+
+Finalmente se debe de hacer uso de la herramienta Simulink Coder para generar automáticamente código C o C++ a partir del modelo validado. Adicionalmente a este código generado se pueden realizar configuraciones según se desea su ejecución, estas configuraciones son opciones adicionales para la generación del código, como optimización y estilo de codificación. Una vez aplicados todos los cambios necesarios se debe integrar el código generado en un entorno de desarrollo adecuado y realizar pruebas para asegurar que el código se comporta como se espera en el hardware objetivo.
+
 \section{Código embebido}
 
 El código embebido se refiere a un tipo de software diseñado para operar en dispositivos con recursos limitados, como microcontroladores y sistemas embebidos. 
@@ -147,6 +220,22 @@ Este código es fundamental en la programación de dispositivos electrónicos, p
 automatización industrial o incluso operar en dispositivos móviles. Se caracteriza por su ejecución en dispositivos con recursos limitados, su capacidad 
 para controlar dispositivos electrónicos, el uso de lenguajes de bajo nivel, la optimización de recursos y la necesidad de garantizar tiempos de respuesta 
 determinísticos.
+
+\section{Compilación Cruzada}
+
+La compilación cruzada es un proceso clave en el desarrollo de software que permite compilar código fuente en un sistema operativo o arquitectura de hardware diferente al utilizado para el desarrollo. Este método es especialmente valioso en entornos como sistemas embebidos, donde la plataforma de destino no es adecuada para la compilación directa. Utiliza compiladores específicos, conocidos como compiladores cruzados, que generan código ejecutable para la plataforma de destino desde una plataforma de origen. Esto permite a los desarrolladores trabajar en sus máquinas locales, como Windows o Linux, mientras crean aplicaciones para dispositivos como microcontroladores o sistemas operativos variados.
+
+
+Además de su uso en sistemas embebidos, la compilación cruzada es fundamental para el desarrollo multiplataforma, ya que facilita la creación de aplicaciones que funcionan en diferentes sistemas operativos sin necesidad de modificar el código base. Este enfoque no solo mejora la eficiencia del proceso de desarrollo y pruebas, sino que también evita la constante transferencia de código a la plataforma de destino. En resumen, la compilación cruzada es una técnica esencial en el desarrollo moderno de software, permitiendo a los desarrolladores abordar múltiples plataformas y arquitecturas con mayor facilidad.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/teorico/Flujo de trabajo xcompiler.pdf}
+    \caption{Diagrama de compilación cruzada}
+    \label{fig:xcompile_workflow}
+\end{figure}
+
+Como se pudo observar en la Figura \ref{fig:xcompile_workflow}, el proceso de compilación de un programa en lenguaje C comienza con el código fuente, que es el conjunto de instrucciones escritas por el programador. A continuación, se utiliza el preprocesador, que lleva a cabo tareas esenciales como la inclusión de archivos y la expansión de macros, generando un archivo intermedio que está listo para ser compilado. Posteriormente, el compilador analiza este archivo intermedio y produce código objeto, una representación en lenguaje máquina que aún no está completamente vinculada. Este código objeto es luego procesado por el ensamblador, que lo convierte en código máquina, específico para la arquitectura del sistema objetivo.
 
 \section{Contenedores}
 
@@ -170,9 +259,11 @@ Algunos comandos básicos para el manejo de contenedores son:
 
 \section{Protocolos de Comunicación}\label{sec:protocolos_de_comunicacion}
 
+Los protocolos de comunicación son un conjunto de reglas y convenciones que permiten la transmisión de datos entre dispositivos en una red. Estos protocolos son esenciales para garantizar que los dispositivos puedan intercambiar información de manera efectiva y segura \cite{Eterovic2018AnlisisDP}.
+
 \subsection{UART}
 
-El Universal Asynchronous Receiver-Transmitter (UART) es un protocolo de comunicación serie ampliamente utilizado para la transmisión de datos entre dispositivos. Su característica principal es que es asíncrono, lo que significa que no requiere una señal de reloj compartida entre el transmisor y el receptor.
+El Universal Asynchronous Receiver-Transmitter, por sus siglas en ingles (UART) es un protocolo de comunicación serial ampliamente utilizado para la transmisión de datos entre dispositivos. Su característica principal es que es asíncrono, lo que significa que no requiere una señal de reloj compartida entre el transmisor y el receptor.
 
 \textbf{Características:}
 
@@ -203,6 +294,14 @@ El Secure Shell (SSH) es un protocolo de red que permite la administración segu
     \item Túneles Seguros: Facilita la creación de túneles seguros para otros protocolos, lo que permite la transferencia protegida de datos sensibles.
     \item Interfaz de Línea de Comando: Proporciona acceso remoto a la línea de comandos, permitiendo a los administradores gestionar sistemas sin necesidad de estar físicamente presentes.
 \end{itemize}
+
+\section{Computadoras de guía, navegación y control}
+
+Las computadoras de guía, navegación y control son esenciales en diversas aplicaciones, particularmente en aviación, navegación marítima y vehículos autónomos. Su función principal radica en procesar datos de sensores para ofrecer información precisa que facilite la toma de decisiones en tiempo real. Estas tecnologías son fundamentales para garantizar la seguridad y eficiencia en el transporte moderno.
+
+Existen tres tipos principales de computadoras en este ámbito: las computadoras de navegación, que determinan la posición y rumbo de embarcaciones o aeronaves mediante sistemas GPS e inerciales; las computadoras de control, que regulan el movimiento y estabilidad de los vehículos, como los controladores de vuelo; y las computadoras de guía, que ofrecen rutas óptimas a través de sistemas de navegación por satélite. Los componentes clave incluyen sensores que recogen datos del entorno, procesadores que realizan cálculos complejos y interfaces de usuario que permiten la interacción con el sistema.
+
+Las aplicaciones de estas computadoras son variadas y críticas. En la aviación, se utilizan para el control de vuelo en aeronaves comerciales y militares. En la navegación marítima, aseguran rutas seguras para barcos. Además, son integradas en vehículos autónomos como coches y drones, permitiendo una navegación eficiente sin intervención humana. En conjunto, estas tecnologías no solo mejoran la seguridad, sino que también optimizan la eficacia del transporte actual.
 
 \section{Revisión literaria}
 En los últimos años, las computadoras de guía, navegación y control han mostrado grandes avances en el desarrollo de sistemas autónomos.

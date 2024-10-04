@@ -1,0 +1,93 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iv}}{chapter*.6}%
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {v}}{chapter*.7}%
+\contentsline {chapter}{Revisar}{\es@scroman {vi}}{chapter*.8}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Proceso de diseño de los sistemas de Guía, Navegación y Control espacial}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Requerimientos de los sistemas}{1}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Sistemas embebidos para los sistemas GNC}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Marco de Trabajo Yocto Project}{2}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Donde se ubica dentro del flujo de control}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Hardware en el loop}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Objetivos y estructura del documento}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Marco teórico}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estimación}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Control}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Procesadores embebidos}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cortex-A9}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Tarjeta de desarrollo ZedBoard}{7}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Marcos de trabajo}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}YOCTO}{9}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}MATLAB}{10}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Simulink}{10}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}Transformación de modelo a modelo}{11}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}MATLAB Embedded Coder}{11}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}MATLAB Simulink Coder}{11}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Código embebido}{12}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Compilación Cruzada}{13}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Contenedores}{14}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Protocolos de Comunicación}{14}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}UART}{15}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}SSH}{15}{subsection.2.10.2}%
+\contentsline {section}{\numberline {2.11}Computadoras de guía, navegación y control}{16}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Revisión literaria}{16}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Desarrollo de sistemas de navegación}{16}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}Transformación de Lenguaje de Bloques a Código C}{17}{subsection.2.12.2}%
+\contentsline {subsubsection}{XOD}{17}{section*.13}%
+\contentsline {subsubsection}{Visual Microcontroller}{17}{section*.14}%
+\contentsline {subsubsection}{LabVIEW}{17}{section*.15}%
+\contentsline {subsubsection}{Simulink}{17}{section*.16}%
+\contentsline {section}{\numberline {2.13}Avances recientes en GNCs }{18}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Programación de Sistemas GNC}{18}{subsection.2.13.1}%
+\contentsline {chapter}{\numberline {3}Plataforma de desarrollo}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Selección de la tarjeta de desarrollo}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requerimientos de la aplicación}{19}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Tarjetas candidatas}{20}{subsection.3.1.2}%
+\contentsline {subsubsection}{Xilinx ZCU102 Evaluation Kit}{20}{section*.17}%
+\contentsline {subsubsection}{NVIDIA Jetson AGX Xavier}{20}{section*.18}%
+\contentsline {subsubsection}{TMS320C6678 Development Kit}{21}{section*.19}%
+\contentsline {subsubsection}{ZedBoard de Avnet}{21}{section*.20}%
+\contentsline {subsection}{\numberline {3.1.3}Criterios de comparación}{22}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Matriz de Pugh}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Plataforma seleccionada}{24}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Especificaciones principales}{24}{subsection.3.3.1}%
+\contentsline {subsubsection}{Procesador y FPGA}{24}{section*.21}%
+\contentsline {subsubsection}{Interfaces de E/S}{25}{section*.22}%
+\contentsline {subsubsection}{Memoria}{25}{section*.23}%
+\contentsline {subsubsection}{Alimentación y Consumo de Energía}{25}{section*.24}%
+\contentsline {subsubsection}{Tamaño y Factor de Forma}{25}{section*.25}%
+\contentsline {subsubsection}{Capacidades de Desarrollo}{25}{section*.26}%
+\contentsline {section}{\numberline {3.4}Reflexión final}{26}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Flujo de trabajo para la implementación de software para GNC embebido}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Selección del caso de estudio}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Simulación del caso de estudio en MATLAB Simulink}{29}{subsection.4.1.1}%
+\contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulación}{30}{section*.31}%
+\contentsline {section}{\numberline {4.2}Flujo de trabajo de la aplicación de transformación de modelo a modelo}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Simulink Coder}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Definición de parámetros}{31}{subsection.4.2.2}%
+\contentsline {subsubsection}{Selección del procesador objetivo}{32}{section*.35}%
+\contentsline {subsubsection}{Selección del tipo de archivo de construcción}{32}{section*.37}%
+\contentsline {subsubsection}{Generación de archivos de compilación}{33}{section*.39}%
+\contentsline {subsection}{\numberline {4.2.3}Contenedor para compilación de los binarios}{33}{subsection.4.2.3}%
+\contentsline {subsubsection}{Instalación de programas en el contenedor}{34}{section*.40}%
+\contentsline {subsection}{\numberline {4.2.4}Compilación de los binarios}{35}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Flujo de Trabajo Herramienta desarrollada por mi persona}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Sistema operativo para desarrollo}{36}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Generación de un contenedor}{37}{subsection.4.3.2}%
+\contentsline {subsubsection}{Creación de un usuario no root}{37}{section*.45}%
+\contentsline {subsection}{\numberline {4.3.3}Yocto Project}{38}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Creación de una capa de yocto}{38}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Caso de estudio}{40}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Integración del programa generado a la capa de Yocto}{40}{subsection.4.3.6}%
+\contentsline {subsubsection}{sistema\_control.bb}{40}{section*.47}%
+\contentsline {subsection}{\numberline {4.3.7}Generación de la imagen mínima}{41}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}{41}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Conexión de la tarjeta de desarrollo con el computador host}{42}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}Ejecución del caso de estudio y resultados}{43}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.11}Comparación de resultados}{43}{subsection.4.3.11}%
+\contentsline {section}{\numberline {4.4}Reflexión final}{43}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Solución propuesta}{44}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{45}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{46}{chapter*.51}%
+\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{48}{appendix.Alph1}%
+\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{49}{appendix.Alph1}%

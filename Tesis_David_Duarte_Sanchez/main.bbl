@@ -268,6 +268,317 @@
       \verb https://api.semanticscholar.org/CorpusID:21473510
       \endverb
     \endentry
+    \entry{PealozaLuna2022SimulacinDU}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=38c769430b98c0c8148f712961a805cf}{%
+           family={Peñaloza-Luna},
+           familyi={P\bibinithyphendelim L\bibinitperiod},
+           given={Carlos\bibnamedelima Andrés},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6b27db2ca4f377fbea7426803a64ddb3}{%
+           family={Gallego-Rodríguez},
+           familyi={G\bibinithyphendelim R\bibinitperiod},
+           given={German\bibnamedelima Enrique},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=992d647d587f27df48e004296acc8e32}{%
+           family={Ramírez-Mateus},
+           familyi={R\bibinithyphendelim M\bibinitperiod},
+           given={Jhon\bibnamedelima Jairo},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=db4b214ee61f67138aec904a58f07bd6}{%
+           family={Puerto-López},
+           familyi={P\bibinithyphendelim L\bibinitperiod},
+           given={Karla\bibnamedelima Cecilia},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=cf4994640da33ce75a0ad07083a67fca}{%
+           family={Sánchez-Mojica},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Karla\bibnamedelima Yohana},
+           giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{858d35f144c536a81fb7a1667fabe173}
+      \strng{fullhash}{a8921a1e9c5a459d5c723aecba62c9fc}
+      \strng{fullhashraw}{a8921a1e9c5a459d5c723aecba62c9fc}
+      \strng{bibnamehash}{a8921a1e9c5a459d5c723aecba62c9fc}
+      \strng{authorbibnamehash}{a8921a1e9c5a459d5c723aecba62c9fc}
+      \strng{authornamehash}{858d35f144c536a81fb7a1667fabe173}
+      \strng{authorfullhash}{a8921a1e9c5a459d5c723aecba62c9fc}
+      \strng{authorfullhashraw}{a8921a1e9c5a459d5c723aecba62c9fc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mundo FESC}
+      \field{title}{Simulación de un convertidor DC/DC cuadrático elevador con control modo corriente mediante Matlab/Simulink}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:270944525
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:270944525
+      \endverb
+    \endentry
+    \entry{OrdezGarca2022MatlabCU}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ccdfc6a717060e56153cb06f01b21468}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Jorge\bibnamedelimb Enrique\bibnamedelima Ordóñez},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=6fc08ed78a7a9814c40607f40019c95a}{%
+           family={Lourdes\bibnamedelimb Loaiza\bibnamedelima Massuh},
+           familyi={L\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Eva\bibnamedelima María},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=3bb0019c062dd2b863b3cd8262287e4d}{%
+           family={Aguilar},
+           familyi={A\bibinitperiod},
+           given={Rodrigo\bibnamedelimb Antonio\bibnamedelima Carrión},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7008c5e9bf6bcc9571109759eff64fcd}
+      \strng{fullhash}{de34ef1764b058d52830b690e07daf4d}
+      \strng{fullhashraw}{de34ef1764b058d52830b690e07daf4d}
+      \strng{bibnamehash}{de34ef1764b058d52830b690e07daf4d}
+      \strng{authorbibnamehash}{de34ef1764b058d52830b690e07daf4d}
+      \strng{authornamehash}{7008c5e9bf6bcc9571109759eff64fcd}
+      \strng{authorfullhash}{de34ef1764b058d52830b690e07daf4d}
+      \strng{authorfullhashraw}{de34ef1764b058d52830b690e07daf4d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RECIMUNDO}
+      \field{title}{Matlab como una herramienta informática útil a la contabilidad}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:250030773
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:250030773
+      \endverb
+    \endentry
+    \entry{Senz2020LaboratorioPE}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=0ff2759e8822f514b2ea5b897a7492ea}{%
+           family={Sáenz},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima Gallarta},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=e6d0c6627cb2c4166035ede589fbcb39}{%
+           family={Azagra},
+           familyi={A\bibinitperiod},
+           given={Javier\bibnamedelima Rico},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=92a7a6e6908821a25803c2cddadb00b0}{%
+           family={Canal},
+           familyi={C\bibinitperiod},
+           given={Silvano\bibnamedelima Nájera},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=194b43e147f9e7712cd8acb94ae72da2}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={Montserrat\bibnamedelima Gil},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{09fdfd7972c2df219208ecc777476686}
+      \strng{fullhash}{f3419b646a6ea352922d9a9c51a3c637}
+      \strng{fullhashraw}{f3419b646a6ea352922d9a9c51a3c637}
+      \strng{bibnamehash}{f3419b646a6ea352922d9a9c51a3c637}
+      \strng{authorbibnamehash}{f3419b646a6ea352922d9a9c51a3c637}
+      \strng{authornamehash}{09fdfd7972c2df219208ecc777476686}
+      \strng{authorfullhash}{f3419b646a6ea352922d9a9c51a3c637}
+      \strng{authorfullhashraw}{f3419b646a6ea352922d9a9c51a3c637}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Actas de las XXXIX Jornadas de Automática, Badajoz, 5-7 de Septiembre de 2018}
+      \field{title}{Laboratorio para el desarrollo de sistemas de navegación y control para UAVS multirrotor}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:198488769
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:198488769
+      \endverb
+    \endentry
+    \entry{ChvezGudio2023DesarrolloYC}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=f1c3881cc596f08d112551d033d1813f}{%
+           family={Chávez-Gudiño},
+           familyi={C\bibinithyphendelim G\bibinitperiod},
+           given={Mariana\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=33d70b5accf78656ff60254bc02d22a7}{%
+           family={Concha-Sánchez},
+           familyi={C\bibinithyphendelim S\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c27c19cc9859f58de624f79756cce121}{%
+           family={Maciel-Barboza},
+           familyi={M\bibinithyphendelim B\bibinitperiod},
+           given={Fermín\bibnamedelima M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e82d5a3a0368b57db7e32f5602a71093}{%
+           family={Gadi},
+           familyi={G\bibinitperiod},
+           given={Suresh\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=3c3ae62af82bdb9eca77ac9c981092c2}{%
+           family={Thenozhi},
+           familyi={T\bibinitperiod},
+           given={Suresh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=469def4625e8982546c523b24b484ab8}{%
+           family={Betancourt},
+           familyi={B\bibinitperiod},
+           given={Ramón\bibnamedelimb Octavio\bibnamedelima Jiménez},
+           giveni={R\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a2693f598df969cc9ae996a73584d66}
+      \strng{fullhash}{4d196d1e2d5a921b5d027821f8c503d1}
+      \strng{fullhashraw}{4d196d1e2d5a921b5d027821f8c503d1}
+      \strng{bibnamehash}{4d196d1e2d5a921b5d027821f8c503d1}
+      \strng{authorbibnamehash}{4d196d1e2d5a921b5d027821f8c503d1}
+      \strng{authornamehash}{1a2693f598df969cc9ae996a73584d66}
+      \strng{authorfullhash}{4d196d1e2d5a921b5d027821f8c503d1}
+      \strng{authorfullhashraw}{4d196d1e2d5a921b5d027821f8c503d1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Iberoamericana de Automática e Informática industrial}
+      \field{title}{Desarrollo y control de un helicóptero de laboratorio de 2 GDL y de bajo costo}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:259644850
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:259644850
+      \endverb
+    \endentry
+    \entry{Daza2021PlataformaDP}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=32380b74d4f4a211bb29f00e98d64fc0}{%
+           family={Daza},
+           familyi={D\bibinitperiod},
+           given={Juan\bibnamedelimb Esteban\bibnamedelima Zabala},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=d69f8873d2147906bc5c168caabc9ba5}{%
+           family={González-Montoya},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b1b3d4f411f7a51171af2a7126d4d49c}{%
+           family={Bravo},
+           familyi={B\bibinitperiod},
+           given={Elkin\bibnamedelimb Edilberto\bibnamedelima Henao},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c73433eaf60563be0b7264c6a38d6055}{%
+           family={Ramos-Paja},
+           familyi={R\bibinithyphendelim P\bibinitperiod},
+           given={Carlos\bibnamedelima Andrés},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=701094d3fa972d3d7e1fa6dd5a78ca16}{%
+           family={Aponte-Roa},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Diego\bibnamedelima Andrés},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a35bc6f1a729f074c574bc901f12175}
+      \strng{fullhash}{25619a5f5bd099251dbf9cd9f40c776e}
+      \strng{fullhashraw}{25619a5f5bd099251dbf9cd9f40c776e}
+      \strng{bibnamehash}{25619a5f5bd099251dbf9cd9f40c776e}
+      \strng{authorbibnamehash}{25619a5f5bd099251dbf9cd9f40c776e}
+      \strng{authornamehash}{9a35bc6f1a729f074c574bc901f12175}
+      \strng{authorfullhash}{25619a5f5bd099251dbf9cd9f40c776e}
+      \strng{authorfullhashraw}{25619a5f5bd099251dbf9cd9f40c776e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista EIA}
+      \field{title}{Plataforma de prototipos de control rápido para sistemas fotovoltaicos basados en Arduino y Simulink}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:236424349
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:236424349
+      \endverb
+    \endentry
+    \entry{CardozoSarmiento2019SimulationOI}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ed99f8145b0924d5304e0684723b39c}{%
+           family={Sarmiento},
+           familyi={S\bibinitperiod},
+           given={Darwin\bibnamedelimb Orlando\bibnamedelima Cardozo},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ed99f8145b0924d5304e0684723b39c}
+      \strng{fullhash}{9ed99f8145b0924d5304e0684723b39c}
+      \strng{fullhashraw}{9ed99f8145b0924d5304e0684723b39c}
+      \strng{bibnamehash}{9ed99f8145b0924d5304e0684723b39c}
+      \strng{authorbibnamehash}{9ed99f8145b0924d5304e0684723b39c}
+      \strng{authornamehash}{9ed99f8145b0924d5304e0684723b39c}
+      \strng{authorfullhash}{9ed99f8145b0924d5304e0684723b39c}
+      \strng{authorfullhashraw}{9ed99f8145b0924d5304e0684723b39c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mundo FESC}
+      \field{title}{Simulation of Isolated Photovoltaic System in Matlab / Simulink}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:270530814
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:270530814
+      \endverb
+    \endentry
+    \entry{Eterovic2018AnlisisDP}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=35dea4bedd700bc55f74b5c02620b62d}{%
+           family={Eterovic},
+           familyi={E\bibinitperiod},
+           given={Jorge\bibnamedelima Esteban},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f7dc0ec2e5c27943f490cd0047459434}{%
+           family={Cipriano},
+           familyi={C\bibinitperiod},
+           given={Marcelo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=727e88c29e41a880ccd720ea67392f3c}{%
+           family={Nicolet},
+           familyi={N\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{78a5803f9ee6f78991add84ab8fb2902}
+      \strng{fullhash}{4e6721551b4dd351976e4942a009a7ef}
+      \strng{fullhashraw}{4e6721551b4dd351976e4942a009a7ef}
+      \strng{bibnamehash}{4e6721551b4dd351976e4942a009a7ef}
+      \strng{authorbibnamehash}{4e6721551b4dd351976e4942a009a7ef}
+      \strng{authornamehash}{78a5803f9ee6f78991add84ab8fb2902}
+      \strng{authorfullhash}{4e6721551b4dd351976e4942a009a7ef}
+      \strng{authorfullhashraw}{4e6721551b4dd351976e4942a009a7ef}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Análisis de protocolos de comunicaciones para internet de las cosas}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:149955331
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:149955331
+      \endverb
+    \endentry
     \entry{BarreraRamrez2022SistemaDP}{article}{}{}
       \name{author}{3}{}{%
         {{hash=2db26059043b821784f61421d4d7b07c}{%
@@ -294,8 +605,8 @@
       \strng{authornamehash}{01410bfb141aff08e64f9f339e96f817}
       \strng{authorfullhash}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
       \strng{authorfullhashraw}{3f20f0140c489ee3d80ab0fd9e9ee7cc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Pädi Boletín Científico de Ciencias Básicas e Ingenierías del ICBI}
@@ -324,8 +635,8 @@
       \strng{authornamehash}{59331e47196f6ff4aa8771cbf1d0a570}
       \strng{authorfullhash}{59331e47196f6ff4aa8771cbf1d0a570}
       \strng{authorfullhashraw}{59331e47196f6ff4aa8771cbf1d0a570}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Programación de laboratorios de biología portátiles abiertos basados en Arduino con el lenguaje de programación visual XOD}
@@ -447,8 +758,8 @@
       \strng{authornamehash}{b43ba55902d93e948d3a29e4979894e7}
       \strng{authorfullhash}{c1284bc8d7088792fcd54680b1ed787e}
       \strng{authorfullhashraw}{c1284bc8d7088792fcd54680b1ed787e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Autonomous Guidance, Navigation and Control}
@@ -521,8 +832,8 @@
       \strng{authornamehash}{ace4af4802ebfa56440cfe9cff15851b}
       \strng{authorfullhash}{42acdc8d444c7b91d8e911c8f47e6b5d}
       \strng{authorfullhashraw}{42acdc8d444c7b91d8e911c8f47e6b5d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
