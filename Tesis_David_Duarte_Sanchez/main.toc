@@ -88,7 +88,7 @@
 \contentsline {subsection}{\numberline {4.4.6}Conexión de la tarjeta de desarrollo con el computador host}{45}{subsection.4.4.6}%
 \contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{45}{subsection.4.4.7}%
 \contentsline {subsection}{\numberline {4.4.8}Comparación de resultados}{46}{subsection.4.4.8}%
-\contentsline {section}{\numberline {4.5}Reflexión final}{46}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Reflexión final}{47}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Solución propuesta}{48}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Conclusiones}{49}{chapter.6}%
 \contentsline {chapter}{Bibliografía}{50}{chapter*.57}%

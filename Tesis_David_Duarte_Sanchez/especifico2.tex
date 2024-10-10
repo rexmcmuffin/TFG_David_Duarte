@@ -463,6 +463,9 @@ Para la generación de una capa de yocto primero debemos de estar seguros que no
 
 Seguido de esto se debe de utilizar el comando que se muestra en \ref{lst:yocto_new_layer} el cual se encargara de generar el árbol de directorios que se puede observar en la Figura \ref{fig:arbol_capa_custom_yocto}. Una vez implementado este comando se debe de hacer uso del comando que se muestra en \ref{lst:add_new_layer} para poder agregar la capa al archivo denominado bblayers.conf el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen.
 
+
+
+
 \subsection{Caso de estudio}
 
 En esta sección se integrará el caso de estudio generado en \ref{subsec:compilacion_binario}, a un sistema operativo a la medida por medio del marco de trabajo de Yocto Project, primeramente se generara una capa personalizada, seguido de esto se generara el archivo de instalación con el cual la capa personalizada pasara a ser parte del sistema de archivos del sistema embebido, también se generara la imagen mínima la cual consiste en un sistema de arranque y el sistema de archivos y finalmente se implementaran estos en la tarjeta de desarrollo seleccionada en \ref{ch:especifico1}.
@@ -492,6 +495,10 @@ La estructura que debe de contener ese archivo para instalar binarios en el sist
 
 Antes de generar la imagen mínima se debe de tener en consideración ejecutar la línea de comando que se muestra en \ref{lst:yocto_developer_image}, esto con el fin de generar archivos de desarrollo en lugar de archivos de imagen en formato iso. Una vez generados estos cambios se debe de iniciar de nuevo el entorno por medio del comando \ref{lst:yocto_ambient_set}, seguido de esto se deberá de ejecutar el comando de "bitbake core-image-minimal" el cual se encarga de comenzar a generar la imagen mínima.
 
+
+Finalmente para la instalacion de la capa dentro de la imagen minima se debe de editar el archivo de configuracion local llamado local.con el cual se encuentra en la direccion build/conf/local.conf en el cual se debera de agregar la siguiente linea, esto con el fin de agregar la capa generada anteriormente al sistema de archivos de la imagen a generar.
+
+
 \subsection{Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}
 
 Para la implementación de la imagen mínima desarrollada en \ref{subsec:generacion_imagen_minima} en la tarjeta de desarrollo, se deben de desarrollar los siguientes pasos en la máquina Host:
@@ -520,7 +527,7 @@ Para el sistema Root se deberán de copiar los archivos mediante el comando que 
 
 \subsection{Conexión de la tarjeta de desarrollo con el computador host}
 
-Como protocolo de comunicación se establece de primera mano UART, el cual como se mencionó en \ref{sec:protocolos_de_comunicacion} consiste en un protocolo de comunicación serie que permite la transmisión y recepción de datos de manera asíncrona entre dos dispositivos y en el caso de la tarjeta de desarrollo se conecta según se muestra en el diagrama de la Figura \ref{fig:puertos_zedboard}, mediante el uso del puerto marcado como "S" en el diagrama. Para poder leer la consola se hace uso de Minicom el cual se encarga de la emulación de terminal en Linux que permite la comunicación serie con dispositivos a través de puertos seriales.
+Como protocolo de comunicación se establece primeramente el protocolo UART, el cual como se mencionó en \ref{sec:protocolos_de_comunicacion} consiste en un protocolo de comunicación serie que permite la transmisión y recepción de datos de manera asíncrona entre dos dispositivos y en el caso de la tarjeta de desarrollo se conecta según se muestra en el diagrama de la Figura \ref{fig:puertos_zedboard}, mediante el uso del puerto marcado como "S" en el diagrama. Para poder leer la consola se hace uso de Minicom el cual se encarga de la emulación de terminal en Linux que permite la comunicación serie con dispositivos a través de puertos seriales.
 
 \begin{figure}[h!]
     \centering
@@ -564,6 +571,10 @@ Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede eje
 
 \subsection{Comparación de resultados}
 
+Como se pudo observar en la Figura \ref{}, en la esquina superior derecha se obtiene la gráfica proveniente de la simulación del sistema, por otro lado en la esquina superior derecha se puede observar la gráfica proveniente de la ejecución del sistema en la tarjeta de desarrollo, estas mediciones corresponden a las señales antes de la etapa de filtrado del caso de estudio desarrollado en \ref{}, por otro lado en la esquina inferior izquierda se tiene la  gráfica proveniente de la simulación del sistema una vez filtrada la señal, finalmente en la esquina inferior derecha se observa la gráfica proveniente de la ejecución del sistema en la tarjeta de desarrollo. 
 
+Para un mejor análisis de resultados se utilizó el código de Python que se muestra en \ref{}, el cual se encarga de tomar los 4 archivos .mat que son las salidas del sistema de control y compararlas, es de esta forma que se logra obtener la gráfica que se muestra en \ref{}, donde se sobreponen las dos señales antes de la etapa de filtrado y en la figura \ref{} se muestran sobrepuestas las salidas de la función de transferencia, con estos datos se obtiene la desviación estándar de las mediciones como se pudo observar en \ref{} ademas del error de las mediciones como se observa en \ref{}.
+
+Es por esto que se puede decir que el caso de estudio demuestra que el flujo de trabajo es aceptado.
 
 \section{Reflexión final}
