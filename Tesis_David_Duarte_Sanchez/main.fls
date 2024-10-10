@@ -802,13 +802,6 @@ INPUT ./fig/teorico/Flujo de trabajo xcompiler.pdf
 INPUT ./fig/teorico/Flujo de trabajo xcompiler.pdf
 INPUT ./fig/teorico/Flujo de trabajo xcompiler.pdf
 INPUT ./fig/teorico/Flujo de trabajo xcompiler.pdf
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT ./especifico1.tex
 INPUT ./especifico1.tex
 OUTPUT especifico1.aux
@@ -826,6 +819,28 @@ INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
 INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
 INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
 INPUT ./fig/especifico_2/Diagrama general del proyecto.pdf
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_start.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_start.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_start.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_start.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_start.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_init.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_init.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_init.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_init.png
+INPUT ./fig/especifico_2/retornos_de_comandos/sudo_docker_init.png
 INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf
 INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf
 INPUT ./fig/especifico_2/Diagrama matlab simulink.pdf

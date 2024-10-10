@@ -1,24 +1,219 @@
-\chapter{Flujo de trabajo para la implementación de software para GNC embebido}
+\chapter{Síntesis de software para GNC embebido}
 \label{ch:especifico2}
 
 Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selección de la tarjeta de desarrollo Zedboard para el desarrollo del proyecto, además de esto uno de los parámetros que se tomó en cuenta fue la compatibilidad de esta con el flujo de trabajo de Yocto Project.
 
-Es por esto que en este capítulo se pretenden establecer los flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales. Esto mediante el uso de MATLAB Simulink para tomar un caso de estudio como ejemplo.
-
-Una vez seleccionado el caso de estudio se convierte el código por medio de la transformación de modelo de Simulink a un modelo de código C, esto con el objetivo de poder embeber el código C por medio del flujo de trabajo de Yocto Project y finalmente probar el mismo en la tarjeta de desarrollo seleccionada.
-
-De esta forma se puede comparar los resultados obtenidos y el tiempo de ejecución que llevo la tarea en el computador y en el sistema embebido.
-
-
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.3\textwidth]{fig/especifico_2/Diagrama general del proyecto.pdf}
+    \includegraphics[width=0.48\textwidth]{fig/especifico_2/Diagrama general del proyecto.pdf}
     \caption{Diagrama general del flujo de trabajo propuesto}
     \label{fig:diagrama_flujo_trabajo}
 \end{figure}
 
+En este capítulo se pretenden establecer los flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales. Esto mediante la implementación de un caso de estudio. Como se puede observar en la Figura \ref{fig:diagrama_flujo_trabajo}, primeramente el desarrollador toma un modelo de sistema de control el cual implementa en MATLAB Simulink por medio de los bloques del sistema. 
 
-En la Figura \ref{fig:diagrama_flujo_trabajo}, se muestra un diagrama del flujo de trabajo general. En este capítulo se trabajará en la sección remarcada en rojo la cual engloba la generación del modelo utilizado como caso de estudio, la validación del mismo en MATLAB Simulink, la generación de un código en lenguaje C y la incorporación del mismo en el flujo de trabajo de Yocto Project.
+Seguido de esto se realiza un ajuste de parámetros con el objetivo que el mismo opere dentro de las condiciones esperadas, una vez ajustado el sistema se debe de ingresar el modelo al flujo de trabajo de Simulink Coder, el cual nos dará como salida el código base y las herramientas de construcción requeridas para poder compilar el archivo ejecutable, cabe destacar que la compilación a realizar es cruzada, esta nos permite compilar los archivos en un sistema distinto al objetivo. 
+
+Finalmente se debe de ingresar el archivo binario generado al flujo de trabajo de EmbedSynthGNC, el cual, se encargara de dar como salida un archivo de arranque y el sistema de archivos listos para implementar en la plataforma de desarrollo.
+
+
+\section{Creación de los entornos de desarrollo}
+
+En esta sección se describen los pasos necesarios para la creación de los entornos de desarrollo utilizados en este proyecto. En el mismo se incluye la información del hardware y software utilizado, además de las versiones de los sistemas requeridos para cada una de las implementaciones. 
+
+\subsection{MATLAB}\label{subsec:generacion_entorno_matlab}
+Primeramente se describirá el hardware utilizado para ejecutar MATLAB y sus herramientas, la versión utilizada es MATLAB 2024b por medio de una licencia de prueba de la versión full, esta misma se ejecuta en una computadora con las siguientes características: 
+\begin{itemize}
+    \item Procesador Intel i9 - 14900k 
+    \item Almacenamiento 500 GB 
+    \item Memoria 16 GB
+    \item Video Nvidia RTX4060Ti
+\end{itemize}
+
+Las herramientas adicionales instaladas en el entorno de MATLAB son:
+
+\begin{itemize}
+    \item Simulink
+    \item MATLAB Coder
+\end{itemize}
+
+Además de esto se instala la herramienta GCC en su versión 6.3.0, el cual es el compilador de código C, este se utilizara para compilar el código y probar que el mismo funcione de la forma esperada; cabe destacar, que este no es el compilador cruzado, este compilador nos genera un archivo binario el cual podremos probar en el sistema Windows, esto con el fin de poder realizar correcciones más eficientes al sistema de control en caso de ser requerido.
+
+\subsection{Contenedores}
+
+En la elaboración del proyecto se decanta por el uso de contenedores, ya que como se mencionó en \ref{sec:containers}, estos permiten encapsular todas las dependencias y configuraciones necesarias para ejecutar una aplicación. Esto asegura que la misma aplicación funcione de manera consistente en diferentes entornos, ya sea durante el desarrollo, en pruebas o en producción. 
+
+Cada contenedor opera de forma independiente, lo que permite ejecutar múltiples aplicaciones en el mismo sistema sin interferencias. Este aislamiento reduce significativamente el riesgo de conflictos entre diferentes versiones de software y dependencias, lo que se traduce en un entorno más estable y predecible. Los contenedores se ejecutan en un sistema operativo Linux en su versión 22.04 LTS.
+
+El sistema donde se ejecutan los contenedores cuenta con las siguientes características:
+
+\begin{itemize}
+    \item Procesador Intel i9 - 14900k
+    \item Almacenamiento 500 GB 
+    \item Memoria 16 GB
+    \item Video Nvidia RTX4060Ti
+\end{itemize}
+
+Una vez que se hayan comprendido el sistema operativo y las características del hardware del computador anfitrión, se presentarán los comandos básicos para la creación y gestión de contenedores.
+
+\subsubsection{Comandos utilizados para la creación y gestión de contenedores}\label{subsec:manejo_de_contenedores}
+
+
+\begin{lstlisting}[language=bash, caption={Instalacion de docker, Linux}, label=lst:install_docker]
+    sudo apt install docker.io
+\end{lstlisting}
+
+Como se puede observar mediante el uso de \ref{lst:install_docker}, se realiza la instalación de docker.io, el cual como se mencionó en \ref{sec:containers}, es una plataforma que permite la creación, despliegue y gestión de aplicaciones en contenedores. 
+
+\begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 20.04, Linux}, label=lst:install_20_04_ubuntu]
+    sudo docker run -it ubuntu:20.04 /bin/bash
+\end{lstlisting}
+
+Por medio del comando \ref{lst:install_20_04_ubuntu} se realiza la construccion de la máquina dentro del entorno del contenedor. Este último comando se encarga de descargar la imagen de Ubuntu 20.04, crea y ejecuta un contenedor en modo interactivo además de proporcionar acceso al terminal del contenedor, donde se ejecutan comandos como si fuera una máquina virtual con Ubuntu 20.04. Este contenedor será utilizado para realizar la compilación cruzada, se utiliza Ubuntu 20.04, ya que esta versión contiene la versión de GCC que satisface los requerimientos impuestos por otros flujos de trabajo.
+
+\begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 16.04, Linux}, label=lst:install_16_04_ubuntu]
+    sudo docker run -it ubuntu:16.04 /bin/bash
+\end{lstlisting}
+
+Por otro lado por medio del comando mostrado en \ref{lst:install_16_04_ubuntu}, se genera el contenedor que se utilizara para la implementación del flujo de trabajo de Yocto Project, cabe destacar que se utiliza Ubuntu 16.04, ya que, es la versión que cumple con los requerimientos del flujo de trabajo de Yocto, esto se debe a que al trabajar con Yocto Zeus y este ser desarrollado en el año 2019, esta era la versión de Ubuntu más estable para la fecha. 
+
+\begin{lstlisting}[language=bash, caption={Lista de contenedores del sistema, Docker}, label=lst:docker_basics_ps-a]
+    sudo docker ps -a
+\end{lstlisting}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png}
+    \caption{Retorno del comando \ref{lst:docker_basics_ps-a}}
+    \label{fig:sudo_docker_ps_a}
+\end{figure}
+
+Una vez generados los dos contenedores, los mismos podrán ser consultados mediante el comando que se muestra en \ref{lst:docker_basics_ps-a}, este se encarga de devolver una lista como la que se muestra en \ref{fig:sudo_docker_ps_a}, donde se puede observar de izquierda a derecha las columnas denominadas: Container ID, el cual es el identificador del contenedor, este valor se debe de utilizar para referirse al contenedor para las operaciones que se realizan fuera del entorno, también se muestra la Imagen que el contenedor tiene instalada, el comando de creación del mismo, la creación del contenedor, el status, los puertos definidos y el Nombre.
+
+Para efectos de este proyecto se tomará importancia solamente a las columnas de Container ID e Imagen.
+
+\begin{lstlisting}[language=bash, caption={Iniciar un contenedor, Docker}, label=lst:docker_basics_start]
+    sudo docker start <ID del contenedor>
+\end{lstlisting}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{fig/especifico_2/retornos_de_comandos/sudo_docker_start.png}
+    \caption{Retorno del comando \ref{lst:docker_basics_start}}
+    \label{fig:sudo_docker_start}
+\end{figure}
+
+Por medio del comando que se muestra en \ref{lst:docker_basics_start} se inicia el contenedor deseado, esto siempre dependerá del ID que se coloque, tras la ejecución de este comando la salida del mismo se puede observar en la Figura \ref{fig:sudo_docker_start}
+
+\begin{lstlisting}[language=bash, caption={Ingresar a un contenedor, Docker}, label=lst:docker_basics_init]
+    sudo docker exec -it <ID del contenedor> \bin\bash
+\end{lstlisting}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{fig/especifico_2/retornos_de_comandos/sudo_docker_init.png}
+    \caption{Retorno del comando \ref{lst:docker_basics_init}}
+    \label{fig:sudo_docker_init}
+\end{figure}
+
+Finalmente, para la ejecución del contenedor en terminal se debe de hacer uso del comando \ref{lst:docker_basics_init}, este se encarga de acceder a la terminal del contenedor deseado. Como se puede observar en la Figura \ref{fig:sudo_docker_init} ya la terminal se encuentra ejecutando el contenedor construido bajo el ID del contenedor "1420fedd3067".
+
+Una vez generados los contenedores, se procede a generar el entorno de desarrollo requerido dentro de los mismos.
+
+\subsubsection{Contenedor para compilación Cruzada}\label{subsec:generacion_entorno_xcompile}
+
+Este contenedor será en el cual se lleve a cabo la compilación cruzada, es por esto que el mismo contendrá las herramientas que se mencionan a continuación:
+
+\begin{itemize}
+    \item Compilador cruzado el cual sea compatible con la plataforma de desarrollo
+    \item Constructor de archivos
+\end{itemize}
+
+\begin{lstlisting}[language=bash, caption={Instalacion del compilador cruzado, Contenedor}, label=lst:cross_compiler]
+    sudo apt install gcc-arm-linux-gnueabihf
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash, caption={Instalacion de CMake, Contenedor}, label=lst:cmake]
+    sudo apt install cmake
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash, caption={Instalacion de build essential, Contenedor }, label=lst:build_essential]
+    sudo apt install build-essential
+\end{lstlisting}
+
+Una vez generado el contenedor debemos de instalar en el mismo el compilador cruzado que para nuestros efectos será arm-linux-gnueabihf-gcc, esto lo podemos hacer mediante el comando que se muestra en \ref{lst:cross_compiler},  CMake el cual es una herramienta de construcción multiplataforma y de código abierto que se utiliza para gestionar la construcción de software utilizando un enfoque basado en proyectos y finalmente build-essential las cuales son herramientas que nos ayudaran a compilar el programa generado.
+
+
+\subsubsection{Contenedor para Yocto Project}\label{subsec:generacion_entorno_yocto}
+
+El contenedor para Yocto Project, será en el cual se lleve a cabo la construcción de la imagen a utilizar en la plataforma de desarrollo, para esto se requiere la instalación de algunas dependencias las cuales se mencionan a continuación:
+
+\begin{itemize}
+    \item Instalacion de tree 
+    \item Instalacion de vim
+    \item Creación de un usuario no Root
+    \item Yocto Project
+\end{itemize}
+
+\subsubsection{Creación de un usuario no root}
+
+Para el uso del marco de trabajo de Yocto se debe de generar un usuario no root, esto principalmente por razones de seguridad y manejo adecuado de permisos. El usuario se puede generar por medio de los siguientes comandos:
+
+\begin{lstlisting}[language=bash, caption={Generacion de usuario no root, Linux}, label=lst:no_root_user]
+    apt - get install -y sudo
+    useradd - ms/bin/bash myuser
+    echo "myuser:password" | chpasswd
+    usermod - aG sudo myuser
+\end{lstlisting}
+
+De forma que según el comando observado en \ref{lst:no_root_user}, en la primera línea instalamos sudo, seguido de esto en la segunda línea se agrega el usuario denominado "myuser", en la tercera línea se genera una contraseña para este usuario la cual se define como "chpasswd", finalmente se agrega en el archivo usermod el nuevo usuario. 
+
+\begin{lstlisting}[language=bash, caption={Iniciar usuario no root, Linux}, label=lst:no_root_user_log]
+    su - myuser
+\end{lstlisting}
+
+
+Cada vez que iniciemos el contenedor siempre lo haremos como usuario root, para poder iniciar con el usuario no root llamado "myuser" se debe de hacer uso del comando que se muestra en \ref{lst:no_root_user_log}.
+
+\subsubsection{Yocto Project}
+
+Como se observó en \ref{subsec:yocto}, yocto presenta flexibilidades a la hora de configurar un sistema permitiendo al desarrollador seleccionar paquetes específicos y personalizar el sistema operativo.
+
+\begin{lstlisting}[language=bash, caption={Requerimientos Yocto Zeus, Linux}, label=lst:yocto_requirements]
+    sudo apt - get install gawk wget git - core diffstat unzip texinfo
+    gcc - multilib build - essential chrpath socat cpio python python3
+    python3 - pip python3 - pexpect xz - utils debianutils 
+    iputils - ping python3 - git python3 - jinja2 
+    libegl1 - mesa libsdl1 .2 - dev pylint3 xterm
+\end{lstlisting}
+
+Para que el mismo funcione de forma correcta debemos de instalar los requerimientos del marco de trabajo los cuales se pueden observar en \ref{lst:yocto_requirements}.
+
+\begin{lstlisting}[language=bash, caption={Version de Yocto}, label=lst:yocto_clone]
+    git clone -b zeus https://git.yoctoproject.org/git/poky
+    cd poky
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash, caption={BSP para Zedboard}, label=lst:yocto_zedboard]
+    git clone -b zeus https://github.com/Xilinx/meta-xilinx
+    git clone -b zeus https://github.com/openembedded/meta-openembedded.git
+\end{lstlisting}
+
+La versión de yocto a utilizar se debe de clonar de \ref{lst:yocto_clone}, seguido de esto se debe de ir a la rama de la versión Yocto Zeus. Además de clonar este repositorio se debe de ingresar al directorio denominado poky y clonar dentro del repositorio \ref{lst:yocto_zedboard} el cual contiene en su rama llamada Zeus la versión de paquete de soporte para la tarjeta requerida para generar una imagen para la tarjeta de desarrollo seleccionada.
+
+\begin{lstlisting}[language=bash, caption={Configuraciones adicionales, Yocto}, label=lst:aditional_config]
+    source oe - init - build - env
+    
+    echo "MACHINE ??=\"zedboard-zynq7\"" >> conf/local.conf
+    echo "IMAGE_FEATURES +=\"package-management\"" >> conf/local.conf
+    echo "DISTRO_HOSTNAME =\"zynq\"" >> conf/local.conf
+    
+    bitbake-layers add-layer ../meta-xilinx/meta-xilinx-bsp/
+    bitbake-layers add-layer ../meta-openembedded/meta-oe/
+\end{lstlisting}
+
+Algunas configuraciones adicionales que se deben de realizar se muestran en \ref{lst:aditional_config}.
+
 
 \section{Selección del caso de estudio}
 
@@ -103,7 +298,7 @@ Utilizando el diagrama de la Figura \ref{fig:diagrama_matlab_simulink}, además 
         \caption{Onda resultante luego de la función de transferencia}
         \label{fig:onda_filtrada}
     \end{subfigure}
-    \caption{Salida resultante del diagrama mostrado en la Figura \ref{fig:diagrama_matlab_simulink_graficos}}
+    \caption{Salida simulada del diagrama mostrado en la Figura \ref{fig:diagrama_matlab_simulink_graficos}}
     \label{fig:salida_resultante_diagrama_graficos}
 \end{figure}
 
@@ -180,37 +375,6 @@ Anteriormente configuramos los parámetros de tiempo de operación y procesador 
 
 Una vez configurados todos los parámetros mencionados anteriormente debemos de proceder con la construcción de los archivos, para esto se debe de ir a la barra de tareas a la opción denominada como generar código, la misma se puede observar en la Figura \ref{fig:pestana_c_code} bajo el nombre de Build.
 
-\subsection{Contenedor para compilación de los binarios}
-
-Para poder generar la compilación cruzada es necesario crear un contenedor para poder utilizar Ubuntu 20.04, ya que esta versión es la que presenta mayor compatibilidad con las dependencias contenidas en el flujo de trabajo de Yocto Project que se utiliza. 
-
-
-\begin{lstlisting}[language=bash, caption={Instalacion de docker, Linux}, label=lst:install_docker]
-    sudo apt install docker.io
-\end{lstlisting}
-
-\begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 20.04, Linux}, label=lst:install_20_04_ubuntu]
-    sudo docker run -it ubuntu:20.04 /bin/bash
-\end{lstlisting}
-
-Para poder generar este contenedor primeramente se debe de satisfacer la dependencia de tener instalado docker.io, esto se logra por medio del comando que se muestra en \ref{lst:install_docker},seguido de esto, se puede hacer uso del comando \ref{lst:install_20_04_ubuntu} el cual se encarga de construir la máquina dentro del entorno del contenedor. Este último comando se encarga de descargar la imagen de Ubuntu 20.04, crea y ejecuta un contenedor en modo interactivo además de proporcionar acceso al terminal del contenedor, donde puedes ejecutar comandos como si fuera una máquina virtual con Ubuntu 20.04.
-
-\subsubsection{Instalación de programas en el contenedor}
-
-\begin{lstlisting}[language=bash, caption={Instalacion del compilador cruzado, Linux}, label=lst:cross_compiler]
-    sudo apt install gcc-arm-linux-gnueabihf
-\end{lstlisting}
-
-\begin{lstlisting}[language=bash, caption={Instalacion de CMake, Linux}, label=lst:cmake]
-    sudo apt install cmake
-\end{lstlisting}
-
-\begin{lstlisting}[language=bash, caption={Instalacion de build essential, Linux}, label=lst:build_essential]
-    sudo apt install build-essential
-\end{lstlisting}
-
-Una vez generado el contenedor debemos de instalar en el mismo el compilador cruzado que para nuestros efectos será arm-linux-gnueabihf-gcc, esto lo podemos hacer mediante el comando que se muestra en \ref{lst:cross_compiler},  CMake el cual es una herramienta de construcción multiplataforma y de código abierto que se utiliza para gestionar la construcción de software utilizando un enfoque basado en proyectos y finalmente build-essential las cuales son herramientas que nos ayudaran a compilar el programa generado en \ref{subsec:simulink_coder} para la arquitectura del procesador.
-
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/root_folder.png}
@@ -257,7 +421,7 @@ Para la compilación del archivo binario se deberá hace uso del comando \ref{ls
 Una vez compilado el archivo binario, se puede continuar con el flujo que se presenta en el diagrama que se muestra en la Figura \ref{fig:diagrama_flujo_trabajo}, lo cual sería la implementación de los binarios en una imagen de yocto.
 
 
-\section{Flujo de Trabajo Herramienta desarrollada por mi persona}
+\section{Flujo de Trabajo EmbedSynthGNC}
 
 Como se pudo observar anteriormente se realizó la compilación cruzada de un caso de estudio, el mismo ahora se debe de implementar en un sistema operativo a la medida mediante el flujo de trabajo de Yocto Project, como se mencionó en \ref{subsec:yocto}, Yocto Project es un marco de trabajo utilizado para el desarrollo de sistemas embebidos especializado en la construcción de distribuciones de Linux a la medida. 
 
@@ -268,92 +432,7 @@ Como se pudo observar anteriormente se realizó la compilación cruzada de un ca
     \label{fig:flujo_yocto}
 \end{figure}
 
-En el desarrollo de esta seccion se muestran los pasos que se siguieron para la generación de una imagen mínima, la integración de una capa personalizada con el binario generado en \ref{subsec:compilacion_binario} y la implementación de la misma en la tarjeta de desarrollo seleccionada.
-
-\subsection{Sistema operativo para desarrollo}
-
-Como sistema operativo de desarrollo se utilizó Ubuntu 22.04 LTS, en una computadora con las siguientes características:
-
-\begin{itemize}
-    \item Procesador - Intel Corei9-13980HX 
-    \item Almecenamiento - 500 GB
-    \item Memoria RAM - 16 GB 
-\end{itemize}
-
-\subsection{Generación de un contenedor}
-
-Para el desarrollo del marco de trabajo de Yocto se decidió implementar un contenedor, esto debido a que la versión de Yocto para la cual se encontraba un paquete de soporte para la tarjeta de desarrollo es Yocto Zeus 3.0, este fue liberado en octubre del 2019, por tanto no era soportado por la versión de Linux del computador de desarrollo, es por esto que se tomó la decisión de utilizar un contenedor el cual ejecutara la versión de Ubuntu 16.04 LTS. 
-
-\begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 16.04}, label=lst:install_16_04_ubuntu]
-    sudo docker run -it ubuntu:16.04 /bin/bash
-\end{lstlisting}
-
-Para la generación del contenedor se hace uso del comando que se muestra en \ref{lst:install_16_04_ubuntu}, el cual se encarga de darnos un contenedor con Ubuntu 16.04 LTS.Ademas de esto debemos de instalar algunos requerimientos como lo son:
-
-\begin{itemize}
-    \item tree : para poder visualizar árboles de dependencia
-    \item vim : para poder editar archivos de texto
-    \item etc \dots
-\end{itemize}
-
-\subsubsection{Creación de un usuario no root}
-
-Para el uso del marco de trabajo de Yocto se debe de generar un usuario no root, esto principalmente por razones de seguridad y manejo adecuado de permisos. El usuario se puede generar por medio de los siguientes comandos:
-
-\begin{lstlisting}[language=bash, caption={Generacion de usuario no root, Linux}, label=lst:no_root_user]
-    apt - get install -y sudo
-    useradd - ms/bin/bash myuser
-    echo "myuser:password" | chpasswd
-    usermod - aG sudo myuser
-\end{lstlisting}
-
-De forma que según el comando observado en \ref{lst:no_root_user}, en la primera línea instalamos sudo, seguido de esto en la segunda línea se agrega el usuario denominado "myuser", en la tercera línea se genera una contraseña para este usuario la cual se define como "chpasswd", finalmente se agrega en el archivo usermod el nuevo usuario. 
-
-\begin{lstlisting}[language=bash, caption={Iniciar usuario no root, Linux}, label=lst:no_root_user_log]
-    su - myuser
-\end{lstlisting}
-
-
-Cada vez que iniciemos el contenedor siempre lo haremos como usuario root, para poder iniciar con el usuario no root llamado "myuser" se debe de hacer uso del comando que se muestra en \ref{lst:no_root_user_log}.
-
-\subsection{Yocto Project}
-
-Como se observó en \ref{subsec:yocto}, yocto presenta flexibilidades a la hora de configurar un sistema permitiendo al desarrollador seleccionar paquetes específicos y personalizar el sistema operativo.
-
-\begin{lstlisting}[language=bash, caption={Requerimientos Yocto Zeus, Linux}, label=lst:yocto_requirements]
-    sudo apt - get install gawk wget git - core diffstat unzip texinfo
-    gcc - multilib build - essential chrpath socat cpio python python3
-    python3 - pip python3 - pexpect xz - utils debianutils 
-    iputils - ping python3 - git python3 - jinja2 
-    libegl1 - mesa libsdl1 .2 - dev pylint3 xterm
-\end{lstlisting}
-
-Para que el mismo funcione de forma correcta debemos de instalar los requerimientos del marco de trabajo los cuales se pueden observar en \ref{lst:yocto_requirements}.
-
-\begin{lstlisting}[language=bash, caption={Version de Yocto}, label=lst:yocto_clone]
-    git clone -b zeus https://git.yoctoproject.org/git/poky
-    cd poky
-\end{lstlisting}
-
-\begin{lstlisting}[language=bash, caption={BSP para Zedboard}, label=lst:yocto_zedboard]
-    git clone -b zeus https://github.com/Xilinx/meta-xilinx
-    git clone -b zeus https://github.com/openembedded/meta-openembedded.git
-\end{lstlisting}
-
-La versión de yocto a utilizar se debe de clonar de \ref{lst:yocto_clone}, seguido de esto se debe de ir a la rama de la versión Yocto Zeus. Además de clonar este repositorio se debe de ingresar al directorio denominado poky y clonar dentro del repositorio \ref{lst:yocto_zedboard} el cual contiene en su rama llamada Zeus la versión de paquete de soporte para la tarjeta requerida para generar una imagen para la tarjeta de desarrollo seleccionada.
-
-\begin{lstlisting}[language=bash, caption={Configuraciones adicionales, Yocto}, label=lst:aditional_config]
-    source oe - init - build - env
-    
-    echo "MACHINE ??=\"zedboard-zynq7\"" >> conf/local.conf
-    echo "IMAGE_FEATURES +=\"package-management\"" >> conf/local.conf
-    echo "DISTRO_HOSTNAME =\"zynq\"" >> conf/local.conf
-    
-    bitbake-layers add-layer ../meta-xilinx/meta-xilinx-bsp/
-    bitbake-layers add-layer ../meta-openembedded/meta-oe/
-\end{lstlisting}
-
-Algunas configuraciones adicionales que se deben de realizar se muestran en \ref{lst:aditional_config}.
+En el desarrollo de esta sección se muestran los pasos que se siguieron para la generación de una imagen, la integración de una capa personalizada con el binario generado en \ref{subsec:compilacion_binario} y la implementación de la misma en la tarjeta de desarrollo seleccionada.
 
 \subsection{Creación de una capa de yocto}
 

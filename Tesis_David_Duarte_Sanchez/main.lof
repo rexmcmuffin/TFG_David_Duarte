@@ -8,22 +8,25 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama general del flujo de trabajo propuesto}}{28}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama MATLAB Simulink}}{29}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama MATLAB Simulink para poder observar las salidas}}{29}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Salida resultante del diagrama mostrado en la Figura \ref {fig:diagrama_matlab_simulink_graficos}}}{30}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Pestaña Aplicaciones}}{31}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Pestaña código C}}{31}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Configuración de parámetros}}{31}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Selección del procesador y la familia del procesador}}{32}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Selección del tipo de archivo de construcción}}{33}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Archivo comprimido en el directorio swap\_area}}{34}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Make File}}{35}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Binario llamado simple\_filter}}{35}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Flujo de trabajo Yocto}}{36}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Árbol de directorios de la capa}}{39}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Estructura del archivo sistema\_control.bb}}{40}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Puertos tarjeta de desarrollo Zedboard}}{42}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Salida resultante de la imagen generada mediante el flujo de trabajo}}{43}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Retorno del comando \ref {lst:docker_basics_ps-a}}}{31}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Retorno del comando \ref {lst:docker_basics_start}}}{32}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Retorno del comando \ref {lst:docker_basics_init}}}{32}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama MATLAB Simulink}}{36}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagrama MATLAB Simulink para poder observar las salidas}}{36}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Salida simulada del diagrama mostrado en la Figura \ref {fig:diagrama_matlab_simulink_graficos}}}{36}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Pestaña Aplicaciones}}{37}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Pestaña código C}}{38}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Configuración de parámetros}}{38}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Selección del procesador y la familia del procesador}}{39}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Selección del tipo de archivo de construcción}}{40}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Archivo comprimido en el directorio swap\_area}}{40}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Make File}}{41}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Binario llamado simple\_filter}}{41}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Flujo de trabajo Yocto}}{42}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Árbol de directorios de la capa}}{43}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Estructura del archivo sistema\_control.bb}}{44}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Puertos tarjeta de desarrollo Zedboard}}{46}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Salida resultante de la imagen generada mediante el flujo de trabajo}}{47}{figure.caption.56}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
