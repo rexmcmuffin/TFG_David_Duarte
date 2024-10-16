@@ -71,6 +71,9 @@ Una vez presentadas las tarjetas de desarrollo candidatas se procede con la defi
     \item Escalabilidad del sistema: 
     La escalabilidad del sistema es crucial en dispositivos de desarrollo para sistemas de guía, navegación y control (GNC) porque permite adaptar el hardware y software a medida que el proyecto crece en complejidad o requisitos técnicos. Un dispositivo escalable facilita la integración de nuevos sensores, algoritmos más avanzados o mayores capacidades de procesamiento sin necesidad de cambiar completamente la plataforma. Esto ahorra tiempo y costos, además de asegurar que el sistema pueda evolucionar para cumplir con las demandas de futuras fases del desarrollo o nuevas aplicaciones, manteniendo la flexibilidad y la eficiencia.
 
+    \item Soporte del flujo de trabajo Yocto Project: 
+    Distribuciones ligeras y personalizables como Yocto Project se usan en hardware embebido como procesadores ARM. Estas permiten construir un sistema operativo ajustado a las necesidades del sistema GNC.
+
 \end{enumerate}
 \newpage
 
@@ -88,14 +91,15 @@ Una vez presentadas las tarjetas de desarrollo candidatas se procede con la defi
     \multicolumn{1}{|l|}{Criterios} & \multicolumn{1}{l|}{Peso} & \multicolumn{1}{l|}{ZCU102} & \multicolumn{1}{l|}{AGX Xavier} & \multicolumn{1}{l|}{TMS320C6678} & \multicolumn{1}{l|}{Zedboard} \\ \hline
     \multicolumn{1}{|l|}{Capacidad de   procesamiento} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{10} \\ \hline
     \multicolumn{1}{|l|}{Soporte para   sensores} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} \\ \hline
-    \multicolumn{1}{|l|}{Soporte para   actuadores} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} \\ \hline
+    \multicolumn{1}{|l|}{Soporte para   actuadores} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} \\ \hline
     \multicolumn{1}{|l|}{Soporte de   sistemas de tiempo real} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{20} \\ \hline
-    \multicolumn{1}{|l|}{Caracteristicas   Fisicas} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} \\ \hline
-    \multicolumn{1}{|l|}{Costo de la   tarjeta} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{15} \\ \hline
+    \multicolumn{1}{|l|}{Características   Físicas} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Costo de la   tarjeta} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} \\ \hline
     \multicolumn{1}{|l|}{Escalabilidad   del sistema} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Soporte de Yocto Project} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{10} \\ \hline
      & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \cline{1-1} \cline{3-6} 
-    \multicolumn{1}{|l|}{Suma general} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{86} & \multicolumn{1}{c|}{88} & \multicolumn{1}{c|}{79} & \multicolumn{1}{c|}{95} \\ \cline{1-1} \cline{3-6} 
-    \multicolumn{1}{|l|}{Posicion} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{1} \\ \cline{1-1} \cline{3-6} 
+    \multicolumn{1}{|l|}{Suma general} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{80} & \multicolumn{1}{c|}{80} & \multicolumn{1}{c|}{75} & \multicolumn{1}{c|}{95} \\ \cline{1-1} \cline{3-6} 
+    \multicolumn{1}{|l|}{Posición} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{1} \\ \cline{1-1} \cline{3-6} 
     \end{tabular}%
     }
 \end{table}

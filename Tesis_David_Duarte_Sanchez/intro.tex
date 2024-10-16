@@ -11,71 +11,30 @@
 
 \section{Proceso de diseño de los sistemas de Guía, Navegación y Control espacial}
 
-La implementación de sistemas GNC en sistemas embebidos, conlleva una combinación de 
-hardware y software especializado, por un lado, los microcontroladores son los encargados 
-de gestionar los cálculos, mientras que los sensores proporcionan distintos tipos de datos 
-por medio de las entradas. Por otro lado, los sistemas en tiempo real garantizan la respuesta 
-en el momento requerido. Las aplicaciones de estos se pueden observar en drones, satélites y 
-sondas espaciales \cite{MathWorks2024_ss}.
+La implementación de sistemas GNC en sistemas embebidos, conlleva una combinación de hardware y software especializado, por un lado, los microcontroladores son los encargados de gestionar los cálculos, mientras que los sensores proporcionan distintos tipos de datos por medio de las entradas. Por otro lado, los sistemas en tiempo real garantizan la respuesta en el momento requerido. Las aplicaciones de estos se pueden observar en drones, satélites y sondas espaciales \cite{MathWorks}.
 
-Como se mencionó anteriormente los sistemas GNC son fundamentales en las misiones espaciales, 
-están encargados de determinar la trayectoria óptima para cumplir los objetivos de la misión, 
-además de calcular la secuencia de maniobras necesarias, determinar la posición, velocidad y 
-orientación, también se encargan de aplicar las acciones correctivas necesarias para mantener 
-la trayectoria \cite{hewing2023enhancing}.
+Como se mencionó anteriormente los sistemas GNC son fundamentales en las misiones espaciales, están encargados de determinar la trayectoria óptima para cumplir los objetivos de la misión, además de calcular la secuencia de maniobras necesarias, determinar la posición, velocidad y orientación, también se encargan de aplicar las acciones correctivas necesarias para mantener la trayectoria \cite{hewing2023enhancing}.
 
 
 \subsection{Requerimientos de los sistemas}
 
-Los requerimientos de los sistemas GNC incluyen: precisión para determinar la posición 
-y orientación del vehículo con gran exactitud, robustez para funcionar de manera confiable 
-y tolerar fallos o perturbaciones generadas por el entorno, autonomía para poder operar sin 
-depender de la intervención humana, flexibilidad para adaptarse a diferentes fases de la misión 
-y un bajo consumo de potencia para minimizar el uso de los recursos limitados a bordo. 
-
-Para cumplir con los requerimientos mencionados anteriormente se debe definir con precisión 
-los requerimientos del sistema, como la precisión necesaria para determinar la posición del 
-vehículo, la robustez del sistema para resistir fallos, las restricciones energéticas y de 
-recursos computacionales a bordo. Una vez solventados estos requerimientos el sistema se 
-plantea bajo una arquitectura modular la cual divide el sistema en bloques independientes 
-para las funciones de guía, navegación y control, facilitando el desarrollo, prueba 
-y mantenimiento \cite{AEM2017}. 
+Los requerimientos de los sistemas GNC incluyen: precisión para determinar la posición y orientación del vehículo con gran exactitud, robustez para funcionar de manera confiable y tolerar fallos o perturbaciones generadas por el entorno, autonomía para poder operar sin depender de la intervención humana, flexibilidad para adaptarse a diferentes fases de la misión y un bajo consumo de potencia para minimizar el uso de los recursos limitados a bordo. 
+Para cumplir con los requerimientos mencionados anteriormente se debe definir con precisión los requerimientos del sistema, como la precisión necesaria para determinar la posición del vehículo, la robustez del sistema para resistir fallos, las restricciones energéticas y de recursos computacionales a bordo. Una vez solventados estos requerimientos el sistema se plantea bajo una arquitectura modular la cual divide el sistema en bloques independientes para las funciones de guía, navegación y control, facilitando el desarrollo, prueba y mantenimiento \cite{AEM2017}. 
 
 
 \section{Sistemas embebidos para los sistemas GNC}
 
-El uso de sistemas embebidos ha transformado la navegación y el control aeroespacial. Estos sistemas 
-integran hardware y software, permitiendo el procesamiento de datos en tiempo real, fundamental para 
-la navegación precisa y el control de vuelo. Los sistemas embebidos gestionan sensores que recopilan 
-información sobre altitud, velocidad y posición, permitiendo a pilotos y sistemas automáticos tomar 
-decisiones rápidas y fundamentadas. Esta capacidad de respuesta es esencial en entornos cambiantes, 
-como la aviación o el lanzamiento de cohetes. \cite{Castao2014EstimacinDP}
+El uso de sistemas embebidos ha transformado la navegación y el control aeroespacial. Estos sistemas integran hardware y software, permitiendo el procesamiento de datos en tiempo real, fundamental para la navegación precisa y el control de vuelo. Los sistemas embebidos gestionan sensores que recopilan información sobre altitud, velocidad y posición, permitiendo a pilotos y sistemas automáticos tomar decisiones rápidas y fundamentadas. Esta capacidad de respuesta es esencial en entornos cambiantes, como la aviación o el lanzamiento de cohetes. \cite{Castao2014EstimacinDP}
 
-Además, los sistemas embebidos facilitan la integración de múltiples funciones en un solo dispositivo, 
-reduciendo el peso y volumen de los equipos a bordo, un factor crucial en la industria aeroespacial. 
-Por ejemplo, en los sistemas de control de vuelo, los microcontroladores y procesadores embebidos pueden 
-gestionar desde la navegación hasta la comunicación y el monitoreo de sistemas críticos, todo desde una 
-única unidad. Esta integración mejora la eficiencia del espacio y minimiza la posibilidad de fallos al 
-reducir el número de componentes individuales que podrían fallar. \cite{Culp1993GuidanceAC}
+Además, los sistemas embebidos facilitan la integración de múltiples funciones en un solo dispositivo, reduciendo el peso y volumen de los equipos a bordo, un factor crucial en la industria aeroespacial. Por ejemplo, en los sistemas de control de vuelo, los microcontroladores y procesadores embebidos pueden gestionar desde la navegación hasta la comunicación y el monitoreo de sistemas críticos, todo desde una única unidad. Esta integración mejora la eficiencia del espacio y minimiza la posibilidad de fallos al reducir el número de componentes individuales que podrían fallar. \cite{Culp1993GuidanceAC}
 
-Finalmente, la implementación de sistemas embebidos ha permitido avances significativos en la automatización 
-y la inteligencia artificial aeroespacial. Los algoritmos embebidos procesan datos de manera eficiente, permitiendo 
-la navegación autónoma y el control de vehículos sin intervención humana, especialmente relevante en misiones
- espaciales con comunicación limitada. Los sistemas embebidos mejoran la seguridad y eficiencia de las operaciones 
- aeroespaciales, abriendo nuevas posibilidades para la exploración y el desarrollo de tecnologías futuras en este campo. \cite{Falcoz2023GuidanceN}
+Finalmente, la implementación de sistemas embebidos ha permitido avances significativos en la automatización y la inteligencia artificial aeroespacial. Los algoritmos embebidos procesan datos de manera eficiente, permitiendo la navegación autónoma y el control de vehículos sin intervención humana, especialmente relevante en misiones espaciales con comunicación limitada. Los sistemas embebidos mejoran la seguridad y eficiencia de las operaciones  aeroespaciales, abriendo nuevas posibilidades para la exploración y el desarrollo de tecnologías futuras en este campo. \cite{Falcoz2023GuidanceN}
 
 \subsection{Marco de Trabajo Yocto Project}
 
-Yocto Project es una iniciativa de código abierto que proporciona un conjunto de herramientas y recursos para crear 
-sistemas operativos Linux personalizados, especialmente diseñados para dispositivos embebidos. Su objetivo principal es 
-facilitar el desarrollo de software y la integración de componentes en una amplia variedad de hardware, permitiendo a los 
-desarrolladores construir imágenes de sistema adaptadas a sus necesidades específicas. Utiliza BitBake, una herramienta que 
-permite definir recetas para la construcción y empaquetado de software, lo que otorga gran flexibilidad y personalización. \cite{salvador2014embedded}
+Yocto Project es una iniciativa de código abierto que proporciona un conjunto de herramientas y recursos para crear sistemas operativos Linux personalizados, especialmente diseñados para dispositivos embebidos. Su objetivo principal es facilitar el desarrollo de software y la integración de componentes en una amplia variedad de hardware, permitiendo a los desarrolladores construir imágenes de sistema adaptadas a sus necesidades específicas. Utiliza BitBake, una herramienta que permite definir recetas para la construcción y empaquetado de software, lo que otorga gran flexibilidad y personalización. \cite{salvador2014embedded}
 
-Además, soporta múltiples arquitecturas de hardware, como ARM, x86, MIPS y PowerPC, lo que lo hace adecuado para diferentes 
-dispositivos, desde microcontroladores hasta sistemas más complejos. Al fomentar la reutilización de componentes y contar con 
-una comunidad activa que contribuye con mejoras y documentación, el Yocto Project se convierte en una solución ideal para el 
-desarrollo de sistemas operativos en aplicaciones de IoT, electrónica de consumo y automatización industrial. \cite{vaduva2015learning}
+Además, soporta múltiples arquitecturas de hardware, como ARM, x86, MIPS y PowerPC, lo que lo hace adecuado para diferentes dispositivos, desde microcontroladores hasta sistemas más complejos. Al fomentar la reutilización de componentes y contar con una comunidad activa que contribuye con mejoras y documentación, el Yocto Project se convierte en una solución ideal para el desarrollo de sistemas operativos en aplicaciones de IoT, electrónica de consumo y automatización industrial. \cite{vaduva2015learning}
 
 \section{Donde se ubica dentro del flujo de control}
 Diagrama profe Johan (ver en proxima reunion)
@@ -97,24 +56,12 @@ reales \cite{mihalivc2022hardware} \cite{montoya2020advanced}.
 
 \section{Objetivos y estructura del documento}
 
-\index{objetivos}
+El objetivo principal de este proyecto es desarrollar un conjunto de flujos de trabajo para la implementación de software a bordo de computadoras de guía, navegación y control espacial. Para lograr este objetivo se persiguen tres objetivos específicos. El primero consiste en Identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de navegación espacial.
 
-El objetivo principal de este proyecto es desarrollar un conjunto de flujos de trabajo para la implementacion de software a bordo de
-computadoras de guia, navegacion y control espacial. Para lograr este objetivo se persiguen tres objetivos
-especificos. El primero consiste en Identificar una plataforma de hardware para el desarrollo de un modelo de ingenieria de
-una computadora de navegación espacial.
-
-El segundo se encarga de Establecer flujos de trabajo para el prototipado de algoritmos de control de orientacion
-y navegacion para aplicaciones espaciales con hardware en el loop. Y por ultimo el tecero consiste en Evaluar los casos de uso de una computadora de navegacion y control espacial mediante
-la implementacion de una aplicacion de referencia demostrativa (caso de la IMU)
+El segundo se encarga de Establecer flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales con hardware en el loop. Y por último el tercero consiste en Evaluar los casos de uso de una computadora de navegación y control espacial mediante la implementación de una aplicación de referencia demostrativa (caso de la IMU).
 
 
-Este documento incluye lo siguiente: en el capitulo 2 se presenta el marco teorico, donde se
-esbozan los fundamentos de la propuesta realizada. En el capitulo 3 se detalla la solucion
-propuesta y el modelo implementado para la solucion del problema. En el capitulo 4 se
-presentan los resultados obtenidos. Por ultimo, el capitulo 5 se presenta las conclusiones
-de la investigacion y trabajo realizado, asi como recomendaciones y trabajo a futuro por
-desarrollar.
+Este documento incluye lo siguiente: en el capítulo 2 se presenta el marco teórico, donde se esbozan los fundamentos de la propuesta realizada. En el capítulo 3 se detalla la solución propuesta y el modelo implementado para la solución del problema. En el capítulo 4 se presentan los resultados obtenidos. Por último, el capítulo 5 se presenta las conclusiones de la investigación y trabajo realizado, así como recomendaciones y trabajo a futuro por desarrollar.
 
 %%% Local Variables: 
 %%% mode: latex

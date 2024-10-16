@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  10 OCT 2024 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.7)  15 OCT 2024 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex"
-(c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex
+**c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main
+(c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-08-16>
 (c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/bk12.clo
@@ -56,7 +56,7 @@ Package csquotes Info: ... configuration file loaded successfully.
  (c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )) (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/06/26 v24.7 The Babel package
+Package: babel 2024/08/29 v24.9 The Babel package
 \babel@savecnt=\count276
 \U@D=\dimen142
 \l@unhyphenated=\language89
@@ -118,7 +118,7 @@ Package tocbasic Info: setting babel extension for `nls' on input line 188.
 \nom@tempdim=\dimen144
 \nomitemsep=\skip52
 ) (c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2024-08-01 v3.3.20 A comprehensive (SI) units package
+Package: siunitx 2024-08-20 v3.3.21 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count280
 \l__siunitx_number_exponent_fixed_int=\count281
 \l__siunitx_number_min_decimal_int=\count282
@@ -473,7 +473,7 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+File: ieee.bbx 2024/08/14 v1.3g biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
@@ -517,18 +517,18 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
  (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-07-20 L3 programming layer (loader) 
+Package: expl3 2024-08-16 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count442
 \l__pdf_internal_box=\box70
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2024-07-20 L3 programming layer (loader) 
+(biblatex)             2024-08-16 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-05-08 L3 Experimental document command parser
+Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 )) (c:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
@@ -679,7 +679,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count473
 \@thisrulewidth=\dimen198
 ) (c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2024/05/29 v0.6a Insert pages of external PDF documents (AM)
+Package: pdfpages 2024/08/20 v0.6b Insert pages of external PDF documents (AM)
  (c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count474
@@ -737,7 +737,7 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 \AM@pageheight=\dimen262
 \AM@fboxrule=\dimen263
  (c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2024/05/29 v0.6a Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2024/08/20 v0.6b Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count477
 \AM@pagebox=\box120
@@ -1229,30 +1229,30 @@ LaTeX Info: Redefining \% on input line 13.
  (./licencia.aux) (./disclaimer.aux) (./acta_aprob_licel.aux) (./acta_eval_licel.aux) (./resumen.aux) (./dedicatoria.aux) (./agradecimientos.aux) (./glosario.aux) (./intro.aux) (./teoria.aux) (./especifico1.aux) (./especifico2.aux) (./especifico3.aux) (./conclusiones.aux) (./apendice.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
  (c:/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 67.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 63.
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
@@ -1337,8 +1337,8 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 67.
-Package biblatex Info: Reference segment=0 on input line 67.
+Package biblatex Info: Reference section=0 on input line 63.
+Package biblatex Info: Reference segment=0 on input line 63.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
@@ -1375,8 +1375,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
 \c@lstlisting=\count538
-Package tocbasic Info: setting babel extension for `lol' on input line 67.
-Package hyperref Info: Link coloring ON on input line 67.
+Package tocbasic Info: setting babel extension for `lol' on input line 63.
+Package hyperref Info: Link coloring ON on input line 63.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1384,19 +1384,19 @@ Package hyperref Info: Link coloring ON on input line 67.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 67.
+(hyperref)                removing `\<def>-command' on input line 63.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 67.
+(hyperref)                removing `\\' on input line 63.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 67.
+(hyperref)                removing `\\' on input line 63.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 67.
+(hyperref)                removing `\\' on input line 63.
 
 \openout2 = `titlepage_licel_es.aux'.
 
@@ -1536,8 +1536,8 @@ LaTeX Info: Redefining \% on input line 94.
 
 
 
-LaTeX Info: Redefining \. on input line 140.
-LaTeX Info: Redefining \% on input line 140.
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
 [3] (./main.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
@@ -1581,13 +1581,13 @@ No file main.nls.
  (./intro.tex
 Cap\'{\i }tulo 1.
 
-LaTeX Warning: Citation 'MathWorks2024_ss' on page 1 undefined on input line 19.
+LaTeX Warning: Citation 'MathWorks' on page 1 undefined on input line 14.
 
 
-LaTeX Warning: Citation 'hewing2023enhancing' on page 1 undefined on input line 25.
+LaTeX Warning: Citation 'hewing2023enhancing' on page 1 undefined on input line 16.
 
 
-LaTeX Warning: Citation 'AEM2017' on page 1 undefined on input line 42.
+LaTeX Warning: Citation 'AEM2017' on page 1 undefined on input line 22.
 
 
 
@@ -1601,39 +1601,39 @@ LaTeX Warning: Citation 'AEM2017' on page 1 undefined on input line 42.
 
 ]
 
-LaTeX Warning: Citation 'Castao2014EstimacinDP' on page 2 undefined on input line 52.
+LaTeX Warning: Citation 'Castao2014EstimacinDP' on page 2 undefined on input line 27.
 
 
-LaTeX Warning: Citation 'Culp1993GuidanceAC' on page 2 undefined on input line 59.
+LaTeX Warning: Citation 'Culp1993GuidanceAC' on page 2 undefined on input line 29.
 
 
-LaTeX Warning: Citation 'Falcoz2023GuidanceN' on page 2 undefined on input line 65.
+LaTeX Warning: Citation 'Falcoz2023GuidanceN' on page 2 undefined on input line 31.
 
 
-LaTeX Warning: Citation 'salvador2014embedded' on page 2 undefined on input line 73.
+LaTeX Warning: Citation 'salvador2014embedded' on page 2 undefined on input line 35.
 
 
-LaTeX Warning: Citation 'vaduva2015learning' on page 2 undefined on input line 78.
+LaTeX Warning: Citation 'vaduva2015learning' on page 2 undefined on input line 37.
 
 
 
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
 [2]
 
-LaTeX Warning: Citation 'mihalivc2022hardware' on page 3 undefined on input line 93.
+LaTeX Warning: Citation 'mihalivc2022hardware' on page 3 undefined on input line 52.
 
 
-LaTeX Warning: Citation 'montoya2020advanced' on page 3 undefined on input line 93.
+LaTeX Warning: Citation 'montoya2020advanced' on page 3 undefined on input line 52.
 
+)
 
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+[3]
 
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
-[3])
-
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
 [4]
 \openout2 = `teoria.aux'.
 
@@ -1730,12 +1730,12 @@ LaTeX Info: Redefining \. on input line 334.
 LaTeX Info: Redefining \% on input line 334.
 [17])
 
-LaTeX Info: Redefining \. on input line 162.
-LaTeX Info: Redefining \% on input line 162.
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
 [18]
 
-LaTeX Info: Redefining \. on input line 162.
-LaTeX Info: Redefining \% on input line 162.
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
 [19]
 \openout2 = `especifico1.aux'.
 
@@ -1762,20 +1762,20 @@ LaTeX Info: Redefining \. on input line 65.
 LaTeX Info: Redefining \% on input line 65.
 [23]
 
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
 [24]
 
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
 [25]
 
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
 [26])
 
-LaTeX Info: Redefining \. on input line 163.
-LaTeX Info: Redefining \% on input line 163.
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
 [27]
 \openout2 = `especifico2.aux'.
 
@@ -1784,7 +1784,7 @@ Cap\'{\i }tulo 4.
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Diagrama general del proyecto.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Diagrama general del proyecto.pdf, id=790, 316.18124pt x 501.875pt>
+<fig/especifico_2/Diagrama general del proyecto.pdf, id=791, 316.18124pt x 501.875pt>
 File: fig/especifico_2/Diagrama general del proyecto.pdf Graphic file (type pdf)
 <use fig/especifico_2/Diagrama general del proyecto.pdf>
 Package pdftex.def Info: fig/especifico_2/Diagrama general del proyecto.pdf  used on input line 8.
@@ -1819,7 +1819,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.81     sudo 
               docker ps -a
-<fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png, id=830, 1017.8025pt x 97.36375pt>
+<fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png, id=831, 1017.8025pt x 97.36375pt>
 File: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png Graphic file (type png)
 <use fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png>
 Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png  used on input line 86.
@@ -1830,7 +1830,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.96     sudo 
               docker start <ID del contenedor>
-<fig/especifico_2/retornos_de_comandos/sudo_docker_start.png, id=835, 1020.81375pt x 44.165pt>
+<fig/especifico_2/retornos_de_comandos/sudo_docker_start.png, id=836, 1020.81375pt x 44.165pt>
 File: fig/especifico_2/retornos_de_comandos/sudo_docker_start.png Graphic file (type png)
 <use fig/especifico_2/retornos_de_comandos/sudo_docker_start.png>
 Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_start.png  used on input line 101.
@@ -1854,7 +1854,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                                                   \__shipout_drop_firstpage_...
 l.110 \end{lstlisting}
                        <./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png>]
-<fig/especifico_2/retornos_de_comandos/sudo_docker_init.png, id=848, 1020.81375pt x 44.165pt>
+<fig/especifico_2/retornos_de_comandos/sudo_docker_init.png, id=849, 1020.81375pt x 44.165pt>
 File: fig/especifico_2/retornos_de_comandos/sudo_docker_init.png Graphic file (type png)
 <use fig/especifico_2/retornos_de_comandos/sudo_docker_init.png>
 Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_init.png  used on input line 114.
@@ -1982,7 +1982,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.5}) 
                                                   \__shipout_drop_firstpage_...
 l.225     \item F
                  unción de transferencia]
-<fig/especifico_2/Diagrama matlab simulink.pdf, id=897, 327.55676pt x 110.4125pt>
+<fig/especifico_2/Diagrama matlab simulink.pdf, id=898, 327.55676pt x 110.4125pt>
 File: fig/especifico_2/Diagrama matlab simulink.pdf Graphic file (type pdf)
 <use fig/especifico_2/Diagrama matlab simulink.pdf>
 Package pdftex.def Info: fig/especifico_2/Diagrama matlab simulink.pdf  used on input line 267.
@@ -1991,7 +1991,7 @@ Package pdftex.def Info: fig/especifico_2/Diagrama matlab simulink.pdf  used on 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/especifico_2/Diagrama matlab simulink scope.pdf, id=899, 330.23375pt x 205.76875pt>
+<fig/especifico_2/Diagrama matlab simulink scope.pdf, id=900, 330.23375pt x 205.76875pt>
 File: fig/especifico_2/Diagrama matlab simulink scope.pdf Graphic file (type pdf)
 <use fig/especifico_2/Diagrama matlab simulink scope.pdf>
 Package pdftex.def Info: fig/especifico_2/Diagrama matlab simulink scope.pdf  used on input line 278.
@@ -2003,7 +2003,7 @@ LaTeX Info: Redefining \% on input line 281.
 [35]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/onda_modulada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/onda_modulada.pdf, id=910, 421.575pt x 290.64584pt>
+<fig/especifico_2/onda_modulada.pdf, id=911, 421.575pt x 290.64584pt>
 File: fig/especifico_2/onda_modulada.pdf Graphic file (type pdf)
 <use fig/especifico_2/onda_modulada.pdf>
 Package pdftex.def Info: fig/especifico_2/onda_modulada.pdf  used on input line 290.
@@ -2011,7 +2011,7 @@ Package pdftex.def Info: fig/especifico_2/onda_modulada.pdf  used on input line 
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/onda_filtrada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/onda_filtrada.pdf, id=911, 426.59375pt x 304.69835pt>
+<fig/especifico_2/onda_filtrada.pdf, id=912, 426.59375pt x 304.69835pt>
 File: fig/especifico_2/onda_filtrada.pdf Graphic file (type pdf)
 <use fig/especifico_2/onda_filtrada.pdf>
 Package pdftex.def Info: fig/especifico_2/onda_filtrada.pdf  used on input line 297.
@@ -2024,12 +2024,12 @@ LaTeX Info: Redefining \% on input line 311.
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Diagrama matlab simulink scope.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./fig/especifico_2/onda_modulada.pdf> <./fig/especifico_2/onda_filtrada.pdf>]
-<fig/especifico_2/paso_a_paso_mtmt/apps.png, id=1143, 1051.67906pt x 89.58469pt>
+<fig/especifico_2/paso_a_paso_mtmt/apps.png, id=1144, 1051.67906pt x 89.58469pt>
 File: fig/especifico_2/paso_a_paso_mtmt/apps.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/apps.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/apps.png  used on input line 327.
 (pdftex.def)             Requested size: 363.96904pt x 31.0038pt.
-<fig/especifico_2/paso_a_paso_mtmt/c_code.png, id=1144, 654.19406pt x 94.85437pt>
+<fig/especifico_2/paso_a_paso_mtmt/c_code.png, id=1145, 654.19406pt x 94.85437pt>
 File: fig/especifico_2/paso_a_paso_mtmt/c_code.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/c_code.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/c_code.png  used on input line 334.
@@ -2038,7 +2038,7 @@ Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/c_code.png  used on i
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png, id=1145, 794.2172pt x 533.74406pt>
+<fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png, id=1146, 794.2172pt x 533.74406pt>
 File: fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png  used on input line 341.
@@ -2051,7 +2051,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 348.
 LaTeX Info: Redefining \% on input line 348.
 [37 <./fig/especifico_2/paso_a_paso_mtmt/apps.png>]
-<fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png, id=1156, 792.71156pt x 532.99126pt>
+<fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png, id=1157, 792.71156pt x 532.99126pt>
 File: fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png  used on input line 354.
@@ -2065,7 +2065,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 365.
 LaTeX Info: Redefining \% on input line 365.
 [38 <./fig/especifico_2/paso_a_paso_mtmt/c_code.png> <./fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png>]
-<fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png, id=1166, 789.70032pt x 532.23843pt>
+<fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png, id=1167, 789.70032pt x 532.23843pt>
 File: fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png  used on input line 369.
@@ -2074,7 +2074,7 @@ Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/configuration_output_
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/especifico_2/paso_a_paso_mtmt/root_folder.png, id=1168, 1218.5525pt x 447.6725pt>
+<fig/especifico_2/paso_a_paso_mtmt/root_folder.png, id=1169, 1218.5525pt x 447.6725pt>
 File: fig/especifico_2/paso_a_paso_mtmt/root_folder.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/root_folder.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/root_folder.png  used on input line 380.
@@ -2121,7 +2121,7 @@ Overfull \hbox (3.18251pt too wide) in paragraph at lines 401--402
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-<fig/especifico_2/paso_a_paso_mtmt/cmake_file.png, id=1181, 1218.5525pt x 447.6725pt>
+<fig/especifico_2/paso_a_paso_mtmt/cmake_file.png, id=1182, 1218.5525pt x 447.6725pt>
 File: fig/especifico_2/paso_a_paso_mtmt/cmake_file.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/cmake_file.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/cmake_file.png  used on input line 406.
@@ -2131,7 +2131,7 @@ Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/cmake_file.png  used 
 LaTeX Info: Redefining \. on input line 409.
 LaTeX Info: Redefining \% on input line 409.
 [40 <./fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png> <./fig/especifico_2/paso_a_paso_mtmt/root_folder.png>]
-<fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png, id=1190, 1237.62375pt x 167.62625pt>
+<fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png, id=1191, 1237.62375pt x 167.62625pt>
 File: fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png Graphic file (type png)
 <use fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png>
 Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png  used on input line 414.
@@ -2139,7 +2139,7 @@ Package pdftex.def Info: fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Flujo de trabajo de mi idea.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Flujo de trabajo de mi idea.pdf, id=1196, 570.13pt x 337.26pt>
+<fig/especifico_2/Flujo de trabajo de mi idea.pdf, id=1197, 570.13pt x 337.26pt>
 File: fig/especifico_2/Flujo de trabajo de mi idea.pdf Graphic file (type pdf)
 <use fig/especifico_2/Flujo de trabajo de mi idea.pdf>
 Package pdftex.def Info: fig/especifico_2/Flujo de trabajo de mi idea.pdf  used on input line 430.
@@ -2185,7 +2185,7 @@ l.461     bitbake-
 LaTeX Info: Redefining \. on input line 472.
 LaTeX Info: Redefining \% on input line 472.
 [42 <./fig/especifico_2/Flujo de trabajo de mi idea.pdf>]
-<fig/especifico_2/bbfilestructure.jpg, id=1249, 670.505pt x 237.88875pt>
+<fig/especifico_2/bbfilestructure.jpg, id=1250, 670.505pt x 237.88875pt>
 File: fig/especifico_2/bbfilestructure.jpg Graphic file (type jpg)
 <use fig/especifico_2/bbfilestructure.jpg>
 Package pdftex.def Info: fig/especifico_2/bbfilestructure.jpg  used on input line 483.
@@ -2232,7 +2232,7 @@ Overfull \hbox (24.32753pt too wide) in paragraph at lines 523--524
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<fig/especifico_2/154140ZedBoard.png, id=1272, 469.755pt x 526.21594pt>
+<fig/especifico_2/154140ZedBoard.png, id=1273, 469.755pt x 526.21594pt>
 File: fig/especifico_2/154140ZedBoard.png Graphic file (type png)
 <use fig/especifico_2/154140ZedBoard.png>
 Package pdftex.def Info: fig/especifico_2/154140ZedBoard.png  used on input line 534.
@@ -2250,12 +2250,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.550     scp 
               user@ip:/ruta/del/archivo/zedboard .
-<fig/especifico_2/raw.pdf, id=1282, 722.7pt x 361.35pt>
+<fig/especifico_2/raw.pdf, id=1283, 722.7pt x 361.35pt>
 File: fig/especifico_2/raw.pdf Graphic file (type pdf)
 <use fig/especifico_2/raw.pdf>
 Package pdftex.def Info: fig/especifico_2/raw.pdf  used on input line 557.
 (pdftex.def)             Requested size: 204.73041pt x 102.36276pt.
-<fig/especifico_2/Filtered.pdf, id=1283, 722.7pt x 361.35pt>
+<fig/especifico_2/Filtered.pdf, id=1284, 722.7pt x 361.35pt>
 File: fig/especifico_2/Filtered.pdf Graphic file (type pdf)
 <use fig/especifico_2/Filtered.pdf>
 Package pdftex.def Info: fig/especifico_2/Filtered.pdf  used on input line 564.
@@ -2289,8 +2289,8 @@ LaTeX Warning: Reference `' on page 47 undefined on input line 576.
 
 )
 
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
 [47 <./fig/especifico_2/raw.pdf> <./fig/especifico_2/Filtered.pdf>]
 \openout2 = `especifico3.aux'.
 
@@ -2323,8 +2323,8 @@ Cap\'{\i }tulo 6.
 
 ]
 
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
 [51]
 \openout2 = `apendice.aux'.
 
@@ -2354,7 +2354,7 @@ LaTeX Info: Redefining \% on input line 13.
  (./licencia.aux) (./disclaimer.aux) (./acta_aprob_licel.aux) (./acta_eval_licel.aux) (./resumen.aux) (./dedicatoria.aux) (./agradecimientos.aux) (./glosario.aux) (./intro.aux) (./teoria.aux) (./especifico1.aux) (./especifico2.aux) (./especifico3.aux) (./conclusiones.aux) (./apendice.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-08-16>
  ***********
 
 
@@ -2362,23 +2362,28 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DF4FC95150E52D001740A1174AB6D484;15737.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55153 strings out of 473579
- 1259340 string characters out of 5732257
- 2250538 words of memory out of 5000000
- 76767 multiletter control sequences out of 15000+600000
+ 55158 strings out of 473579
+ 1259466 string characters out of 5732258
+ 2250590 words of memory out of 5000000
+ 76771 multiletter control sequences out of 15000+600000
  585409 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,13n,120p,1304b,2844s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,13n,120p,1271b,2844s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (68 pages, 4563263 bytes).
+Output written on main.pdf (68 pages, 4563780 bytes).
 PDF statistics:
- 1579 PDF objects out of 1728 (max. 8388607)
- 1135 compressed objects within 12 object streams
- 260 named destinations out of 1000 (max. 500000)
+ 1580 PDF objects out of 1728 (max. 8388607)
+ 1136 compressed objects within 12 object streams
+ 261 named destinations out of 1000 (max. 500000)
  732 words of extra memory for PDF output out of 10000 (max. 10000000)
 
