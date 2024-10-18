@@ -1,7 +1,7 @@
 \chapter{Síntesis de software para GNC embebido}
 \label{ch:especifico2}
 
-Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selección de la tarjeta de desarrollo Zedboard para el desarrollo del proyecto, además de esto uno de los parámetros que se tomó en cuenta fue la compatibilidad de esta con el flujo de trabajo de Yocto Project.
+Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selección de la tarjeta de desarrollo Zedboard, además de esto uno de los requerimientos que se tomó en cuenta fue la compatibilidad de esta con el flujo de trabajo de Yocto Project.
 
 \begin{figure}[h!]
     \centering
@@ -10,51 +10,88 @@ Como se pudo observar en el capítulo \ref{ch:especifico1}, se realizó la selec
     \label{fig:diagrama_flujo_trabajo}
 \end{figure}
 
-En este capítulo se pretenden establecer los flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales. Esto mediante la implementación de un caso de estudio. Como se puede observar en la Figura \ref{fig:diagrama_flujo_trabajo}, primeramente el desarrollador toma un modelo de sistema de control el cual implementa en MATLAB Simulink por medio de los bloques del sistema. 
+En este capítulo se pretende establecer los flujos de trabajo para el prototipado de algoritmos de control, orientación y navegación para aplicaciones espaciales. Esto mediante la implementación de un caso de estudio básico. Como se puede observar en la Figura \ref{fig:diagrama_flujo_trabajo}, primeramente el desarrollador toma un modelo de sistema de control, el cual debe implementar en MATLAB Simulink por medio de los bloques del sistema. 
 
-Seguido de esto se realiza un ajuste de parámetros con el objetivo que el mismo opere dentro de las condiciones esperadas, una vez ajustado el sistema se debe de ingresar el modelo al flujo de trabajo de Simulink Coder, el cual nos dará como salida el código base y las herramientas de construcción requeridas para poder compilar el archivo ejecutable, cabe destacar que la compilación a realizar es cruzada, esta nos permite compilar los archivos en un sistema distinto al objetivo. 
+Seguido de esto se realiza un ajuste de parámetros con el objetivo que el mismo opere dentro de las condiciones esperadas, una vez ajustado el sistema, se debe de ingresar el modelo al flujo de trabajo de Simulink Coder, el cual nos dará como salida el código base y las herramientas de construcción requeridas para poder compilar el archivo ejecutable, cabe destacar que la compilación a realizar es cruzada, esta nos permite compilar los archivos en un sistema distinto al objetivo. 
 
-Finalmente se debe de ingresar el archivo binario generado al flujo de trabajo de EmbedSynthGNC, el cual, se encargara de dar como salida un archivo de arranque y el sistema de archivos listos para implementar en la plataforma de desarrollo.
+Finalmente se debe de ingresar el archivo binario generado al flujo de trabajo de EmbedSynthGNC, el cual, se encargara de dar como salida un sistema de archivos de arranque y el sistema de directorios listos para implementar en la plataforma de desarrollo.
 
 
 \section{Creación de los entornos de desarrollo}
 
-En esta sección se describen los pasos necesarios para la creación de los entornos de desarrollo utilizados en este proyecto. En el mismo se incluye la información del hardware y software utilizado, además de las versiones de los sistemas requeridos para cada una de las implementaciones. 
+En esta sección se describen los pasos necesarios para la creación de los entornos de desarrollo utilizados en este proyecto. En el mismo se incluye la información del hardware y software utilizado, además de las versiones de los sistemas para cada una de las implementaciones. Cabe destacar que el computador anfitrión en el cual se implementan estos entornos de desarrollo tiene las siguientes características:
 
-\subsection{MATLAB}\label{subsec:generacion_entorno_matlab}
-Primeramente se describirá el hardware utilizado para ejecutar MATLAB y sus herramientas, la versión utilizada es MATLAB 2024b por medio de una licencia de prueba de la versión full, esta misma se ejecuta en una computadora con las siguientes características: 
 \begin{itemize}
-    \item Procesador Intel i9 - 14900k 
-    \item Almacenamiento 500 GB 
+    \item Procesador Intel i9 - 13900k 
+    \item Almacenamiento 1 TB
     \item Memoria 16 GB
     \item Video Nvidia RTX4060Ti
 \end{itemize}
 
-Las herramientas adicionales instaladas en el entorno de MATLAB son:
+\subsection{MATLAB}\label{subsec:generacion_entorno_matlab}
+
+Para el entorno de MATLAB se utiliza como sistema operativo Windows 11, en su versión de 64 bits, se destina a este sistema operativo un espacio en disco de 500 GB, en el cual se instalen los programas requeridos para la generación de contenido y el análisis de datos. La versión utilizada es MATLAB 2024b por medio de una licencia de prueba de la versión full, la cual nos permitirá generar y probar el contenido necesario para los casos de uso a tratar. Por otro lado, para el análisis y procesamiento de datos se utiliza Python 3.12.3.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{fig/especifico_2/Entorno_windows}
+    \caption{Diagrama para generar el entorno de MATLAB}
+    \label{fig:diagrama_entorno_matlab}
+\end{figure}
+
+Como se muestra en la Figura \ref{fig:diagrama_entorno_matlab}, para la generación de este entorno de trabajo primeramente se deberá de realizar la instalación de Python 3.12.3 y seguido de esto la instalación de MATLAB con las herramientas requeridas. Finalmente se debe de instalar GCC en su versión 6.3.0.
+
+Primeramente se debe de realizar la descarga de Visual Studio desde \href{https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user}{este enlace}, esto con el fin de poder hacer uso de Jupyter Notebook para el análisis de datos, además de esto se debe de descargar Python en su versión 3.12.3 desde esta \href{https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe}{dirección}. 
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{fig/especifico_2/Ambiente_matlab/instalacion_python.png}
+    \caption{Menú de instalación de Python}
+    \label{fig:menu_python}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.png}
+    \caption{Menú de instalación de Python}
+    \label{fig:menu_python_adicionales}
+\end{figure}
+
+Una vez descargados estos programas se debe de realizar la instalación de los mismos, primeramente se debe de instalar Python, el cual como se observó en la Figura \ref{fig:menu_python} se debe de seleccionar la opción para agregar Python al directorio PATH, esto con el fin de poder instalar los entornos y librerías requeridas. Seguido de esto se debe de seleccionar la opción de instalación personalizada (Customize installation) con el fin de poder agregar las características que se mostraron en la Figura \ref{fig:menu_python_adicionales}. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{fig/especifico_2/Ambiente_matlab/instalacion_vs_code.png}
+    \caption{Menú de instalación de VS Code}
+    \label{fig:menu_vscode}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.png}
+    \caption{Menú de instalación de VS Code}
+    \label{fig:menu_vscode_adicionales}
+\end{figure}
+
+Una vez concluida la instalación de Python se debe proseguir con VS Code, el cual como se pudo observar en la Figura \ref{fig:menu_vscode}, se deben de aceptar los términos y condiciones del programa y en el siguiente menú se deben seleccionar las opciones marcadas en la Figura \ref{fig:menu_vscode_adicionales}.
+
+Finalmente se debe de realizar la descarga de MATLAB la cual se puede conseguir por medio de \href{https://matlab.mathworks.com/}{este enlace}, se debe de generar una cuenta y descargar la versión de prueba que tiene una durabilidad de 30 días, o bien si se cuenta con la licencia del producto no es necesario recurrir a esta. Dentro de la instalación es importante mencionar que se podrán solicitar todas las herramientas dentro del periodo de prueba, pero las que son fundamentales para el desarrollo del mismo son las siguientes:
 
 \begin{itemize}
-    \item Simulink
+    \item MATLAB Simulink
     \item MATLAB Coder
 \end{itemize}
 
-Además de esto se instala la herramienta GCC en su versión 6.3.0, el cual es el compilador de código C, este se utilizara para compilar el código y probar que el mismo funcione de la forma esperada; cabe destacar, que este no es el compilador cruzado, este compilador nos genera un archivo binario el cual podremos probar en el sistema Windows, esto con el fin de poder realizar correcciones más eficientes al sistema de control en caso de ser requerido.
+Además, se instala la herramienta GCC en su versión 6.3.0, el cual es el compilador de código C, este se utilizara para compilar el código y probar que el mismo funcione de la forma esperada; cabe destacar, que este no es el compilador cruzado, este compilador nos genera un archivo binario el cual podremos probar en el sistema Windows, esto con el fin de poder realizar correcciones más eficientes al sistema de control en caso de ser requerido.
 
 \subsection{Contenedores}
 
 En la elaboración del proyecto se decanta por el uso de contenedores, ya que como se mencionó en \ref{sec:containers}, estos permiten encapsular todas las dependencias y configuraciones necesarias para ejecutar una aplicación. Esto asegura que la misma aplicación funcione de manera consistente en diferentes entornos, ya sea durante el desarrollo, en pruebas o en producción. 
 
-Cada contenedor opera de forma independiente, lo que permite ejecutar múltiples aplicaciones en el mismo sistema sin interferencias. Este aislamiento reduce significativamente el riesgo de conflictos entre diferentes versiones de software y dependencias, lo que se traduce en un entorno más estable y predecible. Los contenedores se ejecutan en un sistema operativo Linux en su versión 22.04 LTS.
-
-El sistema donde se ejecutan los contenedores cuenta con las siguientes características:
-
-\begin{itemize}
-    \item Procesador Intel i9 - 14900k
-    \item Almacenamiento 500 GB 
-    \item Memoria 16 GB
-    \item Video Nvidia RTX4060Ti
-\end{itemize}
-
-Una vez que se hayan comprendido el sistema operativo y las características del hardware del computador anfitrión, se presentarán los comandos básicos para la creación y gestión de contenedores.
+Cada contenedor opera de forma independiente, lo que permite ejecutar múltiples aplicaciones en el mismo sistema sin interferencias. Este aislamiento reduce significativamente el riesgo de conflictos entre diferentes versiones de software y dependencias, lo que se traduce en un entorno más estable y predecible. Los contenedores se elaboran en el computador anfitrión en un sistema operativo Linux en su versión 22.04 LTS.
 
 \subsubsection{Comandos utilizados para la creación y gestión de contenedores}\label{subsec:manejo_de_contenedores}
 
@@ -63,13 +100,13 @@ Una vez que se hayan comprendido el sistema operativo y las características del
     sudo apt install docker.io
 \end{lstlisting}
 
-Como se puede observar mediante el uso de \ref{lst:install_docker}, se realiza la instalación de docker.io, el cual como se mencionó en \ref{sec:containers}, es una plataforma que permite la creación, despliegue y gestión de aplicaciones en contenedores. 
+Como se pudo observar, mediante el uso de \ref{lst:install_docker}, se realiza la instalación de docker.io, el cual como se mencionó en \ref{sec:containers}, es una plataforma que permite la creación, despliegue y gestión de aplicaciones en contenedores. 
 
 \begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 20.04, Linux}, label=lst:install_20_04_ubuntu]
     sudo docker run -it ubuntu:20.04 /bin/bash
 \end{lstlisting}
 
-Por medio del comando \ref{lst:install_20_04_ubuntu} se realiza la construccion de la máquina dentro del entorno del contenedor. Este último comando se encarga de descargar la imagen de Ubuntu 20.04, crea y ejecuta un contenedor en modo interactivo además de proporcionar acceso al terminal del contenedor, donde se ejecutan comandos como si fuera una máquina virtual con Ubuntu 20.04. Este contenedor será utilizado para realizar la compilación cruzada, se utiliza Ubuntu 20.04, ya que esta versión contiene la versión de GCC que satisface los requerimientos impuestos por otros flujos de trabajo.
+Por medio del comando \ref{lst:install_20_04_ubuntu} se realiza la construcción del contenedor. Este último comando se encarga de descargar la imagen de Ubuntu 20.04, crea y ejecuta un contenedor en modo interactivo además de proporcionar acceso al terminal del contenedor, donde se ejecutan comandos como si fuera una máquina virtual con Ubuntu 20.04. Este contenedor será utilizado para realizar la compilación cruzada, se utiliza Ubuntu 20.04, ya que esta versión contiene la versión de GCC que satisface los requerimientos impuestos por otros flujos de trabajo.
 
 \begin{lstlisting}[language=bash, caption={Instalacion de Ubuntu 16.04, Linux}, label=lst:install_16_04_ubuntu]
     sudo docker run -it ubuntu:16.04 /bin/bash
@@ -90,7 +127,7 @@ Por otro lado por medio del comando mostrado en \ref{lst:install_16_04_ubuntu}, 
 
 Una vez generados los dos contenedores, los mismos podrán ser consultados mediante el comando que se muestra en \ref{lst:docker_basics_ps-a}, este se encarga de devolver una lista como la que se muestra en \ref{fig:sudo_docker_ps_a}, donde se puede observar de izquierda a derecha las columnas denominadas: Container ID, el cual es el identificador del contenedor, este valor se debe de utilizar para referirse al contenedor para las operaciones que se realizan fuera del entorno, también se muestra la Imagen que el contenedor tiene instalada, el comando de creación del mismo, la creación del contenedor, el status, los puertos definidos y el Nombre.
 
-Para efectos de este proyecto se tomará importancia solamente a las columnas de Container ID e Imagen.
+Para efectos de este proyecto se tomará importancia solamente a las columnas de (Container ID) e (Image).
 
 \begin{lstlisting}[language=bash, caption={Iniciar un contenedor, Docker}, label=lst:docker_basics_start]
     sudo docker start <ID del contenedor>
@@ -103,7 +140,7 @@ Para efectos de este proyecto se tomará importancia solamente a las columnas de
     \label{fig:sudo_docker_start}
 \end{figure}
 
-Por medio del comando que se muestra en \ref{lst:docker_basics_start} se inicia el contenedor deseado, esto siempre dependerá del ID que se coloque, tras la ejecución de este comando la salida del mismo se puede observar en la Figura \ref{fig:sudo_docker_start}
+Por medio del comando que se muestra en \ref{lst:docker_basics_start} se inicia el contenedor deseado, esto siempre dependerá del ID que se coloque, tras la ejecución de este comando la salida del mismo se puede observar en la Figura \ref{fig:sudo_docker_start}.
 
 \begin{lstlisting}[language=bash, caption={Ingresar a un contenedor, Docker}, label=lst:docker_basics_init]
     sudo docker exec -it <ID del contenedor> \bin\bash
@@ -122,12 +159,15 @@ Una vez generados los contenedores, se procede a generar el entorno de desarroll
 
 \subsubsection{Contenedor para compilación Cruzada}\label{subsec:generacion_entorno_xcompile}
 
-Este contenedor será en el cual se lleve a cabo la compilación cruzada, es por esto que el mismo contendrá las herramientas que se mencionan a continuación:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{fig/especifico_2/diagrama_compilador_cruzado.pdf}
+    \caption{Diagrama para la elaboración del entorno para compilación cruzada}
+    \label{fig:cross_compile_diagram}
+\end{figure}
 
-\begin{itemize}
-    \item Compilador cruzado el cual sea compatible con la plataforma de desarrollo
-    \item Constructor de archivos
-\end{itemize}
+Para la compilación de los archivos se elabora un entorno para compilación cruzada, esto se debe a que el archivo se debera de compilar para la ejecucion en la plataforma de desarrollo seleccionada, es por esto que para la preparacion del entorno se siguen los pasos que se muestran en la Figura \ref{fig:cross_compile_diagram}
+
 
 \begin{lstlisting}[language=bash, caption={Instalacion del compilador cruzado, Contenedor}, label=lst:cross_compiler]
     sudo apt install gcc-arm-linux-gnueabihf
@@ -141,19 +181,21 @@ Este contenedor será en el cual se lleve a cabo la compilación cruzada, es por
     sudo apt install build-essential
 \end{lstlisting}
 
-Una vez generado el contenedor debemos de instalar en el mismo el compilador cruzado que para nuestros efectos será arm-linux-gnueabihf-gcc, esto lo podemos hacer mediante el comando que se muestra en \ref{lst:cross_compiler},  CMake el cual es una herramienta de construcción multiplataforma y de código abierto que se utiliza para gestionar la construcción de software utilizando un enfoque basado en proyectos y finalmente build-essential las cuales son herramientas que nos ayudaran a compilar el programa generado.
+Primeramente se debe de instalar el compilador cruzado, para nuestros efectos será arm-linux-gnueabihf-gcc, esto lo podemos hacer mediante el comando que se muestra en \ref{lst:cross_compiler}. Seguido de esto debemos de instalar CMake el cual es una herramienta de construcción multiplataforma y de código abierto que se utiliza para gestionar la construcción de software, el mismo se instala mediante el comando que se muestra en \ref{lst:cmake}. Finalmente debemos  de instalar build-essential las cuales son herramientas que nos ayudaran a compilar el programa generado, esta instalación se logra mediante el uso del comando mostrado en \ref{lst:build_essential}. Con estas tres instalaciones queda preparado el entorno para la compilación cruzada. 
 
 
 \subsubsection{Contenedor para Yocto Project}\label{subsec:generacion_entorno_yocto}
 
-El contenedor para Yocto Project, será en el cual se lleve a cabo la construcción de la imagen a utilizar en la plataforma de desarrollo, para esto se requiere la instalación de algunas dependencias las cuales se mencionan a continuación:
+\begin{figure}[h!] 
+    \centering
+    \includegraphics[width=0.85\textwidth]{fig/especifico_2/diagrama_de_entorno_yocto_project.pdf}
+    \caption{Diagrama para la elaboración del entorno para Yocto Project}
+    \label{fig:yocto_enviroment_diagram}
+\end{figure}
 
-\begin{itemize}
-    \item Instalacion de tree 
-    \item Instalacion de vim
-    \item Creación de un usuario no Root
-    \item Yocto Project
-\end{itemize}
+El contenedor para Yocto Project, será en el cual se lleve a cabo la construcción de la imagen a utilizar en la plataforma de desarrollo, para esto se requiere la instalación de algunas dependencias las cuales se pueden observar en la Figura \ref{fig:yocto_enviroment_diagram}
+
+
 
 \subsubsection{Creación de un usuario no root}
 
