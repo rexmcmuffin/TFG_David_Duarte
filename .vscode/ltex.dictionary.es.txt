@@ -57,3 +57,4 @@ core
 usb
 vivado
 Vivado
+BitBake

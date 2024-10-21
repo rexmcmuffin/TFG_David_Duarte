@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iv}}{chapter*.6}%
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {v}}{chapter*.7}%
-\contentsline {chapter}{Revisar}{\es@scroman {vii}}{chapter*.9}%
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vi}}{chapter*.7}%
+\contentsline {chapter}{Revisar}{\es@scroman {viii}}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Proceso de diseño de los sistemas de Guía, Navegación y Control espacial}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Requerimientos de los sistemas}{1}{subsection.1.1.1}%
@@ -68,28 +68,28 @@
 \contentsline {subsubsection}{Contenedor para Yocto Project}{35}{section*.40}%
 \contentsline {subsubsection}{Creación de un usuario no root}{36}{section*.42}%
 \contentsline {subsubsection}{Yocto Project}{36}{section*.43}%
-\contentsline {section}{\numberline {4.2}Selección del caso de estudio}{37}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Simulación del caso de estudio en MATLAB Simulink}{38}{subsection.4.2.1}%
-\contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulación}{39}{section*.47}%
-\contentsline {section}{\numberline {4.3}Flujo de trabajo de la aplicación de transformación de modelo a modelo}{39}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Simulink Coder}{40}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Definición de parámetros}{40}{subsection.4.3.2}%
-\contentsline {subsubsection}{Selección del procesador objetivo}{40}{section*.51}%
-\contentsline {subsubsection}{Selección del tipo de archivo de construcción}{42}{section*.53}%
-\contentsline {subsubsection}{Generación de archivos de compilación}{42}{section*.55}%
-\contentsline {subsection}{\numberline {4.3.3}Compilación de los binarios}{43}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Flujo de Trabajo EmbedSynthGNC}{44}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Creación de una capa de yocto}{44}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Caso de estudio}{45}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Integración del programa generado a la capa de Yocto}{46}{subsection.4.4.3}%
-\contentsline {subsubsection}{sistema\_control.bb}{46}{section*.61}%
-\contentsline {subsection}{\numberline {4.4.4}Generación de la imagen mínima}{46}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}{47}{subsection.4.4.5}%
-\contentsline {subsection}{\numberline {4.4.6}Conexión de la tarjeta de desarrollo con el computador host}{48}{subsection.4.4.6}%
-\contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{49}{subsection.4.4.7}%
-\contentsline {subsection}{\numberline {4.4.8}Comparación de resultados}{49}{subsection.4.4.8}%
-\contentsline {section}{\numberline {4.5}Reflexión final}{50}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Solución propuesta}{51}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{52}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{53}{chapter*.65}%
-\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{55}{appendix.Alph1}%
+\contentsline {section}{\numberline {4.2}Caso de estudio 1 - Filtro Básico en MATLAB}{38}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Simulación del caso de estudio en MATLAB Simulink}{42}{subsection.4.2.1}%
+\contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulación}{43}{section*.53}%
+\contentsline {section}{\numberline {4.3}Flujo de trabajo de la aplicación de transformación de modelo a modelo}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Simulink Coder}{44}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Definición de parámetros}{45}{subsection.4.3.2}%
+\contentsline {subsubsection}{Selección del procesador objetivo}{46}{section*.59}%
+\contentsline {subsubsection}{Selección del tipo de archivo de construcción}{46}{section*.61}%
+\contentsline {subsubsection}{Generación de archivos de compilación}{47}{section*.63}%
+\contentsline {subsection}{\numberline {4.3.3}Compilación del Código C generado}{48}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Flujo de Trabajo EmbedSynthGNC}{49}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Creación de una capa de yocto}{49}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Caso de estudio 1 - Filtro Básico en ZedBoard}{50}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Integración del programa generado a la capa de Yocto}{50}{subsection.4.4.3}%
+\contentsline {subsubsection}{caso\_de\_estudio\_1.bb}{51}{section*.69}%
+\contentsline {subsection}{\numberline {4.4.4}Generación de la imagen}{51}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}{52}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Conexión de la tarjeta de desarrollo con el computador host}{52}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{54}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Comparación de resultados}{54}{subsection.4.4.8}%
+\contentsline {section}{\numberline {4.5}Reflexión final}{55}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{56}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{57}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{58}{chapter*.73}%
+\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{60}{appendix.Alph1}%

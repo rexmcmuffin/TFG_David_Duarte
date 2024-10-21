@@ -87,7 +87,7 @@ Finalmente se debe de realizar la descarga de MATLAB la cual se puede conseguir 
 
 Además, se instala la herramienta GCC en su versión 6.3.0, el cual es el compilador de código C, este se utilizara para compilar el código y probar que el mismo funcione de la forma esperada; cabe destacar, que este no es el compilador cruzado, este compilador nos genera un archivo binario el cual podremos probar en el sistema Windows, esto con el fin de poder realizar correcciones más eficientes al sistema de control en caso de ser requerido.
 
-\subsection{Contenedores}
+\subsection{Contenedores}\label{sec:entorno_en_contenedores}
 
 En la elaboración del proyecto se decanta por el uso de contenedores, ya que como se mencionó en \ref{sec:containers}, estos permiten encapsular todas las dependencias y configuraciones necesarias para ejecutar una aplicación. Esto asegura que la misma aplicación funcione de manera consistente en diferentes entornos, ya sea durante el desarrollo, en pruebas o en producción. 
 
@@ -190,10 +190,10 @@ Primeramente se debe de instalar el compilador cruzado, para nuestros efectos se
     \centering
     \includegraphics[width=0.85\textwidth]{fig/especifico_2/diagrama_de_entorno_yocto_project.pdf}
     \caption{Diagrama para la elaboración del entorno para Yocto Project}
-    \label{fig:yocto_enviroment_diagram}
+    \label{fig:yocto_enviroment_diagram_figure}
 \end{figure}
 
-El contenedor para Yocto Project, será en el cual se lleve a cabo la construcción de la imagen a utilizar en la plataforma de desarrollo, para esto se requiere la instalación de algunas dependencias las cuales se pueden observar en la Figura \ref{fig:yocto_enviroment_diagram}
+El contenedor para Yocto Project, será en el cual se lleve a cabo la construcción de la imagen a utilizar en la plataforma de desarrollo, para esto se requiere la instalación de algunas dependencias las cuales se pueden observar en la Figura \ref{fig:yocto_enviroment_diagram_figure}.
 
 
 
@@ -208,14 +208,13 @@ Para el uso del marco de trabajo de Yocto se debe de generar un usuario no root,
     usermod - aG sudo myuser
 \end{lstlisting}
 
-De forma que según el comando observado en \ref{lst:no_root_user}, en la primera línea instalamos sudo, seguido de esto en la segunda línea se agrega el usuario denominado "myuser", en la tercera línea se genera una contraseña para este usuario la cual se define como "chpasswd", finalmente se agrega en el archivo usermod el nuevo usuario. 
+De forma que según el comando observado en \ref{lst:no_root_user}, en la primera línea instalamos sudo, esto con el fin de poder ejecutar comandos con privilegios de administrador sin tener que iniciar sesión como usuario root, seguido de esto en la segunda línea se agrega el usuario denominado (myuser), en la tercera línea se genera una contraseña para este usuario la cual se define como (chpasswd), finalmente se agrega en el archivo usermod el nuevo usuario el cual, mediante el comando sudo tiene acceso a los privilegios de administrador. 
 
 \begin{lstlisting}[language=bash, caption={Iniciar usuario no root, Linux}, label=lst:no_root_user_log]
     su - myuser
 \end{lstlisting}
 
-
-Cada vez que iniciemos el contenedor siempre lo haremos como usuario root, para poder iniciar con el usuario no root llamado "myuser" se debe de hacer uso del comando que se muestra en \ref{lst:no_root_user_log}.
+Cada vez que iniciemos el contenedor siempre lo haremos como usuario root, para poder iniciar con el usuario no root generado en \ref{lst:no_root_user}, se debe de hacer uso del comando que se muestra en \ref{lst:no_root_user_log}, el cual se encarga de iniciar el entorno bajo el usuario llamado (myuser). Cada vez que se realice alguna instalación o procedimiento que requiera permisos de administrador se deberá de ingresar la contraseña.
 
 \subsubsection{Yocto Project}
 
@@ -241,7 +240,7 @@ Para que el mismo funcione de forma correcta debemos de instalar los requerimien
     git clone -b zeus https://github.com/openembedded/meta-openembedded.git
 \end{lstlisting}
 
-La versión de yocto a utilizar se debe de clonar de \ref{lst:yocto_clone}, seguido de esto se debe de ir a la rama de la versión Yocto Zeus. Además de clonar este repositorio se debe de ingresar al directorio denominado poky y clonar dentro del repositorio \ref{lst:yocto_zedboard} el cual contiene en su rama llamada Zeus la versión de paquete de soporte para la tarjeta requerida para generar una imagen para la tarjeta de desarrollo seleccionada.
+La versión de yocto a utilizar es Yocto Zeus, ya que esta versión es la que contiene soporte para la tarjeta de desarrollo seleccionada, los archivos de esta versión se deben de clonar de \ref{lst:yocto_clone}. Una vez clonado el repositorio se debe de ingresar al directorio (poky) y clonar dentro del mismo el repositorio \ref{lst:yocto_zedboard} el cual contiene la versión de paquete de soporte para la tarjeta requerida, esto con el fin de generar una imagen para la tarjeta de desarrollo seleccionada.
 
 \begin{lstlisting}[language=bash, caption={Configuraciones adicionales, Yocto}, label=lst:aditional_config]
     source oe - init - build - env
@@ -254,46 +253,91 @@ La versión de yocto a utilizar se debe de clonar de \ref{lst:yocto_clone}, segu
     bitbake-layers add-layer ../meta-openembedded/meta-oe/
 \end{lstlisting}
 
-Algunas configuraciones adicionales que se deben de realizar se muestran en \ref{lst:aditional_config}.
+Una vez clonados los repositorios podemos continuar con algunas configuraciones adicionales que se deben de realizar, con el fin de configurar correctamente el entorno de trabajo, estas se muestran en \ref{lst:aditional_config}. La primera línea se encarga de configurar el entorno de trabajo dentro del directorio llamado (build). Dentro del entorno de trabajo generado en (build) en el directorio llamado (conf) encontramos archivos como lo son el local.conf el cual es un archivo de configuración utilizado por el sistema de compilación BitBake. Este archivo esta escrito en lenguaje de configuración de BitBake, define aspectos importantes como la arquitectura del objetivo, la distribución del sistema las imágenes a crear y las herramientas utilizadas, además de incluir rutas adicionales a capas de Yocto o bien a configuraciones específicas de las recetas. 
+
+Además de esto también nos encontramos con el archivo llamado bblayers.conf, este al igual que local.conf, es un archivo de configuración de BitBake que define las capas que se utilizan durante el proceso de compilación. En este como se mencionó anteriormente se encuentran las rutas de las diferentes capas que el sistema de compilación de Yocto debe usar. Estas capas contienen las recetas y los archivos de configuración que controlan la compilación de paquetes, imágenes y el sistema operativo en general. Cabe destacar que el orden en el que se listan las capas puede ser importante, ya que capas más específicas pueden sobreescribir las configuraciones o recetas de capas más generales.
+
+Una vez comprendidos estos conceptos la línea 3 de \ref{lst:aditional_config} se encarga de agregar la máquina, que en nuestro caso sería la tarjeta de desarrollo ZedBoard de Avnet, la línea 4 se encarga de habilitar la administración de paquetes, esto quiere decir que se asegura que el sistema que se está construyendo incluirá las herramientas necesarias para gestionar paquetes (como instalar, actualizar o eliminar) después de que el sistema haya sido desplegado. La línea 4 es la encargada de establecer el nombre del anfitrión, el sistema operativo generado tendrá el nombre de anfitrión configurado como zynq. Por otro lado, la línea 7 y 8 se encargan de agregar las capas al archivo de bblayers.conf.
+
+Finalizada la configuración básica de los entornos de trabajo se sigue con las siguientes secciones en donde se desarrollaran los casos de estudio con el objetivo de demostrar el funcionamiento del flujo de trabajo propuesto en la Figura \ref{fig:diagrama_flujo_trabajo}.
+
+\section{Caso de estudio 1 - Filtro Básico en MATLAB}
+
+Como caso de estudio se seleccionó una aplicación la cual permite realizar una comparación de resultados antes y después del procesamiento de datos, es por esto que se decidió implementar un filtro básico de tipo paso bajo haciendo uso de los bloques de MATLAB Simulink. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf}
+    \caption{Diagrama caso de estudio 1 - Filtro Básico}
+    \label{fig:diagrama_matlab_simulink}
+\end{figure}
+
+Para la construcción del caso de estudio sé propone el diagrama de la Figura \ref{fig:diagrama_matlab_simulink}, donde para su construcción se llevaran a cabo los siguientes pasos.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.png}
+    \caption{Librería de bloques}
+    \label{fig:lib_bloq}
+\end{figure}
+
+Primeramente se deberá de tener acceso a la librería de bloques, la misma se puede encontrar en la ubicación que se muestra en la Figura \ref{fig:lib_bloq}, a esta se debe de acceder haciendo click en el icono que se encuentra resaltado en la Figura anteriormente mencionada.
+\newpage
 
 
-\section{Selección del caso de estudio}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.png}
+    \caption{Librería de bloques - generador de onda senoidal}
+    \label{fig:lib_bloq_sine}
+\end{figure}
 
-Como caso de estudio se seleccionó una aplicación la cual permitiera una comparación de resultados antes del procesado y después del mismo, es por esto que se decidió implementar un filtro  de tipo paso bajo haciendo uso de los siguientes bloques de MATLAB Simulink. 
+Una vez en la librería de bloques, como se puede observar en la Figura \ref{fig:lib_bloq_sine} se debe ingresar en el buscador marcado en color verde la palabra clave del bloque que se desea buscar, para este caso se busca el generador de onda seno del cual se ocupan dos bloques. 
 
-\begin{itemize}
-    \item Onda seno
-    \item Suma
-    \item Función de transferencia
-    \item Generador de archivo de salida
-\end{itemize}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.png}
+        \caption{Generador de onda seno 1}
+        \label{fig:sine_gen_01}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.png}
+        \caption{Generador de onda seno 2}
+        \label{fig:sine_gen_02}
+    \end{subfigure}
+    \caption{Configuración de los generadores de onda senoidal}
+    \label{fig:sine_wave_generators_config}
+\end{figure}
 
-La configuración seleccionada para el primer generador de onda seno es:
+Para la configuración de los generadores de onda senoidales se deben de seguir las configuraciones que se muestran en la Figura \ref{fig:sine_wave_generators_config}, de forma que al primer bloque generador de onda seno se le debe colocar la configuración que se muestra en \ref{fig:sine_gen_01} y al segundo la que se muestra en \ref{fig:sine_gen_02}. De esta forma quedan configurados los bloques encargados de generar las ondas según los parámetros indicados.
 
-\begin{itemize}
-    \item Amplitud = 1
-    \item Bias = 0 
-    \item Frecuencia = 1 rad/s
-    \item Fase = 0 
-    \item Tiempo de muestreo = 0 
-\end{itemize}
 
-Por otro lado, para la segunda onda se tiene la configuración:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.png}
+    \caption{Librería de bloques - sumador de señales}
+    \label{fig:lib_bloq_sum}
+\end{figure}
 
-\begin{itemize}
-    \item Amplitud = 1
-    \item Bias = 0 
-    \item Frecuencia = 12 rad/s
-    \item Fase = 0 
-    \item Tiempo de muestreo = 0 
-\end{itemize}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.png}
+    \caption{Configuración del bloque sumador de señales}
+    \label{fig:lib_bloq_sum_conf}
+\end{figure}
 
-Ya que al sumar ondas de diferentes frecuencias, se puede observar un fenómeno llamado modulación, donde la onda resultante presenta un patrón que varía en el tiempo.
+
+Seguido de esto se debe de implementar el bloque sumador el cual se muestra en la Figura \ref{fig:lib_bloq_sum}, este mismo se debe de configurar como se muestra en la Figura \ref{fig:lib_bloq_sum_conf}, este bloque nos ayudara a sumar las dos señales senoidales, ya que al sumar ondas de diferentes frecuencias, se puede observar un fenómeno llamado modulación, donde la onda resultante presenta un patrón que varía en el tiempo.
 
 \begin{equation}
     y(t) = \sin(t) + \sin(12t)
     \label{eq:funcion_de_suma_de_ondas}
 \end{equation}
+\newpage
 
 Por otro lado la función de transferencia a utilizar en el filtro será:
 
@@ -302,27 +346,55 @@ Por otro lado la función de transferencia a utilizar en el filtro será:
     \label{eq:funcion_de_transferencia_filtro}
 \end{equation}
 
-Al aplicar el filtro a la señal compuesta,  la onda $\sin(t)$ pasará a través del filtro con poca atenuación, mientras que la onda $\sin(12t)$ será significativamente atenuada debido a su  alta frecuencia.
-
-\begin{figure}[h!]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{fig/especifico_2/Diagrama matlab simulink.pdf}
-    \caption{Diagrama MATLAB Simulink}
-    \label{fig:diagrama_matlab_simulink}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.png}
+        \caption{Librería de bloques - función de \\ transferencia}
+        \label{fig:lib_bloq_transfer_func}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.png}
+        \caption{Configuración del bloque función de \\ transferencia}
+        \label{fig:lib_bloq_transfer_func_conf}
+    \end{subfigure}
+    \caption{Bloque función de transferencia}
+    \label{fig:lib_bloq_transfer_func_all}
 \end{figure}
 
-Estos bloques mencionados anteriormente se colocan como se muestra en la Figura \ref{fig:diagrama_matlab_simulink} de modo que se obtienen como salida del sistema dos archivos, uno llamado señal sumada el cual contiene los datos crudos de la suma de las dos señales y otro denominado señal filtrada el cual contiene los datos de la señal filtrada por la función de transferencia.
+Como se puede observar en la Figura \ref{fig:lib_bloq_transfer_func_all}, podemos observar a la izquierda en \ref{fig:lib_bloq_transfer_func} el bloque de función de transferencia en la librería de bloques, por otro lado a la derecha en \ref{fig:lib_bloq_transfer_func_conf}, podemos observar la configuración que debemos de colocar al mismo, esto con el fin que ejecute la función que se muestra en \ref{eq:funcion_de_transferencia_filtro}. De esta forma al aplicar el filtro a la señal compuesta,  la onda $\sin(t)$ pasará a través del filtro con poca atenuación, mientras que la onda $\sin(12t)$ será significativamente atenuada debido a su  alta frecuencia.
+
+Estos bloques mencionados anteriormente se colocan como se muestra en la Figura \ref{fig:diagrama_matlab_simulink} de modo que se obtienen como salida del sistema dos archivos, uno llamado señal sumada el cual contiene los datos crudos de la modulación de las dos señales senoidales y otro denominado señal filtrada el cual contiene los datos de la señal filtrada por la función de transferencia.
+
+\newpage
 
 \subsection{Simulación del caso de estudio en MATLAB Simulink}\label{subsec:simulacion_caso_de_estudio}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\textwidth]{fig/especifico_2/Diagrama matlab simulink scope.pdf}
+    \includegraphics[width=0.5\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.png}
+    \caption{Librería de bloques - gráfico}
+    \label{fig:lib_bloq_graph}
+\end{figure}
+
+Para la simulación del caso de estudio que se muestra en la Figura \ref{fig:diagrama_matlab_simulink} se requiere un bloque adicional, el cual se encarga de mostrar de forma grafica los resultados de la ejecución, el bloque se muestra en la Figura \ref{fig:lib_bloq_graph}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf}
     \caption{Diagrama MATLAB Simulink para poder observar las salidas}
     \label{fig:diagrama_matlab_simulink_graficos}
 \end{figure}
 
-Utilizando el diagrama de la Figura \ref{fig:diagrama_matlab_simulink}, además de los parámetros configurados anteriormente se colocan dos bloques de gráfico en el diagrama como se muestra en la Figura \ref{fig:diagrama_matlab_simulink_graficos}, esto con el objetivo de poder observar las señales de salida en cada uno de los puntos de interés. 
+De esta forma el diagrama de la Figura \ref{fig:diagrama_matlab_simulink}, se colocan dos bloques de gráfico en el diagrama como se muestra en la Figura \ref{fig:diagrama_matlab_simulink_graficos}, esto con el objetivo de poder observar las señales de salida en cada uno de los puntos de interés.
+
+
+\newpage
+
+\subsubsection{Resultados obtenidos con la ejecución de la simulación}
 
 
 \begin{figure}[htbp]
@@ -345,42 +417,46 @@ Utilizando el diagrama de la Figura \ref{fig:diagrama_matlab_simulink}, además 
 \end{figure}
 
 
-Como se puede observar en la Figura \ref{fig:onda_modulada} se puede observar la salida de la suma de las dos señales senoidales, por otro lado en la Figura \ref{fig:onda_filtrada} se puede observar la salida de la función de transferencia.
-
-\subsubsection{Resultados obtenidos con la ejecución de la simulación}
-
-Como se mencionó anteriormente los resultados obtenidos se pueden observar en la Figura \ref{fig:salida_resultante_diagrama_graficos}, siendo la salida esperada de la función de transferencia, ya que al ser un filtro paso bajo atenúa las señales que estén por debajo de la frecuencia de corte, que para este filtro es de 1 $rad/s$. Como la señal compuesta contiene una onda seno con frecuencia de 1 $rad/s$ y otra con frecuencia de 12 $rad/s$ es posible observar aun componentes de la frecuencia atenuada.
+En la Figura \ref{fig:onda_modulada} se puede observar la modulación de las dos señales senoidales, por otro lado en la Figura \ref{fig:onda_filtrada} se puede observar la salida de la función de transferencia. Siendo la salida esperada de la función de transferencia, ya que al ser un filtro paso bajo atenúa las señales que estén por debajo de la frecuencia de corte, que para este filtro es de 1 $rad/s$. Como la señal compuesta contiene una onda seno con frecuencia de 1 $rad/s$ y otra con frecuencia de 12 $rad/s$ es posible observar aun componentes de la frecuencia atenuada.
 
 \section{Flujo de trabajo de la aplicación de transformación de modelo a modelo}
 
-Para poder cumplir con el objetivo de embeber el sistema, se debe de hacer uso del MATLAB Simulink Coder, el cual tiene la capacidad de convertir un sistema de control generado en MATLAB Simulink, en un código C. Algunos de los parámetros que se pueden configurar en este transformador de modelos son: parámetros de la solución, implementación en hardware y generación de código.
+Para poder cumplir con el objetivo de embeber el sistema, se debe de hacer uso de la herramienta MATLAB Simulink Coder. Como se mencionó en \ref{sec:modelo2model}, a este tipo de aplicaciones se les conoce como transformadores de modelos, en este caso se emplea para lograr transformar el diagrama de control implementado en MATLAB Simulink en un código de lenguaje C, manteniendo de esta forma la estructura del modelo, pero realizando una adaptación al formato requerido, este convertidor de modelos garantiza la consistencia del modelo de control además de realizar la adaptación del mismo a las características de la tarjeta de desarrollo ZedBoard. Algunos de los parámetros que se pueden configurar en este transformador de modelos son: parámetros de la solución, implementación en hardware y generación de código.
+\newpage
 
-A lo largo de este capítulo se definirán los parámetros que se deben de utilizar y el funcionamiento de estos dentro de la generación del código C.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/model_2_model_diagram.pdf}
+    \caption{Flujo de trabajo MATLAB Simulink Coder}
+    \label{fig:m2m_matlab_simulink_coder}
+\end{figure}
+
+En la Figura \ref{fig:m2m_matlab_simulink_coder} se puede encontrar un diagrama que contempla los pasos a seguir en esta sección, los cuales se explicaran a lo largo de este capítulo, además, se definirán los parámetros que se deben de utilizar y el funcionamiento de estos dentro de la generación del código C.
 
 \subsection{Simulink Coder}\label{subsec:simulink_coder}
 
-Una vez comprobado el comportamiento esperado por el caso de estudio se puede proceder con la ejecución del flujo de trabajo de MATLAB Simulink Coder, esto con el fin de transformar el modelo generado en Simulink a un modelo de lenguaje de programación C. Cabe destacar que para esta implementación se utilizó el diagrama que se muestra en la Figura \ref{fig:diagrama_matlab_simulink}, ya que, este solamente contiene como salida los archivos con los datos numéricos del sistema y no contiene las salidas gráficas agregadas en \ref{subsec:simulacion_caso_de_estudio}.
+Una vez comprobado el comportamiento esperado por el caso de estudio mediante la simulación, se puede proceder con la ejecución del flujo de trabajo de MATLAB Simulink Coder, esto con el fin de transformar el modelo generado en MATLAB Simulink a un modelo de lenguaje de programación C. Cabe destacar que para esta implementación se utilizó el diagrama que se muestra en la Figura \ref{fig:diagrama_matlab_simulink}, ya que, este solamente contiene como salida los archivos con los datos numéricos del sistema y no contiene las salidas gráficas agregadas en \ref{subsec:simulacion_caso_de_estudio}.
 
 
 \subsection{Definición de parámetros}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/apps.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.png}
     \caption{Pestaña Aplicaciones}
     \label{fig:pestana_apps}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/c_code.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.png}
     \caption{Pestaña código C}
     \label{fig:pestana_c_code}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/configuration_parameters.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.png}
     \caption{Configuración de parámetros}
     \label{fig:pestana_config}
 \end{figure}
@@ -393,7 +469,7 @@ Una vez estemos en la pestaña de código C, debemos de ir a la opción de confi
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/configuration_parameters_processor.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.png}
     \caption{Selección del procesador y la familia del procesador}
     \label{fig:pestana_config_procesador}
 \end{figure}
@@ -408,7 +484,7 @@ Anteriormente configuramos los parámetros de tiempo de operación y procesador 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/configuration_output_file.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.png}
     \caption{Selección del tipo de archivo de construcción}
     \label{fig:pestana_config_output_file}
 \end{figure}
@@ -419,7 +495,7 @@ Una vez configurados todos los parámetros mencionados anteriormente debemos de 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/root_folder.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.png}
     \caption{Archivo comprimido en el directorio swap\_area}
     \label{fig:pestana_swap_area}
 \end{figure}
@@ -434,9 +510,9 @@ Una vez configurados todos los parámetros mencionados anteriormente debemos de 
     /direccion/del/archivo
 \end{lstlisting}
 
-Seguido de esto se debe de copiar el archivo comprimido generado en \ref{subsec:simulink_coder}, al contenedor con Ubuntu. Primeramente colocaremos el archivo comprimido en un directorio llamado swap\_area, tal y como se muestra en \ref{fig:pestana_swap_area}. Seguido de esto se debe de descomprimir el archivo. Una vez descomprimido el archivo, como se mencionó anteriormente, lo enviaremos al contenedor haciendo uso del comando \ref{lst:copy_to_container}.
+Seguido de esto se debe de copiar el archivo comprimido generado en \ref{subsec:simulink_coder}, al contenedor con Ubuntu 16.04 generado en \ref{sec:entorno_en_contenedores}. Primeramente colocaremos el archivo comprimido en un directorio llamado swap\_area, tal y como se muestra en \ref{fig:pestana_swap_area}. Seguido de esto se debe de descomprimir el archivo. Una vez descomprimido el archivo, como se mencionó anteriormente, lo enviaremos al contenedor haciendo uso del comando \ref{lst:copy_to_container}.
 
-\subsection{Compilación de los binarios}\label{subsec:compilacion_binario}
+\subsection{Compilación del Código C generado}\label{subsec:compilacion_binario}
 
 \begin{lstlisting}[language=bash, caption={Compilacion del programa, Linux}, label=lst:build_cmake_file]
     cmake -DCMAKE_C_COMPILER=arm-linux-gnueabihf-gcc 
@@ -445,7 +521,7 @@ Seguido de esto se debe de copiar el archivo comprimido generado en \ref{subsec:
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/cmake_file.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.png}
     \caption{Make File}
     \label{fig:make_file}
 \end{figure}
@@ -453,26 +529,26 @@ Seguido de esto se debe de copiar el archivo comprimido generado en \ref{subsec:
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/paso_a_paso_mtmt/binario_compilado.png}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.png}
     \caption{Binario llamado simple\_filter}
     \label{fig:binario_compilado}
 \end{figure}
 
-Para la compilación del archivo binario se deberá hace uso del comando \ref{lst:build_cmake_file} por el cual se construirá el Makefile, tal y como se muestra en la Figura \ref{fig:make_file}, una vez generado el Makefile se ejecutó el comando make el cual da como salida los binarios requeridos para la ejecución del programa. Los mismos se observan como se muestra en la Figura \ref{fig:binario_compilado}.
+Para la compilación del archivo binario se deberá hace uso del comando \ref{lst:build_cmake_file} por el cual se construirá el Makefile, tal y como se muestra en la Figura \ref{fig:make_file}, una vez generado el Makefile se ejecutó el comando (Make) el cual da como salida los binarios requeridos para la ejecución del programa. Los mismos se observan como se muestra en la Figura \ref{fig:binario_compilado}.
 
 Una vez compilado el archivo binario, se puede continuar con el flujo que se presenta en el diagrama que se muestra en la Figura \ref{fig:diagrama_flujo_trabajo}, lo cual sería la implementación de los binarios en una imagen de yocto.
-
+\newpage
 
 \section{Flujo de Trabajo EmbedSynthGNC}
 
-Como se pudo observar anteriormente se realizó la compilación cruzada de un caso de estudio, el mismo ahora se debe de implementar en un sistema operativo a la medida mediante el flujo de trabajo de Yocto Project, como se mencionó en \ref{subsec:yocto}, Yocto Project es un marco de trabajo utilizado para el desarrollo de sistemas embebidos especializado en la construcción de distribuciones de Linux a la medida. 
-
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/Flujo de trabajo de mi idea.pdf}
-    \caption{Flujo de trabajo Yocto}
-    \label{fig:flujo_yocto}
+    \includegraphics[width=0.8\textwidth]{fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf}
+    \caption{Flujo de trabajo EmbedSynthGNC}
+    \label{fig:diagrama_embed_synth_gnc}
 \end{figure}
+
+Como se pudo observar anteriormente se realizó la compilación cruzada de un caso de estudio, el mismo ahora se debe de implementar en un sistema operativo a la medida mediante el flujo de trabajo de Yocto Project, como se mencionó en \ref{subsec:yocto}, Yocto Project es un marco de trabajo utilizado para el desarrollo de sistemas embebidos especializado en la construcción de distribuciones de Linux a la medida, cabe destacar que el flujo de trabajo a seguir se explica brevemente en la Figura \ref{fig:diagrama_embed_synth_gnc}. 
 
 En el desarrollo de esta sección se muestran los pasos que se siguieron para la generación de una imagen, la integración de una capa personalizada con el binario generado en \ref{subsec:compilacion_binario} y la implementación de la misma en la tarjeta de desarrollo seleccionada.
 
@@ -483,10 +559,10 @@ En el desarrollo de esta sección se muestran los pasos que se siguieron para la
 \end{lstlisting}
 
 \begin{lstlisting}[language=bash, caption={Inicializar ambiente, Yocto}, label=lst:yocto_ambient_set]
-    source oe-init-build-env
+    source oe-init-build-env build/
 \end{lstlisting}
 
-Para la generación de una capa de yocto primero debemos de estar seguros que nos encontramos en el directorio denominado POKY, esto lo podemos verificar por medio del uso del comando \ref{lst:pwd}, seguido de esto se debe de inicializar el entorno de desarrollo esto mediante el comando que se muestra en \ref{lst:yocto_ambient_set}, este se encarga de generar todos los archivos necesarios para poder hacer uso de las variables de entorno con las cuales opera el marco de trabajo de Yocto.
+Para la generación de una capa de yocto primero debemos de estar seguros que nos encontramos en el directorio denominado POKY, esto lo podemos verificar por medio del uso del comando \ref{lst:pwd}, seguido de esto se debe de inicializar el entorno de desarrollo esto mediante el comando que se muestra en \ref{lst:yocto_ambient_set}, este se encarga de inicializar el entorno así también como todos los requerimientos necesarios para poder hacer uso de las variables de entorno con las cuales opera el marco de trabajo.
 
 \begin{lstlisting}[language=bash, caption={Generar nueva capa, Yocto }, label=lst:yocto_new_layer]
     bitbake-layers create-layer <nombre-de-la-capa>
@@ -503,33 +579,31 @@ Para la generación de una capa de yocto primero debemos de estar seguros que no
     bitbake-layers add-layer ../<nombre-de-la-capa>
 \end{lstlisting}
 
-Seguido de esto se debe de utilizar el comando que se muestra en \ref{lst:yocto_new_layer} el cual se encargara de generar el árbol de directorios que se puede observar en la Figura \ref{fig:arbol_capa_custom_yocto}. Una vez implementado este comando se debe de hacer uso del comando que se muestra en \ref{lst:add_new_layer} para poder agregar la capa al archivo denominado bblayers.conf el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen.
+Seguido de esto se debe de utilizar el comando que se muestra en \ref{lst:yocto_new_layer} el cual se encargara de generar el árbol de directorios que se puede observar en la Figura \ref{fig:arbol_capa_custom_yocto}. Una vez implementado este comando se debe de hacer uso del comando que se muestra en \ref{lst:add_new_layer} para poder agregar la capa al archivo denominado bblayers.conf el cual contiene todas las rutas de acceso a las capas requeridas para generar la imagen. Para este caso de estudio se debe de generar una capa con el nombre de (meta-embedsynthGNC).
 
 
+\subsection{Caso de estudio 1 - Filtro Básico en ZedBoard}
 
-
-\subsection{Caso de estudio}
-
-En esta sección se integrará el caso de estudio generado en \ref{subsec:compilacion_binario}, a un sistema operativo a la medida por medio del marco de trabajo de Yocto Project, primeramente se generara una capa personalizada, seguido de esto se generara el archivo de instalación con el cual la capa personalizada pasara a ser parte del sistema de archivos del sistema embebido, también se generara la imagen mínima la cual consiste en un sistema de arranque y el sistema de archivos y finalmente se implementaran estos en la tarjeta de desarrollo seleccionada en \ref{ch:especifico1}.
+En esta sección se integrará el caso de estudio generado en \ref{subsec:compilacion_binario}, a un sistema operativo a la medida por medio del marco de trabajo de Yocto Project.
 
 \subsection{Integración del programa generado a la capa de Yocto}
 
-Para la implementación del binario generado en \ref{subsec:compilacion_binario}, se deben de generar algunos directorios, esto con el objetivo de mantener un entorno limpio y ordenado. Para contener todos los directorios que se deben de crear, se genera un directorio llamado "recipes-core" el cual dentro del mismo deberá de contener un directorio llamado "sistema\_control" el cual se encargara de contener el archivo de configuración de la capa llamado "sistema\_control.bb"; este archivo se genera mediante el comando que se observa en \ref{lst:yocto_new_layer}, además de generar este archivo se debe de crear un directorio llamado "files" que será el encargado de contener el archivo binario compilado en \ref{subsec:compilacion_binario}.
+Para la implementación del binario generado en \ref{subsec:compilacion_binario}, se deben de generar algunos directorios, esto con el objetivo de mantener un entorno de trabajo limpio y ordenado. Para contener todos los directorios que se deben de crear, se genera un directorio llamado (recipes-core) el cual dentro del mismo deberá de contener un directorio llamado (caso\_de\_estudio\_1) el cual se encargara de contener el archivo de configuración de la capa llamado (caso\_de\_estudio\_1.bb); este archivo se genera mediante el comando que se observa en \ref{lst:yocto_new_layer}, además de generar este archivo se debe de crear un directorio llamado "files" que será el encargado de contener el archivo binario compilado en \ref{subsec:compilacion_binario}.
 
-\subsubsection{sistema\_control.bb}
+\subsubsection{caso\_de\_estudio\_1.bb}
 
-Como se mencionó anteriormente el archivo llamado sistema\_control.bb es el encargado de la configuración de la capa, el mismo contiene los comandos de instalación y la dirección en donde se encontraran los binarios en el sistema de archivos de la imagen del sistema embebido.
+Como se mencionó anteriormente el archivo llamado sistema\_control.bb es el encargado de la configuración de la capa, el mismo contiene los comandos de instalación y la dirección en donde se encontrara el archivo binario en el sistema de archivos de la imagen del sistema embebido.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{fig/especifico_2/bbfilestructure.jpg}
-    \caption{Estructura del archivo sistema\_control.bb}
+    \caption{Estructura del archivo caso\_de\_estudio\_1.bb}
     \label{fig:estructura_archivo_bb}
 \end{figure}
 
 La estructura que debe de contener ese archivo para instalar binarios en el sistema son las que se pueden observar en la Figura \ref{fig:estructura_archivo_bb}.
 
-\subsection{Generación de la imagen mínima}\label{subsec:generacion_imagen_minima}
+\subsection{Generación de la imagen}\label{subsec:generacion_imagen_minima}
 
 \begin{lstlisting}[language=bash, caption={Generar archivos de desarrollador, Yocto }, label=lst:yocto_developer_image]
     bitbake-layers add-layer ../<nombre-de-la-capa>
@@ -537,21 +611,21 @@ La estructura que debe de contener ese archivo para instalar binarios en el sist
 
 Antes de generar la imagen mínima se debe de tener en consideración ejecutar la línea de comando que se muestra en \ref{lst:yocto_developer_image}, esto con el fin de generar archivos de desarrollo en lugar de archivos de imagen en formato iso. Una vez generados estos cambios se debe de iniciar de nuevo el entorno por medio del comando \ref{lst:yocto_ambient_set}, seguido de esto se deberá de ejecutar el comando de "bitbake core-image-minimal" el cual se encarga de comenzar a generar la imagen mínima.
 
+\begin{lstlisting}[language=bash, caption={Instalar la capa generada, Yocto }, label=lst:install_layer]
+    IMAGE_INSTALL_APPEND+= caso\_de\_estudio\_1
+\end{lstlisting}
 
-Finalmente para la instalacion de la capa dentro de la imagen minima se debe de editar el archivo de configuracion local llamado local.con el cual se encuentra en la direccion build/conf/local.conf en el cual se debera de agregar la siguiente linea, esto con el fin de agregar la capa generada anteriormente al sistema de archivos de la imagen a generar.
+Finalmente para la instalación de la capa dentro de la imagen se debe de editar el archivo de configuracion local llamado local.conf el cual se encuentra en la direccion build/conf/local.conf en el cual se debera de agregar la linea que se muestra en \ref{lst:install_layer} , esto con el fin de agregar la capa generada anteriormente al sistema de archivos de la imagen a generar.
 
 
 \subsection{Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}
 
-Para la implementación de la imagen mínima desarrollada en \ref{subsec:generacion_imagen_minima} en la tarjeta de desarrollo, se deben de desarrollar los siguientes pasos en la máquina Host:
+Para la implementación de la imagen mínima desarrollada en \ref{subsec:generacion_imagen_minima} en la tarjeta de desarrollo, se deben de desarrollar los siguientes pasos en la máquina Host, Primeramente se debe de formatear la tarjeta SD de al menos 4 GB, las particiones de la misma se tienen que observar de la siguiente forma:
 
-\begin{enumerate}
-    \item Se debe de formatear la tarjeta SD de al menos 4 GB, las particiones de la misma se tienen que observar de la siguiente forma 
-    \begin{itemize}
-        \item raíz = 100 MB FAT 32
-        \item sistema de archivos = 3.5 GB ext6(linux filesystem format)
-        \end{itemize} 
-\end{enumerate}
+\begin{itemize}
+    \item raíz = 100 MB FAT 32
+    \item sistema de archivos = 3.5 GB ext6(linux filesystem format)
+\end{itemize} 
 
 Seguido de esto se debe de ir a la ruta (ruta donde se encuentran los archivos de imagen de la zedboard), mientras que en la máquina host se debe de ir a la ruta seleccionada para almacenar los archivos temporalmente y se deben de copiar los archivos del contenedor a la máquina host mediante el comando que se muestra en \ref{lst:copy_from_container}, esto con el objetivo de poder enviar los archivos a la tarjeta SD más adelante.
 
