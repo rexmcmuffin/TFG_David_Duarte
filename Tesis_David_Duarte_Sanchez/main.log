@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.7)  21 OCT 2024 01:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  25 OCT 2024 01:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main
-(c:/Users/Usuario/Documents/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex
+**"c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex"
+(c:/Users/d4v1d/OneDrive - Estudiantes ITCR/Documentos/GitHub/TFG_David_Duarte/Tesis_David_Duarte_Sanchez/main.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/bk12.clo
@@ -98,7 +98,7 @@ Package csquotes Info: ... configuration file loaded successfully.
  (c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )) (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/08/29 v24.9 The Babel package
+Package: babel 2024/06/26 v24.7 The Babel package
 \babel@savecnt=\count284
 \U@D=\dimen146
 \l@unhyphenated=\language89
@@ -160,7 +160,7 @@ Package tocbasic Info: setting babel extension for `nls' on input line 188.
 \nom@tempdim=\dimen148
 \nomitemsep=\skip52
 ) (c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2024-08-20 v3.3.21 A comprehensive (SI) units package
+Package: siunitx 2024-08-01 v3.3.20 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count288
 \l__siunitx_number_exponent_fixed_int=\count289
 \l__siunitx_number_min_decimal_int=\count290
@@ -515,7 +515,7 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2024/08/14 v1.3g biblatex bibliography style
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
@@ -559,18 +559,18 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
  (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-08-16 L3 programming layer (loader) 
+Package: expl3 2024-07-20 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count450
 \l__pdf_internal_box=\box72
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2024-08-16 L3 programming layer (loader) 
+(biblatex)             2024-07-20 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2024-05-08 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 )) (c:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
@@ -722,7 +722,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count481
 \@thisrulewidth=\dimen258
 ) (c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2024/08/20 v0.6b Insert pages of external PDF documents (AM)
+Package: pdfpages 2024/05/29 v0.6a Insert pages of external PDF documents (AM)
  (c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count482
@@ -757,7 +757,7 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 \AM@pageheight=\dimen266
 \AM@fboxrule=\dimen267
  (c:/texlive/2024/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2024/08/20 v0.6b Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2024/05/29 v0.6a Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count485
 \AM@pagebox=\box122
@@ -1284,78 +1284,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                AEM2017
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Castao2014EstimacinDP
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Culp1993GuidanceAC
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Falcoz2023GuidanceN
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                MathWorks2024_ss
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                hewing2023enhancing
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                mihalivc2022hardware
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                montoya2020advanced
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                salvador2014embedded
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                vaduva2015learning
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 91.
 Package biblatex Info: Reference segment=0 on input line 91.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1595,15 +1524,6 @@ No file main.nls.
  (./intro.tex
 Cap\'{\i }tulo 1.
 
-LaTeX Warning: Citation 'MathWorks' on page 1 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'hewing2023enhancing' on page 1 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'AEM2017' on page 1 undefined on input line 22.
-
-
 
 [1
 
@@ -1615,47 +1535,20 @@ LaTeX Warning: Citation 'AEM2017' on page 1 undefined on input line 22.
 
 ]
 
-LaTeX Warning: Citation 'Castao2014EstimacinDP' on page 2 undefined on input line 27.
-
-
-LaTeX Warning: Citation 'Culp1993GuidanceAC' on page 2 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'Falcoz2023GuidanceN' on page 2 undefined on input line 31.
-
-
-LaTeX Warning: Citation 'salvador2014embedded' on page 2 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'vaduva2015learning' on page 2 undefined on input line 37.
-
-
-
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
-[2]
-
-LaTeX Warning: Citation 'mihalivc2022hardware' on page 3 undefined on input line 52.
-
-
-LaTeX Warning: Citation 'montoya2020advanced' on page 3 undefined on input line 52.
-
-)
+[2])
 
 LaTeX Info: Redefining \. on input line 185.
 LaTeX Info: Redefining \% on input line 185.
 [3]
-
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
-[4]
 \openout2 = `teoria.aux'.
 
  (./teoria.tex
 Cap\'{\i }tulo 2.
 
 
-[5
+[4
 
 
 
@@ -1664,8 +1557,8 @@ Cap\'{\i }tulo 2.
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[6]
-<fig/teorico/zedboard_raw.png, id=648, 467.49657pt x 335.75438pt>
+[5]
+<fig/teorico/zedboard_raw.png, id=665, 467.49657pt x 335.75438pt>
 File: fig/teorico/zedboard_raw.png Graphic file (type png)
 <use fig/teorico/zedboard_raw.png>
 Package pdftex.def Info: fig/teorico/zedboard_raw.png  used on input line 73.
@@ -1678,14 +1571,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Redefining \. on input line 128.
 LaTeX Info: Redefining \% on input line 128.
-[7 <./fig/teorico/zedboard_raw.png>]
+[6 <./fig/teorico/zedboard_raw.png>]
 
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
-[8]
+[7]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo de yocto.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/teorico/Flujo de trabajo de yocto.pdf, id=668, 223.83624pt x 169.63374pt>
+<fig/teorico/Flujo de trabajo de yocto.pdf, id=683, 223.83624pt x 169.63374pt>
 File: fig/teorico/Flujo de trabajo de yocto.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo de yocto.pdf>
 Package pdftex.def Info: fig/teorico/Flujo de trabajo de yocto.pdf  used on input line 150.
@@ -1694,18 +1587,18 @@ Package pdftex.def Info: fig/teorico/Flujo de trabajo de yocto.pdf  used on inpu
 
 LaTeX Info: Redefining \. on input line 161.
 LaTeX Info: Redefining \% on input line 161.
-[9 <./fig/teorico/Flujo de trabajo de yocto.pdf>]
+[8 <./fig/teorico/Flujo de trabajo de yocto.pdf>]
 
 LaTeX Info: Redefining \. on input line 184.
 LaTeX Info: Redefining \% on input line 184.
-[10]
+[9]
 
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
-[11]
+[10]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo simulink coder.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/teorico/Flujo de trabajo simulink coder.pdf, id=722, 207.77625pt x 165.61874pt>
+<fig/teorico/Flujo de trabajo simulink coder.pdf, id=738, 207.77625pt x 165.61874pt>
 File: fig/teorico/Flujo de trabajo simulink coder.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo simulink coder.pdf>
 Package pdftex.def Info: fig/teorico/Flujo de trabajo simulink coder.pdf  used on input line 207.
@@ -1714,10 +1607,10 @@ Package pdftex.def Info: fig/teorico/Flujo de trabajo simulink coder.pdf  used o
 
 LaTeX Info: Redefining \. on input line 227.
 LaTeX Info: Redefining \% on input line 227.
-[12 <./fig/teorico/Flujo de trabajo simulink coder.pdf>]
+[11 <./fig/teorico/Flujo de trabajo simulink coder.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo xcompiler.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/teorico/Flujo de trabajo xcompiler.pdf, id=747, 245.91875pt x 209.78375pt>
+<fig/teorico/Flujo de trabajo xcompiler.pdf, id=763, 245.91875pt x 209.78375pt>
 File: fig/teorico/Flujo de trabajo xcompiler.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo xcompiler.pdf>
 Package pdftex.def Info: fig/teorico/Flujo de trabajo xcompiler.pdf  used on input line 233.
@@ -1726,38 +1619,38 @@ Package pdftex.def Info: fig/teorico/Flujo de trabajo xcompiler.pdf  used on inp
 
 LaTeX Info: Redefining \. on input line 243.
 LaTeX Info: Redefining \% on input line 243.
-[13 <./fig/teorico/Flujo de trabajo xcompiler.pdf>]
+[12 <./fig/teorico/Flujo de trabajo xcompiler.pdf>]
 
 LaTeX Info: Redefining \. on input line 260.
 LaTeX Info: Redefining \% on input line 260.
-[14]
+[13]
 
 LaTeX Info: Redefining \. on input line 289.
 LaTeX Info: Redefining \% on input line 289.
-[15]
+[14]
 
 LaTeX Info: Redefining \. on input line 307.
 LaTeX Info: Redefining \% on input line 307.
-[16]
+[15]
 
 LaTeX Info: Redefining \. on input line 334.
 LaTeX Info: Redefining \% on input line 334.
-[17])
+[16])
+
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+[17]
 
 LaTeX Info: Redefining \. on input line 186.
 LaTeX Info: Redefining \% on input line 186.
 [18]
-
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
-[19]
 \openout2 = `especifico1.aux'.
 
  (./especifico1.tex
 Cap\'{\i }tulo 3.
 
 
-[20
+[19
 
 
 
@@ -1766,31 +1659,31 @@ Cap\'{\i }tulo 3.
 
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
-[21]
+[20]
 
 LaTeX Info: Redefining \. on input line 52.
 LaTeX Info: Redefining \% on input line 52.
-[22]
+[21]
 
 LaTeX Info: Redefining \. on input line 65.
 LaTeX Info: Redefining \% on input line 65.
-[23]
+[22]
 
 LaTeX Info: Redefining \. on input line 78.
 LaTeX Info: Redefining \% on input line 78.
-[24]
+[23]
 
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
-[25]
+[24]
 
 LaTeX Info: Redefining \. on input line 139.
 LaTeX Info: Redefining \% on input line 139.
-[26])
+[25])
 
 LaTeX Info: Redefining \. on input line 187.
 LaTeX Info: Redefining \% on input line 187.
-[27]
+[26]
 \openout2 = `especifico2.aux'.
 
  (./especifico2.tex
@@ -1798,14 +1691,14 @@ Cap\'{\i }tulo 4.
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Diagrama general del proyecto.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Diagrama general del proyecto.pdf, id=878, 316.18124pt x 501.875pt>
+<fig/especifico_2/Diagrama general del proyecto.pdf, id=894, 316.18124pt x 501.875pt>
 File: fig/especifico_2/Diagrama general del proyecto.pdf Graphic file (type pdf)
 <use fig/especifico_2/Diagrama general del proyecto.pdf>
 Package pdftex.def Info: fig/especifico_2/Diagrama general del proyecto.pdf  used on input line 8.
 (pdftex.def)             Requested size: 218.37865pt x 346.63872pt.
 
 
-[28
+[27
 
 
 
@@ -1813,11 +1706,11 @@ Package pdftex.def Info: fig/especifico_2/Diagrama general del proyecto.pdf  use
  <./fig/especifico_2/Diagrama general del proyecto.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Entorno_windows.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Entorno_windows.pdf, id=901, 844.65562pt x 596.98032pt>
+<fig/especifico_2/Entorno_windows.pdf, id=918, 392.46625pt x 216.81pt>
 File: fig/especifico_2/Entorno_windows.pdf Graphic file (type pdf)
 <use fig/especifico_2/Entorno_windows.pdf>
 Package pdftex.def Info: fig/especifico_2/Entorno_windows.pdf  used on input line 37.
-(pdftex.def)             Requested size: 136.48926pt x 96.46616pt.
+(pdftex.def)             Requested size: 136.48926pt x 75.40163pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1825,30 +1718,30 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
-[29]
-<fig/especifico_2/Ambiente_matlab/instalacion_python.png, id=910, 641.39626pt x 395.22656pt>
-File: fig/especifico_2/Ambiente_matlab/instalacion_python.png Graphic file (type png)
-<use fig/especifico_2/Ambiente_matlab/instalacion_python.png>
-Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/instalacion_python.png  used on input line 49.
+[28]
+<fig/especifico_2/Ambiente_matlab/instalacion_python.pdf, id=926, 641.39626pt x 395.22656pt>
+File: fig/especifico_2/Ambiente_matlab/instalacion_python.pdf Graphic file (type pdf)
+<use fig/especifico_2/Ambiente_matlab/instalacion_python.pdf>
+Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/instalacion_python.pdf  used on input line 49.
 (pdftex.def)             Requested size: 204.73041pt x 126.14941pt.
-<fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.png, id=911, 508.90125pt x 313.9228pt>
-File: fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.png Graphic file (type png)
-<use fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.png>
-Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.png  used on input line 57.
+<fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf, id=927, 508.90125pt x 313.9228pt>
+File: fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf Graphic file (type pdf)
+<use fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf>
+Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf  used on input line 57.
 (pdftex.def)             Requested size: 204.73041pt x 126.29019pt.
-<fig/especifico_2/Ambiente_matlab/instalacion_vs_code.png, id=914, 704.6325pt x 545.03625pt>
-File: fig/especifico_2/Ambiente_matlab/instalacion_vs_code.png Graphic file (type png)
-<use fig/especifico_2/Ambiente_matlab/instalacion_vs_code.png>
-Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/instalacion_vs_code.png  used on input line 66.
+<fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf, id=930, 704.6325pt x 545.03625pt>
+File: fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf Graphic file (type pdf)
+<use fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf>
+Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf  used on input line 66.
 (pdftex.def)             Requested size: 204.73041pt x 158.35587pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.png, id=915, 559.33969pt x 434.37282pt>
-File: fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.png Graphic file (type png)
-<use fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.png>
-Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.png  used on input line 74.
+<fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf, id=931, 559.33969pt x 434.37282pt>
+File: fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf Graphic file (type pdf)
+<use fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf>
+Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf  used on input line 74.
 (pdftex.def)             Requested size: 204.73041pt x 158.99214pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1857,38 +1750,42 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
-[30 <./fig/especifico_2/Entorno_windows.pdf> <./fig/especifico_2/Ambiente_matlab/instalacion_python.png> <./fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.png>]
+[29 <./fig/especifico_2/Entorno_windows.pdf> <./fig/especifico_2/Ambiente_matlab/instalacion_python.pdf
 
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
-[31 <./fig/especifico_2/Ambiente_matlab/instalacion_vs_code.png> <./fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.png>] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Ambiente_matlab/instalacion_python.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+[30 <./fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf> <./fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
-[32
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+[31
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.117 ...a, Docker}, label=lst:docker_basics_ps-a]
-                                                  
+l.119 \end{lstlisting}
+                      
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.117 ...a, Docker}, label=lst:docker_basics_ps-a]
-                                                  ]
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.118  
-          sudo docker ps -a
-<fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png, id=952, 1017.8025pt x 97.36375pt>
-File: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png Graphic file (type png)
-<use fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png>
-Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png  used on input line 123.
+l.119 \end{lstlisting}
+                      ]
+<fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf, id=1141, 1017.8025pt x 97.36375pt>
+File: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf Graphic file (type pdf)
+<use fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf>
+Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf  used on input line 123.
 (pdftex.def)             Requested size: 386.71841pt x 36.99414pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
@@ -1896,10 +1793,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.133  
           sudo docker start <ID del contenedor>
-<fig/especifico_2/retornos_de_comandos/sudo_docker_start.png, id=957, 1020.81375pt x 44.165pt>
-File: fig/especifico_2/retornos_de_comandos/sudo_docker_start.png Graphic file (type png)
-<use fig/especifico_2/retornos_de_comandos/sudo_docker_start.png>
-Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_start.png  used on input line 138.
+<fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf, id=1146, 1020.81375pt x 44.165pt>
+File: fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf Graphic file (type pdf)
+<use fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf>
+Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf  used on input line 138.
 (pdftex.def)             Requested size: 386.71841pt x 16.73164pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
@@ -1907,24 +1804,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.146  
           sudo docker exec -it <ID del contenedor> \bin\bash
-<fig/especifico_2/retornos_de_comandos/sudo_docker_init.png, id=962, 1020.81375pt x 44.165pt>
-File: fig/especifico_2/retornos_de_comandos/sudo_docker_init.png Graphic file (type png)
-<use fig/especifico_2/retornos_de_comandos/sudo_docker_init.png>
-Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_init.png  used on input line 151.
-(pdftex.def)             Requested size: 386.71841pt x 16.73164pt.
+<fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf, id=1151, 1018.80624pt x 39.14626pt>
+File: fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf Graphic file (type pdf)
+<use fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf>
+Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf  used on input line 151.
+(pdftex.def)             Requested size: 386.71841pt x 14.859pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/diagrama_compilador_cruzado.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/diagrama_compilador_cruzado.pdf, id=967, 844.65562pt x 596.98032pt>
+<fig/especifico_2/diagrama_compilador_cruzado.pdf, id=1156, 180.675pt x 178.6675pt>
 File: fig/especifico_2/diagrama_compilador_cruzado.pdf Graphic file (type pdf)
 <use fig/especifico_2/diagrama_compilador_cruzado.pdf>
 Package pdftex.def Info: fig/especifico_2/diagrama_compilador_cruzado.pdf  used on input line 164.
-(pdftex.def)             Requested size: 386.71841pt x 273.32988pt.
+(pdftex.def)             Requested size: 386.71841pt x 382.45915pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Info: Redefining \. on input line 167.
-LaTeX Info: Redefining \% on input line 167.
-[33 <./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.png> <./fig/especifico_2/retornos_de_comandos/sudo_docker_start.png> <./fig/especifico_2/retornos_de_comandos/sudo_docker_init.png>]
+
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.170 
+       <./fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf> <./fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1941,26 +1852,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
 l.181  
           sudo apt install build-essential
 
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+[33 <./fig/especifico_2/diagrama_compilador_cruzado.pdf>]
+
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/diagrama_de_entorno_yocto_project.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/diagrama_de_entorno_yocto_project.pdf, id=979, 844.65562pt x 1158.57843pt>
+<fig/especifico_2/diagrama_de_entorno_yocto_project.pdf, id=1238, 403.5075pt x 324.21124pt>
 File: fig/especifico_2/diagrama_de_entorno_yocto_project.pdf Graphic file (type pdf)
 <use fig/especifico_2/diagrama_de_entorno_yocto_project.pdf>
 Package pdftex.def Info: fig/especifico_2/diagrama_de_entorno_yocto_project.pdf  used on input line 191.
-(pdftex.def)             Requested size: 386.71841pt x 530.45988pt.
+(pdftex.def)             Requested size: 386.71841pt x 310.72476pt.
 
-
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
-[34 <./fig/especifico_2/diagrama_compilador_cruzado.pdf>]
-
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
-[35 <./fig/especifico_2/diagrama_de_entorno_yocto_project.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.205  
           apt - get install -y sudo
+
+LaTeX Info: Redefining \. on input line 209.
+LaTeX Info: Redefining \% on input line 209.
+[34 <./fig/especifico_2/diagrama_de_entorno_yocto_project.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1971,45 +1882,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.224  
           sudo apt - get install gawk wget git - core diffstat unzip texinfo
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.225  
+          gcc - multilib build - essential chrpath socat cpio python python3
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.234  
           git clone -b zeus https://git.yoctoproject.org/git/poky
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.235  
+          cd poky
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.239  
           git clone -b zeus https://github.com/Xilinx/meta-xilinx
-
-LaTeX Info: Redefining \. on input line 240.
-LaTeX Info: Redefining \% on input line 240.
-[36
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.240  
-          git clone -b zeus https://github.com/openembedded/meta-openembedde...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.240  
-          git clone -b zeus https://github.com/openembedded/meta-openembedde...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.240  
-          git clone -b zeus https://github.com/openembedded/meta-openembedde...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.240  
-          git clone -b zeus https://github.com/openembedded/meta-openembedde...]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.240  
           git clone -b zeus https://github.com/openembedded/meta-openembedde...
+
+LaTeX Info: Redefining \. on input line 244.
+LaTeX Info: Redefining \% on input line 244.
+[35
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.244 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.244 
+      ]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2036,52 +1947,55 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.5}) 
 l.250  
           echo "DISTRO_HOSTNAME =\"zynq\"" >> conf/local.conf
 
-LaTeX Info: Redefining \. on input line 261.
-LaTeX Info: Redefining \% on input line 261.
-[37]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf, id=1035, 327.55676pt x 110.4125pt>
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+[36]
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf, id=1301, 327.55676pt x 110.4125pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf  used on input line 270.
 (pdftex.def)             Requested size: 227.47978pt x 76.68001pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.png, id=1037, 1172.88188pt x 97.11281pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.png  used on input line 279.
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf, id=1303, 1172.88188pt x 97.11281pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf  used on input line 279.
 (pdftex.def)             Requested size: 363.96904pt x 30.13577pt.
 
 
 LaTeX Info: Redefining \. on input line 285.
 LaTeX Info: Redefining \% on input line 285.
-[38 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.png>]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.png, id=1083, 449.42906pt x 431.36156pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.png  used on input line 290.
+[37 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf, id=1373, 449.42906pt x 431.36156pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf  used on input line 290.
 (pdftex.def)             Requested size: 227.47978pt x 218.33281pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.png, id=1085, 316.93407pt x 540.51938pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.png  used on input line 301.
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf, id=1375, 316.93407pt x 540.51938pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf  used on input line 301.
 (pdftex.def)             Requested size: 143.31065pt x 244.41913pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.png, id=1086, 319.1925pt x 536.0025pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.png  used on input line 308.
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf, id=1376, 319.1925pt x 536.0025pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf  used on input line 308.
 (pdftex.def)             Requested size: 143.31065pt x 240.65092pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.png, id=1090, 449.42906pt x 435.12563pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.png  used on input line 321.
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf, id=1380, 449.42906pt x 435.12563pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf  used on input line 321.
 (pdftex.def)             Requested size: 227.47978pt x 220.23798pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.png, id=1091, 344.03531pt x 368.87813pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.png  used on input line 328.
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf, id=1381, 344.03531pt x 368.87813pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf  used on input line 328.
 (pdftex.def)             Requested size: 227.47978pt x 243.90497pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2090,32 +2004,44 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Redefining \. on input line 335.
 LaTeX Info: Redefining \% on input line 335.
-[39 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.png> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.png> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.png>]
+[38 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
 LaTeX Info: Redefining \. on input line 340.
 LaTeX Info: Redefining \% on input line 340.
-[40 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.png> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.png>]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.png, id=1111, 448.67625pt x 435.12563pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.png  used on input line 353.
+[39 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf, id=1553, 448.67625pt x 435.12563pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf  used on input line 353.
 (pdftex.def)             Requested size: 184.2561pt x 178.68816pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.png, id=1112, 316.93407pt x 452.4403pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.png  used on input line 360.
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf, id=1554, 316.93407pt x 452.4403pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf  used on input line 360.
 (pdftex.def)             Requested size: 143.31065pt x 204.59038pt.
 
 
 LaTeX Info: Redefining \. on input line 372.
 LaTeX Info: Redefining \% on input line 372.
-[41 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.png> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.png>]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.png, id=1125, 448.67625pt x 432.86719pt>
-File: fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.png Graphic file (type png)
-<use fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.png>
-Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.png  used on input line 378.
+[40 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf, id=1626, 448.67625pt x 432.86719pt>
+File: fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf Graphic file (type pdf)
+<use fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf>
+Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf  used on input line 378.
 (pdftex.def)             Requested size: 227.47978pt x 219.46475pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf, id=1128, 330.23375pt x 205.76875pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf, id=1629, 330.23375pt x 205.76875pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf  used on input line 387.
@@ -2124,10 +2050,13 @@ Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab si
 
 LaTeX Info: Redefining \. on input line 395.
 LaTeX Info: Redefining \% on input line 395.
-[42 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.png> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf>]
+[41 <./fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf> <./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/onda_modulada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/onda_modulada.pdf, id=1174, 421.575pt x 290.64584pt>
+<fig/especifico_2/onda_modulada.pdf, id=1708, 421.575pt x 290.64584pt>
 File: fig/especifico_2/onda_modulada.pdf Graphic file (type pdf)
 <use fig/especifico_2/onda_modulada.pdf>
 Package pdftex.def Info: fig/especifico_2/onda_modulada.pdf  used on input line 404.
@@ -2135,7 +2064,7 @@ Package pdftex.def Info: fig/especifico_2/onda_modulada.pdf  used on input line 
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/onda_filtrada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/onda_filtrada.pdf, id=1175, 426.59375pt x 304.69835pt>
+<fig/especifico_2/onda_filtrada.pdf, id=1709, 426.59375pt x 304.69835pt>
 File: fig/especifico_2/onda_filtrada.pdf Graphic file (type pdf)
 <use fig/especifico_2/onda_filtrada.pdf>
 Package pdftex.def Info: fig/especifico_2/onda_filtrada.pdf  used on input line 411.
@@ -2144,58 +2073,64 @@ Package pdftex.def Info: fig/especifico_2/onda_filtrada.pdf  used on input line 
 
 LaTeX Info: Redefining \. on input line 425.
 LaTeX Info: Redefining \% on input line 425.
-[43 <./fig/especifico_2/onda_modulada.pdf> <./fig/especifico_2/onda_filtrada.pdf>]
+[42 <./fig/especifico_2/onda_modulada.pdf> <./fig/especifico_2/onda_filtrada.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/model_2_model_diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/M2MT/model_2_model_diagram.pdf, id=1328, 844.65562pt x 1158.57843pt>
+<fig/especifico_2/M2MT/model_2_model_diagram.pdf, id=1862, 271.0125pt x 421.575pt>
 File: fig/especifico_2/M2MT/model_2_model_diagram.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/model_2_model_diagram.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/model_2_model_diagram.pdf  used on input line 429.
-(pdftex.def)             Requested size: 363.96904pt x 499.2574pt.
+(pdftex.def)             Requested size: 363.96904pt x 566.19409pt.
 
 
 LaTeX Info: Redefining \. on input line 439.
 LaTeX Info: Redefining \% on input line 439.
-[44 <./fig/especifico_2/M2MT/model_2_model_diagram.pdf>]
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.png, id=1345, 1051.67906pt x 89.58469pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.png  used on input line 445.
+[43 <./fig/especifico_2/M2MT/model_2_model_diagram.pdf>]
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf, id=1894, 1051.67906pt x 89.58469pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf  used on input line 445.
 (pdftex.def)             Requested size: 363.96904pt x 31.0038pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.png, id=1346, 654.19406pt x 94.85437pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.png  used on input line 452.
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf, id=1895, 654.19406pt x 94.85437pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf  used on input line 452.
 (pdftex.def)             Requested size: 363.96904pt x 52.7736pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.png, id=1347, 794.2172pt x 533.74406pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.png  used on input line 459.
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf, id=1896, 794.2172pt x 533.74406pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf  used on input line 459.
 (pdftex.def)             Requested size: 363.96904pt x 244.60493pt.
 
 
-LaTeX Info: Redefining \. on input line 467.
-LaTeX Info: Redefining \% on input line 467.
-[45 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.png> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.png> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.png>]
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.png, id=1359, 792.71156pt x 532.99126pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.png  used on input line 472.
+LaTeX Info: Redefining \. on input line 465.
+LaTeX Info: Redefining \% on input line 465.
+[44 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf, id=2012, 792.71156pt x 532.99126pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf  used on input line 472.
 (pdftex.def)             Requested size: 363.96904pt x 244.72351pt.
 
 
 LaTeX Info: Redefining \. on input line 483.
 LaTeX Info: Redefining \% on input line 483.
-[46 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.png>]
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.png, id=1369, 789.70032pt x 532.23843pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.png  used on input line 487.
+[45 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf>]
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf, id=2080, 789.70032pt x 532.23843pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf  used on input line 487.
 (pdftex.def)             Requested size: 363.96904pt x 245.30368pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.png, id=1371, 1218.5525pt x 447.6725pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.png  used on input line 498.
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf, id=2082, 1218.5525pt x 447.6725pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf  used on input line 498.
 (pdftex.def)             Requested size: 363.96904pt x 133.71532pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
@@ -2208,15 +2143,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) 
                    \relax 
 l.505  
           <id_de_contenedor>:/direccion/del/contenedor
+
+LaTeX Info: Redefining \. on input line 506.
+LaTeX Info: Redefining \% on input line 506.
+[46 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.509  
           sudo docker cp <id_de_contenedor>:/direccion/del/contenedor
-
-LaTeX Info: Redefining \. on input line 510.
-LaTeX Info: Redefining \% on input line 510.
-[47 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.png> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2232,28 +2170,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) 
                    \relax 
 l.519  
           CMakeLists.txt -DMATLAB_ROOT=/home/test/simple_filter/R2024b/
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.png, id=1383, 1218.5525pt x 447.6725pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.png  used on input line 524.
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf, id=2195, 1218.5525pt x 447.6725pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf  used on input line 524.
 (pdftex.def)             Requested size: 363.96904pt x 133.71532pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.png, id=1384, 1237.62375pt x 167.62625pt>
-File: fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.png Graphic file (type png)
-<use fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.png>
-Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.png  used on input line 532.
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf, id=2196, 1237.62375pt x 167.62625pt>
+File: fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf Graphic file (type pdf)
+<use fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf>
+Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf  used on input line 532.
 (pdftex.def)             Requested size: 363.96904pt x 49.29584pt.
 
 
 LaTeX Info: Redefining \. on input line 540.
 LaTeX Info: Redefining \% on input line 540.
-[48 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.png> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.png>]
+[47 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf> <./fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf
+
+pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf, id=1395, 844.65562pt x 596.98032pt>
+<fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf, id=2275, 264.99pt x 455.7025pt>
 File: fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf Graphic file (type pdf)
 <use fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf>
 Package pdftex.def Info: fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf  used on input line 546.
-(pdftex.def)             Requested size: 363.96904pt x 257.25218pt.
+(pdftex.def)             Requested size: 363.96904pt x 625.96356pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2265,10 +2209,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.562  
           source oe-init-build-env build/
-
-LaTeX Info: Redefining \. on input line 566.
-LaTeX Info: Redefining \% on input line 566.
-[49 <./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2276,11 +2216,14 @@ l.568
           bitbake-layers create-layer <nombre-de-la-capa>
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Flujo de trabajo de mi idea.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Flujo de trabajo de mi idea.pdf, id=1414, 570.13pt x 337.26pt>
+<fig/especifico_2/Flujo de trabajo de mi idea.pdf, id=2281, 570.13pt x 337.26pt>
 File: fig/especifico_2/Flujo de trabajo de mi idea.pdf Graphic file (type pdf)
 <use fig/especifico_2/Flujo de trabajo de mi idea.pdf>
 Package pdftex.def Info: fig/especifico_2/Flujo de trabajo de mi idea.pdf  used on input line 573.
 (pdftex.def)             Requested size: 363.96904pt x 215.30531pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2288,15 +2231,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
 l.579  
           bitbake-layers add-layer ../<nombre-de-la-capa>
 
-LaTeX Info: Redefining \. on input line 592.
-LaTeX Info: Redefining \% on input line 592.
-[50 <./fig/especifico_2/Flujo de trabajo de mi idea.pdf>]
-<fig/especifico_2/bbfilestructure.jpg, id=1454, 670.505pt x 237.88875pt>
+LaTeX Info: Redefining \. on input line 589.
+LaTeX Info: Redefining \% on input line 589.
+[48]
+
+LaTeX Warning: Text page 49 contains only floats.
+
+
+
+LaTeX Info: Redefining \. on input line 589.
+LaTeX Info: Redefining \% on input line 589.
+[49 <./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf>]
+<fig/especifico_2/bbfilestructure.jpg, id=2320, 670.505pt x 237.88875pt>
 File: fig/especifico_2/bbfilestructure.jpg Graphic file (type jpg)
 <use fig/especifico_2/bbfilestructure.jpg>
 Package pdftex.def Info: fig/especifico_2/bbfilestructure.jpg  used on input line 599.
 (pdftex.def)             Requested size: 363.96904pt x 129.13316pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+LaTeX Info: Redefining \. on input line 608.
+LaTeX Info: Redefining \% on input line 608.
+[50 <./fig/especifico_2/Flujo de trabajo de mi idea.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2308,8 +2267,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
 l.615  
           IMAGE_INSTALL_APPEND+= caso\_de\_estudio\_1
 
-LaTeX Info: Redefining \. on input line 619.
-LaTeX Info: Redefining \% on input line 619.
+LaTeX Info: Redefining \. on input line 631.
+LaTeX Info: Redefining \% on input line 631.
 [51 <./fig/especifico_2/bbfilestructure.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -2331,41 +2290,52 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.639  
           sudo cp core-image-minimal-zedboard-zynq7.tar.gz /mnt/partition2
-
-LaTeX Info: Redefining \. on input line 647.
-LaTeX Info: Redefining \% on input line 647.
-[52]
-<fig/especifico_2/154140ZedBoard.png, id=1475, 469.755pt x 526.21594pt>
+<fig/especifico_2/154140ZedBoard.png, id=2370, 469.755pt x 526.21594pt>
 File: fig/especifico_2/154140ZedBoard.png Graphic file (type png)
 <use fig/especifico_2/154140ZedBoard.png>
 Package pdftex.def Info: fig/especifico_2/154140ZedBoard.png  used on input line 650.
 (pdftex.def)             Requested size: 363.96904pt x 407.7168pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 LaTeX Info: Redefining \. on input line 664.
 LaTeX Info: Redefining \% on input line 664.
-[53 <./fig/especifico_2/154140ZedBoard.png>]
+[52]
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.666  
           scp user@ip:/ruta/del/archivo/zedboard .
-<fig/especifico_2/raw.pdf, id=1484, 722.7pt x 361.35pt>
+<fig/especifico_2/raw.pdf, id=2378, 722.7pt x 361.35pt>
 File: fig/especifico_2/raw.pdf Graphic file (type pdf)
 <use fig/especifico_2/raw.pdf>
 Package pdftex.def Info: fig/especifico_2/raw.pdf  used on input line 673.
 (pdftex.def)             Requested size: 204.73041pt x 102.36276pt.
-<fig/especifico_2/Filtered.pdf, id=1485, 722.7pt x 361.35pt>
+<fig/especifico_2/Filtered.pdf, id=2379, 722.7pt x 361.35pt>
 File: fig/especifico_2/Filtered.pdf Graphic file (type pdf)
 <use fig/especifico_2/Filtered.pdf>
 Package pdftex.def Info: fig/especifico_2/Filtered.pdf  used on input line 680.
 (pdftex.def)             Requested size: 204.73041pt x 102.36276pt.
 
 
-LaTeX Warning: Reference `' on page 54 undefined on input line 690.
+LaTeX Warning: Reference `' on page 53 undefined on input line 690.
 
 
-LaTeX Warning: Reference `' on page 54 undefined on input line 690.
+LaTeX Warning: Reference `' on page 53 undefined on input line 690.
+
+
+
+LaTeX Info: Redefining \. on input line 691.
+LaTeX Info: Redefining \% on input line 691.
+[53 <./fig/especifico_2/154140ZedBoard.png>]
+
+LaTeX Warning: Reference `' on page 54 undefined on input line 692.
+
+
+LaTeX Warning: Reference `' on page 54 undefined on input line 692.
 
 
 LaTeX Warning: Reference `' on page 54 undefined on input line 692.
@@ -2376,28 +2346,18 @@ LaTeX Warning: Reference `' on page 54 undefined on input line 692.
 
 LaTeX Warning: Reference `' on page 54 undefined on input line 692.
 
-
-LaTeX Warning: Reference `' on page 54 undefined on input line 692.
-
-
-LaTeX Warning: Reference `' on page 54 undefined on input line 692.
-
-
-
-LaTeX Info: Redefining \. on input line 695.
-LaTeX Info: Redefining \% on input line 695.
-[54 <./fig/especifico_2/raw.pdf> <./fig/especifico_2/Filtered.pdf>])
+)
 
 LaTeX Info: Redefining \. on input line 188.
 LaTeX Info: Redefining \% on input line 188.
-[55]
+[54 <./fig/especifico_2/raw.pdf> <./fig/especifico_2/Filtered.pdf>]
 \openout2 = `especifico3.aux'.
 
  (./especifico3.tex
 Cap\'{\i }tulo 5.
 )
 
-[56
+[55
 
 
 
@@ -2409,18 +2369,27 @@ Cap\'{\i }tulo 5.
 Cap\'{\i }tulo 6.
 )
 
+[56
+
+
+
+
+]
+Overfull \hbox (8.72708pt too wide) in paragraph at lines 197--197
+\T1/cmtt/m/n/12 convocatorias / images / mem17 / 04Introducion _ ala _ ISE . pdf$[][] \T1/cmr/m/n/12 (vi-si-ta-do 16[]07[]2024). 
+ []
+
+
+
 [57
 
 
 
-
 ]
 
-[58
-
-
-
-]
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+[58]
 
 LaTeX Info: Redefining \. on input line 204.
 LaTeX Info: Redefining \% on input line 204.
@@ -2434,9 +2403,7 @@ Ap\'{e}ndice A.
 [60
 
 
-]
-No file main.ind.
-
+] (./main.ind) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux (./titlepage_licel_es.aux)
 LaTeX Info: Redefining \sptext on input line 13.
@@ -2445,7 +2412,7 @@ LaTeX Info: Redefining \% on input line 13.
  (./licencia.aux) (./disclaimer.aux) (./acta_aprob_licel.aux) (./acta_eval_licel.aux) (./resumen.aux) (./dedicatoria.aux) (./agradecimientos.aux) (./glosario.aux) (./intro.aux) (./teoria.aux) (./especifico1.aux) (./especifico2.aux) (./especifico3.aux) (./conclusiones.aux) (./apendice.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-07-20>
  ***********
 
 
@@ -2453,28 +2420,23 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 38048E97396113CF83267F76BB45479C;15886.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55343 strings out of 473579
- 1268714 string characters out of 5732258
- 2345452 words of memory out of 5000000
- 76932 multiletter control sequences out of 15000+600000
+ 55385 strings out of 473579
+ 1271062 string characters out of 5732257
+ 2348681 words of memory out of 5000000
+ 76961 multiletter control sequences out of 15000+600000
  585072 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,13n,120p,1271b,2844s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,13n,120p,1304b,2844s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (77 pages, 6386150 bytes).
+Output written on main.pdf (77 pages, 9885206 bytes).
 PDF statistics:
- 1780 PDF objects out of 2073 (max. 8388607)
- 1290 compressed objects within 13 object streams
- 286 named destinations out of 1000 (max. 500000)
+ 2682 PDF objects out of 2984 (max. 8388607)
+ 1495 compressed objects within 15 object streams
+ 296 named destinations out of 1000 (max. 500000)
  814 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,86 +10,86 @@
 \contentsline {section}{\numberline {1.3}Donde se ubica dentro del flujo de control}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Hardware en el loop}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Objetivos y estructura del documento}{3}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Marco teórico}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Estimación}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Control}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Procesadores embebidos}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Cortex-A9}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Tarjeta de desarrollo ZedBoard}{7}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Marcos de trabajo}{8}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}YOCTO}{9}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}MATLAB}{10}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Simulink}{10}{subsection.2.5.1}%
-\contentsline {section}{\numberline {2.6}Transformación de modelo a modelo}{11}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}MATLAB Embedded Coder}{11}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}MATLAB Simulink Coder}{11}{subsection.2.6.2}%
-\contentsline {section}{\numberline {2.7}Código embebido}{12}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Compilación Cruzada}{13}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Contenedores}{14}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Protocolos de Comunicación}{14}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}UART}{14}{subsection.2.10.1}%
-\contentsline {subsection}{\numberline {2.10.2}SSH}{15}{subsection.2.10.2}%
-\contentsline {section}{\numberline {2.11}Computadoras de guía, navegación y control}{15}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1}EXA ICEPS}{16}{subsection.2.11.1}%
-\contentsline {section}{\numberline {2.12}Revisión literaria}{16}{section.2.12}%
-\contentsline {subsection}{\numberline {2.12.1}Desarrollo de sistemas de navegación}{17}{subsection.2.12.1}%
-\contentsline {subsection}{\numberline {2.12.2}Transformación de Lenguaje de Bloques a Código C}{17}{subsection.2.12.2}%
-\contentsline {subsubsection}{XOD}{17}{section*.14}%
-\contentsline {subsubsection}{Visual Microcontroller}{17}{section*.15}%
-\contentsline {subsubsection}{LabVIEW}{17}{section*.16}%
-\contentsline {subsubsection}{Simulink}{18}{section*.17}%
-\contentsline {section}{\numberline {2.13}Avances recientes en GNCs }{18}{section.2.13}%
-\contentsline {subsection}{\numberline {2.13.1}Programación de Sistemas GNC}{18}{subsection.2.13.1}%
-\contentsline {chapter}{\numberline {3}Plataforma de desarrollo}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Selección de la tarjeta de desarrollo}{20}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Requerimientos de la aplicación}{20}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Tarjetas candidatas}{21}{subsection.3.1.2}%
-\contentsline {subsubsection}{Xilinx ZCU102 Evaluation Kit}{21}{section*.18}%
-\contentsline {subsubsection}{NVIDIA Jetson AGX Xavier}{21}{section*.19}%
-\contentsline {subsubsection}{TMS320C6678 Development Kit}{22}{section*.20}%
-\contentsline {subsubsection}{ZedBoard de Avnet}{22}{section*.21}%
-\contentsline {subsection}{\numberline {3.1.3}Criterios de comparación}{23}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Matriz de Pugh}{25}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Plataforma seleccionada}{25}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Especificaciones principales}{25}{subsection.3.3.1}%
-\contentsline {subsubsection}{Procesador y FPGA}{26}{section*.22}%
-\contentsline {subsubsection}{Interfaces de E/S}{26}{section*.23}%
-\contentsline {subsubsection}{Memoria}{26}{section*.24}%
-\contentsline {subsubsection}{Alimentación y Consumo de Energía}{26}{section*.25}%
-\contentsline {subsubsection}{Tamaño y Factor de Forma}{26}{section*.26}%
-\contentsline {subsubsection}{Capacidades de Desarrollo}{27}{section*.27}%
-\contentsline {section}{\numberline {3.4}Reflexión final}{27}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Síntesis de software para GNC embebido}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Creación de los entornos de desarrollo}{29}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}MATLAB}{29}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Contenedores}{32}{subsection.4.1.2}%
-\contentsline {subsubsection}{Comandos utilizados para la creación y gestión de contenedores}{32}{section*.34}%
-\contentsline {subsubsection}{Contenedor para compilación Cruzada}{34}{section*.38}%
-\contentsline {subsubsection}{Contenedor para Yocto Project}{35}{section*.40}%
-\contentsline {subsubsection}{Creación de un usuario no root}{36}{section*.42}%
-\contentsline {subsubsection}{Yocto Project}{36}{section*.43}%
-\contentsline {section}{\numberline {4.2}Caso de estudio 1 - Filtro Básico en MATLAB}{38}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Simulación del caso de estudio en MATLAB Simulink}{42}{subsection.4.2.1}%
-\contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulación}{43}{section*.53}%
-\contentsline {section}{\numberline {4.3}Flujo de trabajo de la aplicación de transformación de modelo a modelo}{43}{section.4.3}%
+\contentsline {chapter}{\numberline {2}Marco teórico}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estimación}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Control}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Procesadores embebidos}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cortex-A9}{5}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Tarjeta de desarrollo ZedBoard}{6}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Marcos de trabajo}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}YOCTO}{8}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}MATLAB}{9}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Simulink}{9}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}Transformación de modelo a modelo}{10}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}MATLAB Embedded Coder}{10}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}MATLAB Simulink Coder}{10}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Código embebido}{11}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Compilación Cruzada}{12}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Contenedores}{13}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Protocolos de Comunicación}{13}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}UART}{13}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}SSH}{14}{subsection.2.10.2}%
+\contentsline {section}{\numberline {2.11}Computadoras de guía, navegación y control}{14}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}EXA ICEPS}{15}{subsection.2.11.1}%
+\contentsline {section}{\numberline {2.12}Revisión literaria}{15}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Desarrollo de sistemas de navegación}{16}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}Transformación de Lenguaje de Bloques a Código C}{16}{subsection.2.12.2}%
+\contentsline {subsubsection}{XOD}{16}{section*.14}%
+\contentsline {subsubsection}{Visual Microcontroller}{16}{section*.15}%
+\contentsline {subsubsection}{LabVIEW}{16}{section*.16}%
+\contentsline {subsubsection}{Simulink}{17}{section*.17}%
+\contentsline {section}{\numberline {2.13}Avances recientes en GNCs }{17}{section.2.13}%
+\contentsline {subsection}{\numberline {2.13.1}Programación de Sistemas GNC}{17}{subsection.2.13.1}%
+\contentsline {chapter}{\numberline {3}Plataforma de desarrollo}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Selección de la tarjeta de desarrollo}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requerimientos de la aplicación}{19}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Tarjetas candidatas}{20}{subsection.3.1.2}%
+\contentsline {subsubsection}{Xilinx ZCU102 Evaluation Kit}{20}{section*.18}%
+\contentsline {subsubsection}{NVIDIA Jetson AGX Xavier}{20}{section*.19}%
+\contentsline {subsubsection}{TMS320C6678 Development Kit}{21}{section*.20}%
+\contentsline {subsubsection}{ZedBoard de Avnet}{21}{section*.21}%
+\contentsline {subsection}{\numberline {3.1.3}Criterios de comparación}{22}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Matriz de Pugh}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Plataforma seleccionada}{24}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Especificaciones principales}{24}{subsection.3.3.1}%
+\contentsline {subsubsection}{Procesador y FPGA}{25}{section*.22}%
+\contentsline {subsubsection}{Interfaces de E/S}{25}{section*.23}%
+\contentsline {subsubsection}{Memoria}{25}{section*.24}%
+\contentsline {subsubsection}{Alimentación y Consumo de Energía}{25}{section*.25}%
+\contentsline {subsubsection}{Tamaño y Factor de Forma}{25}{section*.26}%
+\contentsline {subsubsection}{Capacidades de Desarrollo}{26}{section*.27}%
+\contentsline {section}{\numberline {3.4}Reflexión final}{26}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Síntesis de software para GNC embebido}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Creación de los entornos de desarrollo}{28}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}MATLAB}{28}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Contenedores}{31}{subsection.4.1.2}%
+\contentsline {subsubsection}{Comandos utilizados para la creación y gestión de contenedores}{31}{section*.34}%
+\contentsline {subsubsection}{Contenedor para compilación Cruzada}{33}{section*.38}%
+\contentsline {subsubsection}{Contenedor para Yocto Project}{34}{section*.40}%
+\contentsline {subsubsection}{Creación de un usuario no root}{34}{section*.42}%
+\contentsline {subsubsection}{Yocto Project}{35}{section*.43}%
+\contentsline {section}{\numberline {4.2}Caso de estudio 1 - Filtro Básico en MATLAB}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Simulación del caso de estudio en MATLAB Simulink}{41}{subsection.4.2.1}%
+\contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulación}{42}{section*.53}%
+\contentsline {section}{\numberline {4.3}Flujo de trabajo de la aplicación de transformación de modelo a modelo}{42}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Simulink Coder}{44}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Definición de parámetros}{45}{subsection.4.3.2}%
-\contentsline {subsubsection}{Selección del procesador objetivo}{46}{section*.59}%
-\contentsline {subsubsection}{Selección del tipo de archivo de construcción}{46}{section*.61}%
-\contentsline {subsubsection}{Generación de archivos de compilación}{47}{section*.63}%
-\contentsline {subsection}{\numberline {4.3.3}Compilación del Código C generado}{48}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Flujo de Trabajo EmbedSynthGNC}{49}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Creación de una capa de yocto}{49}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.3.2}Definición de parámetros}{44}{subsection.4.3.2}%
+\contentsline {subsubsection}{Selección del procesador objetivo}{45}{section*.59}%
+\contentsline {subsubsection}{Selección del tipo de archivo de construcción}{45}{section*.61}%
+\contentsline {subsubsection}{Generación de archivos de compilación}{46}{section*.63}%
+\contentsline {subsection}{\numberline {4.3.3}Compilación del Código C generado}{47}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Flujo de Trabajo EmbedSynthGNC}{48}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Creación de una capa de yocto}{48}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Caso de estudio 1 - Filtro Básico en ZedBoard}{50}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Integración del programa generado a la capa de Yocto}{50}{subsection.4.4.3}%
-\contentsline {subsubsection}{caso\_de\_estudio\_1.bb}{51}{section*.69}%
+\contentsline {subsubsection}{caso\_de\_estudio\_1.bb}{50}{section*.69}%
 \contentsline {subsection}{\numberline {4.4.4}Generación de la imagen}{51}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}{52}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.5}Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}{51}{subsection.4.4.5}%
 \contentsline {subsection}{\numberline {4.4.6}Conexión de la tarjeta de desarrollo con el computador host}{52}{subsection.4.4.6}%
-\contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{54}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{53}{subsection.4.4.7}%
 \contentsline {subsection}{\numberline {4.4.8}Comparación de resultados}{54}{subsection.4.4.8}%
-\contentsline {section}{\numberline {4.5}Reflexión final}{55}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{56}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{57}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{58}{chapter*.73}%
+\contentsline {section}{\numberline {4.5}Reflexión final}{54}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{55}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{56}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{57}{chapter*.73}%
 \contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{60}{appendix.Alph1}%

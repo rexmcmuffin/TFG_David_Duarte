@@ -19,6 +19,447 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{MathWorks}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f6823abd383a341f0d78ef38829bbbb}{%
+           family={{MATLAB}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{fullhash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{fullhashraw}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{bibnamehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authorbibnamehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authornamehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authorfullhash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authorfullhashraw}{8f6823abd383a341f0d78ef38829bbbb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MATLAB y Simulink para sistemas espaciales}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://la.mathworks.com/solutions/aerospace-defense/space-systems.html
+      \endverb
+      \verb{url}
+      \verb https://la.mathworks.com/solutions/aerospace-defense/space-systems.html
+      \endverb
+    \endentry
+    \entry{hewing2023enhancing}{inproceedings}{}{}
+      \name{author}{10}{}{%
+        {{hash=48edade84d91ba15a5415230210b37d6}{%
+           family={Hewing},
+           familyi={H\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1f561eec5fffd1c8c6700fe79c801099}{%
+           family={Gramlich},
+           familyi={G\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a6783597d83f0a49947b24a9c7e3ba85}{%
+           family={Verhoek},
+           familyi={V\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c79dc06bb1f29555b2c93c1dfba81a7b}{%
+           family={Veenman},
+           familyi={V\bibinitperiod},
+           given={Joost},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9b99335ffa75bb2372942cb208b2a53f}{%
+           family={Polonio},
+           familyi={P\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9c7dc9c32175f55897d2fabd1f191d2c}{%
+           family={Ardura},
+           familyi={A\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dc9fdb8d5b17ccf01d1fd70f0017d995}{%
+           family={Tóth},
+           familyi={T\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9bd03be2361b3d713f0830280cb2571d}{%
+           family={Ebenbauer},
+           familyi={E\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bd5b3a8e42f635040868ca0b8dfff31a}{%
+           family={Scherer},
+           familyi={S\bibinitperiod},
+           given={Carsten\bibnamedelima W},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c7b0358e1db854869a972a7bc17f7891}{%
+           family={Preda},
+           familyi={P\bibinitperiod},
+           given={Valentin},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{823ee37cd6e8674ea0e3b8030baf827e}
+      \strng{fullhash}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
+      \strng{fullhashraw}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
+      \strng{bibnamehash}{823ee37cd6e8674ea0e3b8030baf827e}
+      \strng{authorbibnamehash}{823ee37cd6e8674ea0e3b8030baf827e}
+      \strng{authornamehash}{823ee37cd6e8674ea0e3b8030baf827e}
+      \strng{authorfullhash}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
+      \strng{authorfullhashraw}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{12th International Conference on Guidance, Navigation \& Control Systems}
+      \field{title}{Enhancing the Guidance, Navigation and Control of Autonomous Parafoils using Machine Learning Methods}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+    \endentry
+    \entry{AEM2017}{online}{}{}
+      \list{organization}{1}{%
+        {Agencia Espacial Mexicana}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducción a la Ingeniería de Sistemas Espaciales}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.educacionespacial.aem.gob.mx/images/convocatorias/images/mem17/04Introducion_ala_ISE.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.educacionespacial.aem.gob.mx/images/convocatorias/images/mem17/04Introducion_ala_ISE.pdf
+      \endverb
+    \endentry
+    \entry{Castao2014EstimacinDP}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=e12e9cb7dc0d6ac409b28cc173523e83}{%
+           family={Castaño},
+           familyi={C\bibinitperiod},
+           given={Ángel\bibnamedelima Rodríguez},
+           giveni={Á\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \strng{fullhash}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \strng{fullhashraw}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \strng{bibnamehash}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \strng{authorbibnamehash}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \strng{authornamehash}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \strng{authorfullhash}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \strng{authorfullhashraw}{e12e9cb7dc0d6ac409b28cc173523e83}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estimación de posición y control de vehículos autónomos a elevada velocidad.}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:170879515
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:170879515
+      \endverb
+    \endentry
+    \entry{Culp1993GuidanceAC}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b2e608d5be0e3bd9afc68c8f27404f8f}{%
+           family={Culp},
+           familyi={C\bibinitperiod},
+           given={Robert\bibnamedelima Dudley},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ec7f8dabc4ccd15a63ecede60b5e9205}{%
+           family={Bickley},
+           familyi={B\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e10f69ba889607b23e09726d083a8cb4}
+      \strng{fullhash}{e10f69ba889607b23e09726d083a8cb4}
+      \strng{fullhashraw}{e10f69ba889607b23e09726d083a8cb4}
+      \strng{bibnamehash}{e10f69ba889607b23e09726d083a8cb4}
+      \strng{authorbibnamehash}{e10f69ba889607b23e09726d083a8cb4}
+      \strng{authornamehash}{e10f69ba889607b23e09726d083a8cb4}
+      \strng{authorfullhash}{e10f69ba889607b23e09726d083a8cb4}
+      \strng{authorfullhashraw}{e10f69ba889607b23e09726d083a8cb4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Guidance and control, 1993; Annual Rocky Mountain Guidance and Control Conference, 16th, Keystone, CO, Feb. 6-10, 1993}
+      \field{year}{1993}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:108791083
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:108791083
+      \endverb
+    \endentry
+    \entry{Falcoz2023GuidanceN}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=4813fe7ad9e911e65c1b098b97aa48ca}{%
+           family={Falcoz},
+           familyi={F\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=95e2e4ad3eb23dfaef46a070f3bca5f5}{%
+           family={Narbonne},
+           familyi={N\bibinitperiod},
+           given={Sophie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=17f5498ee0ad6c915635ca573e4c4da4}{%
+           family={Kanani},
+           familyi={K\bibinitperiod},
+           given={Keyvan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8a67745d3dee26eee7bb2739ab5bd90a}{%
+           family={Blanc-Paques},
+           familyi={B\bibinithyphendelim P\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e3a29dbbec474e95f942f89b25862259}{%
+           family={Jacquiau},
+           familyi={J\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c3aea630bd7c1501193d80bb4effc0dc}{%
+           family={Lesprier},
+           familyi={L\bibinitperiod},
+           given={Jérémy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cf89d618d43d12a305fb2578f5d9490c}{%
+           family={Manuel-Juanpere},
+           familyi={M\bibinithyphendelim J\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0a4de213daec17e38f0d8d9dc4dd20ef}{%
+           family={Charbaut},
+           familyi={C\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=42615c15b3856ab53e453537a60f7478}{%
+           family={Lorenzoni},
+           familyi={L\bibinitperiod},
+           given={Leila},
+           giveni={L\bibinitperiod}}}%
+        {{hash=db2bce4f9dd821b8a3e1dab2b74054c7}{%
+           family={Duteis},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=348f1a2d08aa95cd98a9733da84396f1}{%
+           family={Steiger},
+           familyi={S\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6dc7492ecd1f7dbac8adabcf89f662b4}
+      \strng{fullhash}{753c32ddbc2ace7e2c103323f40f6be3}
+      \strng{fullhashraw}{753c32ddbc2ace7e2c103323f40f6be3}
+      \strng{bibnamehash}{6dc7492ecd1f7dbac8adabcf89f662b4}
+      \strng{authorbibnamehash}{6dc7492ecd1f7dbac8adabcf89f662b4}
+      \strng{authornamehash}{6dc7492ecd1f7dbac8adabcf89f662b4}
+      \strng{authorfullhash}{753c32ddbc2ace7e2c103323f40f6be3}
+      \strng{authorfullhashraw}{753c32ddbc2ace7e2c103323f40f6be3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
+      \field{title}{Guidance, Navigation \& Control on-board architecture for Mars Sample Return Rendezvous \& Capture}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:267285374
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:267285374
+      \endverb
+    \endentry
+    \entry{salvador2014embedded}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=892115c6a4645e5d9ca5328c97e1dae2}{%
+           family={Salvador},
+           familyi={S\bibinitperiod},
+           given={Otavio},
+           giveni={O\bibinitperiod}}}%
+        {{hash=387ca32916236dd8d7fa4c023c71293b}{%
+           family={Angolini},
+           familyi={A\bibinitperiod},
+           given={Daiane},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing Ltd}%
+      }
+      \strng{namehash}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \strng{fullhash}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \strng{fullhashraw}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \strng{bibnamehash}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \strng{authorbibnamehash}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \strng{authornamehash}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \strng{authorfullhash}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \strng{authorfullhashraw}{4d80043aeaf83ea60c33f3eeafab0fd5}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Embedded Linux Development with Yocto Project}
+      \field{year}{2014}
+    \endentry
+    \entry{vaduva2015learning}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e87241b4693b7486ac841c4e0ac0cb9d}{%
+           family={Vaduva},
+           familyi={V\bibinitperiod},
+           given={Alexandru},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing Ltd}%
+      }
+      \strng{namehash}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \strng{fullhash}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \strng{fullhashraw}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \strng{bibnamehash}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \strng{authorbibnamehash}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \strng{authornamehash}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \strng{authorfullhash}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \strng{authorfullhashraw}{e87241b4693b7486ac841c4e0ac0cb9d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning Embedded Linux Using the Yocto Project}
+      \field{year}{2015}
+    \endentry
+    \entry{mihalivc2022hardware}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a1c8cefa3d51b393f22806d1386a3290}{%
+           family={Mihalič},
+           familyi={M\bibinitperiod},
+           given={Franc},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2667bf295f1396403ee462442abe3332}{%
+           family={Truntič},
+           familyi={T\bibinitperiod},
+           given={Mitja},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fbe584a9f0a96ee393d44fe01383ad2b}{%
+           family={Hren},
+           familyi={H\bibinitperiod},
+           given={Alenka},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{8a670e6be2a8a1da36ca6a969d5c4aab}
+      \strng{fullhash}{90c3f00185eb5eafec571f57ac17a1cf}
+      \strng{fullhashraw}{90c3f00185eb5eafec571f57ac17a1cf}
+      \strng{bibnamehash}{90c3f00185eb5eafec571f57ac17a1cf}
+      \strng{authorbibnamehash}{90c3f00185eb5eafec571f57ac17a1cf}
+      \strng{authornamehash}{8a670e6be2a8a1da36ca6a969d5c4aab}
+      \strng{authorfullhash}{90c3f00185eb5eafec571f57ac17a1cf}
+      \strng{authorfullhashraw}{90c3f00185eb5eafec571f57ac17a1cf}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics}
+      \field{number}{15}
+      \field{title}{Hardware-in-the-loop simulations: A historical overview of engineering challenges}
+      \field{volume}{11}
+      \field{year}{2022}
+      \field{pages}{2462}
+      \range{pages}{1}
+    \endentry
+    \entry{montoya2020advanced}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=30d0fb77257c68d038d30ecd45de56f7}{%
+           family={Montoya},
+           familyi={M\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7d6e0d9648164e17f2b53f510ad302da}{%
+           family={Brandl},
+           familyi={B\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d19301fa25f689359666090cdbe09120}{%
+           family={Vishwanath},
+           familyi={V\bibinitperiod},
+           given={Keerthi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=58ab8e41700817da0a280ded35fa3fee}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod}}}%
+        {{hash=968e105d28701836101b3a15d7dd19e8}{%
+           family={Darbali-Zamora},
+           familyi={D\bibinithyphendelim Z\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9961f385e3ee4363182315e8f033fe1a}{%
+           family={Summers},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=80cfedb63015a4c4c21deaecbd293e58}{%
+           family={Hashimoto},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3b20cd36fe94b342b6ef1414ae7cb3eb}{%
+           family={Kikusato},
+           familyi={K\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=901454f304edffa92747d9bba00ff33c}{%
+           family={Ustun},
+           familyi={U\bibinitperiod},
+           given={Taha\bibnamedelima Selim},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=58ffa67c49748d9221a480e4f0eefbd8}{%
+           family={Ninad},
+           familyi={N\bibinitperiod},
+           given={Nayeem},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{3c6d87ad639ba43b2a46c902092023c9}
+      \strng{fullhash}{4d65cc19d9fe14ac08e734b048f944c6}
+      \strng{fullhashraw}{4d65cc19d9fe14ac08e734b048f944c6}
+      \strng{bibnamehash}{3c6d87ad639ba43b2a46c902092023c9}
+      \strng{authorbibnamehash}{3c6d87ad639ba43b2a46c902092023c9}
+      \strng{authornamehash}{3c6d87ad639ba43b2a46c902092023c9}
+      \strng{authorfullhash}{4d65cc19d9fe14ac08e734b048f944c6}
+      \strng{authorfullhashraw}{4d65cc19d9fe14ac08e734b048f944c6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energies}
+      \field{number}{12}
+      \field{title}{Advanced laboratory testing methods using real-time simulation and hardware-in-the-loop techniques: A survey of smart grid international research facility network activities}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{3267}
+      \range{pages}{1}
+    \endentry
     \entry{Merchn2019EvaluacinDM}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{hash=ca1aea915f8182b0127262705cb46dfe}{%
@@ -847,16 +1288,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{AEM2017}
-  \missing{Castao2014EstimacinDP}
-  \missing{Culp1993GuidanceAC}
-  \missing{Falcoz2023GuidanceN}
-  \missing{MathWorks2024_ss}
-  \missing{hewing2023enhancing}
-  \missing{mihalivc2022hardware}
-  \missing{montoya2020advanced}
-  \missing{salvador2014embedded}
-  \missing{vaduva2015learning}
 \endrefsection
 \endinput
 

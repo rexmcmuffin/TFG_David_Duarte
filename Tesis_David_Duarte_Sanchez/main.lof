@@ -1,42 +1,42 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Tarjeta de desarrollo Zedboard}}{7}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Flujo de trabajo Yocto Project}}{9}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Flujo de trabajo Simulink Coder}}{12}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagrama de compilación cruzada}}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Tarjeta de desarrollo Zedboard}}{6}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Flujo de trabajo Yocto Project}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flujo de trabajo Simulink Coder}}{11}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagrama de compilación cruzada}}{12}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama general del flujo de trabajo propuesto}}{28}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama para generar el entorno de MATLAB}}{30}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Menú de instalación de Python}}{30}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Menú de instalación de Python}}{30}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Menú de instalación de VS Code}}{31}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Menú de instalación de VS Code}}{31}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Retorno del comando \ref {lst:docker_basics_ps-a}}}{33}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Retorno del comando \ref {lst:docker_basics_start}}}{33}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Retorno del comando \ref {lst:docker_basics_init}}}{33}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagrama para la elaboración del entorno para compilación cruzada}}{34}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagrama para la elaboración del entorno para Yocto Project}}{35}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagrama caso de estudio 1 - Filtro Básico}}{38}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Librería de bloques}}{38}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Librería de bloques - generador de onda senoidal}}{39}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Configuración de los generadores de onda senoidal}}{39}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Librería de bloques - sumador de señales}}{40}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Configuración del bloque sumador de señales}}{40}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Bloque función de transferencia}}{41}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Librería de bloques - gráfico}}{42}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagrama MATLAB Simulink para poder observar las salidas}}{42}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Salida simulada del diagrama mostrado en la Figura \ref {fig:diagrama_matlab_simulink_graficos}}}{43}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Flujo de trabajo MATLAB Simulink Coder}}{44}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Pestaña Aplicaciones}}{45}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Pestaña código C}}{45}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Configuración de parámetros}}{45}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Selección del procesador y la familia del procesador}}{46}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Selección del tipo de archivo de construcción}}{47}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Archivo comprimido en el directorio swap\_area}}{47}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Make File}}{48}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Binario llamado simple\_filter}}{48}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama general del flujo de trabajo propuesto}}{27}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama para generar el entorno de MATLAB}}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Menú de instalación de Python}}{29}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Menú de instalación de Python}}{29}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Menú de instalación de VS Code}}{30}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Menú de instalación de VS Code}}{30}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Retorno del comando \ref {lst:docker_basics_ps-a}}}{32}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Retorno del comando \ref {lst:docker_basics_start}}}{32}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Retorno del comando \ref {lst:docker_basics_init}}}{32}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagrama para la elaboración del entorno para compilación cruzada}}{33}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagrama para la elaboración del entorno para Yocto Project}}{34}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagrama caso de estudio 1 - Filtro Básico}}{37}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Librería de bloques}}{37}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Librería de bloques - generador de onda senoidal}}{38}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Configuración de los generadores de onda senoidal}}{38}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Librería de bloques - sumador de señales}}{39}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Configuración del bloque sumador de señales}}{39}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Bloque función de transferencia}}{40}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Librería de bloques - gráfico}}{41}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagrama MATLAB Simulink para poder observar las salidas}}{41}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Salida simulada del diagrama mostrado en la Figura \ref {fig:diagrama_matlab_simulink_graficos}}}{42}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Flujo de trabajo MATLAB Simulink Coder}}{43}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Pestaña Aplicaciones}}{44}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Pestaña código C}}{44}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Configuración de parámetros}}{44}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Selección del procesador y la familia del procesador}}{45}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Selección del tipo de archivo de construcción}}{46}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Archivo comprimido en el directorio swap\_area}}{46}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Make File}}{47}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Binario llamado simple\_filter}}{47}{figure.caption.66}%
 \contentsline {figure}{\numberline {4.31}{\ignorespaces Flujo de trabajo EmbedSynthGNC}}{49}{figure.caption.67}%
 \contentsline {figure}{\numberline {4.32}{\ignorespaces Árbol de directorios de la capa}}{50}{figure.caption.68}%
 \contentsline {figure}{\numberline {4.33}{\ignorespaces Estructura del archivo caso\_de\_estudio\_1.bb}}{51}{figure.caption.70}%
