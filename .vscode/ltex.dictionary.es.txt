@@ -58,3 +58,4 @@ usb
 vivado
 Vivado
 BitBake
+EmbedSynthGNC

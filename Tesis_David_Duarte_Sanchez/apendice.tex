@@ -1,12 +1,33 @@
-\chapter{Demostración del teorema de Nyquist}
-\label{apx:apendice}
+\chapter{Métricas de comparación de señales}
+\label{apx:comparacion_de_sennales_programa}
 
-El título anterior es solo un ejemplo ilustrativo.  Éste teorema no ameritaría
-un apéndice pues es parte normal del currículum de Electrónica, pero apéndices
-usualmente involucran aspectos de esta índole, que se salen de la línea de la
-tesis, pero que es conveniente incluir por completitud.
+\begin{lstlisting}[language=python, caption={Métricas de comparación de señales}, label=lst:comparacion_de_senales_sim_vs_exp]
+    import h5py
+    import scipy.io
+    import matplotlib.pyplot as plt
 
-Los anexos contienen toda información adicional que se considere pertinente
-agregar, como manuales de usuario, demostraciones matemáticas que se salen de
-la línea principal de la tesis, pero que pueden considerarse parte de los
-resultados del trabajo.
+    #Cargar los archivos .mat
+    #En la linea 7 se debe de colocar la direccion del archivo de simulacion generado por MATLAB
+    with h5py.File(r"archivo_simulado.mat", 'r') as archivo:
+        print("Claves del archivo:", list(archivo.keys()))
+        senal_simulada = archivo[list(archivo.keys())[0]][:]
+
+
+    #En la linea 12 se debe de colocar la direccion del archivo generado al ejecutar el programa en el ZedBoard
+    senal_experimental = scipy.io.loadmat('archivo_experimental.mat')
+
+    vector1 = senal_simulada  
+    vector2 = senal_experimental  
+
+    #Calculo del Error promedio absoluto
+    mae = np.mean(np.abs(vector1 - vector2))
+    print(f"Error Promedio Absoluto (MAE): {mae}")
+    
+    #Calculo de la raiz del error cuadratico medio
+    rmse = np.sqrt(np.mean((vector1 - vector2) ** 2))
+    print(f"Raíz del Error Cuadrático Medio (RMSE): {rmse}")
+    
+    #Calculo del error cuadratico medio
+    mse = np.mean((vector1 - vector2) ** 2)
+    print("Error Cuadrático Medio (MSE):", mse)
+\end{lstlisting}

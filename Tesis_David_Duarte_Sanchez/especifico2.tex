@@ -687,10 +687,41 @@ Una vez implementada la imagen de Yocto en la tarjeta de desarrollo se puede eje
 
 \subsection{Comparación de resultados}
 
-Como se pudo observar en la Figura \ref{}, en la esquina superior derecha se obtiene la gráfica proveniente de la simulación del sistema, por otro lado en la esquina superior derecha se puede observar la gráfica proveniente de la ejecución del sistema en la tarjeta de desarrollo, estas mediciones corresponden a las señales antes de la etapa de filtrado del caso de estudio desarrollado en \ref{}, por otro lado en la esquina inferior izquierda se tiene la  gráfica proveniente de la simulación del sistema una vez filtrada la señal, finalmente en la esquina inferior derecha se observa la gráfica proveniente de la ejecución del sistema en la tarjeta de desarrollo. 
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/especifico_2/onda_filtrada.pdf}
+        \caption{Onda simulada resultante luego de la función de transferencia}
+        \label{fig:onda_filtrada_simulada_matlab}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/especifico_2/Filtered.pdf}
+        \caption{Onda experimental resultante luego de la función de transferencia}
+        \label{fig:onda_filtrada_experimental_zedboard}
+    \end{subfigure}
+    \caption{Comparación de la salida resultante simulada (izquierda) y experimental (derecha)}
+    \label{fig:comparacion_salida_resultante}
+\end{figure}
 
-Para un mejor análisis de resultados se utilizó el código de Python que se muestra en \ref{}, el cual se encarga de tomar los 4 archivos .mat que son las salidas del sistema de control y compararlas, es de esta forma que se logra obtener la gráfica que se muestra en \ref{}, donde se sobreponen las dos señales antes de la etapa de filtrado y en la figura \ref{} se muestran sobrepuestas las salidas de la función de transferencia, con estos datos se obtiene la desviación estándar de las mediciones como se pudo observar en \ref{} ademas del error de las mediciones como se observa en \ref{}.
+Como se pudo observar en la Figura \ref{fig:comparacion_salida_resultante}, a la izquierda se puede observar la gráfica proveniente de la simulación del sistema, por otro lado en la derecha se puede observar la gráfica proveniente de la ejecución del sistema en la tarjeta de desarrollo, estas mediciones corresponden a las señales resultantes luego de la etapa de filtrado del caso de estudio desarrollado en esta sección. 
 
-Es por esto que se puede decir que el caso de estudio demuestra que el flujo de trabajo es aceptado.
+Para un mejor análisis de resultados se utilizó el código de Python que se muestra en \ref{apx:comparacion_de_sennales_programa}, el cual se encarga de tomar tanto el archivo de salida de la simulación como el archivo de salida del caso experimental y compararlas, esto con el objetivo de poder medir el error promedio absoluto, el error cuadrático medio y la raíz cuadrada del mismo, esto con el objetivo de poder cuantificar las diferencias entre la señal de salida simulada y la experimental.
+
+Para este caso de estudio se obtuvieron los siguientes resultados:
+
+\begin{itemize}
+    \item Error Promedio Absoluto = $1.930 \times 10^{-18}$ [V]
+    \item Error Cuadrático Medio = $2.14 \times 10^{-34}$ $[V^{2}]$
+    \item Raíz del Error Cuadrático Medio = $1.46 \times 10{-17}$ [V]
+\end{itemize}
+
+Los valores de error obtenidos son bajos, lo cual nos indica un alto nivel de correspondencia entre la señal simulada y la señal experimental. Por un lado tenemos el error promedio absoluto, el cual represente la diferencia promedio entre la simulación y el experimento, al ser esta métrica representada por un valor de $1.930 \times 10^{-18}$ V sugiere que las diferencias entre ambas señales son despreciables. Por otro lado, tenemos el error cuadrático medio, este es asociado con un valor de $2.14 \times 10^{-34}$ $V^{2}$, lo que indica que las desviaciones en las mediciones son mínimas y puntuales. Finalmente la raíz del error cuadrático medio, la cual es representada por el valor de $1.46 \times 10{-17}$ V representa la magnitud promedio de las diferencias cuadráticas. La cercanía a cero que otorga este valor refuerza la alta precisión del modelo en relación con la señal experimental.
+
+Al tener valores tan bajos en las métricas encargadas de medir el error de los modelos se puede respaldar que el proceso experimental es acorde a los resultados de simulación, cumpliendo con los requisitos de exactitud de forma notable.
 
 \section{Reflexión final}
+
+Los resultados de error obtenidos son altamente satisfactorios, lo cual respalda la implementación del caso de estudio realizada a lo largo de este capítulo. Estos valores indican una correspondencia prácticamente perfecta entre la simulación y el proceso experimental. La alta precisión alcanzada no solo válida el modelo desarrollado, sino que también resalta la consistencia y fiabilidad del proceso experimental. Es por esto que se aprueba el marco de trabajo realizado y se continúa con la investigación del mismo.

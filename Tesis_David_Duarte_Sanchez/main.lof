@@ -42,6 +42,13 @@
 \contentsline {figure}{\numberline {4.33}{\ignorespaces Estructura del archivo caso\_de\_estudio\_1.bb}}{51}{figure.caption.70}%
 \contentsline {figure}{\numberline {4.34}{\ignorespaces Puertos tarjeta de desarrollo Zedboard}}{53}{figure.caption.71}%
 \contentsline {figure}{\numberline {4.35}{\ignorespaces Salida resultante de la imagen generada mediante el flujo de trabajo}}{54}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Comparación de la salida resultante simulada (izquierda) y experimental (derecha)}}{54}{figure.caption.73}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama completo del caso de estudio 2 - IMU \blx@tocontentsinit {0}\cite {mathworks2024imu}}}{57}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Librería de bloques - Aceleración Lineal}}{58}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Librería de bloques - Velocidad Angular}}{58}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Librería de bloques - IMU}}{59}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Librería de bloques - Integrador}}{59}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Librería de bloques - Guardar en archivo}}{60}{figure.caption.80}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

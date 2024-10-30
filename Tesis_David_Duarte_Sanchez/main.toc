@@ -88,8 +88,15 @@
 \contentsline {subsection}{\numberline {4.4.6}Conexión de la tarjeta de desarrollo con el computador host}{52}{subsection.4.4.6}%
 \contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{53}{subsection.4.4.7}%
 \contentsline {subsection}{\numberline {4.4.8}Comparación de resultados}{54}{subsection.4.4.8}%
-\contentsline {section}{\numberline {4.5}Reflexión final}{54}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{55}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{56}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{57}{chapter*.73}%
-\contentsline {chapter}{\numberline {A}Demostración del teorema de Nyquist}{60}{appendix.Alph1}%
+\contentsline {section}{\numberline {4.5}Reflexión final}{55}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{56}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Caso de estudio 2 - IMU}{56}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Implementación en MATLAB Simulink}{56}{subsection.5.1.1}%
+\contentsline {subsubsection}{Bloques utilizados para la implementación}{57}{section*.75}%
+\contentsline {subsection}{\numberline {5.1.2}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{58}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Caso de estudio 3 - PID}{58}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Implementación en MATLAB Simulink}{58}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{58}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{61}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{62}{chapter*.81}%
+\contentsline {chapter}{\numberline {A}Métricas de comparación de señales}{65}{appendix.Alph1}%
