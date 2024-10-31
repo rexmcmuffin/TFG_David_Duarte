@@ -2413,6 +2413,7 @@
     <bcf:citekey order="36" intorder="1">mathworks2024imu</bcf:citekey>
     <bcf:citekey order="37" intorder="1">mathworks2024imu</bcf:citekey>
     <bcf:citekey order="38" intorder="1">mathworks2024imu</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">microcontrollerslab_pid_controller_design</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

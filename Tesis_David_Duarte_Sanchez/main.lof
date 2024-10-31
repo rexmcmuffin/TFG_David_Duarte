@@ -44,15 +44,16 @@
 \contentsline {figure}{\numberline {4.35}{\ignorespaces Salida resultante de la imagen generada mediante el flujo de trabajo}}{54}{figure.caption.72}%
 \contentsline {figure}{\numberline {4.36}{\ignorespaces Comparación de la salida resultante simulada (izquierda) y experimental (derecha)}}{54}{figure.caption.73}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama completo del caso de estudio 2 - IMU \blx@tocontentsinit {0}\cite {mathworks2024imu}}}{57}{figure.caption.74}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Bloque para la aceleración lineal}}{58}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Bloque para la velocidad angular}}{58}{figure.caption.77}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Bloque para la simulación del comportamiento de la IMU}}{59}{figure.caption.78}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Bloque para la integración de la velocidad angular}}{60}{figure.caption.79}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Bloque para la lectura de archivos}}{60}{figure.caption.81}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Bloque para la suma de señales}}{61}{figure.caption.82}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Bloque para la simulación del comportamiento de la IMU}}{61}{figure.caption.83}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Bloque para convertir de Radianes a grados}}{62}{figure.caption.84}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Bloque para aplicar una función implementada mediante código}}{62}{figure.caption.85}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama completo del caso de estudio 2 - IMU \blx@tocontentsinit {0}\cite {mathworks2024imu}}}{58}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Bloque para la aceleración lineal}}{59}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Bloque para la velocidad angular}}{59}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Bloque para la simulación del comportamiento de la IMU}}{60}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Bloque para la integración de la velocidad angular}}{61}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Bloque para la lectura de archivos}}{61}{figure.caption.81}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Bloque para la suma de señales}}{62}{figure.caption.82}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Bloque para la simulación del comportamiento de la IMU}}{62}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Bloque para convertir de Radianes a grados}}{63}{figure.caption.84}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Bloque para aplicar una función implementada mediante código}}{63}{figure.caption.85}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagrama completo del caso de estudio 3 - PID }}{65}{figure.caption.86}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
