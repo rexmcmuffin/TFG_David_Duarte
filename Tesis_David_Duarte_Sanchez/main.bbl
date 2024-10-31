@@ -33,8 +33,8 @@
       \strng{authornamehash}{8f6823abd383a341f0d78ef38829bbbb}
       \strng{authorfullhash}{8f6823abd383a341f0d78ef38829bbbb}
       \strng{authorfullhashraw}{8f6823abd383a341f0d78ef38829bbbb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{MATLAB y Simulink para sistemas espaciales}
@@ -111,8 +111,8 @@
       \strng{authornamehash}{823ee37cd6e8674ea0e3b8030baf827e}
       \strng{authorfullhash}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
       \strng{authorfullhashraw}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{12th International Conference on Guidance, Navigation \& Control Systems}
@@ -125,8 +125,8 @@
       \list{organization}{1}{%
         {Agencia Espacial Mexicana}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Introducción a la Ingeniería de Sistemas Espaciales}
       \field{urlday}{16}
@@ -157,8 +157,8 @@
       \strng{authornamehash}{e12e9cb7dc0d6ac409b28cc173523e83}
       \strng{authorfullhash}{e12e9cb7dc0d6ac409b28cc173523e83}
       \strng{authorfullhashraw}{e12e9cb7dc0d6ac409b28cc173523e83}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Estimación de posición y control de vehículos autónomos a elevada velocidad.}
@@ -191,8 +191,8 @@
       \strng{authornamehash}{e10f69ba889607b23e09726d083a8cb4}
       \strng{authorfullhash}{e10f69ba889607b23e09726d083a8cb4}
       \strng{authorfullhashraw}{e10f69ba889607b23e09726d083a8cb4}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Guidance and control, 1993; Annual Rocky Mountain Guidance and Control Conference, 16th, Keystone, CO, Feb. 6-10, 1993}
@@ -270,8 +270,8 @@
       \strng{authornamehash}{6dc7492ecd1f7dbac8adabcf89f662b4}
       \strng{authorfullhash}{753c32ddbc2ace7e2c103323f40f6be3}
       \strng{authorfullhashraw}{753c32ddbc2ace7e2c103323f40f6be3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
@@ -308,8 +308,8 @@
       \strng{authornamehash}{4d80043aeaf83ea60c33f3eeafab0fd5}
       \strng{authorfullhash}{4d80043aeaf83ea60c33f3eeafab0fd5}
       \strng{authorfullhashraw}{4d80043aeaf83ea60c33f3eeafab0fd5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Embedded Linux Development with Yocto Project}
@@ -334,8 +334,8 @@
       \strng{authornamehash}{e87241b4693b7486ac841c4e0ac0cb9d}
       \strng{authorfullhash}{e87241b4693b7486ac841c4e0ac0cb9d}
       \strng{authorfullhashraw}{e87241b4693b7486ac841c4e0ac0cb9d}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Learning Embedded Linux Using the Yocto Project}
@@ -370,8 +370,8 @@
       \strng{authornamehash}{8a670e6be2a8a1da36ca6a969d5c4aab}
       \strng{authorfullhash}{90c3f00185eb5eafec571f57ac17a1cf}
       \strng{authorfullhashraw}{90c3f00185eb5eafec571f57ac17a1cf}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronics}
@@ -787,8 +787,8 @@
       \strng{authornamehash}{7008c5e9bf6bcc9571109759eff64fcd}
       \strng{authorfullhash}{de34ef1764b058d52830b690e07daf4d}
       \strng{authorfullhashraw}{de34ef1764b058d52830b690e07daf4d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{RECIMUNDO}
@@ -1159,8 +1159,8 @@
       \strng{authornamehash}{d994c7179ce7eeb4e0c46ae69d1fc92e}
       \strng{authorfullhash}{4c11de363a59573c39b2e1faa49fb901}
       \strng{authorfullhashraw}{4c11de363a59573c39b2e1faa49fb901}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Papers of ESA GNC-ICATT 2023}
@@ -1286,6 +1286,31 @@
       \verb{url}
       \verb https://api.semanticscholar.org/CorpusID:267287945
       \endverb
+    \endentry
+    \entry{mathworks2024imu}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=2d2b0d998977e6379aad61f1b56ac3c1}{%
+           family={MathWorks},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MathWorks}%
+      }
+      \strng{namehash}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \strng{fullhash}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \strng{fullhashraw}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \strng{bibnamehash}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \strng{authorbibnamehash}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \strng{authornamehash}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \strng{authorfullhash}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \strng{authorfullhashraw}{2d2b0d998977e6379aad61f1b56ac3c1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Disponible en: \url{https://la.mathworks.com/help/fusion/ug/imu-sensor-fusion-with-simulink.html} [Accedido: 27-oct-2024]}
+      \field{title}{IMU Sensor Fusion with Simulink}
+      \field{year}{2024}
     \endentry
   \enddatalist
 \endrefsection

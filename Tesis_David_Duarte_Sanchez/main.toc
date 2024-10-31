@@ -92,11 +92,15 @@
 \contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{56}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Caso de estudio 2 - IMU}{56}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Implementación en MATLAB Simulink}{56}{subsection.5.1.1}%
-\contentsline {subsubsection}{Bloques utilizados para la implementación}{57}{section*.75}%
-\contentsline {subsection}{\numberline {5.1.2}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{58}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Caso de estudio 3 - PID}{58}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Implementación en MATLAB Simulink}{58}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{58}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{61}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{62}{chapter*.81}%
-\contentsline {chapter}{\numberline {A}Métricas de comparación de señales}{65}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {5.1.2}Bloques utilizados para la implementación}{57}{subsection.5.1.2}%
+\contentsline {subsubsection}{Sistema para la generación de archivos}{57}{section*.75}%
+\contentsline {subsubsection}{Sistema para la lectura e interpretación de los archivos generados previamente}{60}{section*.80}%
+\contentsline {subsection}{\numberline {5.1.3}Resultados de la simulación}{60}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{60}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Resultados de la implementación}{63}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Caso de estudio 3 - PID}{63}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Implementación en MATLAB Simulink}{63}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{63}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{64}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{65}{chapter*.86}%
+\contentsline {chapter}{\numberline {A}Métricas de comparación de señales}{68}{appendix.Alph1}%

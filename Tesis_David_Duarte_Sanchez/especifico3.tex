@@ -27,95 +27,265 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
 
 Este sistema es el encargado de generar los archivos de entrada, estos mismos contienen los datos de tiempo y valores para la correcta implementación del sistema
 
-\begin{figure}[h!]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png}
-    \caption{Librería de bloques - Aceleración Lineal}
-    \label{fig:lib_bloques_linear_acceleration}
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png}
-    \caption{Configuración del bloque aceleración lineal}
-    \label{fig:lib_bloques_config_linear_acceleration}
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png}
-    \caption{Librería de bloques - Velocidad Angular}
-    \label{fig:lib_bloques_angular_velocity}
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png}
-    \caption{Configuración del bloque velocidad angular}
-    \label{fig:lib_bloques_config_angular_velocity}
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png}
-    \caption{Librería de bloques - IMU}
-    \label{fig:lib_bloques_IMU}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png}
+        \caption{Librería de bloques - Aceleración Lineal}
+        \label{fig:lib_bloques_linear_acceleration}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png}
+        \caption{Configuración del bloque aceleración lineal}
+        \label{fig:lib_bloques_config_linear_acceleration}
+    \end{subfigure}
+    \caption{Bloque para la aceleración lineal}
+    \label{fig:linear_accel_block_simulink}
 \end{figure}
 
 
-\begin{figure}[h!]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png}
-    \caption{Librería de bloques - Integrador}
-    \label{fig:lib_bloques_integrador}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png}
+        \caption{Librería de bloques - Velocidad Angular}
+        \label{fig:lib_bloques_angular_velocity}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png}
+        \caption{Configuración del bloque velocidad angular}
+        \label{fig:lib_bloques_config_angular_velocity}
+    \end{subfigure}
+    \caption{Bloque para la velocidad angular}
+    \label{fig:angular_velocity_block_simulink}
 \end{figure}
 
-\begin{figure}[h!]
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png}
-    \caption{Librería de bloques - Guardar en archivo}
-    \label{fig:lib_bloques_to_file_IMU}
+    % Primera imagen
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png}
+        \caption{Librería de bloques - IMU}
+        \label{fig:lib_bloques_IMU}
+    \end{subfigure}
+    \hfill
+    % Segunda imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png}
+        \caption{Configuración de parámetros 1}
+        \label{fig:parametros_IMU_01}
+    \end{subfigure}
+    \hfill
+    % Tercera imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png}
+        \caption{Configuración de parámetros 2}
+        \label{fig:parametros_IMU_02}
+    \end{subfigure}
+    \hfill
+    % Cuarta imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png}
+        \caption{Configuración de parámetros 3}
+        \label{fig:parametros_IMU_03}
+    \end{subfigure}
+    \hfill
+    % Quinta imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png}
+        \caption{Configuración de parámetros 4}
+        \label{fig:parametros_IMU_04}
+    \end{subfigure}
+
+    \caption{Bloque para la simulación del comportamiento de la IMU}
+    \label{fig:arreglo_imu}
 \end{figure}
+
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png}
+        \caption{Librería de bloques - Integrador}
+        \label{fig:lib_bloques_integrador}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png}
+        \caption{Configuración del bloque velocidad angular}
+        \label{fig:config_bloques_integrador}
+    \end{subfigure}
+    \caption{Bloque para la integración de la velocidad angular}
+    \label{fig:integration_for_angular_velocity}
+\end{figure}
+
+
+%Missing image for required block information
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{subfigure}[b]{0.35\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png}
+%        \caption{Librería de bloques - Guardar en archivo}
+%        \label{fig:lib_bloques_to_file_IMU}
+%    \end{subfigure}
+%    \hfill
+%    \begin{subfigure}[b]{0.45\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/}
+%        \caption{}
+%        \label{fig:}
+%    \end{subfigure}
+%    \caption{}
+%    \label{fig:}
+%\end{figure}
+
 
 \subsubsection{Sistema para la lectura e interpretación de los archivos generados previamente}
 
-\begin{figure}[h!]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png}
-    \caption{Librería de bloques - Leer de archivo}
-    \label{fig:lib_bloques_from_file_IMU}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png}
+        \caption{Librería de bloques - Leer de archivo}
+        \label{fig:lib_bloques_from_file_IMU}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png}
+        \caption{Configuración del bloque encargado de la lectura de archivos}
+        \label{fig:config_from_file_IMU}
+    \end{subfigure}
+    \caption{Bloque para la lectura de archivos}
+    \label{fig:read_from_file}
 \end{figure}
 
-\begin{figure}[h!]
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png}
-    \caption{Librería de bloques - Suma}
-    \label{fig:lib_bloques_add}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png}
+        \caption{Librería de bloques - Suma}
+        \label{fig:lib_bloques_add_IMU}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png}
+        \caption{Configuración del bloque encargado de la suma de señales}
+        \label{fig:config_add_IMU}
+    \end{subfigure}
+    \caption{Bloque para la suma de señales}
+    \label{fig:add_of_some_signals}
 \end{figure}
 
-\begin{figure}[h!]
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png}
-    \caption{Librería de bloques - AHRS}
-    \label{fig:lib_bloques_AHRS}
+    % Primera imagen
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png}
+        \caption{Librería de bloques - AHRS}
+        \label{fig:lib_bloques_AHRS}
+    \end{subfigure}
+    \hfill
+    % Segunda imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png}
+        \caption{Configuración de parámetros 1}
+        \label{fig:parametros_AHRS_01}
+    \end{subfigure}
+    \hfill
+    % Tercera imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png}
+        \caption{Configuración de parámetros 2}
+        \label{fig:parametros_AHRS_02}
+    \end{subfigure}
+    \hfill
+    % Cuarta imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png}
+        \caption{Configuración de parámetros 3}
+        \label{fig:parametros_AHRS_03}
+    \end{subfigure}
+
+    \caption{Bloque para la simulación del comportamiento de la IMU}
+    \label{fig:arreglo_AHRS}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png}
-    \caption{Librería de bloques - Conversor de radianes a grados}
-    \label{fig:lib_bloques_R2D}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png}
+        \caption{Librería de bloques - Conversor de radianes a grados}
+        \label{fig:lib_bloques_R2D}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/libreria_bloque__rad_2_deg.png}
+        \caption{Configuración del bloque conversor de radianes a grados}
+        \label{fig:conf_bloques_R2D}
+    \end{subfigure}
+    \caption{Bloque para convertir de Radianes a grados}
+    \label{fig:bloques_R2D}
 \end{figure}
 
-\begin{figure}[h!]
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png}
-    \caption{Librería de bloques - Función}
-    \label{fig:lib_bloques_func}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png}
+        \caption{Librería de bloques - Función}
+        \label{fig:lib_bloques_func}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png}
+        \caption{}
+        \label{fig:config_bloques_func}
+    \end{subfigure}
+    \caption{Bloque para aplicar una función implementada mediante código}
+    \label{fig:bloques_func}
 \end{figure}
+
+\subsection{Resultados de la simulación}
 
 \subsection{Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}
 
+Para la implementación en la tarjeta de desarrollo ZedBoard se ejecuta el flujo de trabajo que se muestra en la sección \ref{}. El mismo es representado mediante el diagrama que se muestra en la Figura \ref{}.
+
+
+
+\subsection{Resultados de la implementación}
+
 \section{Caso de estudio 3 - PID}
+
 \subsection{Implementación en MATLAB Simulink}
+
 \subsection{Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}
