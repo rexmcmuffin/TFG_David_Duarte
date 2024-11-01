@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.7)  31 OCT 2024 10:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.7)  31 OCT 2024 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1224,7 +1224,56 @@ Package csquotes Info: Redefining alias 'default' -> 'spanish'.
  (./main.aux (./titlepage_licel_es.aux)
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- (./licencia.aux) (./disclaimer.aux) (./acta_aprob_licel.aux) (./acta_eval_licel.aux) (./resumen.aux) (./dedicatoria.aux) (./agradecimientos.aux) (./glosario.aux) (./intro.aux) (./teoria.aux) (./especifico1.aux) (./especifico2.aux) (./especifico3.aux) (./conclusiones.aux) (./apendice.aux))
+ (./licencia.aux) (./disclaimer.aux) (./acta_aprob_licel.aux) (./acta_eval_licel.aux) (./resumen.aux) (./dedicatoria.aux) (./agradecimientos.aux) (./glosario.aux) (./intro.aux) (./teoria.aux) (./especifico1.aux) (./especifico2.aux) (./especifico3.aux
+
+LaTeX Warning: Label `fig:data_simulated' multiply defined.
+
+
+LaTeX Warning: Label `fig:bias_sim' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bias_sim' multiply defined.
+
+
+LaTeX Warning: Label `fig:oe_sim' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:oe_sim' multiply defined.
+
+
+LaTeX Warning: Label `fig:data_simulated' multiply defined.
+
+
+LaTeX Warning: Label `fig:bias_sim' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bias_sim' multiply defined.
+
+
+LaTeX Warning: Label `fig:oe_sim' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:oe_sim' multiply defined.
+
+
+LaTeX Warning: Label `fig:data_simulated' multiply defined.
+
+
+LaTeX Warning: Label `fig:bias_sim' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:bias_sim' multiply defined.
+
+
+LaTeX Warning: Label `fig:oe_sim' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:oe_sim' multiply defined.
+
+
+LaTeX Warning: Label `fig:data_simulated' multiply defined.
+
+) (./conclusiones.aux) (./apendice.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -1328,7 +1377,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \openout2 = `titlepage_licel_es.aux'.
 
 (./titlepage_licel_es.tex
-<./fig/Firma_TEC-4.pdf, id=336, 201.75375pt x 41.15375pt>
+<./fig/Firma_TEC-4.pdf, id=348, 201.75375pt x 41.15375pt>
 File: ./fig/Firma_TEC-4.pdf Graphic file (type pdf)
 <use ./fig/Firma_TEC-4.pdf>
 Package pdftex.def Info: ./fig/Firma_TEC-4.pdf  used on input line 27.
@@ -1346,7 +1395,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 22
  (c:/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<./fig/by-sa.pdf, id=349, 121.45375pt x 43.16125pt>
+<./fig/by-sa.pdf, id=361, 121.45375pt x 43.16125pt>
 File: ./fig/by-sa.pdf Graphic file (type pdf)
 <use ./fig/by-sa.pdf>
 Package pdftex.def Info: ./fig/by-sa.pdf  used on input line 47.
@@ -1568,7 +1617,7 @@ Cap\'{\i }tulo 2.
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
 [5]
-<fig/teorico/zedboard_raw.png, id=743, 467.49657pt x 335.75438pt>
+<fig/teorico/zedboard_raw.png, id=780, 467.49657pt x 335.75438pt>
 File: fig/teorico/zedboard_raw.png Graphic file (type png)
 <use fig/teorico/zedboard_raw.png>
 Package pdftex.def Info: fig/teorico/zedboard_raw.png  used on input line 73.
@@ -1588,7 +1637,7 @@ LaTeX Info: Redefining \% on input line 133.
 [7]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo de yocto.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/teorico/Flujo de trabajo de yocto.pdf, id=761, 223.83624pt x 169.63374pt>
+<fig/teorico/Flujo de trabajo de yocto.pdf, id=798, 223.83624pt x 169.63374pt>
 File: fig/teorico/Flujo de trabajo de yocto.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo de yocto.pdf>
 Package pdftex.def Info: fig/teorico/Flujo de trabajo de yocto.pdf  used on input line 150.
@@ -1608,7 +1657,7 @@ LaTeX Info: Redefining \% on input line 203.
 [10]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo simulink coder.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/teorico/Flujo de trabajo simulink coder.pdf, id=817, 207.77625pt x 165.61874pt>
+<fig/teorico/Flujo de trabajo simulink coder.pdf, id=854, 207.77625pt x 165.61874pt>
 File: fig/teorico/Flujo de trabajo simulink coder.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo simulink coder.pdf>
 Package pdftex.def Info: fig/teorico/Flujo de trabajo simulink coder.pdf  used on input line 207.
@@ -1620,7 +1669,7 @@ LaTeX Info: Redefining \% on input line 227.
 [11 <./fig/teorico/Flujo de trabajo simulink coder.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo xcompiler.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/teorico/Flujo de trabajo xcompiler.pdf, id=842, 245.91875pt x 209.78375pt>
+<fig/teorico/Flujo de trabajo xcompiler.pdf, id=879, 245.91875pt x 209.78375pt>
 File: fig/teorico/Flujo de trabajo xcompiler.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo xcompiler.pdf>
 Package pdftex.def Info: fig/teorico/Flujo de trabajo xcompiler.pdf  used on input line 233.
@@ -1701,7 +1750,7 @@ Cap\'{\i }tulo 4.
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Diagrama general del proyecto.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Diagrama general del proyecto.pdf, id=973, 316.18124pt x 501.875pt>
+<fig/especifico_2/Diagrama general del proyecto.pdf, id=1010, 316.18124pt x 501.875pt>
 File: fig/especifico_2/Diagrama general del proyecto.pdf Graphic file (type pdf)
 <use fig/especifico_2/Diagrama general del proyecto.pdf>
 Package pdftex.def Info: fig/especifico_2/Diagrama general del proyecto.pdf  used on input line 8.
@@ -1716,7 +1765,7 @@ Package pdftex.def Info: fig/especifico_2/Diagrama general del proyecto.pdf  use
  <./fig/especifico_2/Diagrama general del proyecto.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Entorno_windows.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Entorno_windows.pdf, id=996, 392.46625pt x 216.81pt>
+<fig/especifico_2/Entorno_windows.pdf, id=1033, 392.46625pt x 216.81pt>
 File: fig/especifico_2/Entorno_windows.pdf Graphic file (type pdf)
 <use fig/especifico_2/Entorno_windows.pdf>
 Package pdftex.def Info: fig/especifico_2/Entorno_windows.pdf  used on input line 37.
@@ -1729,17 +1778,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
 [28]
-<fig/especifico_2/Ambiente_matlab/instalacion_python.pdf, id=1004, 641.39626pt x 395.22656pt>
+<fig/especifico_2/Ambiente_matlab/instalacion_python.pdf, id=1041, 641.39626pt x 395.22656pt>
 File: fig/especifico_2/Ambiente_matlab/instalacion_python.pdf Graphic file (type pdf)
 <use fig/especifico_2/Ambiente_matlab/instalacion_python.pdf>
 Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/instalacion_python.pdf  used on input line 49.
 (pdftex.def)             Requested size: 204.73041pt x 126.14941pt.
-<fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf, id=1005, 508.90125pt x 313.9228pt>
+<fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf, id=1042, 508.90125pt x 313.9228pt>
 File: fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf Graphic file (type pdf)
 <use fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf>
 Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf  used on input line 57.
 (pdftex.def)             Requested size: 204.73041pt x 126.29019pt.
-<fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf, id=1008, 704.6325pt x 545.03625pt>
+<fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf, id=1045, 704.6325pt x 545.03625pt>
 File: fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf Graphic file (type pdf)
 <use fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf>
 Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pdf  used on input line 66.
@@ -1748,7 +1797,7 @@ Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/instalacion_vs_code.pd
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf, id=1009, 559.33969pt x 434.37282pt>
+<fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf, id=1046, 559.33969pt x 434.37282pt>
 File: fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf Graphic file (type pdf)
 <use fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf>
 Package pdftex.def Info: fig/especifico_2/Ambiente_matlab/opciones_adicionales_vs_code.pdf  used on input line 74.
@@ -1792,7 +1841,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                                                   \__shipout_drop_firstpage_...
 l.119 \end{lstlisting}
                       ]
-<fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf, id=1220, 1017.8025pt x 97.36375pt>
+<fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf, id=1257, 1017.8025pt x 97.36375pt>
 File: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf Graphic file (type pdf)
 <use fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf>
 Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_ps_a.pdf  used on input line 123.
@@ -1803,7 +1852,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.133  
           sudo docker start <ID del contenedor>
-<fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf, id=1225, 1020.81375pt x 44.165pt>
+<fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf, id=1262, 1020.81375pt x 44.165pt>
 File: fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf Graphic file (type pdf)
 <use fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf>
 Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_start.pdf  used on input line 138.
@@ -1814,7 +1863,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.146  
           sudo docker exec -it <ID del contenedor> \bin\bash
-<fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf, id=1230, 1018.80624pt x 39.14626pt>
+<fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf, id=1267, 1018.80624pt x 39.14626pt>
 File: fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf Graphic file (type pdf)
 <use fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf>
 Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_init.pdf  used on input line 151.
@@ -1822,7 +1871,7 @@ Package pdftex.def Info: fig/especifico_2/retornos_de_comandos/sudo_docker_init.
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/diagrama_compilador_cruzado.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/diagrama_compilador_cruzado.pdf, id=1235, 180.675pt x 178.6675pt>
+<fig/especifico_2/diagrama_compilador_cruzado.pdf, id=1272, 180.675pt x 178.6675pt>
 File: fig/especifico_2/diagrama_compilador_cruzado.pdf Graphic file (type pdf)
 <use fig/especifico_2/diagrama_compilador_cruzado.pdf>
 Package pdftex.def Info: fig/especifico_2/diagrama_compilador_cruzado.pdf  used on input line 164.
@@ -1867,7 +1916,7 @@ LaTeX Info: Redefining \% on input line 185.
 [33 <./fig/especifico_2/diagrama_compilador_cruzado.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/diagrama_de_entorno_yocto_project.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/diagrama_de_entorno_yocto_project.pdf, id=1316, 403.5075pt x 324.21124pt>
+<fig/especifico_2/diagrama_de_entorno_yocto_project.pdf, id=1353, 403.5075pt x 324.21124pt>
 File: fig/especifico_2/diagrama_de_entorno_yocto_project.pdf Graphic file (type pdf)
 <use fig/especifico_2/diagrama_de_entorno_yocto_project.pdf>
 Package pdftex.def Info: fig/especifico_2/diagrama_de_entorno_yocto_project.pdf  used on input line 191.
@@ -1960,12 +2009,12 @@ l.250
 LaTeX Info: Redefining \. on input line 263.
 LaTeX Info: Redefining \% on input line 263.
 [36]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf, id=1380, 327.55676pt x 110.4125pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf, id=1417, 327.55676pt x 110.4125pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink.pdf  used on input line 270.
 (pdftex.def)             Requested size: 227.47978pt x 76.68001pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf, id=1382, 1172.88188pt x 97.11281pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf, id=1419, 1172.88188pt x 97.11281pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf  used on input line 279.
@@ -1978,22 +2027,22 @@ LaTeX Info: Redefining \% on input line 285.
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/libbroswer_0.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf, id=1451, 449.42906pt x 431.36156pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf, id=1488, 449.42906pt x 431.36156pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_0.pdf  used on input line 290.
 (pdftex.def)             Requested size: 227.47978pt x 218.33281pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf, id=1453, 316.93407pt x 540.51938pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf, id=1490, 316.93407pt x 540.51938pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf  used on input line 301.
 (pdftex.def)             Requested size: 143.31065pt x 244.41913pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf, id=1454, 319.1925pt x 536.0025pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf, id=1491, 319.1925pt x 536.0025pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf  used on input line 308.
 (pdftex.def)             Requested size: 143.31065pt x 240.65092pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf, id=1458, 449.42906pt x 435.12563pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf, id=1495, 449.42906pt x 435.12563pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf  used on input line 321.
@@ -2002,7 +2051,7 @@ Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_0.pdf  used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf, id=1459, 344.03531pt x 368.87813pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf, id=1496, 344.03531pt x 368.87813pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf  used on input line 328.
@@ -2028,12 +2077,12 @@ LaTeX Info: Redefining \% on input line 340.
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sum_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf, id=1632, 448.67625pt x 435.12563pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf, id=1669, 448.67625pt x 435.12563pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func.pdf  used on input line 353.
 (pdftex.def)             Requested size: 184.2561pt x 178.68816pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf, id=1633, 316.93407pt x 452.4403pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf, id=1670, 316.93407pt x 452.4403pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf  used on input line 360.
@@ -2046,12 +2095,12 @@ LaTeX Info: Redefining \% on input line 372.
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Transfer_func_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf, id=1705, 448.67625pt x 432.86719pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf, id=1742, 448.67625pt x 432.86719pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/scope_0.pdf  used on input line 378.
 (pdftex.def)             Requested size: 227.47978pt x 219.46475pt.
-<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf, id=1708, 330.23375pt x 205.76875pt>
+<fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf, id=1745, 330.23375pt x 205.76875pt>
 File: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf Graphic file (type pdf)
 <use fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf>
 Package pdftex.def Info: fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf  used on input line 387.
@@ -2066,7 +2115,7 @@ pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagra
 >]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/onda_modulada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/onda_modulada.pdf, id=1786, 421.575pt x 290.64584pt>
+<fig/especifico_2/onda_modulada.pdf, id=1823, 421.575pt x 290.64584pt>
 File: fig/especifico_2/onda_modulada.pdf Graphic file (type pdf)
 <use fig/especifico_2/onda_modulada.pdf>
 Package pdftex.def Info: fig/especifico_2/onda_modulada.pdf  used on input line 404.
@@ -2074,7 +2123,7 @@ Package pdftex.def Info: fig/especifico_2/onda_modulada.pdf  used on input line 
 
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/onda_filtrada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/onda_filtrada.pdf, id=1787, 426.59375pt x 304.69835pt>
+<fig/especifico_2/onda_filtrada.pdf, id=1824, 426.59375pt x 304.69835pt>
 File: fig/especifico_2/onda_filtrada.pdf Graphic file (type pdf)
 <use fig/especifico_2/onda_filtrada.pdf>
 Package pdftex.def Info: fig/especifico_2/onda_filtrada.pdf  used on input line 411.
@@ -2086,7 +2135,7 @@ LaTeX Info: Redefining \% on input line 425.
 [42 <./fig/especifico_2/onda_modulada.pdf> <./fig/especifico_2/onda_filtrada.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/model_2_model_diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/M2MT/model_2_model_diagram.pdf, id=1940, 271.0125pt x 421.575pt>
+<fig/especifico_2/M2MT/model_2_model_diagram.pdf, id=1978, 271.0125pt x 421.575pt>
 File: fig/especifico_2/M2MT/model_2_model_diagram.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/model_2_model_diagram.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/model_2_model_diagram.pdf  used on input line 429.
@@ -2096,17 +2145,17 @@ Package pdftex.def Info: fig/especifico_2/M2MT/model_2_model_diagram.pdf  used o
 LaTeX Info: Redefining \. on input line 439.
 LaTeX Info: Redefining \% on input line 439.
 [43 <./fig/especifico_2/M2MT/model_2_model_diagram.pdf>]
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf, id=1973, 1051.67906pt x 89.58469pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf, id=2010, 1051.67906pt x 89.58469pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/apps.pdf  used on input line 445.
 (pdftex.def)             Requested size: 363.96904pt x 31.0038pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf, id=1974, 654.19406pt x 94.85437pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf, id=2011, 654.19406pt x 94.85437pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/c_code.pdf  used on input line 452.
 (pdftex.def)             Requested size: 363.96904pt x 52.7736pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf, id=1975, 794.2172pt x 533.74406pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf, id=2012, 794.2172pt x 533.74406pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf  used on input line 459.
@@ -2122,7 +2171,7 @@ pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/paso_a_paso_mtmt/c_co
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf, id=2091, 792.71156pt x 532.99126pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf, id=2128, 792.71156pt x 532.99126pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf  used on input line 472.
@@ -2132,12 +2181,12 @@ Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_pa
 LaTeX Info: Redefining \. on input line 483.
 LaTeX Info: Redefining \% on input line 483.
 [45 <./fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_parameters_processor.pdf>]
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf, id=2158, 789.70032pt x 532.23843pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf, id=2195, 789.70032pt x 532.23843pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/configuration_output_file.pdf  used on input line 487.
 (pdftex.def)             Requested size: 363.96904pt x 245.30368pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf, id=2160, 1218.5525pt x 447.6725pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf, id=2197, 1218.5525pt x 447.6725pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/root_folder.pdf  used on input line 498.
@@ -2180,12 +2229,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.2}) 
                    \relax 
 l.519  
           CMakeLists.txt -DMATLAB_ROOT=/home/test/simple_filter/R2024b/
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf, id=2273, 1218.5525pt x 447.6725pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf, id=2310, 1218.5525pt x 447.6725pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/cmake_file.pdf  used on input line 524.
 (pdftex.def)             Requested size: 363.96904pt x 133.71532pt.
-<fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf, id=2274, 1237.62375pt x 167.62625pt>
+<fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf, id=2311, 1237.62375pt x 167.62625pt>
 File: fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf Graphic file (type pdf)
 <use fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf>
 Package pdftex.def Info: fig/especifico_2/M2MT/paso_a_paso_mtmt/binario_compilado.pdf  used on input line 532.
@@ -2200,7 +2249,7 @@ pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/M2MT/paso_a_paso_mtmt/bina
 >]
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf, id=2354, 264.99pt x 455.7025pt>
+<fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf, id=2391, 264.99pt x 455.7025pt>
 File: fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf Graphic file (type pdf)
 <use fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf>
 Package pdftex.def Info: fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf  used on input line 546.
@@ -2226,7 +2275,7 @@ l.568
           bitbake-layers create-layer <nombre-de-la-capa>
 
 pdfTeX warning: pdflatex.exe (file ./fig/especifico_2/Flujo de trabajo de mi idea.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/especifico_2/Flujo de trabajo de mi idea.pdf, id=2360, 570.13pt x 337.26pt>
+<fig/especifico_2/Flujo de trabajo de mi idea.pdf, id=2397, 570.13pt x 337.26pt>
 File: fig/especifico_2/Flujo de trabajo de mi idea.pdf Graphic file (type pdf)
 <use fig/especifico_2/Flujo de trabajo de mi idea.pdf>
 Package pdftex.def Info: fig/especifico_2/Flujo de trabajo de mi idea.pdf  used on input line 573.
@@ -2252,7 +2301,7 @@ LaTeX Warning: Text page 49 contains only floats.
 LaTeX Info: Redefining \. on input line 589.
 LaTeX Info: Redefining \% on input line 589.
 [49 <./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf>]
-<fig/especifico_2/bbfilestructure.jpg, id=2399, 670.505pt x 237.88875pt>
+<fig/especifico_2/bbfilestructure.jpg, id=2436, 670.505pt x 237.88875pt>
 File: fig/especifico_2/bbfilestructure.jpg Graphic file (type jpg)
 <use fig/especifico_2/bbfilestructure.jpg>
 Package pdftex.def Info: fig/especifico_2/bbfilestructure.jpg  used on input line 599.
@@ -2300,7 +2349,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.639  
           sudo cp core-image-minimal-zedboard-zynq7.tar.gz /mnt/partition2
-<fig/especifico_2/154140ZedBoard.png, id=2448, 469.755pt x 526.21594pt>
+<fig/especifico_2/154140ZedBoard.png, id=2485, 469.755pt x 526.21594pt>
 File: fig/especifico_2/154140ZedBoard.png Graphic file (type png)
 <use fig/especifico_2/154140ZedBoard.png>
 Package pdftex.def Info: fig/especifico_2/154140ZedBoard.png  used on input line 650.
@@ -2319,12 +2368,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.1}) 
                    \relax 
 l.666  
           scp user@ip:/ruta/del/archivo/zedboard .
-<fig/especifico_2/raw.pdf, id=2456, 722.7pt x 361.35pt>
+<fig/especifico_2/raw.pdf, id=2494, 722.7pt x 361.35pt>
 File: fig/especifico_2/raw.pdf Graphic file (type pdf)
 <use fig/especifico_2/raw.pdf>
 Package pdftex.def Info: fig/especifico_2/raw.pdf  used on input line 673.
 (pdftex.def)             Requested size: 204.73041pt x 102.36276pt.
-<fig/especifico_2/Filtered.pdf, id=2457, 722.7pt x 361.35pt>
+<fig/especifico_2/Filtered.pdf, id=2495, 722.7pt x 361.35pt>
 File: fig/especifico_2/Filtered.pdf Graphic file (type pdf)
 <use fig/especifico_2/Filtered.pdf>
 Package pdftex.def Info: fig/especifico_2/Filtered.pdf  used on input line 680.
@@ -2353,205 +2402,487 @@ LaTeX Info: Redefining \% on input line 188.
 \openout2 = `especifico3.aux'.
 
  (./especifico3.tex
+Cap\'{\i }tulo 5.
+<fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.png, id=2570, 1195.46625pt x 387.4475pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.png  used on input line 14.
+(pdftex.def)             Requested size: 363.96904pt x 117.96143pt.
 
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 [56
 
 
 
-]
-Cap\'{\i }tulo 5.
-File: fig/especifico_2/154140ZedBoard.png Graphic file (type png)
-<use fig/especifico_2/154140ZedBoard.png>
-Package pdftex.def Info: fig/especifico_2/154140ZedBoard.png  used on input line 15.
-(pdftex.def)             Requested size: 363.96904pt x 407.7168pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[57
 
 ]
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png, id=2546, 447.92343pt x 435.87843pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.png, id=2580, 891.33pt x 294.34969pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.png  used on input line 30.
+(pdftex.def)             Requested size: 363.96904pt x 120.19458pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png, id=2584, 447.92343pt x 435.87843pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png  used on input line 35.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png  used on input line 41.
 (pdftex.def)             Requested size: 204.73041pt x 199.22287pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png, id=2547, 317.68687pt x 326.72063pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png, id=2585, 317.68687pt x 326.72063pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png  used on input line 42.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png  used on input line 48.
 (pdftex.def)             Requested size: 204.73041pt x 210.56119pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png, id=2548, 451.6875pt x 436.63126pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png, id=2588, 451.6875pt x 436.63126pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png  used on input line 55.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png  used on input line 62.
 (pdftex.def)             Requested size: 204.73041pt x 197.908pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png, id=2549, 343.2825pt x 267.24844pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png, id=2589, 343.2825pt x 267.24844pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png  used on input line 62.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png  used on input line 69.
 (pdftex.def)             Requested size: 204.73041pt x 159.38383pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png, id=2550, 449.42906pt x 436.63126pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png  used on input line 76.
-(pdftex.def)             Requested size: 159.23862pt x 154.70203pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png, id=2551, 543.53062pt x 516.42938pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png  used on input line 84.
-(pdftex.def)             Requested size: 204.73041pt x 194.51947pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png, id=2552, 545.03625pt x 515.67656pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png  used on input line 92.
-(pdftex.def)             Requested size: 204.73041pt x 193.70084pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png, id=2553, 545.03625pt x 515.67656pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png  used on input line 100.
-(pdftex.def)             Requested size: 204.73041pt x 193.70084pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png, id=2554, 545.78906pt x 516.42938pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png  used on input line 108.
-(pdftex.def)             Requested size: 204.73041pt x 193.7157pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png, id=2555, 449.42906pt x 433.62pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png, id=2591, 449.42906pt x 433.62pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png  used on input line 122.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png  used on input line 83.
 (pdftex.def)             Requested size: 159.23862pt x 153.63512pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png, id=2556, 316.18124pt x 142.28156pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png, id=2592, 316.18124pt x 142.28156pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png  used on input line 129.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png  used on input line 90.
 (pdftex.def)             Requested size: 204.73041pt x 92.1302pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png, id=2557, 450.18187pt x 436.63126pt>
+
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[57 <./fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.png (PNG copy)> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.png>]
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[58 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png>]
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png, id=2611, 449.42906pt x 436.63126pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png  used on input line 105.
+(pdftex.def)             Requested size: 159.23862pt x 154.70203pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png, id=2612, 543.53062pt x 516.42938pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png  used on input line 113.
+(pdftex.def)             Requested size: 204.73041pt x 194.51947pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png, id=2613, 545.03625pt x 515.67656pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png  used on input line 121.
+(pdftex.def)             Requested size: 204.73041pt x 193.70084pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png, id=2614, 545.03625pt x 515.67656pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png  used on input line 129.
+(pdftex.def)             Requested size: 204.73041pt x 193.70084pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png, id=2615, 545.78906pt x 516.42938pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png  used on input line 137.
+(pdftex.def)             Requested size: 204.73041pt x 193.7157pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png, id=2623, 450.18187pt x 432.86719pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png  used on input line 156.
+(pdftex.def)             Requested size: 159.23862pt x 153.1108pt.
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png  used on input line 163.
+(pdftex.def)             Requested size: 204.73041pt x 196.85579pt.
+
+
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+[59 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png>]
+
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+[60 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png>]
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.png, id=2641, 1100.61188pt x 335.75438pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.png  used on input line 186.
+(pdftex.def)             Requested size: 363.96904pt x 111.02983pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png, id=2645, 450.18187pt x 436.63126pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png  used on input line 165.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png  used on input line 198.
 (pdftex.def)             Requested size: 159.23862pt x 154.4422pt.
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png  used on input line 172.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png  used on input line 205.
 (pdftex.def)             Requested size: 204.73041pt x 198.5676pt.
 
 
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
-[58]
-
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
-[59 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png>]
-
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
-[60 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png>]
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png, id=2580, 450.18187pt x 435.87843pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png  used on input line 185.
-(pdftex.def)             Requested size: 159.23862pt x 154.17592pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png, id=2581, 344.78813pt x 364.36125pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png  used on input line 192.
-(pdftex.def)             Requested size: 204.73041pt x 216.35564pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png, id=2582, 450.18187pt x 436.63126pt>
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+[61 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.png>]
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png, id=2657, 450.18187pt x 436.63126pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png  used on input line 206.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png  used on input line 220.
 (pdftex.def)             Requested size: 159.23862pt x 154.4422pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png, id=2583, 485.56406pt x 296.60812pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png, id=2658, 485.56406pt x 296.60812pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png  used on input line 214.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png  used on input line 228.
 (pdftex.def)             Requested size: 204.73041pt x 125.05882pt.
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png  used on input line 222.
-(pdftex.def)             Requested size: 204.73041pt x 125.05882pt.
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png  used on input line 230.
-(pdftex.def)             Requested size: 204.73041pt x 125.05882pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png, id=2584, 453.19313pt x 436.63126pt>
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.png, id=2659, 483.30562pt x 299.61937pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.png  used on input line 236.
+(pdftex.def)             Requested size: 204.73041pt x 126.91821pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.png, id=2660, 484.81125pt x 295.85532pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.png  used on input line 244.
+(pdftex.def)             Requested size: 204.73041pt x 124.93553pt.
+
+
+LaTeX Info: Redefining \. on input line 254.
+LaTeX Info: Redefining \% on input line 254.
+[62 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.png>]
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png, id=2676, 450.18187pt x 435.87843pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png  used on input line 259.
+(pdftex.def)             Requested size: 159.23862pt x 154.17592pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png, id=2677, 344.78813pt x 364.36125pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png  used on input line 266.
+(pdftex.def)             Requested size: 204.73041pt x 216.35564pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png, id=2679, 453.19313pt x 436.63126pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png  used on input line 243.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png  used on input line 281.
 (pdftex.def)             Requested size: 159.23862pt x 153.41618pt.
-<fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/libreria_bloque__rad_2_deg.png, id=2585, 453.19313pt x 436.63126pt>
-File: fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/libreria_bloque__rad_2_deg.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/libreria_bloque__rad_2_deg.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/libreria_bloque__rad_2_deg.png  used on input line 250.
-(pdftex.def)             Requested size: 204.73041pt x 197.24843pt.
-<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png, id=2586, 450.18187pt x 436.63126pt>
+<fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.png, id=2680, 313.9228pt x 130.98938pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.png  used on input line 288.
+(pdftex.def)             Requested size: 204.73041pt x 85.42589pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png, id=2681, 450.18187pt x 436.63126pt>
 File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png Graphic file (type png)
 <use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png  used on input line 263.
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png  used on input line 304.
 (pdftex.def)             Requested size: 159.23862pt x 154.4422pt.
-File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png Graphic file (type png)
-<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png>
-Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png  used on input line 270.
-(pdftex.def)             Requested size: 204.73041pt x 198.5676pt.
+<fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.png, id=2682, 367.3725pt x 98.61844pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.png  used on input line 311.
+(pdftex.def)             Requested size: 204.73041pt x 54.95958pt.
 
 
-LaTeX Warning: Reference `' on page 61 undefined on input line 282.
+pdfTeX warning: pdflatex.exe (file ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf, id=2685, 2392.85962pt x 3383.07909pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf Graphic file (type pdf)
+<use fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf  used on input line 326.
+(pdftex.def)             Requested size: 239.29997pt x 338.32773pt.
 
 
-LaTeX Warning: Reference `' on page 61 undefined on input line 282.
+pdfTeX warning: pdflatex.exe (file ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf, id=2686, 2392.85962pt x 3383.07909pt>
+File: fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf Graphic file (type pdf)
+<use fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf  used on input line 330.
+(pdftex.def)             Requested size: 239.29997pt x 338.32773pt.
 
-
-
-LaTeX Info: Redefining \. on input line 291.
-LaTeX Info: Redefining \% on input line 291.
-[61 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png>]
-
-LaTeX Info: Redefining \. on input line 291.
-LaTeX Info: Redefining \% on input line 291.
-[62 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png>]
-
-LaTeX Info: Redefining \. on input line 291.
-LaTeX Info: Redefining \% on input line 291.
-[63 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png> <./fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/libreria_bloque__rad_2_deg.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png>]
-File: fig/especifico_2/154140ZedBoard.png Graphic file (type png)
-<use fig/especifico_2/154140ZedBoard.png>
-Package pdftex.def Info: fig/especifico_2/154140ZedBoard.png  used on input line 299.
-(pdftex.def)             Requested size: 363.96904pt x 407.7168pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Citation 'microcontrollerslab_pid_controller_design' on page 64 undefined on input line 305.
+LaTeX Warning: Float too large for page by 28.6943pt on input line 333.
 
 
 
-LaTeX Info: Redefining \. on input line 315.
-LaTeX Info: Redefining \% on input line 315.
-[64])
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
+[63 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png>]
+
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
+[64 <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png> <./fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png> <./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.png>]
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 339.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 339.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 341.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 341.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 341.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 341.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 343.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 343.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 343.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 346.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 346.
+
+
+Overfull \hbox (7.71925pt too wide) in paragraph at lines 346--347
+[]\T1/cmr/m/n/12 Una vez den-tro del con-ten-dor se de-be de ir al di-rec-to-rio de-no-mi-na-do meta-EmbedSynthGNC
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 347.
+LaTeX Info: Redefining \% on input line 347.
+[65]
+
+LaTeX Info: Redefining \. on input line 347.
+LaTeX Info: Redefining \% on input line 347.
+[66 <./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf> <./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf>]
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 349.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 349.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 349.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 355.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 355.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 358.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 358.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 358.
+
+
+LaTeX Warning: Reference `' on page 67 undefined on input line 358.
+
+
+
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
+[67]
+<fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.png, id=2735, 930.47626pt x 249.93375pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.png  used on input line 413.
+(pdftex.def)             Requested size: 363.96904pt x 97.7636pt.
+
+
+LaTeX Warning: Citation 'microcontrollerslab_pid_controller_design' on page 68 undefined on input line 419.
+
+
+
+LaTeX Info: Redefining \. on input line 420.
+LaTeX Info: Redefining \% on input line 420.
+[68 <./fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.png>]
+<fig/Capitulo5/Caso_de_estudio_PID/lib_step.png, id=2743, 447.17062pt x 435.12563pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/lib_step.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/lib_step.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/lib_step.png  used on input line 430.
+(pdftex.def)             Requested size: 159.23862pt x 154.95203pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_step.png, id=2744, 341.77687pt x 331.99031pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_step.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_step.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_step.png  used on input line 437.
+(pdftex.def)             Requested size: 204.73041pt x 198.8715pt.
+<fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.png, id=2745, 448.67625pt x 435.87843pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.png  used on input line 450.
+(pdftex.def)             Requested size: 159.23862pt x 154.69469pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_integrator.png, id=2746, 316.93407pt x 424.58624pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_integrator.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_integrator.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_integrator.png  used on input line 457.
+(pdftex.def)             Requested size: 204.73041pt x 274.28038pt.
+<fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.png, id=2747, 446.41782pt x 432.86719pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.png  used on input line 470.
+(pdftex.def)             Requested size: 159.23862pt x 154.40538pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_derivative.png, id=2748, 382.42876pt x 162.6075pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_derivative.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_derivative.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_derivative.png  used on input line 477.
+(pdftex.def)             Requested size: 204.73041pt x 87.04997pt.
+<fig/Capitulo5/Caso_de_estudio_PID/Transfer_func.pdf, id=2749, 448.67625pt x 435.12563pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/Transfer_func.pdf Graphic file (type pdf)
+<use fig/Capitulo5/Caso_de_estudio_PID/Transfer_func.pdf>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/Transfer_func.pdf  used on input line 490.
+(pdftex.def)             Requested size: 159.23862pt x 154.42752pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.png, id=2750, 316.18124pt x 454.69875pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.png  used on input line 497.
+(pdftex.def)             Requested size: 204.73041pt x 294.4267pt.
+<fig/Capitulo5/Caso_de_estudio_PID/lib_gain.png, id=2751, 400.49625pt x 433.62pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/lib_gain.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/lib_gain.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/lib_gain.png  used on input line 511.
+(pdftex.def)             Requested size: 159.23862pt x 172.41275pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.png, id=2752, 338.76563pt x 257.46187pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.png  used on input line 519.
+(pdftex.def)             Requested size: 204.73041pt x 155.60187pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.png, id=2753, 340.27126pt x 260.47313pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.png  used on input line 527.
+(pdftex.def)             Requested size: 204.73041pt x 156.71829pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.png, id=2754, 339.51843pt x 256.70906pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.png  used on input line 535.
+(pdftex.def)             Requested size: 204.73041pt x 154.79436pt.
+<fig/Capitulo5/Caso_de_estudio_PID/lib_suma.png, id=2755, 450.18187pt x 435.87843pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/lib_suma.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/lib_suma.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/lib_suma.png  used on input line 551.
+(pdftex.def)             Requested size: 159.23862pt x 154.17592pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.png, id=2756, 342.5297pt x 363.60844pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.png  used on input line 559.
+(pdftex.def)             Requested size: 204.73041pt x 217.3345pt.
+<fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.png, id=2757, 343.2825pt x 365.11406pt>
+File: fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.png Graphic file (type png)
+<use fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.png>
+Package pdftex.def Info: fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.png  used on input line 567.
+(pdftex.def)             Requested size: 204.73041pt x 217.74974pt.
+
+
+LaTeX Warning: Reference `' on page 69 undefined on input line 580.
+
+
+LaTeX Warning: Reference `' on page 69 undefined on input line 580.
+
+
+LaTeX Warning: Reference `' on page 69 undefined on input line 582.
+
+
+LaTeX Warning: Reference `' on page 69 undefined on input line 582.
+
+
+LaTeX Warning: Reference `' on page 69 undefined on input line 582.
+
+
+LaTeX Warning: Reference `' on page 69 undefined on input line 582.
+
+
+
+LaTeX Info: Redefining \. on input line 583.
+LaTeX Info: Redefining \% on input line 583.
+[69 <./fig/Capitulo5/Caso_de_estudio_PID/lib_step.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_step.png>]
+
+LaTeX Info: Redefining \. on input line 583.
+LaTeX Info: Redefining \% on input line 583.
+[70 <./fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_integrator.png> <./fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_derivative.png>]
+
+LaTeX Warning: Reference `' on page 71 undefined on input line 584.
+
+
+LaTeX Warning: Reference `' on page 71 undefined on input line 584.
+
+
+LaTeX Warning: Reference `' on page 71 undefined on input line 584.
+
+
+LaTeX Warning: Reference `' on page 71 undefined on input line 587.
+
+
+LaTeX Warning: Reference `' on page 71 undefined on input line 587.
+
+
+Overfull \hbox (7.71925pt too wide) in paragraph at lines 587--588
+[]\T1/cmr/m/n/12 Una vez den-tro del con-ten-dor se de-be de ir al di-rec-to-rio de-no-mi-na-do meta-EmbedSynthGNC
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 588.
+LaTeX Info: Redefining \% on input line 588.
+[71 <./fig/Capitulo5/Caso_de_estudio_PID/Transfer_func.pdf> <./fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.png>]
+
+LaTeX Info: Redefining \. on input line 588.
+LaTeX Info: Redefining \% on input line 588.
+[72 <./fig/Capitulo5/Caso_de_estudio_PID/lib_gain.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.png>]
+
+LaTeX Info: Redefining \. on input line 588.
+LaTeX Info: Redefining \% on input line 588.
+[73 <./fig/Capitulo5/Caso_de_estudio_PID/lib_suma.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.png> <./fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.png>]
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 590.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 590.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 590.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 595.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 595.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 598.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 598.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 598.
+
+
+LaTeX Warning: Reference `' on page 74 undefined on input line 598.
+
+)
 
 LaTeX Info: Redefining \. on input line 189.
 LaTeX Info: Redefining \% on input line 189.
-[65]
+[74]
 \openout2 = `conclusiones.aux'.
 
  (./conclusiones.tex
 Cap\'{\i }tulo 6.
 )
 
-[66
+[75
 
 
 
 
 ]
 
-[67
+[76
 
 
 
@@ -2559,11 +2890,11 @@ Cap\'{\i }tulo 6.
 
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
-[68]
+[77]
 
 LaTeX Info: Redefining \. on input line 204.
 LaTeX Info: Redefining \% on input line 204.
-[69]
+[78]
 \openout2 = `apendice.aux'.
 
  (./apendice.tex
@@ -2612,7 +2943,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.8}) 
 l.12  
              print("Claves del archivo:", list(archivo.keys())))
 
-[70
+[79
 
 
 ]
@@ -2632,8 +2963,11 @@ L3 programming layer <2024-08-16>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 488D2DD3C26F6ABF16A63BCF1DF2F9CE;18869.
+(rerunfilecheck)             Checksum: 3632BC8E649FF30EBE2FD83C92C44C8E;19488.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -2644,18 +2978,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55786 strings out of 473579
- 1288775 string characters out of 5732258
- 2453653 words of memory out of 5000000
- 77306 multiletter control sequences out of 15000+600000
+ 56016 strings out of 473579
+ 1301499 string characters out of 5732258
+ 2455847 words of memory out of 5000000
+ 77515 multiletter control sequences out of 15000+600000
  585072 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,13n,120p,1271b,3395s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,13n,120p,1455b,3395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (87 pages, 10631054 bytes).
+Output written on main.pdf (96 pages, 11696520 bytes).
 PDF statistics:
- 2901 PDF objects out of 2984 (max. 8388607)
- 1657 compressed objects within 17 object streams
- 353 named destinations out of 1000 (max. 500000)
- 989 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3116 PDF objects out of 3580 (max. 8388607)
+ 1771 compressed objects within 18 object streams
+ 374 named destinations out of 1000 (max. 500000)
+ 1138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,3 @@
-@ -1,291 +1,300 @@
 \chapter{Caso de estudio IMU y PID}
 \label{ch:especifico3}
 
@@ -12,7 +11,7 @@ Una IMU es un grupo de sensores que incluye un acelerómetro para medir acelerac
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/154140ZedBoard.png}
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.png}
     \caption{Diagrama completo del caso de estudio 2 - IMU \cite{mathworks2024imu}}
     \label{fig:caso_de_estudio_2_IMU}
 \end{figure}
@@ -24,9 +23,16 @@ Como se puede observar en la Figura \ref{fig:caso_de_estudio_2_IMU}, este es el 
 
 Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink. A continuación se muestran los bloques requeridos, asi como la configuración de los mismos para la correcta operación del modelo. La implementación del sistema se divide en dos partes, el primer parte se encarga de generar los archivos necesarios para la operación del sistema mientras que la segunda parte del sistema se encarga de leer los archivos con los datos y generar los dos archivos de salida del programa.
 
-\subsubsection{Sistema para la generación de archivos}
+\subsubsection{Sistema para la generación de archivos}\label{subsub:generación_de_archivos}
 
-Este sistema es el encargado de generar los archivos de entrada, estos mismos contienen los datos de tiempo y valores para la correcta implementación del sistema
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.png}
+    \caption{Diagrama utilizado para la generación de los archivos \cite{mathworks2024imu}}
+    \label{fig:caso_de_estudio_2_IMU_generación_de_archivos}
+\end{figure}
+
+Este sistema es el encargado de generar los archivos de entrada, estos mismos contienen los datos de tiempo y valores para la correcta implementación del sistema, estos bloques se utilizarán para construir el diagrama de la Figura \ref{fig:caso_de_estudio_2_IMU_generación_de_archivos}.
 
 \begin{figure}[htbp]
     \centering
@@ -47,6 +53,7 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \label{fig:linear_accel_block_simulink}
 \end{figure}
 
+Como se pudo observar en la Figura \ref{fig:linear_accel_block_simulink}, se presenta a la izquierda la librería donde se encuentra el bloque a utilizar para establecer la constante de la velocidad angular, para este caso se utiliza en el mismo un valor de xxx, el mismo se observa en la Figura \ref{fig:lib_bloques_config_linear_acceleration}, además de algunas configuraciónes adicionales requeridas por el bloque. 
 
 \begin{figure}[htbp]
     \centering
@@ -67,6 +74,28 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \label{fig:angular_velocity_block_simulink}
 \end{figure}
 
+Seguido de esto, podemos observar en la Figura \ref{fig:angular_velocity_block_simulink} el bloque encargado de establecer la variable de la velocidad angular, a la izquierda se observa el bloque a utilizar en la librería y a la derecha se encuentra la configuración utilizada para este bloque. 
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png}
+        \caption{Librería de bloques - Integrador}
+        \label{fig:lib_bloques_integrador}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png}
+        \caption{Configuración del bloque velocidad angular}
+        \label{fig:config_bloques_integrador}
+    \end{subfigure}
+    \caption{Bloque para la integración de la velocidad angular}
+    \label{fig:integration_for_angular_velocity}
+\end{figure}
+
+Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} tambien se debe de implementar un bloque encargado de integrar el valor de la velocidad angular, para esto se usa el bloque que se muestra en \ref{fig:integration_for_angular_velocity}, este mismo lo podemos encontrar en la libreria de bloques de Simulink como se muestra en \ref{fig:lib_bloques_integrador}, tambien, en la Figura \ref{fig:config_bloques_integrador} se muestra la configuración utilizada en el bloque.
 
 \begin{figure}[htbp]
     \centering
@@ -115,48 +144,52 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
 \end{figure}
 
 
+Finalmente en la Figura \ref{fig:arreglo_imu} se presenta el bloque encargado de simular la detección y medición de la aceleración y rotación en diferentes ejes de un sistema. Por un lado en la Figura \ref{fig:lib_bloques_IMU} se muestra el bloque en la librería. Por otro lado, en la Figura \ref{fig:parametros_IMU_01} se presenta la configuración del bloque respecto a los parámetros del mismo, esto contempla desde el marco de referencia a utilizar, la temperatura de operación del sistema, las componentes del campo magnético y la semilla, en la Figura \ref{fig:parametros_IMU_02} se presenta la configuración utilizada en el bloque para las componentes relacionadas con el acelerómetro, como se puede observar las mismas contemplan desde la configuración de máximos de lectura, resolución del sensor, el ruido y los efectos de temperatura, en la Figura \ref{fig:parametros_IMU_03} se presenta la configuración del boque relacionada a los parámetros del giroscopio, estos contemplan algunos parámetros similares a los del acelerometro y finalmente en la Figura \ref{fig:parametros_IMU_04} se muestra la configuración empleada para el magnetómetro. Cabe destacar que si se quiere replicar el experimento se deben de usar los parámetros mostrados en las imágenes contenidas en \ref{fig:arreglo_imu}. 
+
+
+
+
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png}
-        \caption{Librería de bloques - Integrador}
-        \label{fig:lib_bloques_integrador}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png}
+        \caption{Librería de bloques - Guardar en archivo}
+        \label{fig:lib_bloques_to_file_IMU}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png}
-        \caption{Configuración del bloque velocidad angular}
-        \label{fig:config_bloques_integrador}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png}
+        \caption{Configuración de parámetros - Guardar en archivo}
+        \label{fig:config_to_file_IMU}
     \end{subfigure}
-    \caption{Bloque para la integración de la velocidad angular}
-    \label{fig:integration_for_angular_velocity}
+    \caption{Bloque para guardar los datos en un archivo}
+    \label{fig:to_file_IMU}
+\end{figure}
+
+Para poder generar archivos los cuales se utilizaran más adelante en este flujo se utiliza el bloque que se muestra en la Figura \ref{fig:to_file_IMU}, este se encarga de generar un archivo en formato (.mat) con el objetivo de proveer datos a las otras secciónes de esta caso de estudio, cabe destacar que la configuración del mismo se muestra en la Figura \ref{fig:config_to_file_IMU} en donde se establece el nombre del archivo de salida, la forma de almacenamiento de los datos y finalmente el nombre de la variable por la cual se accederán estos datos. Los nombres a utilizar son:
+
+\begin{itemize}
+    \item acceleration\_input\_file
+    \item gyroscope\_input\_file
+    \item magnetic\_input\_file
+    \item orientation\_input\_file
+\end{itemize}
+
+Estos nombres se deben de respetar a la hora de generar los archivos de salida, ya que el programa encargado de recibir estos datos buscara los archivos en el directorio bajo estos nombres.
+
+\subsubsection{Sistema para la lectura e interpretación de los archivos generados previamente}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.png}
+    \caption{Diagrama utilizado para la interpretación de los archivos \cite{mathworks2024imu}}
+    \label{fig:caso_de_estudio_2_IMU_interpretacion_de_archivos}
 \end{figure}
 
 
-%Missing image for required block information
-%\begin{figure}[htbp]
-%    \centering
-%    \begin{subfigure}[b]{0.35\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png}
-%        \caption{Librería de bloques - Guardar en archivo}
-%        \label{fig:lib_bloques_to_file_IMU}
-%    \end{subfigure}
-%    \hfill
-%    \begin{subfigure}[b]{0.45\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/}
-%        \caption{}
-%        \label{fig:}
-%    \end{subfigure}
-%    \caption{}
-%    \label{fig:}
-%\end{figure}
-
-
-\subsubsection{Sistema para la lectura e interpretación de los archivos generados previamente}
+Una vez establecido el diagrama que se encarga de la generación de los datos, en esta sección se explicaran los bloques requeridos para la construcción del diagrama de la Figura \ref{fig:caso_de_estudio_2_IMU_interpretacion_de_archivos}.
 
 \begin{figure}[htbp]
     \centering
@@ -177,26 +210,7 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \label{fig:read_from_file}
 \end{figure}
 
-
-\begin{figure}[htbp]
-    \centering
-    \begin{subfigure}[b]{0.35\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png}
-        \caption{Librería de bloques - Suma}
-        \label{fig:lib_bloques_add_IMU}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png}
-        \caption{Configuración del bloque encargado de la suma de señales}
-        \label{fig:config_add_IMU}
-    \end{subfigure}
-    \caption{Bloque para la suma de señales}
-    \label{fig:add_of_some_signals}
-\end{figure}
-
+Como mencionamos anteriormente en el desarrollo de este capítulo, en \ref{subsub:generación_de_archivos} se tuvo como salida del programa una serie de archivos generados. Para poder leer los archivos generados previamente se debe de hacer uso del bloque que se muestra en la Figura \ref{fig:read_from_file}, para el correcto funcionamiento del sistema es muy importante que los parámetros de configuración que se muestran en la Figura \ref{fig:config_from_file_IMU}.
 
 \begin{figure}[htbp]
     \centering
@@ -219,7 +233,7 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     % Tercera imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.png}
         \caption{Configuración de parámetros 2}
         \label{fig:parametros_AHRS_02}
     \end{subfigure}
@@ -227,7 +241,7 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     % Cuarta imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.png}
         \caption{Configuración de parámetros 3}
         \label{fig:parametros_AHRS_03}
     \end{subfigure}
@@ -235,6 +249,30 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \caption{Bloque para la simulación del comportamiento de la IMU}
     \label{fig:arreglo_AHRS}
 \end{figure}
+
+En la Figura \ref{fig:arreglo_AHRS}, podemos encontrar el bloque denominado AHRS, este es un sistema que proporciona la estimación de la actitud y orientación de un objeto en 3D., es por esto que se debe de seguir una serie de configuraciónes con el objetivo de lograr el correcto funcionamiento del módulo. Su principal función es calcular la orientación del objeto usando datos de sensores como acelerómetros, giroscopios y magnetómetros. Por un lado en la Figura \ref{fig:lib_bloques_AHRS}, podemos observar el nombre del módulo en la Liberia de bloques. Una vez dentro de los parámetros de configuración del bloque tenemos en la Figura \ref{fig:parametros_AHRS_01}, los parámetros principales de configuración, seguido de esto en la Figura \ref{fig:parametros_AHRS_02}, tenemos los parámetros encargados del ruido de la medicion. Finalmente en la Figura \ref{fig:parametros_AHRS_03} se configuran los parametros relacionados al ruido del ambiente. 
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png}
+        \caption{Librería de bloques - Suma}
+        \label{fig:lib_bloques_add_IMU}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png}
+        \caption{Configuración del bloque encargado de la suma de señales}
+        \label{fig:config_add_IMU}
+    \end{subfigure}
+    \caption{Bloque para la suma de señales}
+    \label{fig:add_of_some_signals}
+\end{figure}
+
+Para realizar una resta de senales se utiliza el bloque suma , el mismo se puede observar en la Figura \ref{fig:add_of_some_signals}. Se debe de realizar la diferencia con el objetivo de poder calcular la desviación del giroscopio y de esta forma generar un arhcivo de salida con estos datos. 
+
 
 \begin{figure}[htbp]
     \centering
@@ -247,13 +285,16 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/libreria_bloque__rad_2_deg.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.png}
         \caption{Configuración del bloque conversor de radianes a grados}
         \label{fig:conf_bloques_R2D}
     \end{subfigure}
     \caption{Bloque para convertir de Radianes a grados}
     \label{fig:bloques_R2D}
 \end{figure}
+
+Los bloques de MATLAB trabajan utilizando las medidas de los ángulos en unidades de radianes, es por esto que se utiliza un bloque de trasnformacion para poder obtener los resultados en grados y que sean mas sencillos de interpretar tanto en los datos de salida como en los graficos a elaborar.
+
 
 
 \begin{figure}[htbp]
@@ -267,7 +308,7 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.png}
         \caption{}
         \label{fig:config_bloques_func}
     \end{subfigure}
@@ -275,15 +316,88 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \label{fig:bloques_func}
 \end{figure}
 
-\subsection{Resultados de la simulación}
+Finalmente se implementa un bloque de codigo el cual se encarga de calcular el error de orientacion del sistema esto con el fin de estimar la presicion con la cual el gisrocopio simualdo en este caso de estudio puede determinar la orientacion, en la Figura \ref{fig:lib_bloques_func} se puede observar el bloque en la libreria, seguido de esto en la Figura \ref{fig:config_bloques_func} se puede observar el código implementado dentro de este bloque. El archivo se debera de guardar bajo el nombre de (IMU READ DATA) y el tiempo de ejecucio se debe de establecer en 1000ms. 
+
+\subsection{Resultados de la simulación}\label{subsub:resultados_simulados_IMU}
+
+\begin{figure}[htbp]
+    \centering
+    % Imagen superior
+    \includegraphics[scale=0.1]{fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf}
+    % Espacio entre las imágenes (opcional)
+    \vspace{0.5cm}
+    % Imagen inferior
+    \includegraphics[scale=0.1]{fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf}
+    \caption{Datos simulados}
+    \label{fig:data_simulated}
+\end{figure}
+
+Ejecutando el sistema en el entorno de simulacion MATLAB Simulink se obtienen los resutlados que se muestran en \ref{fig:data_simulated}, al lado izquierdo se pueden observar los datos de la desviacion simulada del sistema mientras que al lado derecho se observan los datos correspondientes a error de orientacion. Cabe estacar que el resultado es esperado ya que la diferencia entre la orientación estimada y la verdadera debería ser casi 4.7 [grados], que es la declinación en esta latitud y longitud y en el bloque IMU, al giroscopio se le dio una polarización de 0,0545 [rad/s] o 3,125 [grados/s], que debería coincidir con el valor de estado estacionario. En las proximas secciónes se detallaran los pasos a seguir para la implementacion de este sistema en la tarjeta de desarrollo por medio del flujo de trabajo desarrollado en en capitulo \ref{ch:especifico2}. 
 
 \subsection{Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}
 
 Para la implementación en la tarjeta de desarrollo ZedBoard se ejecuta el flujo de trabajo que se muestra en la sección \ref{}. El mismo es representado mediante el diagrama que se muestra en la Figura \ref{}.
 
+Primeramente se deben de generar los archivos de Codigo C desde MATLAB Simulink, para esto se deben de seguir el diagrama de la Figura \ref{}. Como primer punto se deben realizar las configraciones que se muestran en la Figura \ref{} donde se debe de definir el tiempo de ejecucion del sistema, para este caso se selecciona una ejecucion de 1000 ms, esto debido a que mediante mediciones se logra determinar que el bloque se estabiliza a los 1000ms de ejecucion, seguido de esto como se muestra en la Figura \ref{} se debe de establecer el procesador objetivo y la arquitectura del mismo. Una vez establecido esto se pueden generar los archivos requeridos para la compilacion del codigo C como s emuestra en la figura \ref{}. El archivo resultante sera un archivo llamado xxxx.zip seguido de esto se debe de  se exportan los archivos al sistema Linux. Una vez exportados los archivos se descomprimen los mismos en la carpeta denominada swap area.
+
+Una vez descomprimidos los archivos en el directorio denominado como swap area se deben enviar al container mediante el comadno que se muestra en \ref{}. Una vez dentro del contenedor se debe construir el archivo responsable de la compilacion del codigo C, esto se logra mediante el comando que se muestra en \ref{}. El achivo binarioresultante se encuentra en la ruta xxxxx, el mismo se debe de enviar al directorio denominado swap area, una vez enviado el binario, este se debe de exportar al contenedor encargado de integrarlo a la imagen generada mediante el marco de trabajo de Yocto y el flujo de trabajo de EmbedSynthGNC, esto lo logra mediante el uso del comando que se muestra en \ref{}. 
+
+
+Una vez dentro del contendor se debe de ir al directorio denominado meta-EmbedSynthGNC dentro del mismo se debe ingresar a la ruta xxx y en la misma se debe agregar un directorio con el nombre de xxxx. Ademas de esto se debe inicializar el ambiente de trabajo mediante el uso del comando \ref{}. una vez inicializado el ambiente de trabajo se debe agregar la nueva capa generada al archivo deniminado xxxxx esto con el fin que el binario con el nombre xxx sea incluido en la generación de la imagen. Una vez generada la imagen se deben repetir los pasos que se muestran en \ref{} donde se contempla exportar los archivos contenidos en la ruta xxxxx. Seguido de esto se debe preparar la memoria extraible de la tarjeta de desarrollo para los nuevos archivos. 
+
+
+En la Figura \ref{} se muestra el proceso de formateo de los archivos que contenia la tarjeta anteriormente, los cuales correspondian al caso de estudio que se desarrollo en el capitulo \ref{ch:especifico2}. Una vez formateadas las dos particiones de la memoria extraible se deben de copiar los archivos xxxx en la particion con nombre xxxxx mediante el comando \ref{} y por otro lado para la particion denominada xxxx se deben de copiar los archivos xxx xmediante el comando que se muestra en \ref{}. 
+
 
 
 \subsection{Resultados de la implementación}
+
+Como se puede observar en la Figura \ref{} se observa el binario contenido en la imagen dentro de la tarjeta de desarrollo. Una vez ejecutado el mismo se obtienen los archivos de salida que se muestran en la Figura \ref{}. 
+
+
+Analizando los mismos mediante el programa de Python \ref{} se obtienen los graficos que se muestran en \ref{}, en donde a la izquierda en la Figura \ref{} se muestra el grafico de xxxx, a la derecha en la Figura \ref{} se muestra el grafico de xxxxx. Realizando la comparacion con los datos simulados obtenidos en \ref{subsub:resultados_simulados_IMU}, se obtienen los siguientes resultados para el analisis de error.
+
+Para la desviacion del eje X
+
+
+\begin{itemize}
+    \item Error Promedio Absoluto = $1.930 \times 10^{-18}$ [V]
+    \item Error Cuadrático Medio = $2.14 \times 10^{-34}$ $[V^{2}]$
+    \item Raíz del Error Cuadrático Medio = $1.46 \times 10{-17}$ [V]
+\end{itemize}
+
+Para la desviacion del eje Y
+
+
+\begin{itemize}
+    \item Error Promedio Absoluto = $1.930 \times 10^{-18}$ [V]
+    \item Error Cuadrático Medio = $2.14 \times 10^{-34}$ $[V^{2}]$
+    \item Raíz del Error Cuadrático Medio = $1.46 \times 10{-17}$ [V]
+\end{itemize}
+
+
+Para la desviacion del eje Z
+
+
+\begin{itemize}
+    \item Error Promedio Absoluto = $1.930 \times 10^{-18}$ [V]
+    \item Error Cuadrático Medio = $2.14 \times 10^{-34}$ $[V^{2}]$
+    \item Raíz del Error Cuadrático Medio = $1.46 \times 10{-17}$ [V]
+\end{itemize}
+
+
+De los cuales se puede determinar que xxxxx
+
+
+Por otro lado los datos relacionados al error de xxxx se obtiene que las diferencias mostradas en estas graficas son de.
+
+
+\begin{itemize}
+    \item Error Promedio Absoluto = $1.930 \times 10^{-18}$ [V]
+    \item Error Cuadrático Medio = $2.14 \times 10^{-34}$ $[V^{2}]$
+    \item Raíz del Error Cuadrático Medio = $1.46 \times 10{-17}$ [V]
+\end{itemize}
+
 
 \section{Caso de estudio 3 - PID}
 
@@ -296,7 +410,7 @@ En el contexto de MATLAB y Simulink, estas herramientas ofrecen una plataforma v
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/154140ZedBoard.png}
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.png}
     \caption{Diagrama completo del caso de estudio 3 - PID }
     \label{fig:caso_de_estudio_3_PID}
 \end{figure}
@@ -306,10 +420,194 @@ Como se puede observar en la Figura \ref{fig:caso_de_estudio_3_PID}, este es el 
 
 \subsection{Bloques utilizados para la implementación}
 
-Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink. A continuación se muestran los bloques requeridos, asi como la configuración de los mismos para la correcta operación del modelo. La implementación del sistema se divide en dos partes, el primer parte se encarga de generar los archivos necesarios para la operación del sistema mientras que la segunda parte del sistema se encarga de leer los archivos con los datos y generar los dos archivos de salida del programa.
+Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink. A continuación se muestran los bloques requeridos, asi como la configuración de los mismos para la correcta operación del modelo.
 
-\subsubsection{Sistema para la generación de archivos}
+%%step
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_step.png}
+        \caption{Librería de bloques -}
+        \label{fig:bias_sim}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_step.png}
+        \caption{Configuración del bloque encargado de }
+        \label{fig:oe_sim}
+    \end{subfigure}
+    \caption{Datos simulados}
+    \label{fig:data_simulated}
+\end{figure}
 
-Este sistema es el encargado de generar los archivos de entrada, estos mismos contienen los datos de tiempo y valores para la correcta implementación del sistema
+%%integrator
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.png}
+        \caption{Librería de bloques -}
+        \label{fig:bias_sim}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_integrator.png}
+        \caption{Configuración del bloque encargado de }
+        \label{fig:oe_sim}
+    \end{subfigure}
+    \caption{Datos simulados}
+    \label{fig:data_simulated}
+\end{figure}
+
+%%derivative
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.png}
+        \caption{Librería de bloques -}
+        \label{fig:bias_sim}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_derivative.png}
+        \caption{Configuración del bloque encargado de }
+        \label{fig:oe_sim}
+    \end{subfigure}
+    \caption{Datos simulados}
+    \label{fig:data_simulated}
+\end{figure}
+
+%%
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/Transfer_func.pdf}
+        \caption{Librería de bloques -}
+        \label{fig:bias_sim}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.png}
+        \caption{Configuración del bloque encargado de }
+        \label{fig:oe_sim}
+    \end{subfigure}
+    \caption{Datos simulados}
+    \label{fig:data_simulated}
+\end{figure}
+
+%%gain
+\begin{figure}[htbp]
+    \centering
+    % Primera imagen
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_gain.png}
+        \caption{Librería de bloques - Ganancia}
+        \label{fig:lib_bloques_gain}
+    \end{subfigure}
+    \hfill
+    % Segunda imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.png}
+        \caption{Configuración de parámetros 1}
+        \label{fig:parametros_gain_01}
+    \end{subfigure}
+    \hfill
+    % Tercera imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.png}
+        \caption{Configuración de parámetros 2}
+        \label{fig:parametros_gain_02}
+    \end{subfigure}
+    \hfill
+    % Cuarta imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.png}
+        \caption{Configuración de parámetros 3}
+        \label{fig:parametros_gain_03}
+    \end{subfigure}
+
+    \caption{Bloque para la asignación de ganancias}
+    \label{fig:arreglo_gain}
+\end{figure}
+
+
+%%gain
+\begin{figure}[htbp]
+    \centering
+    % Primera imagen
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_suma.png}
+        \caption{Librería de bloques - suma}
+        \label{fig:lib_bloques_add}
+    \end{subfigure}
+    \hfill
+    % Segunda imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.png}
+        \caption{Configuración de parámetros 1}
+        \label{fig:parametros_add_01}
+    \end{subfigure}
+    \hfill
+    % Tercera imagen
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.png}
+        \caption{Configuración de parámetros 2}
+        \label{fig:parametros_add_02}
+    \end{subfigure}
+
+    \caption{Bloques encargados de sumas}
+    \label{fig:arreglo_add}
+\end{figure}
+
+\subsection{Resultados simulados}\label{subsub:resultados_simulados_PID}
 
 \subsection{Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}
+
+Para la implementación en la tarjeta de desarrollo ZedBoard se ejecuta el flujo de trabajo que se muestra en la sección \ref{}. El mismo es representado mediante el diagrama que se muestra en la Figura \ref{}.
+
+Primeramente se deben de generar los archivos de Codigo C desde MATLAB Simulink, para esto se deben de seguir el diagrama de la Figura \ref{}. Como primer punto se deben realizar las configraciones que se muestran en la Figura \ref{} donde se debe de definir el tiempo de ejecucion del sistema, para este caso se selecciona una ejecucion de 0,5 ms, esto debido a que mediante mediciones se logra determinar que el bloque se estabiliza a los 0.5 ms de ejecucion, seguido de esto como se muestra en la Figura \ref{} se debe de establecer el procesador objetivo y la arquitectura del mismo. Una vez establecido esto se pueden generar los archivos requeridos para la compilacion del codigo C como s emuestra en la figura \ref{}. El archivo resultante sera un archivo llamado xxxx.zip seguido de esto se debe de  se exportan los archivos al sistema Linux. Una vez exportados los archivos se descomprimen los mismos en la carpeta denominada swap area.
+
+Una vez descomprimidos los archivos en el directorio denominado como swap area se deben enviar al container mediante el comadno que se muestra en \ref{}. Una vez dentro del contenedor se debe construir el archivo responsable de la compilacion del codigo C, esto se logra mediante el comando que se muestra en \ref{}. El achivo binarioresultante se encuentra en la ruta xxxxx, el mismo se debe de enviar al directorio denominado swap area, una vez enviado el binario, este se debe de exportar al contenedor encargado de integrarlo a la imagen generada mediante el marco de trabajo de Yocto y el flujo de trabajo de EmbedSynthGNC, esto lo logra mediante el uso del comando que se muestra en \ref{}. 
+
+
+Una vez dentro del contendor se debe de ir al directorio denominado meta-EmbedSynthGNC dentro del mismo se debe ingresar a la ruta xxx y en la misma se debe agregar un directorio con el nombre de xxxx. Ademas de esto se debe inicializar el ambiente de trabajo mediante el uso del comando \ref{}. una vez inicializado el ambiente de trabajo se debe agregar la nueva capa generada al archivo deniminado xxxxx esto con el fin que el binario con el nombre xxx sea incluido en la generación de la imagen. Una vez generada la imagen se deben repetir los pasos que se muestran en \ref{} donde se contempla exportar los archivos contenidos en la ruta xxxxx. Seguido de esto se debe preparar la memoria extraible de la tarjeta de desarrollo para los nuevos archivos. 
+
+
+En la Figura \ref{} se muestra el proceso de formateo de los archivos que contenia la tarjeta anteriormente, los cuales correspondian al caso de estudio que se desarrollo en el capitulo \ref{ch:especifico2}. Una vez formateadas las dos particiones de la memoria extraible se deben de copiar los archivos xxxx en la particion con nombre xxxxx mediante el comando \ref{} y por otro lado para la particion denominada xxxx se deben de copiar los archivos xxx xmediante el comando que se muestra en \ref{}. 
+
+
+\subsection{Resultados de la implementación}
+
+Como se puede observar en la Figura \ref{} se observa el binario contenido en la imagen dentro de la tarjeta de desarrollo. Una vez ejecutado el mismo se obtienen los archivos de salida que se muestran en la Figura \ref{}. 
+
+
+Analizando los mismos mediante el programa de Python \ref{} se obtienen los graficos que se muestran en \ref{}, en donde a la izquierda en la Figura \ref{} se muestra el grafico de xxxx, a la derecha en la Figura \ref{} se muestra el grafico de xxxxx. Realizando la comparacion con los datos simulados obtenidos en \ref{subsub:resultados_simulados_PID}, se obtienen los siguientes resultados para el analisis de error.
+
+
+Por otro lado los datos relacionados al error de xxxx se obtiene que las diferencias mostradas en estas graficas son de.
+
+
+\begin{itemize}
+    \item Error Promedio Absoluto = $1.930 \times 10^{-18}$ [V]
+    \item Error Cuadrático Medio = $2.14 \times 10^{-34}$ $[V^{2}]$
+    \item Raíz del Error Cuadrático Medio = $1.46 \times 10{-17}$ [V]
+\end{itemize}
+
+
+\section{Reflexión final}
+
+Los resultados de error obtenidos son altamente satisfactorios, lo cual respalda la implementación del caso de estudio realizada a lo largo de este capítulo. Estos valores indican una correspondencia prácticamente perfecta entre la simulación y el proceso experimental. La alta precisión alcanzada no solo válida el modelo desarrollado, sino que también resalta la consistencia y fiabilidad del proceso experimental. Es por esto que se aprueba el marco de trabajo realizado y se continúa con la investigación del mismo.
