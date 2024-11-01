@@ -26,5 +26,6 @@
 \contentsline {lstlisting}{\numberline {4.25}{\ignorespaces Copiar archivos root, Linux}}{52}{lstlisting.4.25}%
 \contentsline {lstlisting}{\numberline {4.26}{\ignorespaces Copiar sistema de archivos, Linux}}{52}{lstlisting.4.26}%
 \contentsline {lstlisting}{\numberline {4.27}{\ignorespaces Copiar archivo por protocolo SSH, Linux}}{53}{lstlisting.4.27}%
-\contentsline {lstlisting}{\numberline {A.1}{\ignorespaces Métricas de comparación de señales}}{79}{lstlisting.Alph1.1}%
+\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Compilacion del programa , Linux}}{67}{lstlisting.5.1}%
+\contentsline {lstlisting}{\numberline {A.1}{\ignorespaces Métricas de comparación de señales}}{81}{lstlisting.Alph1.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

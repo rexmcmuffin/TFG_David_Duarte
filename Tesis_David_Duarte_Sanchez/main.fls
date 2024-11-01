@@ -1172,16 +1172,47 @@ INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_cod
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/sesgo_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/sesgo_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/sesgo_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/sesgo_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/sesgo_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/error_de_orientacion.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/error_de_orientacion.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/error_de_orientacion.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/error_de_orientacion.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/error_de_orientacion.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.pdf
@@ -1252,16 +1283,16 @@ INPUT ./fig/Capitulo5/Caso_de_estudio_PID/lib_suma.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/lib_suma.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/lib_suma.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/lib_suma.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
 INPUT ./conclusiones.tex
 INPUT ./conclusiones.tex
 OUTPUT conclusiones.aux

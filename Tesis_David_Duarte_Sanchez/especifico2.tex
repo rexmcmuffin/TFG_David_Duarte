@@ -419,7 +419,7 @@ De esta forma el diagrama de la Figura \ref{fig:diagrama_matlab_simulink}, se co
 
 En la Figura \ref{fig:onda_modulada} se puede observar la modulación de las dos señales senoidales, por otro lado en la Figura \ref{fig:onda_filtrada} se puede observar la salida de la función de transferencia. Siendo la salida esperada de la función de transferencia, ya que al ser un filtro paso bajo atenúa las señales que estén por debajo de la frecuencia de corte, que para este filtro es de 1 $rad/s$. Como la señal compuesta contiene una onda seno con frecuencia de 1 $rad/s$ y otra con frecuencia de 12 $rad/s$ es posible observar aun componentes de la frecuencia atenuada.
 
-\section{Flujo de trabajo de la aplicación de transformación de modelo a modelo}
+\section{Flujo de trabajo de la aplicación de transformación de modelo a modelo}\label{sec:m2m_transformator}
 
 Para poder cumplir con el objetivo de embeber el sistema, se debe de hacer uso de la herramienta MATLAB Simulink Coder. Como se mencionó en \ref{sec:modelo2model}, a este tipo de aplicaciones se les conoce como transformadores de modelos, en este caso se emplea para lograr transformar el diagrama de control implementado en MATLAB Simulink en un código de lenguaje C, manteniendo de esta forma la estructura del modelo, pero realizando una adaptación al formato requerido, este convertidor de modelos garantiza la consistencia del modelo de control además de realizar la adaptación del mismo a las características de la tarjeta de desarrollo ZedBoard. Algunos de los parámetros que se pueden configurar en este transformador de modelos son: parámetros de la solución, implementación en hardware y generación de código.
 \newpage
@@ -590,14 +590,14 @@ En esta sección se integrará el caso de estudio generado en \ref{subsec:compil
 
 Para la implementación del binario generado en \ref{subsec:compilacion_binario}, se deben de generar algunos directorios, esto con el objetivo de mantener un entorno de trabajo limpio y ordenado. Para contener todos los directorios que se deben de crear, se genera un directorio llamado (recipes-core) el cual dentro del mismo deberá de contener un directorio llamado (caso\_de\_estudio\_1) el cual se encargara de contener el archivo de configuración de la capa llamado (caso\_de\_estudio\_1.bb); este archivo se genera mediante el comando que se observa en \ref{lst:yocto_new_layer}, además de generar este archivo se debe de crear un directorio llamado "files" que será el encargado de contener el archivo binario compilado en \ref{subsec:compilacion_binario}.
 
-\subsubsection{caso\_de\_estudio\_1.bb}
+\subsubsection{fiter.bb}
 
 Como se mencionó anteriormente el archivo llamado sistema\_control.bb es el encargado de la configuración de la capa, el mismo contiene los comandos de instalación y la dirección en donde se encontrara el archivo binario en el sistema de archivos de la imagen del sistema embebido.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{fig/especifico_2/bbfilestructure.jpg}
-    \caption{Estructura del archivo caso\_de\_estudio\_1.bb}
+    \caption{Estructura del archivo filter.bb}
     \label{fig:estructura_archivo_bb}
 \end{figure}
 
@@ -618,7 +618,7 @@ Antes de generar la imagen mínima se debe de tener en consideración ejecutar l
 Finalmente para la instalación de la capa dentro de la imagen se debe de editar el archivo de configuracion local llamado local.conf el cual se encuentra en la direccion build/conf/local.conf en el cual se debera de agregar la linea que se muestra en \ref{lst:install_layer} , esto con el fin de agregar la capa generada anteriormente al sistema de archivos de la imagen a generar.
 
 
-\subsection{Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}
+\subsection{Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}\label{sub:image2zedboard}
 
 Para la implementación de la imagen mínima desarrollada en \ref{subsec:generacion_imagen_minima} en la tarjeta de desarrollo, se deben de desarrollar los siguientes pasos en la máquina Host, Primeramente se debe de formatear la tarjeta SD de al menos 4 GB, las particiones de la misma se tienen que observar de la siguiente forma:
 
