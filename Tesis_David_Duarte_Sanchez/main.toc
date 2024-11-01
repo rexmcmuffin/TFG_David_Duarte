@@ -97,13 +97,13 @@
 \contentsline {subsubsection}{Sistema para la lectura e interpretación de los archivos generados previamente}{61}{section*.82}%
 \contentsline {subsection}{\numberline {5.1.3}Resultados de la simulación}{65}{subsection.5.1.3}%
 \contentsline {subsection}{\numberline {5.1.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{65}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Resultados de la implementación}{67}{subsection.5.1.5}%
-\contentsline {section}{\numberline {5.2}Caso de estudio 3 - PID}{68}{section.5.2}%
+\contentsline {subsection}{\numberline {5.1.5}Resultados de la implementación}{66}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Caso de estudio 3 - PID}{67}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Implementación en MATLAB Simulink}{68}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Bloques utilizados para la implementación}{69}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Resultados simulados}{69}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{69}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Resultados de la implementación}{74}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.2}Bloques utilizados para la implementación}{68}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Resultados simulados}{68}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{68}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Resultados de la implementación}{73}{subsection.5.2.5}%
 \contentsline {section}{\numberline {5.3}Reflexión final}{74}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Conclusiones}{75}{chapter.6}%
 \contentsline {chapter}{Bibliografía}{76}{chapter*.97}%

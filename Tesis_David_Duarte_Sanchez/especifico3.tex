@@ -11,7 +11,7 @@ Una IMU es un grupo de sensores que incluye un acelerómetro para medir acelerac
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.png}
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.pdf}
     \caption{Diagrama completo del caso de estudio 2 - IMU \cite{mathworks2024imu}}
     \label{fig:caso_de_estudio_2_IMU}
 \end{figure}
@@ -27,7 +27,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.png}
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/flujo_generador_de_archivos.pdf}
     \caption{Diagrama utilizado para la generación de los archivos \cite{mathworks2024imu}}
     \label{fig:caso_de_estudio_2_IMU_generación_de_archivos}
 \end{figure}
@@ -38,14 +38,14 @@ Este sistema es el encargado de generar los archivos de entrada, estos mismos co
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_aceleracion_lineal.pdf}
         \caption{Librería de bloques - Aceleración Lineal}
         \label{fig:lib_bloques_linear_acceleration}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_aceleracion_lineal.pdf}
         \caption{Configuración del bloque aceleración lineal}
         \label{fig:lib_bloques_config_linear_acceleration}
     \end{subfigure}
@@ -59,14 +59,14 @@ Como se pudo observar en la Figura \ref{fig:linear_accel_block_simulink}, se pre
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_constante_velocidad_angular.pdf}
         \caption{Librería de bloques - Velocidad Angular}
         \label{fig:lib_bloques_angular_velocity}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_bloque_velocidad_angular.pdf}
         \caption{Configuración del bloque velocidad angular}
         \label{fig:lib_bloques_config_angular_velocity}
     \end{subfigure}
@@ -80,14 +80,14 @@ Seguido de esto, podemos observar en la Figura \ref{fig:angular_velocity_block_s
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_subsistema_integracion_velocidad_angular.pdf}
         \caption{Librería de bloques - Integrador}
         \label{fig:lib_bloques_integrador}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_integrador_velocidad_angular.pdf}
         \caption{Configuración del bloque velocidad angular}
         \label{fig:config_bloques_integrador}
     \end{subfigure}
@@ -102,7 +102,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     % Primera imagen
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_IMU.pdf}
         \caption{Librería de bloques - IMU}
         \label{fig:lib_bloques_IMU}
     \end{subfigure}
@@ -110,7 +110,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     % Segunda imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.pdf}
         \caption{Configuración de parámetros 1}
         \label{fig:parametros_IMU_01}
     \end{subfigure}
@@ -118,7 +118,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     % Tercera imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.pdf}
         \caption{Configuración de parámetros 2}
         \label{fig:parametros_IMU_02}
     \end{subfigure}
@@ -126,7 +126,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     % Cuarta imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.pdf}
         \caption{Configuración de parámetros 3}
         \label{fig:parametros_IMU_03}
     \end{subfigure}
@@ -134,7 +134,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     % Quinta imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.pdf}
         \caption{Configuración de parámetros 4}
         \label{fig:parametros_IMU_04}
     \end{subfigure}
@@ -153,14 +153,14 @@ Finalmente en la Figura \ref{fig:arreglo_imu} se presenta el bloque encargado de
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.pdf}
         \caption{Librería de bloques - Guardar en archivo}
         \label{fig:lib_bloques_to_file_IMU}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/libreria_de_bloques_to_file.pdf}
         \caption{Configuración de parámetros - Guardar en archivo}
         \label{fig:config_to_file_IMU}
     \end{subfigure}
@@ -183,7 +183,7 @@ Estos nombres se deben de respetar a la hora de generar los archivos de salida, 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.png}
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/flujo_lector_de_archivos.pdf}
     \caption{Diagrama utilizado para la interpretación de los archivos \cite{mathworks2024imu}}
     \label{fig:caso_de_estudio_2_IMU_interpretacion_de_archivos}
 \end{figure}
@@ -195,14 +195,14 @@ Una vez establecido el diagrama que se encarga de la generación de los datos, e
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.pdf}
         \caption{Librería de bloques - Leer de archivo}
         \label{fig:lib_bloques_from_file_IMU}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_from_file.pdf}
         \caption{Configuración del bloque encargado de la lectura de archivos}
         \label{fig:config_from_file_IMU}
     \end{subfigure}
@@ -217,7 +217,7 @@ Como mencionamos anteriormente en el desarrollo de este capítulo, en \ref{subsu
     % Primera imagen
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreira_de_bloques_sensor_AHRS.pdf}
         \caption{Librería de bloques - AHRS}
         \label{fig:lib_bloques_AHRS}
     \end{subfigure}
@@ -225,7 +225,7 @@ Como mencionamos anteriormente en el desarrollo de este capítulo, en \ref{subsu
     % Segunda imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_01.pdf}
         \caption{Configuración de parámetros 1}
         \label{fig:parametros_AHRS_01}
     \end{subfigure}
@@ -233,7 +233,7 @@ Como mencionamos anteriormente en el desarrollo de este capítulo, en \ref{subsu
     % Tercera imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_02.pdf}
         \caption{Configuración de parámetros 2}
         \label{fig:parametros_AHRS_02}
     \end{subfigure}
@@ -241,7 +241,7 @@ Como mencionamos anteriormente en el desarrollo de este capítulo, en \ref{subsu
     % Cuarta imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_AHRS_03.pdf}
         \caption{Configuración de parámetros 3}
         \label{fig:parametros_AHRS_03}
     \end{subfigure}
@@ -256,14 +256,14 @@ En la Figura \ref{fig:arreglo_AHRS}, podemos encontrar el bloque denominado AHRS
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreia_de_bloques_suma.pdf}
         \caption{Librería de bloques - Suma}
         \label{fig:lib_bloques_add_IMU}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_bloque_suma.pdf}
         \caption{Configuración del bloque encargado de la suma de señales}
         \label{fig:config_add_IMU}
     \end{subfigure}
@@ -278,14 +278,14 @@ Para realizar una resta de senales se utiliza el bloque suma , el mismo se puede
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque__rad_2_deg.pdf}
         \caption{Librería de bloques - Conversor de radianes a grados}
         \label{fig:lib_bloques_R2D}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU//Generador_de_salidas/configuracion_rad_2_deg.pdf}
         \caption{Configuración del bloque conversor de radianes a grados}
         \label{fig:conf_bloques_R2D}
     \end{subfigure}
@@ -301,14 +301,14 @@ Los bloques de MATLAB trabajan utilizando las medidas de los ángulos en unidade
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf}
         \caption{Librería de bloques - Función}
         \label{fig:lib_bloques_func}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf}
         \caption{}
         \label{fig:config_bloques_func}
     \end{subfigure}
@@ -323,11 +323,11 @@ Finalmente se implementa un bloque de codigo el cual se encarga de calcular el e
 \begin{figure}[htbp]
     \centering
     % Imagen superior
-    \includegraphics[scale=0.1]{fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf}
+    \includegraphics[scale=0.3]{fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/bias.pdf}
     % Espacio entre las imágenes (opcional)
-    \vspace{0.5cm}
+    \vspace{1cm}
     % Imagen inferior
-    \includegraphics[scale=0.1]{fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf}
+    \includegraphics[scale=0.3]{fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error.pdf}
     \caption{Datos simulados}
     \label{fig:data_simulated}
 \end{figure}
@@ -410,7 +410,7 @@ En el contexto de MATLAB y Simulink, estas herramientas ofrecen una plataforma v
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.png}
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/PID_Diagram.pdf}
     \caption{Diagrama completo del caso de estudio 3 - PID }
     \label{fig:caso_de_estudio_3_PID}
 \end{figure}
@@ -427,14 +427,14 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_step.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_step.pdf}
         \caption{Librería de bloques -}
         \label{fig:bias_sim}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_step.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_step.pdf}
         \caption{Configuración del bloque encargado de }
         \label{fig:oe_sim}
     \end{subfigure}
@@ -447,14 +447,14 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_integrator.pdf}
         \caption{Librería de bloques -}
         \label{fig:bias_sim}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_integrator.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_integrator.pdf}
         \caption{Configuración del bloque encargado de }
         \label{fig:oe_sim}
     \end{subfigure}
@@ -467,14 +467,14 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_derivative.pdf}
         \caption{Librería de bloques -}
         \label{fig:bias_sim}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_derivative.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_derivative.pdf}
         \caption{Configuración del bloque encargado de }
         \label{fig:oe_sim}
     \end{subfigure}
@@ -494,7 +494,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_transfer_function.pdf}
         \caption{Configuración del bloque encargado de }
         \label{fig:oe_sim}
     \end{subfigure}
@@ -508,7 +508,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     % Primera imagen
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_gain.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_gain.pdf}
         \caption{Librería de bloques - Ganancia}
         \label{fig:lib_bloques_gain}
     \end{subfigure}
@@ -516,7 +516,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     % Segunda imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_10.pdf}
         \caption{Configuración de parámetros 1}
         \label{fig:parametros_gain_01}
     \end{subfigure}
@@ -524,7 +524,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     % Tercera imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_300.pdf}
         \caption{Configuración de parámetros 2}
         \label{fig:parametros_gain_02}
     \end{subfigure}
@@ -532,7 +532,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     % Cuarta imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_gain_350.pdf}
         \caption{Configuración de parámetros 3}
         \label{fig:parametros_gain_03}
     \end{subfigure}
@@ -548,7 +548,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     % Primera imagen
     \begin{subfigure}[b]{0.35\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_suma.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/lib_suma.pdf}
         \caption{Librería de bloques - suma}
         \label{fig:lib_bloques_add}
     \end{subfigure}
@@ -556,7 +556,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     % Segunda imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf}
         \caption{Configuración de parámetros 1}
         \label{fig:parametros_add_01}
     \end{subfigure}
@@ -564,7 +564,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     % Tercera imagen
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.png}
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/config_sum_02.pdf}
         \caption{Configuración de parámetros 2}
         \label{fig:parametros_add_02}
     \end{subfigure}
