@@ -156,12 +156,13 @@ Por medio del comando que se muestra en \ref{lst:docker_basics_start} se inicia 
 Finalmente, para la ejecución del contenedor en terminal se debe de hacer uso del comando \ref{lst:docker_basics_init}, este se encarga de acceder a la terminal del contenedor deseado. Como se puede observar en la Figura \ref{fig:sudo_docker_init} ya la terminal se encuentra ejecutando el contenedor construido bajo el ID del contenedor "1420fedd3067".
 
 Una vez generados los contenedores, se procede a generar el entorno de desarrollo requerido dentro de los mismos.
+\newpage
 
 \subsubsection{Contenedor para compilación Cruzada}\label{subsec:generacion_entorno_xcompile}
 
-\begin{figure}[h!]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{fig/especifico_2/diagrama_compilador_cruzado.pdf}
+    \includegraphics[width=0.4\textwidth]{fig/especifico_2/diagrama_compilador_cruzado.pdf}
     \caption{Diagrama para la elaboración del entorno para compilación cruzada}
     \label{fig:cross_compile_diagram}
 \end{figure}
@@ -183,6 +184,7 @@ Para la compilación de los archivos se elabora un entorno para compilación cru
 
 Primeramente se debe de instalar el compilador cruzado, para nuestros efectos será arm-linux-gnueabihf-gcc, esto lo podemos hacer mediante el comando que se muestra en \ref{lst:cross_compiler}. Seguido de esto debemos de instalar CMake el cual es una herramienta de construcción multiplataforma y de código abierto que se utiliza para gestionar la construcción de software, el mismo se instala mediante el comando que se muestra en \ref{lst:cmake}. Finalmente debemos  de instalar build-essential las cuales son herramientas que nos ayudaran a compilar el programa generado, esta instalación se logra mediante el uso del comando mostrado en \ref{lst:build_essential}. Con estas tres instalaciones queda preparado el entorno para la compilación cruzada. 
 
+\newpage
 
 \subsubsection{Contenedor para Yocto Project}\label{subsec:generacion_entorno_yocto}
 
@@ -261,6 +263,8 @@ Una vez comprendidos estos conceptos la línea 3 de \ref{lst:aditional_config} s
 
 Finalizada la configuración básica de los entornos de trabajo se sigue con las siguientes secciones en donde se desarrollaran los casos de estudio con el objetivo de demostrar el funcionamiento del flujo de trabajo propuesto en la Figura \ref{fig:diagrama_flujo_trabajo}.
 
+\newpage
+
 \section{Caso de estudio 1 - Filtro Básico en MATLAB}
 
 Como caso de estudio se seleccionó una aplicación la cual permite realizar una comparación de resultados antes y después del procesamiento de datos, es por esto que se decidió implementar un filtro básico de tipo paso bajo haciendo uso de los bloques de MATLAB Simulink. 
@@ -282,7 +286,7 @@ Para la construcción del caso de estudio sé propone el diagrama de la Figura \
 \end{figure}
 
 Primeramente se deberá de tener acceso a la librería de bloques, la misma se puede encontrar en la ubicación que se muestra en la Figura \ref{fig:lib_bloq}, a esta se debe de acceder haciendo click en el icono que se encuentra resaltado en la Figura anteriormente mencionada.
-\newpage
+
 
 
 \begin{figure}[h!]
@@ -337,7 +341,6 @@ Seguido de esto se debe de implementar el bloque sumador el cual se muestra en l
     y(t) = \sin(t) + \sin(12t)
     \label{eq:funcion_de_suma_de_ondas}
 \end{equation}
-\newpage
 
 Por otro lado la función de transferencia a utilizar en el filtro será:
 
@@ -345,6 +348,8 @@ Por otro lado la función de transferencia a utilizar en el filtro será:
     H(S) = \frac{1}{S+1}
     \label{eq:funcion_de_transferencia_filtro}
 \end{equation}
+
+\newpage
 
 \begin{figure}[htbp]
     \centering
@@ -426,7 +431,7 @@ Para poder cumplir con el objetivo de embeber el sistema, se debe de hacer uso d
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/M2MT/model_2_model_diagram.pdf}
+    \includegraphics[width=0.4\textwidth]{fig/especifico_2/M2MT/model_2_model_diagram.pdf}
     \caption{Flujo de trabajo MATLAB Simulink Coder}
     \label{fig:m2m_matlab_simulink_coder}
 \end{figure}
@@ -512,6 +517,8 @@ Una vez configurados todos los parámetros mencionados anteriormente debemos de 
 
 Seguido de esto se debe de copiar el archivo comprimido generado en \ref{subsec:simulink_coder}, al contenedor con Ubuntu 16.04 generado en \ref{sec:entorno_en_contenedores}. Primeramente colocaremos el archivo comprimido en un directorio llamado swap\_area, tal y como se muestra en \ref{fig:pestana_swap_area}. Seguido de esto se debe de descomprimir el archivo. Una vez descomprimido el archivo, como se mencionó anteriormente, lo enviaremos al contenedor haciendo uso del comando \ref{lst:copy_to_container}.
 
+\newpage
+
 \subsection{Compilación del Código C generado}\label{subsec:compilacion_binario}
 
 \begin{lstlisting}[language=bash, caption={Compilacion del programa, Linux}, label=lst:build_cmake_file]
@@ -543,7 +550,7 @@ Una vez compilado el archivo binario, se puede continuar con el flujo que se pre
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf}
+    \includegraphics[width=0.4\textwidth]{fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf}
     \caption{Flujo de trabajo EmbedSynthGNC}
     \label{fig:diagrama_embed_synth_gnc}
 \end{figure}
@@ -570,7 +577,7 @@ Para la generación de una capa de yocto primero debemos de estar seguros que no
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/Flujo de trabajo de mi idea.pdf}
+    \includegraphics[width=0.6\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-35-20.png}
     \caption{Árbol de directorios de la capa}
     \label{fig:arbol_capa_custom_yocto}
 \end{figure}
@@ -647,8 +654,8 @@ Como protocolo de comunicación se establece primeramente el protocolo UART, el 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/especifico_2/154140ZedBoard.png}
-    \caption{Puertos tarjeta de desarrollo Zedboard}
+    \includegraphics[width=0.8\textwidth]{fig/teorico/zedboard_raw.png}
+    \caption{Puertos tarjeta de desarrollo ZedBoard}
     \label{fig:puertos_zedboard}
 \end{figure}
 

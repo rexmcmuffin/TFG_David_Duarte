@@ -72,39 +72,39 @@
 \contentsline {subsection}{\numberline {4.2.1}Simulación del caso de estudio en MATLAB Simulink}{41}{subsection.4.2.1}%
 \contentsline {subsubsection}{Resultados obtenidos con la ejecución de la simulación}{42}{section*.53}%
 \contentsline {section}{\numberline {4.3}Flujo de trabajo de la aplicación de transformación de modelo a modelo}{42}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Simulink Coder}{44}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Definición de parámetros}{44}{subsection.4.3.2}%
-\contentsline {subsubsection}{Selección del procesador objetivo}{45}{section*.59}%
+\contentsline {subsection}{\numberline {4.3.1}Simulink Coder}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Definición de parámetros}{43}{subsection.4.3.2}%
+\contentsline {subsubsection}{Selección del procesador objetivo}{44}{section*.59}%
 \contentsline {subsubsection}{Selección del tipo de archivo de construcción}{45}{section*.61}%
-\contentsline {subsubsection}{Generación de archivos de compilación}{46}{section*.63}%
+\contentsline {subsubsection}{Generación de archivos de compilación}{45}{section*.63}%
 \contentsline {subsection}{\numberline {4.3.3}Compilación del Código C generado}{47}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Flujo de Trabajo EmbedSynthGNC}{48}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Creación de una capa de yocto}{48}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Caso de estudio 1 - Filtro Básico en ZedBoard}{50}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Integración del programa generado a la capa de Yocto}{50}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.2}Caso de estudio 1 - Filtro Básico en ZedBoard}{49}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Integración del programa generado a la capa de Yocto}{49}{subsection.4.4.3}%
 \contentsline {subsubsection}{fiter.bb}{50}{section*.69}%
-\contentsline {subsection}{\numberline {4.4.4}Generación de la imagen}{51}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.4}Generación de la imagen}{50}{subsection.4.4.4}%
 \contentsline {subsection}{\numberline {4.4.5}Implementación de la imagen mínima en la tarjeta de desarrollo Zedboard}{51}{subsection.4.4.5}%
-\contentsline {subsection}{\numberline {4.4.6}Conexión de la tarjeta de desarrollo con el computador host}{52}{subsection.4.4.6}%
-\contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{53}{subsection.4.4.7}%
-\contentsline {subsection}{\numberline {4.4.8}Comparación de resultados}{54}{subsection.4.4.8}%
-\contentsline {section}{\numberline {4.5}Reflexión final}{55}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{56}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Caso de estudio 2 - IMU}{56}{section.5.1}%
+\contentsline {subsection}{\numberline {4.4.6}Conexión de la tarjeta de desarrollo con el computador host}{51}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}Ejecución del caso de estudio y resultados}{52}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Comparación de resultados}{53}{subsection.4.4.8}%
+\contentsline {section}{\numberline {4.5}Reflexión final}{54}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Caso de estudio IMU y PID}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Caso de estudio 2 - IMU}{55}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Implementación en MATLAB Simulink}{56}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Bloques utilizados para la implementación}{57}{subsection.5.1.2}%
-\contentsline {subsubsection}{Sistema para la generación de archivos}{57}{section*.75}%
+\contentsline {subsection}{\numberline {5.1.2}Bloques utilizados para la implementación}{56}{subsection.5.1.2}%
+\contentsline {subsubsection}{Sistema para la generación de archivos}{56}{section*.75}%
 \contentsline {subsubsection}{Sistema para la lectura e interpretación de los archivos generados previamente}{61}{section*.82}%
 \contentsline {subsection}{\numberline {5.1.3}Resultados de la simulación}{65}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{65}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Resultados de la implementación}{67}{subsection.5.1.5}%
-\contentsline {section}{\numberline {5.2}Caso de estudio 3 - PID}{69}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Implementación en MATLAB Simulink}{69}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.1.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{66}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Resultados de la implementación}{68}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Caso de estudio 3 - PID}{70}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Implementación en MATLAB Simulink}{70}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Bloques utilizados para la implementación}{70}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Resultados simulados}{75}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{75}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Resultados de la implementación}{76}{subsection.5.2.5}%
-\contentsline {section}{\numberline {5.3}Reflexión final}{76}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{77}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{78}{chapter*.102}%
-\contentsline {chapter}{\numberline {A}Métricas de comparación de señales}{81}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {5.2.3}Resultados simulados}{76}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}{76}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Resultados de la implementación}{78}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}Reflexión final}{79}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{80}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{81}{chapter*.107}%
+\contentsline {chapter}{\numberline {A}Métricas de comparación de señales}{84}{appendix.Alph1}%

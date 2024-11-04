@@ -7,6 +7,7 @@ Como caso de estudio de implementación se desarrolló también la simulación d
 
 Una IMU es un grupo de sensores que incluye un acelerómetro para medir aceleración y un giroscopio para medir velocidad angular. Frecuentemente, también se incluye un magnetómetro para medir el campo magnético de la Tierra. Cada uno de estos tres sensores produce una medición de tres ejes, constituyendo una medición de 9 ejes en total. Ademas de esto un Sistema de Referencia de Actitud y Rumbo (AHRS, por sus siglas en inglés) toma las lecturas de sensores de 9 ejes y calcula la orientación del dispositivo. Esta orientación se da en relación con el marco NED, donde N es la dirección del Norte Magnético. El bloque AHRS en Simulink logra esto usando una estructura de filtro de Kalman indirecto \cite{mathworks2024imu}.
 
+\newpage
 \subsection{Implementación en MATLAB Simulink}
 
 \begin{figure}[h!]
@@ -76,6 +77,8 @@ Como se pudo observar en la Figura \ref{fig:linear_accel_block_simulink}, se pre
 
 Seguido de esto, podemos observar en la Figura \ref{fig:angular_velocity_block_simulink} el bloque encargado de establecer la variable de la velocidad angular, a la izquierda se observa el bloque a utilizar en la librería y a la derecha se encuentra la configuración utilizada para este bloque. 
 
+\newpage
+
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.35\textwidth}
@@ -96,6 +99,7 @@ Seguido de esto, podemos observar en la Figura \ref{fig:angular_velocity_block_s
 \end{figure}
 
 Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} tambien se debe de implementar un bloque encargado de integrar el valor de la velocidad angular, para esto se usa el bloque que se muestra en \ref{fig:integration_for_angular_velocity}, este mismo lo podemos encontrar en la libreria de bloques de Simulink como se muestra en \ref{fig:lib_bloques_integrador}, tambien, en la Figura \ref{fig:config_bloques_integrador} se muestra la configuración utilizada en el bloque.
+\newpage
 
 \begin{figure}[htbp]
     \centering
@@ -108,7 +112,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     \end{subfigure}
     \hfill
     % Segunda imagen
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.35\textwidth}
         \centering
         \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_01.pdf}
         \caption{Configuración de parámetros 1}
@@ -116,7 +120,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     \end{subfigure}
     \hfill
     % Tercera imagen
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.35\textwidth}
         \centering
         \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_02.pdf}
         \caption{Configuración de parámetros 2}
@@ -124,7 +128,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     \end{subfigure}
     \hfill
     % Cuarta imagen
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.35\textwidth}
         \centering
         \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_03.pdf}
         \caption{Configuración de parámetros 3}
@@ -132,7 +136,7 @@ Adicional al bloque que se observo en \ref{fig:angular_velocity_block_simulink} 
     \end{subfigure}
     \hfill
     % Quinta imagen
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.35\textwidth}
         \centering
         \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_archivos/configuracion_parametros_IMU_04.pdf}
         \caption{Configuración de parámetros 4}
@@ -179,6 +183,8 @@ Para poder generar archivos los cuales se utilizaran más adelante en este flujo
 
 Estos nombres se deben de respetar a la hora de generar los archivos de salida, ya que el programa encargado de recibir estos datos buscara los archivos en el directorio bajo estos nombres.
 
+\newpage
+
 \subsubsection{Sistema para la lectura e interpretación de los archivos generados previamente}
 
 \begin{figure}[h!]
@@ -211,6 +217,7 @@ Una vez establecido el diagrama que se encarga de la generación de los datos, e
 \end{figure}
 
 Como mencionamos anteriormente en el desarrollo de este capítulo, en \ref{subsub:generación_de_archivos} se tuvo como salida del programa una serie de archivos generados. Para poder leer los archivos generados previamente se debe de hacer uso del bloque que se muestra en la Figura \ref{fig:read_from_file}, para el correcto funcionamiento del sistema es muy importante que los parámetros de configuración que se muestran en la Figura \ref{fig:config_from_file_IMU}.
+\newpage
 
 \begin{figure}[htbp]
     \centering
@@ -251,6 +258,7 @@ Como mencionamos anteriormente en el desarrollo de este capítulo, en \ref{subsu
 \end{figure}
 
 En la Figura \ref{fig:arreglo_AHRS}, podemos encontrar el bloque denominado AHRS, este es un sistema que proporciona la estimación de la actitud y orientación de un objeto en 3D., es por esto que se debe de seguir una serie de configuraciónes con el objetivo de lograr el correcto funcionamiento del módulo. Su principal función es calcular la orientación del objeto usando datos de sensores como acelerómetros, giroscopios y magnetómetros. Por un lado en la Figura \ref{fig:lib_bloques_AHRS}, podemos observar el nombre del módulo en la Liberia de bloques. Una vez dentro de los parámetros de configuración del bloque tenemos en la Figura \ref{fig:parametros_AHRS_01}, los parámetros principales de configuración, seguido de esto en la Figura \ref{fig:parametros_AHRS_02}, tenemos los parámetros encargados del ruido de la medicion. Finalmente en la Figura \ref{fig:parametros_AHRS_03} se configuran los parametros relacionados al ruido del ambiente. 
+\newpage
 
 \begin{figure}[htbp]
     \centering
@@ -295,7 +303,7 @@ Para realizar una resta de senales se utiliza el bloque suma , el mismo se puede
 
 Los bloques de MATLAB trabajan utilizando las medidas de los ángulos en unidades de radianes, es por esto que se utiliza un bloque de trasnformacion para poder obtener los resultados en grados y que sean mas sencillos de interpretar tanto en los datos de salida como en los graficos a elaborar.
 
-
+\newpage
 
 \begin{figure}[htbp]
     \centering
@@ -317,6 +325,7 @@ Los bloques de MATLAB trabajan utilizando las medidas de los ángulos en unidade
 \end{figure}
 
 Finalmente se implementa un bloque de código el cual se encarga de calcular el error de orientación del sistema esto con el fin de estimar la precisión con la cual el gisrocopio simualdo en este caso de estudio puede determinar la orientacion, en la Figura \ref{fig:lib_bloques_func} se puede observar el bloque en la libreria, seguido de esto en la Figura \ref{fig:config_bloques_func} se puede observar el código implementado dentro de este bloque. El archivo se debera de guardar bajo el nombre de (IMUFusionSimulinModel) y el tiempo de ejecucio se debe de establecer en 1000ms. 
+\newpage
 
 \subsection{Resultados de la simulación}\label{subsub:resultados_simulados_IMU}
 
@@ -333,6 +342,8 @@ Finalmente se implementa un bloque de código el cual se encarga de calcular el 
 \end{figure}
 
 Ejecutando el sistema en el entorno de simulacion MATLAB Simulink se obtienen los resutlados que se muestran en \ref{fig:data_simulated}, al lado izquierdo se pueden observar los datos de la desviacion simulada del sistema mientras que al lado derecho se observan los datos correspondientes a error de orientacion. Cabe estacar que el resultado es esperado ya que la diferencia entre la orientación estimada y la verdadera debería ser casi 4.7 [grados], que es la declinación en esta latitud y longitud y en el bloque IMU, al giroscopio se le dio una polarización de 0,0545 [rad/s] o 3,125 [grados/s], que debería coincidir con el valor de estado estacionario. En las proximas secciónes se detallaran los pasos a seguir para la implementacion de este sistema en la tarjeta de desarrollo por medio del flujo de trabajo desarrollado en en capitulo \ref{ch:especifico2}. 
+
+\newpage
 
 \subsection{Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}
 
@@ -377,6 +388,8 @@ Una vez descomprimidos los archivos en el directorio denominado como swap area s
 
 
 Una vez dentro del contendor se debe de ir al directorio denominado meta-EmbedSynthGNC dentro del mismo se debe ingresar a la ruta /poky/meta-EmbedsinthGNC/recipes-core y en la misma se debe agregar un directorio con el nombre de (imu). Ademas de esto se debe inicializar el ambiente de trabajo mediante el uso del comando \ref{lst:yocto_ambient_set}. Una vez inicializado el ambiente de trabajo se debe agregar la nueva capa generada al archivo deniminado local.conf esto con el fin que el binario con el nombre IMUFusionSimulinModel sea incluido en la generación de la imagen. Una vez generada la imagen se deben repetir los pasos que se muestran en \ref{sub:image2zedboard} donde se contempla exportar los archivos contenidos en la ruta xxxxx. Seguido de esto se debe preparar la memoria extraible de la tarjeta de desarrollo para los nuevos archivos.
+
+\newpage
 
 \subsection{Resultados de la implementación}
 
@@ -465,6 +478,7 @@ Por otro lado los datos relacionados al error de orientacion se obtiene que las 
 
 Aunque los errores en la orientación son de una magnitud algo mayor que en los ejes individuales del giroscopio, siguen siendo muy pequeños. Esto sugiere que el sistema de orientación es muy preciso, aunque hay un pequeño margen de acumulación de error que sería esperado en cálculos de orientación que integran múltiples ejes. 
 
+\newpage
 
 \section{Caso de estudio 3 - PID}
 
@@ -508,6 +522,7 @@ Los bloques utilizados se obtienen en la librería de bloques de MATLAB Simulink
     \caption{Bloque escalon}
     \label{fig:step_block}
 \end{figure}
+\newpage
 
 Primeramente para la implementación del modelo que se muestra en la Figura \ref{fig:caso_de_estudio_3_PID}, se debe de utilizar el bloque que se muestra en la Figura \ref{fig:step_block}, el mismo se puede encontrar en la libreria de bloques como se muestra en al Figura \ref{fig:step_lib}, ademas de esto la configuracion del mismo se muestra en la Figura \ref{fig:step_conf}.
 
@@ -531,7 +546,10 @@ Primeramente para la implementación del modelo que se muestra en la Figura \ref
     \label{fig:int_block}
 \end{figure}
 
-Por un lado, al realizar la implementación del controlador PID por separado se debe de implementar un bloque especializado para la integracion, esto se logra mediante el uso del bloque que se muestra en la Figura \ref{fig:int_block}, el mismo se obtiene de la libreria de bloques como se muestra en la Figura \ref{fig:int_PID_lib}. La configuracion de este bloque se puede observar en la Figura \ref{fig:int_conf_PID}. 
+Por un lado, al realizar la implementación del controlador PID por separado se debe de implementar un bloque especializado para la integracion, esto se logra mediante el uso del bloque que se muestra en la Figura \ref{fig:int_block}, el mismo se obtiene de la libreria de bloques como se muestra en la Figura \ref{fig:int_PID_lib}. La configuracion de este bloque se puede observar en la Figura \ref{fig:int_conf_PID}.
+
+\newpage
+
 %%derivative
 \begin{figure}[htbp]
     \centering
@@ -648,43 +666,105 @@ Tambien se deben de ingresar los valores de las ganancias esto se realiza por me
     \label{fig:arreglo_add}
 \end{figure}
 
+\newpage
+
 Finalmente se deben de implementar dos bloques de suma, el primer bloque se encarga de realizar la realimentacion del sistema de control, el mismo se implementa haciendo uso de bloque de la libreria que se observa en la Figura \ref{fig:lib_bloques_add}, esto mediante el uso de la configuracion que se establece en la Figura \ref{fig:parametros_add_01}, por otro lado el segundo bloque de suma se encarga de sumar las tres senales de salida del controlador PID este bloque se debe de configurar como se muestra en la Figura \ref{fig:parametros_add_02}. Una vez implementado el sistema el archivo se debera de guardar bajo el nombre de (PIDRunFile) y el tiempo de ejecucio se debe de establecer en 0.5ms. 
 
 \subsection{Resultados simulados}\label{subsub:resultados_simulados_PID}
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png}
+    \caption{Salida simulada - PID }
+    \label{fig:salida_simulada_PID}
+\end{figure}
+
+
+Ejecutando el sistema en el entorno de simulacion MATLAB Simulink se obtienen los resutlados que se muestran en \ref{fig:salida_simulada_PID}. Cabe estacar que el resultado es esperado, ya que el valor de estado estacionario esperado para este modelo debería ser de 1.02 V. En las próximas secciones se detallaran los pasos a seguir para la implementación de este sistema en la tarjeta de desarrollo por medio del flujo de trabajo desarrollado en en capítulo \ref{ch:especifico2}. 
+
+
 \subsection{Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}
 
-Para la implementación en la tarjeta de desarrollo ZedBoard se ejecuta el flujo de trabajo que se muestra en la sección \ref{}. El mismo es representado mediante el diagrama que se muestra en la Figura \ref{}.
+Para la implementación en la tarjeta de desarrollo ZedBoard se ejecuta el flujo de trabajo que se muestra en la sección \ref{sec:m2m_transformator}. El mismo es representado mediante el diagrama que se muestra en la Figura \ref{fig:m2m_matlab_simulink_coder}.
 
-Primeramente se deben de generar los archivos de Codigo C desde MATLAB Simulink, para esto se deben de seguir el diagrama de la Figura \ref{}. Como primer punto se deben realizar las configraciones que se muestran en la Figura \ref{} donde se debe de definir el tiempo de ejecucion del sistema, para este caso se selecciona una ejecucion de 0,5 ms, esto debido a que mediante mediciones se logra determinar que el bloque se estabiliza a los 0.5 ms de ejecucion, seguido de esto como se muestra en la Figura \ref{} se debe de establecer el procesador objetivo y la arquitectura del mismo. Una vez establecido esto se pueden generar los archivos requeridos para la compilacion del codigo C como s emuestra en la figura \ref{}. El archivo resultante sera un archivo llamado xxxx.zip seguido de esto se debe de  se exportan los archivos al sistema Linux. Una vez exportados los archivos se descomprimen los mismos en la carpeta denominada swap area.
+Primeramente se deben de generar los archivos de Codigo C desde MATLAB Simulink, para esto se deben de seguir el diagrama de la Figura \ref{fig:m2m_matlab_simulink_coder}. 
 
-Una vez descomprimidos los archivos en el directorio denominado como swap area se deben enviar al container mediante el comadno que se muestra en \ref{}. Una vez dentro del contenedor se debe construir el archivo responsable de la compilacion del codigo C, esto se logra mediante el comando que se muestra en \ref{}. El achivo binarioresultante se encuentra en la ruta xxxxx, el mismo se debe de enviar al directorio denominado swap area, una vez enviado el binario, este se debe de exportar al contenedor encargado de integrarlo a la imagen generada mediante el marco de trabajo de Yocto y el flujo de trabajo de EmbedSynthGNC, esto lo logra mediante el uso del comando que se muestra en \ref{}. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf}
+    \caption{Definición del procesador objetivo y arquitectura}
+    \label{fig:system_target_PID}
+\end{figure}
+
+Seguido de esto como se muestra en la Figura \ref{fig:system_target_PID} se debe de establecer el procesador objetivo y la arquitectura del mismo.Finalmente se debe de definir el tipo de archivo de construccion el cual se puede observar en la Figura \ref{fig:pestana_config_output_file}. 
+
+El archivo resultante sera un archivo llamado PIDRunFile.zip seguido de esto se debe de  se exportan los archivos al sistema Linux. Una vez exportados los archivos se descomprimen los mismos en la carpeta denominada swap area.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png}
+    \caption{Archivo de construcción en el directorio swap area}
+    \label{fig:swap_area_PID}
+\end{figure}
 
 
-Una vez dentro del contendor se debe de ir al directorio denominado meta-EmbedSynthGNC dentro del mismo se debe ingresar a la ruta xxx y en la misma se debe agregar un directorio con el nombre de xxxx. Ademas de esto se debe inicializar el ambiente de trabajo mediante el uso del comando \ref{}. una vez inicializado el ambiente de trabajo se debe agregar la nueva capa generada al archivo deniminado xxxxx esto con el fin que el binario con el nombre xxx sea incluido en la generación de la imagen. Una vez generada la imagen se deben repetir los pasos que se muestran en \ref{} donde se contempla exportar los archivos contenidos en la ruta xxxxx. Seguido de esto se debe preparar la memoria extraible de la tarjeta de desarrollo para los nuevos archivos. 
+\begin{lstlisting}[language=bash, caption={Compilacion del programa , Linux}, label=lst:build_cmake_file_PID]
+    cmake -DCMAKE_C_COMPILER=arm-linux-gnueabihf-gcc 
+    CMakeLists.txt -DMATLAB_ROOT=/home/test/PIDRunFile/R2024b/
+\end{lstlisting}
+
+Una vez descomprimidos los archivos en el directorio denominado como swap area se deben enviar al contenedor mediante el comando que se muestra en \ref{fig:swap_area_PID}. Una vez dentro del contenedor se debe construir el archivo responsable de la compilacion del codigo C, esto se logra mediante el comando que se muestra en \ref{lst:build_cmake_file_PID}. El archivo binario resultante se encuentra en la ruta /home/PIDRunFile/casodeestudiopid, el mismo se debe de enviar al directorio denominado swap area, este se debe de exportar al contenedor encargado de integrarlo a la imagen generada mediante el marco de trabajo de Yocto y el flujo de trabajo de EmbedSynthGNC. 
 
 
-En la Figura \ref{} se muestra el proceso de formateo de los archivos que contenia la tarjeta anteriormente, los cuales correspondian al caso de estudio que se desarrollo en el capitulo \ref{ch:especifico2}. Una vez formateadas las dos particiones de la memoria extraible se deben de copiar los archivos xxxx en la particion con nombre xxxxx mediante el comando \ref{} y por otro lado para la particion denominada xxxx se deben de copiar los archivos xxx xmediante el comando que se muestra en \ref{}. 
+Una vez dentro del contendor se debe de ir al directorio denominado meta-EmbedSynthGNC dentro del mismo se debe ingresar a la ruta /poky/meta-EmbedsinthGNC/recipes-core y en la misma se debe agregar un directorio con el nombre de (pid). Ademas de esto se debe inicializar el ambiente de trabajo mediante el uso del comando \ref{lst:yocto_ambient_set}. Una vez inicializado el ambiente de trabajo se debe agregar la nueva capa generada al archivo deniminado local.conf esto con el fin que el binario con el nombre PIDRunFile sea incluido en la generación de la imagen. Una vez generada la imagen se deben repetir los pasos que se muestran en \ref{sub:image2zedboard} donde se contempla exportar los archivos contenidos en la ruta xxxxx. Seguido de esto se debe preparar la memoria extraible de la tarjeta de desarrollo para los nuevos archivos.
 
 
 \subsection{Resultados de la implementación}
 
-Como se puede observar en la Figura \ref{} se observa el binario contenido en la imagen dentro de la tarjeta de desarrollo. Una vez ejecutado el mismo se obtienen los archivos de salida que se muestran en la Figura \ref{}. 
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf}
+        \caption{Tarjeta de desarrollo ZedBoard - PID}
+        \label{fig:PID_zedboard}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf}
+        \caption{Archivos de salida}
+        \label{fig:out_files_PID}
+    \end{subfigure}
+    \caption{Programa PIDRunFile implementado en la tarjeta de desarrollo}
+    \label{fig:PID_ZEDBOARD}
+\end{figure}
 
 
-Analizando los mismos mediante el programa de Python \ref{} se obtienen los graficos que se muestran en \ref{}, en donde a la izquierda en la Figura \ref{} se muestra el grafico de xxxx, a la derecha en la Figura \ref{} se muestra el grafico de xxxxx. Realizando la comparacion con los datos simulados obtenidos en \ref{subsub:resultados_simulados_PID}, se obtienen los siguientes resultados para el analisis de error.
+Como se puede observar en la Figura \ref{fig:PID_zedboard} se observa el binario contenido en la imagen dentro de la tarjeta de desarrollo. Una vez ejecutado el mismo se obtienen los archivos de salida que se muestran en la Figura \ref{fig:out_files_PID}. 
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png}
+    \caption{Gráfico de archivo de salida experimental}
+    \label{fig:experimentales_PID}
+\end{figure}
 
-Por otro lado los datos relacionados al error de xxxx se obtiene que las diferencias mostradas en estas graficas son de.
-
+Analizando los mismos mediante el programa de Python \ref{apx:comparacion_de_sennales_programa} se obtienen los graficos que se muestran en \ref{fig:experimentales_PID}, en donde se muestra el grafico de xxxxx. Realizando la comparacion con los datos simulados obtenidos en \ref{subsub:resultados_simulados_PID}, se obtienen los siguientes resultados para el analisis de error.
 
 \begin{itemize}
-    \item Error Promedio Absoluto = $1.930 \times 10^{-18}$ [V]
-    \item Error Cuadrático Medio = $2.14 \times 10^{-34}$ $[V^{2}]$
-    \item Raíz del Error Cuadrático Medio = $1.46 \times 10{-17}$ [V]
+    \item Error Promedio Absoluto = $1.12\times 10^{-32}$ []
+    \item Error Cuadrático Medio = $1.01 \times 10^{-34}$ $[^{2}]$
+    \item Raíz del Error Cuadrático Medio = $1.01 \times 10{-17}$ []
 \end{itemize}
 
 
+Los resultados obtenidos en el análisis de error muestran valores extremadamente bajos, indicando una alta concordancia entre las señales comparadas. El Error Promedio Absoluto de $1.12\times 10^{-32}$ sugiere que las desviaciones promedio entre los datos experimentales y simulados son insignificantes, mientras que el Error Cuadrático Medio de 
+ $1.01 \times 10^{-34}$  refuerza este resultado al reflejar un bajo nivel de variabilidad en los errores al cuadrado. Finalmente, la Raíz del Error Cuadrático Medio (RMSE), con un valor de $1.01 \times 10{-17}$ , confirma que las diferencias entre las señales son prácticamente despreciables, lo cual respalda la precisión del modelo simulado respecto al proceso experimental. Estos valores en conjunto demuestran una correspondencia casi exacta, validando la efectividad del modelo para replicar el comportamiento de la señal experimental.
+
 \section{Reflexión final}
 
-Los resultados de error obtenidos son altamente satisfactorios, lo cual respalda la implementación del caso de estudio realizada a lo largo de este capítulo. Estos valores indican una correspondencia prácticamente perfecta entre la simulación y el proceso experimental. La alta precisión alcanzada no solo válida el modelo desarrollado, sino que también resalta la consistencia y fiabilidad del proceso experimental. Es por esto que se aprueba el marco de trabajo realizado y se continúa con la investigación del mismo.
+
+La implementación y análisis de dos casos de estudio, uno centrado en el uso de una Unidad de Medición Inercial (IMU) y otro en un controlador PID, han revelado resultados con errores notablemente bajos, lo que indica una alta precisión en ambos enfoques. La IMU, con su capacidad para medir aceleración y velocidad angular en tiempo real, mostró una correspondencia significativa entre los datos experimentales y los simulados. Los valores de error, casi nulos, sugieren que el modelo simulado captura con gran exactitud las dinámicas y variaciones de los movimientos medidos, lo cual es esencial para aplicaciones que requieren un monitoreo preciso de la orientación y posición en entornos críticos. La efectividad del modelo IMU indica que se puede confiar en los datos simulados como una representación fiel del comportamiento del sistema en condiciones reales.
+
+De manera similar, el controlador PID logró un ajuste excepcionalmente alto entre la señal deseada y la respuesta obtenida en la simulación, con errores prácticamente despreciables que demuestran un control preciso sobre la señal en cuestión. La baja magnitud de error en ambos casos sugiere que el sistema de control es altamente efectivo en términos de corrección de desviaciones y en la capacidad del modelo para minimizar las diferencias entre los datos simulados y experimentales. Estos resultados no solo validan el rigor de las simulaciones y la calidad del modelado, sino que también brindan una base sólida para futuras aplicaciones y ajustes, dado que los modelos son capaces de replicar de manera precisa el comportamiento de sistemas reales. La consistencia en los bajos valores de error en ambos casos de estudio subraya la confiabilidad y aplicabilidad de estos modelos en escenarios de guía, navegación y control, donde la precisión es fundamental.

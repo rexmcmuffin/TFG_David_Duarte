@@ -1,0 +1,2 @@
+{"rule":"AGREEMENT_ADJ_NOUN","sentence":"^\\QLibrería de bloques - Integrador Configuración del bloque encargado de Integrar Bloque integrador\\E$"}
+{"rule":"AGREEMENT_ADJ_NOUN","sentence":"^\\QLibrería de bloques - Derivador Configuración del bloque encargado de derivar Bloque derivador\\E$"}

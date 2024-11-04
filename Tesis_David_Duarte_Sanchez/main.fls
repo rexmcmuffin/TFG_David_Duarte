@@ -994,22 +994,21 @@ INPUT ./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf
 INPUT ./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf
 INPUT ./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf
 INPUT ./fig/especifico_2/embedsynthgnc/diagrama_general_embedsynthgnc.pdf
-INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
-INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
-INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
-INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
-INPUT ./fig/especifico_2/Flujo de trabajo de mi idea.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-35-20.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-35-20.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-35-20.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-35-20.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-35-20.png
 INPUT ./fig/especifico_2/bbfilestructure.jpg
 INPUT ./fig/especifico_2/bbfilestructure.jpg
 INPUT ./fig/especifico_2/bbfilestructure.jpg
 INPUT ./fig/especifico_2/bbfilestructure.jpg
 INPUT ./fig/especifico_2/bbfilestructure.jpg
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
-INPUT ./fig/especifico_2/154140ZedBoard.png
-INPUT ./fig/especifico_2/154140ZedBoard.png
-INPUT ./fig/especifico_2/154140ZedBoard.png
-INPUT ./fig/especifico_2/154140ZedBoard.png
-INPUT ./fig/especifico_2/154140ZedBoard.png
+INPUT ./fig/teorico/zedboard_raw.png
+INPUT ./fig/teorico/zedboard_raw.png
+INPUT ./fig/teorico/zedboard_raw.png
+INPUT ./fig/teorico/zedboard_raw.png
 INPUT ./fig/especifico_2/raw.pdf
 INPUT ./fig/especifico_2/raw.pdf
 INPUT ./fig/especifico_2/raw.pdf
@@ -1293,6 +1292,33 @@ INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/config_sum_01.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
+INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
 INPUT ./conclusiones.tex
 INPUT ./conclusiones.tex
 OUTPUT conclusiones.aux

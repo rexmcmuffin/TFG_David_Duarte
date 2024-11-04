@@ -13,19 +13,20 @@
 \contentsline {lstlisting}{\numberline {4.12}{\ignorespaces Requerimientos Yocto Zeus, Linux}}{35}{lstlisting.4.12}%
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces Version de Yocto}}{35}{lstlisting.4.13}%
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces BSP para Zedboard}}{35}{lstlisting.4.14}%
-\contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Configuraciones adicionales, Yocto}}{36}{lstlisting.4.15}%
-\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Copiar archivos al contenedor, Linux}}{47}{lstlisting.4.16}%
-\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Copiar archivos del contenedor, Linux}}{47}{lstlisting.4.17}%
+\contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Configuraciones adicionales, Yocto}}{35}{lstlisting.4.15}%
+\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Copiar archivos al contenedor, Linux}}{45}{lstlisting.4.16}%
+\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Copiar archivos del contenedor, Linux}}{46}{lstlisting.4.17}%
 \contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Compilacion del programa, Linux}}{47}{lstlisting.4.18}%
 \contentsline {lstlisting}{\numberline {4.19}{\ignorespaces "Print Working Directory",Linux}}{48}{lstlisting.4.19}%
 \contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Inicializar ambiente, Yocto}}{48}{lstlisting.4.20}%
-\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Generar nueva capa, Yocto}}{48}{lstlisting.4.21}%
-\contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Agregar nueva capa, Yocto}}{48}{lstlisting.4.22}%
-\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Generar archivos de desarrollador, Yocto}}{51}{lstlisting.4.23}%
-\contentsline {lstlisting}{\numberline {4.24}{\ignorespaces Instalar la capa generada, Yocto}}{51}{lstlisting.4.24}%
-\contentsline {lstlisting}{\numberline {4.25}{\ignorespaces Copiar archivos root, Linux}}{52}{lstlisting.4.25}%
-\contentsline {lstlisting}{\numberline {4.26}{\ignorespaces Copiar sistema de archivos, Linux}}{52}{lstlisting.4.26}%
-\contentsline {lstlisting}{\numberline {4.27}{\ignorespaces Copiar archivo por protocolo SSH, Linux}}{53}{lstlisting.4.27}%
+\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Generar nueva capa, Yocto}}{49}{lstlisting.4.21}%
+\contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Agregar nueva capa, Yocto}}{49}{lstlisting.4.22}%
+\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Generar archivos de desarrollador, Yocto}}{50}{lstlisting.4.23}%
+\contentsline {lstlisting}{\numberline {4.24}{\ignorespaces Instalar la capa generada, Yocto}}{50}{lstlisting.4.24}%
+\contentsline {lstlisting}{\numberline {4.25}{\ignorespaces Copiar archivos root, Linux}}{51}{lstlisting.4.25}%
+\contentsline {lstlisting}{\numberline {4.26}{\ignorespaces Copiar sistema de archivos, Linux}}{51}{lstlisting.4.26}%
+\contentsline {lstlisting}{\numberline {4.27}{\ignorespaces Copiar archivo por protocolo SSH, Linux}}{52}{lstlisting.4.27}%
 \contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Compilacion del programa , Linux}}{67}{lstlisting.5.1}%
-\contentsline {lstlisting}{\numberline {A.1}{\ignorespaces Métricas de comparación de señales}}{81}{lstlisting.Alph1.1}%
+\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Compilacion del programa , Linux}}{77}{lstlisting.5.2}%
+\contentsline {lstlisting}{\numberline {A.1}{\ignorespaces Métricas de comparación de señales}}{84}{lstlisting.Alph1.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
