@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  7 NOV 2024 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.14)  7 NOV 2024 17:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1579,68 +1579,68 @@ LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
 [7 <./fig/teorico/zedboard_raw.png>]
 
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
 [8]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo de yocto.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <fig/teorico/Flujo de trabajo de yocto.pdf, id=806, 223.83624pt x 169.63374pt>
 File: fig/teorico/Flujo de trabajo de yocto.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo de yocto.pdf>
-Package pdftex.def Info: fig/teorico/Flujo de trabajo de yocto.pdf  used on input line 145.
+Package pdftex.def Info: fig/teorico/Flujo de trabajo de yocto.pdf  used on input line 139.
 (pdftex.def)             Requested size: 227.47978pt x 172.40031pt.
 
 
-LaTeX Info: Redefining \. on input line 156.
-LaTeX Info: Redefining \% on input line 156.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
 [9 <./fig/teorico/Flujo de trabajo de yocto.pdf>]
 
-LaTeX Info: Redefining \. on input line 179.
-LaTeX Info: Redefining \% on input line 179.
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
 [10]
 
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
-[11]
-
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo simulink coder.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/teorico/Flujo de trabajo simulink coder.pdf, id=862, 207.77625pt x 165.61874pt>
+<fig/teorico/Flujo de trabajo simulink coder.pdf, id=858, 207.77625pt x 165.61874pt>
 File: fig/teorico/Flujo de trabajo simulink coder.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo simulink coder.pdf>
-Package pdftex.def Info: fig/teorico/Flujo de trabajo simulink coder.pdf  used on input line 202.
-(pdftex.def)             Requested size: 227.47978pt x 181.33205pt.
+Package pdftex.def Info: fig/teorico/Flujo de trabajo simulink coder.pdf  used on input line 189.
+(pdftex.def)             Requested size: 204.73041pt x 163.19733pt.
 
 
-LaTeX Info: Redefining \. on input line 222.
-LaTeX Info: Redefining \% on input line 222.
-[12 <./fig/teorico/Flujo de trabajo simulink coder.pdf>]
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+[11 <./fig/teorico/Flujo de trabajo simulink coder.pdf>]
+
+LaTeX Info: Redefining \. on input line 210.
+LaTeX Info: Redefining \% on input line 210.
+[12]
 
 pdfTeX warning: pdflatex.exe (file ./fig/teorico/Flujo de trabajo xcompiler.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <fig/teorico/Flujo de trabajo xcompiler.pdf, id=887, 245.91875pt x 209.78375pt>
 File: fig/teorico/Flujo de trabajo xcompiler.pdf Graphic file (type pdf)
 <use fig/teorico/Flujo de trabajo xcompiler.pdf>
-Package pdftex.def Info: fig/teorico/Flujo de trabajo xcompiler.pdf  used on input line 228.
+Package pdftex.def Info: fig/teorico/Flujo de trabajo xcompiler.pdf  used on input line 213.
 (pdftex.def)             Requested size: 227.47978pt x 194.06291pt.
 
 
-LaTeX Info: Redefining \. on input line 238.
-LaTeX Info: Redefining \% on input line 238.
+LaTeX Info: Redefining \. on input line 227.
+LaTeX Info: Redefining \% on input line 227.
 [13 <./fig/teorico/Flujo de trabajo xcompiler.pdf>]
 
-LaTeX Info: Redefining \. on input line 255.
-LaTeX Info: Redefining \% on input line 255.
+LaTeX Info: Redefining \. on input line 251.
+LaTeX Info: Redefining \% on input line 251.
 [14]
 
-LaTeX Info: Redefining \. on input line 284.
-LaTeX Info: Redefining \% on input line 284.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
 [15]
 
-LaTeX Info: Redefining \. on input line 302.
-LaTeX Info: Redefining \% on input line 302.
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
 [16]
 
-LaTeX Info: Redefining \. on input line 328.
-LaTeX Info: Redefining \% on input line 328.
+LaTeX Info: Redefining \. on input line 324.
+LaTeX Info: Redefining \% on input line 324.
 [17])
 
 LaTeX Info: Redefining \. on input line 186.
@@ -2973,7 +2973,7 @@ L3 programming layer <2024-07-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 95477C4CC314D61D2B56C23500A6D0CE;19217.
+(rerunfilecheck)             Checksum: 4E672B94B764E0CC9C5AD9C012ECBF0F;19136.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -2987,7 +2987,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  115i,13n,120p,1488b,3395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on main.pdf (100 pages, 13594157 bytes).
+Output written on main.pdf (100 pages, 13593628 bytes).
 PDF statistics:
  4370 PDF objects out of 5155 (max. 8388607)
  2082 compressed objects within 21 object streams

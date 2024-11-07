@@ -1,7 +1,7 @@
 \chapter{Marco teórico}
 \label{ch:marco}
 
-En este capítulo se presentan los conceptos teóricos que subyacen la propuesta de desarrollo de un conjunto de flujos de trabajo para la implementación de software 
+En este capítulo se presentan los conceptos teóricos que subyacen la propuesta de desarrollo de un conjunto de flujos de trabajo para la implementación de software embebido 
 a bordo de computadoras de guía, navegación y control espacial. La información expuesta se deriva tanto de conocimientos propios como información bibliográfica.
 
 \section{Estimación}
@@ -15,18 +15,18 @@ el comportamiento del sistema y para tomar decisiones informadas sobre su contro
 \end{itemize}
 
 Esta es crucial en aplicaciones donde las mediciones directas son difíciles o costosas de obtener, por ejemplo en los sistemas hidráulicos, la estimación de variables de 
-estado permite optimiza el rendimiento y la eficiencia del sistema, asegurando que se mantengan las condiciones deseadas a pesar de las perturbaciones externas o errores en las 
+estado permite optimizar el rendimiento y la eficiencia del sistema, asegurando que se mantengan las condiciones deseadas a pesar de las perturbaciones externas o errores en las 
 mediciones \cite{Merchn2019EvaluacinDM}. La estimación es un componente clave en los sistemas de control, ya que facilita la comprensión y el manejo de sistemas complejos. 
-Su implementación permite una operación más eficiente y efectiva, mejorando su capacidad de respuesta ante diversa condiciones operativas \cite{Mesa2020EstimacinDV}.
+Su implementación permite una operación más eficiente y efectiva, mejorando su capacidad de respuesta ante diversas condiciones operativas \cite{Mesa2020EstimacinDV}.
 
 \section{Control}
-La estimación es un componente clave en los sistemas de control, ya que este se enfoca en el desarrollo y diseño de sistemas capaces de regular y controlar variables de un proceso de manera autónoma. Estos sistemas utilizan sensores, actuadores y algoritmos de control para mantener las variables de interés dentro de los rangos permitidos, mejorando de esta forma la eficiencia, precisión y confiabilidad de los procesos. Su aplicación abarca desde sistemas espaciales hasta biorreactores y sistemas de iluminación. 
+La estimación es un componente clave en los sistemas de control, ya que este se enfoca en el diseño y desarrollo de sistemas capaces de regular y controlar variables de un proceso de manera autónoma. Estos sistemas utilizan sensores, actuadores y algoritmos de control para mantener las variables de interés dentro de los rangos permitidos, mejorando de esta forma la eficiencia, precisión y confiabilidad de los procesos. Su aplicación abarca desde sistemas espaciales hasta sistemas de iluminación. 
 
 
 \section{Procesadores embebidos}
 
-Los procesadores embebidos son microprocesadores especializados en tareas dentro de un sistema más complejo. A diferencia de los procesadores de propósito general, estos están 
-optimizados para ofrecer eficiencia energética, un tamaño compacto y costo reducido. Algunas de las características de los procesadores embebidos se presentan a continuación:
+Los procesadores embebidos están especializados en tareas dentro de un sistema más complejo. A diferencia de los procesadores de propósito general, están 
+optimizados para ofrecer eficiencia energética, un tamaño compacto y costo reducido. Algunas de las características de los procesadores embebidos son:
 
 \begin{itemize}
     \item Integración de periféricos: Incorporan periféricos específicos de la aplicación en un único chip, incluyendo temporizadores, puertos de entrada/salida y controladores 
@@ -41,32 +41,32 @@ optimizados para ofrecer eficiencia energética, un tamaño compacto y costo red
 \subsection{Cortex-A9}
 
 Los procesadores embebidos basados en la arquitectura ARM Cortex-A9 se utilizan en aplicaciones de alto rendimiento y capacidades avanzadas de procesamiento.
-Aunque esta arquitectura no es un procesador embebido, sino más bien una familia de núcleos de procesador diseñado por ARM Holdings, los SoC que incorporan
-estos núcleos han demostrado ser una solución popular para aplicaciones embebidas \cite{Schwiegelshohn2014DesignOA}. Algunas de sus características son : 
+Aunque esta arquitectura no es un procesador embebido, sino más bien una familia de núcleos de procesador diseñado por ARM Holdings, los sistemas en chip que incorporan
+estos núcleos han demostrado ser una solución popular para aplicaciones embebidas \cite{Schwiegelshohn2014DesignOA}. Algunas de sus características son: 
 
 \begin{itemize}
-    \item Arquitectura de 32 bits basada en ARMv7-A.
+    \item Arquitectura de 32 bits basada en ARM v7-A.
     \item Alto rendimiento adecuado para aplicaciones exigentes como sistemas operativos embebidos, procesamiento multimedia y gráficos.
     \item Características avanzadas como unidades de coma flotante, unidades de procesamiento NEON para procesamiento multimedia y soporte para virtualización.
 \end{itemize}
 
-Algunos SoC que incorporan núcleos Cortex-A9 son:
+Algunos sistemas en chip que incorporan núcleos Cortex-A9 son:
 
 \begin{itemize}
     \item Nvidia Tegra 3: Combina cuatro núcleos Cortex-A9 y una GPU.
-    \item Texas Instruments OMAP 4: Familia de SoC que combina núcleos Cortex-A9 y DSP.
+    \item Texas Instruments OMAP 4: Familia de sistemas en chip que combina núcleos Cortex-A9 y DSP.
     \item Xilinx Zynq-7000: Integra núcleos Cortex-A9 con lógica programable FPGA.
 \end{itemize}
 
 \subsection{Tarjeta de desarrollo ZedBoard}
 
-La ZedBoard es una tarjeta de desarrollo basada en el Xilinx Zynq-7000 la cual integra núcleos Cortex-A9 con la lógica programable para Field Programmable Gate Array,por sus siglas en ingles (FPGA). Esta plataforma es ideal para prototipar aplicaciones en el ámbito de sistemas embebidos. La tabla \ref{tab:zedboard} resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
+La ZedBoard es una tarjeta de desarrollo basada en el Xilinx Zynq-7000 la cual integra núcleos Cortex-A9 con la lógica programable para Field Programmable Gate Array, por sus siglas en ingles (FPGA). Esta plataforma es ideal para prototipar aplicaciones en el ámbito de sistemas embebidos. La tabla \ref{tab:zedboard} resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{fig/teorico/zedboard_raw.png}
-    \caption{Tarjeta de desarrollo Zedboard}
+    \caption{Tarjeta de desarrollo ZedBoard}
     \label{fig:zedboard_raw_info}
 \end{figure}
 
@@ -80,14 +80,14 @@ Como se observó en \ref{fig:zedboard_raw_info}, esta tarjeta de desarrollo cuen
     \hline
     Identificador & Descripción                     & \multicolumn{1}{l|}{Identificador} & \multicolumn{1}{l|}{Descripción}      \\ \hline
     a             & Conector JTAG Xilinx            & \multicolumn{1}{l|}{l}             & \multicolumn{1}{l|}{Pulsadores}       \\ \hline
-    b & Entrada de voltaje y   interruptor de encendido & \multicolumn{1}{l|}{m} & \multicolumn{1}{l|}{LEDs}                                 \\ \hline
+    b & Entrada de voltaje e   interruptor de encendido & \multicolumn{1}{l|}{m} & \multicolumn{1}{l|}{LED}                                 \\ \hline
     c             & USB-JTAG para   programación    & \multicolumn{1}{l|}{n}             & \multicolumn{1}{l|}{Interruptores}    \\ \hline
     d             & Puertos de audio                & \multicolumn{1}{l|}{o}             & \multicolumn{1}{l|}{Pantalla OLED}    \\ \hline
-    e & Puerto de ethernet                              & \multicolumn{1}{l|}{p} & \multicolumn{1}{l|}{Botones de   programación y reinicio} \\ \hline
+    e & Puerto de Ethernet                              & \multicolumn{1}{l|}{p} & \multicolumn{1}{l|}{Botones de   programación y reinicio} \\ \hline
     f             & Puerto HDMI (Salida   de video) & \multicolumn{1}{l|}{q}             & \multicolumn{1}{l|}{Conectores Pmod}  \\ \hline
-    g & Puerto VGA (Salida de   video)                  & \multicolumn{1}{l|}{r} & \multicolumn{1}{l|}{USB OTG para   perifericos}           \\ \hline
+    g & Puerto VGA (Salida de   video)                  & \multicolumn{1}{l|}{r} & \multicolumn{1}{l|}{USB OTG para   periféricos}           \\ \hline
     h             & Puerto XADC                     & \multicolumn{1}{l|}{s}             & \multicolumn{1}{l|}{USB UART}         \\ \hline
-    i             & Jumpers de   configuración      & \multicolumn{1}{l|}{t}             & \multicolumn{1}{l|}{Memoria DDR3}     \\ \hline
+    i             & Puentes  de   configuración      & \multicolumn{1}{l|}{t}             & \multicolumn{1}{l|}{Memoria DDR3}     \\ \hline
     j             & Conector FCM                    & \multicolumn{1}{l|}{u}             & \multicolumn{1}{l|}{Dispositivo Zynq} \\ \hline
     k             & Entrada para tarjeta   SD       &                                    &                                       \\ \cline{1-2}
     \end{tabular}%
@@ -119,26 +119,20 @@ Como se observó en \ref{fig:zedboard_raw_info}, esta tarjeta de desarrollo cuen
     }
 \end{table}
 
-Además de esto algunas especificaciones de la plataforma de desarrollo son mencionadas en \ref{tab:zedboard}. Por otro lado la ZedBoard es una plataforma de desarrollo altamente versátil que se destaca por su capacidad para ejecutar sistemas operativos como Linux, lo que la convierte en una opción ideal para proyectos de diseño y desarrollo de sistemas embebidos. Además de su compatibilidad con Linux, como se mencionó anteriormente la ZedBoard cuenta con especificaciones técnicas que la hacen destacar en el ámbito del desarrollo. Entre ellas se incluyen un procesador ARM Cortex-A9, una FPGA. 
+Además de esto algunas especificaciones de la plataforma de desarrollo se mencionan en la Tabla \ref{tab:zedboard}. Por otro lado la ZedBoard es una plataforma de desarrollo altamente versátil que se destaca por su capacidad para ejecutar sistemas operativos como Linux, lo que la convierte en una opción ideal para proyectos de diseño y desarrollo de sistemas embebidos. Además de su compatibilidad con Linux, la ZedBoard cuenta con especificaciones técnicas que la hacen destacar en el ámbito del desarrollo. Entre ellas se incluyen un procesador ARM Cortex-A9. 
 
 \section{Marcos de trabajo}
 
 Los marcos de trabajo en sistemas embebidos son conjuntos de herramientas y bibliotecas que facilitan el desarrollo de aplicaciones en estos 
-sistemas. Estos proporcionan una estructura que permite abordar los desafíos específicos que presentan los sistemas embebidos.
+sistemas. Proporcionan una estructura que permite abordar los desafíos específicos que presentan los sistemas embebidos.
 
-Los sistemas embebidos interactúan con su entorno físico, lo que requiere un diseño que no solo considere los resultados de las operaciones, 
-sino también el cumplimiento de plazos y restricciones específicas. En este contexto, las propiedades no funcionales, como el consumo energético, 
-la latencia, la fiabilidad y el manejo de recursos, son críticas para el diseño y optimización del rendimiento general del sistema \cite{Marugn2017SimulacinYV}. Los frameworks 
-juegan un papel fundamental al proporcionar herramientas y bibliotecas predefinidas, permitiendo a los desarrolladores centrarse en la lógica de la 
-aplicación en lugar de lidiar con los detalles de bajo nivel del hardware, lo que acelera el proceso de desarrollo y reduce la posibilidad de errores. 
-Ejemplos de frameworks populares en sistemas embebidos incluyen Robot Operating System (ROS), utilizado en aplicaciones de robótica, y FreeRTOS, 
-un sistema operativo de tiempo real diseñado para microcontroladores y sistemas embebidos \cite{HerreraLpez2023EntornoDT}.
+Los sistemas embebidos interactúan con su entorno físico, lo que requiere un diseño que no solo considere los resultados de las operaciones, sino también el cumplimiento de plazos y restricciones específicas. En este contexto, las propiedades no funcionales, como el consumo energético, la latencia, la fiabilidad y el manejo de recursos, son críticos para el diseño y optimización del rendimiento general del sistema \cite{Marugn2017SimulacinYV}. Los marcos de trabajo juegan un papel fundamental al proporcionar herramientas y bibliotecas predefinidas, permitiendo a los desarrolladores centrarse en la lógica de la  aplicación en lugar de lidiar con los detalles de bajo nivel del hardware, lo que acelera el proceso de desarrollo y reduce la posibilidad de errores. 
 
-\subsection{YOCTO Project}\label{subsec:yocto}
+Algunos ejemplos de marcos de trabajo populares en sistemas embebidos incluyen Robot Operating System (ROS), utilizado en aplicaciones de robótica, y FreeRTOS, un sistema operativo de tiempo real diseñado para microcontroladores y sistemas embebidos \cite{HerreraLpez2023EntornoDT}.
 
-Yocto es un marco de trabajo o bien del inglés (framework) popular utilizado en el desarrollo de sistemas embebidos, especialmente en la creación de distribuciones de Linux 
-personalizadas para hardware específico. Yocto utiliza un proceso de construcción cruzada, lo que significa que el código se compila en una plataforma diferente 
-a la que se ejecutará, permitiendo que el código se optimice para el hardware específico del sistema embebido \cite{Leppakoski2013FrameworkFI}.
+\subsection{Yocto Project}\label{subsec:yocto}
+
+Yocto es un marco de trabajo o bien del inglés (Framework) popular utilizado en el desarrollo de sistemas embebidos, especialmente en la creación de distribuciones de Linux personalizadas para hardware específico. Yocto utiliza un proceso de construcción cruzada, lo que significa que el código se compila en una plataforma diferente a la que se ejecutará, permitiendo que el código se optimice para el hardware específico del sistema embebido \cite{Leppakoski2013FrameworkFI}.
 
 \begin{figure}[h!]
     \centering
@@ -147,18 +141,16 @@ a la que se ejecutará, permitiendo que el código se optimice para el hardware 
     \label{fig:yocto_project_workflow}
 \end{figure}
 
-Una de las principales ventajas de Yocto es su flexibilidad en la configuración del sistema, permitiendo a los desarrolladores seleccionar paquetes específicos, 
-configurar opciones de compilación y personalizar el sistema operativo según sus necesidades. Además, Yocto fomenta la reutilización de código a través de capas, 
-que son colecciones de recetas, configuraciones y parches que se pueden agregar o eliminar fácilmente del flujo de trabajo de construcción \cite{Leppakoski2013FrameworkFI}.
+Una de las principales ventajas de Yocto es su flexibilidad en la configuración del sistema, permitiendo a los desarrolladores seleccionar paquetes específicos, configurar algunas opciones de compilación y personalizar el sistema operativo según sus necesidades. Además, Yocto fomenta la reutilización de código a través de capas, que son colecciones de recetas, configuraciones y parches que se pueden agregar o eliminar fácilmente del flujo de trabajo en construcción \cite{Leppakoski2013FrameworkFI}.
 
 \section{MATLAB}
 MATLAB es un software de cálculo técnico desarrollado por MathWorks, ampliamente utilizado en diversas áreas de la ciencia y la ingeniería. Proporciona un entorno interactivo para el desarrollo de algoritmos, análisis de datos, visualización y cálculo numérico. Su facilidad para trabajar con vectores y matrices lo distingue de otros sistemas de cálculo \cite{PealozaLuna2022SimulacinDU}. Es comúnmente utilizado para simular sistemas eléctricos, como convertidores DC/DC, y realizar análisis numéricos en problemas complejos \cite{OrdezGarca2022MatlabCU}. 
 
-MATLAB juega un papel crucial en el desarrollo de sistemas de control aeroespaciales, facilitando la simulación, modelado y control de vehículos aéreos no tripulados (UAV) y otros sistemas relacionados.MATLAB, junto con Simulink, permite el modelado cinemático y dinámico de UAVs. Esto incluye la programación y control de sus movimientos, como cabeceo y guiñada, utilizando motores de corriente directa y encoders ópticos para medir su posición \cite{Senz2020LaboratorioPE} \cite{ChvezGudio2023DesarrolloYC}.
+MATLAB juega un papel crucial en el desarrollo de sistemas de control aeroespaciales, facilitando la simulación, modelado y control de vehículos aéreos no tripulados (UAV) y otros sistemas relacionados. MATLAB, junto con Simulink, permite el modelado cinemático y dinámico de UAVs. Esto incluye la programación y control de sus movimientos, como cabeceo, utilizando motores de corriente directa y codificadores ópticos para medir su posición \cite{Senz2020LaboratorioPE} \cite{ChvezGudio2023DesarrolloYC}.
 
 \subsection{Simulink}
 
-Como se mencionó anteriormente Simulink, es un entorno de simulación y diseño gráfico que forma parte del software MATLAB. Se utiliza principalmente para modelar, simular y analizar sistemas dinámicos, especialmente aquellos que involucran componentes eléctricos, mecánicos y de control, algunas  de las características principales de Simulink son:
+Simulink, es un entorno de simulación y diseño gráfico que forma parte del software MATLAB. Se utiliza principalmente para modelar, simular y analizar sistemas dinámicos, especialmente aquellos que involucran componentes eléctricos, mecánicos y de control, algunas  de las características principales de Simulink son:
 
 \begin{itemize}
     \item Modelado Gráfico
@@ -168,13 +160,11 @@ Como se mencionó anteriormente Simulink, es un entorno de simulación y diseño
     \item Análisis de Sistemas Dinámicos
 \end{itemize}
 
-De esta forma podemos ver que simulink es una herramienta que permite a los usuarios crear modelos visuales de sistemas complejos utilizando bloques representativos, facilitando así su diseño y comprensión. Ofrece simulaciones en tiempo real, esenciales para evaluar el comportamiento de sistemas en ingeniería y control bajo diversas condiciones \cite{PealozaLuna2022SimulacinDU}. Su integración con MATLAB potencia las capacidades de análisis y programación, permitiendo un análisis más profundo y la personalización de simulaciones \cite{Daza2021PlataformaDP}. Simulink se aplica en diversas áreas como la ingeniería eléctrica, mecánica, robótica y diseño de sistemas de control, siendo especialmente útil para diseñar y probar controladores (como PID y Fuzzy), analizar sistemas dinámicos y desarrollar prototipos rápidos para sistemas embebidos \cite*{CardozoSarmiento2019SimulationOI}.
+Es una herramienta que permite a los usuarios crear modelos visuales de sistemas complejos utilizando bloques representativos, facilitando así su diseño y comprensión. Ofrece simulaciones en tiempo real, esenciales para la evaluación del comportamiento de sistemas en ingeniería y control bajo diversas condiciones \cite{PealozaLuna2022SimulacinDU}. Su integración con MATLAB potencia las capacidades de análisis y programación, permitiendo un análisis más profundo y la personalización de simulaciones \cite{Daza2021PlataformaDP}. Simulink se aplica en diversas áreas como la ingeniería eléctrica, mecánica, robótica y diseño de sistemas de control, siendo especialmente útil para diseñar y probar controladores, analizar sistemas dinámicos y desarrollar prototipos rápidos para sistemas embebidos \cite*{CardozoSarmiento2019SimulationOI}.
 
 \section{Transformación de modelo a modelo}\label{sec:modelo2model}
 
-La transformación de modelo a modelo se refiere a un proceso en el que un modelo se convierte en otro, manteniendo la esencia de su estructura y funcionalidad, 
-pero adaptándose a nuevas necesidades o contextos. Este concepto es fundamental en la Ingeniería de Software, especialmente dentro de la Arquitectura Dirigida 
-por Modelos (MDA), donde se busca facilitar la interoperabilidad y la portabilidad de sistemas a través de la transformación de modelos independientes de la computación 
+La transformación de modelo a modelo hace referencia a un proceso en el que un modelo se convierte en otro, manteniendo la esencia de su estructura y funcionalidad, pero adaptándose a nuevas necesidades o contextos. Este concepto es fundamental en la Ingeniería de Software, especialmente dentro de la Arquitectura Dirigida por Modelos (MDA), donde se busca facilitar la interoperabilidad y la portabilidad de sistemas a través de la transformación de modelos independientes de la computación 
 (CIM) a modelos independientes de la plataforma (PIM) y viceversa.
 
 \begin{itemize}
@@ -185,43 +175,38 @@ por Modelos (MDA), donde se busca facilitar la interoperabilidad y la portabilid
 
 Para efectos de este trabajo el área de interés serán la transformación de UML a Código Fuente.
 
-\subsection{MATLAB Embedded Coder}
-
-El MATLAB Embedded Coder se adapta a esta definición de transformación de modelo a modelo, ya que permite a los usuarios generar código C y C++ a partir de modelos 
-Simulink. Esto es especialmente útil en el desarrollo de sistemas embebidos, donde se requiere que los modelos de alto nivel se transformen en código 
-que pueda ser ejecutado en hardware específico. Esta herramienta facilita la implementación de algoritmos y sistemas de control, asegurando que el modelo original 
-se traduzca eficazmente en un formato que pueda ser utilizado en entornos de producción.
+%\subsection{MATLAB Embedded Coder}
+%
+%El MATLAB Embedded Coder se adapta a esta definición de transformación de modelo a modelo, ya que permite a los usuarios generar código C y C++ a partir de modelos Simulink. Esto es especialmente %útil en el desarrollo de sistemas embebidos, donde se requiere que los modelos de alto nivel se transformen en código que pueda ser ejecutado en hardware específico. Esta herramienta facilita la %implementación de algoritmos y sistemas de control, asegurando que el modelo original se traduzca eficazmente en un formato que pueda ser utilizado en entornos de producción.
 
 \subsection{MATLAB Simulink Coder}
 
-Simulink Coder es una herramienta del entorno MATLAB/Simulink que permite generar automáticamente código C y C++ a partir de modelos gráficos, facilitando la implementación de algoritmos en hardware o software. Sus características incluyen la generación de código automática, integración con diversas plataformas de hardware, optimización del rendimiento y soporte para modelos complejos, lo que la hace ideal para aplicaciones en control de sistemas, simulación y pruebas, y desarrollo ágil. En resumen, Simulink Coder es esencial para ingenieros que desean transformar modelos teóricos en aplicaciones prácticas, mejorando tanto el proceso de desarrollo como el rendimiento del producto final.
-\newpage
+Simulink Coder es una herramienta del entorno MATLAB/Simulink que permite generar automáticamente código C y C++ a partir de modelos gráficos, facilitando la implementación de algoritmos en hardware o software. Sus características incluyen la generación de código automática, integración con diversas plataformas de hardware, optimización del rendimiento y soporte para modelos complejos, lo que la hace ideal para aplicaciones en control de sistemas, simulación y pruebas, y desarrollo ágil. En resumen, Simulink Coder es esencial para transformar modelos teóricos en aplicaciones prácticas, mejorando tanto el proceso de desarrollo como el rendimiento del producto final.
+
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\textwidth]{fig/teorico/Flujo de trabajo simulink coder.pdf}
+    \includegraphics[width=0.45\textwidth]{fig/teorico/Flujo de trabajo simulink coder.pdf}
     \caption{Flujo de trabajo Simulink Coder}
     \label{fig:Simulink_coder_workflow}
 \end{figure}
 
-Como se observo en la Figura \ref{fig:Simulink_coder_workflow}, primeramente se debe de diseñar el modelo utilizando bloques de Simulink para representar el sistema o algoritmo a implementar, una vez generado el diagrama se deben de ajustar las configuraciones del modelo, incluyendo parámetros como el tipo de solución, la frecuencia de muestreo y las opciones de simulación, además de esto se deben de realizar simulaciones para verificar que el modelo funcione correctamente y cumpla con los requisitos especificados. 
+Como se observa en la Figura \ref{fig:Simulink_coder_workflow}, primeramente se debe de diseñar el modelo utilizando bloques de Simulink para representar el sistema o algoritmo a implementar, una vez generado el diagrama se deben de ajustar las configuraciones del modelo, incluyendo parámetros como el tipo de solución, la frecuencia de muestreo y las opciones de simulación, además de esto se deben de realizar simulaciones para verificar que el modelo funcione correctamente y cumpla con los requisitos especificados. 
 
 Finalmente se debe de hacer uso de la herramienta Simulink Coder para generar automáticamente código C o C++ a partir del modelo validado. Adicionalmente a este código generado se pueden realizar configuraciones según se desea su ejecución, estas configuraciones son opciones adicionales para la generación del código, como optimización y estilo de codificación. Una vez aplicados todos los cambios necesarios se debe integrar el código generado en un entorno de desarrollo adecuado y realizar pruebas para asegurar que el código se comporta como se espera en el hardware objetivo.
 
 \section{Código embebido}
 
-El código embebido se refiere a un tipo de software diseñado para operar en dispositivos con recursos limitados, como microcontroladores y sistemas embebidos. 
-Este código es fundamental en la programación de dispositivos electrónicos, permitiendo que estos realicen tareas específicas, como gestionar un sistema de 
-automatización industrial o incluso operar en dispositivos móviles. Se caracteriza por su ejecución en dispositivos con recursos limitados, su capacidad 
-para controlar dispositivos electrónicos, el uso de lenguajes de bajo nivel, la optimización de recursos y la necesidad de garantizar tiempos de respuesta 
+El código embebido es un tipo de software diseñado para operar en dispositivos con recursos limitados, como microcontroladores y sistemas embebidos. Este código es fundamental en la programación de dispositivos electrónicos, permitiendo que estos realicen tareas específicas, como gestionar un sistema de automatización industrial o incluso operar en dispositivos móviles. Se caracteriza por su ejecución en dispositivos con recursos limitados, su capacidad para controlar dispositivos electrónicos, el uso de lenguajes de bajo nivel, la optimización de recursos y la necesidad de garantizar tiempos de respuesta 
 determinísticos.
 
 \section{Compilación Cruzada}
 
-La compilación cruzada es un proceso clave en el desarrollo de software que permite compilar código fuente en un sistema operativo o arquitectura de hardware diferente al utilizado para el desarrollo. Este método es especialmente valioso en entornos como sistemas embebidos, donde la plataforma de destino no es adecuada para la compilación directa. Utiliza compiladores específicos, conocidos como compiladores cruzados, que generan código ejecutable para la plataforma de destino desde una plataforma de origen. Esto permite a los desarrolladores trabajar en sus máquinas locales, como Windows o Linux, mientras crean aplicaciones para dispositivos como microcontroladores o sistemas operativos variados.
+Es un proceso clave en el desarrollo de software que permite compilar código fuente en un sistema operativo o arquitectura de hardware diferente al utilizado para el desarrollo. Este método es especialmente valioso en entornos como sistemas embebidos, donde la plataforma de destino no es adecuada para la compilación directa. Utiliza compiladores específicos, conocidos como compiladores cruzados, que generan código ejecutable para la plataforma de destino desde una plataforma de origen. Esto permite a los desarrolladores trabajar en sus máquinas locales, como Windows o Linux, mientras crean aplicaciones para dispositivos como microcontroladores o sistemas operativos variados.
 
+Además de su uso en sistemas embebidos, la compilación cruzada es fundamental para el desarrollo multiplataforma, ya que facilita la creación de aplicaciones que funcionan en diferentes sistemas operativos sin necesidad de modificar el código base. Este enfoque no solo mejora la eficiencia del proceso de desarrollo y pruebas, sino que también evita la constante transferencia de código a la plataforma de destino. 
 
-Además de su uso en sistemas embebidos, la compilación cruzada es fundamental para el desarrollo multiplataforma, ya que facilita la creación de aplicaciones que funcionan en diferentes sistemas operativos sin necesidad de modificar el código base. Este enfoque no solo mejora la eficiencia del proceso de desarrollo y pruebas, sino que también evita la constante transferencia de código a la plataforma de destino. En resumen, la compilación cruzada es una técnica esencial en el desarrollo moderno de software, permitiendo a los desarrolladores abordar múltiples plataformas y arquitecturas con mayor facilidad.
+En resumen, la compilación cruzada es una técnica esencial en el desarrollo moderno de software, permitiendo abordar múltiples plataformas y arquitecturas con mayor facilidad.
 
 \begin{figure}[h!]
     \centering
@@ -230,9 +215,13 @@ Además de su uso en sistemas embebidos, la compilación cruzada es fundamental 
     \label{fig:xcompile_workflow}
 \end{figure}
 
-Como se observo en la Figura \ref{fig:xcompile_workflow}, el proceso de compilación de un programa en lenguaje C comienza con el código fuente, que es el conjunto de instrucciones escritas por el programador. A continuación, se utiliza el preprocesador, que lleva a cabo tareas esenciales como la inclusión de archivos y la expansión de macros, generando un archivo intermedio que está listo para ser compilado. Posteriormente, el compilador analiza este archivo intermedio y produce código objeto, una representación en lenguaje máquina que aún no está completamente vinculada. Este código objeto es luego procesado por el ensamblador, que lo convierte en código máquina, específico para la arquitectura del sistema objetivo.
+La Figura \ref{fig:xcompile_workflow}, nos demuestra como el proceso de compilación de un programa en lenguaje C comienza con el código fuente, que es el conjunto de instrucciones escritas por el programador. Después, se utiliza el preprocesador, que lleva a cabo tareas esenciales como la inclusión de archivos y la expansión de macros, generando un archivo intermedio que está listo para ser compilado. Posteriormente, el compilador analiza este archivo intermedio y produce código objeto, una representación en lenguaje máquina que aún no está completamente vinculada. Este código objeto es luego procesado por el ensamblador, que lo convierte en código máquina, específico para la arquitectura del sistema objetivo.
 
 \section{Contenedores}\label{sec:containers}
+
+Los contenedores en software son una tecnología que permite empaquetar aplicaciones junto con todas sus dependencias en un entorno aislado y portable. Esto asegura que la aplicación funcione de manera consistente en diferentes entornos, desde la máquina de desarrollo hasta los servidores de producción.
+
+\subsection{Docker}
 
 Docker ha revolucionado la forma en que se desarrollan y despliegan aplicaciones al ofrecer un entorno portátil y consistente. Gracias a su capacidad de empaquetar aplicaciones junto con todas sus dependencias, los desarrolladores pueden estar seguros de que su software funcionará de manera idéntica en cualquier entorno, ya sea local, en la nube o en producción. Esta portabilidad no solo ahorra tiempo en la configuración del entorno, sino que también reduce significativamente los problemas relacionados con "funciona en mi máquina". Además, el aislamiento que proporcionan los contenedores asegura que las aplicaciones operen sin interferencias, lo que es crucial para mantener la estabilidad y el rendimiento.
 
@@ -244,7 +233,7 @@ Los protocolos de comunicación son un conjunto de reglas y convenciones que per
 
 \subsection{UART}
 
-El Universal Asynchronous Receiver-Transmitter, por sus siglas en ingles (UART) es un protocolo de comunicación serial ampliamente utilizado para la transmisión de datos entre dispositivos. Su característica principal es que es asíncrono, lo que significa que no requiere una señal de reloj compartida entre el transmisor y el receptor.
+El protocolo receptor-transmisor asíncrono universal por sus siglas en ingles (UART) es un protocolo de comunicación serial ampliamente utilizado para la transmisión de datos entre dispositivos. Su característica principal es ser asíncrono, lo que significa que no requiere una señal de reloj compartida entre el transmisor y el receptor.
 
 \textbf{Características:}
 
@@ -265,7 +254,7 @@ El Universal Asynchronous Receiver-Transmitter, por sus siglas en ingles (UART) 
 
 \subsection{SSH}
 
-El Secure Shell (SSH) es un protocolo de red que permite la administración segura de dispositivos y la transferencia de datos a través de redes inseguras. SSH proporciona autenticación y cifrado, garantizando que los datos transmitidos estén protegidos contra ataques maliciosos.
+El Secure Shell por sus siglas en ingles (SSH), es un protocolo de red que permite la administración segura de dispositivos y la transferencia de datos a través de redes inseguras. SSH proporciona autenticación y cifrado, garantizando que los datos transmitidos estén protegidos contra ataques maliciosos.
 
 \textbf{Características:}
 
@@ -280,16 +269,17 @@ El Secure Shell (SSH) es un protocolo de red que permite la administración segu
 
 Las computadoras de guía, navegación y control son esenciales en diversas aplicaciones, particularmente en aviación, navegación marítima y vehículos autónomos. Su función principal radica en procesar datos de sensores para ofrecer información precisa que facilite la toma de decisiones en tiempo real. Estas tecnologías son fundamentales para garantizar la seguridad y eficiencia en el transporte moderno.
 
-Existen tres tipos principales de computadoras en este ámbito: las computadoras de navegación, que determinan la posición y rumbo de embarcaciones o aeronaves mediante sistemas GPS e inerciales; las computadoras de control, que regulan el movimiento y estabilidad de los vehículos, como los controladores de vuelo; y las computadoras de guía, que ofrecen rutas óptimas a través de sistemas de navegación por satélite. Los componentes clave incluyen sensores que recogen datos del entorno, procesadores que realizan cálculos complejos y interfaces de usuario que permiten la interacción con el sistema.
+Existen tres tipos principales de computadoras en este ámbito: las computadoras de navegación, que determinan la posición y rumbo de embarcaciones o aeronaves mediante sistemas GPS e inerciales; las computadoras de control, que regulan el movimiento y estabilidad de los vehículos, como los controladores de vuelo; y las computadoras de guía, que ofrecen rutas óptimas a través de sistemas de navegación por satélite. Los componentes clave incluyen sensores que recogen datos del entorno, procesadores que realizan cálculos complejos e interfaces de usuario que permiten la interacción con el sistema.
 
 Las aplicaciones de estas computadoras son variadas y críticas. En la aviación, se utilizan para el control de vuelo en aeronaves comerciales y militares. En la navegación marítima, aseguran rutas seguras para barcos. Además, son integradas en vehículos autónomos como coches y drones, permitiendo una navegación eficiente sin intervención humana. En conjunto, estas tecnologías no solo mejoran la seguridad, sino que también optimizan la eficacia del transporte actual.
 
 \subsection{EXA ICEPS}\label{sec:exaiceps}
 La computadora de vuelo EXA ICEPS (Integrated Control and Engine Performance System) es una tecnología avanzada diseñada para gestionar y optimizar el rendimiento del motor y otros sistemas críticos en aeronaves. Su integración de sistemas permite combinar el control del motor con diferentes funciones de la aeronave, lo que resulta en una gestión más eficiente y segura durante el vuelo.
 
-Entre sus principales características se destacan el monitoreo en tiempo real, que proporciona datos sobre el rendimiento del motor, permitiendo a los pilotos tomar decisiones informadas. Además, la EXA ICEPS optimiza el rendimiento al maximizar la eficiencia del combustible y reducir las emisiones, contribuyendo así a operaciones más sostenibles. Sus funciones incluyen el control automático de los parámetros del motor y la facilitación del diagnóstico y mantenimiento predictivo, lo que ayuda a reducir costos operativos.
+Entre sus principales características se destacan el monitoreo en tiempo real, que proporciona datos sobre el rendimiento del motor, permitiendo a los pilotos tomar decisiones informadas. Además, la EXA ICEPS optimiza el rendimiento al maximizar la eficiencia del combustible y reducir las emisiones, contribuyendo así a operaciones más sostenibles. Sus funciones incluyen el control automático de los parámetros del motor, la facilitación del diagnóstico y mantenimiento predictivo, lo que ayuda a reducir costos operativos.
 
 Este sistema ejemplifica cómo la tecnología moderna está revolucionando la aviación, mejorando tanto la seguridad como la eficiencia operativa. Al integrar múltiples funciones y proporcionar información crítica en tiempo real, la EXA ICEPS no solo optimiza el rendimiento de las aeronaves, sino que también promueve prácticas más sostenibles en la industria.
+
 \section{Revisión literaria}
 En los últimos años, las computadoras de guía, navegación y control han mostrado grandes avances en el desarrollo de sistemas autónomos.
 
