@@ -1,16 +1,16 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is 'main.blg'
-[171] biber-MSWIN64:340> INFO - === 
-[221] Biber.pm:420> INFO - Reading 'main.bcf'
-[290] Biber.pm:994> INFO - Found 31 citekeys in bib section 0
-[304] Biber.pm:4463> INFO - Processing section 0
-[320] Biber.pm:4654> INFO - Looking for bibtex file 'literatura.bib' for section 0
-[366] bibtex.pm:1713> INFO - LaTeX decoding ...
-[389] bibtex.pm:1519> INFO - Found BibTeX data source 'literatura.bib'
-[518] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[518] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[562] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[612] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[631] bbl.pm:779> INFO - Output to main.bbl
-[631] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'microcontrollerslab_pid_controller_design' is not an integer - this will probably not sort properly.
-[631] Biber.pm:133> INFO - WARNINGS: 1
+[40] Config.pm:311> INFO - Logfile is 'main.blg'
+[181] biber-MSWIN64:340> INFO - === 
+[208] Biber.pm:420> INFO - Reading 'main.bcf'
+[279] Biber.pm:994> INFO - Found 31 citekeys in bib section 0
+[346] Biber.pm:4463> INFO - Processing section 0
+[353] Biber.pm:4654> INFO - Looking for bibtex file 'literatura.bib' for section 0
+[452] bibtex.pm:1713> INFO - LaTeX decoding ...
+[473] bibtex.pm:1519> INFO - Found BibTeX data source 'literatura.bib'
+[586] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[586] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[586] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[600] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[653] bbl.pm:779> INFO - Output to main.bbl
+[653] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'microcontrollerslab_pid_controller_design' is not an integer - this will probably not sort properly.
+[653] Biber.pm:133> INFO - WARNINGS: 1

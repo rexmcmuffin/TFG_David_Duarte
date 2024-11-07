@@ -19,37 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{MathWorks}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=8f6823abd383a341f0d78ef38829bbbb}{%
-           family={{MATLAB}},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{8f6823abd383a341f0d78ef38829bbbb}
-      \strng{fullhash}{8f6823abd383a341f0d78ef38829bbbb}
-      \strng{fullhashraw}{8f6823abd383a341f0d78ef38829bbbb}
-      \strng{bibnamehash}{8f6823abd383a341f0d78ef38829bbbb}
-      \strng{authorbibnamehash}{8f6823abd383a341f0d78ef38829bbbb}
-      \strng{authornamehash}{8f6823abd383a341f0d78ef38829bbbb}
-      \strng{authorfullhash}{8f6823abd383a341f0d78ef38829bbbb}
-      \strng{authorfullhashraw}{8f6823abd383a341f0d78ef38829bbbb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{MATLAB y Simulink para sistemas espaciales}
-      \field{urlday}{16}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://la.mathworks.com/solutions/aerospace-defense/space-systems.html
-      \endverb
-      \verb{url}
-      \verb https://la.mathworks.com/solutions/aerospace-defense/space-systems.html
-      \endverb
-    \endentry
     \entry{hewing2023enhancing}{inproceedings}{}{}
       \name{author}{10}{}{%
         {{hash=48edade84d91ba15a5415230210b37d6}{%
@@ -111,8 +80,8 @@
       \strng{authornamehash}{823ee37cd6e8674ea0e3b8030baf827e}
       \strng{authorfullhash}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
       \strng{authorfullhashraw}{a686bb6f85da0c0cdfe72f7a6ab5ac7f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{12th International Conference on Guidance, Navigation \& Control Systems}
@@ -120,6 +89,37 @@
       \field{year}{2023}
       \field{pages}{1\bibrangedash 15}
       \range{pages}{15}
+    \endentry
+    \entry{MathWorks}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f6823abd383a341f0d78ef38829bbbb}{%
+           family={{MATLAB}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{fullhash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{fullhashraw}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{bibnamehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authorbibnamehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authornamehash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authorfullhash}{8f6823abd383a341f0d78ef38829bbbb}
+      \strng{authorfullhashraw}{8f6823abd383a341f0d78ef38829bbbb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MATLAB y Simulink para sistemas espaciales}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://la.mathworks.com/solutions/aerospace-defense/space-systems.html
+      \endverb
+      \verb{url}
+      \verb https://la.mathworks.com/solutions/aerospace-defense/space-systems.html
+      \endverb
     \endentry
     \entry{AEM2017}{online}{}{}
       \list{organization}{1}{%

@@ -20,10 +20,7 @@ mediciones \cite{Merchn2019EvaluacinDM}. La estimación es un componente clave e
 Su implementación permite una operación más eficiente y efectiva, mejorando su capacidad de respuesta ante diversa condiciones operativas \cite{Mesa2020EstimacinDV}.
 
 \section{Control}
-Como se mencionó anteriormente la estimación es un componente clave en los sistemas de control, ya que este se enfoca en el desarrollo y diseño de sistemas capaces de regular 
-y controlar variables de un proceso de manera autónoma. Estos sistemas utilizan sensores, actuadores y algoritmos de control para mantener las variables de interés dentro de los 
-rangos permitidos, mejorando de esta forma la eficiencia, precisión y confiabilidad de los procesos. Su aplicación abarca desde sistemas espaciales hasta biorreactores y sistemas
-de iluminación. 
+La estimación es un componente clave en los sistemas de control, ya que este se enfoca en el desarrollo y diseño de sistemas capaces de regular y controlar variables de un proceso de manera autónoma. Estos sistemas utilizan sensores, actuadores y algoritmos de control para mantener las variables de interés dentro de los rangos permitidos, mejorando de esta forma la eficiencia, precisión y confiabilidad de los procesos. Su aplicación abarca desde sistemas espaciales hasta biorreactores y sistemas de iluminación. 
 
 
 \section{Procesadores embebidos}
@@ -63,9 +60,7 @@ Algunos SoC que incorporan núcleos Cortex-A9 son:
 
 \subsection{Tarjeta de desarrollo ZedBoard}
 
-La ZedBoard es una tarjeta de desarrollo basada en el Xilinx Zynq-7000 que como se mencionó anteriormente integra núcleos Cortex-A9 con la lógica programable 
-para Field Programmable Gate Array,por sus siglas en ingles (FPGA). Esta plataforma es ideal para prototipar aplicaciones en el ámbito de sistemas embebidos. La tabla \ref{tab:zedboard} 
-resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
+La ZedBoard es una tarjeta de desarrollo basada en el Xilinx Zynq-7000 la cual integra núcleos Cortex-A9 con la lógica programable para Field Programmable Gate Array,por sus siglas en ingles (FPGA). Esta plataforma es ideal para prototipar aplicaciones en el ámbito de sistemas embebidos. La tabla \ref{tab:zedboard} resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
 
 
 \begin{figure}[h!]
@@ -75,7 +70,7 @@ resume las especificaciones que posee la tarjeta de desarrollo ZedBoard.
     \label{fig:zedboard_raw_info}
 \end{figure}
 
-Como se pudo observar en \ref{fig:zedboard_raw_info}, esta tarjeta de desarrollo cuenta con los puertos de conexión que se mencionan en la Tabla \ref{tab:puertos_yocto}: 
+Como se observó en \ref{fig:zedboard_raw_info}, esta tarjeta de desarrollo cuenta con los puertos de conexión que se mencionan en la Tabla \ref{tab:puertos_yocto}: 
 
 \begin{table}[htbp!]
     \caption{Puertos de entrada y salida de la plataforma de desarrollo Zedbord}
@@ -139,7 +134,7 @@ aplicación en lugar de lidiar con los detalles de bajo nivel del hardware, lo q
 Ejemplos de frameworks populares en sistemas embebidos incluyen Robot Operating System (ROS), utilizado en aplicaciones de robótica, y FreeRTOS, 
 un sistema operativo de tiempo real diseñado para microcontroladores y sistemas embebidos \cite{HerreraLpez2023EntornoDT}.
 
-\subsection{YOCTO}\label{subsec:yocto}
+\subsection{YOCTO Project}\label{subsec:yocto}
 
 Yocto es un marco de trabajo o bien del inglés (framework) popular utilizado en el desarrollo de sistemas embebidos, especialmente en la creación de distribuciones de Linux 
 personalizadas para hardware específico. Yocto utiliza un proceso de construcción cruzada, lo que significa que el código se compila en una plataforma diferente 
@@ -209,7 +204,7 @@ Simulink Coder es una herramienta del entorno MATLAB/Simulink que permite genera
     \label{fig:Simulink_coder_workflow}
 \end{figure}
 
-Como se pudo observar en la Figura \ref{fig:Simulink_coder_workflow}, primeramente se debe de diseñar el modelo utilizando bloques de Simulink para representar el sistema o algoritmo a implementar, una vez generado el diagrama se deben de ajustar las configuraciones del modelo, incluyendo parámetros como el tipo de solución, la frecuencia de muestreo y las opciones de simulación, además de esto se deben de realizar simulaciones para verificar que el modelo funcione correctamente y cumpla con los requisitos especificados. 
+Como se observo en la Figura \ref{fig:Simulink_coder_workflow}, primeramente se debe de diseñar el modelo utilizando bloques de Simulink para representar el sistema o algoritmo a implementar, una vez generado el diagrama se deben de ajustar las configuraciones del modelo, incluyendo parámetros como el tipo de solución, la frecuencia de muestreo y las opciones de simulación, además de esto se deben de realizar simulaciones para verificar que el modelo funcione correctamente y cumpla con los requisitos especificados. 
 
 Finalmente se debe de hacer uso de la herramienta Simulink Coder para generar automáticamente código C o C++ a partir del modelo validado. Adicionalmente a este código generado se pueden realizar configuraciones según se desea su ejecución, estas configuraciones son opciones adicionales para la generación del código, como optimización y estilo de codificación. Una vez aplicados todos los cambios necesarios se debe integrar el código generado en un entorno de desarrollo adecuado y realizar pruebas para asegurar que el código se comporta como se espera en el hardware objetivo.
 
@@ -235,7 +230,7 @@ Además de su uso en sistemas embebidos, la compilación cruzada es fundamental 
     \label{fig:xcompile_workflow}
 \end{figure}
 
-Como se pudo observar en la Figura \ref{fig:xcompile_workflow}, el proceso de compilación de un programa en lenguaje C comienza con el código fuente, que es el conjunto de instrucciones escritas por el programador. A continuación, se utiliza el preprocesador, que lleva a cabo tareas esenciales como la inclusión de archivos y la expansión de macros, generando un archivo intermedio que está listo para ser compilado. Posteriormente, el compilador analiza este archivo intermedio y produce código objeto, una representación en lenguaje máquina que aún no está completamente vinculada. Este código objeto es luego procesado por el ensamblador, que lo convierte en código máquina, específico para la arquitectura del sistema objetivo.
+Como se observo en la Figura \ref{fig:xcompile_workflow}, el proceso de compilación de un programa en lenguaje C comienza con el código fuente, que es el conjunto de instrucciones escritas por el programador. A continuación, se utiliza el preprocesador, que lleva a cabo tareas esenciales como la inclusión de archivos y la expansión de macros, generando un archivo intermedio que está listo para ser compilado. Posteriormente, el compilador analiza este archivo intermedio y produce código objeto, una representación en lenguaje máquina que aún no está completamente vinculada. Este código objeto es luego procesado por el ensamblador, que lo convierte en código máquina, específico para la arquitectura del sistema objetivo.
 
 \section{Contenedores}\label{sec:containers}
 
@@ -323,13 +318,6 @@ adaptación a diferentes proyectos \cite{Snchez2020ProgramacinDL}.
 Este software proporciona un lenguaje de programación gráfico para microcontroladores, desarrollado en C\#. Utiliza una interfaz gráfica que permite a los 
 usuarios diseñar diagramas que representan la lógica de control. El sistema compila el código a partir de diagramas gráficos, generando código intermedio 
 en C antes de llegar al código hexadecimal necesario para la programación del microcontrolador \cite{Sacta2011DesarrolloDU}.
-
-
-\subsubsection{LabVIEW}
-
-LabVIEW es un entorno de desarrollo que utiliza un enfoque gráfico para la programación. Aunque es más conocido en el ámbito de la ingeniería, también 
-permite la generación de código en C. LabVIEW facilita la creación de aplicaciones de control y adquisición de datos, y su capacidad para traducir 
-diagramas de bloques a código C lo convierte en una opción útil para proyectos que requieren un control preciso de hardware.
 
 \subsubsection{Simulink}
 Como se mencionó anteriormente, Simulink, parte de MATLAB, proporciona un entorno gráfico para modelar, simular y analizar sistemas dinámicos. 
