@@ -9,11 +9,12 @@
 \chapter{Introducción}
 \label{chp:intro}
 
-%%%% Ideas de como introducir el trabajo ...
+
+En la era de la exploración espacial moderna, la implementación de software embebido a bordo de computadoras de guía, navegación y control (GNC) representa un desafío técnico clave para alcanzar la autonomía y precisión que requieren las misiones espaciales. La capacidad de estos sistemas para adaptarse a condiciones variables y entornos hostiles depende en gran medida de flujos de trabajo bien estructurados que garanticen la eficiencia, confiabilidad y seguridad del software embebido. En esta tesis, desarrollada en el laboratorio de sistemas espaciales del Tecnológico de Costa Rica (SETEC-Lab), se presenta un conjunto de flujos de trabajo diseñados específicamente para la implementación de software en computadoras de GNC espaciales. Este enfoque busca optimizar los procesos de desarrollo y validación, asegurando que el software pueda cumplir con los estrictos requerimientos de las misiones y contribuir al éxito de la exploración y operación en el espacio profundo.
 
 \section{Proceso de diseño de los sistemas de Guía, Navegación y Control espacial}
 
-Los sistemas GNC son fundamentales en las misiones espaciales, están encargados de determinar la trayectoria óptima para cumplir los objetivos de la misión, además de calcular la secuencia de maniobras necesarias, determinar la posición, velocidad y orientación, también se encargan de aplicar las acciones correctivas necesarias para mantener la trayectoria \cite{hewing2023enhancing}.
+Los sistemas de guía, navegación y control (GNC) son fundamentales en las misiones espaciales, están encargados de determinar la trayectoria óptima para cumplir los objetivos de la misión, además de calcular la secuencia de maniobras necesarias, determinar la posición, velocidad y orientación, también se encargan de aplicar las acciones correctivas necesarias para mantener la trayectoria \cite{hewing2023enhancing}.
 
 La implementación de sistemas GNC en sistemas embebidos, conlleva una combinación de hardware y software especializado, por un lado, los microprocesadores y sistemas en chip son los encargados de gestionar los cálculos, mientras que los sensores proporcionan distintos tipos de datos por medio de las entradas. Por otro lado, los sistemas en tiempo real garantizan la respuesta en el momento requerido. Las aplicaciones de estos se pueden observar en drones, satélites y sondas espaciales \cite{MathWorks}.
 
@@ -35,33 +36,27 @@ Finalmente, la implementación de sistemas embebidos ha permitido avances signif
 
 Yocto Project es una iniciativa de código abierto que proporciona un conjunto de herramientas y recursos para crear sistemas operativos Linux personalizados, especialmente diseñados para dispositivos embebidos. Su objetivo principal es facilitar el desarrollo de software y la integración de componentes en una amplia variedad de hardware, permitiendo a los desarrolladores construir imágenes de sistema adaptadas a sus necesidades específicas. Utiliza BitBake, una herramienta que permite definir recetas para la construcción y empaquetado de software, lo que otorga gran flexibilidad y personalización. \cite{salvador2014embedded}
 
-Además, soporta múltiples arquitecturas de hardware, como ARM, x86, MIPS y PowerPC, lo que lo hace adecuado para diferentes dispositivos, desde microcontroladores hasta sistemas más complejos. Al fomentar la reutilización de componentes y contar con una comunidad activa que contribuye con mejoras y documentación, el Yocto Project se convierte en una solución ideal para el desarrollo de sistemas operativos en aplicaciones de IoT, electrónica de consumo y automatización industrial. \cite{vaduva2015learning}
-
-\section{Donde se ubica dentro del flujo de control}
-Diagrama profe Johan (ver en proxima reunion)
+Además, soporta múltiples arquitecturas de hardware, como ARM, x86, MIPS y PowerPC, lo que lo hace adecuado para diferentes dispositivos, desde microcontroladores hasta sistemas más complejos. Al fomentar la reutilización de componentes y contar con una comunidad activa que contribuye con mejoras y documentación, el Yocto Project se convierte en una solución ideal para el desarrollo de sistemas operativos en aplicaciones de IoT, electrónica de consumo y automatización industrial \cite{vaduva2015learning}.
 
 \section{Hardware en el loop}
-El Hardware en el loop es una técnica fundamental en el desarrollo de sistemas GNC, ya que, permite 
-simular el comportamiento del hardware en tiempo real, facilitando para los desarrolladores la 
-prueba y validación del software sin requerir el hardware físico, es esta forma permite probar 
-de forma exhaustiva el software asegurando el funcionamiento del hardware simulado y permite la 
-validación de todo el sistema antes de su implementación final. Esta implementación genera una 
-mayor precisión en las pruebas, la posibilidad de validar la autonomía del sistema, además de 
-reducir significativamente el tiempo y los costos de implementación y prueba del hardware. En 
-resumen, es una técnica esencial en el desarrollo de sistemas GNC espaciales, permitiendo una 
-validación integral y eficiente de estos complejos sistemas antes de su despliegue en misiones 
-reales \cite{mihalivc2022hardware} \cite{montoya2020advanced}.
+El Hardware en el loop es una técnica fundamental en el desarrollo de sistemas GNC, ya que, permite simular el comportamiento del hardware en tiempo real, facilitando para los desarrolladores la prueba y validación del software sin requerir el hardware físico, es esta forma permite probar de forma exhaustiva el software asegurando el funcionamiento del hardware simulado y permite la validación de todo el sistema antes de su implementación final. Esta implementación genera una mayor precisión en las pruebas, la posibilidad de validar la autonomía del sistema, además de reducir significativamente el tiempo y los costos de implementación y prueba del hardware. En  resumen, es una técnica esencial en el desarrollo de sistemas GNC espaciales, permitiendo una validación integral y eficiente de estos complejos sistemas antes de su despliegue en misiones reales \cite{mihalivc2022hardware} \cite{montoya2020advanced}.
 
 
 
 
 \section{Objetivos y estructura del documento}
 
-El objetivo principal de este proyecto es desarrollar un conjunto de flujos de trabajo para la implementación de software a bordo de computadoras de guía, navegación y control espacial. Para lograr este objetivo se persiguen tres objetivos específicos. El primero consiste en Identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de navegación espacial.
+El objetivo principal de este proyecto es desarrollar un conjunto de flujos de trabajo para la implementación de software a bordo de computadoras de guía, navegación y control espacial. 
 
-El segundo se encarga de Establecer flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales con hardware en el loop. Y por último el tercero consiste en Evaluar los casos de uso de una computadora de navegación y control espacial mediante la implementación de una aplicación de referencia demostrativa (caso de la IMU).
+Para lograr este objetivo se persiguen tres objetivos específicos. 
 
-Este documento incluye lo siguiente: en el capítulo 2 se presenta el marco teórico, donde se esbozan los fundamentos de la propuesta realizada. En el capítulo 3 se detalla la solución propuesta y el modelo implementado para la solución del problema. En el capítulo 4 se presentan los resultados obtenidos. Por último, el capítulo 5 se presenta las conclusiones de la investigación y trabajo realizado, así como recomendaciones y trabajo a futuro por desarrollar.
+Identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de navegación espacial.
+
+Establecer flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales con hardware en el loop. 
+
+Evaluar los casos de uso de una computadora de navegación y control espacial mediante la implementación de una aplicación de referencia demostrativa.
+
+Este documento incluye lo siguiente: en el capítulo 2 se presenta el marco teórico, donde se esbozan los fundamentos de la propuesta realizada. En el capítulo 3 se elige la plataforma de desarrollo para implementar solución propuesta. En el capítulo 4 se presenta el flujo de trabajo desarrollado. En el capítulo 5 se muestran los resultados obtenidos. Por último, el capítulo 6 se presenta las conclusiones de la investigación y trabajo realizado, así como recomendaciones y trabajo a futuro por desarrollar.
 
 %%% Local Variables: 
 %%% mode: latex
