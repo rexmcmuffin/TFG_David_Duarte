@@ -535,9 +535,6 @@ INPUT disclaimer.aux
 INPUT ./acta_aprob_licel.aux
 INPUT ./acta_aprob_licel.aux
 INPUT acta_aprob_licel.aux
-INPUT ./acta_eval_licel.aux
-INPUT ./acta_eval_licel.aux
-INPUT acta_eval_licel.aux
 INPUT ./resumen.aux
 INPUT ./resumen.aux
 INPUT resumen.aux
@@ -709,13 +706,6 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/stmaryrd/stmary8.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/stmaryrd/stmary6.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsl1200.tfm
-INPUT ./acta_eval_licel.tex
-INPUT ./acta_eval_licel.tex
-OUTPUT acta_eval_licel.aux
-INPUT ./acta_eval_licel.tex
-INPUT ./acta_eval_licel.tex
-INPUT acta_eval_licel.tex
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT ./resumen.tex
 INPUT ./resumen.tex
 OUTPUT resumen.aux
@@ -724,6 +714,7 @@ INPUT ./resumen.tex
 INPUT resumen.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecrm2488.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx2488.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT ./dedicatoria.tex
 INPUT ./dedicatoria.tex
 OUTPUT dedicatoria.aux
@@ -1351,9 +1342,6 @@ INPUT disclaimer.aux
 INPUT ./acta_aprob_licel.aux
 INPUT ./acta_aprob_licel.aux
 INPUT acta_aprob_licel.aux
-INPUT ./acta_eval_licel.aux
-INPUT ./acta_eval_licel.aux
-INPUT acta_eval_licel.aux
 INPUT ./resumen.aux
 INPUT ./resumen.aux
 INPUT resumen.aux

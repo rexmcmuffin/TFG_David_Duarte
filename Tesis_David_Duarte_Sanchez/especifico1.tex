@@ -1,16 +1,16 @@
 \chapter{Selección de la plataforma de desarrollo}
 \label{ch:especifico1}
 
-En este capítulo se identificó una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de guía, navegación y control espacial, para llevar a cabo este objetivo se plantearon los requerimientos que se deben de tomar en cuenta para elegir una tarjeta de desarrollo que lograra satisfacer las necesidades de este proyecto, seguido de esto se seleccionaron un grupo de tarjetas las cuales cumplan con los requerimientos previamente establecidos, estas fueron comparadas para poder determinar cuál de las tarjetas de desarrollo tenía las capacidades para cumplir de mejor forma la tarea seleccionada.
+En este capítulo se identificó una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de guía, navegación y control espacial, para llevar a cabo este objetivo se plantearon los requerimientos que se deben de tomar en cuenta para elegir una tarjeta de desarrollo que lograra satisfacer las necesidades de este proyecto, seguido de esto se seleccionaron un grupo de tarjetas las cuales cumplan con los requerimientos previamente establecidos, estas fueron comparadas para determinar cuál de las tarjetas de desarrollo tenía las capacidades para cumplir de mejor forma la tarea seleccionada.
 
 \section{Selección de la tarjeta de desarrollo}
-    Para la selección de la tarjeta de desarrollo se partió de la definición de los requerimientos de operación del sistema, esto tomando en cuenta las operaciones más comunes que realizan los sistemas GNC, una vez fueron definidos los requerimientos, se seleccionaron 3 tarjetas candidatas, esto con el fin de establecer los criterios de comparación para el desarrollo de una matriz de Pugh.
+    Para la selección de la tarjeta de desarrollo se partió de la definición de los requerimientos de operación del sistema, esto tomando en cuenta las operaciones más comunes que realizan los sistemas GNC, una vez fueron definidos los requerimientos, se seleccionaron tres tarjetas candidatas, esto con el fin de establecer los criterios de comparación para el desarrollo de una matriz de Pugh.
 
 \subsection{Requerimientos de la aplicación}
 
-Al elegir una tarjeta de desarrollo para un sistema de guía, navegación y control (GNC) en aplicaciones espaciales, se tuvieron en cuenta varios factores clave. Dentro de ellos el procesamiento, más precisamente la capacidad de cálculo, ya que estos sistemas requieren de un procesamiento intensivo para los cálculos de trayectoria, estimación de estado y control. Seguido de esto se consideró que fuera un sistema de baja latencia, además que el mismo contara con soporte para sensores y actuadores para poder medir y controlar el sistema, finalmente los puertos de entrada y salida debían ofrecer la precisión necesaria para leer los datos de los sensores que se conectaran al mismo.
+Al elegir una tarjeta de desarrollo para un sistema de guía, navegación y control (GNC) en aplicaciones espaciales, se tuvieron en cuenta varios factores clave. Dentro de ellos el procesamiento, más precisamente la capacidad de cálculo, ya que estos sistemas requieren de un procesamiento intensivo para los cálculos de trayectoria, estimación de estado y control. Seguido de esto se consideró que fuera un sistema de baja latencia, además que el mismo contara con soporte para sensores y actuadores para medir y controlar el sistema, finalmente los puertos de entrada y salida debían ofrecer la precisión necesaria para leer los datos de los sensores que se conectaran al mismo.
 
-Por otro lado el sistema debía contener capacidades de tiempo real estricto, ya que los sistemas GNC deben de tomar decisiones críticas en el momento requerido. Además de tener la capacidad de ejecutar un sistema operativo de tiempo real (RTOS) o bien Linux en tiempo real. También un aspecto importante a contener por la tarjeta de desarrollo era el consumo de energía, esto sin dejar de lado las capacidades de simulación y pruebas, ya que, en la interfaz de simulación la tarjeta se debe de poder conectar a un entorno de pruebas de hardware-in-the-loop por sus siglas en ingles (HIL), además de las capacidades de depuración y monitoreo.
+Por otro lado el sistema debía contener capacidades de tiempo real estricto, ya que los sistemas GNC deben de tomar decisiones críticas en el momento requerido. Además de tener la capacidad de ejecutar un sistema operativo de tiempo real (RTOS) o bien Linux en tiempo real. También un aspecto importante a contener por la tarjeta de desarrollo era el consumo de energía, esto sin dejar de lado las capacidades de simulación y pruebas, ya que, en la interfaz de simulación la tarjeta se debe de conectar a un entorno de pruebas de hardware-in-the-loop por sus siglas en ingles (HIL), además de las capacidades de depuración y monitoreo.
 
 Finalmente se debieron de tomar en cuenta aspectos como lo son el tamaño, peso y forma de la tarjeta buscando que las mismas contengan un tamaño compacto, ya que los sistemas espaciales siempre se deben de integrar en espacios reducidos y la resistencia del mismo.
 
@@ -83,12 +83,12 @@ Una vez presentadas las tarjetas de desarrollo candidatas se procede con la defi
 % \usepackage{graphicx}
 \begin{table}[h!]
     \centering
-    \caption{Matriz de Pugh para seleccionar la tarjeta de desarrollo que mejor de adapte a los requerimientos del proyecto}
+    \caption{Matriz de Pugh para seleccionar la tarjeta de desarrollo que mejor se adapte a los requerimientos del proyecto}
     \label{tab:Pug_tarjetas_desarrollo}
     \resizebox{\columnwidth}{!}{%
     \begin{tabular}{lccccc}
     \hline
-    \multicolumn{1}{|l|}{Criterios} & \multicolumn{1}{l|}{Peso} & \multicolumn{1}{l|}{ZCU102} & \multicolumn{1}{l|}{AGX Xavier} & \multicolumn{1}{l|}{TMS320C6678} & \multicolumn{1}{l|}{Zedboard} \\ \hline
+    \multicolumn{1}{|l|}{Criterios} & \multicolumn{1}{l|}{Peso} & \multicolumn{1}{l|}{ZCU102} & \multicolumn{1}{l|}{AGX Xavier} & \multicolumn{1}{l|}{TMS320C6678} & \multicolumn{1}{l|}{ZedBoard} \\ \hline
     \multicolumn{1}{|l|}{Capacidad de   procesamiento} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{10} \\ \hline
     \multicolumn{1}{|l|}{Soporte para   sensores} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} \\ \hline
     \multicolumn{1}{|l|}{Soporte para   actuadores} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} \\ \hline
@@ -104,7 +104,7 @@ Una vez presentadas las tarjetas de desarrollo candidatas se procede con la defi
     }
 \end{table}
 
-Como se observó en la Tabla \ref{tab:Pug_tarjetas_desarrollo}, un claro ganador según los requerimientos establecidos para este proyecto fue la tarjeta de desarrollo ZedBoard, ya que represento la mejor opción en cuanto a características como lo son la capacidad de procesamiento y el soporte de sistemas en tiempo real. Además de esto cabe destacar que es una de las tarjetas con una mejor relación costo/rendimiento, y también que el procesador contiene la misma unidad central de procesamiento que la tarjeta ICEPS desarrollada por EXA, la cual como se observó en \ref{sec:exaiceps}, es un sistema todo-en-uno para CubeSats que combina potencia, computación a bordo y comunicación en una sola plataforma compacta. Está diseñado para ser eficiente y personalizable, con capacidad para transferencias de datos de alta velocidad y almacenamiento expansible.
+En la Tabla \ref{tab:Pug_tarjetas_desarrollo}, un claro ganador según los requerimientos establecidos para este proyecto fue la tarjeta de desarrollo ZedBoard, ya que represento la mejor opción en cuanto a características como lo son la capacidad de procesamiento y el soporte de sistemas en tiempo real. Además de esto cabe destacar que es una de las tarjetas con una mejor relación costo/rendimiento, y también que el procesador contiene la misma unidad central de procesamiento que la tarjeta ICEPS desarrollada por EXA, la cual como se observó en \ref{sec:exaiceps}, es un sistema todo-en-uno para CubeSats que combina potencia, computación a bordo y comunicación en una sola plataforma compacta. Está diseñado para ser eficiente y personalizable, con capacidad para transferencias de datos de alta velocidad y almacenamiento expansible.
 
 \section{Plataforma seleccionada}
 
@@ -139,4 +139,4 @@ Ejemplos de Aplicaciones: Adecuada para aplicaciones que requieren procesamiento
 
 \section{Reflexión final}
 
-A lo largo de este capítulo se analizaron los requerimientos de hardware que se tomaron en cuenta para el desarrollo de este proyecto, seguido de esto fueron consideradas cuatro tarjetas de desarrollo, con el fin de elegir entre las que presentaran las prestaciones adecuadas para la tarea a realizar. La Avnet ZedBoard y la computadora de vuelo EXA ICEPS comparten el procesador ARM Cortex-A9 de 32 bits, lo que permitió una comparación directa en rendimiento y capacidades. Esta similitud en la arquitectura proporciono una base sólida para validar casos de estudio antes de su implementación en sistemas críticos como la EXA ICEPS. La ZedBoard se presento como una herramienta valiosa para el desarrollo y prueba de algoritmos en un entorno controlado.
+A lo largo de este capítulo se analizaron los requerimientos de hardware que se tomaron en cuenta para el desarrollo de este proyecto, seguido de esto fueron consideradas cuatro tarjetas de desarrollo, con el fin de elegir entre las que presentaran las prestaciones adecuadas para la tarea a realizar. La Avnet ZedBoard y la computadora de vuelo EXA ICEPS comparten el procesador ARM Cortex-A9 de 32 bits, lo que permitió una comparación directa en rendimiento y capacidades. Esta similitud en la arquitectura proporciono una base sólida para validar casos de estudio antes de su implementación en sistemas críticos como la EXA ICEPS. La ZedBoard se presentó como una herramienta valiosa para el desarrollo y prueba de algoritmos en un entorno controlado.

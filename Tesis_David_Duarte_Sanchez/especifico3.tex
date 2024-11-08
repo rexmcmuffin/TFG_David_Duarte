@@ -5,16 +5,16 @@ En el capítulo \ref{ch:especifico2} se diseñó el flujo de trabajo encargado d
 
 \section{Caso de estudio 2 - IMU}
 
-Como caso de estudio de implementación se desarrolló la simulación de una Unidad de medición inercial (IMU), se siguió el uso del modelo que se presenta en \cite{mathworks2024imu}. Este ejemplo muestra cómo generar y fusionar datos de sensores IMU usando MATLAB Simulink. Permitiendo modelar con precisión el comportamiento de un acelerómetro, un giroscopio y un magnetómetro, además de poder fusionar sus salidas para calcular la orientación.
+Como caso de estudio de implementación se desarrolló la simulación de una Unidad de medición inercial (IMU), se siguió el uso del modelo que se presenta en \cite{mathworks2024imu}. Este ejemplo muestra cómo generar y fusionar datos de sensores IMU usando MATLAB Simulink. Permitiendo modelar con precisión el comportamiento de un acelerómetro, un giroscopio y un magnetómetro, además de  fusionar sus salidas para calcular la orientación.
 
-Una IMU es un grupo de sensores que incluye un acelerómetro para medir aceleración y un giroscopio para medir velocidad angular. Frecuentemente, también se incluye un magnetómetro para medir el campo magnético de la Tierra. Cada uno de estos tres sensores produce una medición de tres ejes, constituyendo una medición de 9 ejes en total. Ademas de esto un Sistema de Referencia de Actitud y Rumbo (AHRS) toma las lecturas de sensores de 9 ejes y calcula la orientación del dispositivo. Esta orientación se da en relación con el marco NED, donde N es la dirección del Norte Magnético. El bloque AHRS en Simulink logra esto usando una estructura de filtro de Kalman indirecto \cite{mathworks2024imu}.
+Una IMU es un grupo de sensores que incluye un acelerómetro para medir aceleración y un giroscopio para medir velocidad angular. Frecuentemente, también se incluye un magnetómetro para medir el campo magnético de la Tierra. Cada uno de estos tres sensores produce una medición de tres ejes, constituyendo una medición de nueve ejes en total. Además de esto un Sistema de Referencia de Actitud y Rumbo (AHRS) toma las lecturas de sensores de nueve ejes y calcula la orientación del dispositivo. Esta orientación se da en relación con el marco NED, donde N es la dirección del Norte Magnético. El bloque AHRS en Simulink logra esto usando una estructura de filtro de Kalman indirecto \cite{mathworks2024imu}.
 
 \newpage
 \subsection{Implementación en MATLAB Simulink}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.pdf}
+    \includegraphics[width=1.0\textwidth]{fig/Capitulo5/Caso_de_estudio_IMU/FULL_IMU.pdf}
     \caption{Diagrama completo del caso de estudio 2 - IMU \cite{mathworks2024imu}}
     \label{fig:caso_de_estudio_2_IMU}
 \end{figure}
@@ -100,7 +100,7 @@ Seguido de esto, en la Figura \ref{fig:angular_velocity_block_simulink} se obser
     \label{fig:integration_for_angular_velocity}
 \end{figure}
 
-Adicional al bloque que se muestra en \ref{fig:angular_velocity_block_simulink} también se implementó un bloque encargado de integrar el valor de la velocidad angular, para esto se usa el bloque que se muestra en la Figura \ref{fig:integration_for_angular_velocity}, este mismo se econtro en la librería de bloques de Simulink como se muestra en \ref{fig:lib_bloques_integrador}, también, en la Figura \ref{fig:config_bloques_integrador} se muestran los parámetros que se utilizaron en la configuración del bloque.
+Adicional al bloque que se muestra en \ref{fig:angular_velocity_block_simulink} también se implementó un bloque encargado de integrar el valor de la velocidad angular, para esto se usa el bloque que se muestra en la Figura \ref{fig:integration_for_angular_velocity}, este mismo se encontró en la librería de bloques de Simulink como se muestra en \ref{fig:lib_bloques_integrador}, también, en la Figura \ref{fig:config_bloques_integrador} se muestran los parámetros que se utilizaron en la configuración del bloque.
 \newpage
 
 \begin{figure}[htbp]
@@ -172,7 +172,7 @@ Finalmente en la Figura \ref{fig:arreglo_imu} se presenta el bloque que se encar
     \label{fig:to_file_IMU}
 \end{figure}
 
-Para poder generar archivos los cuales se utilizaron más adelante en este caso de estudio se utilizo el bloque que se muestra en la Figura \ref{fig:to_file_IMU}, este se encargo de generar un archivo en formato (.mat) con el objetivo de proveer datos a las otras secciones de este caso de estudio, cabe destacar que la configuración del mismo se muestra en la Figura \ref{fig:config_to_file_IMU} en donde se establece el nombre del archivo de salida, la forma de almacenamiento de los datos y finalmente el nombre de la variable por la cual se accederán estos datos. Los nombres a utilizar son:
+Para  generar archivos los cuales se utilizaron más adelante en este caso de estudio se utilizó el bloque que se muestra en la Figura \ref{fig:to_file_IMU}, este se encargó de generar un archivo en formato (.mat) con el objetivo de proveer datos a las otras secciones de este caso de estudio, cabe destacar que la configuración del mismo se muestra en la Figura \ref{fig:config_to_file_IMU} en donde se establece el nombre del archivo de salida, la forma de almacenamiento de los datos y finalmente el nombre de la variable por la cual se accederán estos datos. Los nombres a utilizar son:
 
 \begin{itemize}
     \item acceleration\_input\_file
@@ -216,7 +216,7 @@ Una vez fue establecido el diagrama que se encarga de la generación de los dato
     \label{fig:read_from_file}
 \end{figure}
 
-El desarrollo de este capítulo, en \ref{subsub:generación_de_archivos} se tuvo como salida del programa una serie de archivos generados. Para poder leer los archivos generados previamente se utilizó del bloque que se muestra en la Figura \ref{fig:read_from_file}, para el correcto funcionamiento del sistema es muy importante que los parámetros de configuración que se muestran en la Figura \ref{fig:config_from_file_IMU}.
+El desarrollo de este capítulo, en \ref{subsub:generación_de_archivos} se tuvo como salida del programa una serie de archivos generados. Para  leer los archivos generados previamente se utilizó del bloque que se muestra en la Figura \ref{fig:read_from_file}, para el correcto funcionamiento del sistema es muy importante que los parámetros de configuración que se muestran en la Figura \ref{fig:config_from_file_IMU}.
 \newpage
 
 \begin{figure}[htbp]
@@ -279,7 +279,7 @@ En la Figura \ref{fig:arreglo_AHRS}, se encontró el bloque denominado AHRS, est
     \label{fig:add_of_some_signals}
 \end{figure}
 
-Para realizar una resta de señales se utilizó el bloque suma, el mismo se puede observar en la Figura \ref{fig:add_of_some_signals}. Se debe de realizar la diferencia para poder calcular la desviación del giroscopio y de esta forma generar un archivo de salida con estos datos. 
+Para realizar una resta de señales se utilizó el bloque suma, el mismo se puede observar en la Figura \ref{fig:add_of_some_signals}. Se debe de realizar la diferencia para  calcular la desviación del giroscopio y de esta forma generar un archivo de salida con estos datos. 
 
 
 \begin{figure}[htbp]
@@ -301,7 +301,7 @@ Para realizar una resta de señales se utilizó el bloque suma, el mismo se pued
     \label{fig:bloques_R2D}
 \end{figure}
 
-Los bloques de MATLAB trabajan utilizando las medidas de los ángulos en unidades de radianes, es por esto que se utilizó un bloque de transformación para poder obtener los resultados en grados y que sean más sencillos de interpretar tanto en los datos de salida como en los gráficos elaborados.
+Los bloques de MATLAB trabajan utilizando las medidas de los ángulos en unidades de radianes, es por esto que se utilizó un bloque de transformación para  obtener los resultados en grados y que sean más sencillos de interpretar tanto en los datos de salida como en los gráficos elaborados.
 
 \newpage
 
@@ -324,7 +324,7 @@ Los bloques de MATLAB trabajan utilizando las medidas de los ángulos en unidade
     \label{fig:bloques_func}
 \end{figure}
 
-Finalmente se implemento un bloque de código encargado de calcular el error de orientación del sistema, esto con el fin de estimar la precisión con la cual el giroscopio simulado, en este caso de estudio se pudo determinar la orientación, en la Figura \ref{fig:lib_bloques_func} se observa el bloque en la librería, seguido de esto en la Figura \ref{fig:config_bloques_func} se observa el código implementado dentro de este bloque. El archivo se guardo bajo el nombre de (IMUFusionSimulinModel) y el tiempo de ejecución se establecio en 1000ms. 
+Finalmente se implementó un bloque de código encargado de calcular el error de orientación del sistema, esto con el fin de estimar la precisión con la cual el giroscopio simulado, en este caso de estudio se pudo determinar la orientación, en la Figura \ref{fig:lib_bloques_func} se observa el bloque en la librería, seguido de esto en la Figura \ref{fig:config_bloques_func} se observa el código implementado dentro de este bloque. El archivo se guardó bajo el nombre de (IMUFusionSimulinModel) y el tiempo de ejecución se estableció en 1000ms. 
 \newpage
 
 \subsection{Resultados de la simulación}\label{subsub:resultados_simulados_IMU}
@@ -341,7 +341,7 @@ Finalmente se implemento un bloque de código encargado de calcular el error de 
     \label{fig:data_simulated}
 \end{figure}
 
-Ejecutando el sistema en el entorno de simulación MATLAB Simulink se obtuvieron los resultados que se muestran en \ref{fig:data_simulated}, al lado izquierdo se observan los datos de la desviación simulada del sistema, mientras que, al lado derecho se observan los datos correspondientes a error de orientación. Cabe estacar que el resultado es esperado, ya que la diferencia entre la orientación estimada y la verdadera debería ser casi 4.7 [grados], que es la declinación en esta latitud y longitud y en el bloque IMU, al giroscopio se le dio una polarización de 0,0545 [rad/s] o 3,125 [grados/s], que debería coincidir con el valor de estado estacionario. En la siguiente sección se detallaron los pasos a seguir para la implementación de este sistema en la tarjeta de desarrollo por medio del flujo de trabajo desarrollado en en capítulo \ref{ch:especifico2}. 
+Ejecutando el sistema en el entorno de simulación MATLAB Simulink se obtuvieron los resultados que se muestran en \ref{fig:data_simulated}, al lado izquierdo se observan los datos de la desviación simulada del sistema, mientras que, al lado derecho se observan los datos correspondientes a error de orientación. Cabe estacar que el resultado es esperado, ya que la diferencia entre la orientación estimada y la verdadera debería ser casi 4.7 [grados], que es la declinación en esta latitud y longitud y en el bloque IMU, al giroscopio se le dio una polarización de 0,0545 [rad/s] o 3,125 [grados/s], que debería coincidir con el valor de estado estacionario. En la siguiente sección se detallaron los pasos a seguir para la implementación de este sistema en la tarjeta de desarrollo por medio del flujo de trabajo desarrollado en el capítulo \ref{ch:especifico2}. 
 
 \newpage
 
@@ -359,7 +359,7 @@ Primeramente se generaron los archivos de Código C desde MATLAB Simulink, para 
     \label{fig:system_runtime_IMU}
 \end{figure}
 
-Como primer punto se realizaron las configuraciones que se muestran en la Figura \ref{fig:system_runtime_IMU} donde se definio el tiempo de ejecución del sistema, para este caso se estableció una ejecución de 1000 ms. 
+Como primer punto se realizaron las configuraciones que se muestran en la Figura \ref{fig:system_runtime_IMU} donde se definió el tiempo de ejecución del sistema, para este caso se estableció una ejecución de 1000 ms. 
 
 \begin{figure}[h!]
     \centering
@@ -432,7 +432,7 @@ Como se puede observar en la Figura \ref{fig:imu_zedboard} se observa el binario
     \label{fig:IMU_ZEDBOARD_exp}
 \end{figure}
 
-Analizando los mismos mediante el programa de Python \ref{apx:comparacion_de_sennales_programa} se obtuvieron los gráficos que se muestran en \ref{fig:IMU_ZEDBOARD_exp}, donde en la Figura \ref{fig:imu_sesgo_exp} se muestra el gráfico relacionado con el sesgo del giroscopio en sus 3 ejes de operación, y en la Figura \ref{fig:out_files_IMU_eo_exp} se muestra el gráfico de error de operación del giroscopio. Al realizar la comparación con los datos simulados \ref{subsub:resultados_simulados_IMU}, se obtuvieron los siguientes resultados para el análisis de error.
+Analizando los mismos mediante el programa de Python \ref{apx:comparacion_de_sennales_programa} se obtuvieron los gráficos que se muestran en \ref{fig:IMU_ZEDBOARD_exp}, donde en la Figura \ref{fig:imu_sesgo_exp} se muestra el gráfico relacionado con el sesgo del giroscopio en sus tres ejes de operación, y en la Figura \ref{fig:out_files_IMU_eo_exp} se muestra el gráfico de error de operación del giroscopio. Al realizar la comparación con los datos simulados \ref{subsub:resultados_simulados_IMU}, se obtuvieron los siguientes resultados para el análisis de error.
 
 \begin{table}[htbp!]
     \centering
@@ -461,7 +461,7 @@ Analizando los mismos mediante el programa de Python \ref{apx:comparacion_de_sen
 
 \begin{table}[htbp!]
     \centering
-    \caption{Precisión de la implementación del caso de estudio IMU respecto al eje z}
+    \caption{Precisión de la implementación del caso de estudio IMU respecto al eje Z}
     \label{tab:filter-errorz}
     \begin{tabular}{ll}
     Métrica                       & Error \\ \hline
@@ -478,7 +478,7 @@ Por otro lado los datos relacionados con el error de orientación se obtiene que
 
 \begin{table}[htbp!]
     \centering
-    \caption{Precisión de la implementación del caso de estudio IMU respecto al eje z}
+    \caption{Precisión de la implementación del caso de estudio IMU respecto error de orientación compuesto}
     \label{tab:filter-errorzgrad}
     \begin{tabular}{ll}
     Métrica                       & Error \\ \hline
@@ -489,7 +489,7 @@ Por otro lado los datos relacionados con el error de orientación se obtiene que
     \end{table}
 
 
-Aunque los errores en la orientación son de una magnitud algo mayor que en los ejes individuales del giroscopio, siguen siendo muy pequeños. Esto sugiere que el sistema de orientación es preciso, aunque hay un margen de acumulación de error que sería esperado en cálculos de orientación que integran múltiples ejes. 
+Aunque el error en la orientación es de una magnitud algo mayor que en los ejes individuales del giroscopio, sigue siendo muy pequeño. Esto sugiere que el sistema de orientación es preciso, aunque hay un margen de acumulación de error que sería esperado en cálculos de orientación que integran múltiples ejes. 
 
 \newpage
 
@@ -605,7 +605,7 @@ Por otro lado, tenemos un bloque especializado para la derivación, se logro med
     \label{fig:tf_func_block}
 \end{figure}
 
-Al tratarse de la implementación de un control PID el mismo contó con la función de transferencia, esta fue implementada mediante el bloque que de la Figura \ref{fig:tf_func_block}, el mismo se encontro en la librería de bloques como se observa en la Figura \ref{fig:tf_func_lib}, además de esto la configuración de la función de transferencia se observa en la Figura \ref{fig:tf_func_conf}.
+Al tratarse de la implementación de un control PID el mismo contó con la función de transferencia, esta fue implementada mediante el bloque que de la Figura \ref{fig:tf_func_block}, el mismo se encontró en la librería de bloques como se observa en la Figura \ref{fig:tf_func_lib}, además de esto la configuración de la función de transferencia se observa en la Figura \ref{fig:tf_func_conf}.
 
 %%gain
 \begin{figure}[htbp]
@@ -646,7 +646,7 @@ Al tratarse de la implementación de un control PID el mismo contó con la funci
     \label{fig:arreglo_gain}
 \end{figure}
 
-También, se ingresaron los valores de las ganancias esto se realiza por medio del bloque de la Figura \ref{fig:arreglo_gain}, se logro mediante la implementación de 3 bloques de ganancia el primero se generó con la configuración que se muestra en la Figura \ref{fig:parametros_gain_01}, el segundo se estableció según los parámetros indicados en la Figura \ref{fig:parametros_gain_02} y finalmente el tercero se configuró como lo indica la Figura \ref{fig:parametros_gain_03}. 
+También, se ingresaron los valores de las ganancias esto se realiza por medio del bloque de la Figura \ref{fig:arreglo_gain}, se logró mediante la implementación de tres bloques de ganancia el primero se generó con la configuración que se muestra en la Figura \ref{fig:parametros_gain_01}, el segundo se estableció según los parámetros indicados en la Figura \ref{fig:parametros_gain_02} y finalmente el tercero se configuró como lo indica la Figura \ref{fig:parametros_gain_03}. 
 
 %%add
 \begin{figure}[htbp]
@@ -698,7 +698,7 @@ Cuando se ejecutó el sistema en el entorno de simulación MATLAB Simulink se ob
 
 \subsection{Implementación en la Tarjeta de desarrollo mediante EmbedSynthGNC}
 
-Para la implementación en la tarjeta de desarrollo ZedBoard se ejecuto el flujo de trabajo que se muestra en la sección \ref{sec:m2m_transformator}. El mismo es representado mediante el diagrama que se muestra en la Figura \ref{fig:m2m_matlab_simulink_coder}.
+Para la implementación en la tarjeta de desarrollo ZedBoard se ejecutó el flujo de trabajo que se muestra en la sección \ref{sec:m2m_transformator}. El mismo es representado mediante el diagrama que se muestra en la Figura \ref{fig:m2m_matlab_simulink_coder}.
 
 Primeramente se generaron los archivos de Código C desde MATLAB Simulink, para esto se siguió el diagrama de la Figura \ref{fig:m2m_matlab_simulink_coder}. 
 
@@ -726,7 +726,7 @@ El archivo resultante fue un archivo llamado PIDRunFile.zip seguido de esto se e
     CMakeLists.txt -DMATLAB_ROOT=/home/test/PIDRunFile/R2024b/
 \end{lstlisting}
 
-Una vez descomprimidos los archivos en el directorio denominado como swap\_area se enviaron al contenedor mediante el comando que se muestra en \ref{fig:swap_area_PID}. Una vez dentro del contenedor se constuyo el archivo responsable de la compilación del código C, esto se logro mediante el comando que se muestra en \ref{lst:build_cmake_file_PID}. El archivo binario resultante se encuentra en la ruta /home/PIDRunFile/casodeestudiopid, el mismo se envio al directorio denominado swap\_area, este se exporto al contenedor encargado de integrarlo a la imagen generada mediante el marco de trabajo de Yocto y el flujo de trabajo de EmbedSynthGNC. 
+Una vez descomprimidos los archivos en el directorio denominado como swap\_area se enviaron al contenedor mediante el comando que se muestra en \ref{fig:swap_area_PID}. Una vez dentro del contenedor se construyó el archivo responsable de la compilación del código C, esto se logro mediante el comando que se muestra en \ref{lst:build_cmake_file_PID}. El archivo binario resultante se encuentra en la ruta /home/PIDRunFile/casodeestudiopid, el mismo se envió al directorio denominado swap\_area, este se exporto al contenedor encargado de integrarlo a la imagen generada mediante el marco de trabajo de Yocto y el flujo de trabajo de EmbedSynthGNC. 
 
 Dentro del contendor del entorno Yocto se fue al directorio denominado meta-EmbedSynthGNC dentro del mismo se ingresó a la ruta (/poky/meta-EmbedsinthGNC/recipes-core) y en la misma se agregó un directorio con el nombre de (pid). Seguido, se inicializó el ambiente de trabajo mediante el uso del comando \ref{lst:yocto_ambient_set}. Una vez inicializado el ambiente de trabajo se agregó la nueva capa al archivo local.conf esto con el fin que el binario con el nombre PIDRunFile sea incluido en la generación de la imagen. Finalmente se repitieron los pasos establecidos en \ref{sub:image2zedboard} donde se llevó a cabo la exportación de los archivos. Adicionalmente se preparó la memoria extraíble de la tarjeta de desarrollo para los nuevos archivos.
 

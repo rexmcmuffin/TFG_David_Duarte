@@ -4,14 +4,14 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Puertos de entrada y salida de la plataforma de desarrollo Zedbord}}{8}{table.2.1}%
 \contentsline {table}{\numberline {2.2}{\ignorespaces Especificaciones generales de la tarjeta de desarrollo ZeadBoard}}{8}{table.2.2}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Matriz de Pugh para seleccionar la tarjeta de desarrollo que mejor de adapte a los requerimientos del proyecto}}{24}{table.3.1}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Matriz de Pugh para seleccionar la tarjeta de desarrollo que mejor se adapte a los requerimientos del proyecto}}{24}{table.3.1}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Precisión de la implementación del caso de estudio 1}}{53}{table.4.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto al eje X}}{68}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto al eje Y}}{69}{table.5.2}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto al eje z}}{69}{table.5.3}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto al eje z}}{69}{table.5.4}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Precisión de la implementación del caso de estudio PID}}{78}{table.5.5}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto al eje X}}{69}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto al eje Y}}{70}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto al eje Z}}{70}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Precisión de la implementación del caso de estudio IMU respecto error de orientación compuesto}}{70}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Precisión de la implementación del caso de estudio PID}}{79}{table.5.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
