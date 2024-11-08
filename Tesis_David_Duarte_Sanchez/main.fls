@@ -825,6 +825,7 @@ INPUT ./fig/especifico_2/Ambiente_matlab/instalacion_python.pdf
 INPUT ./fig/especifico_2/Ambiente_matlab/instalacion_python.pdf
 INPUT ./fig/especifico_2/Ambiente_matlab/instalacion_python.pdf
 INPUT ./fig/especifico_2/Ambiente_matlab/instalacion_python.pdf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT ./fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf
 INPUT ./fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf
 INPUT ./fig/especifico_2/Ambiente_matlab/opciones_adicionales_python.pdf
@@ -893,7 +894,6 @@ INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf
 INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf
 INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf
 INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_1.pdf
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf
 INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf
 INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/sinewave_2.pdf
@@ -1176,27 +1176,31 @@ INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_si
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/simulated/error_de_orientacion_simulado.png
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/aditional/tiempo_ejecucion_imu.pdf
+INPUT ./fig/aditional/tiempo_ejecucion_imu.pdf
+INPUT ./fig/aditional/tiempo_ejecucion_imu.pdf
+INPUT ./fig/aditional/tiempo_ejecucion_imu.pdf
+INPUT ./fig/aditional/tiempo_ejecucion_imu.pdf
+INPUT ./fig/aditional/procesador_imu.pdf
+INPUT ./fig/aditional/procesador_imu.pdf
+INPUT ./fig/aditional/procesador_imu.pdf
+INPUT ./fig/aditional/procesador_imu.pdf
+INPUT ./fig/aditional/procesador_imu.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/retornos_consola/Screenshot from 2024-10-31 20-33-27.png
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_imu.pdf
+INPUT ./fig/aditional/consola_imu.pdf
+INPUT ./fig/aditional/consola_imu.pdf
+INPUT ./fig/aditional/consola_imu.pdf
+INPUT ./fig/aditional/consola_imu.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/data/experimental/sesgo_experimental.png
@@ -1292,23 +1296,25 @@ INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/simulada.png
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
-INPUT ./fig/especifico_2/CASO_ESTUDIO_FILTRO/Diagrama matlab simulink scope.pdf
+INPUT ./fig/aditional/procesador_pid.pdf
+INPUT ./fig/aditional/procesador_pid.pdf
+INPUT ./fig/aditional/procesador_pid.pdf
+INPUT ./fig/aditional/procesador_pid.pdf
+INPUT ./fig/aditional/procesador_pid.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/retornos_consola/Screenshot from 2024-10-31 20-21-37.png
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/libreria_bloque_de_funcion.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
-INPUT ./fig/Capitulo5/Caso_de_estudio_IMU/Generador_de_salidas/configuracion_codigo.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid_imu.pdf
+INPUT ./fig/aditional/consola_pid.pdf
+INPUT ./fig/aditional/consola_pid.pdf
+INPUT ./fig/aditional/consola_pid.pdf
+INPUT ./fig/aditional/consola_pid.pdf
+INPUT ./fig/aditional/consola_pid.pdf
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
 INPUT ./fig/Capitulo5/Caso_de_estudio_PID/datos/experimental.png
