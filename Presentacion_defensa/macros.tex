@@ -1,0 +1,155 @@
+%\usepackage{fontspec}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{array}                      % extensions to tabular environment
+\usepackage{tabularx}                   % supports tables with fixed width
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{trsym} %% Para simbolos de transformadas o---o
+\usepackage{ifthen}
+\usepackage{listings}
+\usepackage{algorithm2e}
+\usepackage{algorithmic}
+\usepackage{icomma}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{bm}   %% Bold math
+
+% Configuration of listings
+\lstset{%
+  basicstyle=\scriptsize,
+  commentstyle=\color{blue},
+  numbers=left,
+  numberstyle=\tiny\color{gray}, % Estilo de los números de línea
+  stepnumber=1,              % Cada línea será numerada
+  breaklines=true            % Divide las líneas largas automáticamente
+}
+
+\lstdefinestyle{terminal}{
+    backgroundcolor=\color{bgcolor}, % color de fondo
+    basicstyle=\ttfamily\color{codecolor}, % estilo de fuente
+    columns=fullflexible,
+    keepspaces=true,
+    escapeinside={(*@}{@*)}, % para insertar LaTeX dentro del código
+}
+
+\lstset{literate=%
+  {á}{{\'a}}1
+  {é}{{\'e}}1
+  {í}{{\'i}}1
+  {ó}{{\'o}}1
+  {ú}{{\'u}}1
+  {ñ}{{\~n}}1
+  {Á}{{\'A}}1
+  {É}{{\'E}}1
+  {Í}{{\'I}}1
+  {Ó}{{\'O}}1
+  {Ú}{{\'U}}1
+  {Ñ}{{\~N}}1
+}
+
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\DeclareMathAlphabet{\mathpss}{OT1}{cmss}{m}{sl}
+
+\usetheme[width=25mm]{Marburg}   % Barra azul a la derecha
+\usecolortheme{tec}
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \raisebox{1pt}{\insertframenumber/\inserttotalframenumber}
+}
+
+\definecolor{tecAzul}{RGB}{31,47,95}      % según manual de imagen 2016
+\definecolor{tecRojo}{RGB}{239,64,52}     % según manual de imagen 2016
+\definecolor{tecNaranja}{RGB}{255,174,57} % según manual de imagen 2016
+\definecolor{tecVerde}{RGB}{133,189,64}   % según manual de imagen 2016
+\definecolor{tecCian}{RGB}{37,158,205}    % según manual de imagen 2016
+\definecolor{tecTurq}{RGB}{35,168,156}    % según manual de imagen 2016
+
+\definecolor{dkred}{RGB}{239,64,52}       % dark red
+\definecolor{dkgreen}{RGB}{133,189,64}    % dark green
+\definecolor{dkblue}{RGB}{31,47,95}       % dark blue
+\definecolor{dkgray}{gray}{0.4}           % dark gray
+\definecolor{ltgray}{gray}{0.75}          % light gray
+\definecolor{dkmagenta}{rgb}{0.3,0.0,0.3} % dark magenta
+\definecolor{ltyellow}{RGB}{251,75,58}    % light yellow
+\definecolor{dkyellow}{RGB}{255,174,57}   % dark yellow
+\definecolor{dkcyan}{RGB}{37,158,205}     % dark cyan
+\definecolor{ltcyan}{rgb}{0.7,1,1}        % light cyan
+
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
+
+\newcommand{\bG}[1]{\textcolor{dkgreen}{\textbf{#1}}}
+\newcommand{\bR}[1]{\textcolor{dkred}{\textbf{#1}}}
+\newcommand{\bB}[1]{\textcolor{dkblue}{\textbf{#1}}}
+\newcommand{\bM}[1]{\textcolor{dkmagenta}{\textbf{#1}}}
+\newcommand{\bY}[1]{\textcolor{dkyellow}{\textbf{#1}}}
+\newcommand{\bC}[1]{\textcolor{dkcyan}{\textbf{#1}}}
+
+\newcommand{\iG}[1]{\textcolor{dkgreen}{\emph{#1}}}
+\newcommand{\iR}[1]{\textcolor{dkred}{\emph{#1}}}
+\newcommand{\iB}[1]{\textcolor{dkblue}{\emph{#1}}}
+\newcommand{\iM}[1]{\textcolor{dkmagenta}{\emph{#1}}}
+\newcommand{\iY}[1]{\textcolor{dkyellow}{\emph{#1}}}
+\newcommand{\iC}[1]{\textcolor{dkcyan}{\emph{#1}}}
+
+\newcommand{\nG}[1]{\textcolor{dkgreen}{{#1}}}
+\newcommand{\nlG}[1]{\textcolor{ltgray}{{#1}}}
+\newcommand{\ndG}[1]{\textcolor{dkgray}{{#1}}}
+\newcommand{\nR}[1]{\textcolor{dkred}{{#1}}}
+\newcommand{\nB}[1]{\textcolor{dkblue}{{#1}}}
+\newcommand{\nM}[1]{\textcolor{dkmagenta}{{#1}}}
+\newcommand{\nY}[1]{\textcolor{dkyellow}{{#1}}}
+\newcommand{\nC}[1]{\textcolor{dkcyan}{{#1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Notación
+
+\usepackage{mathrsfs}                   % Calygraphic fonts for transforms
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\hilite<#1>{%
+  \temporal<#1>{\color{tecAzul!20!white}}{\color{tecRojo}}{\color{black}}}
+
+\newcommand{\centrar}[1]{%
+\begin{center}
+  #1
+\end{center}%
+}
+
+\deftranslation[to=spanish]{Example}{Ejemplo}
+\deftranslation[to=spanish]{Definition}{Definición}
+
+\newenvironment{exampleframe}[1][nothing]{
+  \begin{frame}[allowframebreaks]
+    \ifthenelse{\equal{#1}{nothing}}{
+      \frametitle{Ejemplo}
+    }{
+      \frametitle{Ejemplo: #1}
+    }
+}{
+  \end{frame}
+}
+
+\newcommand{\cleft}[2][.]{%
+  \begingroup\colorlet{savedleftcolor}{.}%
+  \color{#1}\left#2\color{savedleftcolor}%
+}
+\newcommand{\cright}[2][.]{%
+  \color{#1}\right#2\endgroup
+}

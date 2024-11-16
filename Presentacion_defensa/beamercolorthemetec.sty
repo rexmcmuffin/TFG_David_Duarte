@@ -1,0 +1,99 @@
+% Copyright 2021 by Pablo Alvarado
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% Colores estándar %%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{tecAzul}{RGB}{31,47,95}      % según manual de imagen 2016
+\definecolor{tecRojo}{RGB}{239,64,52}     % según manual de imagen 2016
+\definecolor{tecNaranja}{RGB}{255,174,57} % según manual de imagen 2016
+\definecolor{tecVerde}{RGB}{133,189,64}   % según manual de imagen 2016
+\definecolor{tecCian}{RGB}{37,158,205}    % según manual de imagen 2016
+\definecolor{tecTurq}{RGB}{35,168,156}    % según manual de imagen 2016
+
+\definecolor{AzulOscuro}{RGB}{15,23,47}   % según manual de imagen 2016
+
+\setbeamercolor{structure}{fg=tecAzul}
+\setbeamercolor{alerted text}{fg=tecRojo} % en macros.tex se define hilite
+
+\setbeamercolor{palette primary}{use=structure,fg=black,bg=structure.fg!20!white}
+\setbeamercolor{palette secondary}{use=structure,fg=black,bg=structure.fg!25!white}
+\setbeamercolor{palette tertiary}{use=structure,fg=black,bg=structure.fg!30!white}
+\setbeamercolor{palette quaternary}{use=structure,fg=black,bg=structure.fg!35!white}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Configuración del sidebar %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Colocar la marca TEC arriba
+\makeatletter
+\addtobeamertemplate{sidebar right}{%
+  \vspace*{2mm}
+  \includegraphics[width=\beamer@sidebarwidth]{MarcaTECRGB}%
+}{}
+\makeatother
+
+\setbeamercolor{sidebar}{fg=white,bg=tecAzul}
+\setbeamercolor{sidebar right}{fg=white,bg=tecAzul}
+
+% Si se quiere un solo color
+%\setbeamertemplate{sidebar canvas right}[default]
+
+% Si se quiere gradiente:
+\setbeamertemplate{sidebar canvas right}[vertical shading][top=tecAzul,middle=tecAzul!50!AzulOscuro,bottom=AzulOscuro]
+
+\setbeamerfont{title in sidebar}{size=\scriptsize}
+\setbeamerfont{author in sidebar}{size=\tiny}
+
+\setbeamercolor{palette sidebar primary}{use=structure,fg=white}
+\setbeamercolor{palette sidebar secondary}{use=structure,fg=white}
+\setbeamercolor{palette sidebar tertiary}{use=structure,fg=white}
+\setbeamercolor{palette sidebar quaternary}{use=structure,fg=white}
+
+\setbeamercolor{section in sidebar}{fg=AzulOscuro,bg=tecAzul!10!white}
+\setbeamercolor{section in sidebar shaded}{fg=tecAzul!5!white}
+
+\setbeamercolor{subsection in sidebar}{parent=section in sidebar}
+\setbeamercolor{subsection in sidebar shaded}{parent=section in sidebar shaded}
+
+\setbeamercolor{subsubsection in sidebar}{parent=section in sidebar}
+\setbeamercolor{subsubsection in sidebar shaded}{parent=section in sidebar shaded}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Configuración de block (ejemplos y otros) %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamercolor{block body}{bg=tecAzul!5!white,fg=black}
+\setbeamercolor{block title}{bg=tecRojo!20!white,fg=AzulOscuro}
+
+
+\setbeamercolor{block body example}{parent=block body}
+\setbeamercolor{example text}{parent=block title,fg=tecAzul}
+
+
+%%%%%%%%%%%%%%%%
+%%   Otros   %%%
+%%%%%%%%%%%%%%%%
+
+\setbeamercolor{frametitle}{bg=tecAzul!20!white,fg=AzulOscuro}
+
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\mode
+<all>

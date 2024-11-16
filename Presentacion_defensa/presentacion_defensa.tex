@@ -1,0 +1,334 @@
+%% (C) 2021 Pablo Alvarado
+%% Escuela de Ingeniería Electrónica
+%% Plantila para presentaciones
+
+%\documentclass[15pt,compressed]{beamer} % [12pt]
+\documentclass[10pt,aspectratio=169]{beamer} % [12pt]
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{multirow}
+\input{macros}
+
+% What is this all about:
+\title[Proyecto Final de Graduación]{Desarrollo de un conjunto de flujos de trabajo \\
+                                  para la implementación de software embebido \\ 
+                                  a bordo de computadoras de guía, navegación \\
+                                  y control espacial}
+\institute[TEC]{Escuela de Ingeniería Electrónica \\ Tecnológico de Costa Rica}
+\date[Noviembre 2023]{15 de noviembre, 2024}
+%% Si ya usted tiene un título previo, úselo (p.\,ej. Ing.\,Juan Pérez Pérez)
+\author[D.\ Duarte]{David Duarte}
+
+%  Notación
+
+\include{notation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\graphicspath{{./}{./fig/}}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Agenda}
+  \tableofcontents
+\end{frame}
+
+% Título para el contexto
+\section{Contexto del proyecto}
+
+\begin{frame}{Contexto del proyecto}
+    \centering
+    \includegraphics[scale=0.2]{logos/tec.png} \hfill
+    \includegraphics[scale=0.3]{logos/seteclab.png} \hfill
+    \parbox[c][3cm][c]{0.3\textwidth}{\centering ELaNAV \\ 2025}
+\end{frame}
+
+\section{Problema}
+
+\begin{frame}{Contexto del problema}
+  \centering
+  \includegraphics[scale=0.3]{planteamineto_problema/problema.pdf}
+\end{frame}
+
+\subsection{Síntesis del problema}
+\begin{frame}{Síntesis del problema}
+  \begin{itemize}
+    \item El SETEC-Lab no cuenta con un marco de trabajo que permita la implementación de algoritmos de navegación y control en plataformas de hardware embebido que sea configurable y que cuente con mecanismos de medición de su desempeño.
+  \end{itemize}
+\end{frame}
+
+\section{Objetivo general}
+\begin{frame}{Objetivo general}
+  \begin{itemize}
+  \item Desarrollar un conjunto de flujos de trabajo para la implementación de software 
+  a bordo de computadoras de guía, navegación y control espacial.
+  \end{itemize}
+\end{frame}
+
+\section{Objetivos específicos}
+\begin{frame}{Objetivos específicos}
+  \begin{enumerate}
+    \item Identificar una plataforma de hardware para el desarrollo de un modelo de ingeniería de una computadora de navegación espacial.
+    \item Establecer flujos de trabajo para el prototipado de algoritmos de control de orientación y navegación para aplicaciones espaciales 
+          con hardware en el Lazo (HIL).
+    \item Evaluar casos de uso de una computadora de navegación y control espacial mediante la implementación de una aplicación de 
+          referencia demostrativa.
+  \end{enumerate}
+\end{frame}
+
+\section{Solución}
+
+\subsection{Enfoque metodológico}
+
+\begin{frame}{Enfoque metodológico}
+  \begin{itemize}
+    \item Selección de plataforma de desarrollo para GNC.
+    \item Diseño de los flujos de trabajo.
+    \item Evaluación de los flujos de trabajo con casos de estudio orientados a los sistemas GNC.
+  \end{itemize}
+\end{frame}
+
+
+\subsection{Selección de plataforma de desarrollo}
+
+\begin{frame}{Selección de plataforma de desarrollo}
+  \centering
+  \includegraphics[scale=0.6]{Diagrama_general_del_proyecto/seleccion_tarjeta_desarrollo.pdf}
+\end{frame}
+
+\begin{frame}{Selección de plataforma de desarrollo}
+  \centering
+  Matriz de Pugh para seleccionar la tarjeta de desarrollo que mejor se adapte a los requerimientos del proyecto
+  \begin{table}[h!]
+    \centering
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{lccccc}
+    \hline
+    \multicolumn{1}{|l|}{Criterios} & \multicolumn{1}{l|}{Peso} & \multicolumn{1}{l|}{ZCU102} & \multicolumn{1}{l|}{AGX Xavier} & \multicolumn{1}{l|}{TMS320C6678} & \multicolumn{1}{l|}{ZedBoard} \\ \hline
+    \multicolumn{1}{|l|}{Capacidad de   procesamiento} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Soporte para   sensores} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{15} \\ \hline
+    \multicolumn{1}{|l|}{Soporte para   actuadores} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Soporte de   sistemas de tiempo real} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{20} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{20} \\ \hline
+    \multicolumn{1}{|l|}{Características   Físicas} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Costo de la   tarjeta} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Escalabilidad   del sistema} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{10} \\ \hline
+    \multicolumn{1}{|l|}{Soporte de Yocto Project} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{10} \\ \hline
+     & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \cline{1-1} \cline{3-6} 
+    \multicolumn{1}{|l|}{Suma general} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{80} & \multicolumn{1}{c|}{80} & \multicolumn{1}{c|}{75} & \multicolumn{1}{c|}{95} \\ \cline{1-1} \cline{3-6} 
+    \multicolumn{1}{|l|}{Posición} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{1} \\ \cline{1-1} \cline{3-6} 
+    \end{tabular}%
+    }
+\end{table}
+\end{frame}
+
+
+\subsection{Diseño flujo de trabajo}
+
+\begin{frame}{Diseño flujo de trabajo}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp_1.pdf}
+\end{frame}
+
+\begin{frame}{Diseño flujo de trabajo}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp_2.pdf}
+\end{frame}
+
+\begin{frame}{Diseño flujo de trabajo}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp_3.pdf}
+\end{frame}
+
+\begin{frame}{Diseño flujo de trabajo}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp_4.pdf}
+\end{frame}
+
+\begin{frame}{Diseño flujo de trabajo}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp5.pdf}
+\end{frame}
+
+\section{Casos de uso}
+
+\subsection{Filtro}
+
+\begin{frame}{Caso de uso - Filtro}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp_ce_2.pdf}
+\end{frame}
+
+\begin{frame}{Caso de uso - Filtro}
+  \centering
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[scale=0.15]{Filtro/raw_sim.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}{0.55\linewidth}
+    \centering
+    \includegraphics[scale=0.15]{Filtro/filt_sim.png}
+  \end{minipage}
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[scale=0.15]{Filtro/raw_exp.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}{0.55\linewidth}
+    \centering
+    \includegraphics[scale=0.15]{Filtro/filt_exp.png}
+  \end{minipage}
+
+  \vspace{0.5cm} % Espacio entre las imágenes y la tabla
+
+    \begin{minipage}{0.9\linewidth} % Ajusta el ancho aquí
+      \centering
+      % Crea una tabla de 3x4 con contenido
+      \begin{tabular}{ll}
+        Métrica                       & Error \\ \hline
+        Error promedio absoluto         &   $1.930 \times 10^{-18}$ [V]    \\
+        Error cuadrático medio          &   $2.14 \times 10^{-34}$ $[V^{2}]$    \\
+        Raíz del error cuadrático medio &   $1.46 \times 10{-17}$ [V]  
+        \end{tabular}
+    \end{minipage}
+  
+\end{frame}
+
+\subsection{IMU}
+
+\begin{frame}{Caso de uso - IMU}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp_ce_3.pdf}
+\end{frame}
+
+\begin{frame}{Caso de uso - IMU}
+  \centering
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[scale=0.2]{IMU/simulated/error_de_orientacion_simulado.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[scale=0.2]{IMU/experimental/error_de_orientacion.png}
+  \end{minipage}
+
+  \vspace{0.5cm} % Espacio entre las imágenes y la tabla
+
+  
+    \begin{minipage}{0.9\linewidth} % Ajusta el ancho aquí
+      \centering
+      % Crea una tabla de 3x4 con contenido
+      \begin{tabular}{ll}
+        Métrica                       & Error \\ \hline
+        Error promedio absoluto         &   $1.28 \times 10^{-13}$ [grados]\\
+        Error cuadrático medio          &   $2.12 \times 10^{-13}$ $[grados^{2}]$    \\
+        Raíz del error cuadrático medio &   $4.51 \times 10{-26}$ [grados]  
+        \end{tabular}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}{Caso de uso - IMU}
+  \centering
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[scale=0.2]{IMU/simulated/sesgo_simulado.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \includegraphics[scale=0.2]{IMU/experimental/sesgo_experimental.png}
+  \end{minipage}
+
+  \vspace{0.5cm} % Espacio entre las imágenes y la tabla
+
+  
+    \begin{minipage}{0.9\linewidth} % Ajusta el ancho aquí
+      \centering
+      % Crea una tabla de 3x4 con contenido
+      \begin{tabular}{ll}
+        Métrica                       & Error \\ \hline
+        Error promedio absoluto         &   $2.31 \times 10^{-15}$ [grados/s]    \\
+        Error cuadrático medio          &   $3.09 \times 10^{-15}$ $[grados/s^{2}]$    \\
+        Raíz del error cuadrático medio &   $9.56 \times 10{-30}$ [grados/s]  
+        \end{tabular}
+    \end{minipage}
+\end{frame}
+
+
+\subsection{PID}
+\begin{frame}{Casos de uso - PID}
+  \centering
+  \includegraphics[scale=0.4]{Diagrama_general_del_proyecto/dgp_ce_1.pdf}
+\end{frame}
+
+\begin{frame}{Casos de uso - PID}
+  \centering
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[scale=0.2]{PID/entrada_simulada.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[scale=0.17]{PID/salida_simulada.png}
+  \end{minipage}
+
+  \vspace{0.1cm} % Espacio entre las imágenes y la tabla
+
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[scale=0.2]{PID/entrada_experimental.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[scale=0.17]{PID/salida_experimental.png}
+  \end{minipage}
+
+  \vspace{0.2cm} % Espacio entre las imágenes y la tabla
+    \begin{minipage}{0.9\linewidth} % Ajusta el ancho aquí
+      \centering
+      % Crea una tabla de 3x4 con contenido
+      \begin{tabular}{ll}
+        Métrica                       & Error \\ \hline
+        Error promedio absoluto         &   $1.12\times 10^{-32}$ [V]\\
+        Error cuadrático medio          &   $1.01 \times 10^{-34}$ $[V^{2}]$    \\
+        Raíz del error cuadrático medio &   $1.01 \times 10{-17}$ [V]  
+        \end{tabular}
+    \end{minipage}
+\end{frame}
+
+
+
+\section{Conclusiones y recomentaciones}
+
+\begin{frame}{Conclusiones}
+  \begin{itemize}
+    \item Se seleccionó la plataforma embebida ZedBoard debido a su desempeño y compatibilidad con plataformas espaciales como el computador a bordo ICEPS de EXA.
+    \item Se desarrolló un entorno de compilación cruzada para convertir el código generado en un archivo binario para la arquitectura ARM.
+    \item Se desarrolló un entorno de trabajo para la síntesis de archivos de arranque y archivos de sistema para la plataforma embebida ZedBoard.
+    \item Se desarrollaron tres algoritmos básicos  de control como casos de uso para aplicaciones GNC uno orientado al filtrado de señales, otro orientado a estimación de estado y otro a control.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Recomendaciones y trabajo futuro}
+  \begin{itemize}
+    \item Realizar una evaluación comparativa continua del desempeño de la ZedBoard frente a nuevas plataformas de hardware embebido para mantener actualizado el sistema, considerando nuevas opciones con mayores capacidades o eficiencia energética, especialmente si surgen otros modelos compatibles con ICEPS de EXA.
+    \item Automatizar el entorno de compilación cruzada mediante scripts y herramientas como CE Docker, para facilitar la generación de binarios para ARM y simplificar la integración de futuros cambios en el código.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Recomendaciones y trabajo futuro}
+  \begin{itemize}
+    \item Implementar un sistema de versionado y pruebas automatizadas para los archivos de arranque y de sistema. Esto permitirá asegurar la compatibilidad y estabilidad del entorno a lo largo del ciclo de vida del proyecto y en futuras iteraciones.
+    \item Diseñar un marco de validación de algoritmos que permita evaluar la efectividad de cada algoritmo de control en simulaciones y pruebas de hardware en lazo cerrado. Esto ayudará a identificar mejoras en su rendimiento y adaptabilidad para aplicaciones GNC complejas.
+  \end{itemize}
+\end{frame}
+
+
+\end{document}

@@ -7,3 +7,13 @@ Los resultados obtenidos confirman de manera satisfactoria el logro del objetivo
 La evaluación de los casos de uso de una computadora de navegación y control espacial, a través de la implementación de una aplicación de referencia demostrativa, ha arrojado resultados prometedores. La precisión alcanzada en los modelos de la Unidad de Medición Inercial (IMU) y del controlador PID confirma la capacidad de la aplicación para replicar con exactitud las condiciones reales, lo que es fundamental en entornos de guía, navegación y control espacial.
 
 Los bajos niveles de error registrados en ambos casos demuestran que los modelos implementados no solo capturan fielmente el comportamiento dinámico del sistema, sino que también ofrecen una herramienta confiable para futuras aplicaciones y pruebas. Este alto grado de precisión en la simulación y el control proporciona una base sólida para el uso de esta computadora en misiones donde la precisión y la confiabilidad son críticas.
+
+\chapter{Recomendaciones}
+
+Realizar una evaluación comparativa continua del desempeño de la ZedBoard frente a nuevas plataformas de hardware embebido para mantener actualizado el sistema, considerando nuevas opciones con mayores capacidades o eficiencia energética, especialmente si surgen otros modelos compatibles con ICEPS de EXA.
+	
+Automatizar el entorno de compilación cruzada mediante scripts y herramientas como CE Docker, para facilitar la generación de binarios para ARM y simplificar la integración de futuros cambios en el código.
+
+Implementar un sistema de versionado y pruebas automatizadas para los archivos de arranque y de sistema. Esto permitirá asegurar la compatibilidad y estabilidad del entorno a lo largo del ciclo de vida del proyecto y en futuras iteraciones.
+
+Diseñar un marco de validación de algoritmos que permita evaluar la efectividad de cada algoritmo de control en simulaciones y pruebas de hardware en lazo cerrado. Esto ayudará a identificar mejoras en su rendimiento y adaptabilidad para aplicaciones GNC complejas

@@ -103,5 +103,6 @@
 \contentsline {subsection}{\numberline {5.2.5}Resultados de la implementación}{79}{subsection.5.2.5}%
 \contentsline {section}{\numberline {5.3}Reflexión final}{80}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Conclusiones}{81}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{83}{chapter*.103}%
-\contentsline {chapter}{\numberline {A}Métricas de comparación de señales}{88}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {7}Recomendaciones}{83}{chapter.7}%
+\contentsline {chapter}{Bibliografía}{84}{chapter*.103}%
+\contentsline {chapter}{\numberline {A}Métricas de comparación de señales}{89}{appendix.Alph1}%

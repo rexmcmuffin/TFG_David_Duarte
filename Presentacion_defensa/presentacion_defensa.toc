@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}\relax 
+\beamer@sectionintoc {1}{Contexto del proyecto}{3}{0}{1}
+\beamer@sectionintoc {2}{Problema}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Síntesis del problema}{5}{0}{2}
+\beamer@sectionintoc {3}{Objetivo general}{6}{0}{3}
+\beamer@sectionintoc {4}{Objetivos específicos}{7}{0}{4}
+\beamer@sectionintoc {5}{Solución}{8}{0}{5}
+\beamer@subsectionintoc {5}{1}{Enfoque metodológico}{8}{0}{5}
+\beamer@subsectionintoc {5}{2}{Selección de plataforma de desarrollo}{9}{0}{5}
+\beamer@subsectionintoc {5}{3}{Diseño flujo de trabajo}{11}{0}{5}
+\beamer@sectionintoc {6}{Casos de uso}{16}{0}{6}
+\beamer@subsectionintoc {6}{1}{Filtro}{16}{0}{6}
+\beamer@subsectionintoc {6}{2}{IMU}{18}{0}{6}
+\beamer@subsectionintoc {6}{3}{PID}{21}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones y recomentaciones}{23}{0}{7}
